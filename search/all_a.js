@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['shutdown_5fconfirmation_5ft',['shutdown_confirmation_t',['../structrotor_1_1payload_1_1shutdown__confirmation__t.html',1,'rotor::payload']]],
+  ['shutdown_5frequest_5ft',['shutdown_request_t',['../structrotor_1_1payload_1_1shutdown__request__t.html',1,'rotor::payload']]],
+  ['shutdown_5ftimer_5ft',['shutdown_timer_t',['../structrotor_1_1wx_1_1shutdown__timer__t.html',1,'rotor::wx']]],
+  ['start_5factor_5ft',['start_actor_t',['../structrotor_1_1payload_1_1start__actor__t.html',1,'rotor::payload']]],
+  ['state_5frequest_5ft',['state_request_t',['../structrotor_1_1payload_1_1state__request__t.html',1,'rotor::payload']]],
+  ['state_5fresponse_5ft',['state_response_t',['../structrotor_1_1payload_1_1state__response__t.html',1,'rotor::payload']]],
+  ['subscription_5fconfirmation_5ft',['subscription_confirmation_t',['../structrotor_1_1payload_1_1subscription__confirmation__t.html',1,'rotor::payload']]],
+  ['subscription_5frequest_5ft',['subscription_request_t',['../structrotor_1_1actor__base__t_1_1subscription__request__t.html',1,'rotor::actor_base_t']]],
+  ['subscription_5ft',['subscription_t',['../structrotor_1_1subscription__t.html',1,'rotor']]],
+  ['supervisor_5fasio_5ft',['supervisor_asio_t',['../structrotor_1_1asio_1_1supervisor__asio__t.html',1,'rotor::asio']]],
+  ['supervisor_5fconfig_5ft',['supervisor_config_t',['../structrotor_1_1wx_1_1supervisor__config__t.html',1,'rotor::wx::supervisor_config_t'],['../structrotor_1_1asio_1_1supervisor__config__t.html',1,'rotor::asio::supervisor_config_t']]],
+  ['supervisor_5ft',['supervisor_t',['../structrotor_1_1supervisor__t.html',1,'rotor']]],
+  ['supervisor_5fwx_5ft',['supervisor_wx_t',['../structrotor_1_1wx_1_1supervisor__wx__t.html',1,'rotor::wx']]],
+  ['system_5fcontext_5fasio_5ft',['system_context_asio_t',['../structrotor_1_1asio_1_1system__context__asio__t.html',1,'rotor::asio']]],
+  ['system_5fcontext_5ft',['system_context_t',['../structrotor_1_1system__context__t.html',1,'rotor']]],
+  ['system_5fcontext_5fwx_5ft',['system_context_wx_t',['../structrotor_1_1wx_1_1system__context__wx__t.html',1,'rotor::wx']]]
+];
