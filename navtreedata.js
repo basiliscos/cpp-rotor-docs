@@ -29,6 +29,7 @@ var NAVTREE =
     [ "Design & Notions", "md__home_b_development_cpp_cpp-rotor_docs_Design.html", null ],
     [ "Rationale", "md__home_b_development_cpp_cpp-rotor_docs_Rationale.html", null ],
     [ "Event loops & platforms", "md__home_b_development_cpp_cpp-rotor_docs_Loops.html", null ],
+    [ "Patterns", "md__home_b_development_cpp_cpp-rotor_docs_Patterns.html", null ],
     [ "License", "md__home_b_development_cpp_cpp-rotor_docs_License.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
@@ -44,7 +45,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"structrotor_1_1wx_1_1shutdown__timer__t.html"
+"structrotor_1_1system__context__t.html#ad4450478ac157abf0a249911b17b3b36"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

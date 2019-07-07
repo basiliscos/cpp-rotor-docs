@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rationale',['Rationale',['../md__home_b_development_cpp_cpp-rotor_docs_Rationale.html',1,'']]]
+  ['patterns',['Patterns',['../md__home_b_development_cpp_cpp-rotor_docs_Patterns.html',1,'']]]
 ];
