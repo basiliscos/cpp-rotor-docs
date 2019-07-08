@@ -11,7 +11,7 @@ var structrotor_1_1actor__base__t =
     [ "get_address", "structrotor_1_1actor__base__t.html#af99e298d3e730fe975642cfb62c07431", null ],
     [ "get_state", "structrotor_1_1actor__base__t.html#a11818a1cd56de2a0fcc69556835faa62", null ],
     [ "get_subscription_points", "structrotor_1_1actor__base__t.html#a9a04ac4789fda04ff55981331140faed", null ],
-    [ "get_supevisor", "structrotor_1_1actor__base__t.html#adab99f6d743d736cc5ec936d469c729e", null ],
+    [ "get_supervisor", "structrotor_1_1actor__base__t.html#a34079b0bd2619cfe7dce3f4f7bacef62", null ],
     [ "on_external_unsubscription", "structrotor_1_1actor__base__t.html#ab0e24a90b02373ae0637d6274795a9dd", null ],
     [ "on_initialize", "structrotor_1_1actor__base__t.html#aa0e7346b956d295bf06d26dde3217c35", null ],
     [ "on_shutdown", "structrotor_1_1actor__base__t.html#aab7e3c4df9beb79694950cfcd747d7b2", null ],

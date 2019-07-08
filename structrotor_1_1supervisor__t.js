@@ -14,7 +14,7 @@ var structrotor_1_1supervisor__t =
     [ "do_process", "structrotor_1_1supervisor__t.html#a7bb22bce5c13b99c491acf41889e1850", null ],
     [ "do_start", "structrotor_1_1supervisor__t.html#ac092b3905d88ec06fd079fb6f0e0f66a", null ],
     [ "enqueue", "structrotor_1_1supervisor__t.html#aaf99e587b441bb5e68b0c500ffedf14f", null ],
-    [ "get_parent_supevisor", "structrotor_1_1supervisor__t.html#aea55d6b654d3ef06844ebdf47a04472c", null ],
+    [ "get_parent_supervisor", "structrotor_1_1supervisor__t.html#a03fe5fac32a9580a99d318e47792d61a", null ],
     [ "make_address", "structrotor_1_1supervisor__t.html#a4517a5ef2f92cd6f94744a273c6ab478", null ],
     [ "on_call", "structrotor_1_1supervisor__t.html#a4d41d0e7c2f2b774871335fefa03ad79", null ],
     [ "on_commit_unsubscription", "structrotor_1_1supervisor__t.html#a89b06e1538b6976780c6e30a444fa351", null ],
