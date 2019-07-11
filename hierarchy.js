@@ -1,8 +1,8 @@
 var hierarchy =
 [
-    [ "rotor::actor_ctor_t< Actor, Supervisor, IsSupervisor >", "structrotor_1_1actor__ctor__t.html", null ],
-    [ "rotor::actor_ctor_t< Actor, Supervisor, std::enable_if_t< std::is_base_of_v< supervisor_t, Actor > > >", "structrotor_1_1actor__ctor__t_3_01Actor_00_01Supervisor_00_01std_1_1enable__if__t_3_01std_1_1is_55a37be466564412c4a2f0312dba3666.html", null ],
-    [ "rotor::actor_ctor_t< Actor, Supervisor, std::enable_if_t<!std::is_base_of_v< supervisor_t, Actor > > >", "structrotor_1_1actor__ctor__t_3_01Actor_00_01Supervisor_00_01std_1_1enable__if__t_3_9std_1_1is__0167353f4d473ac926cdbb46a687e2f6.html", null ],
+    [ "rotor::details::actor_ctor_t< Actor, Supervisor, IsSupervisor >", "structrotor_1_1details_1_1actor__ctor__t.html", null ],
+    [ "rotor::details::actor_ctor_t< Actor, Supervisor, std::enable_if_t< std::is_base_of_v< supervisor_t, Actor > > >", "structrotor_1_1details_1_1actor__ctor__t_3_01Actor_00_01Supervisor_00_01std_1_1enable__if__t_3_04843d29ffdcc1f5c3dad2affc584dbfb.html", null ],
+    [ "rotor::details::actor_ctor_t< Actor, Supervisor, std::enable_if_t<!std::is_base_of_v< supervisor_t, Actor > > >", "structrotor_1_1details_1_1actor__ctor__t_3_01Actor_00_01Supervisor_00_01std_1_1enable__if__t_3_916e055d1a80e68efba58382dc76fbd95.html", null ],
     [ "arc_base_t", null, [
       [ "rotor::actor_base_t", "structrotor_1_1actor__base__t.html", [
         [ "rotor::supervisor_t", "structrotor_1_1supervisor__t.html", [

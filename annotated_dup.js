@@ -12,6 +12,11 @@ var annotated_dup =
       [ "detail", null, [
         [ "error_code_category", "classrotor_1_1detail_1_1error__code__category.html", null ]
       ] ],
+      [ "details", null, [
+        [ "actor_ctor_t", "structrotor_1_1details_1_1actor__ctor__t.html", null ],
+        [ "actor_ctor_t< Actor, Supervisor, std::enable_if_t< std::is_base_of_v< supervisor_t, Actor > > >", "structrotor_1_1details_1_1actor__ctor__t_3_01Actor_00_01Supervisor_00_01std_1_1enable__if__t_3_04843d29ffdcc1f5c3dad2affc584dbfb.html", null ],
+        [ "actor_ctor_t< Actor, Supervisor, std::enable_if_t<!std::is_base_of_v< supervisor_t, Actor > > >", "structrotor_1_1details_1_1actor__ctor__t_3_01Actor_00_01Supervisor_00_01std_1_1enable__if__t_3_916e055d1a80e68efba58382dc76fbd95.html", null ]
+      ] ],
       [ "payload", null, [
         [ "commit_unsubscription_t", "structrotor_1_1payload_1_1commit__unsubscription__t.html", "structrotor_1_1payload_1_1commit__unsubscription__t" ],
         [ "create_actor_t", "structrotor_1_1payload_1_1create__actor__t.html", "structrotor_1_1payload_1_1create__actor__t" ],
@@ -35,9 +40,6 @@ var annotated_dup =
         [ "system_context_wx_t", "structrotor_1_1wx_1_1system__context__wx__t.html", "structrotor_1_1wx_1_1system__context__wx__t" ]
       ] ],
       [ "actor_base_t", "structrotor_1_1actor__base__t.html", "structrotor_1_1actor__base__t" ],
-      [ "actor_ctor_t", "structrotor_1_1actor__ctor__t.html", null ],
-      [ "actor_ctor_t< Actor, Supervisor, std::enable_if_t< std::is_base_of_v< supervisor_t, Actor > > >", "structrotor_1_1actor__ctor__t_3_01Actor_00_01Supervisor_00_01std_1_1enable__if__t_3_01std_1_1is_55a37be466564412c4a2f0312dba3666.html", null ],
-      [ "actor_ctor_t< Actor, Supervisor, std::enable_if_t<!std::is_base_of_v< supervisor_t, Actor > > >", "structrotor_1_1actor__ctor__t_3_01Actor_00_01Supervisor_00_01std_1_1enable__if__t_3_9std_1_1is__0167353f4d473ac926cdbb46a687e2f6.html", null ],
       [ "address_t", "structrotor_1_1address__t.html", "structrotor_1_1address__t" ],
       [ "handler_base_t", "structrotor_1_1handler__base__t.html", "structrotor_1_1handler__base__t" ],
       [ "handler_t", "structrotor_1_1handler__t.html", "structrotor_1_1handler__t" ],
