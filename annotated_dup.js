@@ -9,13 +9,11 @@ var annotated_dup =
         [ "supervisor_config_t", "structrotor_1_1asio_1_1supervisor__config__t.html", "structrotor_1_1asio_1_1supervisor__config__t" ],
         [ "system_context_asio_t", "structrotor_1_1asio_1_1system__context__asio__t.html", "structrotor_1_1asio_1_1system__context__asio__t" ]
       ] ],
-      [ "detail", null, [
-        [ "error_code_category", "classrotor_1_1detail_1_1error__code__category.html", null ]
-      ] ],
       [ "details", null, [
         [ "actor_ctor_t", "structrotor_1_1details_1_1actor__ctor__t.html", null ],
         [ "actor_ctor_t< Actor, Supervisor, std::enable_if_t< std::is_base_of_v< supervisor_t, Actor > > >", "structrotor_1_1details_1_1actor__ctor__t_3_01Actor_00_01Supervisor_00_01std_1_1enable__if__t_3_04843d29ffdcc1f5c3dad2affc584dbfb.html", null ],
-        [ "actor_ctor_t< Actor, Supervisor, std::enable_if_t<!std::is_base_of_v< supervisor_t, Actor > > >", "structrotor_1_1details_1_1actor__ctor__t_3_01Actor_00_01Supervisor_00_01std_1_1enable__if__t_3_916e055d1a80e68efba58382dc76fbd95.html", null ]
+        [ "actor_ctor_t< Actor, Supervisor, std::enable_if_t<!std::is_base_of_v< supervisor_t, Actor > > >", "structrotor_1_1details_1_1actor__ctor__t_3_01Actor_00_01Supervisor_00_01std_1_1enable__if__t_3_916e055d1a80e68efba58382dc76fbd95.html", null ],
+        [ "error_code_category", "classrotor_1_1details_1_1error__code__category.html", null ]
       ] ],
       [ "payload", null, [
         [ "commit_unsubscription_t", "structrotor_1_1payload_1_1commit__unsubscription__t.html", "structrotor_1_1payload_1_1commit__unsubscription__t" ],

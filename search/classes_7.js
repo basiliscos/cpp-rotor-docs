@@ -10,7 +10,7 @@ var searchData=
   ['subscription_5frequest_5ft',['subscription_request_t',['../structrotor_1_1actor__base__t_1_1subscription__request__t.html',1,'rotor::actor_base_t']]],
   ['subscription_5ft',['subscription_t',['../structrotor_1_1subscription__t.html',1,'rotor']]],
   ['supervisor_5fasio_5ft',['supervisor_asio_t',['../structrotor_1_1asio_1_1supervisor__asio__t.html',1,'rotor::asio']]],
-  ['supervisor_5fconfig_5ft',['supervisor_config_t',['../structrotor_1_1wx_1_1supervisor__config__t.html',1,'rotor::wx::supervisor_config_t'],['../structrotor_1_1asio_1_1supervisor__config__t.html',1,'rotor::asio::supervisor_config_t']]],
+  ['supervisor_5fconfig_5ft',['supervisor_config_t',['../structrotor_1_1asio_1_1supervisor__config__t.html',1,'rotor::asio::supervisor_config_t'],['../structrotor_1_1wx_1_1supervisor__config__t.html',1,'rotor::wx::supervisor_config_t']]],
   ['supervisor_5ft',['supervisor_t',['../structrotor_1_1supervisor__t.html',1,'rotor']]],
   ['supervisor_5fwx_5ft',['supervisor_wx_t',['../structrotor_1_1wx_1_1supervisor__wx__t.html',1,'rotor::wx']]],
   ['system_5fcontext_5fasio_5ft',['system_context_asio_t',['../structrotor_1_1asio_1_1system__context__asio__t.html',1,'rotor::asio']]],

@@ -27,7 +27,7 @@ var hierarchy =
     [ "rotor::payload::create_actor_t", "structrotor_1_1payload_1_1create__actor__t.html", null ],
     [ "rotor::asio::curry_arg_t< Args >", "structrotor_1_1asio_1_1curry__arg__t.html", null ],
     [ "error_category", null, [
-      [ "rotor::detail::error_code_category", "classrotor_1_1detail_1_1error__code__category.html", null ]
+      [ "rotor::details::error_code_category", "classrotor_1_1details_1_1error__code__category.html", null ]
     ] ],
     [ "rotor::payload::external_subscription_t", "structrotor_1_1payload_1_1external__subscription__t.html", null ],
     [ "rotor::payload::external_unsubscription_t", "structrotor_1_1payload_1_1external__unsubscription__t.html", null ],
@@ -48,8 +48,8 @@ var hierarchy =
     [ "rotor::payload::subscription_confirmation_t", "structrotor_1_1payload_1_1subscription__confirmation__t.html", null ],
     [ "rotor::actor_base_t::subscription_request_t", "structrotor_1_1actor__base__t_1_1subscription__request__t.html", null ],
     [ "rotor::subscription_t", "structrotor_1_1subscription__t.html", null ],
-    [ "rotor::wx::supervisor_config_t", "structrotor_1_1wx_1_1supervisor__config__t.html", null ],
     [ "rotor::asio::supervisor_config_t", "structrotor_1_1asio_1_1supervisor__config__t.html", null ],
+    [ "rotor::wx::supervisor_config_t", "structrotor_1_1wx_1_1supervisor__config__t.html", null ],
     [ "true_type", null, [
       [ "std::is_error_code_enum< rotor::error_code_t >", "structstd_1_1is__error__code__enum_3_01rotor_1_1error__code__t_01_4.html", null ]
     ] ],

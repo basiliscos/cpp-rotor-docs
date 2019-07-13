@@ -5,7 +5,7 @@ var dir_da0296186b2d7ca79d094f0811fc0b6f =
     [ "actor_base.h", "actor__base_8h_source.html", null ],
     [ "address.hpp", "address_8hpp_source.html", null ],
     [ "arc.hpp", "arc_8hpp_source.html", null ],
-    [ "asio.hpp", "asio_8hpp_source.html", null ],
+    [ "asio.hpp", "asio_8hpp.html", null ],
     [ "error_code.h", "error__code_8h_source.html", null ],
     [ "handler.hpp", "handler_8hpp_source.html", null ],
     [ "message.h", "message_8h_source.html", null ],
@@ -14,5 +14,5 @@ var dir_da0296186b2d7ca79d094f0811fc0b6f =
     [ "subscription.h", "subscription_8h_source.html", null ],
     [ "supervisor.h", "supervisor_8h_source.html", null ],
     [ "system_context.h", "system__context_8h_source.html", null ],
-    [ "wx.hpp", "wx_8hpp_source.html", null ]
+    [ "wx.hpp", "wx_8hpp.html", null ]
 ];
