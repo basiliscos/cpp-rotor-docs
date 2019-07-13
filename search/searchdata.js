@@ -3,9 +3,10 @@ var indexSectionsWithContent =
   0: "acdefghilmoprstuw",
   1: "acefhimsu",
   2: "arw",
-  3: "gm",
+  3: "cgmosu",
   4: "ahmoprst",
-  5: "cdeilpr"
+  5: "ls",
+  6: "cdeilpr"
 };
 
 var indexSectionNames =
@@ -15,7 +16,8 @@ var indexSectionNames =
   2: "files",
   3: "functions",
   4: "variables",
-  5: "pages"
+  5: "typedefs",
+  6: "pages"
 };
 
 var indexSectionLabels =
@@ -25,6 +27,7 @@ var indexSectionLabels =
   2: "Files",
   3: "Functions",
   4: "Variables",
-  5: "Pages"
+  5: "Typedefs",
+  6: "Pages"
 };
 
