@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('structrotor_1_1message__base__t.html',
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structrotor_1_1message__base__t-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">rotor::message_base_t Struct Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">rotor::message_base_t Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -121,16 +121,16 @@ Inheritance diagram for rotor::message_base_t:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a03f93129515d3bb3f9d138736722367d"><td class="memItemLeft" align="right" valign="top">virtual const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1message__base__t.html#a03f93129515d3bb3f9d138736722367d">get_type_index</a> () const noexcept=0</td></tr>
-<tr class="memdesc:a03f93129515d3bb3f9d138736722367d"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns unique message type pointer.  <a href="#a03f93129515d3bb3f9d138736722367d">More...</a><br /></td></tr>
-<tr class="separator:a03f93129515d3bb3f9d138736722367d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e018ab50ad8e3afde39fd9b7d8ea641"><td class="memItemLeft" align="right" valign="top"><a id="a7e018ab50ad8e3afde39fd9b7d8ea641"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1message__base__t.html#a7e018ab50ad8e3afde39fd9b7d8ea641">message_base_t</a> (const address_ptr_t &amp;addr)</td></tr>
-<tr class="memdesc:a7e018ab50ad8e3afde39fd9b7d8ea641"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor which takes destination address <br /></td></tr>
-<tr class="separator:a7e018ab50ad8e3afde39fd9b7d8ea641"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6be6d6a87442c3948f055168a5566103"><td class="memItemLeft" align="right" valign="top"><a id="a6be6d6a87442c3948f055168a5566103"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1message__base__t.html#a6be6d6a87442c3948f055168a5566103">message_base_t</a> (const void *type_index_, const address_ptr_t &amp;addr)</td></tr>
+<tr class="memdesc:a6be6d6a87442c3948f055168a5566103"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor which takes destination address <br /></td></tr>
+<tr class="separator:a6be6d6a87442c3948f055168a5566103"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a81c4fa82e6b8b9e1af82535ca2596a42"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1message__base__t.html#a81c4fa82e6b8b9e1af82535ca2596a42">type_index</a></td></tr>
+<tr class="memdesc:a81c4fa82e6b8b9e1af82535ca2596a42"><td class="mdescLeft">&#160;</td><td class="mdescRight">unique message type pointer.  <a href="#a81c4fa82e6b8b9e1af82535ca2596a42">More...</a><br /></td></tr>
+<tr class="separator:a81c4fa82e6b8b9e1af82535ca2596a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef75908f401aaf310db1f578f316f2c2"><td class="memItemLeft" align="right" valign="top"><a id="aef75908f401aaf310db1f578f316f2c2"></a>
 address_ptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1message__base__t.html#aef75908f401aaf310db1f578f316f2c2">address</a></td></tr>
 <tr class="memdesc:aef75908f401aaf310db1f578f316f2c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">message destination address <br /></td></tr>
@@ -140,34 +140,21 @@ address_ptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 <div class="textblock"><p>Base class for <code>rotor</code> message. </p>
 <p>The base class contains destinanation address (in the form of intrusive pointer to <code><a class="el" href="structrotor_1_1address__t.html" title="Message subscription and delivery point.">address_t</a></code>) and possibility to detect final message type.</p>
 <p>The actual message payload meant to be provided by derived classes </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a03f93129515d3bb3f9d138736722367d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03f93129515d3bb3f9d138736722367d">&#9670;&nbsp;</a></span>get_type_index()</h2>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a81c4fa82e6b8b9e1af82535ca2596a42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81c4fa82e6b8b9e1af82535ca2596a42">&#9670;&nbsp;</a></span>type_index</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual const void* rotor::message_base_t::get_type_index </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="memname">const void* rotor::message_base_t::type_index</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>returns unique message type pointer. </p>
+<p>unique message type pointer. </p>
 <p>The unique message type pointer is used to runtime check message type match when the message is delivered to subscribers. </p>
-
-<p>Implemented in <a class="el" href="structrotor_1_1message__t.html#a1380a6a15f878d14d1ff2279333b4b56">rotor::message_t&lt; T &gt;</a>.</p>
 
 </div>
 </div>

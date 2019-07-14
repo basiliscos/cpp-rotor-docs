@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['slot_5ft',['slot_t',['../structrotor_1_1subscription__t.html#aa76bde898873c69ff424000fbe481128',1,'rotor::subscription_t']]]
+  ['list_5ft',['list_t',['../structrotor_1_1subscription__t.html#a3883ba01aef396e78e0fd541eff4aa21',1,'rotor::subscription_t']]]
 ];

@@ -1,10 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"structrotor_1_1system__context__t.html#a7ebf80215d99ae693e156bd3cb57ecf6":[7,0,0,14,1],
-"structrotor_1_1system__context__t.html#a8422647915ad4f7e555cbda95131fcc8":[7,0,0,14,7],
-"structrotor_1_1system__context__t.html#a909e97e8da9c9e398035de331646755d":[7,0,0,14,3],
-"structrotor_1_1system__context__t.html#a95cd55372487ac71423a9523967af4aa":[7,0,0,14,2],
-"structrotor_1_1system__context__t.html#ad4450478ac157abf0a249911b17b3b36":[7,0,0,14,5],
 "structrotor_1_1wx_1_1shutdown__timer__t.html":[7,0,0,3,0],
 "structrotor_1_1wx_1_1shutdown__timer__t.html#a90c5cd63301939c825c3a4714eb72590":[7,0,0,3,0,2],
 "structrotor_1_1wx_1_1shutdown__timer__t.html#ad453a147de10f4088c42957de59cb93c":[7,0,0,3,0,1],

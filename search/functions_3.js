@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['on_5ferror',['on_error',['../structrotor_1_1system__context__t.html#a386a4eac0cf949f0741f26dcfc36d123',1,'rotor::system_context_t']]],
-  ['operator_28_29',['operator()',['../structstd_1_1hash_3_01rotor_1_1address__ptr__t_01_4.html#af9a6d174dee59f9b5749d144628605a9',1,'std::hash&lt; rotor::address_ptr_t &gt;']]]
+  ['message_5fbase_5ft',['message_base_t',['../structrotor_1_1message__base__t.html#a6be6d6a87442c3948f055168a5566103',1,'rotor::message_base_t']]],
+  ['message_5ft',['message_t',['../structrotor_1_1message__t.html#a68ab9ac3824b2e8a4e9583cdea2e1f33',1,'rotor::message_t']]]
 ];

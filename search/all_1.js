@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['call',['call',['../structrotor_1_1handler__base__t.html#ad7edf5fb09fabed9f071b27c5986050d',1,'rotor::handler_base_t::call()'],['../structrotor_1_1handler__t.html#a9a23941abab04ea95b2c3402722f8617',1,'rotor::handler_t::call()']]],
   ['classified_5fhandlers_5ft',['classified_handlers_t',['../structrotor_1_1subscription__t_1_1classified__handlers__t.html',1,'rotor::subscription_t']]],
   ['commit_5funsubscription_5ft',['commit_unsubscription_t',['../structrotor_1_1payload_1_1commit__unsubscription__t.html',1,'rotor::payload']]],
   ['create_5factor_5ft',['create_actor_t',['../structrotor_1_1payload_1_1create__actor__t.html',1,'rotor::payload']]],

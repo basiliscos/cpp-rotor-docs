@@ -51,7 +51,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"structrotor_1_1system__context__t.html#a7ebf80215d99ae693e156bd3cb57ecf6"
+"structrotor_1_1wx_1_1shutdown__timer__t.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

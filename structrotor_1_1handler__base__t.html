@@ -104,49 +104,96 @@ $(document).ready(function(){initNavTree('structrotor_1_1handler__base__t.html',
 <div class="title">rotor::handler_base_t Struct Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Base class for <code>rotor</code> handler, i.e concrete message type processing point on concrete actor.  
+ <a href="structrotor_1_1handler__base__t.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="handler_8hpp_source.html">handler.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for rotor::handler_base_t:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="structrotor_1_1handler__base__t.png" usemap="#rotor::handler_5Fbase_5Ft_map" alt=""/>
   <map id="rotor::handler_5Fbase_5Ft_map" name="rotor::handler_5Fbase_5Ft_map">
-<area href="structrotor_1_1handler__t.html" alt="rotor::handler_t&lt; Handler &gt;" shape="rect" coords="0,112,186,136"/>
+<area href="structrotor_1_1handler__t.html" title="the generic handler meant to hold user-specific pointer-to-member function" alt="rotor::handler_t&lt; Handler &gt;" shape="rect" coords="0,112,186,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad3003dfe292068466a213632f177e2d9"><td class="memItemLeft" align="right" valign="top"><a id="ad3003dfe292068466a213632f177e2d9"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>handler_base_t</b> (<a class="el" href="structrotor_1_1actor__base__t.html">actor_base_t</a> *actor, const void *message_type_, const void *handler_type_)</td></tr>
-<tr class="separator:ad3003dfe292068466a213632f177e2d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19e8b119ff56c91f34b69e745b5a4ae0"><td class="memItemLeft" align="right" valign="top"><a id="a19e8b119ff56c91f34b69e745b5a4ae0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1handler__base__t.html#a19e8b119ff56c91f34b69e745b5a4ae0">handler_base_t</a> (<a class="el" href="structrotor_1_1actor__base__t.html">actor_base_t</a> &amp;actor, const void *message_type_, const void *handler_type_)</td></tr>
+<tr class="memdesc:a19e8b119ff56c91f34b69e745b5a4ae0"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructs <code><a class="el" href="structrotor_1_1handler__base__t.html" title="Base class for rotor handler, i.e concrete message type processing point on concrete actor.">handler_base_t</a></code> from raw pointer to actor, raw pointer to message type and raw pointer to handler type <br /></td></tr>
+<tr class="separator:a19e8b119ff56c91f34b69e745b5a4ae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a912089fff00f9a9a16ac42f3c2c751d6"><td class="memItemLeft" align="right" valign="top"><a id="a912089fff00f9a9a16ac42f3c2c751d6"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="structrotor_1_1handler__base__t.html">handler_base_t</a> &amp;rhs) const noexcept</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1handler__base__t.html#a912089fff00f9a9a16ac42f3c2c751d6">operator==</a> (const <a class="el" href="structrotor_1_1handler__base__t.html">handler_base_t</a> &amp;rhs) const noexcept</td></tr>
+<tr class="memdesc:a912089fff00f9a9a16ac42f3c2c751d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">compare two handler for equality <br /></td></tr>
 <tr class="separator:a912089fff00f9a9a16ac42f3c2c751d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7edf5fb09fabed9f071b27c5986050d"><td class="memItemLeft" align="right" valign="top"><a id="ad7edf5fb09fabed9f071b27c5986050d"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>call</b> (message_ptr_t &amp;) noexcept=0</td></tr>
+<tr class="memitem:ad7edf5fb09fabed9f071b27c5986050d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1handler__base__t.html#ad7edf5fb09fabed9f071b27c5986050d">call</a> (message_ptr_t &amp;) noexcept=0</td></tr>
+<tr class="memdesc:ad7edf5fb09fabed9f071b27c5986050d"><td class="mdescLeft">&#160;</td><td class="mdescRight">attempt to delivery message to he handler  <a href="#ad7edf5fb09fabed9f071b27c5986050d">More...</a><br /></td></tr>
 <tr class="separator:ad7edf5fb09fabed9f071b27c5986050d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a382ecf3837c1420f8982a65e016c4d78"><td class="memItemLeft" align="right" valign="top"><a id="a382ecf3837c1420f8982a65e016c4d78"></a>
-const void *&#160;</td><td class="memItemRight" valign="bottom"><b>raw_actor_ptr</b></td></tr>
-<tr class="separator:a382ecf3837c1420f8982a65e016c4d78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98fbce0711aa45d8590af902442a4641"><td class="memItemLeft" align="right" valign="top"><a id="a98fbce0711aa45d8590af902442a4641"></a>
-const void *&#160;</td><td class="memItemRight" valign="bottom"><b>message_type</b></td></tr>
+const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1handler__base__t.html#a98fbce0711aa45d8590af902442a4641">message_type</a></td></tr>
+<tr class="memdesc:a98fbce0711aa45d8590af902442a4641"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointer to unique message type ( <code>typeid(Message).name()</code> ) <br /></td></tr>
 <tr class="separator:a98fbce0711aa45d8590af902442a4641"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2db4dfad16c33d485f457583760bfc3"><td class="memItemLeft" align="right" valign="top"><a id="ad2db4dfad16c33d485f457583760bfc3"></a>
-const void *&#160;</td><td class="memItemRight" valign="bottom"><b>handler_type</b></td></tr>
+const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1handler__base__t.html#ad2db4dfad16c33d485f457583760bfc3">handler_type</a></td></tr>
+<tr class="memdesc:ad2db4dfad16c33d485f457583760bfc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointer to unique handler type ( <code>typeid(Handler).name()</code> ) <br /></td></tr>
 <tr class="separator:ad2db4dfad16c33d485f457583760bfc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e49e60847978e4db7289a16a784d822"><td class="memItemLeft" align="right" valign="top"><a id="a4e49e60847978e4db7289a16a784d822"></a>
-supervisor_ptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>supervisor</b></td></tr>
-<tr class="separator:a4e49e60847978e4db7289a16a784d822"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0efd59cc804025ba4bb600e8940cc07"><td class="memItemLeft" align="right" valign="top"><a id="ad0efd59cc804025ba4bb600e8940cc07"></a>
-address_ptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>actor_addr</b></td></tr>
-<tr class="separator:ad0efd59cc804025ba4bb600e8940cc07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a026b4411c3c51a1ca826a8fc9ef118"><td class="memItemLeft" align="right" valign="top"><a id="a0a026b4411c3c51a1ca826a8fc9ef118"></a>
+actor_ptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1handler__base__t.html#a0a026b4411c3c51a1ca826a8fc9ef118">actor_ptr</a></td></tr>
+<tr class="memdesc:a0a026b4411c3c51a1ca826a8fc9ef118"><td class="mdescLeft">&#160;</td><td class="mdescRight">intrusive poiter to <a class="el" href="structrotor_1_1actor__base__t.html">actor_base_t</a> the actor of the handler <br /></td></tr>
+<tr class="separator:a0a026b4411c3c51a1ca826a8fc9ef118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a382ecf3837c1420f8982a65e016c4d78"><td class="memItemLeft" align="right" valign="top"><a id="a382ecf3837c1420f8982a65e016c4d78"></a>
+const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1handler__base__t.html#a382ecf3837c1420f8982a65e016c4d78">raw_actor_ptr</a></td></tr>
+<tr class="memdesc:a382ecf3837c1420f8982a65e016c4d78"><td class="mdescLeft">&#160;</td><td class="mdescRight">non-owning raw poiter to acto r <br /></td></tr>
+<tr class="separator:a382ecf3837c1420f8982a65e016c4d78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7520619ae7899637541c4f0e37c9c954"><td class="memItemLeft" align="right" valign="top"><a id="a7520619ae7899637541c4f0e37c9c954"></a>
+<a class="el" href="structrotor_1_1supervisor__t.html">supervisor_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1handler__base__t.html#a7520619ae7899637541c4f0e37c9c954">raw_supervisor_ptr</a></td></tr>
+<tr class="memdesc:a7520619ae7899637541c4f0e37c9c954"><td class="mdescLeft">&#160;</td><td class="mdescRight">non-owning raw poiter to acto r <br /></td></tr>
+<tr class="separator:a7520619ae7899637541c4f0e37c9c954"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4374640eac9254877b8f33e3916d4ee5"><td class="memItemLeft" align="right" valign="top"><a id="a4374640eac9254877b8f33e3916d4ee5"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>precalc_hash</b></td></tr>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1handler__base__t.html#a4374640eac9254877b8f33e3916d4ee5">precalc_hash</a></td></tr>
+<tr class="memdesc:a4374640eac9254877b8f33e3916d4ee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">precalculated hash for the handler <br /></td></tr>
 <tr class="separator:a4374640eac9254877b8f33e3916d4ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Base class for <code>rotor</code> handler, i.e concrete message type processing point on concrete actor. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad7edf5fb09fabed9f071b27c5986050d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7edf5fb09fabed9f071b27c5986050d">&#9670;&nbsp;</a></span>call()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void rotor::handler_base_t::call </td>
+          <td>(</td>
+          <td class="paramtype">message_ptr_t &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>attempt to delivery message to he handler </p>
+<p>The message is delivered only if its type matches to the handler message type, otherwise it is silently ignored </p>
+
+<p>Implemented in <a class="el" href="structrotor_1_1handler__t.html#a9a23941abab04ea95b2c3402722f8617">rotor::handler_t&lt; Handler &gt;</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/home/b/development/cpp/cpp-rotor/include/rotor/<a class="el" href="handler_8hpp_source.html">handler.hpp</a></li>
 </ul>
