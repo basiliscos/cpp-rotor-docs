@@ -1,7 +1,7 @@
 var structrotor_1_1actor__base__t =
 [
-    [ "subscription_request_t", "structrotor_1_1actor__base__t_1_1subscription__request__t.html", "structrotor_1_1actor__base__t_1_1subscription__request__t" ],
-    [ "subscription_points_t", "structrotor_1_1actor__base__t.html#a39a5ea14ad160e70dda841cba9a6837b", null ],
+    [ "subscription_point_t", "structrotor_1_1actor__base__t_1_1subscription__point__t.html", "structrotor_1_1actor__base__t_1_1subscription__point__t" ],
+    [ "subscription_points_t", "structrotor_1_1actor__base__t.html#aa4feb2f49ee3d796e0b400068098bef5", null ],
     [ "actor_base_t", "structrotor_1_1actor__base__t.html#ad337de3613a3a43a9128b5c9020f812b", null ],
     [ "~actor_base_t", "structrotor_1_1actor__base__t.html#ae29aa3ddfed22fcc53944c32541d6dc3", null ],
     [ "confirm_shutdown", "structrotor_1_1actor__base__t.html#ae2010538b08d1dbafdecfe4953245bc4", null ],
@@ -20,10 +20,10 @@ var structrotor_1_1actor__base__t =
     [ "on_unsubscription", "structrotor_1_1actor__base__t.html#ac4287fe3191485ba8c99c7f176dc5348", null ],
     [ "remove_subscription", "structrotor_1_1actor__base__t.html#a465427daf18d178baec930ec0ec8530a", null ],
     [ "send", "structrotor_1_1actor__base__t.html#a6ab9820e36e2f216fef92c2eacb4746b", null ],
-    [ "subscribe", "structrotor_1_1actor__base__t.html#ada78a5fb0ef4342ed7805ece0320b1c2", null ],
     [ "subscribe", "structrotor_1_1actor__base__t.html#a61867c7033d55bed0fc66a91350c269f", null ],
-    [ "unsubscribe", "structrotor_1_1actor__base__t.html#a3a36666529aeef79e9bd6d13628b5355", null ],
+    [ "subscribe", "structrotor_1_1actor__base__t.html#ada78a5fb0ef4342ed7805ece0320b1c2", null ],
     [ "unsubscribe", "structrotor_1_1actor__base__t.html#adb01ecfeb2b9957dca351f15b7f77d5d", null ],
+    [ "unsubscribe", "structrotor_1_1actor__base__t.html#a3a36666529aeef79e9bd6d13628b5355", null ],
     [ "supervisor_t", "structrotor_1_1actor__base__t.html#a8422647915ad4f7e555cbda95131fcc8", null ],
     [ "address", "structrotor_1_1actor__base__t.html#afad3a40184e18b3bb7ea2e9e50115edb", null ],
     [ "points", "structrotor_1_1actor__base__t.html#a9eabdfa2eef776fdfe38bc8c5631dc58", null ],

@@ -46,7 +46,7 @@ var hierarchy =
     [ "rotor::payload::state_request_t", "structrotor_1_1payload_1_1state__request__t.html", null ],
     [ "rotor::payload::state_response_t", "structrotor_1_1payload_1_1state__response__t.html", null ],
     [ "rotor::payload::subscription_confirmation_t", "structrotor_1_1payload_1_1subscription__confirmation__t.html", null ],
-    [ "rotor::actor_base_t::subscription_request_t", "structrotor_1_1actor__base__t_1_1subscription__request__t.html", null ],
+    [ "rotor::actor_base_t::subscription_point_t", "structrotor_1_1actor__base__t_1_1subscription__point__t.html", null ],
     [ "rotor::subscription_t", "structrotor_1_1subscription__t.html", null ],
     [ "rotor::asio::supervisor_config_t", "structrotor_1_1asio_1_1supervisor__config__t.html", null ],
     [ "rotor::wx::supervisor_config_t", "structrotor_1_1wx_1_1supervisor__config__t.html", null ],

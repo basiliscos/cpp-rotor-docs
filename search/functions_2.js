@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['handler_5fbase_5ft',['handler_base_t',['../structrotor_1_1handler__base__t.html#a19e8b119ff56c91f34b69e745b5a4ae0',1,'rotor::handler_base_t']]],
-  ['handler_5ft',['handler_t',['../structrotor_1_1handler__t.html#a65fb7db3518e958aea03f182de6a3f7d',1,'rotor::handler_t']]]
+  ['do_5finitialize',['do_initialize',['../structrotor_1_1actor__base__t.html#abff45f2bc3495a047ac3c0247d2893e7',1,'rotor::actor_base_t::do_initialize()'],['../structrotor_1_1supervisor__t.html#adbdc3a7be74c1152a648217967b409bd',1,'rotor::supervisor_t::do_initialize()']]],
+  ['do_5fshutdown',['do_shutdown',['../structrotor_1_1actor__base__t.html#af6baa4ad8578c529a9b15fcb947d4472',1,'rotor::actor_base_t']]]
 ];
