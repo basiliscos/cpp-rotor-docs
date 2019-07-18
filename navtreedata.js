@@ -31,6 +31,9 @@ var NAVTREE =
     [ "Event loops & platforms", "md__home_b_development_cpp_cpp-rotor_docs_Loops.html", null ],
     [ "Patterns", "md__home_b_development_cpp_cpp-rotor_docs_Patterns.html", null ],
     [ "License", "md__home_b_development_cpp_cpp-rotor_docs_License.html", null ],
+    [ "Namespaces", "namespaces.html", [
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ]
+    ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -51,7 +54,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"structrotor_1_1system__context__t.html#ad4450478ac157abf0a249911b17b3b36"
+"structrotor_1_1system__context__t.html#a7ebf80215d99ae693e156bd3cb57ecf6"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
