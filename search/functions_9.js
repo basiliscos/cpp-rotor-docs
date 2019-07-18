@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['unsubscribe',['unsubscribe',['../structrotor_1_1actor__base__t.html#adb01ecfeb2b9957dca351f15b7f77d5d',1,'rotor::actor_base_t::unsubscribe(Handler &amp;&amp;h, address_ptr_t &amp;addr) noexcept'],['../structrotor_1_1actor__base__t.html#a3a36666529aeef79e9bd6d13628b5355',1,'rotor::actor_base_t::unsubscribe(Handler &amp;&amp;h) noexcept'],['../structrotor_1_1subscription__t.html#a1a994055c1d24ce1b8ec3f11eba9a010',1,'rotor::subscription_t::unsubscribe()']]]
+  ['remove_5factor',['remove_actor',['../structrotor_1_1supervisor__t.html#a335b98bbe0df15fe343be29d7f3daf7a',1,'rotor::supervisor_t']]],
+  ['remove_5fsubscription',['remove_subscription',['../structrotor_1_1actor__base__t.html#a465427daf18d178baec930ec0ec8530a',1,'rotor::actor_base_t']]]
 ];

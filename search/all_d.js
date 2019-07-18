@@ -1,26 +1,10 @@
 var searchData=
 [
-  ['send',['send',['../structrotor_1_1actor__base__t.html#a6ab9820e36e2f216fef92c2eacb4746b',1,'rotor::actor_base_t']]],
-  ['shutdown_5fconfirmation_5ft',['shutdown_confirmation_t',['../structrotor_1_1payload_1_1shutdown__confirmation__t.html',1,'rotor::payload']]],
-  ['shutdown_5frequest_5ft',['shutdown_request_t',['../structrotor_1_1payload_1_1shutdown__request__t.html',1,'rotor::payload']]],
-  ['shutdown_5ftimer_5ft',['shutdown_timer_t',['../structrotor_1_1wx_1_1shutdown__timer__t.html',1,'rotor::wx']]],
-  ['slot_5ft',['slot_t',['../structrotor_1_1subscription__t.html#aa76bde898873c69ff424000fbe481128',1,'rotor::subscription_t']]],
-  ['start_5factor_5ft',['start_actor_t',['../structrotor_1_1payload_1_1start__actor__t.html',1,'rotor::payload']]],
-  ['state',['state',['../structrotor_1_1actor__base__t.html#ace7dad5e2a06711664bb7d0c70d1f1c7',1,'rotor::actor_base_t::state()'],['../structrotor_1_1payload_1_1state__response__t.html#a61962959bb905a4077333bf17dd57b06',1,'rotor::payload::state_response_t::state()']]],
-  ['state_5frequest_5ft',['state_request_t',['../structrotor_1_1payload_1_1state__request__t.html',1,'rotor::payload']]],
-  ['state_5fresponse_5ft',['state_response_t',['../structrotor_1_1payload_1_1state__response__t.html',1,'rotor::payload']]],
-  ['subject_5faddr',['subject_addr',['../structrotor_1_1payload_1_1state__request__t.html#a68d4762a08a477f0b6d164574f9828a9',1,'rotor::payload::state_request_t::subject_addr()'],['../structrotor_1_1payload_1_1state__response__t.html#a0f0dee7258164e60e50f385be2242fd7',1,'rotor::payload::state_response_t::subject_addr()']]],
-  ['subscribe',['subscribe',['../structrotor_1_1actor__base__t.html#a61867c7033d55bed0fc66a91350c269f',1,'rotor::actor_base_t::subscribe(Handler &amp;&amp;h, address_ptr_t &amp;addr) noexcept'],['../structrotor_1_1actor__base__t.html#ada78a5fb0ef4342ed7805ece0320b1c2',1,'rotor::actor_base_t::subscribe(Handler &amp;&amp;h) noexcept'],['../structrotor_1_1subscription__t.html#a5997092abda33663261d29f911add359',1,'rotor::subscription_t::subscribe()']]],
-  ['subscription_5fconfirmation_5ft',['subscription_confirmation_t',['../structrotor_1_1payload_1_1subscription__confirmation__t.html',1,'rotor::payload']]],
-  ['subscription_5fpoint_5ft',['subscription_point_t',['../structrotor_1_1actor__base__t_1_1subscription__point__t.html',1,'rotor::actor_base_t']]],
-  ['subscription_5fpoints_5ft',['subscription_points_t',['../structrotor_1_1actor__base__t.html#aa4feb2f49ee3d796e0b400068098bef5',1,'rotor::actor_base_t']]],
-  ['subscription_5ft',['subscription_t',['../structrotor_1_1subscription__t.html',1,'rotor::subscription_t'],['../structrotor_1_1subscription__t.html#a1d2350739f8ec0cc9f95461f571ff0d5',1,'rotor::subscription_t::subscription_t()']]],
-  ['supervisor',['supervisor',['../structrotor_1_1actor__base__t.html#a8883a9334ace7138712b201cea41303d',1,'rotor::actor_base_t::supervisor()'],['../structrotor_1_1address__t.html#ab125833b47a481d1a864d224568d3179',1,'rotor::address_t::supervisor()']]],
-  ['supervisor_5fasio_5ft',['supervisor_asio_t',['../structrotor_1_1asio_1_1supervisor__asio__t.html',1,'rotor::asio']]],
-  ['supervisor_5fconfig_5ft',['supervisor_config_t',['../structrotor_1_1asio_1_1supervisor__config__t.html',1,'rotor::asio::supervisor_config_t'],['../structrotor_1_1wx_1_1supervisor__config__t.html',1,'rotor::wx::supervisor_config_t']]],
-  ['supervisor_5ft',['supervisor_t',['../structrotor_1_1supervisor__t.html',1,'rotor']]],
-  ['supervisor_5fwx_5ft',['supervisor_wx_t',['../structrotor_1_1wx_1_1supervisor__wx__t.html',1,'rotor::wx']]],
-  ['system_5fcontext_5fasio_5ft',['system_context_asio_t',['../structrotor_1_1asio_1_1system__context__asio__t.html',1,'rotor::asio']]],
-  ['system_5fcontext_5ft',['system_context_t',['../structrotor_1_1system__context__t.html',1,'rotor']]],
-  ['system_5fcontext_5fwx_5ft',['system_context_wx_t',['../structrotor_1_1wx_1_1system__context__wx__t.html',1,'rotor::wx']]]
+  ['rationale',['Rationale',['../md__home_b_development_cpp_cpp-rotor_docs_Rationale.html',1,'']]],
+  ['raw_5factor_5fptr',['raw_actor_ptr',['../structrotor_1_1handler__base__t.html#a382ecf3837c1420f8982a65e016c4d78',1,'rotor::handler_base_t']]],
+  ['raw_5fsupervisor_5fptr',['raw_supervisor_ptr',['../structrotor_1_1handler__base__t.html#a7520619ae7899637541c4f0e37c9c954',1,'rotor::handler_base_t']]],
+  ['remove_5factor',['remove_actor',['../structrotor_1_1supervisor__t.html#a335b98bbe0df15fe343be29d7f3daf7a',1,'rotor::supervisor_t']]],
+  ['remove_5fsubscription',['remove_subscription',['../structrotor_1_1actor__base__t.html#a465427daf18d178baec930ec0ec8530a',1,'rotor::actor_base_t']]],
+  ['reply_5faddr',['reply_addr',['../structrotor_1_1payload_1_1state__request__t.html#a4810f318826252b476d62d24262d3f51',1,'rotor::payload::state_request_t']]],
+  ['rotor_2ehpp',['rotor.hpp',['../rotor_8hpp.html',1,'']]]
 ];

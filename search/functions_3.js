@@ -1,8 +1,4 @@
 var searchData=
 [
-  ['get_5faddress',['get_address',['../structrotor_1_1actor__base__t.html#af99e298d3e730fe975642cfb62c07431',1,'rotor::actor_base_t']]],
-  ['get_5frecipients',['get_recipients',['../structrotor_1_1subscription__t.html#a989fcbf53bc2f5acf106945b22a24606',1,'rotor::subscription_t']]],
-  ['get_5fstate',['get_state',['../structrotor_1_1actor__base__t.html#a11818a1cd56de2a0fcc69556835faa62',1,'rotor::actor_base_t']]],
-  ['get_5fsubscription_5fpoints',['get_subscription_points',['../structrotor_1_1actor__base__t.html#a9a04ac4789fda04ff55981331140faed',1,'rotor::actor_base_t']]],
-  ['get_5fsupervisor',['get_supervisor',['../structrotor_1_1actor__base__t.html#a34079b0bd2619cfe7dce3f4f7bacef62',1,'rotor::actor_base_t::get_supervisor()'],['../structrotor_1_1system__context__t.html#ad4450478ac157abf0a249911b17b3b36',1,'rotor::system_context_t::get_supervisor()']]]
+  ['enqueue',['enqueue',['../structrotor_1_1asio_1_1supervisor__asio__t.html#a0ce7fa81f4d6dc519ff9c62b1d5123c9',1,'rotor::asio::supervisor_asio_t::enqueue()'],['../structrotor_1_1supervisor__t.html#aaf99e587b441bb5e68b0c500ffedf14f',1,'rotor::supervisor_t::enqueue()'],['../structrotor_1_1wx_1_1supervisor__wx__t.html#af01804f732f69e0dc198ef79b72171cc',1,'rotor::wx::supervisor_wx_t::enqueue()']]]
 ];
