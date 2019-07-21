@@ -103,14 +103,24 @@ $(document).ready(function(){initNavTree('structrotor_1_1details_1_1actor__ctor_
 <div class="title">rotor::details::actor_ctor_t&lt; Actor, Supervisor, std::enable_if_t&lt; std::is_base_of_v&lt; supervisor_t, Actor &gt; &gt; &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>constructs new actor (derived from supervisor), SFINAE-class  
+ <a href="structrotor_1_1details_1_1actor__ctor__t_3_01Actor_00_01Supervisor_00_01std_1_1enable__if__t_3_04843d29ffdcc1f5c3dad2affc584dbfb.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="supervisor_8h_source.html">supervisor.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a22c8bedd372d9867d33bcdc2067d8aaf"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:a22c8bedd372d9867d33bcdc2067d8aaf"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1details_1_1actor__ctor__t_3_01Actor_00_01Supervisor_00_01std_1_1enable__if__t_3_04843d29ffdcc1f5c3dad2affc584dbfb.html#a22c8bedd372d9867d33bcdc2067d8aaf">construct</a> (Supervisor *sup, Args... args) noexcept -&gt; intrusive_ptr_t&lt; Actor &gt;</td></tr>
+<tr class="memitem:a22c8bedd372d9867d33bcdc2067d8aaf"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1details_1_1actor__ctor__t_3_01Actor_00_01Supervisor_00_01std_1_1enable__if__t_3_04843d29ffdcc1f5c3dad2affc584dbfb.html#a22c8bedd372d9867d33bcdc2067d8aaf">construct</a> (Supervisor *sup, Args... args) noexcept -&gt; <a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a>&lt; Actor &gt;</td></tr>
 <tr class="separator:a22c8bedd372d9867d33bcdc2067d8aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename Actor, typename Supervisor&gt;<br />
+struct rotor::details::actor_ctor_t&lt; Actor, Supervisor, std::enable_if_t&lt; std::is_base_of_v&lt; supervisor_t, Actor &gt; &gt; &gt;</h3>
+
+<p>constructs new actor (derived from supervisor), SFINAE-class </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a22c8bedd372d9867d33bcdc2067d8aaf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a22c8bedd372d9867d33bcdc2067d8aaf">&#9670;&nbsp;</a></span>construct()</h2>
 
@@ -139,7 +149,7 @@ template&lt;typename... Args&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> -&gt; intrusive_ptr_t&lt;Actor&gt; </td>
+          <td></td><td> -&gt; <a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a>&lt;Actor&gt; </td>
         </tr>
       </table>
   </td>

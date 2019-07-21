@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['list_5ft',['list_t',['../structrotor_1_1subscription__t.html#a3883ba01aef396e78e0fd541eff4aa21',1,'rotor::subscription_t']]]
+  ['counter_5fpolicy_5ft',['counter_policy_t',['../namespacerotor.html#a5a672cade01e139fddd135e4ab84cfe4',1,'rotor']]]
 ];

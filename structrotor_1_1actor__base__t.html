@@ -121,7 +121,7 @@ Inheritance diagram for rotor::actor_base_t:</div>
   <map id="rotor::actor_5Fbase_5Ft_map" name="rotor::actor_5Fbase_5Ft_map">
 <area href="structrotor_1_1supervisor__t.html" title="supervisor is responsible for managing actors (workers) lifetime" alt="rotor::supervisor_t" shape="rect" coords="92,112,266,136"/>
 <area href="structrotor_1_1asio_1_1supervisor__asio__t.html" alt="rotor::asio::supervisor_asio_t" shape="rect" coords="0,168,174,192"/>
-<area href="structrotor_1_1wx_1_1supervisor__wx__t.html" alt="rotor::wx::supervisor_wx_t" shape="rect" coords="184,168,358,192"/>
+<area href="structrotor_1_1wx_1_1supervisor__wx__t.html" title="delivers rotor-messages on top of wx event" alt="rotor::wx::supervisor_wx_t" shape="rect" coords="184,168,358,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -154,11 +154,11 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memdesc:ae2010538b08d1dbafdecfe4953245bc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">convenient method to send actor's shutdown confirmation to it's supervisor  <a href="#ae2010538b08d1dbafdecfe4953245bc4">More...</a><br /></td></tr>
 <tr class="separator:ae2010538b08d1dbafdecfe4953245bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad2dfe86c50047191168dd7614db80bc"><td class="memItemLeft" align="right" valign="top"><a id="aad2dfe86c50047191168dd7614db80bc"></a>
-virtual address_ptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#aad2dfe86c50047191168dd7614db80bc">create_address</a> () noexcept</td></tr>
+virtual <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#aad2dfe86c50047191168dd7614db80bc">create_address</a> () noexcept</td></tr>
 <tr class="memdesc:aad2dfe86c50047191168dd7614db80bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates actor's address (by delegating the call to supervisor <br /></td></tr>
 <tr class="separator:aad2dfe86c50047191168dd7614db80bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af99e298d3e730fe975642cfb62c07431"><td class="memItemLeft" align="right" valign="top"><a id="af99e298d3e730fe975642cfb62c07431"></a>
-address_ptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#af99e298d3e730fe975642cfb62c07431">get_address</a> () const noexcept</td></tr>
+<a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#af99e298d3e730fe975642cfb62c07431">get_address</a> () const noexcept</td></tr>
 <tr class="memdesc:af99e298d3e730fe975642cfb62c07431"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns actor's address (intrusive pointer) <br /></td></tr>
 <tr class="separator:af99e298d3e730fe975642cfb62c07431"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34079b0bd2619cfe7dce3f4f7bacef62"><td class="memItemLeft" align="right" valign="top"><a id="a34079b0bd2619cfe7dce3f4f7bacef62"></a>
@@ -166,7 +166,7 @@ address_ptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 <tr class="memdesc:a34079b0bd2619cfe7dce3f4f7bacef62"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns actor's supervisor <br /></td></tr>
 <tr class="separator:a34079b0bd2619cfe7dce3f4f7bacef62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11818a1cd56de2a0fcc69556835faa62"><td class="memItemLeft" align="right" valign="top"><a id="a11818a1cd56de2a0fcc69556835faa62"></a>
-state_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a11818a1cd56de2a0fcc69556835faa62">get_state</a> () noexcept</td></tr>
+<a class="el" href="namespacerotor.html#a6efbb2b594154ba938cf57113e1431a3">state_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a11818a1cd56de2a0fcc69556835faa62">get_state</a> () noexcept</td></tr>
 <tr class="memdesc:a11818a1cd56de2a0fcc69556835faa62"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns actor's state <br /></td></tr>
 <tr class="separator:a11818a1cd56de2a0fcc69556835faa62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a04ac4789fda04ff55981331140faed"><td class="memItemLeft" align="right" valign="top"><a id="a9a04ac4789fda04ff55981331140faed"></a>
@@ -193,12 +193,12 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memdesc:ab0e24a90b02373ae0637d6274795a9dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">forgets the subscription point for external address  <a href="#ab0e24a90b02373ae0637d6274795a9dd">More...</a><br /></td></tr>
 <tr class="separator:ab0e24a90b02373ae0637d6274795a9dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ab9820e36e2f216fef92c2eacb4746b"><td class="memTemplParams" colspan="2">template&lt;typename M , typename... Args&gt; </td></tr>
-<tr class="memitem:a6ab9820e36e2f216fef92c2eacb4746b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a6ab9820e36e2f216fef92c2eacb4746b">send</a> (const address_ptr_t &amp;addr, Args &amp;&amp;... args)</td></tr>
+<tr class="memitem:a6ab9820e36e2f216fef92c2eacb4746b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a6ab9820e36e2f216fef92c2eacb4746b">send</a> (const <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a> &amp;addr, Args &amp;&amp;... args)</td></tr>
 <tr class="memdesc:a6ab9820e36e2f216fef92c2eacb4746b"><td class="mdescLeft">&#160;</td><td class="mdescRight">sends message to the destination address  <a href="#a6ab9820e36e2f216fef92c2eacb4746b">More...</a><br /></td></tr>
 <tr class="separator:a6ab9820e36e2f216fef92c2eacb4746b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61867c7033d55bed0fc66a91350c269f"><td class="memTemplParams" colspan="2"><a id="a61867c7033d55bed0fc66a91350c269f"></a>
 template&lt;typename Handler &gt; </td></tr>
-<tr class="memitem:a61867c7033d55bed0fc66a91350c269f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a61867c7033d55bed0fc66a91350c269f">subscribe</a> (Handler &amp;&amp;h, address_ptr_t &amp;addr) noexcept</td></tr>
+<tr class="memitem:a61867c7033d55bed0fc66a91350c269f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a61867c7033d55bed0fc66a91350c269f">subscribe</a> (Handler &amp;&amp;h, <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a> &amp;addr) noexcept</td></tr>
 <tr class="memdesc:a61867c7033d55bed0fc66a91350c269f"><td class="mdescLeft">&#160;</td><td class="mdescRight">subscribes actor's handler to process messages on the specified address <br /></td></tr>
 <tr class="separator:a61867c7033d55bed0fc66a91350c269f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada78a5fb0ef4342ed7805ece0320b1c2"><td class="memTemplParams" colspan="2"><a id="ada78a5fb0ef4342ed7805ece0320b1c2"></a>
@@ -208,7 +208,7 @@ template&lt;typename Handler &gt; </td></tr>
 <tr class="separator:ada78a5fb0ef4342ed7805ece0320b1c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb01ecfeb2b9957dca351f15b7f77d5d"><td class="memTemplParams" colspan="2"><a id="adb01ecfeb2b9957dca351f15b7f77d5d"></a>
 template&lt;typename Handler &gt; </td></tr>
-<tr class="memitem:adb01ecfeb2b9957dca351f15b7f77d5d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#adb01ecfeb2b9957dca351f15b7f77d5d">unsubscribe</a> (Handler &amp;&amp;h, address_ptr_t &amp;addr) noexcept</td></tr>
+<tr class="memitem:adb01ecfeb2b9957dca351f15b7f77d5d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#adb01ecfeb2b9957dca351f15b7f77d5d">unsubscribe</a> (Handler &amp;&amp;h, <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a> &amp;addr) noexcept</td></tr>
 <tr class="memdesc:adb01ecfeb2b9957dca351f15b7f77d5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">unsubscribes actor's handler from process messages on the specified address <br /></td></tr>
 <tr class="separator:adb01ecfeb2b9957dca351f15b7f77d5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a36666529aeef79e9bd6d13628b5355"><td class="memTemplParams" colspan="2"><a id="a3a36666529aeef79e9bd6d13628b5355"></a>
@@ -220,7 +220,7 @@ template&lt;typename Handler &gt; </td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a465427daf18d178baec930ec0ec8530a"><td class="memItemLeft" align="right" valign="top"><a id="a465427daf18d178baec930ec0ec8530a"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a465427daf18d178baec930ec0ec8530a">remove_subscription</a> (const address_ptr_t &amp;addr, const handler_ptr_t &amp;handler) noexcept</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a465427daf18d178baec930ec0ec8530a">remove_subscription</a> (const <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a> &amp;addr, const <a class="el" href="namespacerotor.html#a6fbcb2aae7a1ccefb14fe774902080d7">handler_ptr_t</a> &amp;handler) noexcept</td></tr>
 <tr class="memdesc:a465427daf18d178baec930ec0ec8530a"><td class="mdescLeft">&#160;</td><td class="mdescRight">removes the subscription point <br /></td></tr>
 <tr class="separator:a465427daf18d178baec930ec0ec8530a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -231,11 +231,11 @@ Protected Attributes</h2></td></tr>
 <tr class="memdesc:a8883a9334ace7138712b201cea41303d"><td class="mdescLeft">&#160;</td><td class="mdescRight">actor's execution / infrastructure context <br /></td></tr>
 <tr class="separator:a8883a9334ace7138712b201cea41303d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace7dad5e2a06711664bb7d0c70d1f1c7"><td class="memItemLeft" align="right" valign="top"><a id="ace7dad5e2a06711664bb7d0c70d1f1c7"></a>
-state_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#ace7dad5e2a06711664bb7d0c70d1f1c7">state</a></td></tr>
+<a class="el" href="namespacerotor.html#a6efbb2b594154ba938cf57113e1431a3">state_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#ace7dad5e2a06711664bb7d0c70d1f1c7">state</a></td></tr>
 <tr class="memdesc:ace7dad5e2a06711664bb7d0c70d1f1c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">current actor state <br /></td></tr>
 <tr class="separator:ace7dad5e2a06711664bb7d0c70d1f1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afad3a40184e18b3bb7ea2e9e50115edb"><td class="memItemLeft" align="right" valign="top"><a id="afad3a40184e18b3bb7ea2e9e50115edb"></a>
-address_ptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#afad3a40184e18b3bb7ea2e9e50115edb">address</a></td></tr>
+<a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#afad3a40184e18b3bb7ea2e9e50115edb">address</a></td></tr>
 <tr class="memdesc:afad3a40184e18b3bb7ea2e9e50115edb"><td class="mdescLeft">&#160;</td><td class="mdescRight">actor address <br /></td></tr>
 <tr class="separator:afad3a40184e18b3bb7ea2e9e50115edb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9eabdfa2eef776fdfe38bc8c5631dc58"><td class="memItemLeft" align="right" valign="top"><a id="a9eabdfa2eef776fdfe38bc8c5631dc58"></a>
@@ -503,7 +503,7 @@ template&lt;typename M , typename... Args&gt; </div>
         <tr>
           <td class="memname">void rotor::actor_base_t::send </td>
           <td>(</td>
-          <td class="paramtype">const address_ptr_t &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a> &amp;&#160;</td>
           <td class="paramname"><em>addr</em>, </td>
         </tr>
         <tr>

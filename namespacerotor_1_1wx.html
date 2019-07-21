@@ -110,21 +110,27 @@ $(document).ready(function(){initNavTree('namespacerotor_1_1wx.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1wx_1_1shutdown__timer__t.html">shutdown_timer_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">timer structure, adoped for wx-supervisor needs.  <a href="structrotor_1_1wx_1_1shutdown__timer__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1wx_1_1supervisor__config__t.html">supervisor_config_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">wx supervisor config, which holds shutdowm timeout value and a pointer to the "context window".  <a href="structrotor_1_1wx_1_1supervisor__config__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1wx_1_1supervisor__wx__t.html">supervisor_wx_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">delivers rotor-messages on top of wx event  <a href="structrotor_1_1wx_1_1supervisor__wx__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1wx_1_1system__context__wx__t.html">system_context_wx_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The wxWidgets system context, which holds a pointer to wxApp and root wx-supervisor.  <a href="structrotor_1_1wx_1_1system__context__wx__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a24c7829c0d406811ea75643964afc333"><td class="memItemLeft" align="right" valign="top"><a id="a24c7829c0d406811ea75643964afc333"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>supervisor_ptr_t</b> = intrusive_ptr_t&lt; <a class="el" href="structrotor_1_1wx_1_1supervisor__wx__t.html">supervisor_wx_t</a> &gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerotor_1_1wx.html#a24c7829c0d406811ea75643964afc333">supervisor_ptr_t</a> = <a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a>&lt; <a class="el" href="structrotor_1_1wx_1_1supervisor__wx__t.html">supervisor_wx_t</a> &gt;</td></tr>
+<tr class="memdesc:a24c7829c0d406811ea75643964afc333"><td class="mdescLeft">&#160;</td><td class="mdescRight">intrusive pointer for wx supervisor <br /></td></tr>
 <tr class="separator:a24c7829c0d406811ea75643964afc333"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a7768d2bbb0f1c718c4e57e6035c2a3"><td class="memItemLeft" align="right" valign="top"><a id="a2a7768d2bbb0f1c718c4e57e6035c2a3"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>system_context_ptr_t</b> = typename system_context_wx_t::ptr_t</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerotor_1_1wx.html#a2a7768d2bbb0f1c718c4e57e6035c2a3">system_context_ptr_t</a> = typename <a class="el" href="structrotor_1_1wx_1_1system__context__wx__t.html#ac8f0131a455a7f671ad1d8d90fc7c6ef">system_context_wx_t::ptr_t</a></td></tr>
+<tr class="memdesc:a2a7768d2bbb0f1c718c4e57e6035c2a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">intrusive pointer type for wx system context <br /></td></tr>
 <tr class="separator:a2a7768d2bbb0f1c718c4e57e6035c2a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>

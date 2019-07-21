@@ -35,8 +35,12 @@ var NAVTREEINDEX0 =
 "md__home_b_development_cpp_cpp-rotor_docs_Rationale.html":[3],
 "message_8h_source.html":[9,0,0,0,8],
 "messages_8hpp_source.html":[9,0,0,0,9],
-"namespacerotor.html":[7,0,0],
+"namespacemembers.html":[7,1,0],
+"namespacemembers_enum.html":[7,1,3],
+"namespacemembers_func.html":[7,1,1],
+"namespacemembers_type.html":[7,1,2],
 "namespacerotor.html":[8,0,0],
+"namespacerotor.html":[7,0,0],
 "namespacerotor_1_1asio.html":[8,0,0,0],
 "namespacerotor_1_1asio.html":[7,0,0,0],
 "namespacerotor_1_1wx.html":[7,0,0,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX0 =
 "structrotor_1_1supervisor__t.html#af06f6abf494411e043bbad3b467045f0":[8,0,0,13,32],
 "structrotor_1_1supervisor__t.html#af2c3b2583d9f7a96a07a90bf78eb430b":[8,0,0,13,9],
 "structrotor_1_1supervisor__t.html#af56eb18780cb942780f0d639f94a4bc7":[8,0,0,13,39],
-"structrotor_1_1supervisor__t.html#afd19400d871b752e37f1738d91a122b0":[8,0,0,13,1],
-"structrotor_1_1system__context__t.html":[8,0,0,14],
-"structrotor_1_1system__context__t.html#a386a4eac0cf949f0741f26dcfc36d123":[8,0,0,14,6],
-"structrotor_1_1system__context__t.html#a437b381afc1dcf542547d8b82096a069":[8,0,0,14,0],
-"structrotor_1_1system__context__t.html#a61d548cd385f28ac040e5eb464e4ce61":[8,0,0,14,4]
+"structrotor_1_1supervisor__t.html#afd19400d871b752e37f1738d91a122b0":[8,0,0,13,1]
 };

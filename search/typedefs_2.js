@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['message_5ft',['message_t',['../structrotor_1_1handler__traits_3_01void_07A_1_1_5_08_07M_01_6_08_01noexcept_01_4.html#a35f7fb361bfe6694a9523c9dcf6a5e35',1,'rotor::handler_traits&lt; void(A::*)(M &amp;) noexcept &gt;']]]
+  ['duration_5ft',['duration_t',['../structrotor_1_1wx_1_1supervisor__config__t.html#a4bb0930b2e54caaf63096d53287a3353',1,'rotor::wx::supervisor_config_t']]]
 ];

@@ -158,38 +158,47 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a6fbcb2aae7a1ccefb14fe774902080d7"><td class="memItemLeft" align="right" valign="top"><a id="a6fbcb2aae7a1ccefb14fe774902080d7"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>handler_ptr_t</b> = intrusive_ptr_t&lt; <a class="el" href="structrotor_1_1handler__base__t.html">handler_base_t</a> &gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerotor.html#a6fbcb2aae7a1ccefb14fe774902080d7">handler_ptr_t</a> = <a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a>&lt; <a class="el" href="structrotor_1_1handler__base__t.html">handler_base_t</a> &gt;</td></tr>
+<tr class="memdesc:a6fbcb2aae7a1ccefb14fe774902080d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">intrusive pointer for handler <br /></td></tr>
 <tr class="separator:a6fbcb2aae7a1ccefb14fe774902080d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa680b052e55aa70f20c6e270187db2d6"><td class="memItemLeft" align="right" valign="top"><a id="aa680b052e55aa70f20c6e270187db2d6"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>actor_ptr_t</b> = intrusive_ptr_t&lt; <a class="el" href="structrotor_1_1actor__base__t.html">actor_base_t</a> &gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerotor.html#aa680b052e55aa70f20c6e270187db2d6">actor_ptr_t</a> = <a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a>&lt; <a class="el" href="structrotor_1_1actor__base__t.html">actor_base_t</a> &gt;</td></tr>
+<tr class="memdesc:aa680b052e55aa70f20c6e270187db2d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">intrusive pointer for actor <br /></td></tr>
 <tr class="separator:aa680b052e55aa70f20c6e270187db2d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a325c7c5ee08ba0391303efca0024179b"><td class="memItemLeft" align="right" valign="top"><a id="a325c7c5ee08ba0391303efca0024179b"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>address_ptr_t</b> = intrusive_ptr_t&lt; <a class="el" href="structrotor_1_1address__t.html">address_t</a> &gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a> = <a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a>&lt; <a class="el" href="structrotor_1_1address__t.html">address_t</a> &gt;</td></tr>
+<tr class="memdesc:a325c7c5ee08ba0391303efca0024179b"><td class="mdescLeft">&#160;</td><td class="mdescRight">intrusive pointer for address <br /></td></tr>
 <tr class="separator:a325c7c5ee08ba0391303efca0024179b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a672cade01e139fddd135e4ab84cfe4"><td class="memItemLeft" align="right" valign="top"><a id="a5a672cade01e139fddd135e4ab84cfe4"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>counter_policy_t</b> = boost::thread_safe_counter</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerotor.html#a5a672cade01e139fddd135e4ab84cfe4">counter_policy_t</a> = boost::thread_safe_counter</td></tr>
+<tr class="memdesc:a5a672cade01e139fddd135e4ab84cfe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">thread-safe intrusive pointer policy <br /></td></tr>
 <tr class="separator:a5a672cade01e139fddd135e4ab84cfe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cb90d7087e0510ace45abedcb0245e4"><td class="memTemplParams" colspan="2"><a id="a9cb90d7087e0510ace45abedcb0245e4"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a9cb90d7087e0510ace45abedcb0245e4"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>arc_base_t</b> = boost::intrusive_ref_counter&lt; T, counter_policy_t &gt;</td></tr>
+<tr class="memitem:a9cb90d7087e0510ace45abedcb0245e4"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacerotor.html#a9cb90d7087e0510ace45abedcb0245e4">arc_base_t</a> = boost::intrusive_ref_counter&lt; T, <a class="el" href="namespacerotor.html#a5a672cade01e139fddd135e4ab84cfe4">counter_policy_t</a> &gt;</td></tr>
+<tr class="memdesc:a9cb90d7087e0510ace45abedcb0245e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">base class to inject ref-counter with the specified policiy <br /></td></tr>
 <tr class="separator:a9cb90d7087e0510ace45abedcb0245e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1d5cfad16ceed2d6891721ffb47c7e2"><td class="memTemplParams" colspan="2"><a id="ae1d5cfad16ceed2d6891721ffb47c7e2"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ae1d5cfad16ceed2d6891721ffb47c7e2"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>intrusive_ptr_t</b> = boost::intrusive_ptr&lt; T &gt;</td></tr>
+<tr class="memitem:ae1d5cfad16ceed2d6891721ffb47c7e2"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a> = boost::intrusive_ptr&lt; T &gt;</td></tr>
+<tr class="memdesc:ae1d5cfad16ceed2d6891721ffb47c7e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">alias for intrusive pointer <br /></td></tr>
 <tr class="separator:ae1d5cfad16ceed2d6891721ffb47c7e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e8ea0c395f375b56297a53b0a7aed94"><td class="memItemLeft" align="right" valign="top"><a id="a1e8ea0c395f375b56297a53b0a7aed94"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>supervisor_ptr_t</b> = intrusive_ptr_t&lt; <a class="el" href="structrotor_1_1supervisor__t.html">supervisor_t</a> &gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerotor.html#a1e8ea0c395f375b56297a53b0a7aed94">supervisor_ptr_t</a> = <a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a>&lt; <a class="el" href="structrotor_1_1supervisor__t.html">supervisor_t</a> &gt;</td></tr>
+<tr class="memdesc:a1e8ea0c395f375b56297a53b0a7aed94"><td class="mdescLeft">&#160;</td><td class="mdescRight">intrusive pointer for supervisor <br /></td></tr>
 <tr class="separator:a1e8ea0c395f375b56297a53b0a7aed94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0196761fe474bd8dc17ac4ff9f0e2f95"><td class="memItemLeft" align="right" valign="top"><a id="a0196761fe474bd8dc17ac4ff9f0e2f95"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>message_ptr_t</b> = intrusive_ptr_t&lt; <a class="el" href="structrotor_1_1message__base__t.html">message_base_t</a> &gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerotor.html#a0196761fe474bd8dc17ac4ff9f0e2f95">message_ptr_t</a> = <a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a>&lt; <a class="el" href="structrotor_1_1message__base__t.html">message_base_t</a> &gt;</td></tr>
+<tr class="memdesc:a0196761fe474bd8dc17ac4ff9f0e2f95"><td class="mdescLeft">&#160;</td><td class="mdescRight">intrusive pointer for message <br /></td></tr>
 <tr class="separator:a0196761fe474bd8dc17ac4ff9f0e2f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84e3ffaa2cdbc2106f3e4def7fb11891"><td class="memItemLeft" align="right" valign="top"><a id="a84e3ffaa2cdbc2106f3e4def7fb11891"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>system_context_ptr_t</b> = intrusive_ptr_t&lt; <a class="el" href="structrotor_1_1system__context__t.html">system_context_t</a> &gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerotor.html#a84e3ffaa2cdbc2106f3e4def7fb11891">system_context_ptr_t</a> = <a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a>&lt; <a class="el" href="structrotor_1_1system__context__t.html">system_context_t</a> &gt;</td></tr>
+<tr class="memdesc:a84e3ffaa2cdbc2106f3e4def7fb11891"><td class="mdescLeft">&#160;</td><td class="mdescRight">intrusive pointer for system context <br /></td></tr>
 <tr class="separator:a84e3ffaa2cdbc2106f3e4def7fb11891"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:aff42402c4871af3b3ae26820e45abd81"><td class="memItemLeft" align="right" valign="top"><a id="aff42402c4871af3b3ae26820e45abd81"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>error_code_t</b> { <br />
+<tr class="memitem:aff42402c4871af3b3ae26820e45abd81"><td class="memItemLeft" align="right" valign="top"><a id="aff42402c4871af3b3ae26820e45abd81"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerotor.html#aff42402c4871af3b3ae26820e45abd81">error_code_t</a> { <br />
 &#160;&#160;<b>success</b> = 0, 
 <b>shutdown_timeout</b>, 
 <b>missing_actor</b>, 
@@ -198,8 +207,9 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>supervisor_wrong_state</b>
 <br />
  }</td></tr>
+<tr class="memdesc:aff42402c4871af3b3ae26820e45abd81"><td class="mdescLeft">&#160;</td><td class="mdescRight">fatal error codes in rotor <br /></td></tr>
 <tr class="separator:aff42402c4871af3b3ae26820e45abd81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6efbb2b594154ba938cf57113e1431a3"><td class="memItemLeft" align="right" valign="top"><a id="a6efbb2b594154ba938cf57113e1431a3"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>state_t</b> { <br />
+<tr class="memitem:a6efbb2b594154ba938cf57113e1431a3"><td class="memItemLeft" align="right" valign="top"><a id="a6efbb2b594154ba938cf57113e1431a3"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerotor.html#a6efbb2b594154ba938cf57113e1431a3">state_t</a> { <br />
 &#160;&#160;<b>UNKNOWN</b>, 
 <b>NEW</b>, 
 <b>INITIALIZING</b>, 
@@ -210,27 +220,33 @@ Enumerations</h2></td></tr>
 <b>SHUTTED_DOWN</b>
 <br />
  }</td></tr>
+<tr class="memdesc:a6efbb2b594154ba938cf57113e1431a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">state of actor in <code>rotor</code> <br /></td></tr>
 <tr class="separator:a6efbb2b594154ba938cf57113e1431a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a77487c69ae8241d7a1cf595761fb374b"><td class="memItemLeft" align="right" valign="top"><a id="a77487c69ae8241d7a1cf595761fb374b"></a>
-const <a class="el" href="classrotor_1_1details_1_1error__code__category.html">details::error_code_category</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>error_code_category</b> ()</td></tr>
+const <a class="el" href="classrotor_1_1details_1_1error__code__category.html">details::error_code_category</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerotor.html#a77487c69ae8241d7a1cf595761fb374b">error_code_category</a> ()</td></tr>
+<tr class="memdesc:a77487c69ae8241d7a1cf595761fb374b"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns error code category for <code>rotor</code> error codes <br /></td></tr>
 <tr class="separator:a77487c69ae8241d7a1cf595761fb374b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19351d6ef5d9f14c2a558df319ddbf76"><td class="memItemLeft" align="right" valign="top"><a id="a19351d6ef5d9f14c2a558df319ddbf76"></a>
-std::error_code&#160;</td><td class="memItemRight" valign="bottom"><b>make_error_code</b> (error_code_t e)</td></tr>
+std::error_code&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerotor.html#a19351d6ef5d9f14c2a558df319ddbf76">make_error_code</a> (<a class="el" href="namespacerotor.html#aff42402c4871af3b3ae26820e45abd81">error_code_t</a> e)</td></tr>
+<tr class="memdesc:a19351d6ef5d9f14c2a558df319ddbf76"><td class="mdescLeft">&#160;</td><td class="mdescRight">makes <code>std::error_code</code> from rotor error_code enumerations <br /></td></tr>
 <tr class="separator:a19351d6ef5d9f14c2a558df319ddbf76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a166246580d5c9bb61e5f0cd155ced7"><td class="memTemplParams" colspan="2"><a id="a8a166246580d5c9bb61e5f0cd155ced7"></a>
 template&lt;typename Actor , typename Supervisor , typename... Args&gt; </td></tr>
-<tr class="memitem:a8a166246580d5c9bb61e5f0cd155ced7"><td class="memTemplItemLeft" align="right" valign="top">intrusive_ptr_t&lt; Actor &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_actor</b> (Supervisor &amp;sup, Args... args)</td></tr>
+<tr class="memitem:a8a166246580d5c9bb61e5f0cd155ced7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a>&lt; Actor &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacerotor.html#a8a166246580d5c9bb61e5f0cd155ced7">make_actor</a> (Supervisor &amp;sup, Args... args)</td></tr>
+<tr class="memdesc:a8a166246580d5c9bb61e5f0cd155ced7"><td class="mdescLeft">&#160;</td><td class="mdescRight">constucts actor on the supervisor <br /></td></tr>
 <tr class="separator:a8a166246580d5c9bb61e5f0cd155ced7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a0044ded43c5893e18ccc54d69f4b5a"><td class="memTemplParams" colspan="2"><a id="a6a0044ded43c5893e18ccc54d69f4b5a"></a>
 template&lt;typename M , typename... Args&gt; </td></tr>
-<tr class="memitem:a6a0044ded43c5893e18ccc54d69f4b5a"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_message</b> (const address_ptr_t &amp;addr, Args &amp;&amp;... args) -&gt; message_ptr_t</td></tr>
+<tr class="memitem:a6a0044ded43c5893e18ccc54d69f4b5a"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacerotor.html#a6a0044ded43c5893e18ccc54d69f4b5a">make_message</a> (const <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a> &amp;addr, Args &amp;&amp;... args) -&gt; <a class="el" href="namespacerotor.html#a0196761fe474bd8dc17ac4ff9f0e2f95">message_ptr_t</a></td></tr>
+<tr class="memdesc:a6a0044ded43c5893e18ccc54d69f4b5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">constucts message by constructing it's payload; intrusive pointer for the message is returned <br /></td></tr>
 <tr class="separator:a6a0044ded43c5893e18ccc54d69f4b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa57a3a769319496293197235aa9f652f"><td class="memTemplParams" colspan="2"><a id="aa57a3a769319496293197235aa9f652f"></a>
 template&lt;typename Handler &gt; </td></tr>
-<tr class="memitem:aa57a3a769319496293197235aa9f652f"><td class="memTemplItemLeft" align="right" valign="top">handler_ptr_t&#160;</td><td class="memTemplItemRight" valign="bottom"><b>wrap_handler</b> (<a class="el" href="structrotor_1_1actor__base__t.html">actor_base_t</a> &amp;actor, Handler &amp;&amp;handler)</td></tr>
+<tr class="memitem:aa57a3a769319496293197235aa9f652f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacerotor.html#a6fbcb2aae7a1ccefb14fe774902080d7">handler_ptr_t</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacerotor.html#aa57a3a769319496293197235aa9f652f">wrap_handler</a> (<a class="el" href="structrotor_1_1actor__base__t.html">actor_base_t</a> &amp;actor, Handler &amp;&amp;handler)</td></tr>
+<tr class="memdesc:aa57a3a769319496293197235aa9f652f"><td class="mdescLeft">&#160;</td><td class="mdescRight">wraps handler (pointer to member function) and actor address into intrusive pointer <br /></td></tr>
 <tr class="separator:aa57a3a769319496293197235aa9f652f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>

@@ -116,7 +116,7 @@ Inheritance diagram for rotor::system_context_t:</div>
   <img src="structrotor_1_1system__context__t.png" usemap="#rotor::system_5Fcontext_5Ft_map" alt=""/>
   <map id="rotor::system_5Fcontext_5Ft_map" name="rotor::system_5Fcontext_5Ft_map">
 <area href="structrotor_1_1asio_1_1system__context__asio__t.html" alt="rotor::asio::system_context_asio_t" shape="rect" coords="0,112,199,136"/>
-<area href="structrotor_1_1wx_1_1system__context__wx__t.html" alt="rotor::wx::system_context_wx_t" shape="rect" coords="209,112,408,136"/>
+<area href="structrotor_1_1wx_1_1system__context__wx__t.html" title="The wxWidgets system context, which holds a pointer to wxApp and root wx-supervisor." alt="rotor::wx::system_context_wx_t" shape="rect" coords="209,112,408,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -124,11 +124,11 @@ Inheritance diagram for rotor::system_context_t:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a61d548cd385f28ac040e5eb464e4ce61"><td class="memTemplParams" colspan="2"><a id="a61d548cd385f28ac040e5eb464e4ce61"></a>
 template&lt;typename Supervisor  = supervisor_t, typename... Args&gt; </td></tr>
-<tr class="memitem:a61d548cd385f28ac040e5eb464e4ce61"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1system__context__t.html#a61d548cd385f28ac040e5eb464e4ce61">create_supervisor</a> (Args... args) -&gt; intrusive_ptr_t&lt; Supervisor &gt;</td></tr>
+<tr class="memitem:a61d548cd385f28ac040e5eb464e4ce61"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1system__context__t.html#a61d548cd385f28ac040e5eb464e4ce61">create_supervisor</a> (Args... args) -&gt; <a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a>&lt; Supervisor &gt;</td></tr>
 <tr class="memdesc:a61d548cd385f28ac040e5eb464e4ce61"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates root supervior. <code>args</code> are forwared for supervisor constructor <br /></td></tr>
 <tr class="separator:a61d548cd385f28ac040e5eb464e4ce61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4450478ac157abf0a249911b17b3b36"><td class="memItemLeft" align="right" valign="top"><a id="ad4450478ac157abf0a249911b17b3b36"></a>
-supervisor_ptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1system__context__t.html#ad4450478ac157abf0a249911b17b3b36">get_supervisor</a> () noexcept</td></tr>
+<a class="el" href="namespacerotor.html#a1e8ea0c395f375b56297a53b0a7aed94">supervisor_ptr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1system__context__t.html#ad4450478ac157abf0a249911b17b3b36">get_supervisor</a> () noexcept</td></tr>
 <tr class="memdesc:ad4450478ac157abf0a249911b17b3b36"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns root supervisor <br /></td></tr>
 <tr class="separator:ad4450478ac157abf0a249911b17b3b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ebf80215d99ae693e156bd3cb57ecf6"><td class="memItemLeft" align="right" valign="top"><a id="a7ebf80215d99ae693e156bd3cb57ecf6"></a>

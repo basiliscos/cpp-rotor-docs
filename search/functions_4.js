@@ -1,7 +1,8 @@
 var searchData=
 [
   ['get_5faddress',['get_address',['../structrotor_1_1actor__base__t.html#af99e298d3e730fe975642cfb62c07431',1,'rotor::actor_base_t']]],
-  ['get_5fcontext',['get_context',['../structrotor_1_1supervisor__t.html#ad710e22f74c8d992bec75f62db828753',1,'rotor::supervisor_t']]],
+  ['get_5fapp',['get_app',['../structrotor_1_1wx_1_1system__context__wx__t.html#a92d4904c2386da4d4ae4fbf94ef01b66',1,'rotor::wx::system_context_wx_t']]],
+  ['get_5fcontext',['get_context',['../structrotor_1_1supervisor__t.html#ad710e22f74c8d992bec75f62db828753',1,'rotor::supervisor_t::get_context()'],['../structrotor_1_1wx_1_1supervisor__wx__t.html#a38bcc736ac361ab9c1bae3fb621d8d25',1,'rotor::wx::supervisor_wx_t::get_context()']]],
   ['get_5fparent_5fsupervisor',['get_parent_supervisor',['../structrotor_1_1supervisor__t.html#a03fe5fac32a9580a99d318e47792d61a',1,'rotor::supervisor_t']]],
   ['get_5frecipients',['get_recipients',['../structrotor_1_1subscription__t.html#a989fcbf53bc2f5acf106945b22a24606',1,'rotor::subscription_t']]],
   ['get_5fstate',['get_state',['../structrotor_1_1actor__base__t.html#a11818a1cd56de2a0fcc69556835faa62',1,'rotor::actor_base_t']]],

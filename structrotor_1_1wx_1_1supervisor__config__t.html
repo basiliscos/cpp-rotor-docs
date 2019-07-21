@@ -104,22 +104,51 @@ $(document).ready(function(){initNavTree('structrotor_1_1wx_1_1supervisor__confi
 <div class="title">rotor::wx::supervisor_config_t Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>wx supervisor config, which holds shutdowm timeout value and a pointer to the "context window".  
+ <a href="structrotor_1_1wx_1_1supervisor__config__t.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="wx_2supervisor__config_8h_source.html">supervisor_config.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a4bb0930b2e54caaf63096d53287a3353"><td class="memItemLeft" align="right" valign="top"><a id="a4bb0930b2e54caaf63096d53287a3353"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>duration_t</b> = std::chrono::milliseconds</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1wx_1_1supervisor__config__t.html#a4bb0930b2e54caaf63096d53287a3353">duration_t</a> = std::chrono::milliseconds</td></tr>
+<tr class="memdesc:a4bb0930b2e54caaf63096d53287a3353"><td class="mdescLeft">&#160;</td><td class="mdescRight">alias for milliseconds <br /></td></tr>
 <tr class="separator:a4bb0930b2e54caaf63096d53287a3353"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ace028e6ced45d51ac2374d6425fceb0d"><td class="memItemLeft" align="right" valign="top"><a id="ace028e6ced45d51ac2374d6425fceb0d"></a>
-duration_t&#160;</td><td class="memItemRight" valign="bottom"><b>shutdown_timeout</b></td></tr>
+<a class="el" href="structrotor_1_1wx_1_1supervisor__config__t.html#a4bb0930b2e54caaf63096d53287a3353">duration_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1wx_1_1supervisor__config__t.html#ace028e6ced45d51ac2374d6425fceb0d">shutdown_timeout</a></td></tr>
+<tr class="memdesc:ace028e6ced45d51ac2374d6425fceb0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">shutdown timeout value in milliseconds <br /></td></tr>
 <tr class="separator:ace028e6ced45d51ac2374d6425fceb0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8873287c74458d045c7da3a77ed3214"><td class="memItemLeft" align="right" valign="top"><a id="ad8873287c74458d045c7da3a77ed3214"></a>
-wxEvtHandler *&#160;</td><td class="memItemRight" valign="bottom"><b>handler</b></td></tr>
+<tr class="memitem:ad8873287c74458d045c7da3a77ed3214"><td class="memItemLeft" align="right" valign="top">wxEvtHandler *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1wx_1_1supervisor__config__t.html#ad8873287c74458d045c7da3a77ed3214">handler</a></td></tr>
+<tr class="memdesc:ad8873287c74458d045c7da3a77ed3214"><td class="mdescLeft">&#160;</td><td class="mdescRight">the wx context, responsible for messages delivery  <a href="#ad8873287c74458d045c7da3a77ed3214">More...</a><br /></td></tr>
 <tr class="separator:ad8873287c74458d045c7da3a77ed3214"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>wx supervisor config, which holds shutdowm timeout value and a pointer to the "context window". </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="ad8873287c74458d045c7da3a77ed3214"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8873287c74458d045c7da3a77ed3214">&#9670;&nbsp;</a></span>handler</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wxEvtHandler* rotor::wx::supervisor_config_t::handler</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>the wx context, responsible for messages delivery </p>
+<p>Actuall rotor-message delivery for actors runnion on the top of wx-loop is performed via wx-events, i.e. rotor-messages are <b>wrapped</b> into wx-events.</p>
+<p>The wx-supervisor subscribes to the <code>wx-events</code> and unswraps the rotor-messages from the events.</p>
+<p>The wx event handler is used as a transport medium </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/home/b/development/cpp/cpp-rotor/include/rotor/wx/<a class="el" href="wx_2supervisor__config_8h_source.html">supervisor_config.h</a></li>
 </ul>

@@ -98,11 +98,17 @@ $(document).ready(function(){initNavTree('structrotor_1_1wx_1_1supervisor__wx__t
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="structrotor_1_1wx_1_1supervisor__wx__t-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">rotor::wx::supervisor_wx_t Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>delivers rotor-messages on top of wx event  
+ <a href="structrotor_1_1wx_1_1supervisor__wx__t.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="supervisor__wx_8h_source.html">supervisor_wx.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for rotor::wx::supervisor_wx_t:</div>
 <div class="dyncontent">
@@ -116,12 +122,12 @@ Inheritance diagram for rotor::wx::supervisor_wx_t:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a56b36862e17a986c14f3799de47172b3"><td class="memItemLeft" align="right" valign="top"><a id="a56b36862e17a986c14f3799de47172b3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>supervisor_wx_t</b> (<a class="el" href="structrotor_1_1wx_1_1supervisor__wx__t.html">supervisor_wx_t</a> *sup, system_context_ptr_t system_context_, const <a class="el" href="structrotor_1_1wx_1_1supervisor__config__t.html">supervisor_config_t</a> &amp;config)</td></tr>
-<tr class="separator:a56b36862e17a986c14f3799de47172b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada9b199880fbc2ab811eb2f64a3b599d"><td class="memTemplParams" colspan="2"><a id="ada9b199880fbc2ab811eb2f64a3b599d"></a>
-template&lt;typename Actor , typename... Args&gt; </td></tr>
-<tr class="memitem:ada9b199880fbc2ab811eb2f64a3b599d"><td class="memTemplItemLeft" align="right" valign="top">intrusive_ptr_t&lt; Actor &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>create_actor</b> (Args... args)</td></tr>
+<tr class="memitem:a64aae5fc77eb4527814a2215524a4e08"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1wx_1_1supervisor__wx__t.html#a64aae5fc77eb4527814a2215524a4e08">supervisor_wx_t</a> (<a class="el" href="structrotor_1_1wx_1_1supervisor__wx__t.html">supervisor_wx_t</a> *<a class="el" href="structrotor_1_1supervisor__t.html#af56eb18780cb942780f0d639f94a4bc7">parent</a>, const <a class="el" href="structrotor_1_1wx_1_1supervisor__config__t.html">supervisor_config_t</a> &amp;<a class="el" href="structrotor_1_1wx_1_1supervisor__wx__t.html#a22c650f7ebb66debaacf5e8e62def52f">config</a>)</td></tr>
+<tr class="memdesc:a64aae5fc77eb4527814a2215524a4e08"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructs new supervisor from parent supervisor and supervisor config  <a href="#a64aae5fc77eb4527814a2215524a4e08">More...</a><br /></td></tr>
+<tr class="separator:a64aae5fc77eb4527814a2215524a4e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada9b199880fbc2ab811eb2f64a3b599d"><td class="memTemplParams" colspan="2">template&lt;typename Actor , typename... Args&gt; </td></tr>
+<tr class="memitem:ada9b199880fbc2ab811eb2f64a3b599d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a>&lt; Actor &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1wx_1_1supervisor__wx__t.html#ada9b199880fbc2ab811eb2f64a3b599d">create_actor</a> (Args... args)</td></tr>
+<tr class="memdesc:ada9b199880fbc2ab811eb2f64a3b599d"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates an actor by forwaring <code>args</code> to it  <a href="#ada9b199880fbc2ab811eb2f64a3b599d">More...</a><br /></td></tr>
 <tr class="separator:ada9b199880fbc2ab811eb2f64a3b599d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34c99057e5d17cec88a96fb31877d4d9"><td class="memItemLeft" align="right" valign="top"><a id="a34c99057e5d17cec88a96fb31877d4d9"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1wx_1_1supervisor__wx__t.html#a34c99057e5d17cec88a96fb31877d4d9">start</a> () noexcept override</td></tr>
@@ -131,7 +137,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1wx_1_1supervisor__wx__t.html#aca5a2de124994a7b35c2682d2b9a10b1">shutdown</a> () noexcept override</td></tr>
 <tr class="memdesc:aca5a2de124994a7b35c2682d2b9a10b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">thread-safe version of <code>do_shutdown</code>, i.e. send shutdown request let it be processed by the supervisor <br /></td></tr>
 <tr class="separator:aca5a2de124994a7b35c2682d2b9a10b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af01804f732f69e0dc198ef79b72171cc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1wx_1_1supervisor__wx__t.html#af01804f732f69e0dc198ef79b72171cc">enqueue</a> (message_ptr_t message) noexcept override</td></tr>
+<tr class="memitem:af01804f732f69e0dc198ef79b72171cc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1wx_1_1supervisor__wx__t.html#af01804f732f69e0dc198ef79b72171cc">enqueue</a> (<a class="el" href="namespacerotor.html#a0196761fe474bd8dc17ac4ff9f0e2f95">message_ptr_t</a> message) noexcept override</td></tr>
 <tr class="memdesc:af01804f732f69e0dc198ef79b72171cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">enqueues messages thread safe way and triggers processing  <a href="#af01804f732f69e0dc198ef79b72171cc">More...</a><br /></td></tr>
 <tr class="separator:af01804f732f69e0dc198ef79b72171cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8638e8911ec2cc177bad187b2ac6299"><td class="memItemLeft" align="right" valign="top"><a id="af8638e8911ec2cc177bad187b2ac6299"></a>
@@ -143,7 +149,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memdesc:a115698ec009019a3cf3ccde76cdb44c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">cancels event-loop specific shutdown timer <br /></td></tr>
 <tr class="separator:a115698ec009019a3cf3ccde76cdb44c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38bcc736ac361ab9c1bae3fb621d8d25"><td class="memItemLeft" align="right" valign="top"><a id="a38bcc736ac361ab9c1bae3fb621d8d25"></a>
-<a class="el" href="structrotor_1_1wx_1_1system__context__wx__t.html">system_context_wx_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>get_context</b> () noexcept</td></tr>
+<a class="el" href="structrotor_1_1wx_1_1system__context__wx__t.html">system_context_wx_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1wx_1_1supervisor__wx__t.html#a38bcc736ac361ab9c1bae3fb621d8d25">get_context</a> () noexcept</td></tr>
+<tr class="memdesc:a38bcc736ac361ab9c1bae3fb621d8d25"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns pointer to the wx system context <br /></td></tr>
 <tr class="separator:a38bcc736ac361ab9c1bae3fb621d8d25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structrotor_1_1supervisor__t"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structrotor_1_1supervisor__t')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structrotor_1_1supervisor__t.html">rotor::supervisor_t</a></td></tr>
 <tr class="memitem:aa1a479a76d03227a132588971f08e3e2 inherit pub_methods_structrotor_1_1supervisor__t"><td class="memItemLeft" align="right" valign="top"><a id="aa1a479a76d03227a132588971f08e3e2"></a>
@@ -167,15 +174,15 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memdesc:a7bb22bce5c13b99c491acf41889e1850 inherit pub_methods_structrotor_1_1supervisor__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">process internal messages queue and exists when it's empty  <a href="structrotor_1_1supervisor__t.html#a7bb22bce5c13b99c491acf41889e1850">More...</a><br /></td></tr>
 <tr class="separator:a7bb22bce5c13b99c491acf41889e1850 inherit pub_methods_structrotor_1_1supervisor__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d84ce5b1fb7fda222a0937358a6d894 inherit pub_methods_structrotor_1_1supervisor__t"><td class="memItemLeft" align="right" valign="top"><a id="a9d84ce5b1fb7fda222a0937358a6d894"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__t.html#a9d84ce5b1fb7fda222a0937358a6d894">unsubscribe_actor</a> (const actor_ptr_t &amp;actor) noexcept</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__t.html#a9d84ce5b1fb7fda222a0937358a6d894">unsubscribe_actor</a> (const <a class="el" href="namespacerotor.html#aa680b052e55aa70f20c6e270187db2d6">actor_ptr_t</a> &amp;actor) noexcept</td></tr>
 <tr class="memdesc:a9d84ce5b1fb7fda222a0937358a6d894 inherit pub_methods_structrotor_1_1supervisor__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">unsubcribes all actor's handlers <br /></td></tr>
 <tr class="separator:a9d84ce5b1fb7fda222a0937358a6d894 inherit pub_methods_structrotor_1_1supervisor__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4517a5ef2f92cd6f94744a273c6ab478 inherit pub_methods_structrotor_1_1supervisor__t"><td class="memItemLeft" align="right" valign="top"><a id="a4517a5ef2f92cd6f94744a273c6ab478"></a>
-virtual address_ptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__t.html#a4517a5ef2f92cd6f94744a273c6ab478">make_address</a> () noexcept</td></tr>
+virtual <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__t.html#a4517a5ef2f92cd6f94744a273c6ab478">make_address</a> () noexcept</td></tr>
 <tr class="memdesc:a4517a5ef2f92cd6f94744a273c6ab478 inherit pub_methods_structrotor_1_1supervisor__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates new <a class="el" href="structrotor_1_1address__t.html">address_t</a> linked with the supervisor <br /></td></tr>
 <tr class="separator:a4517a5ef2f92cd6f94744a273c6ab478 inherit pub_methods_structrotor_1_1supervisor__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7833a338bc85d0145a191e73bbdfad0 inherit pub_methods_structrotor_1_1supervisor__t"><td class="memItemLeft" align="right" valign="top"><a id="ad7833a338bc85d0145a191e73bbdfad0"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__t.html#ad7833a338bc85d0145a191e73bbdfad0">commit_unsubscription</a> (const address_ptr_t &amp;addr, const handler_ptr_t &amp;handler) noexcept</td></tr>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__t.html#ad7833a338bc85d0145a191e73bbdfad0">commit_unsubscription</a> (const <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a> &amp;addr, const <a class="el" href="namespacerotor.html#a6fbcb2aae7a1ccefb14fe774902080d7">handler_ptr_t</a> &amp;handler) noexcept</td></tr>
 <tr class="memdesc:ad7833a338bc85d0145a191e73bbdfad0 inherit pub_methods_structrotor_1_1supervisor__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">removes the subscription point: local address and (foreign-or-local) handler pair <br /></td></tr>
 <tr class="separator:ad7833a338bc85d0145a191e73bbdfad0 inherit pub_methods_structrotor_1_1supervisor__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacd4bc952b264364f6073b165c5772ee inherit pub_methods_structrotor_1_1supervisor__t"><td class="memItemLeft" align="right" valign="top"><a id="aacd4bc952b264364f6073b165c5772ee"></a>
@@ -221,10 +228,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <a class="el" href="structrotor_1_1supervisor__t.html">supervisor_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__t.html#a03fe5fac32a9580a99d318e47792d61a">get_parent_supervisor</a> () noexcept</td></tr>
 <tr class="memdesc:a03fe5fac32a9580a99d318e47792d61a inherit pub_methods_structrotor_1_1supervisor__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns pointer to parent supervisor <br /></td></tr>
 <tr class="separator:a03fe5fac32a9580a99d318e47792d61a inherit pub_methods_structrotor_1_1supervisor__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad38ca674a38fbcff9a762fb3c3b4771e inherit pub_methods_structrotor_1_1supervisor__t"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__t.html#ad38ca674a38fbcff9a762fb3c3b4771e">put</a> (message_ptr_t message)</td></tr>
+<tr class="memitem:ad38ca674a38fbcff9a762fb3c3b4771e inherit pub_methods_structrotor_1_1supervisor__t"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__t.html#ad38ca674a38fbcff9a762fb3c3b4771e">put</a> (<a class="el" href="namespacerotor.html#a0196761fe474bd8dc17ac4ff9f0e2f95">message_ptr_t</a> message)</td></tr>
 <tr class="memdesc:ad38ca674a38fbcff9a762fb3c3b4771e inherit pub_methods_structrotor_1_1supervisor__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">puts a message into internal supevisor queue for further processing  <a href="structrotor_1_1supervisor__t.html#ad38ca674a38fbcff9a762fb3c3b4771e">More...</a><br /></td></tr>
 <tr class="separator:ad38ca674a38fbcff9a762fb3c3b4771e inherit pub_methods_structrotor_1_1supervisor__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af06f6abf494411e043bbad3b467045f0 inherit pub_methods_structrotor_1_1supervisor__t"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__t.html#af06f6abf494411e043bbad3b467045f0">subscribe_actor</a> (const address_ptr_t &amp;addr, const handler_ptr_t &amp;handler)</td></tr>
+<tr class="memitem:af06f6abf494411e043bbad3b467045f0 inherit pub_methods_structrotor_1_1supervisor__t"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__t.html#af06f6abf494411e043bbad3b467045f0">subscribe_actor</a> (const <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a> &amp;addr, const <a class="el" href="namespacerotor.html#a6fbcb2aae7a1ccefb14fe774902080d7">handler_ptr_t</a> &amp;handler)</td></tr>
 <tr class="memdesc:af06f6abf494411e043bbad3b467045f0 inherit pub_methods_structrotor_1_1supervisor__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">subscribes an handler to an address.  <a href="structrotor_1_1supervisor__t.html#af06f6abf494411e043bbad3b467045f0">More...</a><br /></td></tr>
 <tr class="separator:af06f6abf494411e043bbad3b467045f0 inherit pub_methods_structrotor_1_1supervisor__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1983b0b5599d837794b5b5e839d7665 inherit pub_methods_structrotor_1_1supervisor__t"><td class="memTemplParams" colspan="2"><a id="ab1983b0b5599d837794b5b5e839d7665"></a>
@@ -233,12 +240,12 @@ template&lt;typename Handler &gt; </td></tr>
 <tr class="memdesc:ab1983b0b5599d837794b5b5e839d7665 inherit pub_methods_structrotor_1_1supervisor__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">templated version of <code>subscribe_actor</code> <br /></td></tr>
 <tr class="separator:ab1983b0b5599d837794b5b5e839d7665 inherit pub_methods_structrotor_1_1supervisor__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88160c9496cea456aee4bebc122b4f6e inherit pub_methods_structrotor_1_1supervisor__t"><td class="memTemplParams" colspan="2">template&lt;typename Handler &gt; </td></tr>
-<tr class="memitem:a88160c9496cea456aee4bebc122b4f6e inherit pub_methods_structrotor_1_1supervisor__t"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__t.html#a88160c9496cea456aee4bebc122b4f6e">unsubscribe_actor</a> (const address_ptr_t &amp;addr, Handler &amp;&amp;handler) noexcept</td></tr>
+<tr class="memitem:a88160c9496cea456aee4bebc122b4f6e inherit pub_methods_structrotor_1_1supervisor__t"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__t.html#a88160c9496cea456aee4bebc122b4f6e">unsubscribe_actor</a> (const <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a> &amp;addr, Handler &amp;&amp;handler) noexcept</td></tr>
 <tr class="memdesc:a88160c9496cea456aee4bebc122b4f6e inherit pub_methods_structrotor_1_1supervisor__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">unsubscribes local handler from the address  <a href="structrotor_1_1supervisor__t.html#a88160c9496cea456aee4bebc122b4f6e">More...</a><br /></td></tr>
 <tr class="separator:a88160c9496cea456aee4bebc122b4f6e inherit pub_methods_structrotor_1_1supervisor__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2c3b2583d9f7a96a07a90bf78eb430b inherit pub_methods_structrotor_1_1supervisor__t"><td class="memTemplParams" colspan="2"><a id="af2c3b2583d9f7a96a07a90bf78eb430b"></a>
 template&lt;typename Actor , typename... Args&gt; </td></tr>
-<tr class="memitem:af2c3b2583d9f7a96a07a90bf78eb430b inherit pub_methods_structrotor_1_1supervisor__t"><td class="memTemplItemLeft" align="right" valign="top">intrusive_ptr_t&lt; Actor &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__t.html#af2c3b2583d9f7a96a07a90bf78eb430b">create_actor</a> (Args... args)</td></tr>
+<tr class="memitem:af2c3b2583d9f7a96a07a90bf78eb430b inherit pub_methods_structrotor_1_1supervisor__t"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a>&lt; Actor &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__t.html#af2c3b2583d9f7a96a07a90bf78eb430b">create_actor</a> (Args... args)</td></tr>
 <tr class="memdesc:af2c3b2583d9f7a96a07a90bf78eb430b inherit pub_methods_structrotor_1_1supervisor__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates actor, records it in internal structures and returns intrusive pointer ot the actors <br /></td></tr>
 <tr class="separator:af2c3b2583d9f7a96a07a90bf78eb430b inherit pub_methods_structrotor_1_1supervisor__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad710e22f74c8d992bec75f62db828753 inherit pub_methods_structrotor_1_1supervisor__t"><td class="memItemLeft" align="right" valign="top"><a id="ad710e22f74c8d992bec75f62db828753"></a>
@@ -254,11 +261,11 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memdesc:af6baa4ad8578c529a9b15fcb947d4472 inherit pub_methods_structrotor_1_1actor__base__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">convenient method to send actor's shutdown request to it's supervisor <br /></td></tr>
 <tr class="separator:af6baa4ad8578c529a9b15fcb947d4472 inherit pub_methods_structrotor_1_1actor__base__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad2dfe86c50047191168dd7614db80bc inherit pub_methods_structrotor_1_1actor__base__t"><td class="memItemLeft" align="right" valign="top"><a id="aad2dfe86c50047191168dd7614db80bc"></a>
-virtual address_ptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#aad2dfe86c50047191168dd7614db80bc">create_address</a> () noexcept</td></tr>
+virtual <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#aad2dfe86c50047191168dd7614db80bc">create_address</a> () noexcept</td></tr>
 <tr class="memdesc:aad2dfe86c50047191168dd7614db80bc inherit pub_methods_structrotor_1_1actor__base__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates actor's address (by delegating the call to supervisor <br /></td></tr>
 <tr class="separator:aad2dfe86c50047191168dd7614db80bc inherit pub_methods_structrotor_1_1actor__base__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af99e298d3e730fe975642cfb62c07431 inherit pub_methods_structrotor_1_1actor__base__t"><td class="memItemLeft" align="right" valign="top"><a id="af99e298d3e730fe975642cfb62c07431"></a>
-address_ptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#af99e298d3e730fe975642cfb62c07431">get_address</a> () const noexcept</td></tr>
+<a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#af99e298d3e730fe975642cfb62c07431">get_address</a> () const noexcept</td></tr>
 <tr class="memdesc:af99e298d3e730fe975642cfb62c07431 inherit pub_methods_structrotor_1_1actor__base__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns actor's address (intrusive pointer) <br /></td></tr>
 <tr class="separator:af99e298d3e730fe975642cfb62c07431 inherit pub_methods_structrotor_1_1actor__base__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34079b0bd2619cfe7dce3f4f7bacef62 inherit pub_methods_structrotor_1_1actor__base__t"><td class="memItemLeft" align="right" valign="top"><a id="a34079b0bd2619cfe7dce3f4f7bacef62"></a>
@@ -266,7 +273,7 @@ address_ptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 <tr class="memdesc:a34079b0bd2619cfe7dce3f4f7bacef62 inherit pub_methods_structrotor_1_1actor__base__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns actor's supervisor <br /></td></tr>
 <tr class="separator:a34079b0bd2619cfe7dce3f4f7bacef62 inherit pub_methods_structrotor_1_1actor__base__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11818a1cd56de2a0fcc69556835faa62 inherit pub_methods_structrotor_1_1actor__base__t"><td class="memItemLeft" align="right" valign="top"><a id="a11818a1cd56de2a0fcc69556835faa62"></a>
-state_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a11818a1cd56de2a0fcc69556835faa62">get_state</a> () noexcept</td></tr>
+<a class="el" href="namespacerotor.html#a6efbb2b594154ba938cf57113e1431a3">state_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a11818a1cd56de2a0fcc69556835faa62">get_state</a> () noexcept</td></tr>
 <tr class="memdesc:a11818a1cd56de2a0fcc69556835faa62 inherit pub_methods_structrotor_1_1actor__base__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns actor's state <br /></td></tr>
 <tr class="separator:a11818a1cd56de2a0fcc69556835faa62 inherit pub_methods_structrotor_1_1actor__base__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a04ac4789fda04ff55981331140faed inherit pub_methods_structrotor_1_1actor__base__t"><td class="memItemLeft" align="right" valign="top"><a id="a9a04ac4789fda04ff55981331140faed"></a>
@@ -287,12 +294,12 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memdesc:ab0e24a90b02373ae0637d6274795a9dd inherit pub_methods_structrotor_1_1actor__base__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">forgets the subscription point for external address  <a href="structrotor_1_1actor__base__t.html#ab0e24a90b02373ae0637d6274795a9dd">More...</a><br /></td></tr>
 <tr class="separator:ab0e24a90b02373ae0637d6274795a9dd inherit pub_methods_structrotor_1_1actor__base__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ab9820e36e2f216fef92c2eacb4746b inherit pub_methods_structrotor_1_1actor__base__t"><td class="memTemplParams" colspan="2">template&lt;typename M , typename... Args&gt; </td></tr>
-<tr class="memitem:a6ab9820e36e2f216fef92c2eacb4746b inherit pub_methods_structrotor_1_1actor__base__t"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a6ab9820e36e2f216fef92c2eacb4746b">send</a> (const address_ptr_t &amp;addr, Args &amp;&amp;... args)</td></tr>
+<tr class="memitem:a6ab9820e36e2f216fef92c2eacb4746b inherit pub_methods_structrotor_1_1actor__base__t"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a6ab9820e36e2f216fef92c2eacb4746b">send</a> (const <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a> &amp;addr, Args &amp;&amp;... args)</td></tr>
 <tr class="memdesc:a6ab9820e36e2f216fef92c2eacb4746b inherit pub_methods_structrotor_1_1actor__base__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">sends message to the destination address  <a href="structrotor_1_1actor__base__t.html#a6ab9820e36e2f216fef92c2eacb4746b">More...</a><br /></td></tr>
 <tr class="separator:a6ab9820e36e2f216fef92c2eacb4746b inherit pub_methods_structrotor_1_1actor__base__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61867c7033d55bed0fc66a91350c269f inherit pub_methods_structrotor_1_1actor__base__t"><td class="memTemplParams" colspan="2"><a id="a61867c7033d55bed0fc66a91350c269f"></a>
 template&lt;typename Handler &gt; </td></tr>
-<tr class="memitem:a61867c7033d55bed0fc66a91350c269f inherit pub_methods_structrotor_1_1actor__base__t"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a61867c7033d55bed0fc66a91350c269f">subscribe</a> (Handler &amp;&amp;h, address_ptr_t &amp;addr) noexcept</td></tr>
+<tr class="memitem:a61867c7033d55bed0fc66a91350c269f inherit pub_methods_structrotor_1_1actor__base__t"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a61867c7033d55bed0fc66a91350c269f">subscribe</a> (Handler &amp;&amp;h, <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a> &amp;addr) noexcept</td></tr>
 <tr class="memdesc:a61867c7033d55bed0fc66a91350c269f inherit pub_methods_structrotor_1_1actor__base__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">subscribes actor's handler to process messages on the specified address <br /></td></tr>
 <tr class="separator:a61867c7033d55bed0fc66a91350c269f inherit pub_methods_structrotor_1_1actor__base__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada78a5fb0ef4342ed7805ece0320b1c2 inherit pub_methods_structrotor_1_1actor__base__t"><td class="memTemplParams" colspan="2"><a id="ada78a5fb0ef4342ed7805ece0320b1c2"></a>
@@ -302,7 +309,7 @@ template&lt;typename Handler &gt; </td></tr>
 <tr class="separator:ada78a5fb0ef4342ed7805ece0320b1c2 inherit pub_methods_structrotor_1_1actor__base__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb01ecfeb2b9957dca351f15b7f77d5d inherit pub_methods_structrotor_1_1actor__base__t"><td class="memTemplParams" colspan="2"><a id="adb01ecfeb2b9957dca351f15b7f77d5d"></a>
 template&lt;typename Handler &gt; </td></tr>
-<tr class="memitem:adb01ecfeb2b9957dca351f15b7f77d5d inherit pub_methods_structrotor_1_1actor__base__t"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#adb01ecfeb2b9957dca351f15b7f77d5d">unsubscribe</a> (Handler &amp;&amp;h, address_ptr_t &amp;addr) noexcept</td></tr>
+<tr class="memitem:adb01ecfeb2b9957dca351f15b7f77d5d inherit pub_methods_structrotor_1_1actor__base__t"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#adb01ecfeb2b9957dca351f15b7f77d5d">unsubscribe</a> (Handler &amp;&amp;h, <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a> &amp;addr) noexcept</td></tr>
 <tr class="memdesc:adb01ecfeb2b9957dca351f15b7f77d5d inherit pub_methods_structrotor_1_1actor__base__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">unsubscribes actor's handler from process messages on the specified address <br /></td></tr>
 <tr class="separator:adb01ecfeb2b9957dca351f15b7f77d5d inherit pub_methods_structrotor_1_1actor__base__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a36666529aeef79e9bd6d13628b5355 inherit pub_methods_structrotor_1_1actor__base__t"><td class="memTemplParams" colspan="2"><a id="a3a36666529aeef79e9bd6d13628b5355"></a>
@@ -311,36 +318,16 @@ template&lt;typename Handler &gt; </td></tr>
 <tr class="memdesc:a3a36666529aeef79e9bd6d13628b5355 inherit pub_methods_structrotor_1_1actor__base__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">unsubscribes actor's handler from process messages on the actor's address <br /></td></tr>
 <tr class="separator:a3a36666529aeef79e9bd6d13628b5355 inherit pub_methods_structrotor_1_1actor__base__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_structrotor_1_1actor__base__t"><td colspan="2" onclick="javascript:toggleInherit('pub_types_structrotor_1_1actor__base__t')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="structrotor_1_1actor__base__t.html">rotor::actor_base_t</a></td></tr>
-<tr class="memitem:aa4feb2f49ee3d796e0b400068098bef5 inherit pub_types_structrotor_1_1actor__base__t"><td class="memItemLeft" align="right" valign="top"><a id="aa4feb2f49ee3d796e0b400068098bef5"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#aa4feb2f49ee3d796e0b400068098bef5">subscription_points_t</a> = std::list&lt; <a class="el" href="structrotor_1_1actor__base__t_1_1subscription__point__t.html">subscription_point_t</a> &gt;</td></tr>
-<tr class="memdesc:aa4feb2f49ee3d796e0b400068098bef5 inherit pub_types_structrotor_1_1actor__base__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">alias to the list of <a class="el" href="structrotor_1_1actor__base__t_1_1subscription__point__t.html">subscription_point_t</a> <br /></td></tr>
-<tr class="separator:aa4feb2f49ee3d796e0b400068098bef5 inherit pub_types_structrotor_1_1actor__base__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_types_structrotor_1_1supervisor__t"><td colspan="2" onclick="javascript:toggleInherit('pro_types_structrotor_1_1supervisor__t')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="structrotor_1_1supervisor__t.html">rotor::supervisor_t</a></td></tr>
-<tr class="memitem:afd19400d871b752e37f1738d91a122b0 inherit pro_types_structrotor_1_1supervisor__t"><td class="memItemLeft" align="right" valign="top"><a id="afd19400d871b752e37f1738d91a122b0"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__t.html#afd19400d871b752e37f1738d91a122b0">queue_t</a> = std::deque&lt; message_ptr_t &gt;</td></tr>
-<tr class="memdesc:afd19400d871b752e37f1738d91a122b0 inherit pro_types_structrotor_1_1supervisor__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">structure to hold messages (intrusive pointers) <br /></td></tr>
-<tr class="separator:afd19400d871b752e37f1738d91a122b0 inherit pro_types_structrotor_1_1supervisor__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cc645f51f01a927af3423537716408d inherit pro_types_structrotor_1_1supervisor__t"><td class="memItemLeft" align="right" valign="top"><a id="a0cc645f51f01a927af3423537716408d"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__t.html#a0cc645f51f01a927af3423537716408d">subscription_map_t</a> = std::unordered_map&lt; address_ptr_t, <a class="el" href="structrotor_1_1subscription__t.html">subscription_t</a> &gt;</td></tr>
-<tr class="memdesc:a0cc645f51f01a927af3423537716408d inherit pro_types_structrotor_1_1supervisor__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">address-to-subscription map type <br /></td></tr>
-<tr class="separator:a0cc645f51f01a927af3423537716408d inherit pro_types_structrotor_1_1supervisor__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8efd907414aee91e21a120dbd51a01c2 inherit pro_types_structrotor_1_1supervisor__t"><td class="memItemLeft" align="right" valign="top"><a id="a8efd907414aee91e21a120dbd51a01c2"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__t.html#a8efd907414aee91e21a120dbd51a01c2">actors_map_t</a> = std::unordered_map&lt; address_ptr_t, actor_ptr_t &gt;</td></tr>
-<tr class="memdesc:a8efd907414aee91e21a120dbd51a01c2 inherit pro_types_structrotor_1_1supervisor__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">(local) address-to-actor map type <br /></td></tr>
-<tr class="separator:a8efd907414aee91e21a120dbd51a01c2 inherit pro_types_structrotor_1_1supervisor__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_structrotor_1_1supervisor__t"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_structrotor_1_1supervisor__t')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="structrotor_1_1supervisor__t.html">rotor::supervisor_t</a></td></tr>
-<tr class="memitem:a335b98bbe0df15fe343be29d7f3daf7a inherit pro_methods_structrotor_1_1supervisor__t"><td class="memItemLeft" align="right" valign="top"><a id="a335b98bbe0df15fe343be29d7f3daf7a"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__t.html#a335b98bbe0df15fe343be29d7f3daf7a">remove_actor</a> (<a class="el" href="structrotor_1_1actor__base__t.html">actor_base_t</a> &amp;actor) noexcept</td></tr>
-<tr class="memdesc:a335b98bbe0df15fe343be29d7f3daf7a inherit pro_methods_structrotor_1_1supervisor__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">removes actor from supervisor. It is assumed, that actor it shutted down. <br /></td></tr>
-<tr class="separator:a335b98bbe0df15fe343be29d7f3daf7a inherit pro_methods_structrotor_1_1supervisor__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_structrotor_1_1actor__base__t"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_structrotor_1_1actor__base__t')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="structrotor_1_1actor__base__t.html">rotor::actor_base_t</a></td></tr>
-<tr class="memitem:a465427daf18d178baec930ec0ec8530a inherit pro_methods_structrotor_1_1actor__base__t"><td class="memItemLeft" align="right" valign="top"><a id="a465427daf18d178baec930ec0ec8530a"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a465427daf18d178baec930ec0ec8530a">remove_subscription</a> (const address_ptr_t &amp;addr, const handler_ptr_t &amp;handler) noexcept</td></tr>
-<tr class="memdesc:a465427daf18d178baec930ec0ec8530a inherit pro_methods_structrotor_1_1actor__base__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">removes the subscription point <br /></td></tr>
-<tr class="separator:a465427daf18d178baec930ec0ec8530a inherit pro_methods_structrotor_1_1actor__base__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a22c650f7ebb66debaacf5e8e62def52f"><td class="memItemLeft" align="right" valign="top"><a id="a22c650f7ebb66debaacf5e8e62def52f"></a>
+<a class="el" href="structrotor_1_1wx_1_1supervisor__config__t.html">supervisor_config_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1wx_1_1supervisor__wx__t.html#a22c650f7ebb66debaacf5e8e62def52f">config</a></td></tr>
+<tr class="memdesc:a22c650f7ebb66debaacf5e8e62def52f"><td class="mdescLeft">&#160;</td><td class="mdescRight">timeout value and wx events transport <br /></td></tr>
+<tr class="separator:a22c650f7ebb66debaacf5e8e62def52f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a486d8980e763fb107d892177578cd0ff"><td class="memItemLeft" align="right" valign="top"><a id="a486d8980e763fb107d892177578cd0ff"></a>
+<a class="el" href="structrotor_1_1wx_1_1shutdown__timer__t.html">shutdown_timer_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1wx_1_1supervisor__wx__t.html#a486d8980e763fb107d892177578cd0ff">shutdown_timer</a></td></tr>
+<tr class="memdesc:a486d8980e763fb107d892177578cd0ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">timer used in shutdown procedure <br /></td></tr>
+<tr class="separator:a486d8980e763fb107d892177578cd0ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_structrotor_1_1supervisor__t"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_structrotor_1_1supervisor__t')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="structrotor_1_1supervisor__t.html">rotor::supervisor_t</a></td></tr>
 <tr class="memitem:af56eb18780cb942780f0d639f94a4bc7 inherit pro_attribs_structrotor_1_1supervisor__t"><td class="memItemLeft" align="right" valign="top"><a id="af56eb18780cb942780f0d639f94a4bc7"></a>
 <a class="el" href="structrotor_1_1supervisor__t.html">supervisor_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__t.html#af56eb18780cb942780f0d639f94a4bc7">parent</a></td></tr>
@@ -367,19 +354,119 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memdesc:a8883a9334ace7138712b201cea41303d inherit pro_attribs_structrotor_1_1actor__base__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">actor's execution / infrastructure context <br /></td></tr>
 <tr class="separator:a8883a9334ace7138712b201cea41303d inherit pro_attribs_structrotor_1_1actor__base__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace7dad5e2a06711664bb7d0c70d1f1c7 inherit pro_attribs_structrotor_1_1actor__base__t"><td class="memItemLeft" align="right" valign="top"><a id="ace7dad5e2a06711664bb7d0c70d1f1c7"></a>
-state_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#ace7dad5e2a06711664bb7d0c70d1f1c7">state</a></td></tr>
+<a class="el" href="namespacerotor.html#a6efbb2b594154ba938cf57113e1431a3">state_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#ace7dad5e2a06711664bb7d0c70d1f1c7">state</a></td></tr>
 <tr class="memdesc:ace7dad5e2a06711664bb7d0c70d1f1c7 inherit pro_attribs_structrotor_1_1actor__base__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">current actor state <br /></td></tr>
 <tr class="separator:ace7dad5e2a06711664bb7d0c70d1f1c7 inherit pro_attribs_structrotor_1_1actor__base__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afad3a40184e18b3bb7ea2e9e50115edb inherit pro_attribs_structrotor_1_1actor__base__t"><td class="memItemLeft" align="right" valign="top"><a id="afad3a40184e18b3bb7ea2e9e50115edb"></a>
-address_ptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#afad3a40184e18b3bb7ea2e9e50115edb">address</a></td></tr>
+<a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#afad3a40184e18b3bb7ea2e9e50115edb">address</a></td></tr>
 <tr class="memdesc:afad3a40184e18b3bb7ea2e9e50115edb inherit pro_attribs_structrotor_1_1actor__base__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">actor address <br /></td></tr>
 <tr class="separator:afad3a40184e18b3bb7ea2e9e50115edb inherit pro_attribs_structrotor_1_1actor__base__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9eabdfa2eef776fdfe38bc8c5631dc58 inherit pro_attribs_structrotor_1_1actor__base__t"><td class="memItemLeft" align="right" valign="top"><a id="a9eabdfa2eef776fdfe38bc8c5631dc58"></a>
 <a class="el" href="structrotor_1_1actor__base__t.html#aa4feb2f49ee3d796e0b400068098bef5">subscription_points_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a9eabdfa2eef776fdfe38bc8c5631dc58">points</a></td></tr>
 <tr class="memdesc:a9eabdfa2eef776fdfe38bc8c5631dc58 inherit pro_attribs_structrotor_1_1actor__base__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">recorded subscription points (i.e. handler/address pairs) <br /></td></tr>
 <tr class="separator:a9eabdfa2eef776fdfe38bc8c5631dc58 inherit pro_attribs_structrotor_1_1actor__base__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_structrotor_1_1actor__base__t"><td colspan="2" onclick="javascript:toggleInherit('pub_types_structrotor_1_1actor__base__t')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="structrotor_1_1actor__base__t.html">rotor::actor_base_t</a></td></tr>
+<tr class="memitem:aa4feb2f49ee3d796e0b400068098bef5 inherit pub_types_structrotor_1_1actor__base__t"><td class="memItemLeft" align="right" valign="top"><a id="aa4feb2f49ee3d796e0b400068098bef5"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#aa4feb2f49ee3d796e0b400068098bef5">subscription_points_t</a> = std::list&lt; <a class="el" href="structrotor_1_1actor__base__t_1_1subscription__point__t.html">subscription_point_t</a> &gt;</td></tr>
+<tr class="memdesc:aa4feb2f49ee3d796e0b400068098bef5 inherit pub_types_structrotor_1_1actor__base__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">alias to the list of <a class="el" href="structrotor_1_1actor__base__t_1_1subscription__point__t.html">subscription_point_t</a> <br /></td></tr>
+<tr class="separator:aa4feb2f49ee3d796e0b400068098bef5 inherit pub_types_structrotor_1_1actor__base__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_types_structrotor_1_1supervisor__t"><td colspan="2" onclick="javascript:toggleInherit('pro_types_structrotor_1_1supervisor__t')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="structrotor_1_1supervisor__t.html">rotor::supervisor_t</a></td></tr>
+<tr class="memitem:afd19400d871b752e37f1738d91a122b0 inherit pro_types_structrotor_1_1supervisor__t"><td class="memItemLeft" align="right" valign="top"><a id="afd19400d871b752e37f1738d91a122b0"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__t.html#afd19400d871b752e37f1738d91a122b0">queue_t</a> = std::deque&lt; <a class="el" href="namespacerotor.html#a0196761fe474bd8dc17ac4ff9f0e2f95">message_ptr_t</a> &gt;</td></tr>
+<tr class="memdesc:afd19400d871b752e37f1738d91a122b0 inherit pro_types_structrotor_1_1supervisor__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">structure to hold messages (intrusive pointers) <br /></td></tr>
+<tr class="separator:afd19400d871b752e37f1738d91a122b0 inherit pro_types_structrotor_1_1supervisor__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cc645f51f01a927af3423537716408d inherit pro_types_structrotor_1_1supervisor__t"><td class="memItemLeft" align="right" valign="top"><a id="a0cc645f51f01a927af3423537716408d"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__t.html#a0cc645f51f01a927af3423537716408d">subscription_map_t</a> = std::unordered_map&lt; <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a>, <a class="el" href="structrotor_1_1subscription__t.html">subscription_t</a> &gt;</td></tr>
+<tr class="memdesc:a0cc645f51f01a927af3423537716408d inherit pro_types_structrotor_1_1supervisor__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">address-to-subscription map type <br /></td></tr>
+<tr class="separator:a0cc645f51f01a927af3423537716408d inherit pro_types_structrotor_1_1supervisor__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8efd907414aee91e21a120dbd51a01c2 inherit pro_types_structrotor_1_1supervisor__t"><td class="memItemLeft" align="right" valign="top"><a id="a8efd907414aee91e21a120dbd51a01c2"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__t.html#a8efd907414aee91e21a120dbd51a01c2">actors_map_t</a> = std::unordered_map&lt; <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a>, <a class="el" href="namespacerotor.html#aa680b052e55aa70f20c6e270187db2d6">actor_ptr_t</a> &gt;</td></tr>
+<tr class="memdesc:a8efd907414aee91e21a120dbd51a01c2 inherit pro_types_structrotor_1_1supervisor__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">(local) address-to-actor map type <br /></td></tr>
+<tr class="separator:a8efd907414aee91e21a120dbd51a01c2 inherit pro_types_structrotor_1_1supervisor__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_structrotor_1_1supervisor__t"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_structrotor_1_1supervisor__t')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="structrotor_1_1supervisor__t.html">rotor::supervisor_t</a></td></tr>
+<tr class="memitem:a335b98bbe0df15fe343be29d7f3daf7a inherit pro_methods_structrotor_1_1supervisor__t"><td class="memItemLeft" align="right" valign="top"><a id="a335b98bbe0df15fe343be29d7f3daf7a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__t.html#a335b98bbe0df15fe343be29d7f3daf7a">remove_actor</a> (<a class="el" href="structrotor_1_1actor__base__t.html">actor_base_t</a> &amp;actor) noexcept</td></tr>
+<tr class="memdesc:a335b98bbe0df15fe343be29d7f3daf7a inherit pro_methods_structrotor_1_1supervisor__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">removes actor from supervisor. It is assumed, that actor it shutted down. <br /></td></tr>
+<tr class="separator:a335b98bbe0df15fe343be29d7f3daf7a inherit pro_methods_structrotor_1_1supervisor__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_structrotor_1_1actor__base__t"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_structrotor_1_1actor__base__t')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="structrotor_1_1actor__base__t.html">rotor::actor_base_t</a></td></tr>
+<tr class="memitem:a465427daf18d178baec930ec0ec8530a inherit pro_methods_structrotor_1_1actor__base__t"><td class="memItemLeft" align="right" valign="top"><a id="a465427daf18d178baec930ec0ec8530a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a465427daf18d178baec930ec0ec8530a">remove_subscription</a> (const <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a> &amp;addr, const <a class="el" href="namespacerotor.html#a6fbcb2aae7a1ccefb14fe774902080d7">handler_ptr_t</a> &amp;handler) noexcept</td></tr>
+<tr class="memdesc:a465427daf18d178baec930ec0ec8530a inherit pro_methods_structrotor_1_1actor__base__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">removes the subscription point <br /></td></tr>
+<tr class="separator:a465427daf18d178baec930ec0ec8530a inherit pro_methods_structrotor_1_1actor__base__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>delivers rotor-messages on top of wx event </p>
+<p>Basically wx event handler is used as transport for wx-rotor-events, which wrap rotor-messages.</p>
+<p>Since wx-event loop is mainly GUI-loop, i.e. singleton, there are no different execution contexts, i.e. only one (main) executing thread; hence, there is no sense of having multiple supervisors.</p>
+<p>The wx-supervisor (and it's actors) role in <code>rotor</code> messaging is to <b>abstract</b> destination endpoints from other non-wx (I/O) event loops, i.e. show some information in corresponding field/window/frame/... Hence, the receiving rotor-messages actors should be aware of your wx-application system, i.e. hold refences to appropriate fields/windows etc.</p>
+<p>The commands transalaton (i.e. from click on the button to the <code>rotor</code> -message send) should be also performed on wx-specific actors. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a64aae5fc77eb4527814a2215524a4e08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64aae5fc77eb4527814a2215524a4e08">&#9670;&nbsp;</a></span>supervisor_wx_t()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">rotor::wx::supervisor_wx_t::supervisor_wx_t </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrotor_1_1wx_1_1supervisor__wx__t.html">supervisor_wx_t</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structrotor_1_1wx_1_1supervisor__config__t.html">supervisor_config_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>config</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>constructs new supervisor from parent supervisor and supervisor config </p>
+<p>the <code>parent</code> supervisor can be null </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ada9b199880fbc2ab811eb2f64a3b599d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada9b199880fbc2ab811eb2f64a3b599d">&#9670;&nbsp;</a></span>create_actor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Actor , typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a>&lt;Actor&gt; rotor::wx::supervisor_wx_t::create_actor </td>
+          <td>(</td>
+          <td class="paramtype">Args...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>creates an actor by forwaring <code>args</code> to it </p>
+<p>The newly created actor belogs to the wx supervisor / wx event loop </p>
+
+</div>
+</div>
 <a id="af01804f732f69e0dc198ef79b72171cc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af01804f732f69e0dc198ef79b72171cc">&#9670;&nbsp;</a></span>enqueue()</h2>
 
@@ -392,7 +479,7 @@ address_ptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
         <tr>
           <td class="memname">virtual void rotor::wx::supervisor_wx_t::enqueue </td>
           <td>(</td>
-          <td class="paramtype">message_ptr_t&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacerotor.html#a0196761fe474bd8dc17ac4ff9f0e2f95">message_ptr_t</a>&#160;</td>
           <td class="paramname"><em>message</em></td><td>)</td>
           <td></td>
         </tr>
