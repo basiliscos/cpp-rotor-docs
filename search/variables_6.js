@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['raw_5factor_5fptr',['raw_actor_ptr',['../structrotor_1_1handler__base__t.html#a382ecf3837c1420f8982a65e016c4d78',1,'rotor::handler_base_t']]],
-  ['raw_5fsupervisor_5fptr',['raw_supervisor_ptr',['../structrotor_1_1handler__base__t.html#a7520619ae7899637541c4f0e37c9c954',1,'rotor::handler_base_t']]],
-  ['reply_5faddr',['reply_addr',['../structrotor_1_1payload_1_1state__request__t.html#a4810f318826252b476d62d24262d3f51',1,'rotor::payload::state_request_t']]]
+  ['orig_5fmessage',['orig_message',['../structrotor_1_1payload_1_1handler__call__t.html#af50bca38208b4d263641dd460d7cdf6e',1,'rotor::payload::handler_call_t']]],
+  ['outbound',['outbound',['../structrotor_1_1supervisor__t.html#aa845137fb1fcfcd551037d7f4e50e9a0',1,'rotor::supervisor_t']]]
 ];

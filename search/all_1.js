@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['call',['call',['../structrotor_1_1handler__base__t.html#ad7edf5fb09fabed9f071b27c5986050d',1,'rotor::handler_base_t::call()'],['../structrotor_1_1handler__t.html#a9a23941abab04ea95b2c3402722f8617',1,'rotor::handler_t::call()']]],
+  ['call',['call',['../structrotor_1_1asio_1_1curry__arg__t.html#a5c14d75b92d2f21ccbbc014d1aefd241',1,'rotor::asio::curry_arg_t::call()'],['../structrotor_1_1handler__base__t.html#ad7edf5fb09fabed9f071b27c5986050d',1,'rotor::handler_base_t::call()'],['../structrotor_1_1handler__t.html#a9a23941abab04ea95b2c3402722f8617',1,'rotor::handler_t::call()']]],
   ['cancel_5fshutdown_5ftimer',['cancel_shutdown_timer',['../structrotor_1_1asio_1_1supervisor__asio__t.html#a8399e9762a3a4588ee84b1166eba9baa',1,'rotor::asio::supervisor_asio_t::cancel_shutdown_timer()'],['../structrotor_1_1supervisor__t.html#a0c5635ae0d86b7fe286ca7f9b2c657f2',1,'rotor::supervisor_t::cancel_shutdown_timer()'],['../structrotor_1_1wx_1_1supervisor__wx__t.html#a115698ec009019a3cf3ccde76cdb44c4',1,'rotor::wx::supervisor_wx_t::cancel_shutdown_timer()']]],
   ['classified_5fhandlers_5ft',['classified_handlers_t',['../structrotor_1_1subscription__t_1_1classified__handlers__t.html',1,'rotor::subscription_t']]],
   ['commit_5funsubscription',['commit_unsubscription',['../structrotor_1_1supervisor__t.html#ad7833a338bc85d0145a191e73bbdfad0',1,'rotor::supervisor_t']]],
@@ -13,7 +13,7 @@ var searchData=
   ['create_5factor',['create_actor',['../structrotor_1_1supervisor__t.html#af2c3b2583d9f7a96a07a90bf78eb430b',1,'rotor::supervisor_t::create_actor()'],['../structrotor_1_1wx_1_1supervisor__wx__t.html#ada9b199880fbc2ab811eb2f64a3b599d',1,'rotor::wx::supervisor_wx_t::create_actor()']]],
   ['create_5factor_5ft',['create_actor_t',['../structrotor_1_1payload_1_1create__actor__t.html',1,'rotor::payload']]],
   ['create_5faddress',['create_address',['../structrotor_1_1actor__base__t.html#aad2dfe86c50047191168dd7614db80bc',1,'rotor::actor_base_t']]],
-  ['create_5fsupervisor',['create_supervisor',['../structrotor_1_1system__context__t.html#a61d548cd385f28ac040e5eb464e4ce61',1,'rotor::system_context_t::create_supervisor()'],['../structrotor_1_1wx_1_1system__context__wx__t.html#a81ee684f94f1243dcd05c2ff4dbe00d8',1,'rotor::wx::system_context_wx_t::create_supervisor()']]],
+  ['create_5fsupervisor',['create_supervisor',['../structrotor_1_1asio_1_1system__context__asio__t.html#a70661217355ae3efdd2dbf4f2c7b91a5',1,'rotor::asio::system_context_asio_t::create_supervisor()'],['../structrotor_1_1system__context__t.html#a61d548cd385f28ac040e5eb464e4ce61',1,'rotor::system_context_t::create_supervisor()'],['../structrotor_1_1wx_1_1system__context__wx__t.html#a81ee684f94f1243dcd05c2ff4dbe00d8',1,'rotor::wx::system_context_wx_t::create_supervisor()']]],
   ['curry_5farg_5ft',['curry_arg_t',['../structrotor_1_1asio_1_1curry__arg__t.html',1,'rotor::asio']]],
   ['compiling_20_26_20building',['Compiling &amp; building',['../md__home_b_development_cpp_cpp-rotor_docs_Compilation.html',1,'']]]
 ];

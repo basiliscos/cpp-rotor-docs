@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['orig_5fmessage',['orig_message',['../structrotor_1_1payload_1_1handler__call__t.html#af50bca38208b4d263641dd460d7cdf6e',1,'rotor::payload::handler_call_t']]],
-  ['outbound',['outbound',['../structrotor_1_1supervisor__t.html#aa845137fb1fcfcd551037d7f4e50e9a0',1,'rotor::supervisor_t']]]
+  ['io_5fcontext',['io_context',['../structrotor_1_1asio_1_1system__context__asio__t.html#a7a1d2e7b37a3242defcb732f6431ffc9',1,'rotor::asio::system_context_asio_t']]]
 ];

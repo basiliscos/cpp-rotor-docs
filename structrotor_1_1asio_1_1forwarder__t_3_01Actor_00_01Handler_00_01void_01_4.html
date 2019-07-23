@@ -105,35 +105,82 @@ $(document).ready(function(){initNavTree('structrotor_1_1asio_1_1forwarder__t_3_
 <div class="title">rotor::asio::forwarder_t&lt; Actor, Handler, void &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>forwarder specialization, when error case is not possible  
+ <a href="structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01void_01_4.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="forwarder_8hpp_source.html">forwarder.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a43d9a0de642306e6b5b2e6c2877d0f30"><td class="memItemLeft" align="right" valign="top"><a id="a43d9a0de642306e6b5b2e6c2877d0f30"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>typed_actor_ptr_t</b> = <a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a>&lt; Actor &gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01void_01_4.html#a43d9a0de642306e6b5b2e6c2877d0f30">typed_actor_ptr_t</a> = <a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a>&lt; Actor &gt;</td></tr>
+<tr class="memdesc:a43d9a0de642306e6b5b2e6c2877d0f30"><td class="mdescLeft">&#160;</td><td class="mdescRight">alias for intrusive pointer for an actor type <br /></td></tr>
 <tr class="separator:a43d9a0de642306e6b5b2e6c2877d0f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9aab73c45e092cab0c779bcc6b20c1a6"><td class="memItemLeft" align="right" valign="top"><a id="a9aab73c45e092cab0c779bcc6b20c1a6"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>typed_sup_t</b> = <a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html">supervisor_asio_t</a></td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01void_01_4.html#a9aab73c45e092cab0c779bcc6b20c1a6">typed_sup_t</a> = <a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html">supervisor_asio_t</a></td></tr>
+<tr class="memdesc:a9aab73c45e092cab0c779bcc6b20c1a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">alias for boost::asio supervior <br /></td></tr>
 <tr class="separator:a9aab73c45e092cab0c779bcc6b20c1a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5c317b9b4664782f8d0586149933258e"><td class="memItemLeft" align="right" valign="top"><a id="a5c317b9b4664782f8d0586149933258e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>forwarder_t</b> (Actor &amp;actor_, Handler &amp;&amp;handler_)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01void_01_4.html#a5c317b9b4664782f8d0586149933258e">forwarder_t</a> (Actor &amp;actor_, Handler &amp;&amp;handler_)</td></tr>
+<tr class="memdesc:a5c317b9b4664782f8d0586149933258e"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructs forwarder for the actor from it handler function <br /></td></tr>
 <tr class="separator:a5c317b9b4664782f8d0586149933258e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac327c89d739584118067c135fe6c789f"><td class="memTemplParams" colspan="2"><a id="ac327c89d739584118067c135fe6c789f"></a>
 template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:ac327c89d739584118067c135fe6c789f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (Args... args) noexcept</td></tr>
+<tr class="memitem:ac327c89d739584118067c135fe6c789f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01void_01_4.html#ac327c89d739584118067c135fe6c789f">operator()</a> (Args... args) noexcept</td></tr>
+<tr class="memdesc:ac327c89d739584118067c135fe6c789f"><td class="mdescLeft">&#160;</td><td class="mdescRight">mimics boost::asio handler, which will be forwarded to the appropriate actor's member method. <br /></td></tr>
 <tr class="separator:ac327c89d739584118067c135fe6c789f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a8e7a1333fae4e71fc62e1054c9d4a405"><td class="memItemLeft" align="right" valign="top"><a id="a8e7a1333fae4e71fc62e1054c9d4a405"></a>
-typed_actor_ptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>typed_actor</b></td></tr>
+<tr class="memitem:a8e7a1333fae4e71fc62e1054c9d4a405"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01void_01_4.html#a43d9a0de642306e6b5b2e6c2877d0f30">typed_actor_ptr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01void_01_4.html#a8e7a1333fae4e71fc62e1054c9d4a405">typed_actor</a></td></tr>
 <tr class="separator:a8e7a1333fae4e71fc62e1054c9d4a405"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8528ac798637c2283048a220d3de0852"><td class="memItemLeft" align="right" valign="top"><a id="a8528ac798637c2283048a220d3de0852"></a>
-Handler&#160;</td><td class="memItemRight" valign="bottom"><b>handler</b></td></tr>
+<tr class="memitem:a8528ac798637c2283048a220d3de0852"><td class="memItemLeft" align="right" valign="top">Handler&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01void_01_4.html#a8528ac798637c2283048a220d3de0852">handler</a></td></tr>
 <tr class="separator:a8528ac798637c2283048a220d3de0852"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename Actor, typename Handler&gt;<br />
+struct rotor::asio::forwarder_t&lt; Actor, Handler, void &gt;</h3>
+
+<p>forwarder specialization, when error case is not possible </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a8528ac798637c2283048a220d3de0852"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8528ac798637c2283048a220d3de0852">&#9670;&nbsp;</a></span>handler</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Actor , typename Handler &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Handler <a class="el" href="structrotor_1_1asio_1_1forwarder__t.html">rotor::asio::forwarder_t</a>&lt; Actor, Handler, void &gt;::handler</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>pointer-to-member function of the actor to handle positive case result </p>
+
+</div>
+</div>
+<a id="a8e7a1333fae4e71fc62e1054c9d4a405"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e7a1333fae4e71fc62e1054c9d4a405">&#9670;&nbsp;</a></span>typed_actor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Actor , typename Handler &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01void_01_4.html#a43d9a0de642306e6b5b2e6c2877d0f30">typed_actor_ptr_t</a> <a class="el" href="structrotor_1_1asio_1_1forwarder__t.html">rotor::asio::forwarder_t</a>&lt; Actor, Handler, void &gt;::typed_actor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>intrusive pointer to the actor </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/home/b/development/cpp/cpp-rotor/include/rotor/asio/<a class="el" href="forwarder_8hpp_source.html">forwarder.hpp</a></li>
 </ul>

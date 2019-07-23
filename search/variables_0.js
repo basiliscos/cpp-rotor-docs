@@ -5,5 +5,6 @@ var searchData=
   ['actor_5fptr',['actor_ptr',['../structrotor_1_1handler__base__t.html#a0a026b4411c3c51a1ca826a8fc9ef118',1,'rotor::handler_base_t']]],
   ['actors_5fmap',['actors_map',['../structrotor_1_1supervisor__t.html#a737b47c014a7273fe7994ca79d5b1946',1,'rotor::supervisor_t']]],
   ['address',['address',['../structrotor_1_1actor__base__t_1_1subscription__point__t.html#aaff3977c036375a75c2b13e1f2ce38b2',1,'rotor::actor_base_t::subscription_point_t::address()'],['../structrotor_1_1actor__base__t.html#afad3a40184e18b3bb7ea2e9e50115edb',1,'rotor::actor_base_t::address()'],['../structrotor_1_1message__base__t.html#aef75908f401aaf310db1f578f316f2c2',1,'rotor::message_base_t::address()']]],
-  ['app',['app',['../structrotor_1_1wx_1_1system__context__wx__t.html#a4a4c66d8008206770bcb761299d91afd',1,'rotor::wx::system_context_wx_t']]]
+  ['app',['app',['../structrotor_1_1wx_1_1system__context__wx__t.html#a4a4c66d8008206770bcb761299d91afd',1,'rotor::wx::system_context_wx_t']]],
+  ['args',['args',['../structrotor_1_1asio_1_1curry__arg__t.html#a44d19b5d2c6a418b2cbe4b9319f66ec6',1,'rotor::asio::curry_arg_t']]]
 ];

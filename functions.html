@@ -132,12 +132,16 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>app
 : <a class="el" href="structrotor_1_1wx_1_1system__context__wx__t.html#a4a4c66d8008206770bcb761299d91afd">rotor::wx::system_context_wx_t</a>
 </li>
+<li>args
+: <a class="el" href="structrotor_1_1asio_1_1curry__arg__t.html#a44d19b5d2c6a418b2cbe4b9319f66ec6">rotor::asio::curry_arg_t&lt; Args &gt;</a>
+</li>
 </ul>
 
 
 <h3><a id="index_c"></a>- c -</h3><ul>
 <li>call()
-: <a class="el" href="structrotor_1_1handler__base__t.html#ad7edf5fb09fabed9f071b27c5986050d">rotor::handler_base_t</a>
+: <a class="el" href="structrotor_1_1asio_1_1curry__arg__t.html#a5c14d75b92d2f21ccbbc014d1aefd241">rotor::asio::curry_arg_t&lt; Args &gt;</a>
+, <a class="el" href="structrotor_1_1handler__base__t.html#ad7edf5fb09fabed9f071b27c5986050d">rotor::handler_base_t</a>
 , <a class="el" href="structrotor_1_1handler__t.html#a9a23941abab04ea95b2c3402722f8617">rotor::handler_t&lt; Handler &gt;</a>
 </li>
 <li>cancel_shutdown_timer()
@@ -170,7 +174,8 @@ $(document).ready(function(){initNavTree('functions.html','');});
 : <a class="el" href="structrotor_1_1actor__base__t.html#aad2dfe86c50047191168dd7614db80bc">rotor::actor_base_t</a>
 </li>
 <li>create_supervisor()
-: <a class="el" href="structrotor_1_1system__context__t.html#a61d548cd385f28ac040e5eb464e4ce61">rotor::system_context_t</a>
+: <a class="el" href="structrotor_1_1asio_1_1system__context__asio__t.html#a70661217355ae3efdd2dbf4f2c7b91a5">rotor::asio::system_context_asio_t</a>
+, <a class="el" href="structrotor_1_1system__context__t.html#a61d548cd385f28ac040e5eb464e4ce61">rotor::system_context_t</a>
 , <a class="el" href="structrotor_1_1wx_1_1system__context__wx__t.html#a81ee684f94f1243dcd05c2ff4dbe00d8">rotor::wx::system_context_wx_t</a>
 </li>
 </ul>
@@ -191,7 +196,8 @@ $(document).ready(function(){initNavTree('functions.html','');});
 : <a class="el" href="structrotor_1_1supervisor__t.html#ac092b3905d88ec06fd079fb6f0e0f66a">rotor::supervisor_t</a>
 </li>
 <li>duration_t
-: <a class="el" href="structrotor_1_1wx_1_1supervisor__config__t.html#a4bb0930b2e54caaf63096d53287a3353">rotor::wx::supervisor_config_t</a>
+: <a class="el" href="structrotor_1_1asio_1_1supervisor__config__t.html#a1cb65750b82d622ce607dfcaee7f7f4f">rotor::asio::supervisor_config_t</a>
+, <a class="el" href="structrotor_1_1wx_1_1supervisor__config__t.html#a4bb0930b2e54caaf63096d53287a3353">rotor::wx::supervisor_config_t</a>
 </li>
 </ul>
 
@@ -201,6 +207,17 @@ $(document).ready(function(){initNavTree('functions.html','');});
 : <a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html#a0ce7fa81f4d6dc519ff9c62b1d5123c9">rotor::asio::supervisor_asio_t</a>
 , <a class="el" href="structrotor_1_1supervisor__t.html#aaf99e587b441bb5e68b0c500ffedf14f">rotor::supervisor_t</a>
 , <a class="el" href="structrotor_1_1wx_1_1supervisor__wx__t.html#af01804f732f69e0dc198ef79b72171cc">rotor::wx::supervisor_wx_t</a>
+</li>
+<li>err_handler
+: <a class="el" href="structrotor_1_1asio_1_1forwarder__t.html#aed5b05096b461c91faa753623b672f03">rotor::asio::forwarder_t&lt; Actor, Handler, ErrHandler &gt;</a>
+</li>
+</ul>
+
+
+<h3><a id="index_f"></a>- f -</h3><ul>
+<li>forwarder_t()
+: <a class="el" href="structrotor_1_1asio_1_1forwarder__t.html#a99f6cb9cac61dd2e3cb18e4ff548cdb4">rotor::asio::forwarder_t&lt; Actor, Handler, ErrHandler &gt;</a>
+, <a class="el" href="structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01void_01_4.html#a5c317b9b4664782f8d0586149933258e">rotor::asio::forwarder_t&lt; Actor, Handler, void &gt;</a>
 </li>
 </ul>
 
@@ -215,6 +232,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>get_context()
 : <a class="el" href="structrotor_1_1supervisor__t.html#ad710e22f74c8d992bec75f62db828753">rotor::supervisor_t</a>
 , <a class="el" href="structrotor_1_1wx_1_1supervisor__wx__t.html#a38bcc736ac361ab9c1bae3fb621d8d25">rotor::wx::supervisor_wx_t</a>
+</li>
+<li>get_io_context()
+: <a class="el" href="structrotor_1_1asio_1_1system__context__asio__t.html#a2c939f7c2e311bf299f406f6aca06931">rotor::asio::system_context_asio_t</a>
 </li>
 <li>get_parent_supervisor()
 : <a class="el" href="structrotor_1_1supervisor__t.html#a03fe5fac32a9580a99d318e47792d61a">rotor::supervisor_t</a>
@@ -238,6 +258,8 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <h3><a id="index_h"></a>- h -</h3><ul>
 <li>handler
 : <a class="el" href="structrotor_1_1actor__base__t_1_1subscription__point__t.html#a85542013f7a2780de7bc0e82843c2e22">rotor::actor_base_t::subscription_point_t</a>
+, <a class="el" href="structrotor_1_1asio_1_1forwarder__t.html#a7141ecd844e2b85ab6781a92c95fefa1">rotor::asio::forwarder_t&lt; Actor, Handler, ErrHandler &gt;</a>
+, <a class="el" href="structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01void_01_4.html#a8528ac798637c2283048a220d3de0852">rotor::asio::forwarder_t&lt; Actor, Handler, void &gt;</a>
 , <a class="el" href="structrotor_1_1handler__t.html#a0b8c5ed4384d62b87a1ed97eb6e34fa5">rotor::handler_t&lt; Handler &gt;</a>
 , <a class="el" href="structrotor_1_1payload_1_1commit__unsubscription__t.html#a95dcdb6e88b02445191c2bf9399a083e">rotor::payload::commit_unsubscription_t</a>
 , <a class="el" href="structrotor_1_1payload_1_1external__subscription__t.html#ae27cc0ac98405e661e28767bd9efd18d">rotor::payload::external_subscription_t</a>
@@ -257,6 +279,13 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>handler_type
 : <a class="el" href="structrotor_1_1handler__base__t.html#ad2db4dfad16c33d485f457583760bfc3">rotor::handler_base_t</a>
 , <a class="el" href="structrotor_1_1handler__t.html#af8dfcbaa0b1146737fd3c96fd1651255">rotor::handler_t&lt; Handler &gt;</a>
+</li>
+</ul>
+
+
+<h3><a id="index_i"></a>- i -</h3><ul>
+<li>io_context
+: <a class="el" href="structrotor_1_1asio_1_1system__context__asio__t.html#a7a1d2e7b37a3242defcb732f6431ffc9">rotor::asio::system_context_asio_t</a>
 </li>
 </ul>
 
@@ -345,7 +374,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 : <a class="el" href="structrotor_1_1actor__base__t.html#ac4287fe3191485ba8c99c7f176dc5348">rotor::actor_base_t</a>
 </li>
 <li>operator()()
-: <a class="el" href="structstd_1_1hash_3_01rotor_1_1address__ptr__t_01_4.html#af9a6d174dee59f9b5749d144628605a9">std::hash&lt; rotor::address_ptr_t &gt;</a>
+: <a class="el" href="structrotor_1_1asio_1_1forwarder__t.html#a6a1f8c52dd625243126a93674ca89d21">rotor::asio::forwarder_t&lt; Actor, Handler, ErrHandler &gt;</a>
+, <a class="el" href="structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01void_01_4.html#ac327c89d739584118067c135fe6c789f">rotor::asio::forwarder_t&lt; Actor, Handler, void &gt;</a>
+, <a class="el" href="structstd_1_1hash_3_01rotor_1_1address__ptr__t_01_4.html#af9a6d174dee59f9b5749d144628605a9">std::hash&lt; rotor::address_ptr_t &gt;</a>
 , <a class="el" href="structstd_1_1hash_3_01rotor_1_1handler__ptr__t_01_4.html#aa8e321f8430b59c194fa898a01425149">std::hash&lt; rotor::handler_ptr_t &gt;</a>
 </li>
 <li>operator==()
@@ -374,7 +405,8 @@ $(document).ready(function(){initNavTree('functions.html','');});
 : <a class="el" href="structrotor_1_1handler__base__t.html#a4374640eac9254877b8f33e3916d4ee5">rotor::handler_base_t</a>
 </li>
 <li>ptr_t
-: <a class="el" href="structrotor_1_1wx_1_1system__context__wx__t.html#ac8f0131a455a7f671ad1d8d90fc7c6ef">rotor::wx::system_context_wx_t</a>
+: <a class="el" href="structrotor_1_1asio_1_1system__context__asio__t.html#afeafb09bee3302d4f691bab45a4499cb">rotor::asio::system_context_asio_t</a>
+, <a class="el" href="structrotor_1_1wx_1_1system__context__wx__t.html#ac8f0131a455a7f671ad1d8d90fc7c6ef">rotor::wx::system_context_wx_t</a>
 </li>
 <li>put()
 : <a class="el" href="structrotor_1_1supervisor__t.html#ad38ca674a38fbcff9a762fb3c3b4771e">rotor::supervisor_t</a>
@@ -418,7 +450,8 @@ $(document).ready(function(){initNavTree('functions.html','');});
 , <a class="el" href="structrotor_1_1wx_1_1supervisor__wx__t.html#aca5a2de124994a7b35c2682d2b9a10b1">rotor::wx::supervisor_wx_t</a>
 </li>
 <li>shutdown_timeout
-: <a class="el" href="structrotor_1_1wx_1_1supervisor__config__t.html#ace028e6ced45d51ac2374d6425fceb0d">rotor::wx::supervisor_config_t</a>
+: <a class="el" href="structrotor_1_1asio_1_1supervisor__config__t.html#a74c3926b6ee8ffb9c75266283bb41983">rotor::asio::supervisor_config_t</a>
+, <a class="el" href="structrotor_1_1wx_1_1supervisor__config__t.html#ace028e6ced45d51ac2374d6425fceb0d">rotor::wx::supervisor_config_t</a>
 </li>
 <li>shutdown_timer
 : <a class="el" href="structrotor_1_1wx_1_1supervisor__wx__t.html#a486d8980e763fb107d892177578cd0ff">rotor::wx::supervisor_wx_t</a>
@@ -472,6 +505,7 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <li>supervisor
 : <a class="el" href="structrotor_1_1actor__base__t.html#a8883a9334ace7138712b201cea41303d">rotor::actor_base_t</a>
 , <a class="el" href="structrotor_1_1address__t.html#ab125833b47a481d1a864d224568d3179">rotor::address_t</a>
+, <a class="el" href="structrotor_1_1asio_1_1system__context__asio__t.html#a6a5a14db2d1f2814a665c654bbbd684a">rotor::asio::system_context_asio_t</a>
 , <a class="el" href="structrotor_1_1wx_1_1system__context__wx__t.html#a68dc5dd311a90a0f257c98d0f8713a0b">rotor::wx::system_context_wx_t</a>
 </li>
 <li>supervisor_t()
@@ -479,6 +513,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 </li>
 <li>supervisor_wx_t()
 : <a class="el" href="structrotor_1_1wx_1_1supervisor__wx__t.html#a64aae5fc77eb4527814a2215524a4e08">rotor::wx::supervisor_wx_t</a>
+</li>
+<li>system_context_asio_t()
+: <a class="el" href="structrotor_1_1asio_1_1system__context__asio__t.html#a213df30a8b58a37e100b09d8805b3690">rotor::asio::system_context_asio_t</a>
 </li>
 <li>system_context_wx_t()
 : <a class="el" href="structrotor_1_1wx_1_1system__context__wx__t.html#aa81b02a9eba782cdd5fe3c7bc5a28b47">rotor::wx::system_context_wx_t</a>
@@ -496,6 +533,18 @@ $(document).ready(function(){initNavTree('functions.html','');});
 </li>
 <li>type_index
 : <a class="el" href="structrotor_1_1message__base__t.html#a81c4fa82e6b8b9e1af82535ca2596a42">rotor::message_base_t</a>
+</li>
+<li>typed_actor
+: <a class="el" href="structrotor_1_1asio_1_1forwarder__t.html#a9ba94f77f48d7b3b017817e411f64dcb">rotor::asio::forwarder_t&lt; Actor, Handler, ErrHandler &gt;</a>
+, <a class="el" href="structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01void_01_4.html#a8e7a1333fae4e71fc62e1054c9d4a405">rotor::asio::forwarder_t&lt; Actor, Handler, void &gt;</a>
+</li>
+<li>typed_actor_ptr_t
+: <a class="el" href="structrotor_1_1asio_1_1forwarder__t.html#ac936d268f31648ff3f1d433a3023c103">rotor::asio::forwarder_t&lt; Actor, Handler, ErrHandler &gt;</a>
+, <a class="el" href="structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01void_01_4.html#a43d9a0de642306e6b5b2e6c2877d0f30">rotor::asio::forwarder_t&lt; Actor, Handler, void &gt;</a>
+</li>
+<li>typed_sup_t
+: <a class="el" href="structrotor_1_1asio_1_1forwarder__t.html#a97056a464194d1f3b1ccc2c5cf784fd8">rotor::asio::forwarder_t&lt; Actor, Handler, ErrHandler &gt;</a>
+, <a class="el" href="structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01void_01_4.html#a9aab73c45e092cab0c779bcc6b20c1a6">rotor::asio::forwarder_t&lt; Actor, Handler, void &gt;</a>
 </li>
 </ul>
 

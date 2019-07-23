@@ -111,41 +111,80 @@ $(document).ready(function(){initNavTree('namespacerotor_1_1asio.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1asio_1_1curry__arg__t.html">curry_arg_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">curries agruments for furthe function ivocation  <a href="structrotor_1_1asio_1_1curry__arg__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1asio_1_1forwarder__t.html">forwarder_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">dispatches single boost::asio callback with <code>error_code</code> and non-error results into two differnt functions of the <code>actor</code>. After the invocation, actor's supervisor <code>do_process</code> method is called to process message queue.  <a href="structrotor_1_1asio_1_1forwarder__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01void_01_4.html">forwarder_t&lt; Actor, Handler, void &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">forwarder specialization, when error case is not possible  <a href="structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01void_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html">supervisor_asio_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1asio_1_1supervisor__config__t.html">supervisor_config_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">boost::asio supervisor config, which holds shutdowm timeout value  <a href="structrotor_1_1asio_1_1supervisor__config__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1asio_1_1system__context__asio__t.html">system_context_asio_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The boost::asio system context, which holds a reference to <code>boost::asio::io_context</code> and root supervisor.  <a href="structrotor_1_1asio_1_1system__context__asio__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:abe1323c9afeef7ace640615c830867a3"><td class="memItemLeft" align="right" valign="top"><a id="abe1323c9afeef7ace640615c830867a3"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>supervisor_ptr_t</b> = <a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a>&lt; <a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html">supervisor_asio_t</a> &gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerotor_1_1asio.html#abe1323c9afeef7ace640615c830867a3">supervisor_ptr_t</a> = <a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a>&lt; <a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html">supervisor_asio_t</a> &gt;</td></tr>
+<tr class="memdesc:abe1323c9afeef7ace640615c830867a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">intrusive pointer for boost::asio supervisor <br /></td></tr>
 <tr class="separator:abe1323c9afeef7ace640615c830867a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8d9eaaa6931518a9c1cf26e44bb2092"><td class="memItemLeft" align="right" valign="top"><a id="ab8d9eaaa6931518a9c1cf26e44bb2092"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>system_context_ptr_t</b> = typename system_context_asio_t::ptr_t</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerotor_1_1asio.html#ab8d9eaaa6931518a9c1cf26e44bb2092">system_context_ptr_t</a> = typename <a class="el" href="structrotor_1_1asio_1_1system__context__asio__t.html#afeafb09bee3302d4f691bab45a4499cb">system_context_asio_t::ptr_t</a></td></tr>
+<tr class="memdesc:ab8d9eaaa6931518a9c1cf26e44bb2092"><td class="mdescLeft">&#160;</td><td class="mdescRight">intrusive pointer type for boost::asio system context <br /></td></tr>
 <tr class="separator:ab8d9eaaa6931518a9c1cf26e44bb2092"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a96ee553d51726c22e653aeb191dcdb33"><td class="memTemplParams" colspan="2"><a id="a96ee553d51726c22e653aeb191dcdb33"></a>
 template&lt;typename Actor &gt; </td></tr>
-<tr class="memitem:a96ee553d51726c22e653aeb191dcdb33"><td class="memTemplItemLeft" align="right" valign="top">boost::asio::io_context::strand &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>get_strand</b> (Actor &amp;actor)</td></tr>
+<tr class="memitem:a96ee553d51726c22e653aeb191dcdb33"><td class="memTemplItemLeft" align="right" valign="top">boost::asio::io_context::strand &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacerotor_1_1asio.html#a96ee553d51726c22e653aeb191dcdb33">get_strand</a> (Actor &amp;actor)</td></tr>
+<tr class="memdesc:a96ee553d51726c22e653aeb191dcdb33"><td class="mdescLeft">&#160;</td><td class="mdescRight">return <code>strand</code> of the boost::asio aware actor <br /></td></tr>
 <tr class="separator:a96ee553d51726c22e653aeb191dcdb33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60a6e1a9f846e079e8df35f27664a7c1"><td class="memTemplParams" colspan="2"><a id="a60a6e1a9f846e079e8df35f27664a7c1"></a>
-template&lt;typename Actor , typename Handler &gt; </td></tr>
-<tr class="memitem:a60a6e1a9f846e079e8df35f27664a7c1"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>forwarder_t</b> (Actor &amp;actor_, Handler &amp;&amp;handler_) -&gt; <a class="el" href="structrotor_1_1asio_1_1forwarder__t.html">forwarder_t</a>&lt; Actor, Handler, void &gt;</td></tr>
+<tr class="memitem:a60a6e1a9f846e079e8df35f27664a7c1"><td class="memTemplParams" colspan="2">template&lt;typename Actor , typename Handler &gt; </td></tr>
+<tr class="memitem:a60a6e1a9f846e079e8df35f27664a7c1"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacerotor_1_1asio.html#a60a6e1a9f846e079e8df35f27664a7c1">forwarder_t</a> (Actor &amp;actor_, Handler &amp;&amp;handler_) -&gt; <a class="el" href="structrotor_1_1asio_1_1forwarder__t.html">forwarder_t</a>&lt; Actor, Handler, void &gt;</td></tr>
 <tr class="separator:a60a6e1a9f846e079e8df35f27664a7c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>namespace for boost::asio adapters for <code>rotor</code> </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a60a6e1a9f846e079e8df35f27664a7c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60a6e1a9f846e079e8df35f27664a7c1">&#9670;&nbsp;</a></span>forwarder_t()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Actor , typename Handler &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structrotor_1_1asio_1_1forwarder__t.html">rotor::asio::forwarder_t</a> </td>
+          <td>(</td>
+          <td class="paramtype">Actor &amp;&#160;</td>
+          <td class="paramname"><em>actor_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Handler &amp;&amp;&#160;</td>
+          <td class="paramname"><em>handler_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt;  <a class="el" href="structrotor_1_1asio_1_1forwarder__t.html">forwarder_t</a>&lt; Actor, Handler, void &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>construtor deduction guide for forwarder </p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

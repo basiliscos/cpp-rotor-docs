@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['parent',['parent',['../structrotor_1_1supervisor__t.html#af56eb18780cb942780f0d639f94a4bc7',1,'rotor::supervisor_t']]],
-  ['payload',['payload',['../structrotor_1_1message__t.html#ac8f1caee4f1862d339c7d3e0a681c082',1,'rotor::message_t']]],
-  ['points',['points',['../structrotor_1_1actor__base__t.html#a9eabdfa2eef776fdfe38bc8c5631dc58',1,'rotor::actor_base_t']]],
-  ['precalc_5fhash',['precalc_hash',['../structrotor_1_1handler__base__t.html#a4374640eac9254877b8f33e3916d4ee5',1,'rotor::handler_base_t']]]
+  ['message_5ftype',['message_type',['../structrotor_1_1handler__base__t.html#a98fbce0711aa45d8590af902442a4641',1,'rotor::handler_base_t::message_type()'],['../structrotor_1_1message__t.html#a68c5e2d5c15d18019a68fe887a3389fc',1,'rotor::message_t::message_type()']]],
+  ['mine',['mine',['../structrotor_1_1subscription__t_1_1classified__handlers__t.html#a1d2f4d2372892f0e9e84a6107957f898',1,'rotor::subscription_t::classified_handlers_t']]]
 ];

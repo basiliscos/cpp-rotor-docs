@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['target_5faddress',['target_address',['../structrotor_1_1payload_1_1external__subscription__t.html#aee9f2bff90c67beecccb9a88264b1218',1,'rotor::payload::external_subscription_t::target_address()'],['../structrotor_1_1payload_1_1subscription__confirmation__t.html#a3b2c3ad8124eac070421b100c5c75296',1,'rotor::payload::subscription_confirmation_t::target_address()'],['../structrotor_1_1payload_1_1external__unsubscription__t.html#a6cddb806b0529d0ae9f58c632a8ad624',1,'rotor::payload::external_unsubscription_t::target_address()'],['../structrotor_1_1payload_1_1commit__unsubscription__t.html#a50c2bb99eafa0be387c546086635affc',1,'rotor::payload::commit_unsubscription_t::target_address()'],['../structrotor_1_1payload_1_1unsubscription__confirmation__t.html#af075d7d5e1c078c61b22badf812b519f',1,'rotor::payload::unsubscription_confirmation_t::target_address()']]],
-  ['type_5findex',['type_index',['../structrotor_1_1message__base__t.html#a81c4fa82e6b8b9e1af82535ca2596a42',1,'rotor::message_base_t']]]
+  ['raw_5factor_5fptr',['raw_actor_ptr',['../structrotor_1_1handler__base__t.html#a382ecf3837c1420f8982a65e016c4d78',1,'rotor::handler_base_t']]],
+  ['raw_5fsupervisor_5fptr',['raw_supervisor_ptr',['../structrotor_1_1handler__base__t.html#a7520619ae7899637541c4f0e37c9c954',1,'rotor::handler_base_t']]],
+  ['reply_5faddr',['reply_addr',['../structrotor_1_1payload_1_1state__request__t.html#a4810f318826252b476d62d24262d3f51',1,'rotor::payload::state_request_t']]]
 ];

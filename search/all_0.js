@@ -16,5 +16,6 @@ var searchData=
   ['address_5ft',['address_t',['../structrotor_1_1address__t.html',1,'rotor']]],
   ['app',['app',['../structrotor_1_1wx_1_1system__context__wx__t.html#a4a4c66d8008206770bcb761299d91afd',1,'rotor::wx::system_context_wx_t']]],
   ['arc_5fbase_5ft',['arc_base_t',['../namespacerotor.html#a9cb90d7087e0510ace45abedcb0245e4',1,'rotor']]],
+  ['args',['args',['../structrotor_1_1asio_1_1curry__arg__t.html#a44d19b5d2c6a418b2cbe4b9319f66ec6',1,'rotor::asio::curry_arg_t']]],
   ['asio_2ehpp',['asio.hpp',['../asio_8hpp.html',1,'']]]
 ];
