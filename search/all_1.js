@@ -16,5 +16,6 @@ var searchData=
   ['create_5fforwarder',['create_forwarder',['../structrotor_1_1asio_1_1supervisor__asio__t.html#add70d2d408496225650fcd9418f93c62',1,'rotor::asio::supervisor_asio_t::create_forwarder(Handler &amp;&amp;handler, ErrHandler &amp;&amp;err_handler)'],['../structrotor_1_1asio_1_1supervisor__asio__t.html#afa1781d659721196c2339fdb26eeb6f1',1,'rotor::asio::supervisor_asio_t::create_forwarder(Handler &amp;&amp;handler)']]],
   ['create_5fsupervisor',['create_supervisor',['../structrotor_1_1asio_1_1system__context__asio__t.html#a70661217355ae3efdd2dbf4f2c7b91a5',1,'rotor::asio::system_context_asio_t::create_supervisor()'],['../structrotor_1_1system__context__t.html#a61d548cd385f28ac040e5eb464e4ce61',1,'rotor::system_context_t::create_supervisor()'],['../structrotor_1_1wx_1_1system__context__wx__t.html#a81ee684f94f1243dcd05c2ff4dbe00d8',1,'rotor::wx::system_context_wx_t::create_supervisor()']]],
   ['curry_5farg_5ft',['curry_arg_t',['../structrotor_1_1asio_1_1curry__arg__t.html',1,'rotor::asio']]],
+  ['changelog',['Changelog',['../md__home_b_development_cpp_cpp-rotor_docs_Changelog.html',1,'']]],
   ['compiling_20_26_20building',['Compiling &amp; building',['../md__home_b_development_cpp_cpp-rotor_docs_Compilation.html',1,'']]]
 ];
