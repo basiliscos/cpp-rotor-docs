@@ -1,6 +1,5 @@
 var structrotor_1_1asio_1_1supervisor__asio__t =
 [
-    [ "supervisor_ptr_t", "structrotor_1_1asio_1_1supervisor__asio__t.html#a5116cc75743bd9103223c50311ebeb92", null ],
     [ "timer_t", "structrotor_1_1asio_1_1supervisor__asio__t.html#a0eeba33e8cf7c19e0d9f5067b6396b4c", null ],
     [ "supervisor_asio_t", "structrotor_1_1asio_1_1supervisor__asio__t.html#a1b5b4186597dba5fff5cf60847f22785", null ],
     [ "cancel_shutdown_timer", "structrotor_1_1asio_1_1supervisor__asio__t.html#a8399e9762a3a4588ee84b1166eba9baa", null ],

@@ -105,6 +105,11 @@ $(document).ready(function(){initNavTree('structrotor_1_1asio_1_1supervisor__asi
 <div class="title">rotor::asio::supervisor_asio_t Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>delivers rotor-messages on top of boost asio event loop using <code>strand</code> for serialization  
+ <a href="structrotor_1_1asio_1_1supervisor__asio__t.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="supervisor__asio_8h_source.html">supervisor_asio.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for rotor::asio::supervisor_asio_t:</div>
 <div class="dyncontent">
@@ -119,11 +124,9 @@ Inheritance diagram for rotor::asio::supervisor_asio_t:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:a0eeba33e8cf7c19e0d9f5067b6396b4c"><td class="memItemLeft" align="right" valign="top"><a id="a0eeba33e8cf7c19e0d9f5067b6396b4c"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>timer_t</b> = asio::deadline_timer</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html#a0eeba33e8cf7c19e0d9f5067b6396b4c">timer_t</a> = asio::deadline_timer</td></tr>
+<tr class="memdesc:a0eeba33e8cf7c19e0d9f5067b6396b4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">an alias for boos::asio::deadline_timer <br /></td></tr>
 <tr class="separator:a0eeba33e8cf7c19e0d9f5067b6396b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5116cc75743bd9103223c50311ebeb92"><td class="memItemLeft" align="right" valign="top"><a id="a5116cc75743bd9103223c50311ebeb92"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>supervisor_ptr_t</b> = <a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a>&lt; <a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html">supervisor_asio_t</a> &gt;</td></tr>
-<tr class="separator:a5116cc75743bd9103223c50311ebeb92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_structrotor_1_1actor__base__t"><td colspan="2" onclick="javascript:toggleInherit('pub_types_structrotor_1_1actor__base__t')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="structrotor_1_1actor__base__t.html">rotor::actor_base_t</a></td></tr>
 <tr class="memitem:aa4feb2f49ee3d796e0b400068098bef5 inherit pub_types_structrotor_1_1actor__base__t"><td class="memItemLeft" align="right" valign="top"><a id="aa4feb2f49ee3d796e0b400068098bef5"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#aa4feb2f49ee3d796e0b400068098bef5">subscription_points_t</a> = std::list&lt; <a class="el" href="structrotor_1_1actor__base__t_1_1subscription__point__t.html">subscription_point_t</a> &gt;</td></tr>
@@ -132,8 +135,8 @@ using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1b5b4186597dba5fff5cf60847f22785"><td class="memItemLeft" align="right" valign="top"><a id="a1b5b4186597dba5fff5cf60847f22785"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>supervisor_asio_t</b> (<a class="el" href="structrotor_1_1supervisor__t.html">supervisor_t</a> *sup, <a class="el" href="namespacerotor_1_1asio.html#ab8d9eaaa6931518a9c1cf26e44bb2092">system_context_ptr_t</a> system_context_, const <a class="el" href="structrotor_1_1asio_1_1supervisor__config__t.html">supervisor_config_t</a> &amp;config)</td></tr>
+<tr class="memitem:a1b5b4186597dba5fff5cf60847f22785"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html#a1b5b4186597dba5fff5cf60847f22785">supervisor_asio_t</a> (<a class="el" href="structrotor_1_1supervisor__t.html">supervisor_t</a> *sup, <a class="el" href="namespacerotor_1_1asio.html#ab8d9eaaa6931518a9c1cf26e44bb2092">system_context_ptr_t</a> system_context_, const <a class="el" href="structrotor_1_1asio_1_1supervisor__config__t.html">supervisor_config_t</a> &amp;<a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html#aa0aaeba0dd11be5ed195d1ed3c22ffa2">config</a>)</td></tr>
+<tr class="memdesc:a1b5b4186597dba5fff5cf60847f22785"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructs new supervisor from parent supervisor, intrusive pointer to system context and supervisor config and  <a href="#a1b5b4186597dba5fff5cf60847f22785">More...</a><br /></td></tr>
 <tr class="separator:a1b5b4186597dba5fff5cf60847f22785"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf7b41d9222da529dcf4bb62ef0a28d3"><td class="memItemLeft" align="right" valign="top"><a id="abf7b41d9222da529dcf4bb62ef0a28d3"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html#abf7b41d9222da529dcf4bb62ef0a28d3">start</a> () noexcept override</td></tr>
@@ -154,27 +157,30 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html#a8399e9762a3a4588ee84b1166eba9baa">cancel_shutdown_timer</a> () noexcept override</td></tr>
 <tr class="memdesc:a8399e9762a3a4588ee84b1166eba9baa"><td class="mdescLeft">&#160;</td><td class="mdescRight">cancels event-loop specific shutdown timer <br /></td></tr>
 <tr class="separator:a8399e9762a3a4588ee84b1166eba9baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae65f1c1284b3689b862092131445d6fe"><td class="memItemLeft" align="right" valign="top"><a id="ae65f1c1284b3689b862092131445d6fe"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>on_shutdown_timer_error</b> (const sys::error_code &amp;ec) noexcept</td></tr>
+<tr class="memitem:ae65f1c1284b3689b862092131445d6fe"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html#ae65f1c1284b3689b862092131445d6fe">on_shutdown_timer_error</a> (const sys::error_code &amp;ec) noexcept</td></tr>
+<tr class="memdesc:ae65f1c1284b3689b862092131445d6fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">reaction when shutdown procedure takes too much time  <a href="#ae65f1c1284b3689b862092131445d6fe">More...</a><br /></td></tr>
 <tr class="separator:ae65f1c1284b3689b862092131445d6fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeff9ef17aad7da635ee8f304dbc568af"><td class="memItemLeft" align="right" valign="top"><a id="aeff9ef17aad7da635ee8f304dbc568af"></a>
-asio::io_context::strand &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_strand</b> () noexcept</td></tr>
-<tr class="separator:aeff9ef17aad7da635ee8f304dbc568af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab432a1eec1e8bdcd8d3bc90cffce7f9e"><td class="memTemplParams" colspan="2"><a id="ab432a1eec1e8bdcd8d3bc90cffce7f9e"></a>
-template&lt;typename Actor , typename... Args&gt; </td></tr>
-<tr class="memitem:ab432a1eec1e8bdcd8d3bc90cffce7f9e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a>&lt; Actor &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>create_actor</b> (Args... args)</td></tr>
+<tr class="memitem:ab432a1eec1e8bdcd8d3bc90cffce7f9e"><td class="memTemplParams" colspan="2">template&lt;typename Actor , typename... Args&gt; </td></tr>
+<tr class="memitem:ab432a1eec1e8bdcd8d3bc90cffce7f9e"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a>&lt; Actor &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html#ab432a1eec1e8bdcd8d3bc90cffce7f9e">create_actor</a> (Args... args)</td></tr>
+<tr class="memdesc:ab432a1eec1e8bdcd8d3bc90cffce7f9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates an actor by forwaring <code>args</code> to it  <a href="#ab432a1eec1e8bdcd8d3bc90cffce7f9e">More...</a><br /></td></tr>
 <tr class="separator:ab432a1eec1e8bdcd8d3bc90cffce7f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add70d2d408496225650fcd9418f93c62"><td class="memTemplParams" colspan="2"><a id="add70d2d408496225650fcd9418f93c62"></a>
 template&lt;typename Handler , typename ErrHandler &gt; </td></tr>
-<tr class="memitem:add70d2d408496225650fcd9418f93c62"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>create_forwarder</b> (Handler &amp;&amp;handler, ErrHandler &amp;&amp;err_handler)</td></tr>
+<tr class="memitem:add70d2d408496225650fcd9418f93c62"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html#add70d2d408496225650fcd9418f93c62">create_forwarder</a> (Handler &amp;&amp;handler, ErrHandler &amp;&amp;err_handler)</td></tr>
+<tr class="memdesc:add70d2d408496225650fcd9418f93c62"><td class="mdescLeft">&#160;</td><td class="mdescRight">an helper for creation <a class="el" href="structrotor_1_1asio_1_1forwarder__t.html">forwarder_t</a> <br /></td></tr>
 <tr class="separator:add70d2d408496225650fcd9418f93c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa1781d659721196c2339fdb26eeb6f1"><td class="memTemplParams" colspan="2"><a id="afa1781d659721196c2339fdb26eeb6f1"></a>
 template&lt;typename Handler &gt; </td></tr>
-<tr class="memitem:afa1781d659721196c2339fdb26eeb6f1"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>create_forwarder</b> (Handler &amp;&amp;handler)</td></tr>
+<tr class="memitem:afa1781d659721196c2339fdb26eeb6f1"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html#afa1781d659721196c2339fdb26eeb6f1">create_forwarder</a> (Handler &amp;&amp;handler)</td></tr>
+<tr class="memdesc:afa1781d659721196c2339fdb26eeb6f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">an helper for creation <a class="el" href="structrotor_1_1asio_1_1forwarder__t.html">forwarder_t</a> (no-error handler case) <br /></td></tr>
 <tr class="separator:afa1781d659721196c2339fdb26eeb6f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17a7282e3f28e6c5870fca0b1572c654"><td class="memItemLeft" align="right" valign="top"><a id="a17a7282e3f28e6c5870fca0b1572c654"></a>
-<a class="el" href="structrotor_1_1asio_1_1system__context__asio__t.html">system_context_asio_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_asio_context</b> () noexcept</td></tr>
+<tr class="memitem:a17a7282e3f28e6c5870fca0b1572c654"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structrotor_1_1asio_1_1system__context__asio__t.html">system_context_asio_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html#a17a7282e3f28e6c5870fca0b1572c654">get_asio_context</a> () noexcept</td></tr>
+<tr class="memdesc:a17a7282e3f28e6c5870fca0b1572c654"><td class="mdescLeft">&#160;</td><td class="mdescRight">retunrns an reference to boos::asio systerm context  <a href="#a17a7282e3f28e6c5870fca0b1572c654">More...</a><br /></td></tr>
 <tr class="separator:a17a7282e3f28e6c5870fca0b1572c654"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeff9ef17aad7da635ee8f304dbc568af"><td class="memItemLeft" align="right" valign="top"><a id="aeff9ef17aad7da635ee8f304dbc568af"></a>
+asio::io_context::strand &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html#aeff9ef17aad7da635ee8f304dbc568af">get_strand</a> () noexcept</td></tr>
+<tr class="memdesc:aeff9ef17aad7da635ee8f304dbc568af"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns exeuction strand <br /></td></tr>
+<tr class="separator:aeff9ef17aad7da635ee8f304dbc568af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structrotor_1_1supervisor__t"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structrotor_1_1supervisor__t')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structrotor_1_1supervisor__t.html">rotor::supervisor_t</a></td></tr>
 <tr class="memitem:aa1a479a76d03227a132588971f08e3e2 inherit pub_methods_structrotor_1_1supervisor__t"><td class="memItemLeft" align="right" valign="top"><a id="aa1a479a76d03227a132588971f08e3e2"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__t.html#aa1a479a76d03227a132588971f08e3e2">supervisor_t</a> (<a class="el" href="structrotor_1_1supervisor__t.html">supervisor_t</a> *sup=nullptr)</td></tr>
@@ -344,13 +350,16 @@ template&lt;typename Handler &gt; </td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a5252a42a68853d4f5a70b3a7cfcc2cd4"><td class="memItemLeft" align="right" valign="top"><a id="a5252a42a68853d4f5a70b3a7cfcc2cd4"></a>
-asio::io_context::strand&#160;</td><td class="memItemRight" valign="bottom"><b>strand</b></td></tr>
+asio::io_context::strand&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html#a5252a42a68853d4f5a70b3a7cfcc2cd4">strand</a></td></tr>
+<tr class="memdesc:a5252a42a68853d4f5a70b3a7cfcc2cd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">boost::asio execution strand <br /></td></tr>
 <tr class="separator:a5252a42a68853d4f5a70b3a7cfcc2cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa763e8a1bd4f40f7e9ab4cafea208fb"><td class="memItemLeft" align="right" valign="top"><a id="aaa763e8a1bd4f40f7e9ab4cafea208fb"></a>
-timer_t&#160;</td><td class="memItemRight" valign="bottom"><b>shutdown_timer</b></td></tr>
+<a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html#a0eeba33e8cf7c19e0d9f5067b6396b4c">timer_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html#aaa763e8a1bd4f40f7e9ab4cafea208fb">shutdown_timer</a></td></tr>
+<tr class="memdesc:aaa763e8a1bd4f40f7e9ab4cafea208fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">timer used to shutdown timeout trigger <br /></td></tr>
 <tr class="separator:aaa763e8a1bd4f40f7e9ab4cafea208fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0aaeba0dd11be5ed195d1ed3c22ffa2"><td class="memItemLeft" align="right" valign="top"><a id="aa0aaeba0dd11be5ed195d1ed3c22ffa2"></a>
-<a class="el" href="structrotor_1_1asio_1_1supervisor__config__t.html">supervisor_config_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>config</b></td></tr>
+<a class="el" href="structrotor_1_1asio_1_1supervisor__config__t.html">supervisor_config_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html#aa0aaeba0dd11be5ed195d1ed3c22ffa2">config</a></td></tr>
+<tr class="memdesc:aa0aaeba0dd11be5ed195d1ed3c22ffa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">config for the supervisor <br /></td></tr>
 <tr class="separator:aa0aaeba0dd11be5ed195d1ed3c22ffa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
@@ -416,7 +425,83 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memdesc:a9eabdfa2eef776fdfe38bc8c5631dc58 inherit pro_attribs_structrotor_1_1actor__base__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">recorded subscription points (i.e. handler/address pairs) <br /></td></tr>
 <tr class="separator:a9eabdfa2eef776fdfe38bc8c5631dc58 inherit pro_attribs_structrotor_1_1actor__base__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>delivers rotor-messages on top of boost asio event loop using <code>strand</code> for serialization </p>
+<p>The boost::asio <code>strand</code> guarantees, that handler, which "belongs" to the same <code>strand</code> will be executed sequentially. It might be called on different threads, however.</p>
+<p>The <code><a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html" title="delivers rotor-messages on top of boost asio event loop using strand for serialization">supervisor_asio_t</a></code> uses that advantage to let the messages to the supervisor and it's actors be delivered sequentially.</p>
+<p>The "sub-supervisors" can be created, but they do not extend the sequential executing context, i.e. in the execution sense the supervisors are independent.</p>
+<p>When there is need to "uplift" the boost::asio low-level event, into high-level <code>rotor</code> message, the <a class="el" href="structrotor_1_1asio_1_1forwarder__t.html">forwarder_t</a> can be used. It uses the <code>strand</code> under the hood.</p>
+<p>If there is need to change some actor's internals from boost::asio handler, the change should be performed in synchronized way, i.e. via <code>strand</code>. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a1b5b4186597dba5fff5cf60847f22785"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b5b4186597dba5fff5cf60847f22785">&#9670;&nbsp;</a></span>supervisor_asio_t()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">rotor::asio::supervisor_asio_t::supervisor_asio_t </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrotor_1_1supervisor__t.html">supervisor_t</a> *&#160;</td>
+          <td class="paramname"><em>sup</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacerotor_1_1asio.html#ab8d9eaaa6931518a9c1cf26e44bb2092">system_context_ptr_t</a>&#160;</td>
+          <td class="paramname"><em>system_context_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structrotor_1_1asio_1_1supervisor__config__t.html">supervisor_config_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>config</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>constructs new supervisor from parent supervisor, intrusive pointer to system context and supervisor config and </p>
+<p>the <code>parent</code> supervisor can be null </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab432a1eec1e8bdcd8d3bc90cffce7f9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab432a1eec1e8bdcd8d3bc90cffce7f9e">&#9670;&nbsp;</a></span>create_actor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Actor , typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a>&lt;Actor&gt; rotor::asio::supervisor_asio_t::create_actor </td>
+          <td>(</td>
+          <td class="paramtype">Args...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>creates an actor by forwaring <code>args</code> to it </p>
+<p>The newly created actor belogs to the current supervisor </p>
+
+</div>
+</div>
 <a id="a0ce7fa81f4d6dc519ff9c62b1d5123c9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0ce7fa81f4d6dc519ff9c62b1d5123c9">&#9670;&nbsp;</a></span>enqueue()</h2>
 
@@ -446,6 +531,63 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>The thread-safety should be guaranteed by derived class and/or used event-loop. </p>
 
 <p>Implements <a class="el" href="structrotor_1_1supervisor__t.html#aaf99e587b441bb5e68b0c500ffedf14f">rotor::supervisor_t</a>.</p>
+
+</div>
+</div>
+<a id="a17a7282e3f28e6c5870fca0b1572c654"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17a7282e3f28e6c5870fca0b1572c654">&#9670;&nbsp;</a></span>get_asio_context()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structrotor_1_1asio_1_1system__context__asio__t.html">system_context_asio_t</a>&amp; rotor::asio::supervisor_asio_t::get_asio_context </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>retunrns an reference to boos::asio systerm context </p>
+<p>It might be useful to get <code>boost::asio::io_context&amp;</code>, i.e. to create socket. </p>
+
+</div>
+</div>
+<a id="ae65f1c1284b3689b862092131445d6fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae65f1c1284b3689b862092131445d6fe">&#9670;&nbsp;</a></span>on_shutdown_timer_error()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void rotor::asio::supervisor_asio_t::on_shutdown_timer_error </td>
+          <td>(</td>
+          <td class="paramtype">const sys::error_code &amp;&#160;</td>
+          <td class="paramname"><em>ec</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>reaction when shutdown procedure takes too much time </p>
+<p>By default the error code is forwarded to system context, unless it is timer-aborted error code. </p>
 
 </div>
 </div>
