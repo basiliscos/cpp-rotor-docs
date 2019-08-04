@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['inbound',['inbound',['../structrotor_1_1ev_1_1supervisor__ev__t.html#a9209e9cd493877c580ee636252dee9ce',1,'rotor::ev::supervisor_ev_t']]],
+  ['inbound_5fmutex',['inbound_mutex',['../structrotor_1_1ev_1_1supervisor__ev__t.html#a52b34144d0ad68c7f166174b9db207ed',1,'rotor::ev::supervisor_ev_t']]],
   ['initialize_5factor_5ft',['initialize_actor_t',['../structrotor_1_1payload_1_1initialize__actor__t.html',1,'rotor::payload']]],
   ['initialize_5fconfirmation_5ft',['initialize_confirmation_t',['../structrotor_1_1payload_1_1initialize__confirmation__t.html',1,'rotor::payload']]],
   ['intrusive_5fptr_5ft',['intrusive_ptr_t',['../namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2',1,'rotor']]],

@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['on_5fasync',['on_async',['../structrotor_1_1ev_1_1supervisor__ev__t.html#a7db345bced6e0114d3c1f782f4aac5da',1,'rotor::ev::supervisor_ev_t']]],
   ['on_5fcall',['on_call',['../structrotor_1_1supervisor__t.html#a4d41d0e7c2f2b774871335fefa03ad79',1,'rotor::supervisor_t']]],
   ['on_5fcommit_5funsubscription',['on_commit_unsubscription',['../structrotor_1_1supervisor__t.html#a89b06e1538b6976780c6e30a444fa351',1,'rotor::supervisor_t']]],
   ['on_5fcreate',['on_create',['../structrotor_1_1supervisor__t.html#aa97e6d6fe9cca2e2722f6b2c15c71731',1,'rotor::supervisor_t']]],

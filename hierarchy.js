@@ -7,6 +7,7 @@ var hierarchy =
       [ "rotor::actor_base_t", "structrotor_1_1actor__base__t.html", [
         [ "rotor::supervisor_t", "structrotor_1_1supervisor__t.html", [
           [ "rotor::asio::supervisor_asio_t", "structrotor_1_1asio_1_1supervisor__asio__t.html", null ],
+          [ "rotor::ev::supervisor_ev_t", "structrotor_1_1ev_1_1supervisor__ev__t.html", null ],
           [ "rotor::wx::supervisor_wx_t", "structrotor_1_1wx_1_1supervisor__wx__t.html", null ]
         ] ]
       ] ],
@@ -19,6 +20,7 @@ var hierarchy =
       ] ],
       [ "rotor::system_context_t", "structrotor_1_1system__context__t.html", [
         [ "rotor::asio::system_context_asio_t", "structrotor_1_1asio_1_1system__context__asio__t.html", null ],
+        [ "rotor::ev::system_context_ev_t", "structrotor_1_1ev_1_1system__context__ev__t.html", null ],
         [ "rotor::wx::system_context_wx_t", "structrotor_1_1wx_1_1system__context__wx__t.html", null ]
       ] ]
     ] ],
@@ -49,6 +51,7 @@ var hierarchy =
     [ "rotor::actor_base_t::subscription_point_t", "structrotor_1_1actor__base__t_1_1subscription__point__t.html", null ],
     [ "rotor::subscription_t", "structrotor_1_1subscription__t.html", null ],
     [ "rotor::asio::supervisor_config_t", "structrotor_1_1asio_1_1supervisor__config__t.html", null ],
+    [ "rotor::ev::supervisor_config_t", "structrotor_1_1ev_1_1supervisor__config__t.html", null ],
     [ "rotor::wx::supervisor_config_t", "structrotor_1_1wx_1_1supervisor__config__t.html", null ],
     [ "true_type", null, [
       [ "std::is_error_code_enum< rotor::error_code_t >", "structstd_1_1is__error__code__enum_3_01rotor_1_1error__code__t_01_4.html", null ]

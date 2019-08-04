@@ -17,5 +17,7 @@ var searchData=
   ['app',['app',['../structrotor_1_1wx_1_1system__context__wx__t.html#a4a4c66d8008206770bcb761299d91afd',1,'rotor::wx::system_context_wx_t']]],
   ['arc_5fbase_5ft',['arc_base_t',['../namespacerotor.html#a9cb90d7087e0510ace45abedcb0245e4',1,'rotor']]],
   ['args',['args',['../structrotor_1_1asio_1_1curry__arg__t.html#a44d19b5d2c6a418b2cbe4b9319f66ec6',1,'rotor::asio::curry_arg_t']]],
-  ['asio_2ehpp',['asio.hpp',['../asio_8hpp.html',1,'']]]
+  ['asio_2ehpp',['asio.hpp',['../asio_8hpp.html',1,'']]],
+  ['async_5fcb',['async_cb',['../structrotor_1_1ev_1_1supervisor__ev__t.html#a32b84d8b7b0e729ba92e45e95416ad52',1,'rotor::ev::supervisor_ev_t']]],
+  ['async_5fwatcher',['async_watcher',['../structrotor_1_1ev_1_1supervisor__ev__t.html#ac300c49066ad597cf8a1dbdfacf6c679',1,'rotor::ev::supervisor_ev_t']]]
 ];

@@ -117,9 +117,10 @@ Inheritance diagram for rotor::supervisor_t:</div>
  <div class="center">
   <img src="structrotor_1_1supervisor__t.png" usemap="#rotor::supervisor_5Ft_map" alt=""/>
   <map id="rotor::supervisor_5Ft_map" name="rotor::supervisor_5Ft_map">
-<area href="structrotor_1_1actor__base__t.html" title="universal primitives of concurrent computation" alt="rotor::actor_base_t" shape="rect" coords="92,56,266,80"/>
+<area href="structrotor_1_1actor__base__t.html" title="universal primitives of concurrent computation" alt="rotor::actor_base_t" shape="rect" coords="184,56,358,80"/>
 <area href="structrotor_1_1asio_1_1supervisor__asio__t.html" title="delivers rotor-messages on top of boost asio event loop using strand for serialization" alt="rotor::asio::supervisor_asio_t" shape="rect" coords="0,168,174,192"/>
-<area href="structrotor_1_1wx_1_1supervisor__wx__t.html" title="delivers rotor-messages on top of wx event" alt="rotor::wx::supervisor_wx_t" shape="rect" coords="184,168,358,192"/>
+<area href="structrotor_1_1ev_1_1supervisor__ev__t.html" title="delivers rotor-messages on top of libev event loop" alt="rotor::ev::supervisor_ev_t" shape="rect" coords="184,168,358,192"/>
+<area href="structrotor_1_1wx_1_1supervisor__wx__t.html" title="delivers rotor-messages on top of wx event" alt="rotor::wx::supervisor_wx_t" shape="rect" coords="368,168,542,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -489,7 +490,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str
 <p>This is the only method for deliver message outside of <code>rotor</code> context. Basically it is <code>put</code> and <code>process</code> in the event loop context.</p>
 <p>The thread-safety should be guaranteed by derived class and/or used event-loop. </p>
 
-<p>Implemented in <a class="el" href="structrotor_1_1wx_1_1supervisor__wx__t.html#af01804f732f69e0dc198ef79b72171cc">rotor::wx::supervisor_wx_t</a>, and <a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html#a0ce7fa81f4d6dc519ff9c62b1d5123c9">rotor::asio::supervisor_asio_t</a>.</p>
+<p>Implemented in <a class="el" href="structrotor_1_1wx_1_1supervisor__wx__t.html#af01804f732f69e0dc198ef79b72171cc">rotor::wx::supervisor_wx_t</a>, <a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html#a0ce7fa81f4d6dc519ff9c62b1d5123c9">rotor::asio::supervisor_asio_t</a>, and <a class="el" href="structrotor_1_1ev_1_1supervisor__ev__t.html#a0f5317b8d029598034f41adfcf9edc62">rotor::ev::supervisor_ev_t</a>.</p>
 
 </div>
 </div>
