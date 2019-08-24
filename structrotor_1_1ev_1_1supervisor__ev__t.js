@@ -16,5 +16,6 @@ var structrotor_1_1ev_1_1supervisor__ev__t =
     [ "config", "structrotor_1_1ev_1_1supervisor__ev__t.html#a1ae5ea5d969a1bf096358d4e57f9f7b2", null ],
     [ "inbound", "structrotor_1_1ev_1_1supervisor__ev__t.html#a9209e9cd493877c580ee636252dee9ce", null ],
     [ "inbound_mutex", "structrotor_1_1ev_1_1supervisor__ev__t.html#a52b34144d0ad68c7f166174b9db207ed", null ],
+    [ "pending", "structrotor_1_1ev_1_1supervisor__ev__t.html#a4cd2d6dfae7f5fda992411abac02025c", null ],
     [ "shutdown_watcher", "structrotor_1_1ev_1_1supervisor__ev__t.html#a44ac0d262a1580f1ed1fc2013d8f5ef8", null ]
 ];

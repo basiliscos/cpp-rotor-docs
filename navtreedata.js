@@ -1,18 +1,17 @@
 /*
-@ @licstart  The following is the entire license notice for the
+@licstart  The following is the entire license notice for the
 JavaScript code in this file.
 
-Copyright (C) 1997-2017 by Dimitri van Heesch
+Copyright (C) 1997-2019 by Dimitri van Heesch
 
 This program is free software; you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 2 of the License, or
-(at your option) any later version.
+it under the terms of version 2 of the GNU General Public License as published by
+the Free Software Foundation
 
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License along
 with this program; if not, write to the Free Software Foundation, Inc.,
@@ -25,9 +24,9 @@ var NAVTREE =
 [
   [ "rotor", "index.html", [
     [ "Introduction", "md__home_b_development_cpp_cpp-rotor_docs_Introduction.html", null ],
+    [ "Rationale", "md__home_b_development_cpp_cpp-rotor_docs_Rationale.html", null ],
     [ "Compiling & building", "md__home_b_development_cpp_cpp-rotor_docs_Compilation.html", null ],
     [ "Design & Notions", "md__home_b_development_cpp_cpp-rotor_docs_Design.html", null ],
-    [ "Rationale", "md__home_b_development_cpp_cpp-rotor_docs_Rationale.html", null ],
     [ "Event loops & platforms", "md__home_b_development_cpp_cpp-rotor_docs_Loops.html", null ],
     [ "Patterns", "md__home_b_development_cpp_cpp-rotor_docs_Patterns.html", null ],
     [ "License", "md__home_b_development_cpp_cpp-rotor_docs_License.html", null ],
@@ -61,7 +60,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"structrotor_1_1payload_1_1unsubscription__confirmation__t.html#a366afea5e5d3637437b088ef9eb7a5cf"
+"structrotor_1_1payload_1_1state__response__t.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -27,7 +27,6 @@ var hierarchy =
     [ "rotor::subscription_t::classified_handlers_t", "structrotor_1_1subscription__t_1_1classified__handlers__t.html", null ],
     [ "rotor::payload::commit_unsubscription_t", "structrotor_1_1payload_1_1commit__unsubscription__t.html", null ],
     [ "rotor::payload::create_actor_t", "structrotor_1_1payload_1_1create__actor__t.html", null ],
-    [ "rotor::asio::curry_arg_t< Args >", "structrotor_1_1asio_1_1curry__arg__t.html", null ],
     [ "error_category", null, [
       [ "rotor::details::error_code_category", "classrotor_1_1details_1_1error__code__category.html", null ]
     ] ],
