@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.8.16-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -25,9 +26,10 @@
   $(document).ready(function() { init_search(); });
 /* @license-end */
 </script>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+<a href="http://www.reactivemanifesto.org/"> <img style="border: 0; position: fixed; right: 0; top:0; z-index: 9000" src="//d379ifj7s9wntv.cloudfront.net/reactivemanifesto/images/ribbons/we-are-reactive-white-right.png"> </a>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
@@ -109,7 +111,7 @@ $(document).ready(function(){initNavTree('structrotor_1_1actor__base__t.html',''
 </div><!--header-->
 <div class="contents">
 
-<p>universal primitives of concurrent computation  
+<p>universal primitive of concurrent computation  
  <a href="structrotor_1_1actor__base__t.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="actor__base_8h_source.html">actor_base.h</a>&gt;</code></p>
@@ -149,18 +151,15 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abff45f2bc3495a047ac3c0247d2893e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6baa4ad8578c529a9b15fcb947d4472"><td class="memItemLeft" align="right" valign="top"><a id="af6baa4ad8578c529a9b15fcb947d4472"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#af6baa4ad8578c529a9b15fcb947d4472">do_shutdown</a> () noexcept</td></tr>
-<tr class="memdesc:af6baa4ad8578c529a9b15fcb947d4472"><td class="mdescLeft">&#160;</td><td class="mdescRight">convenient method to send actor's shutdown request to it's supervisor <br /></td></tr>
+<tr class="memdesc:af6baa4ad8578c529a9b15fcb947d4472"><td class="mdescLeft">&#160;</td><td class="mdescRight">convenient method to send actor's supervisor shutdown trigger message <br /></td></tr>
 <tr class="separator:af6baa4ad8578c529a9b15fcb947d4472"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2010538b08d1dbafdecfe4953245bc4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#ae2010538b08d1dbafdecfe4953245bc4">confirm_shutdown</a> () noexcept</td></tr>
-<tr class="memdesc:ae2010538b08d1dbafdecfe4953245bc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">convenient method to send actor's shutdown confirmation to it's supervisor  <a href="structrotor_1_1actor__base__t.html#ae2010538b08d1dbafdecfe4953245bc4">More...</a><br /></td></tr>
-<tr class="separator:ae2010538b08d1dbafdecfe4953245bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad2dfe86c50047191168dd7614db80bc"><td class="memItemLeft" align="right" valign="top"><a id="aad2dfe86c50047191168dd7614db80bc"></a>
 virtual <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#aad2dfe86c50047191168dd7614db80bc">create_address</a> () noexcept</td></tr>
-<tr class="memdesc:aad2dfe86c50047191168dd7614db80bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates actor's address (by delegating the call to supervisor <br /></td></tr>
+<tr class="memdesc:aad2dfe86c50047191168dd7614db80bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates actor's address by delegating the call to supervisor <br /></td></tr>
 <tr class="separator:aad2dfe86c50047191168dd7614db80bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af99e298d3e730fe975642cfb62c07431"><td class="memItemLeft" align="right" valign="top"><a id="af99e298d3e730fe975642cfb62c07431"></a>
 <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#af99e298d3e730fe975642cfb62c07431">get_address</a> () const noexcept</td></tr>
-<tr class="memdesc:af99e298d3e730fe975642cfb62c07431"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns actor's address (intrusive pointer) <br /></td></tr>
+<tr class="memdesc:af99e298d3e730fe975642cfb62c07431"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns actor's "main" address (intrusive pointer) <br /></td></tr>
 <tr class="separator:af99e298d3e730fe975642cfb62c07431"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34079b0bd2619cfe7dce3f4f7bacef62"><td class="memItemLeft" align="right" valign="top"><a id="a34079b0bd2619cfe7dce3f4f7bacef62"></a>
 <a class="el" href="structrotor_1_1supervisor__t.html">supervisor_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a34079b0bd2619cfe7dce3f4f7bacef62">get_supervisor</a> () const noexcept</td></tr>
@@ -174,15 +173,18 @@ virtual <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179
 <a class="el" href="structrotor_1_1actor__base__t.html#aa4feb2f49ee3d796e0b400068098bef5">subscription_points_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a9a04ac4789fda04ff55981331140faed">get_subscription_points</a> () noexcept</td></tr>
 <tr class="memdesc:a9a04ac4789fda04ff55981331140faed"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns actor's subscription points <br /></td></tr>
 <tr class="separator:a9a04ac4789fda04ff55981331140faed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0e7346b956d295bf06d26dde3217c35"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#aa0e7346b956d295bf06d26dde3217c35">on_initialize</a> (<a class="el" href="structrotor_1_1message__t.html">message_t</a>&lt; <a class="el" href="structrotor_1_1payload_1_1initialize__actor__t.html">payload::initialize_actor_t</a> &gt; &amp;) noexcept</td></tr>
-<tr class="memdesc:aa0e7346b956d295bf06d26dde3217c35"><td class="mdescLeft">&#160;</td><td class="mdescRight">finishes actor's initialization.  <a href="structrotor_1_1actor__base__t.html#aa0e7346b956d295bf06d26dde3217c35">More...</a><br /></td></tr>
-<tr class="separator:aa0e7346b956d295bf06d26dde3217c35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd8e8014596f2423872a810607c0ae47"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#acd8e8014596f2423872a810607c0ae47">on_initialize</a> (<a class="el" href="structrotor_1_1message__t.html">message::init_request_t</a> &amp;) noexcept</td></tr>
+<tr class="memdesc:acd8e8014596f2423872a810607c0ae47"><td class="mdescLeft">&#160;</td><td class="mdescRight">records init request and may be triggers actor initialization  <a href="structrotor_1_1actor__base__t.html#acd8e8014596f2423872a810607c0ae47">More...</a><br /></td></tr>
+<tr class="separator:acd8e8014596f2423872a810607c0ae47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3442e929c15ccb4eba6777ce8ac0cca4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a3442e929c15ccb4eba6777ce8ac0cca4">on_start</a> (<a class="el" href="structrotor_1_1message__t.html">message_t</a>&lt; <a class="el" href="structrotor_1_1payload_1_1start__actor__t.html">payload::start_actor_t</a> &gt; &amp;) noexcept</td></tr>
 <tr class="memdesc:a3442e929c15ccb4eba6777ce8ac0cca4"><td class="mdescLeft">&#160;</td><td class="mdescRight">start confirmation from supervisor  <a href="structrotor_1_1actor__base__t.html#a3442e929c15ccb4eba6777ce8ac0cca4">More...</a><br /></td></tr>
 <tr class="separator:a3442e929c15ccb4eba6777ce8ac0cca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab7e3c4df9beb79694950cfcd747d7b2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#aab7e3c4df9beb79694950cfcd747d7b2">on_shutdown</a> (<a class="el" href="structrotor_1_1message__t.html">message_t</a>&lt; <a class="el" href="structrotor_1_1payload_1_1shutdown__request__t.html">payload::shutdown_request_t</a> &gt; &amp;) noexcept</td></tr>
-<tr class="memdesc:aab7e3c4df9beb79694950cfcd747d7b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">initiates actor's shutdown  <a href="structrotor_1_1actor__base__t.html#aab7e3c4df9beb79694950cfcd747d7b2">More...</a><br /></td></tr>
-<tr class="separator:aab7e3c4df9beb79694950cfcd747d7b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90941d5e5dc7ddc587ace800cdde4349"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a90941d5e5dc7ddc587ace800cdde4349">on_shutdown</a> (<a class="el" href="structrotor_1_1message__t.html">message::shutdown_request_t</a> &amp;) noexcept</td></tr>
+<tr class="memdesc:a90941d5e5dc7ddc587ace800cdde4349"><td class="mdescLeft">&#160;</td><td class="mdescRight">records shutdown request and may be triggers actor shutdown  <a href="structrotor_1_1actor__base__t.html#a90941d5e5dc7ddc587ace800cdde4349">More...</a><br /></td></tr>
+<tr class="separator:a90941d5e5dc7ddc587ace800cdde4349"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ee2063aa9188bf0d320998b9c891f00"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a5ee2063aa9188bf0d320998b9c891f00">on_shutdown_trigger</a> (<a class="el" href="structrotor_1_1message__t.html">message::shutdown_trigger_t</a> &amp;) noexcept</td></tr>
+<tr class="memdesc:a5ee2063aa9188bf0d320998b9c891f00"><td class="mdescLeft">&#160;</td><td class="mdescRight">initiates actor's shutdown  <a href="structrotor_1_1actor__base__t.html#a5ee2063aa9188bf0d320998b9c891f00">More...</a><br /></td></tr>
+<tr class="separator:a5ee2063aa9188bf0d320998b9c891f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77ca6a5ed480e51edb73420b4ec7db42"><td class="memItemLeft" align="right" valign="top"><a id="a77ca6a5ed480e51edb73420b4ec7db42"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a77ca6a5ed480e51edb73420b4ec7db42">on_subscription</a> (<a class="el" href="structrotor_1_1message__t.html">message_t</a>&lt; <a class="el" href="structrotor_1_1payload_1_1subscription__confirmation__t.html">payload::subscription_confirmation_t</a> &gt; &amp;) noexcept</td></tr>
 <tr class="memdesc:a77ca6a5ed480e51edb73420b4ec7db42"><td class="mdescLeft">&#160;</td><td class="mdescRight">records subsciption point <br /></td></tr>
@@ -197,33 +199,75 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:a6ab9820e36e2f216fef92c2eacb4746b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a6ab9820e36e2f216fef92c2eacb4746b">send</a> (const <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a> &amp;addr, Args &amp;&amp;... args)</td></tr>
 <tr class="memdesc:a6ab9820e36e2f216fef92c2eacb4746b"><td class="mdescLeft">&#160;</td><td class="mdescRight">sends message to the destination address  <a href="structrotor_1_1actor__base__t.html#a6ab9820e36e2f216fef92c2eacb4746b">More...</a><br /></td></tr>
 <tr class="separator:a6ab9820e36e2f216fef92c2eacb4746b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61867c7033d55bed0fc66a91350c269f"><td class="memTemplParams" colspan="2"><a id="a61867c7033d55bed0fc66a91350c269f"></a>
+<tr class="memitem:a3af3265abc5ad5e894137b020fcaa221"><td class="memTemplParams" colspan="2">template&lt;typename M , typename... Args&gt; </td></tr>
+<tr class="memitem:a3af3265abc5ad5e894137b020fcaa221"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structrotor_1_1request__builder__t.html">request_builder_t</a>&lt; M &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a3af3265abc5ad5e894137b020fcaa221">request</a> (const <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a> &amp;dest_addr, Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:a3af3265abc5ad5e894137b020fcaa221"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns request builder for destination address using the "main" actor address  <a href="structrotor_1_1actor__base__t.html#a3af3265abc5ad5e894137b020fcaa221">More...</a><br /></td></tr>
+<tr class="separator:a3af3265abc5ad5e894137b020fcaa221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6838832391104663977f2757c66ad30"><td class="memTemplParams" colspan="2">template&lt;typename M , typename... Args&gt; </td></tr>
+<tr class="memitem:ad6838832391104663977f2757c66ad30"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structrotor_1_1request__builder__t.html">request_builder_t</a>&lt; M &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#ad6838832391104663977f2757c66ad30">request_via</a> (const <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a> &amp;dest_addr, const <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a> &amp;reply_addr, Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:ad6838832391104663977f2757c66ad30"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns request builder for destination address using the specified address for reply  <a href="structrotor_1_1actor__base__t.html#ad6838832391104663977f2757c66ad30">More...</a><br /></td></tr>
+<tr class="separator:ad6838832391104663977f2757c66ad30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc07a7dfa0583f2125a60048ec2c1598"><td class="memTemplParams" colspan="2">template&lt;typename Request , typename... Args&gt; </td></tr>
+<tr class="memitem:adc07a7dfa0583f2125a60048ec2c1598"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#adc07a7dfa0583f2125a60048ec2c1598">reply_to</a> (Request &amp;message, Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:adc07a7dfa0583f2125a60048ec2c1598"><td class="mdescLeft">&#160;</td><td class="mdescRight">convenient method for constructing and sending response to a request  <a href="structrotor_1_1actor__base__t.html#adc07a7dfa0583f2125a60048ec2c1598">More...</a><br /></td></tr>
+<tr class="separator:adc07a7dfa0583f2125a60048ec2c1598"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a157ee6a1ed3f103a230e520aa3442e52"><td class="memTemplParams" colspan="2"><a id="a157ee6a1ed3f103a230e520aa3442e52"></a>
+template&lt;typename Request , typename... Args&gt; </td></tr>
+<tr class="memitem:a157ee6a1ed3f103a230e520aa3442e52"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a157ee6a1ed3f103a230e520aa3442e52">reply_with_error</a> (Request &amp;message, const std::error_code &amp;ec)</td></tr>
+<tr class="memdesc:a157ee6a1ed3f103a230e520aa3442e52"><td class="mdescLeft">&#160;</td><td class="mdescRight">convenient method for constructing and sending error response to a request <br /></td></tr>
+<tr class="separator:a157ee6a1ed3f103a230e520aa3442e52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa324e62a57df178103d3e1260c8af287"><td class="memTemplParams" colspan="2"><a id="aa324e62a57df178103d3e1260c8af287"></a>
 template&lt;typename Handler &gt; </td></tr>
-<tr class="memitem:a61867c7033d55bed0fc66a91350c269f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a61867c7033d55bed0fc66a91350c269f">subscribe</a> (Handler &amp;&amp;h, <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a> &amp;addr) noexcept</td></tr>
-<tr class="memdesc:a61867c7033d55bed0fc66a91350c269f"><td class="mdescLeft">&#160;</td><td class="mdescRight">subscribes actor's handler to process messages on the specified address <br /></td></tr>
-<tr class="separator:a61867c7033d55bed0fc66a91350c269f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada78a5fb0ef4342ed7805ece0320b1c2"><td class="memTemplParams" colspan="2"><a id="ada78a5fb0ef4342ed7805ece0320b1c2"></a>
+<tr class="memitem:aa324e62a57df178103d3e1260c8af287"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacerotor.html#a6fbcb2aae7a1ccefb14fe774902080d7">handler_ptr_t</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#aa324e62a57df178103d3e1260c8af287">subscribe</a> (Handler &amp;&amp;h, <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a> &amp;addr) noexcept</td></tr>
+<tr class="memdesc:aa324e62a57df178103d3e1260c8af287"><td class="mdescLeft">&#160;</td><td class="mdescRight">subscribes actor's handler to process messages on the specified address <br /></td></tr>
+<tr class="separator:aa324e62a57df178103d3e1260c8af287"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a160baa61a1cc1dbc18fc8b649609aa15"><td class="memTemplParams" colspan="2"><a id="a160baa61a1cc1dbc18fc8b649609aa15"></a>
 template&lt;typename Handler &gt; </td></tr>
-<tr class="memitem:ada78a5fb0ef4342ed7805ece0320b1c2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#ada78a5fb0ef4342ed7805ece0320b1c2">subscribe</a> (Handler &amp;&amp;h) noexcept</td></tr>
-<tr class="memdesc:ada78a5fb0ef4342ed7805ece0320b1c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">subscribes actor's handler to process messages on the actor's address <br /></td></tr>
-<tr class="separator:ada78a5fb0ef4342ed7805ece0320b1c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb01ecfeb2b9957dca351f15b7f77d5d"><td class="memTemplParams" colspan="2"><a id="adb01ecfeb2b9957dca351f15b7f77d5d"></a>
-template&lt;typename Handler &gt; </td></tr>
-<tr class="memitem:adb01ecfeb2b9957dca351f15b7f77d5d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#adb01ecfeb2b9957dca351f15b7f77d5d">unsubscribe</a> (Handler &amp;&amp;h, <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a> &amp;addr) noexcept</td></tr>
-<tr class="memdesc:adb01ecfeb2b9957dca351f15b7f77d5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">unsubscribes actor's handler from process messages on the specified address <br /></td></tr>
-<tr class="separator:adb01ecfeb2b9957dca351f15b7f77d5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a36666529aeef79e9bd6d13628b5355"><td class="memTemplParams" colspan="2"><a id="a3a36666529aeef79e9bd6d13628b5355"></a>
-template&lt;typename Handler &gt; </td></tr>
-<tr class="memitem:a3a36666529aeef79e9bd6d13628b5355"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a3a36666529aeef79e9bd6d13628b5355">unsubscribe</a> (Handler &amp;&amp;h) noexcept</td></tr>
-<tr class="memdesc:a3a36666529aeef79e9bd6d13628b5355"><td class="mdescLeft">&#160;</td><td class="mdescRight">unsubscribes actor's handler from process messages on the actor's address <br /></td></tr>
-<tr class="separator:a3a36666529aeef79e9bd6d13628b5355"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a160baa61a1cc1dbc18fc8b649609aa15"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacerotor.html#a6fbcb2aae7a1ccefb14fe774902080d7">handler_ptr_t</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a160baa61a1cc1dbc18fc8b649609aa15">subscribe</a> (Handler &amp;&amp;h) noexcept</td></tr>
+<tr class="memdesc:a160baa61a1cc1dbc18fc8b649609aa15"><td class="mdescLeft">&#160;</td><td class="mdescRight">subscribes actor's handler to process messages on the actor's "main" address <br /></td></tr>
+<tr class="separator:a160baa61a1cc1dbc18fc8b649609aa15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd0c78cbe996761c501fcc33a243da9c"><td class="memTemplParams" colspan="2"><a id="afd0c78cbe996761c501fcc33a243da9c"></a>
+template&lt;typename Handler , typename  = is_handler&lt;Handler&gt;&gt; </td></tr>
+<tr class="memitem:afd0c78cbe996761c501fcc33a243da9c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#afd0c78cbe996761c501fcc33a243da9c">unsubscribe</a> (Handler &amp;&amp;h, <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a> &amp;addr) noexcept</td></tr>
+<tr class="memdesc:afd0c78cbe996761c501fcc33a243da9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">unsubscribes actor's handler from process messages on the specified address <br /></td></tr>
+<tr class="separator:afd0c78cbe996761c501fcc33a243da9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11d75c6d07269ac9accb6ac890552ea5"><td class="memTemplParams" colspan="2"><a id="a11d75c6d07269ac9accb6ac890552ea5"></a>
+template&lt;typename Handler , typename  = is_handler&lt;Handler&gt;&gt; </td></tr>
+<tr class="memitem:a11d75c6d07269ac9accb6ac890552ea5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a11d75c6d07269ac9accb6ac890552ea5">unsubscribe</a> (Handler &amp;&amp;h) noexcept</td></tr>
+<tr class="memdesc:a11d75c6d07269ac9accb6ac890552ea5"><td class="mdescLeft">&#160;</td><td class="mdescRight">unsubscribes actor's handler from processing messages on the actor's "main" address <br /></td></tr>
+<tr class="separator:a11d75c6d07269ac9accb6ac890552ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48aca193b1cabea9eb41772bb769d0e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a48aca193b1cabea9eb41772bb769d0e5">unsubscribe</a> (const <a class="el" href="namespacerotor.html#a6fbcb2aae7a1ccefb14fe774902080d7">handler_ptr_t</a> &amp;h, const <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a> &amp;addr, const payload::callback_ptr_t &amp;={}) noexcept</td></tr>
+<tr class="memdesc:a48aca193b1cabea9eb41772bb769d0e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">initiates handler unsubscription from the address  <a href="structrotor_1_1actor__base__t.html#a48aca193b1cabea9eb41772bb769d0e5">More...</a><br /></td></tr>
+<tr class="separator:a48aca193b1cabea9eb41772bb769d0e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91652e42dc57a9e0c972399105a38f03"><td class="memItemLeft" align="right" valign="top"><a id="a91652e42dc57a9e0c972399105a38f03"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a91652e42dc57a9e0c972399105a38f03">unsubscribe</a> (const <a class="el" href="namespacerotor.html#a6fbcb2aae7a1ccefb14fe774902080d7">handler_ptr_t</a> &amp;h) noexcept</td></tr>
+<tr class="memdesc:a91652e42dc57a9e0c972399105a38f03"><td class="mdescLeft">&#160;</td><td class="mdescRight">initiates handler unsubscription from the default actor address <br /></td></tr>
+<tr class="separator:a91652e42dc57a9e0c972399105a38f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:ab749ed0f524d22c0fc6dede76cb5590c"><td class="memItemLeft" align="right" valign="top"><a id="ab749ed0f524d22c0fc6dede76cb5590c"></a>
+virtual <a class="el" href="structrotor_1_1actor__behavior__t.html">actor_behavior_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#ab749ed0f524d22c0fc6dede76cb5590c">create_behavior</a> () noexcept</td></tr>
+<tr class="memdesc:ab749ed0f524d22c0fc6dede76cb5590c"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructs actor's behavior on early stage <br /></td></tr>
+<tr class="separator:ab749ed0f524d22c0fc6dede76cb5590c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a465427daf18d178baec930ec0ec8530a"><td class="memItemLeft" align="right" valign="top"><a id="a465427daf18d178baec930ec0ec8530a"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a465427daf18d178baec930ec0ec8530a">remove_subscription</a> (const <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a> &amp;addr, const <a class="el" href="namespacerotor.html#a6fbcb2aae7a1ccefb14fe774902080d7">handler_ptr_t</a> &amp;handler) noexcept</td></tr>
 <tr class="memdesc:a465427daf18d178baec930ec0ec8530a"><td class="mdescLeft">&#160;</td><td class="mdescRight">removes the subscription point <br /></td></tr>
 <tr class="separator:a465427daf18d178baec930ec0ec8530a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a383be3775cfa14f690e03e866c75b03e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a383be3775cfa14f690e03e866c75b03e">init_start</a> () noexcept</td></tr>
+<tr class="memdesc:a383be3775cfa14f690e03e866c75b03e"><td class="mdescLeft">&#160;</td><td class="mdescRight">starts initialization  <a href="structrotor_1_1actor__base__t.html#a383be3775cfa14f690e03e866c75b03e">More...</a><br /></td></tr>
+<tr class="separator:a383be3775cfa14f690e03e866c75b03e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbc2dbbe7a61929ef66ea4a2753e8823"><td class="memItemLeft" align="right" valign="top"><a id="adbc2dbbe7a61929ef66ea4a2753e8823"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#adbc2dbbe7a61929ef66ea4a2753e8823">init_finish</a> () noexcept</td></tr>
+<tr class="memdesc:adbc2dbbe7a61929ef66ea4a2753e8823"><td class="mdescLeft">&#160;</td><td class="mdescRight">finializes initialization <br  />
+ <br /></td></tr>
+<tr class="separator:adbc2dbbe7a61929ef66ea4a2753e8823"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af559ff2601f0b0d4ed2f678c9cf701d1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#af559ff2601f0b0d4ed2f678c9cf701d1">shutdown_start</a> () noexcept</td></tr>
+<tr class="memdesc:af559ff2601f0b0d4ed2f678c9cf701d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">strart releasing acquired resources  <a href="structrotor_1_1actor__base__t.html#af559ff2601f0b0d4ed2f678c9cf701d1">More...</a><br /></td></tr>
+<tr class="separator:af559ff2601f0b0d4ed2f678c9cf701d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44ad771e6bf22f6b3f9505078d179d85"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a44ad771e6bf22f6b3f9505078d179d85">shutdown_finish</a> () noexcept</td></tr>
+<tr class="memdesc:a44ad771e6bf22f6b3f9505078d179d85"><td class="mdescLeft">&#160;</td><td class="mdescRight">finalize shutdown, release aquired resources  <a href="structrotor_1_1actor__base__t.html#a44ad771e6bf22f6b3f9505078d179d85">More...</a><br /></td></tr>
+<tr class="separator:a44ad771e6bf22f6b3f9505078d179d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -235,6 +279,10 @@ Protected Attributes</h2></td></tr>
 <a class="el" href="namespacerotor.html#a6efbb2b594154ba938cf57113e1431a3">state_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#ace7dad5e2a06711664bb7d0c70d1f1c7">state</a></td></tr>
 <tr class="memdesc:ace7dad5e2a06711664bb7d0c70d1f1c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">current actor state <br /></td></tr>
 <tr class="separator:ace7dad5e2a06711664bb7d0c70d1f1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8fce5200b9da479b52078cbfdb33963"><td class="memItemLeft" align="right" valign="top"><a id="ad8fce5200b9da479b52078cbfdb33963"></a>
+<a class="el" href="structrotor_1_1actor__behavior__t.html">actor_behavior_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#ad8fce5200b9da479b52078cbfdb33963">behavior</a></td></tr>
+<tr class="memdesc:ad8fce5200b9da479b52078cbfdb33963"><td class="mdescLeft">&#160;</td><td class="mdescRight">actor's behavior, used for runtime customization of actors's behavioral aspects <br /></td></tr>
+<tr class="separator:ad8fce5200b9da479b52078cbfdb33963"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afad3a40184e18b3bb7ea2e9e50115edb"><td class="memItemLeft" align="right" valign="top"><a id="afad3a40184e18b3bb7ea2e9e50115edb"></a>
 <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#afad3a40184e18b3bb7ea2e9e50115edb">address</a></td></tr>
 <tr class="memdesc:afad3a40184e18b3bb7ea2e9e50115edb"><td class="mdescLeft">&#160;</td><td class="mdescRight">actor address <br /></td></tr>
@@ -243,19 +291,35 @@ Protected Attributes</h2></td></tr>
 <a class="el" href="structrotor_1_1actor__base__t.html#aa4feb2f49ee3d796e0b400068098bef5">subscription_points_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a9eabdfa2eef776fdfe38bc8c5631dc58">points</a></td></tr>
 <tr class="memdesc:a9eabdfa2eef776fdfe38bc8c5631dc58"><td class="mdescLeft">&#160;</td><td class="mdescRight">recorded subscription points (i.e. handler/address pairs) <br /></td></tr>
 <tr class="separator:a9eabdfa2eef776fdfe38bc8c5631dc58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac86b35dc9ba07753aaf044ebff173e05"><td class="memItemLeft" align="right" valign="top"><a id="ac86b35dc9ba07753aaf044ebff173e05"></a>
+<a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a>&lt; <a class="el" href="structrotor_1_1message__t.html">message::init_request_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#ac86b35dc9ba07753aaf044ebff173e05">init_request</a></td></tr>
+<tr class="memdesc:ac86b35dc9ba07753aaf044ebff173e05"><td class="mdescLeft">&#160;</td><td class="mdescRight">suspended init request message <br /></td></tr>
+<tr class="separator:ac86b35dc9ba07753aaf044ebff173e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedc66b94ab49d489c3ae9b96727ec8be"><td class="memItemLeft" align="right" valign="top"><a id="aedc66b94ab49d489c3ae9b96727ec8be"></a>
+<a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a>&lt; <a class="el" href="structrotor_1_1message__t.html">message::shutdown_request_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#aedc66b94ab49d489c3ae9b96727ec8be">shutdown_request</a></td></tr>
+<tr class="memdesc:aedc66b94ab49d489c3ae9b96727ec8be"><td class="mdescLeft">&#160;</td><td class="mdescRight">suspended shutdown request message <br /></td></tr>
+<tr class="separator:aedc66b94ab49d489c3ae9b96727ec8be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
+<tr class="memitem:a71b4a5e536f17265078bbbfff4228a9f"><td class="memItemLeft" align="right" valign="top"><a id="a71b4a5e536f17265078bbbfff4228a9f"></a>
+struct&#160;</td><td class="memItemRight" valign="bottom"><b>actor_behavior_t</b></td></tr>
+<tr class="separator:a71b4a5e536f17265078bbbfff4228a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8422647915ad4f7e555cbda95131fcc8"><td class="memItemLeft" align="right" valign="top"><a id="a8422647915ad4f7e555cbda95131fcc8"></a>
 struct&#160;</td><td class="memItemRight" valign="bottom"><b>supervisor_t</b></td></tr>
 <tr class="separator:a8422647915ad4f7e555cbda95131fcc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bf45f2cbf16d793c23ba832045d6031"><td class="memTemplParams" colspan="2"><a id="a8bf45f2cbf16d793c23ba832045d6031"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a8bf45f2cbf16d793c23ba832045d6031"><td class="memTemplItemLeft" align="right" valign="top">struct&#160;</td><td class="memTemplItemRight" valign="bottom"><b>request_builder_t</b></td></tr>
+<tr class="separator:a8bf45f2cbf16d793c23ba832045d6031"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>universal primitives of concurrent computation </p>
+<div class="textblock"><p>universal primitive of concurrent computation </p>
 <p>The class is base class for user-defined actors. It is expected that actors will react on incoming messages (e.g. by changing internal /private state) or send (other) messages to other actors, or do some side-effects (I/O, etc.).</p>
 <p>Message passing interface is asynchronous, they are send to <a class="el" href="structrotor_1_1supervisor__t.html">supervisor_t</a>.</p>
 <p>Every actor belong to some <a class="el" href="structrotor_1_1supervisor__t.html">supervisor_t</a>, which "injects" the thread-safe execution context, in a sense, that the actor can call it's own methods as well as supervirors without any need of synchonization.</p>
-<p>All actor methods are thread-unsafe, i.e. should not be called with except of it's own supervisor. Communication with actor should be performed via messages. </p>
+<p>All actor methods are thread-unsafe, i.e. should not be called with except of it's own supervisor. Communication with actor should be performed via messages.</p>
+<p>Actor is addressed by it's "main" address; however it is possible for an actor to have multiple identities aka "virtual" addresses. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad337de3613a3a43a9128b5c9020f812b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad337de3613a3a43a9128b5c9020f812b">&#9670;&nbsp;</a></span>actor_base_t()</h2>
@@ -280,36 +344,6 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>supervisor_t</b></t
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae2010538b08d1dbafdecfe4953245bc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2010538b08d1dbafdecfe4953245bc4">&#9670;&nbsp;</a></span>confirm_shutdown()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void rotor::actor_base_t::confirm_shutdown </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>convenient method to send actor's shutdown confirmation to it's supervisor </p>
-<p>The method can be overriden in derived classes to finalize release of acquired resources, </p>
-
-<p>Reimplemented in <a class="el" href="structrotor_1_1supervisor__t.html#aacd4bc952b264364f6073b165c5772ee">rotor::supervisor_t</a>, and <a class="el" href="structrotor_1_1ev_1_1supervisor__ev__t.html#ac8e82dfef5a77a7536ff7f7acc628756">rotor::ev::supervisor_ev_t</a>.</p>
-
-</div>
-</div>
 <a id="abff45f2bc3495a047ac3c0247d2893e7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abff45f2bc3495a047ac3c0247d2893e7">&#9670;&nbsp;</a></span>do_initialize()</h2>
 
@@ -335,10 +369,39 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>supervisor_t</b></t
 </div><div class="memdoc">
 
 <p>early actor initialization (pre-initialization) </p>
-<p>Actor address is created.</p>
+<p>Actor's "main" address is created, actor's behavior is created.</p>
 <p>Actor performs subsscription on all major methods, defined by <code>rotor</code> framework; sets internal actor state to <code>INITIALIZING</code>. </p>
 
 <p>Reimplemented in <a class="el" href="structrotor_1_1supervisor__t.html#adbdc3a7be74c1152a648217967b409bd">rotor::supervisor_t</a>.</p>
+
+</div>
+</div>
+<a id="a383be3775cfa14f690e03e866c75b03e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a383be3775cfa14f690e03e866c75b03e">&#9670;&nbsp;</a></span>init_start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void rotor::actor_base_t::init_start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>starts initialization </p>
+<p>Some resources might be acquired synchronously, if needed. If resources need to be acquired asynchronously this method should be overriden, and invoked only after resources acquisition.</p>
+<p>In internals it forwards initialization sequence to the behavior. </p>
 
 </div>
 </div>
@@ -367,12 +430,13 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>supervisor_t</b></t
 </div><div class="memdoc">
 
 <p>forgets the subscription point for external address </p>
-<p>The <a class="el" href="structrotor_1_1payload_1_1commit__unsubscription__t.html">payload::commit_unsubscription_t</a> is sent to the external <a class="el" href="structrotor_1_1supervisor__t.html">supervisor_t</a> after removing the subscription . </p>
+<p>The <a class="el" href="structrotor_1_1payload_1_1commit__unsubscription__t.html">payload::commit_unsubscription_t</a> is sent to the external <a class="el" href="structrotor_1_1supervisor__t.html">supervisor_t</a> after removing the subscription .</p>
+<p>If there is no more subscription points, the on_unsubscription event is triggerred on <a class="el" href="structrotor_1_1actor__behavior__t.html">actor_behavior_t</a>. </p>
 
 </div>
 </div>
-<a id="aa0e7346b956d295bf06d26dde3217c35"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0e7346b956d295bf06d26dde3217c35">&#9670;&nbsp;</a></span>on_initialize()</h2>
+<a id="acd8e8014596f2423872a810607c0ae47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd8e8014596f2423872a810607c0ae47">&#9670;&nbsp;</a></span>on_initialize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -383,7 +447,7 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>supervisor_t</b></t
         <tr>
           <td class="memname">virtual void rotor::actor_base_t::on_initialize </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structrotor_1_1message__t.html">message_t</a>&lt; <a class="el" href="structrotor_1_1payload_1_1initialize__actor__t.html">payload::initialize_actor_t</a> &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structrotor_1_1message__t.html">message::init_request_t</a> &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -395,16 +459,13 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>supervisor_t</b></t
 </table>
 </div><div class="memdoc">
 
-<p>finishes actor's initialization. </p>
-<p>Sets internal actor state to <code>INITIALIZED</code> and sends initialization confirmatin to it's actor.</p>
-<p>The method can be overriden in derived classes to release acquire resources, i.e. (asynchronously) resolve host names. In that case it is possible to suspend the initialization message and call <code>on_initialize</code> only when an actor will be ready. </p>
-
-<p>Reimplemented in <a class="el" href="structrotor_1_1supervisor__t.html#a14e2a62ce2954e5d9a2715e39722496e">rotor::supervisor_t</a>.</p>
+<p>records init request and may be triggers actor initialization </p>
+<p>After recoding the init request message, it invokes <code>init_start</code> method, which triggers initialization sequece (configured by <a class="el" href="structrotor_1_1actor__behavior__t.html">actor_behavior_t</a> ). </p>
 
 </div>
 </div>
-<a id="aab7e3c4df9beb79694950cfcd747d7b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab7e3c4df9beb79694950cfcd747d7b2">&#9670;&nbsp;</a></span>on_shutdown()</h2>
+<a id="a90941d5e5dc7ddc587ace800cdde4349"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90941d5e5dc7ddc587ace800cdde4349">&#9670;&nbsp;</a></span>on_shutdown()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -415,7 +476,36 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>supervisor_t</b></t
         <tr>
           <td class="memname">virtual void rotor::actor_base_t::on_shutdown </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structrotor_1_1message__t.html">message_t</a>&lt; <a class="el" href="structrotor_1_1payload_1_1shutdown__request__t.html">payload::shutdown_request_t</a> &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="structrotor_1_1message__t.html">message::shutdown_request_t</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>records shutdown request and may be triggers actor shutdown </p>
+<p>After recording the shutdown request it invokes the <code>shutdown_start</code> method, which triggers shutdown actions sequence (configured by <a class="el" href="structrotor_1_1actor__behavior__t.html">actor_behavior_t</a> ). </p>
+
+</div>
+</div>
+<a id="a5ee2063aa9188bf0d320998b9c891f00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ee2063aa9188bf0d320998b9c891f00">&#9670;&nbsp;</a></span>on_shutdown_trigger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void rotor::actor_base_t::on_shutdown_trigger </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrotor_1_1message__t.html">message::shutdown_trigger_t</a> &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -428,10 +518,9 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>supervisor_t</b></t
 </div><div class="memdoc">
 
 <p>initiates actor's shutdown </p>
-<p>Sets internal actor state to <code>SHUTTING_DOWN</code>.</p>
-<p>The method can be overriden in derived classes to initiate the release of resources, i.e. (asynchronously) close all opened sockets before confirm shutdown to supervisor. </p>
+<p>If there is a supervisor, the message is forwarded to it to send shutdown request. </p>
 
-<p>Reimplemented in <a class="el" href="structrotor_1_1supervisor__t.html#a39c0bb9001ee493fcc35c46a64540b8a">rotor::supervisor_t</a>.</p>
+<p>Reimplemented in <a class="el" href="structrotor_1_1supervisor__t.html#a754e07e457652bb2039ae355a12445ee">rotor::supervisor_t</a>.</p>
 
 </div>
 </div>
@@ -489,7 +578,115 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>supervisor_t</b></t
 </div><div class="memdoc">
 
 <p>forgets the subscription point </p>
-<p>If there is no more subscription points and actor is <code>SHUTTING_DOWN</code>, then internal state is changed to <code>SHUTTED_DOWN</code> and <code>confirm_shutdown</code> method is invoked to notify supervisor. </p>
+<p>If there is no more subscription points, the on_unsubscription event is triggerred on <a class="el" href="structrotor_1_1actor__behavior__t.html">actor_behavior_t</a>. </p>
+
+</div>
+</div>
+<a id="adc07a7dfa0583f2125a60048ec2c1598"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc07a7dfa0583f2125a60048ec2c1598">&#9670;&nbsp;</a></span>reply_to()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Request , typename... Args&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void rotor::actor_base_t::reply_to </td>
+          <td>(</td>
+          <td class="paramtype">Request &amp;&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>convenient method for constructing and sending response to a request </p>
+<p><code>args</code> are forwarded to response payload constuction </p>
+
+</div>
+</div>
+<a id="a3af3265abc5ad5e894137b020fcaa221"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3af3265abc5ad5e894137b020fcaa221">&#9670;&nbsp;</a></span>request()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename M , typename... Args&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structrotor_1_1request__builder__t.html">request_builder_t</a>&lt; M &gt; rotor::actor_base_t::request </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>dest_addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>returns request builder for destination address using the "main" actor address </p>
+<p>The <code>args</code> are forwarded for construction of the request. The request is not actually sent, until <code>send</code> method of <a class="el" href="structrotor_1_1request__builder__t.html">request_builder_t</a> will be invoked.</p>
+<p>Supervisor will spawn timeout timer upon <code>timeout</code> method. </p>
+
+</div>
+</div>
+<a id="ad6838832391104663977f2757c66ad30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6838832391104663977f2757c66ad30">&#9670;&nbsp;</a></span>request_via()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename M , typename... Args&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structrotor_1_1request__builder__t.html">request_builder_t</a>&lt; M &gt; rotor::actor_base_t::request_via </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>dest_addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>reply_addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>returns request builder for destination address using the specified address for reply </p>
+<p>It is assumed, that the specified address belongs to the actor.</p>
+<p>The method is useful, when a different behavior is needed for the same message response types. It serves at some extend as virtual dispatching within the actor.</p>
+<p>See the description of <code>request</code> method. </p>
 
 </div>
 </div>
@@ -523,6 +720,111 @@ template&lt;typename M , typename... Args&gt; </div>
 
 <p>sends message to the destination address </p>
 <p>Internally it just constructs new message in supervisor's outbound queue. </p>
+
+</div>
+</div>
+<a id="a44ad771e6bf22f6b3f9505078d179d85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44ad771e6bf22f6b3f9505078d179d85">&#9670;&nbsp;</a></span>shutdown_finish()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void rotor::actor_base_t::shutdown_finish </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>finalize shutdown, release aquired resources </p>
+<p>This is the last action in the shutdown sequence. No further methods will be invoked. </p>
+
+<p>Reimplemented in <a class="el" href="structrotor_1_1supervisor__t.html#a9ee3f5523176f2f8a4e00745bdb83518">rotor::supervisor_t</a>, and <a class="el" href="structrotor_1_1ev_1_1supervisor__ev__t.html#a5812ac34d1090611dd2bb1ab0203d027">rotor::ev::supervisor_ev_t</a>.</p>
+
+</div>
+</div>
+<a id="af559ff2601f0b0d4ed2f678c9cf701d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af559ff2601f0b0d4ed2f678c9cf701d1">&#9670;&nbsp;</a></span>shutdown_start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void rotor::actor_base_t::shutdown_start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>strart releasing acquired resources </p>
+<p>The method can be overriden in derived classes to initiate the release of resources, i.e. (asynchronously) close all opened sockets before confirm shutdown to supervisor.</p>
+<p>It actually forwards shutdown for the behavior </p>
+
+</div>
+</div>
+<a id="a48aca193b1cabea9eb41772bb769d0e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48aca193b1cabea9eb41772bb769d0e5">&#9670;&nbsp;</a></span>unsubscribe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rotor::actor_base_t::unsubscribe </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacerotor.html#a6fbcb2aae7a1ccefb14fe774902080d7">handler_ptr_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const payload::callback_ptr_t &amp;&#160;</td>
+          <td class="paramname"> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>initiates handler unsubscription from the address </p>
+<p>If the address is local, then unsubscription confirmation is sent immediately, otherwise <a class="el" href="structrotor_1_1payload_1_1external__subscription__t.html">payload::external_subscription_t</a> request is sent to the external supervisor, which owns the address.</p>
+<p>The optional call can be providded to be called upon message destruction. </p>
 
 </div>
 </div>

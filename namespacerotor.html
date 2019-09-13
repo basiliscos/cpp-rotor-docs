@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.8.16-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -25,9 +26,10 @@
   $(document).ready(function() { init_search(); });
 /* @license-end */
 </script>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+<a href="http://www.reactivemanifesto.org/"> <img style="border: 0; position: fixed; right: 0; top:0; z-index: 9000" src="//d379ifj7s9wntv.cloudfront.net/reactivemanifesto/images/ribbons/we-are-reactive-white-right.png"> </a>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
@@ -125,7 +127,13 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html">actor_base_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">universal primitives of concurrent computation  <a href="structrotor_1_1actor__base__t.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">universal primitive of concurrent computation  <a href="structrotor_1_1actor__base__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__behavior__t.html">actor_behavior_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Actor customization point : default lifetime events and reactions to them.  <a href="structrotor_1_1actor__behavior__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1address__mapping__t.html">address_mapping_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">NAT mechanism for <code>rotor</code>  <a href="structrotor_1_1address__mapping__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1address__t.html">address_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message subscription and delivery point.  <a href="structrotor_1_1address__t.html#details">More...</a><br /></td></tr>
@@ -136,11 +144,18 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1handler__t.html">handler_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">the generic handler meant to hold user-specific pointer-to-member function  <a href="structrotor_1_1handler__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1handler__t_3_01Handler_00_01std_1_1enable__if__t_3_01std_1_1is__base__of__v_3_01m9a03087ae29643a01c1b01e690f3d639.html">handler_t&lt; Handler, std::enable_if_t&lt; std::is_base_of_v&lt; message_base_t, typename handler_traits&lt; Handler &gt;::message_t &gt; &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1handler__t_3_01lambda__holder__t_3_01Handler_00_01M_01_4_01_4.html">handler_t&lt; lambda_holder_t&lt; Handler, M &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1handler__traits.html">handler_traits</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper class to extract final actor class and message type from pointer-to-member function.  <a href="structrotor_1_1handler__traits.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1handler__traits_3_01void_07A_1_1_5_08_07M_01_6_08_01noexcept_01_4.html">handler_traits&lt; void(A::*)(M &amp;) noexcept &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper class to extract final actor class and message type from pointer-to-member function.  <a href="structrotor_1_1handler__traits_3_01void_07A_1_1_5_08_07M_01_6_08_01noexcept_01_4.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1lambda__holder__t.html">lambda_holder_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper struct which holds lambda function for processing particular message types.  <a href="structrotor_1_1lambda__holder__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1message__base__t.html">message_base_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for <code>rotor</code> message.  <a href="structrotor_1_1message__base__t.html#details">More...</a><br /></td></tr>
@@ -148,14 +163,43 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1message__t.html">message_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">the generic message meant to hold user-specific payload  <a href="structrotor_1_1message__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1request__base__t.html">request_base_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">base class for request payload  <a href="structrotor_1_1request__base__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1request__builder__t.html">request_builder_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">builder pattern implentation for the original request  <a href="structrotor_1_1request__builder__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1request__curry__t.html">request_curry_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">the recorded context, which is needed to produce error response to the original request  <a href="structrotor_1_1request__curry__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1request__traits__t.html">request_traits_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">type helper to deduce request/reqsponce messages from original (user-supplied) request type  <a href="structrotor_1_1request__traits__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1response__helper__t.html">response_helper_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">generic helper, which helps to construct user-defined response payload  <a href="structrotor_1_1response__helper__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1response__helper__t_3_01intrusive__ptr__t_3_01Responce_01_4_01_4.html">response_helper_t&lt; intrusive_ptr_t&lt; Responce &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1subscription__t.html">subscription_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds and classifies message handlers on behalf of supervisor.  <a href="structrotor_1_1subscription__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__behavior__t.html">supervisor_behavior_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">supervisor specifict events and default actions  <a href="structrotor_1_1supervisor__behavior__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__config__t.html">supervisor_config_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">base supervisor config, which holds shutdowm timeout value  <a href="structrotor_1_1supervisor__config__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__t.html">supervisor_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">supervisor is responsible for managing actors (workers) lifetime  <a href="structrotor_1_1supervisor__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1system__context__t.html">system_context_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The system context holds root <a class="el" href="structrotor_1_1supervisor__t.html">supervisor_t</a> (intrusive pointer) and may be loop-related details in derived classes.  <a href="structrotor_1_1system__context__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1wrapped__request__t.html">wrapped_request_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">templated request, which is able to hold user-supplied payload  <a href="structrotor_1_1wrapped__request__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1wrapped__response__t.html">wrapped_response_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">trackable templated response which holds user-supplied response payload.  <a href="structrotor_1_1wrapped__response__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -164,6 +208,10 @@ Typedefs</h2></td></tr>
 using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerotor.html#a6fbcb2aae7a1ccefb14fe774902080d7">handler_ptr_t</a> = <a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a>&lt; <a class="el" href="structrotor_1_1handler__base__t.html">handler_base_t</a> &gt;</td></tr>
 <tr class="memdesc:a6fbcb2aae7a1ccefb14fe774902080d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">intrusive pointer for handler <br /></td></tr>
 <tr class="separator:a6fbcb2aae7a1ccefb14fe774902080d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a506b8637b7e785794271d95b65837415"><td class="memTemplParams" colspan="2">template&lt;typename Handler &gt; </td></tr>
+<tr class="memitem:a506b8637b7e785794271d95b65837415"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacerotor.html#a506b8637b7e785794271d95b65837415">is_handler</a> = std::enable_if_t&lt; std::is_member_function_pointer_v&lt; Handler &gt;||std::is_base_of_v&lt; <a class="el" href="structrotor_1_1handler__base__t.html">handler_base_t</a>, Handler &gt; &gt;</td></tr>
+<tr class="memdesc:a506b8637b7e785794271d95b65837415"><td class="mdescLeft">&#160;</td><td class="mdescRight">SFINAE handler detector.  <a href="namespacerotor.html#a506b8637b7e785794271d95b65837415">More...</a><br /></td></tr>
+<tr class="separator:a506b8637b7e785794271d95b65837415"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa680b052e55aa70f20c6e270187db2d6"><td class="memItemLeft" align="right" valign="top"><a id="aa680b052e55aa70f20c6e270187db2d6"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerotor.html#aa680b052e55aa70f20c6e270187db2d6">actor_ptr_t</a> = <a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a>&lt; <a class="el" href="structrotor_1_1actor__base__t.html">actor_base_t</a> &gt;</td></tr>
 <tr class="memdesc:aa680b052e55aa70f20c6e270187db2d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">intrusive pointer for actor <br /></td></tr>
@@ -194,6 +242,10 @@ using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nam
 using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerotor.html#a0196761fe474bd8dc17ac4ff9f0e2f95">message_ptr_t</a> = <a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a>&lt; <a class="el" href="structrotor_1_1message__base__t.html">message_base_t</a> &gt;</td></tr>
 <tr class="memdesc:a0196761fe474bd8dc17ac4ff9f0e2f95"><td class="mdescLeft">&#160;</td><td class="mdescRight">intrusive pointer for message <br /></td></tr>
 <tr class="separator:a0196761fe474bd8dc17ac4ff9f0e2f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72956f1c9805f36d3338046a39a31174"><td class="memItemLeft" align="right" valign="top"><a id="a72956f1c9805f36d3338046a39a31174"></a>
+typedef <a class="el" href="namespacerotor.html#a0196761fe474bd8dc17ac4ff9f0e2f95">message_ptr_t</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerotor.html#a72956f1c9805f36d3338046a39a31174">error_producer_t</a>(const <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a> &amp;reply_to, <a class="el" href="structrotor_1_1message__base__t.html">message_base_t</a> &amp;msg, const std::error_code &amp;ec) noexcept</td></tr>
+<tr class="memdesc:a72956f1c9805f36d3338046a39a31174"><td class="mdescLeft">&#160;</td><td class="mdescRight">free function type, which produces error response to the original request <br /></td></tr>
+<tr class="separator:a72956f1c9805f36d3338046a39a31174"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84e3ffaa2cdbc2106f3e4def7fb11891"><td class="memItemLeft" align="right" valign="top"><a id="a84e3ffaa2cdbc2106f3e4def7fb11891"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerotor.html#a84e3ffaa2cdbc2106f3e4def7fb11891">system_context_ptr_t</a> = <a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a>&lt; <a class="el" href="structrotor_1_1system__context__t.html">system_context_t</a> &gt;</td></tr>
 <tr class="memdesc:a84e3ffaa2cdbc2106f3e4def7fb11891"><td class="mdescLeft">&#160;</td><td class="mdescRight">intrusive pointer for system context <br /></td></tr>
@@ -201,9 +253,24 @@ using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nam
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:a938b963874d0086dd7ce1b6887129812"><td class="memItemLeft" align="right" valign="top"><a id="a938b963874d0086dd7ce1b6887129812"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerotor.html#a938b963874d0086dd7ce1b6887129812">behavior_state_t</a> { <br />
+&#160;&#160;<b>UNKNOWN</b>, 
+<b>INIT_STARTED</b>, 
+<b>INIT_ENDED</b>, 
+<b>SHUTDOWN_STARTED</b>, 
+<br />
+&#160;&#160;<b>SHUTDOWN_CHILDREN_STARTED</b>, 
+<b>SHUTDOWN_CHILDREN_FINISHED</b>, 
+<b>UNSUBSCRIPTION_STARTED</b>, 
+<b>UNSUBSCRIPTION_FINISHED</b>, 
+<br />
+&#160;&#160;<b>SHUTDOWN_ENDED</b>
+<br />
+ }</td></tr>
+<tr class="memdesc:a938b963874d0086dd7ce1b6887129812"><td class="mdescLeft">&#160;</td><td class="mdescRight">the substate of actor, to be tracked by behavior <br /></td></tr>
+<tr class="separator:a938b963874d0086dd7ce1b6887129812"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff42402c4871af3b3ae26820e45abd81"><td class="memItemLeft" align="right" valign="top"><a id="aff42402c4871af3b3ae26820e45abd81"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerotor.html#aff42402c4871af3b3ae26820e45abd81">error_code_t</a> { <b>success</b> = 0, 
-<b>shutdown_timeout</b>, 
-<b>missing_actor</b>, 
+<b>request_timeout</b>, 
 <b>supervisor_defined</b>
  }</td></tr>
 <tr class="memdesc:aff42402c4871af3b3ae26820e45abd81"><td class="mdescLeft">&#160;</td><td class="mdescRight">fatal error codes in rotor <br /></td></tr>
@@ -232,25 +299,94 @@ const <a class="el" href="classrotor_1_1details_1_1error__code__category.html">d
 std::error_code&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerotor.html#a19351d6ef5d9f14c2a558df319ddbf76">make_error_code</a> (<a class="el" href="namespacerotor.html#aff42402c4871af3b3ae26820e45abd81">error_code_t</a> e)</td></tr>
 <tr class="memdesc:a19351d6ef5d9f14c2a558df319ddbf76"><td class="mdescLeft">&#160;</td><td class="mdescRight">makes <code>std::error_code</code> from rotor error_code enumerations <br /></td></tr>
 <tr class="separator:a19351d6ef5d9f14c2a558df319ddbf76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a166246580d5c9bb61e5f0cd155ced7"><td class="memTemplParams" colspan="2"><a id="a8a166246580d5c9bb61e5f0cd155ced7"></a>
-template&lt;typename Actor , typename Supervisor , typename... Args&gt; </td></tr>
-<tr class="memitem:a8a166246580d5c9bb61e5f0cd155ced7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a>&lt; Actor &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacerotor.html#a8a166246580d5c9bb61e5f0cd155ced7">make_actor</a> (Supervisor &amp;sup, Args... args)</td></tr>
-<tr class="memdesc:a8a166246580d5c9bb61e5f0cd155ced7"><td class="mdescLeft">&#160;</td><td class="mdescRight">constucts actor on the supervisor <br /></td></tr>
-<tr class="separator:a8a166246580d5c9bb61e5f0cd155ced7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0307e7a8918afa34cf8300ea86ea3087"><td class="memTemplParams" colspan="2"><a id="a0307e7a8918afa34cf8300ea86ea3087"></a>
+template&lt;typename M , typename F &gt; </td></tr>
+<tr class="memitem:a0307e7a8918afa34cf8300ea86ea3087"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="structrotor_1_1lambda__holder__t.html">lambda_holder_t</a>&lt; M, F &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacerotor.html#a0307e7a8918afa34cf8300ea86ea3087">lambda</a> (F &amp;&amp;fn)</td></tr>
+<tr class="memdesc:a0307e7a8918afa34cf8300ea86ea3087"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper function for lambda holder constructing <br /></td></tr>
+<tr class="separator:a0307e7a8918afa34cf8300ea86ea3087"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a0044ded43c5893e18ccc54d69f4b5a"><td class="memTemplParams" colspan="2"><a id="a6a0044ded43c5893e18ccc54d69f4b5a"></a>
 template&lt;typename M , typename... Args&gt; </td></tr>
 <tr class="memitem:a6a0044ded43c5893e18ccc54d69f4b5a"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacerotor.html#a6a0044ded43c5893e18ccc54d69f4b5a">make_message</a> (const <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a> &amp;addr, Args &amp;&amp;... args) -&gt; <a class="el" href="namespacerotor.html#a0196761fe474bd8dc17ac4ff9f0e2f95">message_ptr_t</a></td></tr>
 <tr class="memdesc:a6a0044ded43c5893e18ccc54d69f4b5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">constucts message by constructing it's payload; intrusive pointer for the message is returned <br /></td></tr>
 <tr class="separator:a6a0044ded43c5893e18ccc54d69f4b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd77ea605bb36c8a542b4bb6752bdca9"><td class="memTemplParams" colspan="2"><a id="abd77ea605bb36c8a542b4bb6752bdca9"></a>
+template&lt;typename Actor , typename Supervisor , typename... Args&gt; </td></tr>
+<tr class="memitem:abd77ea605bb36c8a542b4bb6752bdca9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a>&lt; Actor &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacerotor.html#abd77ea605bb36c8a542b4bb6752bdca9">make_actor</a> (Supervisor &amp;sup, Args... args)</td></tr>
+<tr class="memdesc:abd77ea605bb36c8a542b4bb6752bdca9"><td class="mdescLeft">&#160;</td><td class="mdescRight">constucts actor on the supervisor <br /></td></tr>
+<tr class="separator:abd77ea605bb36c8a542b4bb6752bdca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa57a3a769319496293197235aa9f652f"><td class="memTemplParams" colspan="2"><a id="aa57a3a769319496293197235aa9f652f"></a>
 template&lt;typename Handler &gt; </td></tr>
 <tr class="memitem:aa57a3a769319496293197235aa9f652f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacerotor.html#a6fbcb2aae7a1ccefb14fe774902080d7">handler_ptr_t</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacerotor.html#aa57a3a769319496293197235aa9f652f">wrap_handler</a> (<a class="el" href="structrotor_1_1actor__base__t.html">actor_base_t</a> &amp;actor, Handler &amp;&amp;handler)</td></tr>
 <tr class="memdesc:aa57a3a769319496293197235aa9f652f"><td class="mdescLeft">&#160;</td><td class="mdescRight">wraps handler (pointer to member function) and actor address into intrusive pointer <br /></td></tr>
 <tr class="separator:aa57a3a769319496293197235aa9f652f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac51b875442140fe99982190ea01dd5d9"><td class="memTemplParams" colspan="2">template&lt;typename Actor , typename Supervisor , typename... Args&gt; </td></tr>
+<tr class="memitem:ac51b875442140fe99982190ea01dd5d9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a>&lt; Actor &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacerotor.html#ac51b875442140fe99982190ea01dd5d9">make_actor</a> (Supervisor &amp;sup, const pt::time_duration &amp;timeout, Args... args)</td></tr>
+<tr class="memdesc:ac51b875442140fe99982190ea01dd5d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">convenience method for creating an actor in the scope of supervisor  <a href="namespacerotor.html#ac51b875442140fe99982190ea01dd5d9">More...</a><br /></td></tr>
+<tr class="separator:ac51b875442140fe99982190ea01dd5d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Basic namespace for all rotor functionalities. </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="a506b8637b7e785794271d95b65837415"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a506b8637b7e785794271d95b65837415">&#9670;&nbsp;</a></span>is_handler</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Handler &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacerotor.html#a506b8637b7e785794271d95b65837415">rotor::is_handler</a> = typedef std::enable_if_t&lt;std::is_member_function_pointer_v&lt;Handler&gt; || std::is_base_of_v&lt;<a class="el" href="structrotor_1_1handler__base__t.html">handler_base_t</a>, Handler&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>SFINAE handler detector. </p>
+<p>Either handler can be constructed from memeber-to-function-pointer or it is already constructed and have a base <code><a class="el" href="structrotor_1_1handler__base__t.html" title="Base class for rotor handler, i.e concrete message type processing point on concrete actor.">handler_base_t</a></code> </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ac51b875442140fe99982190ea01dd5d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac51b875442140fe99982190ea01dd5d9">&#9670;&nbsp;</a></span>make_actor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Actor , typename Supervisor , typename... Args&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a>&lt;Actor&gt; rotor::make_actor </td>
+          <td>(</td>
+          <td class="paramtype">Supervisor &amp;&#160;</td>
+          <td class="paramname"><em>sup</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const pt::time_duration &amp;&#160;</td>
+          <td class="paramname"><em>timeout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>convenience method for creating an actor in the scope of supervisor </p>
+<p>Actor performs early initialization, and further init will be request-based and initiated * by the supervisor. </p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

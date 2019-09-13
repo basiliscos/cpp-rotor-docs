@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['duration_5ft_374',['duration_t',['../structrotor_1_1asio_1_1supervisor__config__t.html#a1cb65750b82d622ce607dfcaee7f7f4f',1,'rotor::asio::supervisor_config_t::duration_t()'],['../structrotor_1_1ev_1_1supervisor__config__t.html#affd1538ea1a4b3802de8c7620425704b',1,'rotor::ev::supervisor_config_t::duration_t()'],['../structrotor_1_1wx_1_1supervisor__config__t.html#a4bb0930b2e54caaf63096d53287a3353',1,'rotor::wx::supervisor_config_t::duration_t()']]]
+  ['error_5fproducer_5ft_522',['error_producer_t',['../namespacerotor.html#a72956f1c9805f36d3338046a39a31174',1,'rotor']]]
 ];

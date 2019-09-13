@@ -1,12 +1,13 @@
 var searchData=
 [
-  ['make_5factor_89',['make_actor',['../namespacerotor.html#a8a166246580d5c9bb61e5f0cd155ced7',1,'rotor']]],
-  ['make_5faddress_90',['make_address',['../structrotor_1_1asio_1_1supervisor__asio__t.html#a96059f715e271c4c69ba3d7f0d6b8cff',1,'rotor::asio::supervisor_asio_t::make_address()'],['../structrotor_1_1supervisor__t.html#a4517a5ef2f92cd6f94744a273c6ab478',1,'rotor::supervisor_t::make_address()']]],
-  ['make_5ferror_5fcode_91',['make_error_code',['../namespacerotor.html#a19351d6ef5d9f14c2a558df319ddbf76',1,'rotor']]],
-  ['make_5fmessage_92',['make_message',['../namespacerotor.html#a6a0044ded43c5893e18ccc54d69f4b5a',1,'rotor']]],
-  ['message_5fbase_5ft_93',['message_base_t',['../structrotor_1_1message__base__t.html',1,'rotor::message_base_t'],['../structrotor_1_1message__base__t.html#a6be6d6a87442c3948f055168a5566103',1,'rotor::message_base_t::message_base_t()']]],
-  ['message_5fptr_5ft_94',['message_ptr_t',['../namespacerotor.html#a0196761fe474bd8dc17ac4ff9f0e2f95',1,'rotor']]],
-  ['message_5ft_95',['message_t',['../structrotor_1_1message__t.html',1,'rotor::message_t&lt; T &gt;'],['../structrotor_1_1handler__traits_3_01void_07A_1_1_5_08_07M_01_6_08_01noexcept_01_4.html#a35f7fb361bfe6694a9523c9dcf6a5e35',1,'rotor::handler_traits&lt; void(A::*)(M &amp;) noexcept &gt;::message_t()'],['../structrotor_1_1message__t.html#a68ab9ac3824b2e8a4e9583cdea2e1f33',1,'rotor::message_t::message_t()']]],
-  ['message_5ftype_96',['message_type',['../structrotor_1_1handler__base__t.html#a98fbce0711aa45d8590af902442a4641',1,'rotor::handler_base_t::message_type()'],['../structrotor_1_1message__t.html#a68c5e2d5c15d18019a68fe887a3389fc',1,'rotor::message_t::message_type()']]],
-  ['mine_97',['mine',['../structrotor_1_1subscription__t_1_1classified__handlers__t.html#a1d2f4d2372892f0e9e84a6107957f898',1,'rotor::subscription_t::classified_handlers_t']]]
+  ['lambda_107',['lambda',['../namespacerotor.html#a0307e7a8918afa34cf8300ea86ea3087',1,'rotor']]],
+  ['lambda_5fholder_5ft_108',['lambda_holder_t',['../structrotor_1_1lambda__holder__t.html',1,'rotor::lambda_holder_t&lt; M, F &gt;'],['../structrotor_1_1lambda__holder__t.html#a2169a4df740bb8fdd86c2e110b7c95cb',1,'rotor::lambda_holder_t::lambda_holder_t()']]],
+  ['lambda_5fholder_5ft_3c_20handler_2c_20m_20_3e_109',['lambda_holder_t&lt; Handler, M &gt;',['../structrotor_1_1lambda__holder__t.html',1,'rotor']]],
+  ['last_5freq_5fid_110',['last_req_id',['../structrotor_1_1supervisor__t.html#aeb6f8ff2ae9bc1cdc2d79ea5d529658d',1,'rotor::supervisor_t']]],
+  ['list_5ft_111',['list_t',['../structrotor_1_1subscription__t.html#a3883ba01aef396e78e0fd541eff4aa21',1,'rotor::subscription_t']]],
+  ['locality_112',['locality',['../structrotor_1_1address__t.html#a265be972874655a2034fbaa6bce80b49',1,'rotor::address_t']]],
+  ['locality_5fleader_113',['locality_leader',['../structrotor_1_1supervisor__t.html#af11dbbafb9e9e07f84eb09eeb58c8110',1,'rotor::supervisor_t']]],
+  ['loop_114',['loop',['../structrotor_1_1ev_1_1supervisor__config__ev__t.html#a4fd2339886477018d5fd2e2b6701a5f4',1,'rotor::ev::supervisor_config_ev_t::loop()'],['../structrotor_1_1ev_1_1supervisor__ev__t.html#a5eba48be5ed088b78d64352d03c0cb49',1,'rotor::ev::supervisor_ev_t::loop()']]],
+  ['loop_5fownership_115',['loop_ownership',['../structrotor_1_1ev_1_1supervisor__config__ev__t.html#af03e3387457a36348f45d369e8dfb94c',1,'rotor::ev::supervisor_config_ev_t::loop_ownership()'],['../structrotor_1_1ev_1_1supervisor__ev__t.html#acd7e6f802d2a87852888d344137537ec',1,'rotor::ev::supervisor_ev_t::loop_ownership()']]],
+  ['license_116',['License',['../md__home_b_development_cpp_cpp-rotor_docs_License.html',1,'']]]
 ];

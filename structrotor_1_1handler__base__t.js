@@ -8,6 +8,5 @@ var structrotor_1_1handler__base__t =
     [ "handler_type", "structrotor_1_1handler__base__t.html#ad2db4dfad16c33d485f457583760bfc3", null ],
     [ "message_type", "structrotor_1_1handler__base__t.html#a98fbce0711aa45d8590af902442a4641", null ],
     [ "precalc_hash", "structrotor_1_1handler__base__t.html#a4374640eac9254877b8f33e3916d4ee5", null ],
-    [ "raw_actor_ptr", "structrotor_1_1handler__base__t.html#a382ecf3837c1420f8982a65e016c4d78", null ],
-    [ "raw_supervisor_ptr", "structrotor_1_1handler__base__t.html#a7520619ae7899637541c4f0e37c9c954", null ]
+    [ "raw_actor_ptr", "structrotor_1_1handler__base__t.html#a382ecf3837c1420f8982a65e016c4d78", null ]
 ];

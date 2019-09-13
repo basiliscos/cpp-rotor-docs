@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.8.16-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -25,9 +26,10 @@
   $(document).ready(function() { init_search(); });
 /* @license-end */
 </script>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+<a href="http://www.reactivemanifesto.org/"> <img style="border: 0; position: fixed; right: 0; top:0; z-index: 9000" src="//d379ifj7s9wntv.cloudfront.net/reactivemanifesto/images/ribbons/we-are-reactive-white-right.png"> </a>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
@@ -120,9 +122,11 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp-rotor_d
 <div class="line">    }</div>
 <div class="line">};</div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">struct </span>dummy_supervisor: <span class="keyword">public</span> <a class="code" href="structrotor_1_1supervisor__t.html">rotor::supervisor_t</a> {</div>
-<div class="line">    <span class="keywordtype">void</span> <a class="code" href="structrotor_1_1supervisor__t.html#a46eb9cc690568ad9d251141010cb3da9">start_shutdown_timer</a>() noexcept<span class="keyword"> override </span>{}</div>
-<div class="line">    <span class="keywordtype">void</span> <a class="code" href="structrotor_1_1supervisor__t.html#a0c5635ae0d86b7fe286ca7f9b2c657f2">cancel_shutdown_timer</a>() noexcept<span class="keyword"> override </span>{}</div>
+<div class="line"><span class="keyword">struct </span>dummy_supervisor : <span class="keyword">public</span> <a class="code" href="structrotor_1_1supervisor__t.html">rotor::supervisor_t</a> {</div>
+<div class="line">    <span class="keyword">using</span> <a class="code" href="structrotor_1_1supervisor__t.html#aa6efcd51f1569be17f9e56020ae1dfc0">rotor::supervisor_t::supervisor_t</a>;</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordtype">void</span> <a class="code" href="structrotor_1_1supervisor__t.html#a91fc5b24e9fa5953d549fa5e7023c814">start_timer</a>(<span class="keyword">const</span> rotor::pt::time_duration &amp;, timer_id_t) noexcept <span class="keyword">override</span> {}</div>
+<div class="line">    <span class="keywordtype">void</span> <a class="code" href="structrotor_1_1supervisor__t.html#a3ef7a3ac4c201a2d4f308c246e1e3f81">cancel_timer</a>(timer_id_t) noexcept <span class="keyword">override</span> {}</div>
 <div class="line">    <span class="keywordtype">void</span> <a class="code" href="structrotor_1_1supervisor__t.html#a4b1efcbe5839461a00457448c33bc6a9">start</a>() noexcept<span class="keyword"> override </span>{}</div>
 <div class="line">    <span class="keywordtype">void</span> <a class="code" href="structrotor_1_1supervisor__t.html#a7d7e4dceb429d6c56761cb68b9c51eec">shutdown</a>() noexcept<span class="keyword"> override </span>{}</div>
 <div class="line">    <span class="keywordtype">void</span> <a class="code" href="structrotor_1_1supervisor__t.html#aaf99e587b441bb5e68b0c500ffedf14f">enqueue</a>(<a class="code" href="namespacerotor.html#a0196761fe474bd8dc17ac4ff9f0e2f95">rotor::message_ptr_t</a>) noexcept <span class="keyword">override</span> {}</div>
@@ -131,8 +135,10 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp-rotor_d
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main() {</div>
 <div class="line">    <a class="code" href="structrotor_1_1system__context__t.html">rotor::system_context_t</a> ctx{};</div>
-<div class="line">    <span class="keyword">auto</span> sup = ctx.<a class="code" href="structrotor_1_1system__context__t.html#a61d548cd385f28ac040e5eb464e4ce61">create_supervisor</a>&lt;dummy_supervisor&gt;();</div>
-<div class="line">    sup-&gt;create_actor&lt;hello_actor&gt;();</div>
+<div class="line">    <span class="keyword">auto</span> timeout = boost::posix_time::milliseconds{500}; <span class="comment">/* does not matter */</span></div>
+<div class="line">    <a class="code" href="structrotor_1_1supervisor__config__t.html">rotor::supervisor_config_t</a> cfg{timeout};</div>
+<div class="line">    <span class="keyword">auto</span> sup = ctx.create_supervisor&lt;dummy_supervisor&gt;(<span class="keyword">nullptr</span>, cfg);</div>
+<div class="line">    sup-&gt;create_actor&lt;hello_actor&gt;(timeout);</div>
 <div class="line">    sup-&gt;do_process();</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
@@ -153,17 +159,20 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp-rotor_d
 <div class="line"><span class="keywordtype">int</span> main() {</div>
 <div class="line">    asio::io_context io_context;</div>
 <div class="line">    <span class="keyword">auto</span> system_context = <a class="code" href="structrotor_1_1asio_1_1system__context__asio__t.html#afeafb09bee3302d4f691bab45a4499cb">rotor::asio::system_context_asio_t::ptr_t</a>{<span class="keyword">new</span> <a class="code" href="structrotor_1_1asio_1_1system__context__asio__t.html">rotor::asio::system_context_asio_t</a>(io_context)};</div>
-<div class="line">    <a class="code" href="structrotor_1_1asio_1_1supervisor__config__t.html">rotor::asio::supervisor_config_t</a> conf{pt::milliseconds{500}};</div>
+<div class="line">    <span class="keyword">auto</span> stand = std::make_shared&lt;asio::io_context::strand&gt;(io_context);</div>
+<div class="line">    <span class="keyword">auto</span> timeout = boost::posix_time::milliseconds{500};</div>
+<div class="line">    <a class="code" href="structrotor_1_1asio_1_1supervisor__config__asio__t.html">rotor::asio::supervisor_config_asio_t</a> conf{timeout, std::move(stand)};</div>
 <div class="line">    <span class="keyword">auto</span> sup = system_context-&gt;create_supervisor&lt;<a class="code" href="structrotor_1_1asio_1_1supervisor__asio__t.html">rotor::asio::supervisor_asio_t</a>&gt;(conf);</div>
 <div class="line"> </div>
-<div class="line">    <span class="keyword">auto</span> hello = sup-&gt;<a class="code" href="structrotor_1_1asio_1_1supervisor__asio__t.html#ab432a1eec1e8bdcd8d3bc90cffce7f9e">create_actor</a>&lt;hello_actor&gt;();</div>
+<div class="line">    <span class="keyword">auto</span> hello = sup-&gt;<a class="code" href="structrotor_1_1asio_1_1supervisor__asio__t.html#a8737f053f6540b96aa113609df429192">create_actor</a>&lt;hello_actor&gt;(timeout);</div>
 <div class="line"> </div>
 <div class="line">    sup-&gt;start();</div>
 <div class="line">    io_context.run();</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>It is obvious that the actor code is the same in both cases, however the system environment and supervisors are different. In the last example the important property of <code>rotor</code> is shown : it is <b>not intrusive</b> to event loops, i.e. an event loop runs on by itself, not introducing additional environment/thread; as the consequence, rotor actor can be seamlessly integrated with loops.</p>
-<p>The <code>supervisor.do_shutdown()</code> just sends message to supervisor to perform shutdown procedure. Then, in the code <code>io_context.run()</code> loop terminates, as long as <em>there are no any pending event</em>. <code>rotor</code> does not makes run loop endlessly.</p>
+<p>The <code>supervisor.do_shutdown()</code> just sends message to supervisor to perform shutdown procedure. Then, in the code <code>io_context.run()</code> loop terminates, as long as <em>there are no any pending event</em>. <code>rotor</code> does not make run loop endlessly.</p>
+<p>The <code>timeout</code> variable is used to spawn timers for actor initialization and shutdown requests. As the actor does not do any I/O the operations will be executed immediately, and timeout values do not matter.</p>
 <h1>Ping-pong example</h1>
 <p>The following example demonstrates how to send messages between actors.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="rotor_8hpp.html">rotor.hpp</a>&quot;</span></div>
@@ -177,9 +186,9 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp-rotor_d
 <div class="line"> </div>
 <div class="line">    <span class="keywordtype">void</span> set_ponger_addr(<span class="keyword">const</span> <a class="code" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">rotor::address_ptr_t</a> &amp;addr) { ponger_addr = addr; }</div>
 <div class="line"> </div>
-<div class="line">    <span class="keywordtype">void</span> <a class="code" href="structrotor_1_1actor__base__t.html#aa0e7346b956d295bf06d26dde3217c35">on_initialize</a>(<a class="code" href="structrotor_1_1message__t.html">rotor::message_t&lt;rotor::payload::initialize_actor_t&gt;</a> &amp;msg) noexcept <span class="keyword">override</span> {</div>
-<div class="line">        <a class="code" href="structrotor_1_1actor__base__t.html#aa0e7346b956d295bf06d26dde3217c35">rotor::actor_base_t::on_initialize</a>(msg);</div>
-<div class="line">        <a class="code" href="structrotor_1_1actor__base__t.html#a61867c7033d55bed0fc66a91350c269f">subscribe</a>(&amp;pinger_t::on_pong);</div>
+<div class="line">    <span class="keywordtype">void</span> <a class="code" href="structrotor_1_1actor__base__t.html#a383be3775cfa14f690e03e866c75b03e">init_start</a>() noexcept<span class="keyword"> override </span>{</div>
+<div class="line">        <a class="code" href="structrotor_1_1actor__base__t.html#aa324e62a57df178103d3e1260c8af287">subscribe</a>(&amp;pinger_t::on_pong);</div>
+<div class="line">        <a class="code" href="structrotor_1_1actor__base__t.html#a383be3775cfa14f690e03e866c75b03e">rotor::actor_base_t::init_start</a>();</div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordtype">void</span> <a class="code" href="structrotor_1_1actor__base__t.html#a3442e929c15ccb4eba6777ce8ac0cca4">on_start</a>(<a class="code" href="structrotor_1_1message__t.html">rotor::message_t&lt;rotor::payload::start_actor_t&gt;</a> &amp;msg) noexcept <span class="keyword">override</span> {</div>
@@ -199,9 +208,9 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp-rotor_d
 <div class="line">    <span class="keyword">using</span> <a class="code" href="structrotor_1_1actor__base__t.html#ad337de3613a3a43a9128b5c9020f812b">rotor::actor_base_t::actor_base_t</a>;</div>
 <div class="line">    <span class="keywordtype">void</span> set_pinger_addr(<span class="keyword">const</span> <a class="code" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">rotor::address_ptr_t</a> &amp;addr) { pinger_addr = addr; }</div>
 <div class="line"> </div>
-<div class="line">    <span class="keywordtype">void</span> <a class="code" href="structrotor_1_1actor__base__t.html#aa0e7346b956d295bf06d26dde3217c35">on_initialize</a>(<a class="code" href="structrotor_1_1message__t.html">rotor::message_t&lt;rotor::payload::initialize_actor_t&gt;</a> &amp;msg) noexcept <span class="keyword">override</span> {</div>
-<div class="line">        <a class="code" href="structrotor_1_1actor__base__t.html#aa0e7346b956d295bf06d26dde3217c35">rotor::actor_base_t::on_initialize</a>(msg);</div>
-<div class="line">        <a class="code" href="structrotor_1_1actor__base__t.html#a61867c7033d55bed0fc66a91350c269f">subscribe</a>(&amp;ponger_t::on_ping);</div>
+<div class="line">    <span class="keywordtype">void</span> <a class="code" href="structrotor_1_1actor__base__t.html#a383be3775cfa14f690e03e866c75b03e">init_start</a>() noexcept<span class="keyword"> override </span>{</div>
+<div class="line">        <a class="code" href="structrotor_1_1actor__base__t.html#aa324e62a57df178103d3e1260c8af287">subscribe</a>(&amp;ponger_t::on_ping);</div>
+<div class="line">        <a class="code" href="structrotor_1_1actor__base__t.html#a383be3775cfa14f690e03e866c75b03e">rotor::actor_base_t::init_start</a>();</div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordtype">void</span> on_ping(<a class="code" href="structrotor_1_1message__t.html">rotor::message_t&lt;ping_t&gt;</a> &amp;) noexcept {</div>
@@ -214,8 +223,10 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp-rotor_d
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">struct </span>dummy_supervisor : <span class="keyword">public</span> <a class="code" href="structrotor_1_1supervisor__t.html">rotor::supervisor_t</a> {</div>
-<div class="line">    <span class="keywordtype">void</span> <a class="code" href="structrotor_1_1supervisor__t.html#a46eb9cc690568ad9d251141010cb3da9">start_shutdown_timer</a>() noexcept<span class="keyword"> override </span>{}</div>
-<div class="line">    <span class="keywordtype">void</span> <a class="code" href="structrotor_1_1supervisor__t.html#a0c5635ae0d86b7fe286ca7f9b2c657f2">cancel_shutdown_timer</a>() noexcept<span class="keyword"> override </span>{}</div>
+<div class="line">    <span class="keyword">using</span> <a class="code" href="structrotor_1_1supervisor__t.html#aa6efcd51f1569be17f9e56020ae1dfc0">rotor::supervisor_t::supervisor_t</a>;</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordtype">void</span> <a class="code" href="structrotor_1_1supervisor__t.html#a91fc5b24e9fa5953d549fa5e7023c814">start_timer</a>(<span class="keyword">const</span> rotor::pt::time_duration &amp;, timer_id_t) noexcept <span class="keyword">override</span> {}</div>
+<div class="line">    <span class="keywordtype">void</span> <a class="code" href="structrotor_1_1supervisor__t.html#a3ef7a3ac4c201a2d4f308c246e1e3f81">cancel_timer</a>(timer_id_t) noexcept <span class="keyword">override</span> {}</div>
 <div class="line">    <span class="keywordtype">void</span> <a class="code" href="structrotor_1_1supervisor__t.html#a4b1efcbe5839461a00457448c33bc6a9">start</a>() noexcept<span class="keyword"> override </span>{}</div>
 <div class="line">    <span class="keywordtype">void</span> <a class="code" href="structrotor_1_1supervisor__t.html#a7d7e4dceb429d6c56761cb68b9c51eec">shutdown</a>() noexcept<span class="keyword"> override </span>{}</div>
 <div class="line">    <span class="keywordtype">void</span> <a class="code" href="structrotor_1_1supervisor__t.html#aaf99e587b441bb5e68b0c500ffedf14f">enqueue</a>(<a class="code" href="namespacerotor.html#a0196761fe474bd8dc17ac4ff9f0e2f95">rotor::message_ptr_t</a>) noexcept <span class="keyword">override</span> {}</div>
@@ -223,10 +234,12 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp-rotor_d
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main() {</div>
 <div class="line">    <a class="code" href="structrotor_1_1system__context__t.html">rotor::system_context_t</a> ctx{};</div>
-<div class="line">    <span class="keyword">auto</span> sup = ctx.<a class="code" href="structrotor_1_1system__context__t.html#a61d548cd385f28ac040e5eb464e4ce61">create_supervisor</a>&lt;dummy_supervisor&gt;();</div>
+<div class="line">    <span class="keyword">auto</span> timeout = boost::posix_time::milliseconds{500}; <span class="comment">/* does not matter */</span></div>
+<div class="line">    <a class="code" href="structrotor_1_1supervisor__config__t.html">rotor::supervisor_config_t</a> cfg{timeout};</div>
+<div class="line">    <span class="keyword">auto</span> sup = ctx.create_supervisor&lt;dummy_supervisor&gt;(<span class="keyword">nullptr</span>, cfg);</div>
 <div class="line"> </div>
-<div class="line">    <span class="keyword">auto</span> pinger = sup-&gt;create_actor&lt;pinger_t&gt;();</div>
-<div class="line">    <span class="keyword">auto</span> ponger = sup-&gt;create_actor&lt;ponger_t&gt;();</div>
+<div class="line">    <span class="keyword">auto</span> pinger = sup-&gt;create_actor&lt;pinger_t&gt;(timeout);</div>
+<div class="line">    <span class="keyword">auto</span> ponger = sup-&gt;create_actor&lt;ponger_t&gt;(timeout);</div>
 <div class="line">    pinger-&gt;set_ponger_addr(ponger-&gt;get_address());</div>
 <div class="line">    ponger-&gt;set_pinger_addr(pinger-&gt;get_address());</div>
 <div class="line"> </div>
@@ -243,6 +256,7 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp-rotor_d
 <div class="line"><span class="keyword">namespace </span>r = <a class="code" href="namespacerotor.html">rotor</a>;</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">struct </span>payload_t {};</div>
+<div class="line"><span class="keyword">using</span> sample_message_t = r::message_t&lt;payload_t&gt;;</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">struct </span>pub_t : <span class="keyword">public</span> r::actor_base_t {</div>
 <div class="line"> </div>
@@ -263,21 +277,20 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp-rotor_d
 <div class="line"> </div>
 <div class="line">    <span class="keywordtype">void</span> set_pub_addr(<span class="keyword">const</span> r::address_ptr_t &amp;addr) { pub_addr = addr; }</div>
 <div class="line"> </div>
-<div class="line">    <span class="keywordtype">void</span> on_initialize(r::message_t&lt;r::payload::initialize_actor_t&gt; &amp;msg) noexcept <span class="keyword">override</span> {</div>
-<div class="line">        r::actor_base_t::on_initialize(msg);</div>
+<div class="line">    <span class="keywordtype">void</span> init_start() noexcept<span class="keyword"> override </span>{</div>
 <div class="line">        subscribe(&amp;sub_t::on_payload, pub_addr);</div>
+<div class="line">        <a class="code" href="structrotor_1_1actor__base__t.html#a383be3775cfa14f690e03e866c75b03e">rotor::actor_base_t::init_start</a>();</div>
 <div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    <span class="keywordtype">void</span> on_payload(r::message_t&lt;payload_t&gt; &amp;) noexcept {</div>
-<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;received on &quot;</span> &lt;&lt; static_cast&lt;void *&gt;(<span class="keyword">this</span>) &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line">    }</div>
+<div class="line">    <span class="keywordtype">void</span> on_payload(sample_message_t &amp;) noexcept { std::cout &lt;&lt; <span class="stringliteral">&quot;received on &quot;</span> &lt;&lt; static_cast&lt;void *&gt;(<span class="keyword">this</span>) &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>; }</div>
 <div class="line"> </div>
 <div class="line">    r::address_ptr_t pub_addr;</div>
 <div class="line">};</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">struct </span>dummy_supervisor : <span class="keyword">public</span> <a class="code" href="structrotor_1_1supervisor__t.html">rotor::supervisor_t</a> {</div>
-<div class="line">    <span class="keywordtype">void</span> <a class="code" href="structrotor_1_1supervisor__t.html#a46eb9cc690568ad9d251141010cb3da9">start_shutdown_timer</a>() noexcept<span class="keyword"> override </span>{}</div>
-<div class="line">    <span class="keywordtype">void</span> <a class="code" href="structrotor_1_1supervisor__t.html#a0c5635ae0d86b7fe286ca7f9b2c657f2">cancel_shutdown_timer</a>() noexcept<span class="keyword"> override </span>{}</div>
+<div class="line">    <span class="keyword">using</span> <a class="code" href="structrotor_1_1supervisor__t.html#aa6efcd51f1569be17f9e56020ae1dfc0">rotor::supervisor_t::supervisor_t</a>;</div>
+<div class="line">    <span class="keywordtype">void</span> <a class="code" href="structrotor_1_1supervisor__t.html#a91fc5b24e9fa5953d549fa5e7023c814">start_timer</a>(<span class="keyword">const</span> rotor::pt::time_duration &amp;, timer_id_t) noexcept <span class="keyword">override</span> {}</div>
+<div class="line">    <span class="keywordtype">void</span> <a class="code" href="structrotor_1_1supervisor__t.html#a3ef7a3ac4c201a2d4f308c246e1e3f81">cancel_timer</a>(timer_id_t) noexcept <span class="keyword">override</span> {}</div>
 <div class="line">    <span class="keywordtype">void</span> <a class="code" href="structrotor_1_1supervisor__t.html#a4b1efcbe5839461a00457448c33bc6a9">start</a>() noexcept<span class="keyword"> override </span>{}</div>
 <div class="line">    <span class="keywordtype">void</span> <a class="code" href="structrotor_1_1supervisor__t.html#a7d7e4dceb429d6c56761cb68b9c51eec">shutdown</a>() noexcept<span class="keyword"> override </span>{}</div>
 <div class="line">    <span class="keywordtype">void</span> <a class="code" href="structrotor_1_1supervisor__t.html#aaf99e587b441bb5e68b0c500ffedf14f">enqueue</a>(<a class="code" href="namespacerotor.html#a0196761fe474bd8dc17ac4ff9f0e2f95">rotor::message_ptr_t</a>) noexcept <span class="keyword">override</span> {}</div>
@@ -285,49 +298,150 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp-rotor_d
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main() {</div>
 <div class="line">    <a class="code" href="structrotor_1_1system__context__t.html">rotor::system_context_t</a> ctx{};</div>
-<div class="line">    <span class="keyword">auto</span> sup = ctx.<a class="code" href="structrotor_1_1system__context__t.html#a61d548cd385f28ac040e5eb464e4ce61">create_supervisor</a>&lt;dummy_supervisor&gt;();</div>
+<div class="line">    <span class="keyword">auto</span> timeout = boost::posix_time::milliseconds{500}; <span class="comment">/* does not matter */</span></div>
+<div class="line">    <a class="code" href="structrotor_1_1supervisor__config__t.html">rotor::supervisor_config_t</a> cfg{timeout};</div>
+<div class="line">    <span class="keyword">auto</span> sup = ctx.create_supervisor&lt;dummy_supervisor&gt;(<span class="keyword">nullptr</span>, cfg);</div>
 <div class="line"> </div>
 <div class="line">    <span class="keyword">auto</span> pub_addr = sup-&gt;create_address(); <span class="comment">// (1)</span></div>
-<div class="line">    <span class="keyword">auto</span> pub = sup-&gt;create_actor&lt;pub_t&gt;();</div>
-<div class="line">    <span class="keyword">auto</span> sub1 = sup-&gt;create_actor&lt;sub_t&gt;();</div>
-<div class="line">    <span class="keyword">auto</span> sub2 = sup-&gt;create_actor&lt;sub_t&gt;();</div>
+<div class="line">    <span class="keyword">auto</span> pub = sup-&gt;create_actor&lt;pub_t&gt;(timeout);</div>
+<div class="line">    <span class="keyword">auto</span> sub1 = sup-&gt;create_actor&lt;sub_t&gt;(timeout);</div>
+<div class="line">    <span class="keyword">auto</span> sub2 = sup-&gt;create_actor&lt;sub_t&gt;(timeout);</div>
 <div class="line"> </div>
 <div class="line">    pub-&gt;set_pub_addr(pub_addr);</div>
 <div class="line">    sub1-&gt;set_pub_addr(pub_addr);</div>
 <div class="line">    sub2-&gt;set_pub_addr(pub_addr);</div>
 <div class="line"> </div>
 <div class="line">    sup-&gt;do_process();</div>
+<div class="line"> </div>
+<div class="line">    sup-&gt;do_shutdown();</div>
+<div class="line">    sup-&gt;do_process();</div>
+<div class="line"> </div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 </div><!-- fragment --><p>Output sample: </p><div class="fragment"><div class="line">received on 0x55d159ea36c0</div>
 <div class="line">received on 0x55d159ea3dc0</div>
-</div><!-- fragment --><p>The address in the line <code>(1)</code> is arbitrary: the address of pub-actor itself as well as the address of the supervisor can be used... even address of different supervisor can be used. </p>
-</div></div><!-- contents -->
+</div><!-- fragment --><p>The address in the line <code>(1)</code> is arbitrary: the address of pub-actor itself as well as the address of the supervisor can be used... even address of different supervisor can be used.</p>
+<h1>request-response example (boost::asio)</h1>
+<p>In the example the usage of request-response pattern is demonstrated the "server" actor takes the number from request and replies to "client" actor with square root if the value is &gt;= 0, otherwise it replies with error.</p>
+<p>Contrary to the regular messages, request-response is a little bit more complex pattern: the response should include full request (message) to be able to match to the request, as well as the possibility of response not arrival in time; in the last case the response message should arrive with error.</p>
+<p>That's why below not pure user-defined payloads are used, but a little bit modified to support request/reply machinery.</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="rotor_8hpp.html">rotor.hpp</a>&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="asio_8hpp.html">rotor/asio.hpp</a>&quot;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;system_error&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">namespace </span>asio = boost::asio;</div>
+<div class="line"><span class="keyword">namespace </span>pt = boost::posix_time;</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">namespace </span>payload {</div>
+<div class="line"><span class="keyword">struct </span>sample_res_t {</div>
+<div class="line">    <span class="keywordtype">double</span> value;</div>
+<div class="line">};</div>
+<div class="line"><span class="keyword">struct </span>sample_req_t {</div>
+<div class="line">    <span class="keyword">using</span> response_t = sample_res_t;</div>
+<div class="line">    <span class="keywordtype">double</span> value;</div>
+<div class="line">};</div>
+<div class="line">} <span class="comment">// namespace payload</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">namespace </span>message {</div>
+<div class="line"><span class="keyword">using</span> request_t = <a class="code" href="structrotor_1_1message__t.html">rotor::request_traits_t&lt;payload::sample_req_t&gt;::request::message_t</a>;</div>
+<div class="line"><span class="keyword">using</span> response_t = <a class="code" href="structrotor_1_1message__t.html">rotor::request_traits_t&lt;payload::sample_req_t&gt;::response::message_t</a>;</div>
+<div class="line">} <span class="comment">// namespace message</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">struct </span>server_actor : <span class="keyword">public</span> <a class="code" href="structrotor_1_1actor__base__t.html">rotor::actor_base_t</a> {</div>
+<div class="line">    <span class="keyword">using</span> <a class="code" href="structrotor_1_1actor__base__t.html#ad337de3613a3a43a9128b5c9020f812b">rotor::actor_base_t::actor_base_t</a>;</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordtype">void</span> on_request(message::request_t &amp;req) noexcept {</div>
+<div class="line">        <span class="keyword">auto</span> in = req.payload.request_payload.value;</div>
+<div class="line">        <span class="keywordflow">if</span> (in &gt;= 0) {</div>
+<div class="line">            <span class="keyword">auto</span> value = std::sqrt(in);</div>
+<div class="line">            <a class="code" href="structrotor_1_1actor__base__t.html#adc07a7dfa0583f2125a60048ec2c1598">reply_to</a>(req, value);</div>
+<div class="line">        } <span class="keywordflow">else</span> {</div>
+<div class="line">            <span class="comment">// IRL, it should be your custom error codes</span></div>
+<div class="line">            <span class="keyword">auto</span> ec = std::make_error_code(std::errc::invalid_argument);</div>
+<div class="line">            <a class="code" href="structrotor_1_1actor__base__t.html#a157ee6a1ed3f103a230e520aa3442e52">reply_with_error</a>(req, ec);</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordtype">void</span> <a class="code" href="structrotor_1_1actor__base__t.html#a383be3775cfa14f690e03e866c75b03e">init_start</a>() noexcept<span class="keyword"> override </span>{</div>
+<div class="line">        <a class="code" href="structrotor_1_1actor__base__t.html#aa324e62a57df178103d3e1260c8af287">subscribe</a>(&amp;server_actor::on_request);</div>
+<div class="line">        <a class="code" href="structrotor_1_1actor__base__t.html#a383be3775cfa14f690e03e866c75b03e">rotor::actor_base_t::init_start</a>();</div>
+<div class="line">    }</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">struct </span>client_actor : <span class="keyword">public</span> <a class="code" href="structrotor_1_1actor__base__t.html">rotor::actor_base_t</a> {</div>
+<div class="line">    <span class="keyword">using</span> <a class="code" href="structrotor_1_1actor__base__t.html#ad337de3613a3a43a9128b5c9020f812b">rotor::actor_base_t::actor_base_t</a>;</div>
+<div class="line"> </div>
+<div class="line">    <a class="code" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">rotor::address_ptr_t</a> server_addr;</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordtype">void</span> set_server(<span class="keyword">const</span> <a class="code" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">rotor::address_ptr_t</a> addr) { server_addr = addr; }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordtype">void</span> <a class="code" href="structrotor_1_1actor__base__t.html#a383be3775cfa14f690e03e866c75b03e">init_start</a>() noexcept<span class="keyword"> override </span>{</div>
+<div class="line">        <a class="code" href="structrotor_1_1actor__base__t.html#aa324e62a57df178103d3e1260c8af287">subscribe</a>(&amp;client_actor::on_response);</div>
+<div class="line">        <a class="code" href="structrotor_1_1actor__base__t.html#a383be3775cfa14f690e03e866c75b03e">rotor::actor_base_t::init_start</a>();</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordtype">void</span> on_response(message::response_t &amp;res) noexcept {</div>
+<div class="line">        <span class="keywordflow">if</span> (!res.payload.ec) { <span class="comment">// check for possible error</span></div>
+<div class="line">            <span class="keyword">auto</span> &amp;in = res.payload.req-&gt;payload.request_payload.value;</div>
+<div class="line">            <span class="keyword">auto</span> &amp;out = res.payload.res.value;</div>
+<div class="line">            std::cout &lt;&lt; <span class="stringliteral">&quot; in = &quot;</span> &lt;&lt; in &lt;&lt; <span class="stringliteral">&quot;, out = &quot;</span> &lt;&lt; out &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line">        }</div>
+<div class="line">        supervisor.do_shutdown(); <span class="comment">// optional;</span></div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordtype">void</span> <a class="code" href="structrotor_1_1actor__base__t.html#a3442e929c15ccb4eba6777ce8ac0cca4">on_start</a>(<a class="code" href="structrotor_1_1message__t.html">rotor::message_t&lt;rotor::payload::start_actor_t&gt;</a> &amp;msg) noexcept <span class="keyword">override</span> {</div>
+<div class="line">        <a class="code" href="structrotor_1_1actor__base__t.html#a3442e929c15ccb4eba6777ce8ac0cca4">rotor::actor_base_t::on_start</a>(msg);</div>
+<div class="line">        <span class="keyword">auto</span> timeout = rotor::pt::milliseconds{1};</div>
+<div class="line">        request&lt;payload::sample_req_t&gt;(server_addr, 25.0).send(timeout);</div>
+<div class="line">    }</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
+<div class="line">    asio::io_context io_context;</div>
+<div class="line">    <span class="keyword">auto</span> system_context = <a class="code" href="structrotor_1_1asio_1_1system__context__asio__t.html#afeafb09bee3302d4f691bab45a4499cb">rotor::asio::system_context_asio_t::ptr_t</a>{<span class="keyword">new</span> <a class="code" href="structrotor_1_1asio_1_1system__context__asio__t.html">rotor::asio::system_context_asio_t</a>(io_context)};</div>
+<div class="line">    <span class="keyword">auto</span> stand = std::make_shared&lt;asio::io_context::strand&gt;(io_context);</div>
+<div class="line">    <span class="keyword">auto</span> timeout = boost::posix_time::milliseconds{500};</div>
+<div class="line">    <a class="code" href="structrotor_1_1asio_1_1supervisor__config__asio__t.html">rotor::asio::supervisor_config_asio_t</a> conf{timeout, std::move(stand)};</div>
+<div class="line">    <span class="keyword">auto</span> sup = system_context-&gt;create_supervisor&lt;<a class="code" href="structrotor_1_1asio_1_1supervisor__asio__t.html">rotor::asio::supervisor_asio_t</a>&gt;(conf);</div>
+<div class="line">    <span class="keyword">auto</span> server = sup-&gt;<a class="code" href="structrotor_1_1asio_1_1supervisor__asio__t.html#a8737f053f6540b96aa113609df429192">create_actor</a>&lt;server_actor&gt;(timeout);</div>
+<div class="line">    <span class="keyword">auto</span> client = sup-&gt;create_actor&lt;client_actor&gt;(timeout);</div>
+<div class="line">    client-&gt;set_server(server-&gt;<a class="code" href="structrotor_1_1actor__base__t.html#af99e298d3e730fe975642cfb62c07431">get_address</a>());</div>
+<div class="line">    sup-&gt;do_process();</div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Output sample: </p><div class="fragment"><div class="line">in = 25, out = 5</div>
+</div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
-<div class="ttc" id="astructrotor_1_1actor__base__t_html_a61867c7033d55bed0fc66a91350c269f"><div class="ttname"><a href="structrotor_1_1actor__base__t.html#a61867c7033d55bed0fc66a91350c269f">rotor::actor_base_t::subscribe</a></div><div class="ttdeci">void subscribe(Handler &amp;&amp;h, address_ptr_t &amp;addr) noexcept</div><div class="ttdoc">subscribes actor's handler to process messages on the specified address</div><div class="ttdef"><b>Definition:</b> supervisor.h:336</div></div>
-<div class="ttc" id="anamespacerotor_html_a325c7c5ee08ba0391303efca0024179b"><div class="ttname"><a href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">rotor::address_ptr_t</a></div><div class="ttdeci">intrusive_ptr_t&lt; address_t &gt; address_ptr_t</div><div class="ttdoc">intrusive pointer for address</div><div class="ttdef"><b>Definition:</b> address.hpp:56</div></div>
-<div class="ttc" id="astructrotor_1_1asio_1_1supervisor__config__t_html"><div class="ttname"><a href="structrotor_1_1asio_1_1supervisor__config__t.html">rotor::asio::supervisor_config_t</a></div><div class="ttdoc">boost::asio supervisor config, which holds shutdowm timeout value</div><div class="ttdef"><b>Definition:</b> supervisor_config.h:20</div></div>
-<div class="ttc" id="anamespacerotor_html_a0196761fe474bd8dc17ac4ff9f0e2f95"><div class="ttname"><a href="namespacerotor.html#a0196761fe474bd8dc17ac4ff9f0e2f95">rotor::message_ptr_t</a></div><div class="ttdeci">intrusive_ptr_t&lt; message_base_t &gt; message_ptr_t</div><div class="ttdoc">intrusive pointer for message</div><div class="ttdef"><b>Definition:</b> message.h:64</div></div>
+<div class="ttc" id="anamespacerotor_html_a325c7c5ee08ba0391303efca0024179b"><div class="ttname"><a href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">rotor::address_ptr_t</a></div><div class="ttdeci">intrusive_ptr_t&lt; address_t &gt; address_ptr_t</div><div class="ttdoc">intrusive pointer for address</div><div class="ttdef"><b>Definition:</b> address.hpp:59</div></div>
+<div class="ttc" id="anamespacerotor_html_a0196761fe474bd8dc17ac4ff9f0e2f95"><div class="ttname"><a href="namespacerotor.html#a0196761fe474bd8dc17ac4ff9f0e2f95">rotor::message_ptr_t</a></div><div class="ttdeci">intrusive_ptr_t&lt; message_base_t &gt; message_ptr_t</div><div class="ttdoc">intrusive pointer for message</div><div class="ttdef"><b>Definition:</b> message.h:67</div></div>
+<div class="ttc" id="astructrotor_1_1asio_1_1supervisor__config__asio__t_html"><div class="ttname"><a href="structrotor_1_1asio_1_1supervisor__config__asio__t.html">rotor::asio::supervisor_config_asio_t</a></div><div class="ttdoc">boost::asio supervisor config, which holds pointer to strand</div><div class="ttdef"><b>Definition:</b> supervisor_config_asio.h:18</div></div>
 <div class="ttc" id="astructrotor_1_1supervisor__t_html_a7d7e4dceb429d6c56761cb68b9c51eec"><div class="ttname"><a href="structrotor_1_1supervisor__t.html#a7d7e4dceb429d6c56761cb68b9c51eec">rotor::supervisor_t::shutdown</a></div><div class="ttdeci">virtual void shutdown() noexcept=0</div><div class="ttdoc">thread-safe version of do_shutdown, i.e. send shutdown request let it be processed by the supervisor</div></div>
 <div class="ttc" id="astructrotor_1_1asio_1_1system__context__asio__t_html"><div class="ttname"><a href="structrotor_1_1asio_1_1system__context__asio__t.html">rotor::asio::system_context_asio_t</a></div><div class="ttdoc">The boost::asio system context, which holds a reference to boost::asio::io_context and root superviso...</div><div class="ttdef"><b>Definition:</b> system_context_asio.h:28</div></div>
 <div class="ttc" id="astructrotor_1_1supervisor__t_html_aaf99e587b441bb5e68b0c500ffedf14f"><div class="ttname"><a href="structrotor_1_1supervisor__t.html#aaf99e587b441bb5e68b0c500ffedf14f">rotor::supervisor_t::enqueue</a></div><div class="ttdeci">virtual void enqueue(message_ptr_t message) noexcept=0</div><div class="ttdoc">enqueues messages thread safe way and triggers processing</div></div>
-<div class="ttc" id="astructrotor_1_1asio_1_1supervisor__asio__t_html_ab432a1eec1e8bdcd8d3bc90cffce7f9e"><div class="ttname"><a href="structrotor_1_1asio_1_1supervisor__asio__t.html#ab432a1eec1e8bdcd8d3bc90cffce7f9e">rotor::asio::supervisor_asio_t::create_actor</a></div><div class="ttdeci">intrusive_ptr_t&lt; Actor &gt; create_actor(Args... args)</div><div class="ttdoc">creates an actor by forwaring args to it</div><div class="ttdef"><b>Definition:</b> supervisor_asio.h:81</div></div>
+<div class="ttc" id="astructrotor_1_1actor__base__t_html_aa324e62a57df178103d3e1260c8af287"><div class="ttname"><a href="structrotor_1_1actor__base__t.html#aa324e62a57df178103d3e1260c8af287">rotor::actor_base_t::subscribe</a></div><div class="ttdeci">handler_ptr_t subscribe(Handler &amp;&amp;h, address_ptr_t &amp;addr) noexcept</div><div class="ttdoc">subscribes actor's handler to process messages on the specified address</div><div class="ttdef"><b>Definition:</b> supervisor.h:374</div></div>
 <div class="ttc" id="astructrotor_1_1actor__base__t_html_ad337de3613a3a43a9128b5c9020f812b"><div class="ttname"><a href="structrotor_1_1actor__base__t.html#ad337de3613a3a43a9128b5c9020f812b">rotor::actor_base_t::actor_base_t</a></div><div class="ttdeci">actor_base_t(supervisor_t &amp;supervisor_)</div><div class="ttdoc">constructs actor and links it's supervisor</div></div>
+<div class="ttc" id="astructrotor_1_1supervisor__t_html_a3ef7a3ac4c201a2d4f308c246e1e3f81"><div class="ttname"><a href="structrotor_1_1supervisor__t.html#a3ef7a3ac4c201a2d4f308c246e1e3f81">rotor::supervisor_t::cancel_timer</a></div><div class="ttdeci">virtual void cancel_timer(timer_id_t timer_id) noexcept=0</div><div class="ttdoc">cancels previously started timer</div></div>
 <div class="ttc" id="astructrotor_1_1system__context__t_html"><div class="ttname"><a href="structrotor_1_1system__context__t.html">rotor::system_context_t</a></div><div class="ttdoc">The system context holds root supervisor_t (intrusive pointer) and may be loop-related details in der...</div><div class="ttdef"><b>Definition:</b> system_context.h:23</div></div>
-<div class="ttc" id="astructrotor_1_1system__context__t_html_a61d548cd385f28ac040e5eb464e4ce61"><div class="ttname"><a href="structrotor_1_1system__context__t.html#a61d548cd385f28ac040e5eb464e4ce61">rotor::system_context_t::create_supervisor</a></div><div class="ttdeci">auto create_supervisor(Args... args) -&gt; intrusive_ptr_t&lt; Supervisor &gt;</div><div class="ttdoc">creates root supervior. args are forwared for supervisor constructor</div><div class="ttdef"><b>Definition:</b> supervisor.h:313</div></div>
 <div class="ttc" id="aasio_8hpp_html"><div class="ttname"><a href="asio_8hpp.html">asio.hpp</a></div></div>
-<div class="ttc" id="astructrotor_1_1actor__base__t_html_aa0e7346b956d295bf06d26dde3217c35"><div class="ttname"><a href="structrotor_1_1actor__base__t.html#aa0e7346b956d295bf06d26dde3217c35">rotor::actor_base_t::on_initialize</a></div><div class="ttdeci">virtual void on_initialize(message_t&lt; payload::initialize_actor_t &gt; &amp;) noexcept</div><div class="ttdoc">finishes actor's initialization.</div></div>
-<div class="ttc" id="astructrotor_1_1asio_1_1supervisor__asio__t_html"><div class="ttname"><a href="structrotor_1_1asio_1_1supervisor__asio__t.html">rotor::asio::supervisor_asio_t</a></div><div class="ttdoc">delivers rotor-messages on top of boost asio event loop using strand for serialization</div><div class="ttdef"><b>Definition:</b> supervisor_asio.h:48</div></div>
-<div class="ttc" id="astructrotor_1_1actor__base__t_html"><div class="ttname"><a href="structrotor_1_1actor__base__t.html">rotor::actor_base_t</a></div><div class="ttdoc">universal primitives of concurrent computation</div><div class="ttdef"><b>Definition:</b> actor_base.h:42</div></div>
-<div class="ttc" id="astructrotor_1_1message__t_html"><div class="ttname"><a href="structrotor_1_1message__t.html">rotor::message_t</a></div><div class="ttdoc">the generic message meant to hold user-specific payload</div><div class="ttdef"><b>Definition:</b> message.h:50</div></div>
-<div class="ttc" id="astructrotor_1_1supervisor__t_html"><div class="ttname"><a href="structrotor_1_1supervisor__t.html">rotor::supervisor_t</a></div><div class="ttdoc">supervisor is responsible for managing actors (workers) lifetime</div><div class="ttdef"><b>Definition:</b> supervisor.h:60</div></div>
-<div class="ttc" id="astructrotor_1_1supervisor__t_html_a0c5635ae0d86b7fe286ca7f9b2c657f2"><div class="ttname"><a href="structrotor_1_1supervisor__t.html#a0c5635ae0d86b7fe286ca7f9b2c657f2">rotor::supervisor_t::cancel_shutdown_timer</a></div><div class="ttdeci">virtual void cancel_shutdown_timer() noexcept=0</div><div class="ttdoc">cancels event-loop specific shutdown timer</div></div>
-<div class="ttc" id="astructrotor_1_1supervisor__t_html_a46eb9cc690568ad9d251141010cb3da9"><div class="ttname"><a href="structrotor_1_1supervisor__t.html#a46eb9cc690568ad9d251141010cb3da9">rotor::supervisor_t::start_shutdown_timer</a></div><div class="ttdeci">virtual void start_shutdown_timer() noexcept=0</div><div class="ttdoc">starts event-loop specific shutdown timer</div></div>
+<div class="ttc" id="astructrotor_1_1supervisor__config__t_html"><div class="ttname"><a href="structrotor_1_1supervisor__config__t.html">rotor::supervisor_config_t</a></div><div class="ttdoc">base supervisor config, which holds shutdowm timeout value</div><div class="ttdef"><b>Definition:</b> supervisor_config.h:18</div></div>
+<div class="ttc" id="astructrotor_1_1supervisor__t_html_aa6efcd51f1569be17f9e56020ae1dfc0"><div class="ttname"><a href="structrotor_1_1supervisor__t.html#aa6efcd51f1569be17f9e56020ae1dfc0">rotor::supervisor_t::supervisor_t</a></div><div class="ttdeci">supervisor_t(supervisor_t *sup, const supervisor_config_t &amp;config)</div><div class="ttdoc">constructs new supervisor with optional parent supervisor</div></div>
+<div class="ttc" id="astructrotor_1_1asio_1_1supervisor__asio__t_html"><div class="ttname"><a href="structrotor_1_1asio_1_1supervisor__asio__t.html">rotor::asio::supervisor_asio_t</a></div><div class="ttdoc">delivers rotor-messages on top of boost asio event loop using strand for serialization</div><div class="ttdef"><b>Definition:</b> supervisor_asio.h:50</div></div>
+<div class="ttc" id="astructrotor_1_1actor__base__t_html"><div class="ttname"><a href="structrotor_1_1actor__base__t.html">rotor::actor_base_t</a></div><div class="ttdoc">universal primitive of concurrent computation</div><div class="ttdef"><b>Definition:</b> actor_base.h:56</div></div>
+<div class="ttc" id="astructrotor_1_1message__t_html"><div class="ttname"><a href="structrotor_1_1message__t.html">rotor::message_t</a></div><div class="ttdoc">the generic message meant to hold user-specific payload</div><div class="ttdef"><b>Definition:</b> message.h:49</div></div>
+<div class="ttc" id="astructrotor_1_1actor__base__t_html_a157ee6a1ed3f103a230e520aa3442e52"><div class="ttname"><a href="structrotor_1_1actor__base__t.html#a157ee6a1ed3f103a230e520aa3442e52">rotor::actor_base_t::reply_with_error</a></div><div class="ttdeci">void reply_with_error(Request &amp;message, const std::error_code &amp;ec)</div><div class="ttdoc">convenient method for constructing and sending error response to a request</div><div class="ttdef"><b>Definition:</b> supervisor.h:501</div></div>
+<div class="ttc" id="astructrotor_1_1supervisor__t_html"><div class="ttname"><a href="structrotor_1_1supervisor__t.html">rotor::supervisor_t</a></div><div class="ttdoc">supervisor is responsible for managing actors (workers) lifetime</div><div class="ttdef"><b>Definition:</b> supervisor.h:71</div></div>
+<div class="ttc" id="astructrotor_1_1actor__base__t_html_af99e298d3e730fe975642cfb62c07431"><div class="ttname"><a href="structrotor_1_1actor__base__t.html#af99e298d3e730fe975642cfb62c07431">rotor::actor_base_t::get_address</a></div><div class="ttdeci">address_ptr_t get_address() const noexcept</div><div class="ttdoc">returns actor's &quot;main&quot; address (intrusive pointer)</div><div class="ttdef"><b>Definition:</b> actor_base.h:97</div></div>
 <div class="ttc" id="astructrotor_1_1asio_1_1system__context__asio__t_html_afeafb09bee3302d4f691bab45a4499cb"><div class="ttname"><a href="structrotor_1_1asio_1_1system__context__asio__t.html#afeafb09bee3302d4f691bab45a4499cb">rotor::asio::system_context_asio_t::ptr_t</a></div><div class="ttdeci">rotor::intrusive_ptr_t&lt; system_context_asio_t &gt; ptr_t</div><div class="ttdoc">intrusive pointer type for boost::asio system context</div><div class="ttdef"><b>Definition:</b> system_context_asio.h:30</div></div>
+<div class="ttc" id="astructrotor_1_1asio_1_1supervisor__asio__t_html_a8737f053f6540b96aa113609df429192"><div class="ttname"><a href="structrotor_1_1asio_1_1supervisor__asio__t.html#a8737f053f6540b96aa113609df429192">rotor::asio::supervisor_asio_t::create_actor</a></div><div class="ttdeci">intrusive_ptr_t&lt; Actor &gt; create_actor(const pt::time_duration &amp;timeout, Args... args)</div><div class="ttdoc">creates an actor by forwaring args to it</div><div class="ttdef"><b>Definition:</b> supervisor_asio.h:95</div></div>
 <div class="ttc" id="astructrotor_1_1actor__base__t_html_a3442e929c15ccb4eba6777ce8ac0cca4"><div class="ttname"><a href="structrotor_1_1actor__base__t.html#a3442e929c15ccb4eba6777ce8ac0cca4">rotor::actor_base_t::on_start</a></div><div class="ttdeci">virtual void on_start(message_t&lt; payload::start_actor_t &gt; &amp;) noexcept</div><div class="ttdoc">start confirmation from supervisor</div></div>
-<div class="ttc" id="anamespacerotor_html"><div class="ttname"><a href="namespacerotor.html">rotor</a></div><div class="ttdoc">Basic namespace for all rotor functionalities.</div><div class="ttdef"><b>Definition:</b> actor_base.h:15</div></div>
-<div class="ttc" id="astructrotor_1_1supervisor__t_html_a4b1efcbe5839461a00457448c33bc6a9"><div class="ttname"><a href="structrotor_1_1supervisor__t.html#a4b1efcbe5839461a00457448c33bc6a9">rotor::supervisor_t::start</a></div><div class="ttdeci">virtual void start() noexcept=0</div><div class="ttdoc">thread-safe version of do_start, i.e. send start actor request let it be processed by the supervisor</div></div>
+<div class="ttc" id="anamespacerotor_html"><div class="ttname"><a href="namespacerotor.html">rotor</a></div><div class="ttdoc">Basic namespace for all rotor functionalities.</div><div class="ttdef"><b>Definition:</b> actor_base.h:17</div></div>
+<div class="ttc" id="astructrotor_1_1actor__base__t_html_adc07a7dfa0583f2125a60048ec2c1598"><div class="ttname"><a href="structrotor_1_1actor__base__t.html#adc07a7dfa0583f2125a60048ec2c1598">rotor::actor_base_t::reply_to</a></div><div class="ttdeci">void reply_to(Request &amp;message, Args &amp;&amp;... args)</div><div class="ttdoc">convenient method for constructing and sending response to a request</div><div class="ttdef"><b>Definition:</b> supervisor.h:492</div></div>
+<div class="ttc" id="astructrotor_1_1supervisor__t_html_a4b1efcbe5839461a00457448c33bc6a9"><div class="ttname"><a href="structrotor_1_1supervisor__t.html#a4b1efcbe5839461a00457448c33bc6a9">rotor::supervisor_t::start</a></div><div class="ttdeci">virtual void start() noexcept=0</div><div class="ttdoc">thread-safe version of do_process</div></div>
+<div class="ttc" id="astructrotor_1_1supervisor__t_html_a91fc5b24e9fa5953d549fa5e7023c814"><div class="ttname"><a href="structrotor_1_1supervisor__t.html#a91fc5b24e9fa5953d549fa5e7023c814">rotor::supervisor_t::start_timer</a></div><div class="ttdeci">virtual void start_timer(const pt::time_duration &amp;send, timer_id_t timer_id) noexcept=0</div><div class="ttdoc">starts non-recurring timer, identified by timer_id</div></div>
+<div class="ttc" id="astructrotor_1_1actor__base__t_html_a383be3775cfa14f690e03e866c75b03e"><div class="ttname"><a href="structrotor_1_1actor__base__t.html#a383be3775cfa14f690e03e866c75b03e">rotor::actor_base_t::init_start</a></div><div class="ttdeci">virtual void init_start() noexcept</div><div class="ttdoc">starts initialization</div></div>
 <div class="ttc" id="arotor_8hpp_html"><div class="ttname"><a href="rotor_8hpp.html">rotor.hpp</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

@@ -1,6 +1,10 @@
 var searchData=
 [
-  ['target_5faddress_365',['target_address',['../structrotor_1_1payload_1_1external__subscription__t.html#aee9f2bff90c67beecccb9a88264b1218',1,'rotor::payload::external_subscription_t::target_address()'],['../structrotor_1_1payload_1_1subscription__confirmation__t.html#a3b2c3ad8124eac070421b100c5c75296',1,'rotor::payload::subscription_confirmation_t::target_address()'],['../structrotor_1_1payload_1_1external__unsubscription__t.html#a6cddb806b0529d0ae9f58c632a8ad624',1,'rotor::payload::external_unsubscription_t::target_address()'],['../structrotor_1_1payload_1_1commit__unsubscription__t.html#a50c2bb99eafa0be387c546086635affc',1,'rotor::payload::commit_unsubscription_t::target_address()'],['../structrotor_1_1payload_1_1unsubscription__confirmation__t.html#af075d7d5e1c078c61b22badf812b519f',1,'rotor::payload::unsubscription_confirmation_t::target_address()']]],
-  ['type_5findex_366',['type_index',['../structrotor_1_1message__base__t.html#a81c4fa82e6b8b9e1af82535ca2596a42',1,'rotor::message_base_t']]],
-  ['typed_5factor_367',['typed_actor',['../structrotor_1_1asio_1_1forwarder__t.html#a9ba94f77f48d7b3b017817e411f64dcb',1,'rotor::asio::forwarder_t::typed_actor()'],['../structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01void_01_4.html#a8e7a1333fae4e71fc62e1054c9d4a405',1,'rotor::asio::forwarder_t&lt; Actor, Handler, void &gt;::typed_actor()']]]
+  ['raw_5factor_5fptr_494',['raw_actor_ptr',['../structrotor_1_1handler__base__t.html#a382ecf3837c1420f8982a65e016c4d78',1,'rotor::handler_base_t']]],
+  ['reply_5fto_495',['reply_to',['../structrotor_1_1request__base__t.html#a4bae3dab36b4a5d780ef78a67b034e1b',1,'rotor::request_base_t::reply_to()'],['../structrotor_1_1request__curry__t.html#a0907a16ef31a06b53ea9d07e50197754',1,'rotor::request_curry_t::reply_to()']]],
+  ['req_496',['req',['../structrotor_1_1wrapped__response__t.html#a07ed9ba2d10fba9e9b5a1b1e1702eb6d',1,'rotor::wrapped_response_t']]],
+  ['request_5fmap_497',['request_map',['../structrotor_1_1supervisor__t.html#adfb66ca5b2a1c32e39d392ba51d7fbdd',1,'rotor::supervisor_t']]],
+  ['request_5fmessage_498',['request_message',['../structrotor_1_1request__curry__t.html#a5040a1ad0fef43edeca9443ca12e44f8',1,'rotor::request_curry_t']]],
+  ['request_5fpayload_499',['request_payload',['../structrotor_1_1wrapped__request__t.html#aa9e36b2fba4ac688d2f6c2c2b08ada13',1,'rotor::wrapped_request_t']]],
+  ['res_500',['res',['../structrotor_1_1wrapped__response__t.html#a89e9d28889fcf7bebe3ad55fdced3df2',1,'rotor::wrapped_response_t']]]
 ];

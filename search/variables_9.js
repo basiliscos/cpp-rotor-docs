@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['queue_352',['queue',['../structrotor_1_1supervisor__t.html#a11741368f8304128288226104dce8966',1,'rotor::supervisor_t']]]
+  ['orig_5fmessage_487',['orig_message',['../structrotor_1_1payload_1_1handler__call__t.html#af50bca38208b4d263641dd460d7cdf6e',1,'rotor::payload::handler_call_t']]]
 ];

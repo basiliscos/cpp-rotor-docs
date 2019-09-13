@@ -12,6 +12,7 @@ var dir_da0296186b2d7ca79d094f0811fc0b6f =
     [ "handler.hpp", "handler_8hpp_source.html", null ],
     [ "message.h", "message_8h_source.html", null ],
     [ "messages.hpp", "messages_8hpp_source.html", null ],
+    [ "request.h", "request_8h_source.html", null ],
     [ "state.h", "state_8h_source.html", null ],
     [ "subscription.h", "subscription_8h_source.html", null ],
     [ "supervisor.h", "supervisor_8h_source.html", null ],

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['message_5fbase_5ft_216',['message_base_t',['../structrotor_1_1message__base__t.html',1,'rotor']]],
-  ['message_5ft_217',['message_t',['../structrotor_1_1message__t.html',1,'rotor']]]
+  ['lambda_5fholder_5ft_297',['lambda_holder_t',['../structrotor_1_1lambda__holder__t.html',1,'rotor']]],
+  ['lambda_5fholder_5ft_3c_20handler_2c_20m_20_3e_298',['lambda_holder_t&lt; Handler, M &gt;',['../structrotor_1_1lambda__holder__t.html',1,'rotor']]]
 ];

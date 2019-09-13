@@ -1,3 +1,4 @@
+<!-- HTML header for doxygen 1.8.16-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -25,9 +26,10 @@
   $(document).ready(function() { init_search(); });
 /* @license-end */
 </script>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="extra.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+<a href="http://www.reactivemanifesto.org/"> <img style="border: 0; position: fixed; right: 0; top:0; z-index: 9000" src="//d379ifj7s9wntv.cloudfront.net/reactivemanifesto/images/ribbons/we-are-reactive-white-right.png"> </a>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
@@ -99,18 +101,42 @@ $(document).ready(function(){initNavTree('functions.html','');});
 <div class="textblock">Here is a list of all documented class members with links to the class documentation for each member:</div>
 
 <h3><a id="index_a"></a>- a -</h3><ul>
+<li>action_commit_shutdown()
+: <a class="el" href="structrotor_1_1actor__behavior__t.html#a58bfc6e49f927b0cd2ab1285337afdb2">rotor::actor_behavior_t</a>
+</li>
+<li>action_confirm_init()
+: <a class="el" href="structrotor_1_1actor__behavior__t.html#abead3ebd206e976b186067dc0a4ea42c">rotor::actor_behavior_t</a>
+</li>
+<li>action_confirm_shutdown()
+: <a class="el" href="structrotor_1_1actor__behavior__t.html#a46d78173d28dde8272e565eef4756382">rotor::actor_behavior_t</a>
+</li>
+<li>action_finish_init()
+: <a class="el" href="structrotor_1_1actor__behavior__t.html#a30adc21b118739d7a92c0af86a5b623a">rotor::actor_behavior_t</a>
+</li>
+<li>action_finish_shutdown()
+: <a class="el" href="structrotor_1_1actor__behavior__t.html#af27437b9f26853ba481e43946b1d2778">rotor::actor_behavior_t</a>
+</li>
+<li>action_shutdown_children()
+: <a class="el" href="structrotor_1_1supervisor__behavior__t.html#a66e6eb670b2b86016ef0e99b77015eb8">rotor::supervisor_behavior_t</a>
+</li>
+<li>action_unsubscribe_self()
+: <a class="el" href="structrotor_1_1actor__behavior__t.html#abe89b6769ab33f45c96d64a6117a4e33">rotor::actor_behavior_t</a>
+</li>
 <li>actor
-: <a class="el" href="structrotor_1_1payload_1_1create__actor__t.html#ad440662351fe00b1eb1caa06fd1532fa">rotor::payload::create_actor_t</a>
+: <a class="el" href="structrotor_1_1actor__behavior__t.html#a49bda9259957ce22dab8a3fcd96de9cb">rotor::actor_behavior_t</a>
+, <a class="el" href="structrotor_1_1payload_1_1create__actor__t.html#ad440662351fe00b1eb1caa06fd1532fa">rotor::payload::create_actor_t</a>
 </li>
 <li>actor_address
 : <a class="el" href="structrotor_1_1payload_1_1initialize__actor__t.html#aca463cf42b63cd20b34a0047b3b7f0e3">rotor::payload::initialize_actor_t</a>
-, <a class="el" href="structrotor_1_1payload_1_1initialize__confirmation__t.html#a2be4e7c00915bc94b7607e4d72c17311">rotor::payload::initialize_confirmation_t</a>
-, <a class="el" href="structrotor_1_1payload_1_1shutdown__confirmation__t.html#ae013b2c5af66ce182d96701990631525">rotor::payload::shutdown_confirmation_t</a>
 , <a class="el" href="structrotor_1_1payload_1_1shutdown__request__t.html#ad2bf0f787a7d8191c2e32847351a6d74">rotor::payload::shutdown_request_t</a>
+, <a class="el" href="structrotor_1_1payload_1_1shutdown__trigger__t.html#a2e1249916607e3758d2597cfe98e7726">rotor::payload::shutdown_trigger_t</a>
 , <a class="el" href="structrotor_1_1payload_1_1start__actor__t.html#a4747ffff15f52eea56de253de96d4f07">rotor::payload::start_actor_t</a>
 </li>
 <li>actor_base_t()
 : <a class="el" href="structrotor_1_1actor__base__t.html#ad337de3613a3a43a9128b5c9020f812b">rotor::actor_base_t</a>
+</li>
+<li>actor_behavior_t()
+: <a class="el" href="structrotor_1_1actor__behavior__t.html#a71a3fc0245dc36b7a69075bb24582c30">rotor::actor_behavior_t</a>
 </li>
 <li>actor_ptr
 : <a class="el" href="structrotor_1_1handler__base__t.html#a0a026b4411c3c51a1ca826a8fc9ef118">rotor::handler_base_t</a>
@@ -128,6 +154,9 @@ $(document).ready(function(){initNavTree('functions.html','');});
 : <a class="el" href="structrotor_1_1actor__base__t.html#afad3a40184e18b3bb7ea2e9e50115edb">rotor::actor_base_t</a>
 , <a class="el" href="structrotor_1_1actor__base__t_1_1subscription__point__t.html#aaff3977c036375a75c2b13e1f2ce38b2">rotor::actor_base_t::subscription_point_t</a>
 , <a class="el" href="structrotor_1_1message__base__t.html#aef75908f401aaf310db1f578f316f2c2">rotor::message_base_t</a>
+</li>
+<li>address_mapping
+: <a class="el" href="structrotor_1_1supervisor__t.html#aabe571fc4b1362e9b9a1a2c86a6c1c5b">rotor::supervisor_t</a>
 </li>
 <li>app
 : <a class="el" href="structrotor_1_1wx_1_1system__context__wx__t.html#a4a4c66d8008206770bcb761299d91afd">rotor::wx::system_context_wx_t</a>

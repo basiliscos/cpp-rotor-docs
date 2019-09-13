@@ -1,5 +1,12 @@
 var searchData=
 [
-  ['forwarder_5ft_50',['forwarder_t',['../structrotor_1_1asio_1_1forwarder__t.html',1,'rotor::asio::forwarder_t&lt; Actor, Handler, ErrHandler &gt;'],['../structrotor_1_1asio_1_1forwarder__t.html#a99f6cb9cac61dd2e3cb18e4ff548cdb4',1,'rotor::asio::forwarder_t::forwarder_t()'],['../structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01void_01_4.html#a5c317b9b4664782f8d0586149933258e',1,'rotor::asio::forwarder_t&lt; Actor, Handler, void &gt;::forwarder_t()'],['../namespacerotor_1_1asio.html#a60a6e1a9f846e079e8df35f27664a7c1',1,'rotor::asio::forwarder_t()']]],
-  ['forwarder_5ft_3c_20actor_2c_20handler_2c_20void_20_3e_51',['forwarder_t&lt; Actor, Handler, void &gt;',['../structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01void_01_4.html',1,'rotor::asio']]]
+  ['ec_55',['ec',['../structrotor_1_1wrapped__response__t.html#a4a6a8c1bc50ba675db2d34047610394d',1,'rotor::wrapped_response_t']]],
+  ['enqueue_56',['enqueue',['../structrotor_1_1asio_1_1supervisor__asio__t.html#a0ce7fa81f4d6dc519ff9c62b1d5123c9',1,'rotor::asio::supervisor_asio_t::enqueue()'],['../structrotor_1_1ev_1_1supervisor__ev__t.html#a0f5317b8d029598034f41adfcf9edc62',1,'rotor::ev::supervisor_ev_t::enqueue()'],['../structrotor_1_1supervisor__t.html#aaf99e587b441bb5e68b0c500ffedf14f',1,'rotor::supervisor_t::enqueue()'],['../structrotor_1_1wx_1_1supervisor__wx__t.html#af01804f732f69e0dc198ef79b72171cc',1,'rotor::wx::supervisor_wx_t::enqueue()']]],
+  ['err_5fhandler_57',['err_handler',['../structrotor_1_1asio_1_1forwarder__t.html#aed5b05096b461c91faa753623b672f03',1,'rotor::asio::forwarder_t']]],
+  ['error_5fcode_5fcategory_58',['error_code_category',['../classrotor_1_1details_1_1error__code__category.html',1,'rotor::details::error_code_category'],['../namespacerotor.html#a77487c69ae8241d7a1cf595761fb374b',1,'rotor::error_code_category()']]],
+  ['error_5fcode_5ft_59',['error_code_t',['../namespacerotor.html#aff42402c4871af3b3ae26820e45abd81',1,'rotor']]],
+  ['error_5fproducer_5ft_60',['error_producer_t',['../namespacerotor.html#a72956f1c9805f36d3338046a39a31174',1,'rotor']]],
+  ['external_5fsubscription_5ft_61',['external_subscription_t',['../structrotor_1_1payload_1_1external__subscription__t.html',1,'rotor::payload']]],
+  ['external_5funsubscription_5ft_62',['external_unsubscription_t',['../structrotor_1_1payload_1_1external__unsubscription__t.html',1,'rotor::payload']]],
+  ['event_20loops_20_26_20platforms_63',['Event loops &amp; platforms',['../md__home_b_development_cpp_cpp-rotor_docs_Loops.html',1,'']]]
 ];
