@@ -5,7 +5,16 @@ var namespacerotor =
       [ "actor_ctor_t", "structrotor_1_1details_1_1actor__ctor__t.html", null ],
       [ "actor_ctor_t< Actor, Supervisor, std::enable_if_t< std::is_base_of_v< supervisor_t, Actor > > >", "structrotor_1_1details_1_1actor__ctor__t_3_01Actor_00_01Supervisor_00_01std_1_1enable__if__t_3_04843d29ffdcc1f5c3dad2affc584dbfb.html", null ],
       [ "actor_ctor_t< Actor, Supervisor, std::enable_if_t<!std::is_base_of_v< supervisor_t, Actor > > >", "structrotor_1_1details_1_1actor__ctor__t_3_01Actor_00_01Supervisor_00_01std_1_1enable__if__t_3_916e055d1a80e68efba58382dc76fbd95.html", null ],
-      [ "error_code_category", "classrotor_1_1details_1_1error__code__category.html", null ]
+      [ "error_code_category", "classrotor_1_1details_1_1error__code__category.html", null ],
+      [ "is_braces_constructible", "structrotor_1_1details_1_1is__braces__constructible.html", null ],
+      [ "is_constructible", "structrotor_1_1details_1_1is__constructible.html", null ],
+      [ "is_constructible< T, Arg >", "structrotor_1_1details_1_1is__constructible_3_01T_00_01Arg_01_4.html", null ],
+      [ "is_constructible< T, void >", "structrotor_1_1details_1_1is__constructible_3_01T_00_01void_01_4.html", null ],
+      [ "is_constructible< T, void, Arg >", "structrotor_1_1details_1_1is__constructible_3_01T_00_01void_00_01Arg_01_4.html", null ],
+      [ "is_constructible< T, void, Args... >", "structrotor_1_1details_1_1is__constructible_3_01T_00_01void_00_01Args_8_8_8_01_4.html", null ],
+      [ "size_of_t", "structrotor_1_1details_1_1size__of__t.html", null ],
+      [ "size_of_t< T >", "structrotor_1_1details_1_1size__of__t_3_01T_01_4.html", null ],
+      [ "size_of_t< T, Ts... >", "structrotor_1_1details_1_1size__of__t_3_01T_00_01Ts_8_8_8_01_4.html", null ]
     ] ],
     [ "ev", "namespacerotor_1_1ev.html", "namespacerotor_1_1ev" ],
     [ "payload", null, [
@@ -43,7 +52,11 @@ var namespacerotor =
     [ "request_builder_t", "structrotor_1_1request__builder__t.html", "structrotor_1_1request__builder__t" ],
     [ "request_curry_t", "structrotor_1_1request__curry__t.html", "structrotor_1_1request__curry__t" ],
     [ "request_traits_t", "structrotor_1_1request__traits__t.html", "structrotor_1_1request__traits__t" ],
-    [ "response_helper_t", "structrotor_1_1response__helper__t.html", null ],
+    [ "request_unwrapper_t", "structrotor_1_1request__unwrapper__t.html", "structrotor_1_1request__unwrapper__t" ],
+    [ "request_unwrapper_t< intrusive_ptr_t< T > >", "structrotor_1_1request__unwrapper__t_3_01intrusive__ptr__t_3_01T_01_4_01_4.html", "structrotor_1_1request__unwrapper__t_3_01intrusive__ptr__t_3_01T_01_4_01_4" ],
+    [ "request_wrapper_t", "structrotor_1_1request__wrapper__t.html", "structrotor_1_1request__wrapper__t" ],
+    [ "request_wrapper_t< T, std::enable_if_t< std::is_base_of_v< arc_base_t< T >, T > > >", "structrotor_1_1request__wrapper__t_3_01T_00_01std_1_1enable__if__t_3_01std_1_1is__base__of__v_3_e87ff55122062e5a77521960ca0ac849.html", "structrotor_1_1request__wrapper__t_3_01T_00_01std_1_1enable__if__t_3_01std_1_1is__base__of__v_3_e87ff55122062e5a77521960ca0ac849" ],
+    [ "response_helper_t", "structrotor_1_1response__helper__t.html", "structrotor_1_1response__helper__t" ],
     [ "response_helper_t< intrusive_ptr_t< Responce > >", "structrotor_1_1response__helper__t_3_01intrusive__ptr__t_3_01Responce_01_4_01_4.html", "structrotor_1_1response__helper__t_3_01intrusive__ptr__t_3_01Responce_01_4_01_4" ],
     [ "subscription_t", "structrotor_1_1subscription__t.html", "structrotor_1_1subscription__t" ],
     [ "supervisor_behavior_t", "structrotor_1_1supervisor__behavior__t.html", "structrotor_1_1supervisor__behavior__t" ],
@@ -51,5 +64,6 @@ var namespacerotor =
     [ "supervisor_t", "structrotor_1_1supervisor__t.html", "structrotor_1_1supervisor__t" ],
     [ "system_context_t", "structrotor_1_1system__context__t.html", "structrotor_1_1system__context__t" ],
     [ "wrapped_request_t", "structrotor_1_1wrapped__request__t.html", "structrotor_1_1wrapped__request__t" ],
+    [ "wrapped_request_t< T, std::enable_if_t< std::is_base_of_v< arc_base_t< T >, T > > >", "structrotor_1_1wrapped__request__t_3_01T_00_01std_1_1enable__if__t_3_01std_1_1is__base__of__v_3_e8c9a041113eceda006cb13907d336c0.html", "structrotor_1_1wrapped__request__t_3_01T_00_01std_1_1enable__if__t_3_01std_1_1is__base__of__v_3_e8c9a041113eceda006cb13907d336c0" ],
     [ "wrapped_response_t", "structrotor_1_1wrapped__response__t.html", "structrotor_1_1wrapped__response__t" ]
 ];

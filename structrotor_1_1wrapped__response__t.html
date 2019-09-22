@@ -115,42 +115,49 @@ $(document).ready(function(){initNavTree('structrotor_1_1wrapped__response__t.ht
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a86b4a673f0e2e02a7d28f35e4a158e0f"><td class="memItemLeft" align="right" valign="top"><a id="a86b4a673f0e2e02a7d28f35e4a158e0f"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1wrapped__response__t.html#a86b4a673f0e2e02a7d28f35e4a158e0f">req_message_t</a> = <a class="el" href="structrotor_1_1message__t.html">message_t</a>&lt; <a class="el" href="structrotor_1_1wrapped__request__t.html">wrapped_request_t</a>&lt; Request &gt; &gt;</td></tr>
-<tr class="memdesc:a86b4a673f0e2e02a7d28f35e4a158e0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">alias type of message with wrapped request <br /></td></tr>
-<tr class="separator:a86b4a673f0e2e02a7d28f35e4a158e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62516a3d6432b07fdc980f2888e65a3e"><td class="memItemLeft" align="right" valign="top"><a id="a62516a3d6432b07fdc980f2888e65a3e"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1wrapped__response__t.html#a62516a3d6432b07fdc980f2888e65a3e">request_t</a> = typename <a class="el" href="structrotor_1_1request__unwrapper__t.html">request_unwrapper_t</a>&lt; Request &gt;::<a class="el" href="structrotor_1_1wrapped__response__t.html#a62516a3d6432b07fdc980f2888e65a3e">request_t</a></td></tr>
+<tr class="memdesc:a62516a3d6432b07fdc980f2888e65a3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">alias for original user-supplied request type <br /></td></tr>
+<tr class="separator:a62516a3d6432b07fdc980f2888e65a3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a8faca5a9cfaecfc7b3d95a71a70f3d"><td class="memItemLeft" align="right" valign="top"><a id="a4a8faca5a9cfaecfc7b3d95a71a70f3d"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1wrapped__response__t.html#a4a8faca5a9cfaecfc7b3d95a71a70f3d">req_message_t</a> = <a class="el" href="structrotor_1_1message__t.html">message_t</a>&lt; <a class="el" href="structrotor_1_1wrapped__request__t.html">wrapped_request_t</a>&lt; <a class="el" href="structrotor_1_1wrapped__response__t.html#a62516a3d6432b07fdc980f2888e65a3e">request_t</a> &gt; &gt;</td></tr>
+<tr class="memdesc:a4a8faca5a9cfaecfc7b3d95a71a70f3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">alias type of message with wrapped request, which is possibly wrapped into intrusive pointer <br /></td></tr>
+<tr class="separator:a4a8faca5a9cfaecfc7b3d95a71a70f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a445980d820f30b5bc56e09a7dfe9e0d8"><td class="memItemLeft" align="right" valign="top"><a id="a445980d820f30b5bc56e09a7dfe9e0d8"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1wrapped__response__t.html#a445980d820f30b5bc56e09a7dfe9e0d8">req_message_ptr_t</a> = <a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a>&lt; <a class="el" href="structrotor_1_1wrapped__response__t.html#a86b4a673f0e2e02a7d28f35e4a158e0f">req_message_t</a> &gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1wrapped__response__t.html#a445980d820f30b5bc56e09a7dfe9e0d8">req_message_ptr_t</a> = <a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a>&lt; <a class="el" href="structrotor_1_1wrapped__response__t.html#a4a8faca5a9cfaecfc7b3d95a71a70f3d">req_message_t</a> &gt;</td></tr>
 <tr class="memdesc:a445980d820f30b5bc56e09a7dfe9e0d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">alias for intrusive pointer to message with wrapped request <br /></td></tr>
 <tr class="separator:a445980d820f30b5bc56e09a7dfe9e0d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8db8a3a0804d2c0e07904dbc96a0bd4"><td class="memItemLeft" align="right" valign="top"><a id="ad8db8a3a0804d2c0e07904dbc96a0bd4"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1wrapped__response__t.html#ad8db8a3a0804d2c0e07904dbc96a0bd4">request_t</a> = Request</td></tr>
-<tr class="memdesc:ad8db8a3a0804d2c0e07904dbc96a0bd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">alias for original user-supplied request type <br /></td></tr>
-<tr class="separator:ad8db8a3a0804d2c0e07904dbc96a0bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adccb04e22c6ff1bef7ed675685ad4133"><td class="memItemLeft" align="right" valign="top"><a id="adccb04e22c6ff1bef7ed675685ad4133"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1wrapped__response__t.html#adccb04e22c6ff1bef7ed675685ad4133">response_t</a> = typename Request::response_t</td></tr>
-<tr class="memdesc:adccb04e22c6ff1bef7ed675685ad4133"><td class="mdescLeft">&#160;</td><td class="mdescRight">alias for original user-supplied response type <br /></td></tr>
-<tr class="separator:adccb04e22c6ff1bef7ed675685ad4133"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a278f5466711fe3ab3ed0073787560110"><td class="memItemLeft" align="right" valign="top"><a id="a278f5466711fe3ab3ed0073787560110"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1wrapped__response__t.html#a278f5466711fe3ab3ed0073787560110">response_t</a> = typename request_t::response_t</td></tr>
+<tr class="memdesc:a278f5466711fe3ab3ed0073787560110"><td class="mdescLeft">&#160;</td><td class="mdescRight">alias for possibly wrapped user-supplied response type <br /></td></tr>
+<tr class="separator:a278f5466711fe3ab3ed0073787560110"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8362c56b2d297faa0b8fce65ef846b5"><td class="memItemLeft" align="right" valign="top"><a id="af8362c56b2d297faa0b8fce65ef846b5"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1wrapped__response__t.html#af8362c56b2d297faa0b8fce65ef846b5">res_helper_t</a> = <a class="el" href="structrotor_1_1response__helper__t.html">response_helper_t</a>&lt; <a class="el" href="structrotor_1_1wrapped__response__t.html#adccb04e22c6ff1bef7ed675685ad4133">response_t</a> &gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1wrapped__response__t.html#af8362c56b2d297faa0b8fce65ef846b5">res_helper_t</a> = <a class="el" href="structrotor_1_1response__helper__t.html">response_helper_t</a>&lt; <a class="el" href="structrotor_1_1wrapped__response__t.html#a278f5466711fe3ab3ed0073787560110">response_t</a> &gt;</td></tr>
 <tr class="memdesc:af8362c56b2d297faa0b8fce65ef846b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper type for response construction <br /></td></tr>
 <tr class="separator:af8362c56b2d297faa0b8fce65ef846b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0262a8d467748aaa023844ae91a23111"><td class="memItemLeft" align="right" valign="top"><a id="a0262a8d467748aaa023844ae91a23111"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1wrapped__response__t.html#a0262a8d467748aaa023844ae91a23111">unwrapped_response_t</a> = typename <a class="el" href="structrotor_1_1response__helper__t.html#a3d43bdf3aede9f590e635bcc8116e913">res_helper_t::responce_t</a></td></tr>
+<tr class="memdesc:a0262a8d467748aaa023844ae91a23111"><td class="mdescLeft">&#160;</td><td class="mdescRight">alias user-supplied response type <br /></td></tr>
+<tr class="separator:a0262a8d467748aaa023844ae91a23111"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3e01ac6c7ac2a8af27b98703f31cb804"><td class="memItemLeft" align="right" valign="top"><a id="a3e01ac6c7ac2a8af27b98703f31cb804"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1wrapped__response__t.html#a3e01ac6c7ac2a8af27b98703f31cb804">wrapped_response_t</a> (std::error_code ec_, <a class="el" href="structrotor_1_1wrapped__response__t.html#a445980d820f30b5bc56e09a7dfe9e0d8">req_message_ptr_t</a> message_)</td></tr>
-<tr class="memdesc:a3e01ac6c7ac2a8af27b98703f31cb804"><td class="mdescLeft">&#160;</td><td class="mdescRight">error-response constructor (response payload is empty) <br /></td></tr>
-<tr class="separator:a3e01ac6c7ac2a8af27b98703f31cb804"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87b7f3e515b3fe52591bf7e137e2b9f2"><td class="memTemplParams" colspan="2"><a id="a87b7f3e515b3fe52591bf7e137e2b9f2"></a>
-template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:a87b7f3e515b3fe52591bf7e137e2b9f2"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1wrapped__response__t.html#a87b7f3e515b3fe52591bf7e137e2b9f2">wrapped_response_t</a> (<a class="el" href="structrotor_1_1wrapped__response__t.html#a445980d820f30b5bc56e09a7dfe9e0d8">req_message_ptr_t</a> message_, Args &amp;&amp;... args)</td></tr>
-<tr class="memdesc:a87b7f3e515b3fe52591bf7e137e2b9f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">success-response constructor <br /></td></tr>
-<tr class="separator:a87b7f3e515b3fe52591bf7e137e2b9f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7db04985f2083840f8eb5ae200abc223"><td class="memItemLeft" align="right" valign="top"><a id="a7db04985f2083840f8eb5ae200abc223"></a>
-std::int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1wrapped__response__t.html#a7db04985f2083840f8eb5ae200abc223">request_id</a> () const noexcept</td></tr>
-<tr class="memdesc:a7db04985f2083840f8eb5ae200abc223"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns request id of the original request <br /></td></tr>
-<tr class="separator:a7db04985f2083840f8eb5ae200abc223"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ff2f1747c8d1407a39dbbc6f4975ec2"><td class="memItemLeft" align="right" valign="top"><a id="a2ff2f1747c8d1407a39dbbc6f4975ec2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1wrapped__response__t.html#a2ff2f1747c8d1407a39dbbc6f4975ec2">wrapped_response_t</a> (const std::error_code &amp;ec_, <a class="el" href="structrotor_1_1wrapped__response__t.html#a445980d820f30b5bc56e09a7dfe9e0d8">req_message_ptr_t</a> message_)</td></tr>
+<tr class="memdesc:a2ff2f1747c8d1407a39dbbc6f4975ec2"><td class="mdescLeft">&#160;</td><td class="mdescRight">error-response constructor (response payload is empty) <br /></td></tr>
+<tr class="separator:a2ff2f1747c8d1407a39dbbc6f4975ec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec35656687644d95453b67c12db2d181"><td class="memTemplParams" colspan="2">template&lt;typename Responce , typename E  = std::enable_if_t&lt;std::is_same_v&lt;response_t, std::remove_cv_t&lt;Responce&gt;&gt;&gt;&gt; </td></tr>
+<tr class="memitem:aec35656687644d95453b67c12db2d181"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1wrapped__response__t.html#aec35656687644d95453b67c12db2d181">wrapped_response_t</a> (<a class="el" href="structrotor_1_1wrapped__response__t.html#a445980d820f30b5bc56e09a7dfe9e0d8">req_message_ptr_t</a> message_, const std::error_code &amp;ec_, Responce &amp;&amp;res_)</td></tr>
+<tr class="memdesc:aec35656687644d95453b67c12db2d181"><td class="mdescLeft">&#160;</td><td class="mdescRight">"forward-constructor"  <a href="structrotor_1_1wrapped__response__t.html#aec35656687644d95453b67c12db2d181">More...</a><br /></td></tr>
+<tr class="separator:aec35656687644d95453b67c12db2d181"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac55d8b138b4299a297091b48c71ee1e5"><td class="memTemplParams" colspan="2">template&lt;typename Req , typename... Args, typename E1  = std::enable_if_t&lt;std::is_same_v&lt;req_message_ptr_t, std::remove_cv_t&lt;Req&gt;&gt;&gt;, typename E2  = std::enable_if_t&lt;details::is_constructible_v&lt;unwrapped_response_t, Args...&gt;&gt;&gt; </td></tr>
+<tr class="memitem:ac55d8b138b4299a297091b48c71ee1e5"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1wrapped__response__t.html#ac55d8b138b4299a297091b48c71ee1e5">wrapped_response_t</a> (Req &amp;&amp;message_, Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:ac55d8b138b4299a297091b48c71ee1e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">successful-responce constructor.  <a href="structrotor_1_1wrapped__response__t.html#ac55d8b138b4299a297091b48c71ee1e5">More...</a><br /></td></tr>
+<tr class="separator:ac55d8b138b4299a297091b48c71ee1e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af847fdf3862b10dcf253cc8b21987011"><td class="memItemLeft" align="right" valign="top"><a id="af847fdf3862b10dcf253cc8b21987011"></a>
+<a class="el" href="namespacerotor.html#af94c41ca89a091ceedefd43e1265f1f0">request_id_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1wrapped__response__t.html#af847fdf3862b10dcf253cc8b21987011">request_id</a> () const noexcept</td></tr>
+<tr class="memdesc:af847fdf3862b10dcf253cc8b21987011"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns request id of the original request <br /></td></tr>
+<tr class="separator:af847fdf3862b10dcf253cc8b21987011"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -163,7 +170,7 @@ std::error_code&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 <tr class="memdesc:a07ed9ba2d10fba9e9b5a1b1e1702eb6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">original request message, which contains request_id for request/response matching <br /></td></tr>
 <tr class="separator:a07ed9ba2d10fba9e9b5a1b1e1702eb6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89e9d28889fcf7bebe3ad55fdced3df2"><td class="memItemLeft" align="right" valign="top"><a id="a89e9d28889fcf7bebe3ad55fdced3df2"></a>
-<a class="el" href="structrotor_1_1wrapped__response__t.html#adccb04e22c6ff1bef7ed675685ad4133">response_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1wrapped__response__t.html#a89e9d28889fcf7bebe3ad55fdced3df2">res</a></td></tr>
+<a class="el" href="structrotor_1_1wrapped__response__t.html#a278f5466711fe3ab3ed0073787560110">response_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1wrapped__response__t.html#a89e9d28889fcf7bebe3ad55fdced3df2">res</a></td></tr>
 <tr class="memdesc:a89e9d28889fcf7bebe3ad55fdced3df2"><td class="mdescLeft">&#160;</td><td class="mdescRight">user-supplied response payload <br /></td></tr>
 <tr class="separator:a89e9d28889fcf7bebe3ad55fdced3df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -173,7 +180,100 @@ struct rotor::wrapped_response_t&lt; Request &gt;</h3>
 
 <p>trackable templated response which holds user-supplied response payload. </p>
 <p>In addition to user-supplied response payload, the class contains <code>error_code</code> and intrusive pointer to the original request message. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aec35656687644d95453b67c12db2d181"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec35656687644d95453b67c12db2d181">&#9670;&nbsp;</a></span>wrapped_response_t() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Request &gt; </div>
+<div class="memtemplate">
+template&lt;typename Responce , typename E  = std::enable_if_t&lt;std::is_same_v&lt;response_t, std::remove_cv_t&lt;Responce&gt;&gt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structrotor_1_1wrapped__response__t.html">rotor::wrapped_response_t</a>&lt; Request &gt;::<a class="el" href="structrotor_1_1wrapped__response__t.html">wrapped_response_t</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structrotor_1_1wrapped__response__t.html#a445980d820f30b5bc56e09a7dfe9e0d8">req_message_ptr_t</a>&#160;</td>
+          <td class="paramname"><em>message_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::error_code &amp;&#160;</td>
+          <td class="paramname"><em>ec_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Responce &amp;&amp;&#160;</td>
+          <td class="paramname"><em>res_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>"forward-constructor" </p>
+<p>The request message, error code are copied, while the responce (possible intrusive poitner to the original request) is forwarded. </p>
+
+</div>
+</div>
+<a id="ac55d8b138b4299a297091b48c71ee1e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac55d8b138b4299a297091b48c71ee1e5">&#9670;&nbsp;</a></span>wrapped_response_t() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Request &gt; </div>
+<div class="memtemplate">
+template&lt;typename Req , typename... Args, typename E1  = std::enable_if_t&lt;std::is_same_v&lt;req_message_ptr_t, std::remove_cv_t&lt;Req&gt;&gt;&gt;, typename E2  = std::enable_if_t&lt;details::is_constructible_v&lt;unwrapped_response_t, Args...&gt;&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structrotor_1_1wrapped__response__t.html">rotor::wrapped_response_t</a>&lt; Request &gt;::<a class="el" href="structrotor_1_1wrapped__response__t.html">wrapped_response_t</a> </td>
+          <td>(</td>
+          <td class="paramtype">Req &amp;&amp;&#160;</td>
+          <td class="paramname"><em>message_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>successful-responce constructor. </p>
+<p>The request message is copied, the error code is set to success, the responce (possible intrusive poitner to the original request) constructed from the arguments. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/home/b/development/cpp/cpp-rotor/include/rotor/<a class="el" href="request_8hpp_source.html">request.hpp</a></li>
 </ul>
 </div><!-- contents -->

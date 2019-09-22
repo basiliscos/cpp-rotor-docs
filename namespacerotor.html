@@ -175,6 +175,16 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1request__traits__t.html">request_traits_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">type helper to deduce request/reqsponce messages from original (user-supplied) request type  <a href="structrotor_1_1request__traits__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1request__unwrapper__t.html">request_unwrapper_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">optionally unwwraps request type from intrusive pointer  <a href="structrotor_1_1request__unwrapper__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1request__unwrapper__t_3_01intrusive__ptr__t_3_01T_01_4_01_4.html">request_unwrapper_t&lt; intrusive_ptr_t&lt; T &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1request__wrapper__t.html">request_wrapper_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">optionally wraps request type into intrusive pointer  <a href="structrotor_1_1request__wrapper__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1request__wrapper__t_3_01T_00_01std_1_1enable__if__t_3_01std_1_1is__base__of__v_3_e87ff55122062e5a77521960ca0ac849.html">request_wrapper_t&lt; T, std::enable_if_t&lt; std::is_base_of_v&lt; arc_base_t&lt; T &gt;, T &gt; &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1response__helper__t.html">response_helper_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">generic helper, which helps to construct user-defined response payload  <a href="structrotor_1_1response__helper__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -197,6 +207,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1wrapped__request__t.html">wrapped_request_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">templated request, which is able to hold user-supplied payload  <a href="structrotor_1_1wrapped__request__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1wrapped__request__t_3_01T_00_01std_1_1enable__if__t_3_01std_1_1is__base__of__v_3_e8c9a041113eceda006cb13907d336c0.html">wrapped_request_t&lt; T, std::enable_if_t&lt; std::is_base_of_v&lt; arc_base_t&lt; T &gt;, T &gt; &gt; &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1wrapped__response__t.html">wrapped_response_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">trackable templated response which holds user-supplied response payload.  <a href="structrotor_1_1wrapped__response__t.html#details">More...</a><br /></td></tr>
@@ -242,6 +254,10 @@ using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="nam
 using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerotor.html#a0196761fe474bd8dc17ac4ff9f0e2f95">message_ptr_t</a> = <a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a>&lt; <a class="el" href="structrotor_1_1message__base__t.html">message_base_t</a> &gt;</td></tr>
 <tr class="memdesc:a0196761fe474bd8dc17ac4ff9f0e2f95"><td class="mdescLeft">&#160;</td><td class="mdescRight">intrusive pointer for message <br /></td></tr>
 <tr class="separator:a0196761fe474bd8dc17ac4ff9f0e2f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af94c41ca89a091ceedefd43e1265f1f0"><td class="memItemLeft" align="right" valign="top"><a id="af94c41ca89a091ceedefd43e1265f1f0"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerotor.html#af94c41ca89a091ceedefd43e1265f1f0">request_id_t</a> = std::uint32_t</td></tr>
+<tr class="memdesc:af94c41ca89a091ceedefd43e1265f1f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">unique (per supervisor) request id type <br /></td></tr>
+<tr class="separator:af94c41ca89a091ceedefd43e1265f1f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72956f1c9805f36d3338046a39a31174"><td class="memItemLeft" align="right" valign="top"><a id="a72956f1c9805f36d3338046a39a31174"></a>
 typedef <a class="el" href="namespacerotor.html#a0196761fe474bd8dc17ac4ff9f0e2f95">message_ptr_t</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerotor.html#a72956f1c9805f36d3338046a39a31174">error_producer_t</a>(const <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a> &amp;reply_to, <a class="el" href="structrotor_1_1message__base__t.html">message_base_t</a> &amp;msg, const std::error_code &amp;ec) noexcept</td></tr>
 <tr class="memdesc:a72956f1c9805f36d3338046a39a31174"><td class="mdescLeft">&#160;</td><td class="mdescRight">free function type, which produces error response to the original request <br /></td></tr>

@@ -35,6 +35,9 @@ var hierarchy =
     [ "deadline_timer", null, [
       [ "rotor::asio::supervisor_asio_t::timer_t", "structrotor_1_1asio_1_1supervisor__asio__t_1_1timer__t.html", null ]
     ] ],
+    [ "decltypetest", null, [
+      [ "rotor::details::is_braces_constructible< T, Args >", "structrotor_1_1details_1_1is__braces__constructible.html", null ]
+    ] ],
     [ "error_category", null, [
       [ "rotor::details::error_code_category", "classrotor_1_1details_1_1error__code__category.html", null ]
     ] ],
@@ -53,21 +56,38 @@ var hierarchy =
     [ "std::hash< rotor::handler_ptr_t >", "structstd_1_1hash_3_01rotor_1_1handler__ptr__t_01_4.html", null ],
     [ "rotor::payload::initialize_actor_t", "structrotor_1_1payload_1_1initialize__actor__t.html", null ],
     [ "rotor::payload::initialize_confirmation_t", "structrotor_1_1payload_1_1initialize__confirmation__t.html", null ],
+    [ "is_constructible", null, [
+      [ "rotor::details::size_of_t< T, Ts... >", "structrotor_1_1details_1_1size__of__t_3_01T_00_01Ts_8_8_8_01_4.html", null ]
+    ] ],
+    [ "rotor::details::is_constructible< T, E, Args >", "structrotor_1_1details_1_1is__constructible.html", null ],
+    [ "rotor::details::is_constructible< T, Arg >", "structrotor_1_1details_1_1is__constructible_3_01T_00_01Arg_01_4.html", null ],
+    [ "rotor::details::is_constructible< T, void >", "structrotor_1_1details_1_1is__constructible_3_01T_00_01void_01_4.html", null ],
+    [ "rotor::details::is_constructible< T, void, Arg >", "structrotor_1_1details_1_1is__constructible_3_01T_00_01void_00_01Arg_01_4.html", null ],
+    [ "rotor::details::is_constructible< T, void, Args... >", "structrotor_1_1details_1_1is__constructible_3_01T_00_01void_00_01Args_8_8_8_01_4.html", null ],
+    [ "is_default_constructible", null, [
+      [ "rotor::details::size_of_t< T >", "structrotor_1_1details_1_1size__of__t_3_01T_01_4.html", null ]
+    ] ],
     [ "rotor::lambda_holder_t< M, F >", "structrotor_1_1lambda__holder__t.html", null ],
     [ "rotor::lambda_holder_t< Handler, M >", "structrotor_1_1lambda__holder__t.html", null ],
     [ "rotor::request_traits_t< R >::request", "structrotor_1_1request__traits__t_1_1request.html", null ],
     [ "rotor::request_base_t", "structrotor_1_1request__base__t.html", [
-      [ "rotor::wrapped_request_t< T >", "structrotor_1_1wrapped__request__t.html", null ]
+      [ "rotor::wrapped_request_t< T, typename >", "structrotor_1_1wrapped__request__t.html", null ],
+      [ "rotor::wrapped_request_t< T, std::enable_if_t< std::is_base_of_v< arc_base_t< T >, T > > >", "structrotor_1_1wrapped__request__t_3_01T_00_01std_1_1enable__if__t_3_01std_1_1is__base__of__v_3_e8c9a041113eceda006cb13907d336c0.html", null ]
     ] ],
     [ "rotor::request_builder_t< T >", "structrotor_1_1request__builder__t.html", null ],
     [ "rotor::request_curry_t", "structrotor_1_1request__curry__t.html", null ],
     [ "rotor::request_traits_t< R >", "structrotor_1_1request__traits__t.html", null ],
+    [ "rotor::request_unwrapper_t< T, typename >", "structrotor_1_1request__unwrapper__t.html", null ],
+    [ "rotor::request_unwrapper_t< intrusive_ptr_t< T > >", "structrotor_1_1request__unwrapper__t_3_01intrusive__ptr__t_3_01T_01_4_01_4.html", null ],
+    [ "rotor::request_wrapper_t< T, typename >", "structrotor_1_1request__wrapper__t.html", null ],
+    [ "rotor::request_wrapper_t< T, std::enable_if_t< std::is_base_of_v< arc_base_t< T >, T > > >", "structrotor_1_1request__wrapper__t_3_01T_00_01std_1_1enable__if__t_3_01std_1_1is__base__of__v_3_e87ff55122062e5a77521960ca0ac849.html", null ],
     [ "rotor::request_traits_t< R >::response", "structrotor_1_1request__traits__t_1_1response.html", null ],
     [ "rotor::response_helper_t< Responce >", "structrotor_1_1response__helper__t.html", null ],
     [ "rotor::response_helper_t< intrusive_ptr_t< Responce > >", "structrotor_1_1response__helper__t_3_01intrusive__ptr__t_3_01Responce_01_4_01_4.html", null ],
     [ "rotor::payload::shutdown_confirmation_t", "structrotor_1_1payload_1_1shutdown__confirmation__t.html", null ],
     [ "rotor::payload::shutdown_request_t", "structrotor_1_1payload_1_1shutdown__request__t.html", null ],
     [ "rotor::payload::shutdown_trigger_t", "structrotor_1_1payload_1_1shutdown__trigger__t.html", null ],
+    [ "rotor::details::size_of_t< Ts >", "structrotor_1_1details_1_1size__of__t.html", null ],
     [ "rotor::payload::start_actor_t", "structrotor_1_1payload_1_1start__actor__t.html", null ],
     [ "rotor::payload::state_request_t", "structrotor_1_1payload_1_1state__request__t.html", null ],
     [ "rotor::payload::state_response_t", "structrotor_1_1payload_1_1state__response__t.html", null ],
