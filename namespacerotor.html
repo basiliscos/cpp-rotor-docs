@@ -163,6 +163,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1message__t.html">message_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">the generic message meant to hold user-specific payload  <a href="structrotor_1_1message__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1registry__t.html">registry_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">keeps name-to-service_address mapping at runtime  <a href="structrotor_1_1registry__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1request__base__t.html">request_base_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">base class for request payload  <a href="structrotor_1_1request__base__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -285,12 +288,22 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a938b963874d0086dd7ce1b6887129812"><td class="mdescLeft">&#160;</td><td class="mdescRight">the substate of actor, to be tracked by behavior <br /></td></tr>
 <tr class="separator:a938b963874d0086dd7ce1b6887129812"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff42402c4871af3b3ae26820e45abd81"><td class="memItemLeft" align="right" valign="top"><a id="aff42402c4871af3b3ae26820e45abd81"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerotor.html#aff42402c4871af3b3ae26820e45abd81">error_code_t</a> { <b>success</b> = 0, 
+<tr class="memitem:aff42402c4871af3b3ae26820e45abd81"><td class="memItemLeft" align="right" valign="top"><a id="aff42402c4871af3b3ae26820e45abd81"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerotor.html#aff42402c4871af3b3ae26820e45abd81">error_code_t</a> { <br />
+&#160;&#160;<b>success</b> = 0, 
 <b>request_timeout</b>, 
-<b>supervisor_defined</b>
+<b>supervisor_defined</b>, 
+<b>already_registered</b>, 
+<br />
+&#160;&#160;<b>unknown_service</b>
+<br />
  }</td></tr>
 <tr class="memdesc:aff42402c4871af3b3ae26820e45abd81"><td class="mdescLeft">&#160;</td><td class="mdescRight">fatal error codes in rotor <br /></td></tr>
 <tr class="separator:aff42402c4871af3b3ae26820e45abd81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affb671357df7b4bed56139bff68610a0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerotor.html#affb671357df7b4bed56139bff68610a0">supervisor_policy_t</a> { <a class="el" href="namespacerotor.html#affb671357df7b4bed56139bff68610a0a62626c29d3f3a4b98c429532390d37c6">supervisor_policy_t::shutdown_self</a> = 1, 
+<a class="el" href="namespacerotor.html#affb671357df7b4bed56139bff68610a0a4bba544bf219d0a11e4c9f8a2c148351">supervisor_policy_t::shutdown_failed</a>
+ }</td></tr>
+<tr class="memdesc:affb671357df7b4bed56139bff68610a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">how to behave on child actor initialization failures  <a href="namespacerotor.html#affb671357df7b4bed56139bff68610a0">More...</a><br /></td></tr>
+<tr class="separator:affb671357df7b4bed56139bff68610a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6efbb2b594154ba938cf57113e1431a3"><td class="memItemLeft" align="right" valign="top"><a id="a6efbb2b594154ba938cf57113e1431a3"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerotor.html#a6efbb2b594154ba938cf57113e1431a3">state_t</a> { <br />
 &#160;&#160;<b>UNKNOWN</b>, 
 <b>NEW</b>, 
@@ -359,6 +372,37 @@ template&lt;typename Handler &gt; </div>
 
 <p>SFINAE handler detector. </p>
 <p>Either handler can be constructed from memeber-to-function-pointer or it is already constructed and have a base <code><a class="el" href="structrotor_1_1handler__base__t.html" title="Base class for rotor handler, i.e concrete message type processing point on concrete actor.">handler_base_t</a></code> </p>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="affb671357df7b4bed56139bff68610a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affb671357df7b4bed56139bff68610a0">&#9670;&nbsp;</a></span>supervisor_policy_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespacerotor.html#affb671357df7b4bed56139bff68610a0">rotor::supervisor_policy_t</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>how to behave on child actor initialization failures </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="affb671357df7b4bed56139bff68610a0a62626c29d3f3a4b98c429532390d37c6"></a>shutdown_self&#160;</td><td class="fielddoc"><p>shutdown supervisor (and all its actors) if a child-actor fails during supervisor initialization phase </p>
+</td></tr>
+<tr><td class="fieldname"><a id="affb671357df7b4bed56139bff68610a0a4bba544bf219d0a11e4c9f8a2c148351"></a>shutdown_failed&#160;</td><td class="fielddoc"><p>shutdown a failed child and continue initialization </p>
+</td></tr>
+</table>
 
 </div>
 </div>

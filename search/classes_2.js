@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['error_5fcode_5fcategory_299',['error_code_category',['../classrotor_1_1details_1_1error__code__category.html',1,'rotor::details']]],
-  ['external_5fsubscription_5ft_300',['external_subscription_t',['../structrotor_1_1payload_1_1external__subscription__t.html',1,'rotor::payload']]],
-  ['external_5funsubscription_5ft_301',['external_unsubscription_t',['../structrotor_1_1payload_1_1external__unsubscription__t.html',1,'rotor::payload']]]
+  ['deregistration_5fnotify_5ft_327',['deregistration_notify_t',['../structrotor_1_1payload_1_1deregistration__notify__t.html',1,'rotor::payload']]],
+  ['deregistration_5fservice_5ft_328',['deregistration_service_t',['../structrotor_1_1payload_1_1deregistration__service__t.html',1,'rotor::payload']]],
+  ['discovery_5freply_5ft_329',['discovery_reply_t',['../structrotor_1_1payload_1_1discovery__reply__t.html',1,'rotor::payload']]],
+  ['discovery_5frequest_5ft_330',['discovery_request_t',['../structrotor_1_1payload_1_1discovery__request__t.html',1,'rotor::payload']]]
 ];

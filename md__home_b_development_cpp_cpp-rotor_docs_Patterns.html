@@ -279,7 +279,11 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp-rotor_d
 <div class="line">        request_via&lt;htt::request_t&gt;(http_client, wsdl_addr, <span class="comment">/* request params */</span> ).send(timeout);</div>
 <div class="line">    }</div>
 <div class="line">}</div>
-</div><!-- fragment --><h1>check actor ready state (syncrhonizing stream)</h1>
+</div><!-- fragment --><h1>Registry</h1>
+<p>There is a known <a href="https://en.wikipedia.org/wiki/Actor_model#Synthesizing_addresses_of_actors">get-actor-address</a> problem: how one actor should know the address of the other actor? Well known way is to carefully craft initialization taking addresses of just created actors and pass them in constructor to the other actors etc. The approach will work in the certain circumstances; however it leads to boilerplate and fragile code, which "smells bad", as some initialization is performed inside actors and some is outside; it also does not handles well the case of dynamic (virtual) addresses.</p>
+<p>The better solution is to have "the registry" actor, known to all other actors. Each actor, which provides some services registers it's main or virtual address in the registry via some application-known string names; upon the termination it undoes the registration. Each "client-actor" asks for the predefined service point by it's name in the actor initialization phase; once all addresses for the needed services are found, the initialization can continue and the actor then becomes "operational".</p>
+<p>Since the registry does not perform any I/O and can be implemented in loop-agnostic way, it was included in <code>rotor</code> since <code>v0.06</code>.</p>
+<h1>check actor ready state (syncrhonizing stream)</h1>
 <p>Let's assume there are two actors, which need to communicate:</p>
 <div class="fragment"><div class="line"><span class="keyword">namespace </span>r = <a class="code" href="namespacerotor.html">rotor</a>;</div>
 <div class="line"> </div>

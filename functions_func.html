@@ -285,6 +285,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 </li>
 <li>init_start()
 : <a class="el" href="structrotor_1_1actor__base__t.html#a383be3775cfa14f690e03e866c75b03e">rotor::actor_base_t</a>
+, <a class="el" href="structrotor_1_1registry__t.html#a92f4800a47a3f239f7b09f32090792d8">rotor::registry_t</a>
 </li>
 <li>instantiate_address()
 : <a class="el" href="structrotor_1_1supervisor__t.html#a05694d96819d0bae8a0d04d3555746b1">rotor::supervisor_t</a>
@@ -339,6 +340,18 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>on_create()
 : <a class="el" href="structrotor_1_1supervisor__t.html#aa97e6d6fe9cca2e2722f6b2c15c71731">rotor::supervisor_t</a>
 </li>
+<li>on_create_child()
+: <a class="el" href="structrotor_1_1supervisor__behavior__t.html#a89c11dfa171e7d6ca2a05f4b094602eb">rotor::supervisor_behavior_t</a>
+</li>
+<li>on_dereg()
+: <a class="el" href="structrotor_1_1registry__t.html#af66ed102fbbca78f2a11d396b4c67068">rotor::registry_t</a>
+</li>
+<li>on_dereg_service()
+: <a class="el" href="structrotor_1_1registry__t.html#acb26f397c0e5aab866652ef9c220132b">rotor::registry_t</a>
+</li>
+<li>on_discovery()
+: <a class="el" href="structrotor_1_1registry__t.html#a60013452bfae58aac886ad565d76660d">rotor::registry_t</a>
+</li>
 <li>on_error()
 : <a class="el" href="structrotor_1_1system__context__t.html#a386a4eac0cf949f0741f26dcfc36d123">rotor::system_context_t</a>
 </li>
@@ -348,14 +361,17 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>on_external_unsubscription()
 : <a class="el" href="structrotor_1_1actor__base__t.html#ab0e24a90b02373ae0637d6274795a9dd">rotor::actor_base_t</a>
 </li>
-<li>on_init_fail()
-: <a class="el" href="structrotor_1_1supervisor__behavior__t.html#a586c7a025083a9df135ed9399e61a84f">rotor::supervisor_behavior_t</a>
+<li>on_init()
+: <a class="el" href="structrotor_1_1supervisor__behavior__t.html#a8fc0065a84b5f87104bef03d1dced2db">rotor::supervisor_behavior_t</a>
 </li>
 <li>on_initialize()
 : <a class="el" href="structrotor_1_1actor__base__t.html#acd8e8014596f2423872a810607c0ae47">rotor::actor_base_t</a>
 </li>
 <li>on_initialize_confirm()
 : <a class="el" href="structrotor_1_1supervisor__t.html#acce401a5bdffcb27aea659171b1c72a9">rotor::supervisor_t</a>
+</li>
+<li>on_reg()
+: <a class="el" href="structrotor_1_1registry__t.html#a7057a8b4ae13db2671d33144b52c61d4">rotor::registry_t</a>
 </li>
 <li>on_shutdown()
 : <a class="el" href="structrotor_1_1actor__base__t.html#a90941d5e5dc7ddc587ace800cdde4349">rotor::actor_base_t</a>
@@ -375,6 +391,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 </li>
 <li>on_start_init()
 : <a class="el" href="structrotor_1_1actor__behavior__t.html#a522bb30f1fb902502c17af2d5756981f">rotor::actor_behavior_t</a>
+, <a class="el" href="structrotor_1_1supervisor__behavior__t.html#a5f275eb00cb6e7dc068dffe734a51009">rotor::supervisor_behavior_t</a>
 </li>
 <li>on_start_shutdown()
 : <a class="el" href="structrotor_1_1actor__behavior__t.html#a943da587290ad864a877d83d877fc562">rotor::actor_behavior_t</a>
@@ -399,8 +416,8 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 , <a class="el" href="structrotor_1_1actor__behavior__t.html#a6ca06ff69b47a4dfefbbcff26ca8c265">rotor::actor_behavior_t</a>
 </li>
 <li>operator()()
-: <a class="el" href="structrotor_1_1asio_1_1forwarder__t.html#ae10a9c46930b08e858dfefe4f2ce377b">rotor::asio::forwarder_t&lt; Actor, Handler, ErrHandler &gt;</a>
-, <a class="el" href="structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01void_01_4.html#ac641f49671bdec94d5386aefe99d70b9">rotor::asio::forwarder_t&lt; Actor, Handler, void &gt;</a>
+: <a class="el" href="structrotor_1_1asio_1_1forwarder__t.html#a082e9a73b592be9574eee95734b40d27">rotor::asio::forwarder_t&lt; Actor, Handler, ErrHandler &gt;</a>
+, <a class="el" href="structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01void_01_4.html#a9456ff525ec29a559046a9a695c3227e">rotor::asio::forwarder_t&lt; Actor, Handler, void &gt;</a>
 , <a class="el" href="structstd_1_1hash_3_01rotor_1_1address__ptr__t_01_4.html#af9a6d174dee59f9b5749d144628605a9">std::hash&lt; rotor::address_ptr_t &gt;</a>
 , <a class="el" href="structstd_1_1hash_3_01rotor_1_1handler__ptr__t_01_4.html#aa8e321f8430b59c194fa898a01425149">std::hash&lt; rotor::handler_ptr_t &gt;</a>
 </li>

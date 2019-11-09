@@ -99,7 +99,9 @@ $(document).ready(function(){initNavTree('structrotor_1_1supervisor__behavior__t
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structrotor_1_1supervisor__behavior__t-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">rotor::supervisor_behavior_t Struct Reference</div>  </div>
@@ -120,6 +122,13 @@ Inheritance diagram for rotor::supervisor_behavior_t:</div>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a4da54e5cdc83d81714b5868bd3f9521f"><td class="memItemLeft" align="right" valign="top"><a id="a4da54e5cdc83d81714b5868bd3f9521f"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__behavior__t.html#a4da54e5cdc83d81714b5868bd3f9521f">initializing_actors_t</a> = std::unordered_set&lt; <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a> &gt;</td></tr>
+<tr class="memdesc:a4da54e5cdc83d81714b5868bd3f9521f"><td class="mdescLeft">&#160;</td><td class="mdescRight">type for keeping list of initializing actors (during supervisor inititalization) <br /></td></tr>
+<tr class="separator:a4da54e5cdc83d81714b5868bd3f9521f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a00e2a4949aeeff2e670f69bf027ede3d"><td class="memItemLeft" align="right" valign="top"><a id="a00e2a4949aeeff2e670f69bf027ede3d"></a>
@@ -141,10 +150,16 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__behavior__t.html#ad34526c039b0e75d84782f8c661a2a98">on_shutdown_fail</a> (const <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a> &amp;address, const std::error_code &amp;ec) noexcept</td></tr>
 <tr class="memdesc:ad34526c039b0e75d84782f8c661a2a98"><td class="mdescLeft">&#160;</td><td class="mdescRight">reaction on child shutdown failure. By default it is treated as fatal and forwared to the system context <br /></td></tr>
 <tr class="separator:ad34526c039b0e75d84782f8c661a2a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a586c7a025083a9df135ed9399e61a84f"><td class="memItemLeft" align="right" valign="top"><a id="a586c7a025083a9df135ed9399e61a84f"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__behavior__t.html#a586c7a025083a9df135ed9399e61a84f">on_init_fail</a> (const <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a> &amp;address, const std::error_code &amp;ec) noexcept</td></tr>
-<tr class="memdesc:a586c7a025083a9df135ed9399e61a84f"><td class="mdescLeft">&#160;</td><td class="mdescRight">reaction on child initialization failure. By default the child is asked for shut down <br /></td></tr>
-<tr class="separator:a586c7a025083a9df135ed9399e61a84f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f275eb00cb6e7dc068dffe734a51009"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__behavior__t.html#a5f275eb00cb6e7dc068dffe734a51009">on_start_init</a> () noexcept override</td></tr>
+<tr class="memdesc:a5f275eb00cb6e7dc068dffe734a51009"><td class="mdescLeft">&#160;</td><td class="mdescRight">event, which triggers initialization actions sequence  <a href="structrotor_1_1supervisor__behavior__t.html#a5f275eb00cb6e7dc068dffe734a51009">More...</a><br /></td></tr>
+<tr class="separator:a5f275eb00cb6e7dc068dffe734a51009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fc0065a84b5f87104bef03d1dced2db"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__behavior__t.html#a8fc0065a84b5f87104bef03d1dced2db">on_init</a> (const <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a> &amp;address, const std::error_code &amp;ec) noexcept</td></tr>
+<tr class="memdesc:a8fc0065a84b5f87104bef03d1dced2db"><td class="mdescLeft">&#160;</td><td class="mdescRight">supervisor behaviour on child-actor initialization result  <a href="structrotor_1_1supervisor__behavior__t.html#a8fc0065a84b5f87104bef03d1dced2db">More...</a><br /></td></tr>
+<tr class="separator:a8fc0065a84b5f87104bef03d1dced2db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89c11dfa171e7d6ca2a05f4b094602eb"><td class="memItemLeft" align="right" valign="top"><a id="a89c11dfa171e7d6ca2a05f4b094602eb"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__behavior__t.html#a89c11dfa171e7d6ca2a05f4b094602eb">on_create_child</a> (const <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a> &amp;address) noexcept</td></tr>
+<tr class="memdesc:a89c11dfa171e7d6ca2a05f4b094602eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">records child-actor address if it was created during supervsisor initialization <br /></td></tr>
+<tr class="separator:a89c11dfa171e7d6ca2a05f4b094602eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structrotor_1_1actor__behavior__t"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structrotor_1_1actor__behavior__t')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structrotor_1_1actor__behavior__t.html">rotor::actor_behavior_t</a></td></tr>
 <tr class="memitem:a71a3fc0245dc36b7a69075bb24582c30 inherit pub_methods_structrotor_1_1actor__behavior__t"><td class="memItemLeft" align="right" valign="top"><a id="a71a3fc0245dc36b7a69075bb24582c30"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__behavior__t.html#a71a3fc0245dc36b7a69075bb24582c30">actor_behavior_t</a> (<a class="el" href="structrotor_1_1actor__base__t.html">actor_base_t</a> &amp;actor_)</td></tr>
@@ -175,13 +190,17 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__behavior__t.html#af27437b9f26853ba481e43946b1d2778">action_finish_shutdown</a> () noexcept</td></tr>
 <tr class="memdesc:af27437b9f26853ba481e43946b1d2778 inherit pub_methods_structrotor_1_1actor__behavior__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">invokes <code>shutdown_finish</code> actor's method <br /></td></tr>
 <tr class="separator:af27437b9f26853ba481e43946b1d2778 inherit pub_methods_structrotor_1_1actor__behavior__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a522bb30f1fb902502c17af2d5756981f inherit pub_methods_structrotor_1_1actor__behavior__t"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__behavior__t.html#a522bb30f1fb902502c17af2d5756981f">on_start_init</a> () noexcept</td></tr>
-<tr class="memdesc:a522bb30f1fb902502c17af2d5756981f inherit pub_methods_structrotor_1_1actor__behavior__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">event, which triggers initialization actions sequence  <a href="structrotor_1_1actor__behavior__t.html#a522bb30f1fb902502c17af2d5756981f">More...</a><br /></td></tr>
-<tr class="separator:a522bb30f1fb902502c17af2d5756981f inherit pub_methods_structrotor_1_1actor__behavior__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ca06ff69b47a4dfefbbcff26ca8c265 inherit pub_methods_structrotor_1_1actor__behavior__t"><td class="memItemLeft" align="right" valign="top"><a id="a6ca06ff69b47a4dfefbbcff26ca8c265"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__behavior__t.html#a6ca06ff69b47a4dfefbbcff26ca8c265">on_unsubscription</a> () noexcept</td></tr>
 <tr class="memdesc:a6ca06ff69b47a4dfefbbcff26ca8c265 inherit pub_methods_structrotor_1_1actor__behavior__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">event, which continues shutdown <br /></td></tr>
 <tr class="separator:a6ca06ff69b47a4dfefbbcff26ca8c265 inherit pub_methods_structrotor_1_1actor__behavior__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ac45f4e15449d91f888a7c77850ebbc88"><td class="memItemLeft" align="right" valign="top"><a id="ac45f4e15449d91f888a7c77850ebbc88"></a>
+<a class="el" href="structrotor_1_1supervisor__behavior__t.html#a4da54e5cdc83d81714b5868bd3f9521f">initializing_actors_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__behavior__t.html#ac45f4e15449d91f888a7c77850ebbc88">initializing_actors</a></td></tr>
+<tr class="memdesc:ac45f4e15449d91f888a7c77850ebbc88"><td class="mdescLeft">&#160;</td><td class="mdescRight">list of initializing actors (during supervisor inititalization) <br /></td></tr>
+<tr class="separator:ac45f4e15449d91f888a7c77850ebbc88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -198,6 +217,82 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>supervisor specifict events and default actions </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8fc0065a84b5f87104bef03d1dced2db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fc0065a84b5f87104bef03d1dced2db">&#9670;&nbsp;</a></span>on_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void rotor::supervisor_behavior_t::on_init </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacerotor.html#a325c7c5ee08ba0391303efca0024179b">address_ptr_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::error_code &amp;&#160;</td>
+          <td class="paramname"><em>ec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>supervisor behaviour on child-actor initialization result </p>
+<ul>
+<li>if child-initialization failed and a supervisor is in INITIALIZING phase, then the reaction defined by <code>supervisor_policy</code>, i.e. either shutdown self (and all children) or just failing child;</li>
+<li>if child successfully initialized, then send start message to it;</li>
+<li>if there are no more initializing children, then finalize actor initialization </li>
+</ul>
+
+</div>
+</div>
+<a id="a5f275eb00cb6e7dc068dffe734a51009"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f275eb00cb6e7dc068dffe734a51009">&#9670;&nbsp;</a></span>on_start_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void rotor::supervisor_behavior_t::on_start_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>event, which triggers initialization actions sequence </p>
+<ul>
+<li><a class="el" href="structrotor_1_1actor__behavior__t.html#abead3ebd206e976b186067dc0a4ea42c" title="sends init-confirmation message (it it was asked) and calls action_finish_init">action_confirm_init()</a></li>
+<li><a class="el" href="structrotor_1_1actor__behavior__t.html#a30adc21b118739d7a92c0af86a5b623a" title="invokes init_finish actor&#39;s method">action_finish_init()</a> </li>
+</ul>
+
+<p>Reimplemented from <a class="el" href="structrotor_1_1actor__behavior__t.html#a522bb30f1fb902502c17af2d5756981f">rotor::actor_behavior_t</a>.</p>
+
+</div>
+</div>
 <a id="af2498b5be851690ffa06d63647a939a2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af2498b5be851690ffa06d63647a939a2">&#9670;&nbsp;</a></span>on_start_shutdown()</h2>
 

@@ -119,37 +119,39 @@ $(document).ready(function(){initNavTree('error__code_8h_source.html','');});
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    success = 0,</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    request_timeout,</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    supervisor_defined,</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;};</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span>details {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    already_registered,</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    unknown_service,</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classrotor_1_1details_1_1error__code__category.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="classrotor_1_1details_1_1error__code__category.html">error_code_category</a> : <span class="keyword">public</span> std::error_category {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *name() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">virtual</span> std::string message(<span class="keywordtype">int</span> c) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;} <span class="comment">// namespace details</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span>details {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classrotor_1_1details_1_1error__code__category.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="classrotor_1_1details_1_1error__code__category.html">error_code_category</a> : <span class="keyword">public</span> std::error_category {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span> *name() <span class="keyword">const</span> noexcept <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">virtual</span> std::string message(<span class="keywordtype">int</span> c) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">const</span> <a class="code" href="classrotor_1_1details_1_1error__code__category.html">details::error_code_category</a> &amp;<a class="code" href="namespacerotor.html#a77487c69ae8241d7a1cf595761fb374b">error_code_category</a>();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="namespacerotor.html#a19351d6ef5d9f14c2a558df319ddbf76">   35</a></span>&#160;<span class="keyword">inline</span> std::error_code <a class="code" href="namespacerotor.html#a19351d6ef5d9f14c2a558df319ddbf76">make_error_code</a>(<a class="code" href="namespacerotor.html#aff42402c4871af3b3ae26820e45abd81">error_code_t</a> e) { <span class="keywordflow">return</span> {static_cast&lt;int&gt;(e), <a class="code" href="namespacerotor.html#a77487c69ae8241d7a1cf595761fb374b">error_code_category</a>()}; }</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;} <span class="comment">// namespace rotor</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;} <span class="comment">// namespace details</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">const</span> <a class="code" href="classrotor_1_1details_1_1error__code__category.html">details::error_code_category</a> &amp;<a class="code" href="namespacerotor.html#a77487c69ae8241d7a1cf595761fb374b">error_code_category</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="namespacerotor.html#a19351d6ef5d9f14c2a558df319ddbf76">   37</a></span>&#160;<span class="keyword">inline</span> std::error_code <a class="code" href="namespacerotor.html#a19351d6ef5d9f14c2a558df319ddbf76">make_error_code</a>(<a class="code" href="namespacerotor.html#aff42402c4871af3b3ae26820e45abd81">error_code_t</a> e) { <span class="keywordflow">return</span> {static_cast&lt;int&gt;(e), <a class="code" href="namespacerotor.html#a77487c69ae8241d7a1cf595761fb374b">error_code_category</a>()}; }</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">namespace </span>std {</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="structstd_1_1is__error__code__enum_3_01rotor_1_1error__code__t_01_4.html">   40</a></span>&#160;<span class="keyword">template</span> &lt;&gt; <span class="keyword">struct </span>is_error_code_enum&lt;<a class="code" href="namespacerotor.html">rotor</a>::error_code_t&gt; : std::true_type {};</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;} <span class="comment">// namespace std</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;} <span class="comment">// namespace rotor</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">namespace </span>std {</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="structstd_1_1is__error__code__enum_3_01rotor_1_1error__code__t_01_4.html">   42</a></span>&#160;<span class="keyword">template</span> &lt;&gt; <span class="keyword">struct </span>is_error_code_enum&lt;<a class="code" href="namespacerotor.html">rotor</a>::error_code_t&gt; : std::true_type {};</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;} <span class="comment">// namespace std</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="anamespacerotor_html_aff42402c4871af3b3ae26820e45abd81"><div class="ttname"><a href="namespacerotor.html#aff42402c4871af3b3ae26820e45abd81">rotor::error_code_t</a></div><div class="ttdeci">error_code_t</div><div class="ttdoc">fatal error codes in rotor</div><div class="ttdef"><b>Definition:</b> error_code.h:15</div></div>
-<div class="ttc" id="anamespacerotor_html_a19351d6ef5d9f14c2a558df319ddbf76"><div class="ttname"><a href="namespacerotor.html#a19351d6ef5d9f14c2a558df319ddbf76">rotor::make_error_code</a></div><div class="ttdeci">std::error_code make_error_code(error_code_t e)</div><div class="ttdoc">makes std::error_code from rotor error_code enumerations</div><div class="ttdef"><b>Definition:</b> error_code.h:35</div></div>
+<div class="ttc" id="anamespacerotor_html_a19351d6ef5d9f14c2a558df319ddbf76"><div class="ttname"><a href="namespacerotor.html#a19351d6ef5d9f14c2a558df319ddbf76">rotor::make_error_code</a></div><div class="ttdeci">std::error_code make_error_code(error_code_t e)</div><div class="ttdoc">makes std::error_code from rotor error_code enumerations</div><div class="ttdef"><b>Definition:</b> error_code.h:37</div></div>
 <div class="ttc" id="anamespacerotor_html_a77487c69ae8241d7a1cf595761fb374b"><div class="ttname"><a href="namespacerotor.html#a77487c69ae8241d7a1cf595761fb374b">rotor::error_code_category</a></div><div class="ttdeci">const details::error_code_category &amp; error_code_category()</div><div class="ttdoc">returns error code category for rotor error codes</div></div>
 <div class="ttc" id="anamespacerotor_html"><div class="ttname"><a href="namespacerotor.html">rotor</a></div><div class="ttdoc">Basic namespace for all rotor functionalities.</div><div class="ttdef"><b>Definition:</b> actor_base.h:17</div></div>
-<div class="ttc" id="aclassrotor_1_1details_1_1error__code__category_html"><div class="ttname"><a href="classrotor_1_1details_1_1error__code__category.html">rotor::details::error_code_category</a></div><div class="ttdoc">category support for rotor error codes</div><div class="ttdef"><b>Definition:</b> error_code.h:24</div></div>
+<div class="ttc" id="aclassrotor_1_1details_1_1error__code__category_html"><div class="ttname"><a href="classrotor_1_1details_1_1error__code__category.html">rotor::details::error_code_category</a></div><div class="ttdoc">category support for rotor error codes</div><div class="ttdef"><b>Definition:</b> error_code.h:26</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_f84cb5385f23ae4672988db3dd915a94.html">cpp-rotor</a></li><li class="navelem"><a class="el" href="dir_4254747c37593e764a92583071a92477.html">include</a></li><li class="navelem"><a class="el" href="dir_1fd8c935c5645f78623f32f581454809.html">rotor</a></li><li class="navelem"><b>error_code.h</b></li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_da0296186b2d7ca79d094f0811fc0b6f.html">rotor</a></li><li class="navelem"><b>error_code.h</b></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

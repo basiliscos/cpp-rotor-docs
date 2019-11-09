@@ -1,6 +1,7 @@
 var structrotor_1_1supervisor__t =
 [
-    [ "actors_map_t", "structrotor_1_1supervisor__t.html#a8efd907414aee91e21a120dbd51a01c2", null ],
+    [ "actor_state_t", "structrotor_1_1supervisor__t_1_1actor__state__t.html", "structrotor_1_1supervisor__t_1_1actor__state__t" ],
+    [ "actors_map_t", "structrotor_1_1supervisor__t.html#af6d15319beaef863f68ebb54120c00de", null ],
     [ "queue_t", "structrotor_1_1supervisor__t.html#afd19400d871b752e37f1738d91a122b0", null ],
     [ "request_map_t", "structrotor_1_1supervisor__t.html#a746ec5096bcc71f896bd5a075de97573", null ],
     [ "subscription_map_t", "structrotor_1_1supervisor__t.html#a0cc645f51f01a927af3423537716408d", null ],
@@ -49,6 +50,7 @@ var structrotor_1_1supervisor__t =
     [ "last_req_id", "structrotor_1_1supervisor__t.html#aeb6f8ff2ae9bc1cdc2d79ea5d529658d", null ],
     [ "locality_leader", "structrotor_1_1supervisor__t.html#af11dbbafb9e9e07f84eb09eeb58c8110", null ],
     [ "parent", "structrotor_1_1supervisor__t.html#af56eb18780cb942780f0d639f94a4bc7", null ],
+    [ "policy", "structrotor_1_1supervisor__t.html#a46c6e4b6da556f46e88300d8826d44a7", null ],
     [ "queue", "structrotor_1_1supervisor__t.html#a11741368f8304128288226104dce8966", null ],
     [ "request_map", "structrotor_1_1supervisor__t.html#adfb66ca5b2a1c32e39d392ba51d7fbdd", null ],
     [ "shutdown_timeout", "structrotor_1_1supervisor__t.html#ad46a02689e2195525f3cfd299ab04107", null ],

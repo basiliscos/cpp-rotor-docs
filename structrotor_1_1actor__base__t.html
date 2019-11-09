@@ -121,6 +121,7 @@ Inheritance diagram for rotor::actor_base_t:</div>
  <div class="center">
   <img src="structrotor_1_1actor__base__t.png" usemap="#rotor::actor_5Fbase_5Ft_map" alt=""/>
   <map id="rotor::actor_5Fbase_5Ft_map" name="rotor::actor_5Fbase_5Ft_map">
+<area href="structrotor_1_1registry__t.html" title="keeps name-to-service_address mapping at runtime" alt="rotor::registry_t" shape="rect" coords="0,112,174,136"/>
 <area href="structrotor_1_1supervisor__t.html" title="supervisor is responsible for managing actors (workers) lifetime" alt="rotor::supervisor_t" shape="rect" coords="184,112,358,136"/>
 <area href="structrotor_1_1asio_1_1supervisor__asio__t.html" title="delivers rotor-messages on top of boost asio event loop using strand for serialization" alt="rotor::asio::supervisor_asio_t" shape="rect" coords="0,168,174,192"/>
 <area href="structrotor_1_1ev_1_1supervisor__ev__t.html" title="delivers rotor-messages on top of libev event loop" alt="rotor::ev::supervisor_ev_t" shape="rect" coords="184,168,358,192"/>
@@ -410,6 +411,8 @@ template&lt;typename T &gt; </td></tr>
 <p>starts initialization </p>
 <p>Some resources might be acquired synchronously, if needed. If resources need to be acquired asynchronously this method should be overriden, and invoked only after resources acquisition.</p>
 <p>In internals it forwards initialization sequence to the behavior. </p>
+
+<p>Reimplemented in <a class="el" href="structrotor_1_1registry__t.html#a92f4800a47a3f239f7b09f32090792d8">rotor::registry_t</a>.</p>
 
 </div>
 </div>

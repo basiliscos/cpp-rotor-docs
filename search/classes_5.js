@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['initialize_5factor_5ft_313',['initialize_actor_t',['../structrotor_1_1payload_1_1initialize__actor__t.html',1,'rotor::payload']]],
-  ['initialize_5fconfirmation_5ft_314',['initialize_confirmation_t',['../structrotor_1_1payload_1_1initialize__confirmation__t.html',1,'rotor::payload']]],
-  ['is_5fbraces_5fconstructible_315',['is_braces_constructible',['../structrotor_1_1details_1_1is__braces__constructible.html',1,'rotor::details']]],
-  ['is_5fconstructible_316',['is_constructible',['../structrotor_1_1details_1_1is__constructible.html',1,'rotor::details']]],
-  ['is_5fconstructible_3c_20t_2c_20arg_20_3e_317',['is_constructible&lt; T, Arg &gt;',['../structrotor_1_1details_1_1is__constructible_3_01T_00_01Arg_01_4.html',1,'rotor::details']]],
-  ['is_5fconstructible_3c_20t_2c_20void_20_3e_318',['is_constructible&lt; T, void &gt;',['../structrotor_1_1details_1_1is__constructible_3_01T_00_01void_01_4.html',1,'rotor::details']]],
-  ['is_5fconstructible_3c_20t_2c_20void_2c_20arg_20_3e_319',['is_constructible&lt; T, void, Arg &gt;',['../structrotor_1_1details_1_1is__constructible_3_01T_00_01void_00_01Arg_01_4.html',1,'rotor::details']]],
-  ['is_5fconstructible_3c_20t_2c_20void_2c_20args_2e_2e_2e_20_3e_320',['is_constructible&lt; T, void, Args... &gt;',['../structrotor_1_1details_1_1is__constructible_3_01T_00_01void_00_01Args_8_8_8_01_4.html',1,'rotor::details']]],
-  ['is_5ferror_5fcode_5fenum_3c_20rotor_3a_3aerror_5fcode_5ft_20_3e_321',['is_error_code_enum&lt; rotor::error_code_t &gt;',['../structstd_1_1is__error__code__enum_3_01rotor_1_1error__code__t_01_4.html',1,'std']]]
+  ['handler_5fbase_5ft_336',['handler_base_t',['../structrotor_1_1handler__base__t.html',1,'rotor']]],
+  ['handler_5fcall_5ft_337',['handler_call_t',['../structrotor_1_1payload_1_1handler__call__t.html',1,'rotor::payload']]],
+  ['handler_5ft_338',['handler_t',['../structrotor_1_1handler__t.html',1,'rotor']]],
+  ['handler_5ft_3c_20handler_2c_20std_3a_3aenable_5fif_5ft_3c_20std_3a_3ais_5fbase_5fof_5fv_3c_20message_5fbase_5ft_2c_20typename_20handler_5ftraits_3c_20handler_20_3e_3a_3amessage_5ft_20_3e_20_3e_20_3e_339',['handler_t&lt; Handler, std::enable_if_t&lt; std::is_base_of_v&lt; message_base_t, typename handler_traits&lt; Handler &gt;::message_t &gt; &gt; &gt;',['../structrotor_1_1handler__t_3_01Handler_00_01std_1_1enable__if__t_3_01std_1_1is__base__of__v_3_01m9a03087ae29643a01c1b01e690f3d639.html',1,'rotor']]],
+  ['handler_5ft_3c_20lambda_5fholder_5ft_3c_20handler_2c_20m_20_3e_20_3e_340',['handler_t&lt; lambda_holder_t&lt; Handler, M &gt; &gt;',['../structrotor_1_1handler__t_3_01lambda__holder__t_3_01Handler_00_01M_01_4_01_4.html',1,'rotor']]],
+  ['handler_5ftraits_341',['handler_traits',['../structrotor_1_1handler__traits.html',1,'rotor']]],
+  ['handler_5ftraits_3c_20void_28a_3a_3a_2a_29_28m_20_26_29_20noexcept_20_3e_342',['handler_traits&lt; void(A::*)(M &amp;) noexcept &gt;',['../structrotor_1_1handler__traits_3_01void_07A_1_1_5_08_07M_01_6_08_01noexcept_01_4.html',1,'rotor']]],
+  ['hash_3c_20rotor_3a_3aaddress_5fptr_5ft_20_3e_343',['hash&lt; rotor::address_ptr_t &gt;',['../structstd_1_1hash_3_01rotor_1_1address__ptr__t_01_4.html',1,'std']]],
+  ['hash_3c_20rotor_3a_3ahandler_5fptr_5ft_20_3e_344',['hash&lt; rotor::handler_ptr_t &gt;',['../structstd_1_1hash_3_01rotor_1_1handler__ptr__t_01_4.html',1,'std']]]
 ];

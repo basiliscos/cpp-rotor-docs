@@ -111,25 +111,31 @@ $(document).ready(function(){initNavTree('supervisor__config_8h_source.html','')
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;boost/date_time/posix_time/posix_time.hpp&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacerotor.html">rotor</a> {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>pt = boost::posix_time;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structrotor_1_1supervisor__config__t.html">   18</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structrotor_1_1supervisor__config__t.html">supervisor_config_t</a> {</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structrotor_1_1supervisor__config__t.html#adfaeb8458a04251bf68657a0fbcbfb3f">   20</a></span>&#160;    pt::time_duration <a class="code" href="structrotor_1_1supervisor__config__t.html#adfaeb8458a04251bf68657a0fbcbfb3f">shutdown_timeout</a>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;policy.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacerotor.html">rotor</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>pt = boost::posix_time;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="structrotor_1_1supervisor__config__t.html">   19</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structrotor_1_1supervisor__config__t.html">supervisor_config_t</a> {</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="structrotor_1_1supervisor__config__t.html#adfaeb8458a04251bf68657a0fbcbfb3f">   21</a></span>&#160;    pt::time_duration <a class="code" href="structrotor_1_1supervisor__config__t.html#adfaeb8458a04251bf68657a0fbcbfb3f">shutdown_timeout</a>;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;} <span class="comment">// namespace rotor</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="structrotor_1_1supervisor__config__t.html#af3a9d4d7ceeac02970faab264164c9f5">   24</a></span>&#160;    <a class="code" href="namespacerotor.html#affb671357df7b4bed56139bff68610a0">supervisor_policy_t</a> <a class="code" href="structrotor_1_1supervisor__config__t.html#af3a9d4d7ceeac02970faab264164c9f5">policy</a> = <a class="code" href="namespacerotor.html#affb671357df7b4bed56139bff68610a0a62626c29d3f3a4b98c429532390d37c6">supervisor_policy_t::shutdown_self</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;} <span class="comment">// namespace rotor</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astructrotor_1_1supervisor__config__t_html"><div class="ttname"><a href="structrotor_1_1supervisor__config__t.html">rotor::supervisor_config_t</a></div><div class="ttdoc">base supervisor config, which holds shutdowm timeout value</div><div class="ttdef"><b>Definition:</b> supervisor_config.h:18</div></div>
-<div class="ttc" id="astructrotor_1_1supervisor__config__t_html_adfaeb8458a04251bf68657a0fbcbfb3f"><div class="ttname"><a href="structrotor_1_1supervisor__config__t.html#adfaeb8458a04251bf68657a0fbcbfb3f">rotor::supervisor_config_t::shutdown_timeout</a></div><div class="ttdeci">pt::time_duration shutdown_timeout</div><div class="ttdoc">how much time is allowed to spend in shutdown for children actor</div><div class="ttdef"><b>Definition:</b> supervisor_config.h:20</div></div>
+<div class="ttc" id="anamespacerotor_html_affb671357df7b4bed56139bff68610a0"><div class="ttname"><a href="namespacerotor.html#affb671357df7b4bed56139bff68610a0">rotor::supervisor_policy_t</a></div><div class="ttdeci">supervisor_policy_t</div><div class="ttdoc">how to behave on child actor initialization failures</div><div class="ttdef"><b>Definition:</b> policy.h:12</div></div>
+<div class="ttc" id="anamespacerotor_html_affb671357df7b4bed56139bff68610a0a62626c29d3f3a4b98c429532390d37c6"><div class="ttname"><a href="namespacerotor.html#affb671357df7b4bed56139bff68610a0a62626c29d3f3a4b98c429532390d37c6">rotor::supervisor_policy_t::shutdown_self</a></div><div class="ttdoc">shutdown supervisor (and all its actors) if a child-actor fails during supervisor initialization phas...</div></div>
+<div class="ttc" id="astructrotor_1_1supervisor__config__t_html_af3a9d4d7ceeac02970faab264164c9f5"><div class="ttname"><a href="structrotor_1_1supervisor__config__t.html#af3a9d4d7ceeac02970faab264164c9f5">rotor::supervisor_config_t::policy</a></div><div class="ttdeci">supervisor_policy_t policy</div><div class="ttdoc">how to behave if child-actor fails</div><div class="ttdef"><b>Definition:</b> supervisor_config.h:24</div></div>
+<div class="ttc" id="astructrotor_1_1supervisor__config__t_html"><div class="ttname"><a href="structrotor_1_1supervisor__config__t.html">rotor::supervisor_config_t</a></div><div class="ttdoc">base supervisor config, which holds shutdowm timeout value</div><div class="ttdef"><b>Definition:</b> supervisor_config.h:19</div></div>
+<div class="ttc" id="astructrotor_1_1supervisor__config__t_html_adfaeb8458a04251bf68657a0fbcbfb3f"><div class="ttname"><a href="structrotor_1_1supervisor__config__t.html#adfaeb8458a04251bf68657a0fbcbfb3f">rotor::supervisor_config_t::shutdown_timeout</a></div><div class="ttdeci">pt::time_duration shutdown_timeout</div><div class="ttdoc">how much time is allowed to spend in shutdown for children actor</div><div class="ttdef"><b>Definition:</b> supervisor_config.h:21</div></div>
 <div class="ttc" id="anamespacerotor_html"><div class="ttname"><a href="namespacerotor.html">rotor</a></div><div class="ttdoc">Basic namespace for all rotor functionalities.</div><div class="ttdef"><b>Definition:</b> actor_base.h:17</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_f84cb5385f23ae4672988db3dd915a94.html">cpp-rotor</a></li><li class="navelem"><a class="el" href="dir_4254747c37593e764a92583071a92477.html">include</a></li><li class="navelem"><a class="el" href="dir_1fd8c935c5645f78623f32f581454809.html">rotor</a></li><li class="navelem"><b>supervisor_config.h</b></li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_da0296186b2d7ca79d094f0811fc0b6f.html">rotor</a></li><li class="navelem"><b>supervisor_config.h</b></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>

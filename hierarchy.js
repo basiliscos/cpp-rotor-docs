@@ -6,9 +6,11 @@ var hierarchy =
     [ "rotor::details::actor_ctor_t< Actor, Supervisor, IsSupervisor >", "structrotor_1_1details_1_1actor__ctor__t.html", null ],
     [ "rotor::details::actor_ctor_t< Actor, Supervisor, std::enable_if_t< std::is_base_of_v< supervisor_t, Actor > > >", "structrotor_1_1details_1_1actor__ctor__t_3_01Actor_00_01Supervisor_00_01std_1_1enable__if__t_3_04843d29ffdcc1f5c3dad2affc584dbfb.html", null ],
     [ "rotor::details::actor_ctor_t< Actor, Supervisor, std::enable_if_t<!std::is_base_of_v< supervisor_t, Actor > > >", "structrotor_1_1details_1_1actor__ctor__t_3_01Actor_00_01Supervisor_00_01std_1_1enable__if__t_3_916e055d1a80e68efba58382dc76fbd95.html", null ],
+    [ "rotor::supervisor_t::actor_state_t", "structrotor_1_1supervisor__t_1_1actor__state__t.html", null ],
     [ "rotor::address_mapping_t", "structrotor_1_1address__mapping__t.html", null ],
     [ "arc_base_t", null, [
       [ "rotor::actor_base_t", "structrotor_1_1actor__base__t.html", [
+        [ "rotor::registry_t", "structrotor_1_1registry__t.html", null ],
         [ "rotor::supervisor_t", "structrotor_1_1supervisor__t.html", [
           [ "rotor::asio::supervisor_asio_t", "structrotor_1_1asio_1_1supervisor__asio__t.html", null ],
           [ "rotor::ev::supervisor_ev_t", "structrotor_1_1ev_1_1supervisor__ev__t.html", null ],
@@ -38,6 +40,10 @@ var hierarchy =
     [ "decltypetest", null, [
       [ "rotor::details::is_braces_constructible< T, Args >", "structrotor_1_1details_1_1is__braces__constructible.html", null ]
     ] ],
+    [ "rotor::payload::deregistration_notify_t", "structrotor_1_1payload_1_1deregistration__notify__t.html", null ],
+    [ "rotor::payload::deregistration_service_t", "structrotor_1_1payload_1_1deregistration__service__t.html", null ],
+    [ "rotor::payload::discovery_reply_t", "structrotor_1_1payload_1_1discovery__reply__t.html", null ],
+    [ "rotor::payload::discovery_request_t", "structrotor_1_1payload_1_1discovery__request__t.html", null ],
     [ "error_category", null, [
       [ "rotor::details::error_code_category", "classrotor_1_1details_1_1error__code__category.html", null ]
     ] ],
@@ -56,10 +62,10 @@ var hierarchy =
     [ "std::hash< rotor::handler_ptr_t >", "structstd_1_1hash_3_01rotor_1_1handler__ptr__t_01_4.html", null ],
     [ "rotor::payload::initialize_actor_t", "structrotor_1_1payload_1_1initialize__actor__t.html", null ],
     [ "rotor::payload::initialize_confirmation_t", "structrotor_1_1payload_1_1initialize__confirmation__t.html", null ],
+    [ "rotor::details::is_constructible< T, E, Args >", "structrotor_1_1details_1_1is__constructible.html", null ],
     [ "is_constructible", null, [
       [ "rotor::details::size_of_t< T, Ts... >", "structrotor_1_1details_1_1size__of__t_3_01T_00_01Ts_8_8_8_01_4.html", null ]
     ] ],
-    [ "rotor::details::is_constructible< T, E, Args >", "structrotor_1_1details_1_1is__constructible.html", null ],
     [ "rotor::details::is_constructible< T, Arg >", "structrotor_1_1details_1_1is__constructible_3_01T_00_01Arg_01_4.html", null ],
     [ "rotor::details::is_constructible< T, void >", "structrotor_1_1details_1_1is__constructible_3_01T_00_01void_01_4.html", null ],
     [ "rotor::details::is_constructible< T, void, Arg >", "structrotor_1_1details_1_1is__constructible_3_01T_00_01void_00_01Arg_01_4.html", null ],
@@ -69,6 +75,8 @@ var hierarchy =
     ] ],
     [ "rotor::lambda_holder_t< M, F >", "structrotor_1_1lambda__holder__t.html", null ],
     [ "rotor::lambda_holder_t< Handler, M >", "structrotor_1_1lambda__holder__t.html", null ],
+    [ "rotor::payload::registration_request_t", "structrotor_1_1payload_1_1registration__request__t.html", null ],
+    [ "rotor::payload::registration_response_t", "structrotor_1_1payload_1_1registration__response__t.html", null ],
     [ "rotor::request_traits_t< R >::request", "structrotor_1_1request__traits__t_1_1request.html", null ],
     [ "rotor::request_base_t", "structrotor_1_1request__base__t.html", [
       [ "rotor::wrapped_request_t< T, typename >", "structrotor_1_1wrapped__request__t.html", null ],

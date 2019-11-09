@@ -131,7 +131,10 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp-rotor_d
 <p>After starting shutdown procedure actor unsubscribes itself from all associated addresses, so most likely it will be not able to receive any other (user-defined) messages.</p>
 <p>As with init, the shutdown message is a <b>request</b>, i.e. it is timeout-supervised; the default supervisor behavior will delegate the error to <code>system_context</code>, which by default will abort the application. If the reaction should be tuned, the custom supervisor behavior should be plugged.</p>
 <p>After unsubscription from all addresses, the behavior sends shutdown-confirmation, sets the actors status to <code>SHUTTED_DOWN</code> and then <code>shutdown_finish()</code> is called.</p>
-<p>In the <code>shutdown_finish()</code> is the final method called by <code>rotor</code>. For example, external addresses should be released to avoid memory leaks. </p>
+<p>In the <code>shutdown_finish()</code> is the final method called by <code>rotor</code>. For example, external addresses should be released to avoid memory leaks.</p>
+<h1>Supervisor lifecycle</h1>
+<p>Generally supervisor's lifecycle is specialization of actors lifecycle. Supervisor is considered initialized when all it's children actors are initialized, i.e. it waits until all already created children confirm their initialization. The default policy (<code>supervisor_policy_t::shutdown_self</code>) specifies, that if something is wrong with a child initialization, then the supervisor will shutdown self (and all it's children). Once all children confirmed initialization their supervisor also confirms that (i.e. moves it's state from <code>INITIALIZING</code> to <code>INITIALIZED</code>). All children actors created in <code>OPERATIONAL</code> supervisor state are outside of the described behavior.</p>
+<p>The shutdown procedure is opposite: a supervisor waits all it's children confirm shutdown, and only then the supervisor shuts down self. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
