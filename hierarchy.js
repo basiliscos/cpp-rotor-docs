@@ -55,7 +55,7 @@ var hierarchy =
     [ "rotor::asio::forwarder_t< Actor, Handler, ErrHandler >", "structrotor_1_1asio_1_1forwarder__t.html", null ],
     [ "rotor::asio::forwarder_t< Actor, Handler, void >", "structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01void_01_4.html", null ],
     [ "rotor::payload::handler_call_t", "structrotor_1_1payload_1_1handler__call__t.html", null ],
-    [ "rotor::handler_t< Handler, Enable >", "structrotor_1_1handler__t.html", null ],
+    [ "rotor::handler_t", "structrotor_1_1handler__t.html", null ],
     [ "rotor::handler_traits< T >", "structrotor_1_1handler__traits.html", null ],
     [ "rotor::handler_traits< void(A::*)(M &) noexcept >", "structrotor_1_1handler__traits_3_01void_07A_1_1_5_08_07M_01_6_08_01noexcept_01_4.html", null ],
     [ "std::hash< rotor::address_ptr_t >", "structstd_1_1hash_3_01rotor_1_1address__ptr__t_01_4.html", null ],
