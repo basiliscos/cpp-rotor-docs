@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['forwarder_5ft_437',['forwarder_t',['../structrotor_1_1asio_1_1forwarder__t.html#a99f6cb9cac61dd2e3cb18e4ff548cdb4',1,'rotor::asio::forwarder_t::forwarder_t()'],['../structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01void_01_4.html#a5c317b9b4664782f8d0586149933258e',1,'rotor::asio::forwarder_t&lt; Actor, Handler, void &gt;::forwarder_t()'],['../namespacerotor_1_1asio.html#a60a6e1a9f846e079e8df35f27664a7c1',1,'rotor::asio::forwarder_t()']]]
+  ['forwarder_5fbase_5ft_455',['forwarder_base_t',['../structrotor_1_1asio_1_1forwarder__base__t_3_01Actor_00_01Handler_00_01void_01_4.html#aa98f72c928be6c33692dc9d3cc6193df',1,'rotor::asio::forwarder_base_t&lt; Actor, Handler, void &gt;::forwarder_base_t()'],['../structrotor_1_1asio_1_1forwarder__base__t.html#ad1a9a145c400d9058dd38a20968b1884',1,'rotor::asio::forwarder_base_t::forwarder_base_t()']]],
+  ['forwarder_5ft_456',['forwarder_t',['../namespacerotor_1_1asio.html#a3ef5773ffcfe448b26b350c554c65afc',1,'rotor::asio']]]
 ];

@@ -5,7 +5,7 @@ var structrotor_1_1asio_1_1supervisor__asio__t =
     [ "timers_map_t", "structrotor_1_1asio_1_1supervisor__asio__t.html#aeb2d32dda0c098e096a95c285e05e1c0", null ],
     [ "supervisor_asio_t", "structrotor_1_1asio_1_1supervisor__asio__t.html#a525f6b64301a81d8a23df2044363086b", null ],
     [ "cancel_timer", "structrotor_1_1asio_1_1supervisor__asio__t.html#a6dd8533e7979e4f35085ae50d0e29aec", null ],
-    [ "create_actor", "structrotor_1_1asio_1_1supervisor__asio__t.html#a8737f053f6540b96aa113609df429192", null ],
+    [ "create_actor", "structrotor_1_1asio_1_1supervisor__asio__t.html#a33c9223002e4fd79574dfc7b3b93c84f", null ],
     [ "create_forwarder", "structrotor_1_1asio_1_1supervisor__asio__t.html#afa1781d659721196c2339fdb26eeb6f1", null ],
     [ "create_forwarder", "structrotor_1_1asio_1_1supervisor__asio__t.html#add70d2d408496225650fcd9418f93c62", null ],
     [ "enqueue", "structrotor_1_1asio_1_1supervisor__asio__t.html#a0ce7fa81f4d6dc519ff9c62b1d5123c9", null ],

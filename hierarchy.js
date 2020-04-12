@@ -31,6 +31,10 @@ var hierarchy =
         [ "rotor::wx::system_context_wx_t", "structrotor_1_1wx_1_1system__context__wx__t.html", null ]
       ] ]
     ] ],
+    [ "rotor::asio::details::callback_traits< T >", "structrotor_1_1asio_1_1details_1_1callback__traits.html", null ],
+    [ "rotor::asio::details::callback_traits< void(Class::*)() noexcept >", "structrotor_1_1asio_1_1details_1_1callback__traits_3_01void_07Class_1_1_5_08_07_08_01noexcept_01_4.html", null ],
+    [ "rotor::asio::details::callback_traits< void(Class::*)(M &) noexcept >", "structrotor_1_1asio_1_1details_1_1callback__traits_3_01void_07Class_1_1_5_08_07M_01_6_08_01noexcept_01_4.html", null ],
+    [ "rotor::asio::details::callback_traits< void(Class::*)(M) noexcept >", "structrotor_1_1asio_1_1details_1_1callback__traits_3_01void_07Class_1_1_5_08_07M_08_01noexcept_01_4.html", null ],
     [ "rotor::subscription_t::classified_handlers_t", "structrotor_1_1subscription__t_1_1classified__handlers__t.html", null ],
     [ "rotor::payload::commit_unsubscription_t", "structrotor_1_1payload_1_1commit__unsubscription__t.html", null ],
     [ "rotor::payload::create_actor_t", "structrotor_1_1payload_1_1create__actor__t.html", null ],
@@ -52,8 +56,15 @@ var hierarchy =
     ] ],
     [ "rotor::payload::external_subscription_t", "structrotor_1_1payload_1_1external__subscription__t.html", null ],
     [ "rotor::payload::external_unsubscription_t", "structrotor_1_1payload_1_1external__unsubscription__t.html", null ],
-    [ "rotor::asio::forwarder_t< Actor, Handler, ErrHandler >", "structrotor_1_1asio_1_1forwarder__t.html", null ],
-    [ "rotor::asio::forwarder_t< Actor, Handler, void >", "structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01void_01_4.html", null ],
+    [ "rotor::asio::forwarder_base_t< Actor, Handler, ErrHandler >", "structrotor_1_1asio_1_1forwarder__base__t.html", [
+      [ "rotor::asio::forwarder_t< Actor, Handler, details::count::_0, ErrHandler >", "structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01details_1_1count_1_1__0_00_01ErrHandler_01_4.html", null ],
+      [ "rotor::asio::forwarder_t< Actor, Handler, details::count::_1, ErrHandler >", "structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01details_1_1count_1_1__1_00_01ErrHandler_01_4.html", null ]
+    ] ],
+    [ "rotor::asio::forwarder_base_t< Actor, Handler, void >", "structrotor_1_1asio_1_1forwarder__base__t_3_01Actor_00_01Handler_00_01void_01_4.html", [
+      [ "rotor::asio::forwarder_t< Actor, Handler, details::count::_0, void >", "structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01details_1_1count_1_1__0_00_01void_01_4.html", null ],
+      [ "rotor::asio::forwarder_t< Actor, Handler, details::count::_1, void >", "structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01details_1_1count_1_1__1_00_01void_01_4.html", null ]
+    ] ],
+    [ "rotor::asio::forwarder_t< Actor, Handler, ArgsCount, ErrHandler >", "structrotor_1_1asio_1_1forwarder__t.html", null ],
     [ "rotor::payload::handler_call_t", "structrotor_1_1payload_1_1handler__call__t.html", null ],
     [ "rotor::handler_t", "structrotor_1_1handler__t.html", null ],
     [ "rotor::handler_traits< T >", "structrotor_1_1handler__traits.html", null ],

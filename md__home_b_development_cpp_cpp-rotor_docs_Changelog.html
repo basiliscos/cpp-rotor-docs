@@ -98,7 +98,13 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp-rotor_d
 <div class="title">Changelog </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>0.07 (02-Apr-2020)</h1>
+<div class="textblock"><h2>0.08 (12-Apr-2020)</h2>
+<ul>
+<li>[bugfix] message's arguments are more correctly forwarded</li>
+<li>[bugfix] actor's arguments are more correctly forwarded in actor's creation in<code><a class="el" href="structrotor_1_1supervisor__t.html" title="supervisor is responsible for managing actors (workers) lifetime">rotor::supervisor_t</a></code> and <code><a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html" title="delivers rotor-messages on top of boost asio event loop using strand for serialization">rotor::asio::supervisor_asio_t</a></code></li>
+<li>[bugfix] <code><a class="el" href="structrotor_1_1asio_1_1forwarder__t.html">rotor::asio::forwarder_t</a></code> now more correctly dispatches <code>boost::asio</code> events to actor methods; e.g. it works correctly now with <code>async_accept</code> method of <code>socket_acceptor</code></li>
+</ul>
+<h1>0.07 (02-Apr-2020)</h1>
 <ul>
 <li>[improvement] more modern cmake usage</li>
 </ul>
@@ -136,7 +142,7 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp-rotor_d
 <li>[breaking] <code>rotor::asio::supervisor_config_t</code> now contains <code>std::shared_ptr</code> to <code>strand</code>, instead of creating private strand for each supervisor</li>
 <li>[bugfix] redundant <code>do_start()</code> method in <code><a class="el" href="structrotor_1_1supervisor__t.html" title="supervisor is responsible for managing actors (workers) lifetime">rotor::supervisor_t</a></code> was removed, since supervisor now is able to start self after compliting initialization.</li>
 <li>[bugfix] <code><a class="el" href="structrotor_1_1supervisor__t.html" title="supervisor is responsible for managing actors (workers) lifetime">rotor::supervisor_t</a></code> sends <code>initialize_actor_t</code> to self to advance own state to <code>INITIALIZED</code> via common actor mechanism, instead of changeing state directly on early initialization phase (<code>do_initialize</code>)</li>
-<li>[bugfix] <code><a class="el" href="structrotor_1_1asio_1_1forwarder__t.html" title="dispatches single boost::asio callback with error_code and non-error results into two differnt functi...">rotor::asio::forwarder_t</a></code> now more correctly dispatches boost::asio events to actor methods</li>
+<li>[bugfix] <code><a class="el" href="structrotor_1_1asio_1_1forwarder__t.html">rotor::asio::forwarder_t</a></code> now more correctly dispatches boost::asio events to actor methods</li>
 <li>[bugfix] <code><a class="el" href="structrotor_1_1ev_1_1supervisor__ev__t.html" title="delivers rotor-messages on top of libev event loop">rotor::ev::supervisor_ev_t</a></code> properly handles refcounter</li>
 </ul>
 <h1>0.02 (04-Aug-2019)</h1>

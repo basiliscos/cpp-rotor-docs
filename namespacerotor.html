@@ -344,10 +344,10 @@ template&lt;typename Handler &gt; </td></tr>
 <tr class="memitem:aa57a3a769319496293197235aa9f652f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacerotor.html#a6fbcb2aae7a1ccefb14fe774902080d7">handler_ptr_t</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacerotor.html#aa57a3a769319496293197235aa9f652f">wrap_handler</a> (<a class="el" href="structrotor_1_1actor__base__t.html">actor_base_t</a> &amp;actor, Handler &amp;&amp;handler)</td></tr>
 <tr class="memdesc:aa57a3a769319496293197235aa9f652f"><td class="mdescLeft">&#160;</td><td class="mdescRight">wraps handler (pointer to member function) and actor address into intrusive pointer <br /></td></tr>
 <tr class="separator:aa57a3a769319496293197235aa9f652f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac51b875442140fe99982190ea01dd5d9"><td class="memTemplParams" colspan="2">template&lt;typename Actor , typename Supervisor , typename... Args&gt; </td></tr>
-<tr class="memitem:ac51b875442140fe99982190ea01dd5d9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a>&lt; Actor &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacerotor.html#ac51b875442140fe99982190ea01dd5d9">make_actor</a> (Supervisor &amp;sup, const pt::time_duration &amp;timeout, Args... args)</td></tr>
-<tr class="memdesc:ac51b875442140fe99982190ea01dd5d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">convenience method for creating an actor in the scope of supervisor  <a href="namespacerotor.html#ac51b875442140fe99982190ea01dd5d9">More...</a><br /></td></tr>
-<tr class="separator:ac51b875442140fe99982190ea01dd5d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a430af0cf79641059de4a393751d208ea"><td class="memTemplParams" colspan="2">template&lt;typename Actor , typename Supervisor , typename... Args&gt; </td></tr>
+<tr class="memitem:a430af0cf79641059de4a393751d208ea"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a>&lt; Actor &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacerotor.html#a430af0cf79641059de4a393751d208ea">make_actor</a> (Supervisor &amp;sup, const pt::time_duration &amp;timeout, Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:a430af0cf79641059de4a393751d208ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">convenience method for creating an actor in the scope of supervisor  <a href="namespacerotor.html#a430af0cf79641059de4a393751d208ea">More...</a><br /></td></tr>
+<tr class="separator:a430af0cf79641059de4a393751d208ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Basic namespace for all rotor functionalities. </p>
@@ -403,8 +403,8 @@ template&lt;typename Handler &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ac51b875442140fe99982190ea01dd5d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac51b875442140fe99982190ea01dd5d9">&#9670;&nbsp;</a></span>make_actor()</h2>
+<a id="a430af0cf79641059de4a393751d208ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a430af0cf79641059de4a393751d208ea">&#9670;&nbsp;</a></span>make_actor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -426,7 +426,7 @@ template&lt;typename Actor , typename Supervisor , typename... Args&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Args...&#160;</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
           <td class="paramname"><em>args</em>&#160;</td>
         </tr>
         <tr>

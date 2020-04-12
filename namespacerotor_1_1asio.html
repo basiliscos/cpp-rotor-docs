@@ -108,12 +108,22 @@ $(document).ready(function(){initNavTree('namespacerotor_1_1asio.html',''); init
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1asio_1_1forwarder__t.html">forwarder_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">dispatches single boost::asio callback with <code>error_code</code> and non-error results into two differnt functions of the <code>actor</code>. After the invocation, actor's supervisor <code>do_process</code> method is called to process message queue.  <a href="structrotor_1_1asio_1_1forwarder__t.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1asio_1_1forwarder__base__t.html">forwarder_base_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01void_01_4.html">forwarder_t&lt; Actor, Handler, void &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1asio_1_1forwarder__base__t_3_01Actor_00_01Handler_00_01void_01_4.html">forwarder_base_t&lt; Actor, Handler, void &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1asio_1_1forwarder__t.html">forwarder_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01details_1_1count_1_1__0_00_01ErrHandler_01_4.html">forwarder_t&lt; Actor, Handler, details::count::_0, ErrHandler &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">dispatches single boost::asio callback with <code>error_code</code> and non-error results into two differnt functions of the <code>actor</code>. After the invocation, actor's supervisor <code>do_process</code> method is called to process message queue.  <a href="structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01details_1_1count_1_1__0_00_01ErrHandler_01_4.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01details_1_1count_1_1__0_00_01void_01_4.html">forwarder_t&lt; Actor, Handler, details::count::_0, void &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01details_1_1count_1_1__1_00_01ErrHandler_01_4.html">forwarder_t&lt; Actor, Handler, details::count::_1, ErrHandler &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01details_1_1count_1_1__1_00_01void_01_4.html">forwarder_t&lt; Actor, Handler, details::count::_1, void &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">forwarder specialization, when error case is not possible <br  />
-  <a href="structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01void_01_4.html#details">More...</a><br /></td></tr>
+  <a href="structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01details_1_1count_1_1__1_00_01void_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html">supervisor_asio_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">delivers rotor-messages on top of boost asio event loop using <code>strand</code> for serialization  <a href="structrotor_1_1asio_1_1supervisor__asio__t.html#details">More...</a><br /></td></tr>
@@ -143,15 +153,19 @@ template&lt;typename Actor &gt; </td></tr>
 <tr class="memitem:a96ee553d51726c22e653aeb191dcdb33"><td class="memTemplItemLeft" align="right" valign="top">boost::asio::io_context::strand &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacerotor_1_1asio.html#a96ee553d51726c22e653aeb191dcdb33">get_strand</a> (Actor &amp;actor)</td></tr>
 <tr class="memdesc:a96ee553d51726c22e653aeb191dcdb33"><td class="mdescLeft">&#160;</td><td class="mdescRight">return <code>strand</code> of the boost::asio aware actor <br /></td></tr>
 <tr class="separator:a96ee553d51726c22e653aeb191dcdb33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60a6e1a9f846e079e8df35f27664a7c1"><td class="memTemplParams" colspan="2">template&lt;typename Actor , typename Handler &gt; </td></tr>
-<tr class="memitem:a60a6e1a9f846e079e8df35f27664a7c1"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacerotor_1_1asio.html#a60a6e1a9f846e079e8df35f27664a7c1">forwarder_t</a> (Actor &amp;actor_, Handler &amp;&amp;handler_) -&gt; <a class="el" href="structrotor_1_1asio_1_1forwarder__t.html">forwarder_t</a>&lt; Actor, Handler, void &gt;</td></tr>
-<tr class="separator:a60a6e1a9f846e079e8df35f27664a7c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ef5773ffcfe448b26b350c554c65afc"><td class="memTemplParams" colspan="2">template&lt;typename Actor , typename Handler &gt; </td></tr>
+<tr class="memitem:a3ef5773ffcfe448b26b350c554c65afc"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacerotor_1_1asio.html#a3ef5773ffcfe448b26b350c554c65afc">forwarder_t</a> (Actor &amp;, Handler &amp;&amp;) -&gt; <a class="el" href="structrotor_1_1asio_1_1forwarder__t.html">forwarder_t</a>&lt; Actor, Handler, typename <a class="el" href="structrotor_1_1asio_1_1details_1_1callback__traits.html">details::callback_traits</a>&lt; Handler &gt;::args_count, void &gt;</td></tr>
+<tr class="separator:a3ef5773ffcfe448b26b350c554c65afc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30af0d50c6c2562b380fc0c113ae87e3"><td class="memTemplParams" colspan="2"><a id="a30af0d50c6c2562b380fc0c113ae87e3"></a>
+template&lt;typename Actor , typename Handler , typename ErrHandler &gt; </td></tr>
+<tr class="memitem:a30af0d50c6c2562b380fc0c113ae87e3"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>forwarder_t</b> (Actor &amp;, Handler &amp;&amp;, ErrHandler &amp;&amp;) -&gt; <a class="el" href="structrotor_1_1asio_1_1forwarder__t.html">forwarder_t</a>&lt; Actor, Handler, typename <a class="el" href="structrotor_1_1asio_1_1details_1_1callback__traits.html">details::callback_traits</a>&lt; Handler &gt;::args_count, ErrHandler &gt;</td></tr>
+<tr class="separator:a30af0d50c6c2562b380fc0c113ae87e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>namespace for boost::asio adapters for <code>rotor</code> </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a60a6e1a9f846e079e8df35f27664a7c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60a6e1a9f846e079e8df35f27664a7c1">&#9670;&nbsp;</a></span>forwarder_t()</h2>
+<a id="a3ef5773ffcfe448b26b350c554c65afc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ef5773ffcfe448b26b350c554c65afc">&#9670;&nbsp;</a></span>forwarder_t()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -162,18 +176,18 @@ template&lt;typename Actor , typename Handler &gt; </div>
           <td class="memname"><a class="el" href="structrotor_1_1asio_1_1forwarder__t.html">rotor::asio::forwarder_t</a> </td>
           <td>(</td>
           <td class="paramtype">Actor &amp;&#160;</td>
-          <td class="paramname"><em>actor_</em>, </td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">Handler &amp;&amp;&#160;</td>
-          <td class="paramname"><em>handler_</em>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> -&gt;  <a class="el" href="structrotor_1_1asio_1_1forwarder__t.html">forwarder_t</a>&lt; Actor, Handler, void &gt;</td>
+          <td></td><td> -&gt;  <a class="el" href="structrotor_1_1asio_1_1forwarder__t.html">forwarder_t</a>&lt; Actor, Handler, typename <a class="el" href="structrotor_1_1asio_1_1details_1_1callback__traits.html">details::callback_traits</a>&lt; Handler &gt;::args_count, void &gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
