@@ -14,6 +14,7 @@ var namespacerotor_1_1asio =
     [ "forwarder_t< Actor, Handler, details::count::_1, ErrHandler >", "structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01details_1_1count_1_1__1_00_01ErrHandler_01_4.html", "structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01details_1_1count_1_1__1_00_01ErrHandler_01_4" ],
     [ "forwarder_t< Actor, Handler, details::count::_1, void >", "structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01details_1_1count_1_1__1_00_01void_01_4.html", "structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01details_1_1count_1_1__1_00_01void_01_4" ],
     [ "supervisor_asio_t", "structrotor_1_1asio_1_1supervisor__asio__t.html", "structrotor_1_1asio_1_1supervisor__asio__t" ],
+    [ "supervisor_config_asio_builder_t", "structrotor_1_1asio_1_1supervisor__config__asio__builder__t.html", "structrotor_1_1asio_1_1supervisor__config__asio__builder__t" ],
     [ "supervisor_config_asio_t", "structrotor_1_1asio_1_1supervisor__config__asio__t.html", "structrotor_1_1asio_1_1supervisor__config__asio__t" ],
     [ "system_context_asio_t", "structrotor_1_1asio_1_1system__context__asio__t.html", "structrotor_1_1asio_1_1system__context__asio__t" ]
 ];

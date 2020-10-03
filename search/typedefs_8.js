@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['queue_5ft_635',['queue_t',['../structrotor_1_1supervisor__t.html#afd19400d871b752e37f1738d91a122b0',1,'rotor::supervisor_t']]]
+  ['link_5fcallback_5ft_890',['link_callback_t',['../structrotor_1_1plugin_1_1link__client__plugin__t.html#ab39ff3d6cc4a83f737eebbd9af3766d7',1,'rotor::plugin::link_client_plugin_t']]],
+  ['link_5frequest_5ft_891',['link_request_t',['../namespacerotor_1_1message.html#a8a6593964f7853040b20f880cb916abe',1,'rotor::message']]],
+  ['link_5fresponse_5ft_892',['link_response_t',['../namespacerotor_1_1message.html#ac0b4c72aed11de104036c28688f528f3',1,'rotor::message']]]
 ];

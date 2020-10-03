@@ -1,5 +1,4 @@
 var structrotor_1_1payload_1_1subscription__confirmation__t =
 [
-    [ "handler", "structrotor_1_1payload_1_1subscription__confirmation__t.html#ad03a1a6836bf28cf55a606183a533de6", null ],
-    [ "target_address", "structrotor_1_1payload_1_1subscription__confirmation__t.html#a3b2c3ad8124eac070421b100c5c75296", null ]
+    [ "point", "structrotor_1_1payload_1_1subscription__confirmation__t.html#a8a661fe73a2e2ccc139790994b16f6c3", null ]
 ];

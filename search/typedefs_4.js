@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['initializing_5factors_5ft_625',['initializing_actors_t',['../structrotor_1_1supervisor__behavior__t.html#a4da54e5cdc83d81714b5868bd3f9521f',1,'rotor::supervisor_behavior_t']]],
-  ['intrusive_5fptr_5ft_626',['intrusive_ptr_t',['../namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2',1,'rotor']]],
-  ['is_5fhandler_627',['is_handler',['../namespacerotor.html#a506b8637b7e785794271d95b65837415',1,'rotor']]]
+  ['error_5fproducer_5ft_877',['error_producer_t',['../namespacerotor.html#a72956f1c9805f36d3338046a39a31174',1,'rotor']]],
+  ['external_5fsubscription_5ft_878',['external_subscription_t',['../namespacerotor_1_1message.html#a15fd76831a3fb668e93a12afc3b8f423',1,'rotor::message']]]
 ];

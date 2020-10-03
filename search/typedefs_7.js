@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['payload_5ft_631',['payload_t',['../structrotor_1_1lambda__holder__t.html#a0220eb22d04f9a4b7b472de56d8fa227',1,'rotor::lambda_holder_t::payload_t()'],['../structrotor_1_1handler__traits_3_01void_07A_1_1_5_08_07M_01_6_08_01noexcept_01_4.html#abfc5675a1c99ce7f457ecc2c75099e26',1,'rotor::handler_traits&lt; void(A::*)(M &amp;) noexcept &gt;::payload_t()'],['../structrotor_1_1message__t.html#a8a024d426657372c2664e867a937b677',1,'rotor::message_t::payload_t()']]],
-  ['point_5ft_632',['point_t',['../structrotor_1_1address__mapping__t.html#a24ed8b9e4574ec39bc691191699decb7',1,'rotor::address_mapping_t']]],
-  ['points_5ft_633',['points_t',['../structrotor_1_1address__mapping__t.html#ae16b1c5da0553937c227d007c45661ea',1,'rotor::address_mapping_t']]],
-  ['ptr_5ft_634',['ptr_t',['../structrotor_1_1asio_1_1system__context__asio__t.html#afeafb09bee3302d4f691bab45a4499cb',1,'rotor::asio::system_context_asio_t::ptr_t()'],['../structrotor_1_1ev_1_1system__context__ev__t.html#ac8181fd1b6819359407b8708c39c205b',1,'rotor::ev::system_context_ev_t::ptr_t()'],['../structrotor_1_1wx_1_1system__context__wx__t.html#ac8f0131a455a7f671ad1d8d90fc7c6ef',1,'rotor::wx::system_context_wx_t::ptr_t()']]]
+  ['init_5frequest_5ft_885',['init_request_t',['../namespacerotor_1_1message.html#ac32e12e668c9d05a6be5ab5e504bb91f',1,'rotor::message']]],
+  ['init_5fresponse_5ft_886',['init_response_t',['../namespacerotor_1_1message.html#a217a3074df5651d8671f582779a4b51e',1,'rotor::message']]],
+  ['install_5faction_5ft_887',['install_action_t',['../structrotor_1_1actor__config__builder__t.html#adfe05739eb845e9da27d67d1ce9453f7',1,'rotor::actor_config_builder_t']]],
+  ['intrusive_5fptr_5ft_888',['intrusive_ptr_t',['../namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2',1,'rotor']]],
+  ['is_5fhandler_889',['is_handler',['../structrotor_1_1actor__base__t.html#a14539e40ad3078a89ff285d7034b0a86',1,'rotor::actor_base_t']]]
 ];

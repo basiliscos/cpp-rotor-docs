@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['parent_581',['parent',['../structrotor_1_1supervisor__t.html#af56eb18780cb942780f0d639f94a4bc7',1,'rotor::supervisor_t']]],
-  ['payload_582',['payload',['../structrotor_1_1message__t.html#ac8f1caee4f1862d339c7d3e0a681c082',1,'rotor::message_t']]],
-  ['pending_583',['pending',['../structrotor_1_1ev_1_1supervisor__ev__t.html#a4cd2d6dfae7f5fda992411abac02025c',1,'rotor::ev::supervisor_ev_t']]],
-  ['points_584',['points',['../structrotor_1_1actor__base__t.html#a9eabdfa2eef776fdfe38bc8c5631dc58',1,'rotor::actor_base_t']]],
-  ['policy_585',['policy',['../structrotor_1_1supervisor__t.html#a46c6e4b6da556f46e88300d8826d44a7',1,'rotor::supervisor_t::policy()'],['../structrotor_1_1supervisor__config__t.html#af3a9d4d7ceeac02970faab264164c9f5',1,'rotor::supervisor_config_t::policy()']]],
-  ['precalc_5fhash_586',['precalc_hash',['../structrotor_1_1handler__base__t.html#a4374640eac9254877b8f33e3916d4ee5',1,'rotor::handler_base_t']]]
+  ['operational_5fonly_808',['operational_only',['../structrotor_1_1payload_1_1link__request__t.html#ab4720ad7528766fe84f0f7b783a1480f',1,'rotor::payload::link_request_t']]],
+  ['orig_5fmessage_809',['orig_message',['../structrotor_1_1payload_1_1handler__call__t.html#af50bca38208b4d263641dd460d7cdf6e',1,'rotor::payload::handler_call_t']]],
+  ['origin_810',['origin',['../structrotor_1_1request__base__t.html#a2d61d3eeb46bbcb12ea7ecb3a4962172',1,'rotor::request_base_t::origin()'],['../structrotor_1_1request__curry__t.html#ab5fa9f57f92b6ead5c4051b6b68091a6',1,'rotor::request_curry_t::origin()']]],
+  ['owner_5fptr_811',['owner_ptr',['../structrotor_1_1subscription__point__t.html#a26aa7c7a489c434912a81555c7d9ad9d',1,'rotor::subscription_point_t']]],
+  ['owner_5ftag_812',['owner_tag',['../structrotor_1_1subscription__point__t.html#a3e1635024b259d24f6cedbcec02c3e72',1,'rotor::subscription_point_t']]]
 ];

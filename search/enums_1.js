@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['error_5fcode_5ft_665',['error_code_t',['../namespacerotor.html#aff42402c4871af3b3ae26820e45abd81',1,'rotor']]]
+  ['owner_5ftag_5ft_948',['owner_tag_t',['../namespacerotor.html#a3467749432c11e43f09b06257b5a3385',1,'rotor']]]
 ];

@@ -1,0 +1,7 @@
+var structrotor_1_1handler__t_3_01lambda__holder__t_3_01Handler_00_01M_01_4_00_01std_1_1enable__if__9f0d4eb8f11444e50079417975696fb3 =
+[
+    [ "handler_backend_t", "structrotor_1_1handler__t_3_01lambda__holder__t_3_01Handler_00_01M_01_4_00_01std_1_1enable__if__9f0d4eb8f11444e50079417975696fb3.html#a3bfcd3a70610d92ec0c39bca41797642", null ],
+    [ "handler_t", "structrotor_1_1handler__t_3_01lambda__holder__t_3_01Handler_00_01M_01_4_00_01std_1_1enable__if__9f0d4eb8f11444e50079417975696fb3.html#aab0abcb88ae1747a3cf57872af673a44", null ],
+    [ "call", "structrotor_1_1handler__t_3_01lambda__holder__t_3_01Handler_00_01M_01_4_00_01std_1_1enable__if__9f0d4eb8f11444e50079417975696fb3.html#aac966118097819c19a82efe397ada9af", null ],
+    [ "handler", "structrotor_1_1handler__t_3_01lambda__holder__t_3_01Handler_00_01M_01_4_00_01std_1_1enable__if__9f0d4eb8f11444e50079417975696fb3.html#a1bd00759590a2ba217fa8ec71d2f6c6b", null ]
+];

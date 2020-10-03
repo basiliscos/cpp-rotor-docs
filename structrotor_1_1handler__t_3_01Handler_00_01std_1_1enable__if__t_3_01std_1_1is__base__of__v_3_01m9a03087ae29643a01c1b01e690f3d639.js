@@ -1,6 +1,0 @@
-var structrotor_1_1handler__t_3_01Handler_00_01std_1_1enable__if__t_3_01std_1_1is__base__of__v_3_01m9a03087ae29643a01c1b01e690f3d639 =
-[
-    [ "handler_t", "structrotor_1_1handler__t_3_01Handler_00_01std_1_1enable__if__t_3_01std_1_1is__base__of__v_3_01m9a03087ae29643a01c1b01e690f3d639.html#ab85fcdf2a7e259f8fa58ea31c1d9347d", null ],
-    [ "call", "structrotor_1_1handler__t_3_01Handler_00_01std_1_1enable__if__t_3_01std_1_1is__base__of__v_3_01m9a03087ae29643a01c1b01e690f3d639.html#a087f06c9d8191e0426c77a9486a88381", null ],
-    [ "handler", "structrotor_1_1handler__t_3_01Handler_00_01std_1_1enable__if__t_3_01std_1_1is__base__of__v_3_01m9a03087ae29643a01c1b01e690f3d639.html#a645209759dfee6ac949b7fecc2d85b70", null ]
-];

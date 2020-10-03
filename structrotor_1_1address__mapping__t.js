@@ -1,8 +1,9 @@
 var structrotor_1_1address__mapping__t =
 [
-    [ "point_t", "structrotor_1_1address__mapping__t.html#a24ed8b9e4574ec39bc691191699decb7", null ],
-    [ "points_t", "structrotor_1_1address__mapping__t.html#ae16b1c5da0553937c227d007c45661ea", null ],
-    [ "destructive_get", "structrotor_1_1address__mapping__t.html#a41150951f6c29c96ed80f4e0db462832", null ],
-    [ "get_addr", "structrotor_1_1address__mapping__t.html#afc839d2f2782bdb311ca2deee42e3143", null ],
-    [ "set", "structrotor_1_1address__mapping__t.html#afb3dc2a86dd2e16e9f927390e61f6e62", null ]
+    [ "each_subscription", "structrotor_1_1address__mapping__t.html#ad637e9ebfef4d40804b99422045b8e9e", null ],
+    [ "empty", "structrotor_1_1address__mapping__t.html#a4eff7228e0b3ec64a5f94b85ae61ced5", null ],
+    [ "get_mapped_address", "structrotor_1_1address__mapping__t.html#acd2f9e258f63f44e76438f67cde817c9", null ],
+    [ "has_subscriptions", "structrotor_1_1address__mapping__t.html#a0039eb4add3dbf7bf68f210638056265", null ],
+    [ "remove", "structrotor_1_1address__mapping__t.html#a491d34a39629ca3602ab2b80c71e6602", null ],
+    [ "set", "structrotor_1_1address__mapping__t.html#a9b64094dcf296b2bce1d2a5f893de297", null ]
 ];

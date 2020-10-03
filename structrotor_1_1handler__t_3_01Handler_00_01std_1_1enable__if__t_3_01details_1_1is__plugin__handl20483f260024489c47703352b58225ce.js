@@ -1,0 +1,7 @@
+var structrotor_1_1handler__t_3_01Handler_00_01std_1_1enable__if__t_3_01details_1_1is__plugin__handl20483f260024489c47703352b58225ce =
+[
+    [ "handler_t", "structrotor_1_1handler__t_3_01Handler_00_01std_1_1enable__if__t_3_01details_1_1is__plugin__handl20483f260024489c47703352b58225ce.html#a8792c4954e49de04ef6de00895c080dd", null ],
+    [ "call", "structrotor_1_1handler__t_3_01Handler_00_01std_1_1enable__if__t_3_01details_1_1is__plugin__handl20483f260024489c47703352b58225ce.html#a1d6284a6d9ff41479918e5a98ccad77b", null ],
+    [ "handler", "structrotor_1_1handler__t_3_01Handler_00_01std_1_1enable__if__t_3_01details_1_1is__plugin__handl20483f260024489c47703352b58225ce.html#ae85729ab2ca34c71a3be74cb4b0848aa", null ],
+    [ "plugin", "structrotor_1_1handler__t_3_01Handler_00_01std_1_1enable__if__t_3_01details_1_1is__plugin__handl20483f260024489c47703352b58225ce.html#a705c565137343dec0f1fa59e059e64bd", null ]
+];

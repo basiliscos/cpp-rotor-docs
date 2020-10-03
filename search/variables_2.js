@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['callback_560',['callback',['../structrotor_1_1payload_1_1unsubscription__confirmation__t.html#a8100c0b284f7d854e1393cdf07291703',1,'rotor::payload::unsubscription_confirmation_t']]],
-  ['context_561',['context',['../structrotor_1_1supervisor__t.html#ae7424719b8592627ff736d891c63e61a',1,'rotor::supervisor_t']]]
+  ['deactivating_5fplugins_773',['deactivating_plugins',['../structrotor_1_1actor__base__t.html#ac7c90a1a1affc26933bb05d2a082853e',1,'rotor::actor_base_t']]],
+  ['delivery_774',['delivery',['../structrotor_1_1supervisor__t.html#a0bd40fcd6e432a0d51246de08ac1c526',1,'rotor::supervisor_t']]]
 ];

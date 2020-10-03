@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['state_5ft_666',['state_t',['../namespacerotor.html#a6efbb2b594154ba938cf57113e1431a3',1,'rotor']]],
-  ['supervisor_5fpolicy_5ft_667',['supervisor_policy_t',['../namespacerotor.html#affb671357df7b4bed56139bff68610a0',1,'rotor']]]
+  ['phase_5ft_949',['phase_t',['../structrotor_1_1plugin_1_1registry__plugin__t.html#a3f196bec36e3ca9702004b97d2d31233',1,'rotor::plugin::registry_plugin_t']]]
 ];
