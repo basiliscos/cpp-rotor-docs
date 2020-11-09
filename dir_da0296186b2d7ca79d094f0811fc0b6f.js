@@ -26,5 +26,6 @@ var dir_da0296186b2d7ca79d094f0811fc0b6f =
     [ "supervisor.h", "supervisor_8h_source.html", null ],
     [ "supervisor_config.h", "supervisor__config_8h_source.html", null ],
     [ "system_context.h", "system__context_8h_source.html", null ],
+    [ "timer_handler.hpp", "timer__handler_8hpp_source.html", null ],
     [ "wx.hpp", "wx_8hpp.html", null ]
 ];

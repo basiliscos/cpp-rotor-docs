@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['introduction_959',['Introduction',['../md__home_b_development_cpp_cpp-rotor_docs_Introduction.html',1,'']]]
+  ['event_20loops_20_26_20platforms_988',['Event loops &amp; platforms',['../md__home_b_development_cpp_cpp-rotor_docs_Loops.html',1,'']]]
 ];

@@ -4,7 +4,6 @@ var namespacerotor_1_1payload =
     [ "create_actor_t", "structrotor_1_1payload_1_1create__actor__t.html", "structrotor_1_1payload_1_1create__actor__t" ],
     [ "deregistration_notify_t", "structrotor_1_1payload_1_1deregistration__notify__t.html", "structrotor_1_1payload_1_1deregistration__notify__t" ],
     [ "deregistration_service_t", "structrotor_1_1payload_1_1deregistration__service__t.html", "structrotor_1_1payload_1_1deregistration__service__t" ],
-    [ "discovery_cancel_t", "structrotor_1_1payload_1_1discovery__cancel__t.html", "structrotor_1_1payload_1_1discovery__cancel__t" ],
     [ "discovery_future_t", "structrotor_1_1payload_1_1discovery__future__t.html", "structrotor_1_1payload_1_1discovery__future__t" ],
     [ "discovery_promise_t", "structrotor_1_1payload_1_1discovery__promise__t.html", "structrotor_1_1payload_1_1discovery__promise__t" ],
     [ "discovery_reply_t", "structrotor_1_1payload_1_1discovery__reply__t.html", "structrotor_1_1payload_1_1discovery__reply__t" ],

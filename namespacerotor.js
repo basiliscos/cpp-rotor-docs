@@ -39,6 +39,7 @@ var namespacerotor =
     [ "actor_config_t", "structrotor_1_1actor__config__t.html", "structrotor_1_1actor__config__t" ],
     [ "address_mapping_t", "structrotor_1_1address__mapping__t.html", "structrotor_1_1address__mapping__t" ],
     [ "address_t", "structrotor_1_1address__t.html", "structrotor_1_1address__t" ],
+    [ "cancelation_t", "structrotor_1_1cancelation__t.html", "structrotor_1_1cancelation__t" ],
     [ "handler_base_t", "structrotor_1_1handler__base__t.html", "structrotor_1_1handler__base__t" ],
     [ "handler_t", "structrotor_1_1handler__t.html", null ],
     [ "handler_t< Handler, std::enable_if_t< details::is_actor_handler_v< Handler > > >", "structrotor_1_1handler__t_3_01Handler_00_01std_1_1enable__if__t_3_01details_1_1is__actor__handler__v_3_01Handler_01_4_01_4_01_4.html", "structrotor_1_1handler__t_3_01Handler_00_01std_1_1enable__if__t_3_01details_1_1is__actor__handler__v_3_01Handler_01_4_01_4_01_4" ],
@@ -71,6 +72,8 @@ var namespacerotor =
     [ "supervisor_config_t", "structrotor_1_1supervisor__config__t.html", "structrotor_1_1supervisor__config__t" ],
     [ "supervisor_t", "structrotor_1_1supervisor__t.html", "structrotor_1_1supervisor__t" ],
     [ "system_context_t", "structrotor_1_1system__context__t.html", "structrotor_1_1system__context__t" ],
+    [ "timer_handler_base_t", "structrotor_1_1timer__handler__base__t.html", "structrotor_1_1timer__handler__base__t" ],
+    [ "timer_handler_t", "structrotor_1_1timer__handler__t.html", "structrotor_1_1timer__handler__t" ],
     [ "wrapped_request_t", "structrotor_1_1wrapped__request__t.html", "structrotor_1_1wrapped__request__t" ],
     [ "wrapped_request_t< T, std::enable_if_t< std::is_base_of_v< arc_base_t< T >, T > > >", "structrotor_1_1wrapped__request__t_3_01T_00_01std_1_1enable__if__t_3_01std_1_1is__base__of__v_3_e8c9a041113eceda006cb13907d336c0.html", "structrotor_1_1wrapped__request__t_3_01T_00_01std_1_1enable__if__t_3_01std_1_1is__base__of__v_3_e8c9a041113eceda006cb13907d336c0" ],
     [ "wrapped_response_t", "structrotor_1_1wrapped__response__t.html", "structrotor_1_1wrapped__response__t" ]

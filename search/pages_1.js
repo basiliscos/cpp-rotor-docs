@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['design_20_26_20notions_957',['Design &amp; Notions',['../md__home_b_development_cpp_cpp-rotor_docs_Design.html',1,'']]]
+  ['changelog_985',['Changelog',['../md__home_b_development_cpp_cpp-rotor_docs_Changelog.html',1,'']]],
+  ['compiling_20_26_20building_986',['Compiling &amp; building',['../md__home_b_development_cpp_cpp-rotor_docs_Compilation.html',1,'']]]
 ];

@@ -29,6 +29,7 @@ var NAVTREE =
     [ "Rationale", "md__home_b_development_cpp_cpp-rotor_docs_Rationale.html", null ],
     [ "Compiling & building", "md__home_b_development_cpp_cpp-rotor_docs_Compilation.html", null ],
     [ "Design & Notions", "md__home_b_development_cpp_cpp-rotor_docs_Design.html", null ],
+    [ "Advanced examples", "md__home_b_development_cpp_cpp-rotor_docs_Examples.html", null ],
     [ "Event loops & platforms", "md__home_b_development_cpp_cpp-rotor_docs_Loops.html", null ],
     [ "Patterns", "md__home_b_development_cpp_cpp-rotor_docs_Patterns.html", null ],
     [ "License", "md__home_b_development_cpp_cpp-rotor_docs_License.html", null ],
@@ -63,10 +64,10 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-".html",
-"structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01details_1_1count_1_1__0_00_01void_01_4.html#a62ca2ea6d8de673935cc4d4b3df9ac75",
-"structrotor_1_1plugin_1_1init__shutdown__plugin__t.html#a0f07fadfd51dd753f7ad23597ff48da5",
-"structrotor_1_1supervisor__t.html#a7081ee36cc79a8085c0388fd5c6807c2"
+"actor__base_8h_source.html",
+"structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01details_1_1count_1_1__0_00_01ErrHandler_01_4.html",
+"structrotor_1_1plugin_1_1foreigners__support__plugin__t.html#a4a5bf237da6fac1d6ec575918bba0098",
+"structrotor_1_1supervisor__t.html#a2e5377f0ce2971910b3859d75bb9cf54"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

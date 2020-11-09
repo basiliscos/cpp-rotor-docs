@@ -44,6 +44,8 @@ var hierarchy =
     [ "rotor::asio::details::callback_traits< void(Class::*)() noexcept >", "structrotor_1_1asio_1_1details_1_1callback__traits_3_01void_07Class_1_1_5_08_07_08_01noexcept_01_4.html", null ],
     [ "rotor::asio::details::callback_traits< void(Class::*)(M &) noexcept >", "structrotor_1_1asio_1_1details_1_1callback__traits_3_01void_07Class_1_1_5_08_07M_01_6_08_01noexcept_01_4.html", null ],
     [ "rotor::asio::details::callback_traits< void(Class::*)(M) noexcept >", "structrotor_1_1asio_1_1details_1_1callback__traits_3_01void_07Class_1_1_5_08_07M_08_01noexcept_01_4.html", null ],
+    [ "rotor::request_traits_t< R >::cancel", "structrotor_1_1request__traits__t_1_1cancel.html", null ],
+    [ "rotor::cancelation_t< T >", "structrotor_1_1cancelation__t.html", null ],
     [ "rotor::payload::commit_unsubscription_t", "structrotor_1_1payload_1_1commit__unsubscription__t.html", null ],
     [ "rotor::payload::create_actor_t", "structrotor_1_1payload_1_1create__actor__t.html", null ],
     [ "deadline_timer", null, [
@@ -54,7 +56,6 @@ var hierarchy =
     ] ],
     [ "rotor::payload::deregistration_notify_t", "structrotor_1_1payload_1_1deregistration__notify__t.html", null ],
     [ "rotor::payload::deregistration_service_t", "structrotor_1_1payload_1_1deregistration__service__t.html", null ],
-    [ "rotor::payload::discovery_cancel_t", "structrotor_1_1payload_1_1discovery__cancel__t.html", null ],
     [ "rotor::payload::discovery_future_t", "structrotor_1_1payload_1_1discovery__future__t.html", null ],
     [ "rotor::payload::discovery_promise_t", "structrotor_1_1payload_1_1discovery__promise__t.html", null ],
     [ "rotor::payload::discovery_reply_t", "structrotor_1_1payload_1_1discovery__reply__t.html", null ],
@@ -155,6 +156,9 @@ var hierarchy =
       [ "rotor::subscription_info_t", "structrotor_1_1subscription__info__t.html", null ]
     ] ],
     [ "rotor::subscription_t", "structrotor_1_1subscription__t.html", null ],
+    [ "rotor::timer_handler_base_t", "structrotor_1_1timer__handler__base__t.html", [
+      [ "rotor::timer_handler_t< Object, Method >", "structrotor_1_1timer__handler__t.html", null ]
+    ] ],
     [ "true_type", null, [
       [ "std::is_error_code_enum< rotor::error_code_t >", "structstd_1_1is__error__code__enum_3_01rotor_1_1error__code__t_01_4.html", null ]
     ] ],

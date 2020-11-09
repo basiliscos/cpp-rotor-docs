@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['event_20loops_20_26_20platforms_958',['Event loops &amp; platforms',['../md__home_b_development_cpp_cpp-rotor_docs_Loops.html',1,'']]]
+  ['design_20_26_20notions_987',['Design &amp; Notions',['../md__home_b_development_cpp_cpp-rotor_docs_Design.html',1,'']]]
 ];
