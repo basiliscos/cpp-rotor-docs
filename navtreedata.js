@@ -66,8 +66,8 @@ var NAVTREEINDEX =
 [
 "actor__base_8h_source.html",
 "structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01details_1_1count_1_1__0_00_01ErrHandler_01_4.html",
-"structrotor_1_1plugin_1_1foreigners__support__plugin__t.html#a4a5bf237da6fac1d6ec575918bba0098",
-"structrotor_1_1supervisor__t.html#a2e5377f0ce2971910b3859d75bb9cf54"
+"structrotor_1_1plugin_1_1foreigners__support__plugin__t.html#a723a2ecef8c47fa48e1594aa559ff4d7",
+"structrotor_1_1supervisor__t.html#a4517a5ef2f92cd6f94744a273c6ab478"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

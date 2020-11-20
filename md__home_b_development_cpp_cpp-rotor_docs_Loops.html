@@ -155,16 +155,17 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp-rotor_d
 <div class="line">    }</div>
 <div class="line">};</div>
 </div><!-- fragment --><h1>Adding loop support guide</h1>
-<p>Adding new event loop to <code>rotor</code> is rather simple: the new <code>supervisor</code> class should be derived from <code>supervisor_t</code>, and the following methods should be defined</p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> start_timer(<span class="keyword">const</span> pt::time_duration &amp;send, ) noexcept override;</div>
-<div class="line"><span class="keywordtype">void</span> cancel_timer(request_id_t timer_id) noexcept override;</div>
+<p>Adding new event loop to <code>rotor</code> is rather simple: the new <code>supervisor</code> class should be derived from <code>supervisor_t</code>, and the following methods should be implemented:</p>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> do_start_timer(<span class="keyword">const</span> pt::time_duration &amp;interval, timer_handler_base_t &amp;handler) noexcept <span class="keyword">override</span>;</div>
+<div class="line"><span class="keywordtype">void</span> do_cancel_timer(request_id_t timer_id) noexcept <span class="keyword">override</span>;</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">void</span> start() noexcept<span class="keyword"> override </span>{}</div>
-<div class="line"><span class="keywordtype">void</span> shutdown() noexcept<span class="keyword"> override </span>{}</div>
+<div class="line"><span class="keywordtype">void</span> start() noexcept override;</div>
+<div class="line"><span class="keywordtype">void</span> shutdown() noexcept override;</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">void</span> enqueue(<a class="code" href="namespacerotor.html#a0196761fe474bd8dc17ac4ff9f0e2f95">rotor::message_ptr_t</a>) noexcept <span class="keyword">override</span> {}</div>
+<div class="line"><span class="keywordtype">void</span> enqueue(<a class="code" href="namespacerotor.html">rotor</a>::message_ptr_t) noexcept override;</div>
 </div><!-- fragment --><p>The <code>enqueue</code> method is responsible for puting an <code>message</code> into <code>supervisor</code> inbound queue <em>probably</em> in <b>thread-safe manner</b> to allow accept messages from other supervisors/loops (thread-safety requirement) or just from some outer context, when supervisor is still not running on the loop (can be thread-unsafe). The second requirement is to let the supervisor process all it's inbound messages <em>in a loop context</em>, may be with supervisor-specific context.</p>
 <p>The <code>start</code> and <code>shutdown</code> are just convenient methods to start processing messages in event loop context (for <code>start</code>) and send a shutdown messages and process event loop in event loop context .</p>
+<p><code>do_start_timer</code> should strate a new timer, whose id (request_id_t) can be get via the <code>timer_handler_base_t</code>. The <code>do_cancel_timer</code> should cancel timer and <b>immediately</b> invoke the timer_handler with <code>cancelled = true</code>. The backend timer cancel implementation can be delayed, but that's actually outsize of <code>rotor</code>.</p>
 <p>Here is an skeleton example for <code>enqueue</code>:</p>
 <div class="fragment"><div class="line"><span class="keywordtype">void</span> some_supervisor_t::enqueue(message_ptr_t message) noexcept {</div>
 <div class="line">    <a class="code" href="namespacerotor_1_1asio.html#abe1323c9afeef7ace640615c830867a3">supervisor_ptr_t</a> <span class="keyword">self</span>{<span class="keyword">this</span>};    <span class="comment">// increase ref-counter</span></div>
@@ -180,9 +181,9 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp-rotor_d
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespacerotor_html_a0196761fe474bd8dc17ac4ff9f0e2f95"><div class="ttname"><a href="namespacerotor.html#a0196761fe474bd8dc17ac4ff9f0e2f95">rotor::message_ptr_t</a></div><div class="ttdeci">intrusive_ptr_t&lt; message_base_t &gt; message_ptr_t</div><div class="ttdoc">intrusive pointer for message</div><div class="ttdef"><b>Definition:</b> message.h:68</div></div>
 <div class="ttc" id="anamespacerotor_1_1asio_html_abe1323c9afeef7ace640615c830867a3"><div class="ttname"><a href="namespacerotor_1_1asio.html#abe1323c9afeef7ace640615c830867a3">rotor::asio::supervisor_ptr_t</a></div><div class="ttdeci">intrusive_ptr_t&lt; supervisor_asio_t &gt; supervisor_ptr_t</div><div class="ttdoc">intrusive pointer for boost::asio supervisor</div><div class="ttdef"><b>Definition:</b> system_context_asio.h:22</div></div>
 <div class="ttc" id="anamespacerotor_html_a9ebe7c23e46e63f18335110b2a76548c"><div class="ttname"><a href="namespacerotor.html#a9ebe7c23e46e63f18335110b2a76548c">rotor::actor_ptr_t</a></div><div class="ttdeci">intrusive_ptr_t&lt; actor_base_t &gt; actor_ptr_t</div><div class="ttdoc">intrusive pointer for actor</div><div class="ttdef"><b>Definition:</b> forward.hpp:22</div></div>
+<div class="ttc" id="anamespacerotor_html"><div class="ttname"><a href="namespacerotor.html">rotor</a></div><div class="ttdoc">Basic namespace for all rotor functionalities.</div><div class="ttdef"><b>Definition:</b> actor_base.h:18</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

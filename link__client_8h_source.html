@@ -146,22 +146,24 @@ $(document).ready(function(){initNavTree('link__client_8h_source.html',''); init
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">struct </span>server_record_t {</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <a class="code" href="structrotor_1_1plugin_1_1link__client__plugin__t.html#ab39ff3d6cc4a83f737eebbd9af3766d7">link_callback_t</a> callback;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        link_state_t state;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    };</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">using</span> servers_map_t = std::unordered_map&lt;address_ptr_t, server_record_t&gt;;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">using</span> unlink_req_t = <a class="code" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t&lt;message::unlink_request_t&gt;</a>;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">using</span> unlink_queue_t = std::list&lt;unlink_req_t&gt;;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> try_forget_links(<span class="keywordtype">bool</span> attempt_shutdown) noexcept;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    servers_map_t servers_map;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="structrotor_1_1plugin_1_1link__client__plugin__t.html#ae40815bff3f4b8db43cc043c3447be49">unlink_reaction_t</a> unlink_reaction;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    unlink_queue_t unlink_queue;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">bool</span> configured = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;};</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;} <span class="comment">// namespace rotor::plugin</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="namespacerotor.html#aa709f45800c1bc7ea4d7bb2163328b4c">request_id_t</a> request_id;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    };</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">using</span> servers_map_t = std::unordered_map&lt;address_ptr_t, server_record_t&gt;;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">using</span> unlink_req_t = <a class="code" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t&lt;message::unlink_request_t&gt;</a>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">using</span> unlink_queue_t = std::list&lt;unlink_req_t&gt;;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span> try_forget_links(<span class="keywordtype">bool</span> attempt_shutdown) noexcept;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    servers_map_t servers_map;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="structrotor_1_1plugin_1_1link__client__plugin__t.html#ae40815bff3f4b8db43cc043c3447be49">unlink_reaction_t</a> unlink_reaction;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    unlink_queue_t unlink_queue;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">bool</span> configured = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;};</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;} <span class="comment">// namespace rotor::plugin</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructrotor_1_1plugin_1_1link__client__plugin__t_html_a8af900b3ff3a7fa60e8ad8d3708494f3"><div class="ttname"><a href="structrotor_1_1plugin_1_1link__client__plugin__t.html#a8af900b3ff3a7fa60e8ad8d3708494f3">rotor::plugin::link_client_plugin_t::forget_link</a></div><div class="ttdeci">void forget_link(message::unlink_request_t &amp;message) noexcept</div><div class="ttdoc">continues previously suspended unlink request</div></div>
+<div class="ttc" id="anamespacerotor_html_aa709f45800c1bc7ea4d7bb2163328b4c"><div class="ttname"><a href="namespacerotor.html#aa709f45800c1bc7ea4d7bb2163328b4c">rotor::request_id_t</a></div><div class="ttdeci">std::size_t request_id_t</div><div class="ttdoc">timer identifier type in the scope of the actor</div><div class="ttdef"><b>Definition:</b> forward.hpp:30</div></div>
 <div class="ttc" id="astructrotor_1_1plugin_1_1link__client__plugin__t_html_a15e2509a98bbfee0d4dca63f3b30e1e8"><div class="ttname"><a href="structrotor_1_1plugin_1_1link__client__plugin__t.html#a15e2509a98bbfee0d4dca63f3b30e1e8">rotor::plugin::link_client_plugin_t::identity</a></div><div class="ttdeci">const void * identity() const noexcept override</div><div class="ttdoc">returns pointer, which uniquely identifes plugin type</div></div>
 <div class="ttc" id="astructrotor_1_1plugin_1_1link__client__plugin__t_html_ac82b8080a682f50706d496461af2ebd5"><div class="ttname"><a href="structrotor_1_1plugin_1_1link__client__plugin__t.html#ac82b8080a682f50706d496461af2ebd5">rotor::plugin::link_client_plugin_t::link</a></div><div class="ttdeci">virtual void link(const address_ptr_t &amp;address, bool operational_only=true, const link_callback_t &amp;callback={}) noexcept</div><div class="ttdoc">attempt to link with the address</div></div>
 <div class="ttc" id="astructrotor_1_1plugin_1_1plugin__base__t_html"><div class="ttname"><a href="structrotor_1_1plugin_1_1plugin__base__t.html">rotor::plugin::plugin_base_t</a></div><div class="ttdoc">base class for all actor plugins</div><div class="ttdef"><b>Definition:</b> plugin_base.h:21</div></div>

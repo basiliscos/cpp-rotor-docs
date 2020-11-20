@@ -1,6 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"structrotor_1_1plugin_1_1foreigners__support__plugin__t.html#a4a5bf237da6fac1d6ec575918bba0098":[11,0,0,4,4,6],
 "structrotor_1_1plugin_1_1foreigners__support__plugin__t.html#a723a2ecef8c47fa48e1594aa559ff4d7":[11,0,0,4,4,3],
 "structrotor_1_1plugin_1_1foreigners__support__plugin__t.html#aad1ec113d52f2eab60d3847e2d384ed0":[11,0,0,4,4,2],
 "structrotor_1_1plugin_1_1foreigners__support__plugin__t.html#aba8213138c89c90808ec0f45a0de82f5":[11,0,0,4,4,4],
@@ -246,8 +245,9 @@ var NAVTREEINDEX2 =
 "structrotor_1_1supervisor__config__t.html#af3a9d4d7ceeac02970faab264164c9f5":[11,0,0,41,2],
 "structrotor_1_1supervisor__t.html":[11,0,0,42],
 "structrotor_1_1supervisor__t.html#a05694d96819d0bae8a0d04d3555746b1":[11,0,0,42,19],
-"structrotor_1_1supervisor__t.html#a0bd40fcd6e432a0d51246de08ac1c526":[11,0,0,42,38],
-"structrotor_1_1supervisor__t.html#a208d64b27972593f7e04ce635980c302":[11,0,0,42,45],
+"structrotor_1_1supervisor__t.html#a0bd40fcd6e432a0d51246de08ac1c526":[11,0,0,42,39],
+"structrotor_1_1supervisor__t.html#a208d64b27972593f7e04ce635980c302":[11,0,0,42,46],
 "structrotor_1_1supervisor__t.html#a22dacbd9dc3c5369c2c858928d062a7b":[11,0,0,42,0],
-"structrotor_1_1supervisor__t.html#a29acd6c7de7befe5efad827486b4b3f6":[11,0,0,42,3]
+"structrotor_1_1supervisor__t.html#a29acd6c7de7befe5efad827486b4b3f6":[11,0,0,42,3],
+"structrotor_1_1supervisor__t.html#a2e5377f0ce2971910b3859d75bb9cf54":[11,0,0,42,33]
 };

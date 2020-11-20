@@ -98,14 +98,23 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp-rotor_d
 <div class="title">Changelog </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>0.10 (09-Nov-2020)</h1>
+<div class="textblock"><h1>0.11 (20-Nov-2020)</h1>
+<ul>
+<li>[improvement] when supervisor shuts self down due to child init failure, the supervisor init error code is "failure escalation"</li>
+<li>[documentation] updated <code>Advanced examples</code>,</li>
+<li>[bugfix] when actor shuts self down all its timers are properly cancelled</li>
+<li>[bugfix] in rare case supervisor starts, event if child failed to init</li>
+<li>[bugfix] asio: more correct timers cancellation implementation</li>
+<li>[bugfix] ev: more correct shutdown (avoid memory leaks in rare cases)</li>
+</ul>
+<h1>0.10 (09-Nov-2020)</h1>
 <ul>
 <li>[improvement/breaking] Generic timers interface</li>
 <li>[improvement] Request cancellation support</li>
 <li>[improvement] added <code>make_response</code> methods when message should be created, but send later delayed</li>
 <li>[improvement] more debug information in message delivery plugin</li>
 <li>[documentation] Integration with event loops</li>
-<li>[documentation] Requests cancellation and timers are demonstrated in the <a class="el" href="md__home_b_development_cpp_cpp-rotor_docs_Examples.html">Advanced Examples</a> section</li>
+<li>[documentation] Requests cancellation and timers are demonstrated in the <code>Advanced Examples</code> section of docs</li>
 <li>[example] <code>examples/boost-asio/ping-pong-timer.cpp</code> (new)</li>
 <li>[example] <code>examples/boost-asio/beast-scrapper.cpp</code> (updated)</li>
 <li>[bugfix] avoid double configuration of a plugin in certain cases when interacting with resources plugin</li>
@@ -113,6 +122,7 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp-rotor_d
 </ul>
 <h1>0.09 (03-Oct-2020)</h1>
 <ul>
+<li>the dedicated article with highlights: <a href="https://habr.com/ru/company/crazypanda/blog/522588/">en</a> and <a href="https://habr.com/ru/company/crazypanda/blog/522892/">ru</a></li>
 <li>[improvement] rewritten whole documentation</li>
 <li>[improvement/breaking] plugin system where introduced for actors instead of behaviors</li>
 <li>[improvement] <code>actor_config_t</code> was introduced, which now holds pointer to supervisor, init and shutdown timeouts</li>

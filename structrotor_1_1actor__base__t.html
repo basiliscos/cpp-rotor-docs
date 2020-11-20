@@ -290,10 +290,10 @@ template&lt;typename T , typename... Args&gt; </td></tr>
 const <a class="el" href="namespacerotor.html#a25565725c774761a67bd766d93617326">address_ptr_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a3b9c6102ea139c35745d47927ce4d613">get_address</a> () const noexcept</td></tr>
 <tr class="memdesc:a3b9c6102ea139c35745d47927ce4d613"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns actor's main address <br /></td></tr>
 <tr class="separator:a3b9c6102ea139c35745d47927ce4d613"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a331d627f7d8fe509fd9e02dd7188d6c5"><td class="memItemLeft" align="right" valign="top"><a id="a331d627f7d8fe509fd9e02dd7188d6c5"></a>
-<a class="el" href="structrotor_1_1supervisor__t.html">supervisor_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a331d627f7d8fe509fd9e02dd7188d6c5">get_supervisor</a> () noexcept</td></tr>
-<tr class="memdesc:a331d627f7d8fe509fd9e02dd7188d6c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns actor's supervisor <br /></td></tr>
-<tr class="separator:a331d627f7d8fe509fd9e02dd7188d6c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34079b0bd2619cfe7dce3f4f7bacef62"><td class="memItemLeft" align="right" valign="top"><a id="a34079b0bd2619cfe7dce3f4f7bacef62"></a>
+<a class="el" href="structrotor_1_1supervisor__t.html">supervisor_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a34079b0bd2619cfe7dce3f4f7bacef62">get_supervisor</a> () const noexcept</td></tr>
+<tr class="memdesc:a34079b0bd2619cfe7dce3f4f7bacef62"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns actor's supervisor <br /></td></tr>
+<tr class="separator:a34079b0bd2619cfe7dce3f4f7bacef62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38e899e2f9b0f5ec40a127c899ae5167"><td class="memTemplParams" colspan="2">template&lt;typename Delegate , typename Method &gt; </td></tr>
 <tr class="memitem:a38e899e2f9b0f5ec40a127c899ae5167"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacerotor.html#aa709f45800c1bc7ea4d7bb2163328b4c">request_id_t</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a38e899e2f9b0f5ec40a127c899ae5167">start_timer</a> (const pt::time_duration &amp;interval, Delegate &amp;delegate, Method method) noexcept</td></tr>
 <tr class="memdesc:a38e899e2f9b0f5ec40a127c899ae5167"><td class="mdescLeft">&#160;</td><td class="mdescRight">spawns a new one-shot timer  <a href="structrotor_1_1actor__base__t.html#a38e899e2f9b0f5ec40a127c899ae5167">More...</a><br /></td></tr>
@@ -512,7 +512,8 @@ template&lt;typename Handler &gt; </div>
 </div><div class="memdoc">
 
 <p>cancels previously started timer </p>
-<p>If timer hasn't been triggered, then it is cancelled and the callback will be invoked with <code>true</code> to mark that it was cancelled. </p>
+<p>If timer hasn't been triggered, then it is cancelled and the callback will be invoked with <code>true</code> to mark that it was cancelled.</p>
+<p>Upon cancellation the timer callback will be invoked immediately, in the context of caller. </p>
 
 </div>
 </div>
@@ -1024,7 +1025,7 @@ template&lt;typename M , typename... Args&gt; </div>
 <p>The shutdown response is sent and actor state is set to SHUT_DOWN.</p>
 <p>This is the last action in the shutdown sequence. No further methods will be invoked on the actor </p>
 
-<p>Reimplemented in <a class="el" href="structrotor_1_1ev_1_1supervisor__ev__t.html#aa8f0afbe85d1efe38360561eddf4852b">rotor::ev::supervisor_ev_t</a>, and <a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html#a42236cadf0dbb0ca608ea3fa8c1bd6e3">rotor::asio::supervisor_asio_t</a>.</p>
+<p>Reimplemented in <a class="el" href="structrotor_1_1supervisor__t.html#a52475ee3357b1f11cc7f3f358ca767c5">rotor::supervisor_t</a>, <a class="el" href="structrotor_1_1ev_1_1supervisor__ev__t.html#aa8f0afbe85d1efe38360561eddf4852b">rotor::ev::supervisor_ev_t</a>, and <a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html#a42236cadf0dbb0ca608ea3fa8c1bd6e3">rotor::asio::supervisor_asio_t</a>.</p>
 
 </div>
 </div>
