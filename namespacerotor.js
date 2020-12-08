@@ -33,6 +33,7 @@ var namespacerotor =
       [ "resources_plugin_t", "structrotor_1_1plugin_1_1resources__plugin__t.html", "structrotor_1_1plugin_1_1resources__plugin__t" ],
       [ "starter_plugin_t", "structrotor_1_1plugin_1_1starter__plugin__t.html", "structrotor_1_1plugin_1_1starter__plugin__t" ]
     ] ],
+    [ "thread", "namespacerotor_1_1thread.html", "namespacerotor_1_1thread" ],
     [ "wx", "namespacerotor_1_1wx.html", "namespacerotor_1_1wx" ],
     [ "actor_base_t", "structrotor_1_1actor__base__t.html", "structrotor_1_1actor__base__t" ],
     [ "actor_config_builder_t", "structrotor_1_1actor__config__builder__t.html", "structrotor_1_1actor__config__builder__t" ],
@@ -40,7 +41,9 @@ var namespacerotor =
     [ "address_mapping_t", "structrotor_1_1address__mapping__t.html", "structrotor_1_1address__mapping__t" ],
     [ "address_t", "structrotor_1_1address__t.html", "structrotor_1_1address__t" ],
     [ "cancelation_t", "structrotor_1_1cancelation__t.html", "structrotor_1_1cancelation__t" ],
+    [ "continuation_t", "structrotor_1_1continuation__t.html", "structrotor_1_1continuation__t" ],
     [ "handler_base_t", "structrotor_1_1handler__base__t.html", "structrotor_1_1handler__base__t" ],
+    [ "handler_intercepted_t", "structrotor_1_1handler__intercepted__t.html", "structrotor_1_1handler__intercepted__t" ],
     [ "handler_t", "structrotor_1_1handler__t.html", null ],
     [ "handler_t< Handler, std::enable_if_t< details::is_actor_handler_v< Handler > > >", "structrotor_1_1handler__t_3_01Handler_00_01std_1_1enable__if__t_3_01details_1_1is__actor__handler__v_3_01Handler_01_4_01_4_01_4.html", "structrotor_1_1handler__t_3_01Handler_00_01std_1_1enable__if__t_3_01details_1_1is__actor__handler__v_3_01Handler_01_4_01_4_01_4" ],
     [ "handler_t< Handler, std::enable_if_t< details::is_plugin_handler_v< Handler > > >", "structrotor_1_1handler__t_3_01Handler_00_01std_1_1enable__if__t_3_01details_1_1is__plugin__handl20483f260024489c47703352b58225ce.html", "structrotor_1_1handler__t_3_01Handler_00_01std_1_1enable__if__t_3_01details_1_1is__plugin__handl20483f260024489c47703352b58225ce" ],

@@ -98,10 +98,20 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp-rotor_d
 <div class="title">Changelog </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>0.11 (20-Nov-2020)</h1>
+<div class="textblock"><h1>0.12 (08-Dec-2020)</h1>
+<ul>
+<li>[improvement] added <code>std::thread</code> backend (supervisor)</li>
+<li>[bugfix] active timers, if any, are cancelled upon actor shutdown finish</li>
+<li>[bugfix] supervisor shutdown message is lost in rare cases right after child actor start</li>
+<li>[example] <code>examples/thread/sha512.cpp</code> (new)</li>
+<li>[documentation] updated <code>Event loops &amp; platforms</code></li>
+<li>[documentation] updated <code>Patterns</code> with <code>Blocking I/O multiplexing</code></li>
+<li>[deprecated] state_response_t, state_request_t will be removed in v0.13</li>
+</ul>
+<h1>0.11 (20-Nov-2020)</h1>
 <ul>
 <li>[improvement] when supervisor shuts self down due to child init failure, the supervisor init error code is "failure escalation"</li>
-<li>[documentation] updated <code>Advanced examples</code>,</li>
+<li>[documentation] updated <code>Advanced examples</code></li>
 <li>[bugfix] when actor shuts self down all its timers are properly cancelled</li>
 <li>[bugfix] in rare case supervisor starts, event if child failed to init</li>
 <li>[bugfix] asio: more correct timers cancellation implementation</li>

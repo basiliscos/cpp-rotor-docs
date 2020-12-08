@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp-rotor_d
 <div class="title">Event loops &amp; platforms </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>Event loops</h1>
+<div class="textblock"><h1>Event loops &amp; backends</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">event loop  </th><th class="markdownTableHeadNone">support status   </th></tr>
@@ -109,12 +109,14 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp-rotor_d
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="http://software.schmorp.de/pkg/libev.html">ev</a>  </td><td class="markdownTableBodyNone">supported   </td></tr>
 <tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone"><a href="https://en.cppreference.com/w/cpp/thread/thread">std-thread</a>  </td><td class="markdownTableBodyNone">supported   </td></tr>
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><a href="https://libevent.org/">libevent</a>  </td><td class="markdownTableBodyNone">planned   </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone"><a href="https://libuv.org/">libuv</a>  </td><td class="markdownTableBodyNone">planned   </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><a href="https://www.gtk.org/">gtk</a>  </td><td class="markdownTableBodyNone">planned   </td></tr>
+<td class="markdownTableBodyNone"><a href="https://libuv.org/">libuv</a>  </td><td class="markdownTableBodyNone">planned   </td></tr>
 <tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone"><a href="https://www.gtk.org/">gtk</a>  </td><td class="markdownTableBodyNone">planned   </td></tr>
+<tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone"><a href="https://www.qt.io/">qt</a>  </td><td class="markdownTableBodyNone">planned   </td></tr>
 </table>
 <p>If you need some other event loop or speedup inclusion of a planned one, please file an <a href="https://github.com/basiliscos/cpp-rotor/issues">issue</a>.</p>
@@ -129,6 +131,11 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp-rotor_d
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">macos  </td><td class="markdownTableBodyNone">supported   </td></tr>
 </table>
+<h1>Notes on std::thread backend</h1>
+<p>This backend was developed to support <b>blocking</b> operations, which have the same effect as <code>std::this_thread::sleep_for</code> invocation. This is suitable for disk I/O operations, working with database or using third-party libraries with synchronous semantics.</p>
+<p>It should be noted, that using blocking operations have some consequences, e.g. actors on a thread, which executes blocking operation, will not be able to respond to messages, namely, to cancellation requests. There is no universal remedy, however, this can be smoothed: split long I/O operation into "continuation-message" with series of smaller I/O chunks and when the current chunk is complete, just send self a message with all work and index of the next chunk. It will make an actor more responsive, giving it some breadth to pull external messages, trigger timeouts, and, finally, give it a chance to react to cancellation notice.</p>
+<p>When there are no messages, the backend uses <code>sleep_for</code> / <code>sleep_until</code> functions to wait either external message message or until nearest timout occurs. To let the things work properly, the message handlers with blocking operations should specially marked (<code>tag_io()</code>), to correctly update timers before, after and inside the handler.</p>
+<p>See, <code>Blocking I/O multiplexing</code> in <code>Patterns</code>.</p>
 <h1>Integration with event loops</h1>
 <p><code>rotor</code> is designed to be integrated with event loops, which actually perform some I/O, spawn and trigger timers and other asynchronous operations, which can be invoked from an actor or a supervisor. The key accessor here is a supervisor.</p>
 <p>First, the final (concrete) supervisor have to be obtained. Then, for safety, the intrusive pointer to the actor should be created(2), and then loop-specific async operation should be initiated(3), where the pointer should be moved(4). Finally, when the result of I/O operation is transformed into rotor message or messages(5), which should be sent, the supervisor should be asked to perform rotor mechanics, i.e. deliver message(s)(6). Let's illustrate it on timer using <a href="https://www.boost.org/doc/libs/release/libs/asio/" title="Boost Asio">boost-asio</a>.</p>
@@ -181,7 +188,7 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp-rotor_d
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespacerotor_1_1asio_html_abe1323c9afeef7ace640615c830867a3"><div class="ttname"><a href="namespacerotor_1_1asio.html#abe1323c9afeef7ace640615c830867a3">rotor::asio::supervisor_ptr_t</a></div><div class="ttdeci">intrusive_ptr_t&lt; supervisor_asio_t &gt; supervisor_ptr_t</div><div class="ttdoc">intrusive pointer for boost::asio supervisor</div><div class="ttdef"><b>Definition:</b> system_context_asio.h:22</div></div>
+<div class="ttc" id="anamespacerotor_1_1asio_html_abe1323c9afeef7ace640615c830867a3"><div class="ttname"><a href="namespacerotor_1_1asio.html#abe1323c9afeef7ace640615c830867a3">rotor::asio::supervisor_ptr_t</a></div><div class="ttdeci">intrusive_ptr_t&lt; supervisor_asio_t &gt; supervisor_ptr_t</div><div class="ttdoc">intrusive pointer for boost::asio supervisor</div><div class="ttdef"><b>Definition:</b> system_context_asio.h:21</div></div>
 <div class="ttc" id="anamespacerotor_html_a9ebe7c23e46e63f18335110b2a76548c"><div class="ttname"><a href="namespacerotor.html#a9ebe7c23e46e63f18335110b2a76548c">rotor::actor_ptr_t</a></div><div class="ttdeci">intrusive_ptr_t&lt; actor_base_t &gt; actor_ptr_t</div><div class="ttdoc">intrusive pointer for actor</div><div class="ttdef"><b>Definition:</b> forward.hpp:22</div></div>
 <div class="ttc" id="anamespacerotor_html"><div class="ttname"><a href="namespacerotor.html">rotor</a></div><div class="ttdoc">Basic namespace for all rotor functionalities.</div><div class="ttdef"><b>Definition:</b> actor_base.h:18</div></div>
 <!-- start footer part -->

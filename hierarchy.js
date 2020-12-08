@@ -22,11 +22,13 @@ var hierarchy =
         [ "rotor::supervisor_t", "structrotor_1_1supervisor__t.html", [
           [ "rotor::asio::supervisor_asio_t", "structrotor_1_1asio_1_1supervisor__asio__t.html", null ],
           [ "rotor::ev::supervisor_ev_t", "structrotor_1_1ev_1_1supervisor__ev__t.html", null ],
+          [ "rotor::thread::supervisor_thread_t", "structrotor_1_1thread_1_1supervisor__thread__t.html", null ],
           [ "rotor::wx::supervisor_wx_t", "structrotor_1_1wx_1_1supervisor__wx__t.html", null ]
         ] ]
       ] ],
       [ "rotor::address_t", "structrotor_1_1address__t.html", null ],
       [ "rotor::handler_base_t", "structrotor_1_1handler__base__t.html", [
+        [ "rotor::handler_intercepted_t", "structrotor_1_1handler__intercepted__t.html", null ],
         [ "rotor::handler_t< Handler, std::enable_if_t< details::is_actor_handler_v< Handler > > >", "structrotor_1_1handler__t_3_01Handler_00_01std_1_1enable__if__t_3_01details_1_1is__actor__handler__v_3_01Handler_01_4_01_4_01_4.html", null ],
         [ "rotor::handler_t< Handler, std::enable_if_t< details::is_plugin_handler_v< Handler > > >", "structrotor_1_1handler__t_3_01Handler_00_01std_1_1enable__if__t_3_01details_1_1is__plugin__handl20483f260024489c47703352b58225ce.html", null ],
         [ "rotor::handler_t< lambda_holder_t< Handler, M >, std::enable_if_t< details::is_lambda_handler_v< lambda_holder_t< Handler, M > > > >", "structrotor_1_1handler__t_3_01lambda__holder__t_3_01Handler_00_01M_01_4_00_01std_1_1enable__if__9f0d4eb8f11444e50079417975696fb3.html", null ]
@@ -37,6 +39,7 @@ var hierarchy =
       [ "rotor::subscription_info_t", "structrotor_1_1subscription__info__t.html", null ],
       [ "rotor::system_context_t", "structrotor_1_1system__context__t.html", [
         [ "rotor::asio::system_context_asio_t", "structrotor_1_1asio_1_1system__context__asio__t.html", null ],
+        [ "rotor::thread::system_context_thread_t", "structrotor_1_1thread_1_1system__context__thread__t.html", null ],
         [ "rotor::wx::system_context_wx_t", "structrotor_1_1wx_1_1system__context__wx__t.html", null ]
       ] ]
     ] ],
@@ -47,7 +50,9 @@ var hierarchy =
     [ "rotor::request_traits_t< R >::cancel", "structrotor_1_1request__traits__t_1_1cancel.html", null ],
     [ "rotor::cancelation_t< T >", "structrotor_1_1cancelation__t.html", null ],
     [ "rotor::payload::commit_unsubscription_t", "structrotor_1_1payload_1_1commit__unsubscription__t.html", null ],
+    [ "rotor::continuation_t", "structrotor_1_1continuation__t.html", null ],
     [ "rotor::payload::create_actor_t", "structrotor_1_1payload_1_1create__actor__t.html", null ],
+    [ "rotor::thread::system_context_thread_t::deadline_info_t", "structrotor_1_1thread_1_1system__context__thread__t_1_1deadline__info__t.html", null ],
     [ "deadline_timer", null, [
       [ "rotor::asio::supervisor_asio_t::timer_t", "structrotor_1_1asio_1_1supervisor__asio__t_1_1timer__t.html", null ]
     ] ],

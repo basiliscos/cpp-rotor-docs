@@ -97,7 +97,6 @@ $(document).ready(function(){initNavTree('structrotor_1_1subscription__info__t.h
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structrotor_1_1subscription__info__t-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">rotor::subscription_info_t Struct Reference</div>  </div>
@@ -137,13 +136,26 @@ Public Member Functions</h2></td></tr>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1subscription__info__t.html#a3a721bee1b0b3cfc33a1cbbd349c2fe4">operator==</a> (const <a class="el" href="structrotor_1_1subscription__point__t.html">subscription_point_t</a> &amp;point) const noexcept</td></tr>
 <tr class="memdesc:a3a721bee1b0b3cfc33a1cbbd349c2fe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">uses <a class="el" href="structrotor_1_1subscription__point__t.html">subscription_point_t</a> comparison <br /></td></tr>
 <tr class="separator:a3a721bee1b0b3cfc33a1cbbd349c2fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cf7571c9e82f411e0a9fa7b34ff185f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1subscription__info__t.html#a3cf7571c9e82f411e0a9fa7b34ff185f">tag_io</a> () noexcept</td></tr>
+<tr class="memdesc:a3cf7571c9e82f411e0a9fa7b34ff185f"><td class="mdescLeft">&#160;</td><td class="mdescRight">marks handler for blocking operations  <a href="structrotor_1_1subscription__info__t.html#a3cf7571c9e82f411e0a9fa7b34ff185f">More...</a><br /></td></tr>
+<tr class="separator:a3cf7571c9e82f411e0a9fa7b34ff185f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3affad2f524e613a000c6b360ff977c1"><td class="memTemplParams" colspan="2"><a id="a3affad2f524e613a000c6b360ff977c1"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a3affad2f524e613a000c6b360ff977c1"><td class="memTemplItemLeft" align="right" valign="top">auto &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1subscription__info__t.html#a3affad2f524e613a000c6b360ff977c1">access</a> () noexcept</td></tr>
+<tr class="memdesc:a3affad2f524e613a000c6b360ff977c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">generic non-public fields accessor <br /></td></tr>
+<tr class="separator:a3affad2f524e613a000c6b360ff977c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26fd4ed6ea93fda73fb8816c742f0e2c"><td class="memTemplParams" colspan="2"><a id="a26fd4ed6ea93fda73fb8816c742f0e2c"></a>
+template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:a26fd4ed6ea93fda73fb8816c742f0e2c"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1subscription__info__t.html#a26fd4ed6ea93fda73fb8816c742f0e2c">access</a> (Args... args) noexcept</td></tr>
+<tr class="memdesc:a26fd4ed6ea93fda73fb8816c742f0e2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">generic non-public methods accessor <br /></td></tr>
+<tr class="separator:a26fd4ed6ea93fda73fb8816c742f0e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structrotor_1_1subscription__point__t"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structrotor_1_1subscription__point__t')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structrotor_1_1subscription__point__t.html">rotor::subscription_point_t</a></td></tr>
 <tr class="memitem:a28b55ca313e807fb249324726037930c inherit pub_methods_structrotor_1_1subscription__point__t"><td class="memItemLeft" align="right" valign="top"><a id="a28b55ca313e807fb249324726037930c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1subscription__point__t.html#a28b55ca313e807fb249324726037930c">subscription_point_t</a> (const <a class="el" href="namespacerotor.html#a6fbcb2aae7a1ccefb14fe774902080d7">handler_ptr_t</a> &amp;handler_, const <a class="el" href="namespacerotor.html#a25565725c774761a67bd766d93617326">address_ptr_t</a> &amp;address_) noexcept</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1subscription__point__t.html#a28b55ca313e807fb249324726037930c">subscription_point_t</a> (const <a class="el" href="namespacerotor.html#aa6f317d95700079f90a76aa56294f92f">handler_ptr_t</a> &amp;handler_, const <a class="el" href="namespacerotor.html#a25565725c774761a67bd766d93617326">address_ptr_t</a> &amp;address_) noexcept</td></tr>
 <tr class="memdesc:a28b55ca313e807fb249324726037930c inherit pub_methods_structrotor_1_1subscription__point__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">ctor from handler and related address (used for comparison) <br /></td></tr>
 <tr class="separator:a28b55ca313e807fb249324726037930c inherit pub_methods_structrotor_1_1subscription__point__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6882f1626275d237290f81399f8fbcb inherit pub_methods_structrotor_1_1subscription__point__t"><td class="memItemLeft" align="right" valign="top"><a id="ab6882f1626275d237290f81399f8fbcb"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1subscription__point__t.html#ab6882f1626275d237290f81399f8fbcb">subscription_point_t</a> (const <a class="el" href="namespacerotor.html#a6fbcb2aae7a1ccefb14fe774902080d7">handler_ptr_t</a> &amp;handler_, const <a class="el" href="namespacerotor.html#a25565725c774761a67bd766d93617326">address_ptr_t</a> &amp;address_, const <a class="el" href="structrotor_1_1actor__base__t.html">actor_base_t</a> *owner_ptr_, <a class="el" href="namespacerotor.html#a3467749432c11e43f09b06257b5a3385">owner_tag_t</a> owner_tag_) noexcept</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1subscription__point__t.html#ab6882f1626275d237290f81399f8fbcb">subscription_point_t</a> (const <a class="el" href="namespacerotor.html#aa6f317d95700079f90a76aa56294f92f">handler_ptr_t</a> &amp;handler_, const <a class="el" href="namespacerotor.html#a25565725c774761a67bd766d93617326">address_ptr_t</a> &amp;address_, const <a class="el" href="structrotor_1_1actor__base__t.html">actor_base_t</a> *owner_ptr_, <a class="el" href="namespacerotor.html#a3467749432c11e43f09b06257b5a3385">owner_tag_t</a> owner_tag_) noexcept</td></tr>
 <tr class="memdesc:ab6882f1626275d237290f81399f8fbcb inherit pub_methods_structrotor_1_1subscription__point__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">full ctor (handler, address, actor, and owner tag) <br /></td></tr>
 <tr class="separator:ab6882f1626275d237290f81399f8fbcb inherit pub_methods_structrotor_1_1subscription__point__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af70bd46de04d012f74c4233a589653ca inherit pub_methods_structrotor_1_1subscription__point__t"><td class="memItemLeft" align="right" valign="top"><a id="af70bd46de04d012f74c4233a589653ca"></a>
@@ -159,23 +171,11 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 <tr class="memdesc:a49874d2ccea4e88e21806ea6ddb164ee inherit pub_methods_structrotor_1_1subscription__point__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">patrial comparison by handler and address <br /></td></tr>
 <tr class="separator:a49874d2ccea4e88e21806ea6ddb164ee inherit pub_methods_structrotor_1_1subscription__point__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a1a21495901ee2860f0af14b5804e82c9"><td class="memItemLeft" align="right" valign="top"><a id="a1a21495901ee2860f0af14b5804e82c9"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1subscription__info__t.html#a1a21495901ee2860f0af14b5804e82c9">internal_address</a></td></tr>
-<tr class="memdesc:a1a21495901ee2860f0af14b5804e82c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">whether the subscription point (info) belongs to internal address, i.e. to the "my" supervisor <br /></td></tr>
-<tr class="separator:a1a21495901ee2860f0af14b5804e82c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7eaaf9e19e316201737d42af0eddb44a"><td class="memItemLeft" align="right" valign="top"><a id="a7eaaf9e19e316201737d42af0eddb44a"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1subscription__info__t.html#a7eaaf9e19e316201737d42af0eddb44a">internal_handler</a></td></tr>
-<tr class="memdesc:a7eaaf9e19e316201737d42af0eddb44a"><td class="mdescLeft">&#160;</td><td class="mdescRight">whether the subscription point (info) has internal handler, i.e. will be processed by "my" supervisor <br /></td></tr>
-<tr class="separator:a7eaaf9e19e316201737d42af0eddb44a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd5ebbcdd74be09a09254b18860373fa"><td class="memItemLeft" align="right" valign="top"><a id="acd5ebbcdd74be09a09254b18860373fa"></a>
-<a class="el" href="structrotor_1_1subscription__info__t.html#a99b9a20a919024f63979a43c7ba92c5d">state_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1subscription__info__t.html#acd5ebbcdd74be09a09254b18860373fa">state</a></td></tr>
-<tr class="memdesc:acd5ebbcdd74be09a09254b18860373fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">subscription state <br /></td></tr>
-<tr class="separator:acd5ebbcdd74be09a09254b18860373fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_attribs_structrotor_1_1subscription__point__t"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_structrotor_1_1subscription__point__t')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="structrotor_1_1subscription__point__t.html">rotor::subscription_point_t</a></td></tr>
 <tr class="memitem:aeec07cceed2ed98f5d1a4bfdf5701895 inherit pub_attribs_structrotor_1_1subscription__point__t"><td class="memItemLeft" align="right" valign="top"><a id="aeec07cceed2ed98f5d1a4bfdf5701895"></a>
-<a class="el" href="namespacerotor.html#a6fbcb2aae7a1ccefb14fe774902080d7">handler_ptr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1subscription__point__t.html#aeec07cceed2ed98f5d1a4bfdf5701895">handler</a></td></tr>
+<a class="el" href="namespacerotor.html#aa6f317d95700079f90a76aa56294f92f">handler_ptr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1subscription__point__t.html#aeec07cceed2ed98f5d1a4bfdf5701895">handler</a></td></tr>
 <tr class="memdesc:aeec07cceed2ed98f5d1a4bfdf5701895 inherit pub_attribs_structrotor_1_1subscription__point__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">intrusive pointer to messages' handler <br /></td></tr>
 <tr class="separator:aeec07cceed2ed98f5d1a4bfdf5701895 inherit pub_attribs_structrotor_1_1subscription__point__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a702b05be9059ea7190c852da71f4d4b1 inherit pub_attribs_structrotor_1_1subscription__point__t"><td class="memItemLeft" align="right" valign="top"><a id="a702b05be9059ea7190c852da71f4d4b1"></a>
@@ -193,7 +193,36 @@ const <a class="el" href="structrotor_1_1actor__base__t.html">actor_base_t</a> *
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="structrotor_1_1subscription__point__t.html">subscription_point_t</a> with extended information (e.g. state) </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3cf7571c9e82f411e0a9fa7b34ff185f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cf7571c9e82f411e0a9fa7b34ff185f">&#9670;&nbsp;</a></span>tag_io()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void rotor::subscription_info_t::tag_io </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>marks handler for blocking operations </p>
+<p>It is suitable for thread backend. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/home/b/development/cpp/cpp-rotor/include/rotor/<a class="el" href="subscription__point_8h_source.html">subscription_point.h</a></li>
 </ul>
 </div><!-- contents -->

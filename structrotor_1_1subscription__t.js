@@ -7,5 +7,6 @@ var structrotor_1_1subscription__t =
     [ "access", "structrotor_1_1subscription__t.html#aa2846a31d06bf81ba6b7089658a73c13", null ],
     [ "forget", "structrotor_1_1subscription__t.html#a4a0fc73c6eea8c8b5f71cede7d6274a3", null ],
     [ "get_recipients", "structrotor_1_1subscription__t.html#afa4e5dcbedaa49d2cd7b8e48bcc71a04", null ],
-    [ "materialize", "structrotor_1_1subscription__t.html#aa143617216dcdf521141c5f6aa40c468", null ]
+    [ "materialize", "structrotor_1_1subscription__t.html#aa143617216dcdf521141c5f6aa40c468", null ],
+    [ "update", "structrotor_1_1subscription__t.html#a54636579911001270b0cd97800723dcc", null ]
 ];

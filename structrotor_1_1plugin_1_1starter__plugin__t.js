@@ -9,6 +9,6 @@ var structrotor_1_1plugin_1_1starter__plugin__t =
     [ "on_start", "structrotor_1_1plugin_1_1starter__plugin__t.html#af540d1167f0f6a0420ff49bac271a3e1", null ],
     [ "plugin_base_t", "structrotor_1_1plugin_1_1starter__plugin__t.html#a4a5bf237da6fac1d6ec575918bba0098", null ],
     [ "plugin_base_t", "structrotor_1_1plugin_1_1starter__plugin__t.html#af53ccd0d62ad3fb262357096eeb043c6", null ],
-    [ "subscribe_actor", "structrotor_1_1plugin_1_1starter__plugin__t.html#a888df53f806c9e89b48158f372243f77", null ],
-    [ "subscribe_actor", "structrotor_1_1plugin_1_1starter__plugin__t.html#a83bf7d126ddbb3cb35fe9b321cd4e67e", null ]
+    [ "subscribe_actor", "structrotor_1_1plugin_1_1starter__plugin__t.html#a82132f434c1e35d5497600f0422d501b", null ],
+    [ "subscribe_actor", "structrotor_1_1plugin_1_1starter__plugin__t.html#add96b25726b8eff5f41d2b9658863893", null ]
 ];

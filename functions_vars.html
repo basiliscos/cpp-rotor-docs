@@ -155,12 +155,18 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 <li>create_registry
 : <a class="el" href="structrotor_1_1supervisor__config__t.html#a704c24245c889db0f30426e06ab1f7b6">rotor::supervisor_config_t</a>
 </li>
+<li>cv
+: <a class="el" href="structrotor_1_1thread_1_1system__context__thread__t.html#a3790784d7bc700a662e10b010703430f">rotor::thread::system_context_thread_t</a>
+</li>
 </ul>
 
 
 <h3><a id="index_d"></a>- d -</h3><ul>
 <li>deactivating_plugins
 : <a class="el" href="structrotor_1_1actor__base__t.html#ac7c90a1a1affc26933bb05d2a082853e">rotor::actor_base_t</a>
+</li>
+<li>deadline
+: <a class="el" href="structrotor_1_1thread_1_1system__context__thread__t_1_1deadline__info__t.html#ac8773f31515d40ae3fb89be43f9e5816">rotor::thread::system_context_thread_t::deadline_info_t</a>
 </li>
 <li>delivery
 : <a class="el" href="structrotor_1_1supervisor__t.html#a0bd40fcd6e432a0d51246de08ac1c526">rotor::supervisor_t</a>
@@ -212,6 +218,7 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 , <a class="el" href="structrotor_1_1handler__t_3_01lambda__holder__t_3_01Handler_00_01M_01_4_00_01std_1_1enable__if__9f0d4eb8f11444e50079417975696fb3.html#a1bd00759590a2ba217fa8ec71d2f6c6b">rotor::handler_t&lt; lambda_holder_t&lt; Handler, M &gt;, std::enable_if_t&lt; details::is_lambda_handler_v&lt; lambda_holder_t&lt; Handler, M &gt; &gt; &gt; &gt;</a>
 , <a class="el" href="structrotor_1_1payload_1_1handler__call__t.html#a85c6f6c46fc40b6385bfb8603a54f8bf">rotor::payload::handler_call_t</a>
 , <a class="el" href="structrotor_1_1subscription__point__t.html#aeec07cceed2ed98f5d1a4bfdf5701895">rotor::subscription_point_t</a>
+, <a class="el" href="structrotor_1_1thread_1_1system__context__thread__t_1_1deadline__info__t.html#a607492d990517480ff0697d1db733eb7">rotor::thread::system_context_thread_t::deadline_info_t</a>
 , <a class="el" href="structrotor_1_1wx_1_1supervisor__config__wx__t.html#a7d4bb8628d7e5bf2e4e3b8fbf9fe7be2">rotor::wx::supervisor_config_wx_t</a>
 , <a class="el" href="structrotor_1_1wx_1_1supervisor__wx__t.html#a1fd06f0d9b11e83709e01d9ac5a95f3a">rotor::wx::supervisor_wx_t</a>
 , <a class="el" href="structrotor_1_1wx_1_1supervisor__wx__t_1_1timer__t.html#a87c82cfff5077f9f184f88cf800dbf13">rotor::wx::supervisor_wx_t::timer_t</a>
@@ -236,6 +243,7 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 </li>
 <li>inbound
 : <a class="el" href="structrotor_1_1ev_1_1supervisor__ev__t.html#a0554f6b3bd728655463556e19de5091e">rotor::ev::supervisor_ev_t</a>
+, <a class="el" href="structrotor_1_1thread_1_1system__context__thread__t.html#a793e2b140c89c85c0b59c143524b9834">rotor::thread::system_context_thread_t</a>
 </li>
 <li>inbound_mutex
 : <a class="el" href="structrotor_1_1ev_1_1supervisor__ev__t.html#a52b34144d0ad68c7f166174b9db207ed">rotor::ev::supervisor_ev_t</a>
@@ -255,14 +263,11 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 <li>install_action
 : <a class="el" href="structrotor_1_1actor__config__builder__t.html#afb124034a5052d60fcf945f6c386ad43">rotor::actor_config_builder_t&lt; Actor &gt;</a>
 </li>
+<li>intercepting
+: <a class="el" href="structrotor_1_1thread_1_1system__context__thread__t.html#a0e69440e0c5b39d0a7ba2eaf507db7fb">rotor::thread::system_context_thread_t</a>
+</li>
 <li>internal
 : <a class="el" href="structrotor_1_1subscription__t_1_1joint__handlers__t.html#a5c4d4f6d8d3734219953c8142df18316">rotor::subscription_t::joint_handlers_t</a>
-</li>
-<li>internal_address
-: <a class="el" href="structrotor_1_1subscription__info__t.html#a1a21495901ee2860f0af14b5804e82c9">rotor::subscription_info_t</a>
-</li>
-<li>internal_handler
-: <a class="el" href="structrotor_1_1subscription__info__t.html#a7eaaf9e19e316201737d42af0eddb44a">rotor::subscription_info_t</a>
 </li>
 <li>io_context
 : <a class="el" href="structrotor_1_1asio_1_1system__context__asio__t.html#a7a1d2e7b37a3242defcb732f6431ffc9">rotor::asio::system_context_asio_t</a>
@@ -328,6 +333,16 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 </li>
 <li>method
 : <a class="el" href="structrotor_1_1timer__handler__t.html#aa7588df122ed10a042ae64b15bdbd871">rotor::timer_handler_t&lt; Object, Method &gt;</a>
+</li>
+<li>mutex
+: <a class="el" href="structrotor_1_1thread_1_1system__context__thread__t.html#aa97feaa7838a6ad1ea8df7f976f25907">rotor::thread::system_context_thread_t</a>
+</li>
+</ul>
+
+
+<h3><a id="index_n"></a>- n -</h3><ul>
+<li>now
+: <a class="el" href="structrotor_1_1thread_1_1system__context__thread__t.html#aa2106705c4adc7123d2c9258cfa0a705">rotor::thread::system_context_thread_t</a>
 </li>
 </ul>
 
@@ -488,7 +503,6 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 <li>state
 : <a class="el" href="structrotor_1_1actor__base__t.html#ace7dad5e2a06711664bb7d0c70d1f1c7">rotor::actor_base_t</a>
 , <a class="el" href="structrotor_1_1payload_1_1state__response__t.html#a61962959bb905a4077333bf17dd57b06">rotor::payload::state_response_t</a>
-, <a class="el" href="structrotor_1_1subscription__info__t.html#acd5ebbcdd74be09a09254b18860373fa">rotor::subscription_info_t</a>
 </li>
 <li>strand
 : <a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html#ab0ef7873648672e7f1deb9771d8743aa">rotor::asio::supervisor_asio_t</a>
@@ -528,6 +542,9 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 <h3><a id="index_t"></a>- t -</h3><ul>
 <li>timeout
 : <a class="el" href="structrotor_1_1payload_1_1create__actor__t.html#a42b5538f02261756480f141585e62b1f">rotor::payload::create_actor_t</a>
+</li>
+<li>timer_nodes
+: <a class="el" href="structrotor_1_1thread_1_1system__context__thread__t.html#aa2b00cb3d08b3cee0684cfc4573cb32b">rotor::thread::system_context_thread_t</a>
 </li>
 <li>timers_map
 : <a class="el" href="structrotor_1_1actor__base__t.html#a3690fd9e13468b95c47c71cf452c574c">rotor::actor_base_t</a>

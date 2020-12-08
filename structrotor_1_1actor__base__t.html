@@ -117,11 +117,12 @@ Inheritance diagram for rotor::actor_base_t:</div>
  <div class="center">
   <img src="structrotor_1_1actor__base__t.png" usemap="#rotor::actor_5Fbase_5Ft_map" alt=""/>
   <map id="rotor::actor_5Fbase_5Ft_map" name="rotor::actor_5Fbase_5Ft_map">
-<area href="structrotor_1_1registry__t.html" title="keeps name-to-service_address mapping at runtime" alt="rotor::registry_t" shape="rect" coords="0,112,174,136"/>
-<area href="structrotor_1_1supervisor__t.html" title="supervisor is responsible for managing actors (workers) lifetime" alt="rotor::supervisor_t" shape="rect" coords="184,112,358,136"/>
-<area href="structrotor_1_1asio_1_1supervisor__asio__t.html" title="delivers rotor-messages on top of boost asio event loop using strand for serialization" alt="rotor::asio::supervisor_asio_t" shape="rect" coords="0,168,174,192"/>
-<area href="structrotor_1_1ev_1_1supervisor__ev__t.html" title="delivers rotor-messages on top of libev event loop" alt="rotor::ev::supervisor_ev_t" shape="rect" coords="184,168,358,192"/>
-<area href="structrotor_1_1wx_1_1supervisor__wx__t.html" title="delivers rotor-messages on top of wx event" alt="rotor::wx::supervisor_wx_t" shape="rect" coords="368,168,542,192"/>
+<area href="structrotor_1_1registry__t.html" title="keeps name-to-service_address mapping at runtime" alt="rotor::registry_t" shape="rect" coords="0,112,200,136"/>
+<area href="structrotor_1_1supervisor__t.html" title="supervisor is responsible for managing actors (workers) lifetime" alt="rotor::supervisor_t" shape="rect" coords="315,112,515,136"/>
+<area href="structrotor_1_1asio_1_1supervisor__asio__t.html" title="delivers rotor-messages on top of boost asio event loop using strand for serialization" alt="rotor::asio::supervisor_asio_t" shape="rect" coords="0,168,200,192"/>
+<area href="structrotor_1_1ev_1_1supervisor__ev__t.html" title="delivers rotor-messages on top of libev event loop" alt="rotor::ev::supervisor_ev_t" shape="rect" coords="210,168,410,192"/>
+<area href="structrotor_1_1thread_1_1supervisor__thread__t.html" title="pure thread supervisor dedicated for blocking I/O or computing operations" alt="rotor::thread::supervisor_thread_t" shape="rect" coords="420,168,620,192"/>
+<area href="structrotor_1_1wx_1_1supervisor__wx__t.html" title="delivers rotor-messages on top of wx event" alt="rotor::wx::supervisor_wx_t" shape="rect" coords="630,168,830,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -159,31 +160,31 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:abd09068676677472caabe32ed7ef7aaf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#abd09068676677472caabe32ed7ef7aaf">on_start</a> () noexcept</td></tr>
 <tr class="memdesc:abd09068676677472caabe32ed7ef7aaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">actor is fully initialized and it's supervisor has sent signal to start  <a href="structrotor_1_1actor__base__t.html#abd09068676677472caabe32ed7ef7aaf">More...</a><br /></td></tr>
 <tr class="separator:abd09068676677472caabe32ed7ef7aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ab9820e36e2f216fef92c2eacb4746b"><td class="memTemplParams" colspan="2">template&lt;typename M , typename... Args&gt; </td></tr>
-<tr class="memitem:a6ab9820e36e2f216fef92c2eacb4746b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a6ab9820e36e2f216fef92c2eacb4746b">send</a> (const <a class="el" href="namespacerotor.html#a25565725c774761a67bd766d93617326">address_ptr_t</a> &amp;addr, Args &amp;&amp;... args)</td></tr>
-<tr class="memdesc:a6ab9820e36e2f216fef92c2eacb4746b"><td class="mdescLeft">&#160;</td><td class="mdescRight">sends message to the destination address  <a href="structrotor_1_1actor__base__t.html#a6ab9820e36e2f216fef92c2eacb4746b">More...</a><br /></td></tr>
-<tr class="separator:a6ab9820e36e2f216fef92c2eacb4746b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b701add3947b09b40d3c5b2c884792a"><td class="memTemplParams" colspan="2">template&lt;typename R , typename... Args&gt; </td></tr>
-<tr class="memitem:a8b701add3947b09b40d3c5b2c884792a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structrotor_1_1request__builder__t.html">request_builder_t</a>&lt; typename <a class="el" href="structrotor_1_1request__wrapper__t.html">request_wrapper_t</a>&lt; R &gt;::request_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a8b701add3947b09b40d3c5b2c884792a">request</a> (const <a class="el" href="namespacerotor.html#a25565725c774761a67bd766d93617326">address_ptr_t</a> &amp;dest_addr, Args &amp;&amp;... args)</td></tr>
-<tr class="memdesc:a8b701add3947b09b40d3c5b2c884792a"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns request builder for destination address using the "main" actor address  <a href="structrotor_1_1actor__base__t.html#a8b701add3947b09b40d3c5b2c884792a">More...</a><br /></td></tr>
-<tr class="separator:a8b701add3947b09b40d3c5b2c884792a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac038eaca193ccdc1df52bae4ac655a34"><td class="memTemplParams" colspan="2">template&lt;typename R , typename... Args&gt; </td></tr>
-<tr class="memitem:ac038eaca193ccdc1df52bae4ac655a34"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structrotor_1_1request__builder__t.html">request_builder_t</a>&lt; typename <a class="el" href="structrotor_1_1request__wrapper__t.html">request_wrapper_t</a>&lt; R &gt;::request_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#ac038eaca193ccdc1df52bae4ac655a34">request_via</a> (const <a class="el" href="namespacerotor.html#a25565725c774761a67bd766d93617326">address_ptr_t</a> &amp;dest_addr, const <a class="el" href="namespacerotor.html#a25565725c774761a67bd766d93617326">address_ptr_t</a> &amp;reply_addr, Args &amp;&amp;... args)</td></tr>
-<tr class="memdesc:ac038eaca193ccdc1df52bae4ac655a34"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns request builder for destination address using the specified address for reply  <a href="structrotor_1_1actor__base__t.html#ac038eaca193ccdc1df52bae4ac655a34">More...</a><br /></td></tr>
-<tr class="separator:ac038eaca193ccdc1df52bae4ac655a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc07a7dfa0583f2125a60048ec2c1598"><td class="memTemplParams" colspan="2">template&lt;typename Request , typename... Args&gt; </td></tr>
-<tr class="memitem:adc07a7dfa0583f2125a60048ec2c1598"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#adc07a7dfa0583f2125a60048ec2c1598">reply_to</a> (Request &amp;message, Args &amp;&amp;... args)</td></tr>
-<tr class="memdesc:adc07a7dfa0583f2125a60048ec2c1598"><td class="mdescLeft">&#160;</td><td class="mdescRight">convenient method for constructing and sending response to a request  <a href="structrotor_1_1actor__base__t.html#adc07a7dfa0583f2125a60048ec2c1598">More...</a><br /></td></tr>
-<tr class="separator:adc07a7dfa0583f2125a60048ec2c1598"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0ca5cd93f9b6e755af0dd7f04b5ae9c"><td class="memTemplParams" colspan="2">template&lt;typename M , typename... Args&gt; </td></tr>
+<tr class="memitem:ac0ca5cd93f9b6e755af0dd7f04b5ae9c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#ac0ca5cd93f9b6e755af0dd7f04b5ae9c">send</a> (const <a class="el" href="namespacerotor.html#a25565725c774761a67bd766d93617326">address_ptr_t</a> &amp;addr, Args &amp;&amp;...args)</td></tr>
+<tr class="memdesc:ac0ca5cd93f9b6e755af0dd7f04b5ae9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">sends message to the destination address  <a href="structrotor_1_1actor__base__t.html#ac0ca5cd93f9b6e755af0dd7f04b5ae9c">More...</a><br /></td></tr>
+<tr class="separator:ac0ca5cd93f9b6e755af0dd7f04b5ae9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a848e161c7d6fe19ef39a45e0a68bee93"><td class="memTemplParams" colspan="2">template&lt;typename R , typename... Args&gt; </td></tr>
+<tr class="memitem:a848e161c7d6fe19ef39a45e0a68bee93"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structrotor_1_1request__builder__t.html">request_builder_t</a>&lt; typename <a class="el" href="structrotor_1_1request__wrapper__t.html">request_wrapper_t</a>&lt; R &gt;::request_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a848e161c7d6fe19ef39a45e0a68bee93">request</a> (const <a class="el" href="namespacerotor.html#a25565725c774761a67bd766d93617326">address_ptr_t</a> &amp;dest_addr, Args &amp;&amp;...args)</td></tr>
+<tr class="memdesc:a848e161c7d6fe19ef39a45e0a68bee93"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns request builder for destination address using the "main" actor address  <a href="structrotor_1_1actor__base__t.html#a848e161c7d6fe19ef39a45e0a68bee93">More...</a><br /></td></tr>
+<tr class="separator:a848e161c7d6fe19ef39a45e0a68bee93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdba990be02131c8729e3084c03f3b81"><td class="memTemplParams" colspan="2">template&lt;typename R , typename... Args&gt; </td></tr>
+<tr class="memitem:abdba990be02131c8729e3084c03f3b81"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structrotor_1_1request__builder__t.html">request_builder_t</a>&lt; typename <a class="el" href="structrotor_1_1request__wrapper__t.html">request_wrapper_t</a>&lt; R &gt;::request_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#abdba990be02131c8729e3084c03f3b81">request_via</a> (const <a class="el" href="namespacerotor.html#a25565725c774761a67bd766d93617326">address_ptr_t</a> &amp;dest_addr, const <a class="el" href="namespacerotor.html#a25565725c774761a67bd766d93617326">address_ptr_t</a> &amp;reply_addr, Args &amp;&amp;...args)</td></tr>
+<tr class="memdesc:abdba990be02131c8729e3084c03f3b81"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns request builder for destination address using the specified address for reply  <a href="structrotor_1_1actor__base__t.html#abdba990be02131c8729e3084c03f3b81">More...</a><br /></td></tr>
+<tr class="separator:abdba990be02131c8729e3084c03f3b81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec6c48a92d2df207e8c4739d26e3c38b"><td class="memTemplParams" colspan="2">template&lt;typename Request , typename... Args&gt; </td></tr>
+<tr class="memitem:aec6c48a92d2df207e8c4739d26e3c38b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#aec6c48a92d2df207e8c4739d26e3c38b">reply_to</a> (Request &amp;message, Args &amp;&amp;...args)</td></tr>
+<tr class="memdesc:aec6c48a92d2df207e8c4739d26e3c38b"><td class="mdescLeft">&#160;</td><td class="mdescRight">convenient method for constructing and sending response to a request  <a href="structrotor_1_1actor__base__t.html#aec6c48a92d2df207e8c4739d26e3c38b">More...</a><br /></td></tr>
+<tr class="separator:aec6c48a92d2df207e8c4739d26e3c38b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a753be9d52a682b55d57616a3bc1efa0a"><td class="memTemplParams" colspan="2"><a id="a753be9d52a682b55d57616a3bc1efa0a"></a>
 template&lt;typename Request &gt; </td></tr>
 <tr class="memitem:a753be9d52a682b55d57616a3bc1efa0a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a753be9d52a682b55d57616a3bc1efa0a">reply_with_error</a> (Request &amp;message, const std::error_code &amp;ec)</td></tr>
 <tr class="memdesc:a753be9d52a682b55d57616a3bc1efa0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">convenient method for constructing and sending error response to a request <br /></td></tr>
 <tr class="separator:a753be9d52a682b55d57616a3bc1efa0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecc3c2de855ac214fac493be69ae75ce"><td class="memTemplParams" colspan="2">template&lt;typename Request , typename... Args&gt; </td></tr>
-<tr class="memitem:aecc3c2de855ac214fac493be69ae75ce"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#aecc3c2de855ac214fac493be69ae75ce">make_response</a> (Request &amp;message, Args &amp;&amp;... args)</td></tr>
-<tr class="memdesc:aecc3c2de855ac214fac493be69ae75ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">makes response to the request, but does not send it.  <a href="structrotor_1_1actor__base__t.html#aecc3c2de855ac214fac493be69ae75ce">More...</a><br /></td></tr>
-<tr class="separator:aecc3c2de855ac214fac493be69ae75ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c44e5d2c0d31e132950f15958fc157c"><td class="memTemplParams" colspan="2">template&lt;typename Request , typename... Args&gt; </td></tr>
+<tr class="memitem:a7c44e5d2c0d31e132950f15958fc157c"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a7c44e5d2c0d31e132950f15958fc157c">make_response</a> (Request &amp;message, Args &amp;&amp;...args)</td></tr>
+<tr class="memdesc:a7c44e5d2c0d31e132950f15958fc157c"><td class="mdescLeft">&#160;</td><td class="mdescRight">makes response to the request, but does not send it.  <a href="structrotor_1_1actor__base__t.html#a7c44e5d2c0d31e132950f15958fc157c">More...</a><br /></td></tr>
+<tr class="separator:a7c44e5d2c0d31e132950f15958fc157c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a608a3e529d5ba41c21b7ee7ebff586ef"><td class="memTemplParams" colspan="2">template&lt;typename Request &gt; </td></tr>
 <tr class="memitem:a608a3e529d5ba41c21b7ee7ebff586ef"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a608a3e529d5ba41c21b7ee7ebff586ef">make_response</a> (Request &amp;message, const std::error_code &amp;ec)</td></tr>
 <tr class="memdesc:a608a3e529d5ba41c21b7ee7ebff586ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">makes error response to the request, but does not send it.  <a href="structrotor_1_1actor__base__t.html#a608a3e529d5ba41c21b7ee7ebff586ef">More...</a><br /></td></tr>
@@ -209,7 +210,7 @@ template&lt;typename Handler , typename  = is_handler&lt;Handler&gt;&gt; </td></
 <tr class="memdesc:a11d75c6d07269ac9accb6ac890552ea5"><td class="mdescLeft">&#160;</td><td class="mdescRight">unsubscribes actor's handler from processing messages on the actor's "main" address <br /></td></tr>
 <tr class="separator:a11d75c6d07269ac9accb6ac890552ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91652e42dc57a9e0c972399105a38f03"><td class="memItemLeft" align="right" valign="top"><a id="a91652e42dc57a9e0c972399105a38f03"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a91652e42dc57a9e0c972399105a38f03">unsubscribe</a> (const <a class="el" href="namespacerotor.html#a6fbcb2aae7a1ccefb14fe774902080d7">handler_ptr_t</a> &amp;h) noexcept</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a91652e42dc57a9e0c972399105a38f03">unsubscribe</a> (const <a class="el" href="namespacerotor.html#aa6f317d95700079f90a76aa56294f92f">handler_ptr_t</a> &amp;h) noexcept</td></tr>
 <tr class="memdesc:a91652e42dc57a9e0c972399105a38f03"><td class="mdescLeft">&#160;</td><td class="mdescRight">initiates handler unsubscription from the default actor address <br /></td></tr>
 <tr class="separator:a91652e42dc57a9e0c972399105a38f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98a684974294a8c1720eb6ae9e93a8ce"><td class="memItemLeft" align="right" valign="top"><a id="a98a684974294a8c1720eb6ae9e93a8ce"></a>
@@ -301,14 +302,14 @@ const <a class="el" href="namespacerotor.html#a25565725c774761a67bd766d93617326"
 <tr class="memitem:ae8acc3e78f40a2aa22f2ffff6c4c1553"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#ae8acc3e78f40a2aa22f2ffff6c4c1553">cancel_timer</a> (<a class="el" href="namespacerotor.html#aa709f45800c1bc7ea4d7bb2163328b4c">request_id_t</a> request_id) noexcept</td></tr>
 <tr class="memdesc:ae8acc3e78f40a2aa22f2ffff6c4c1553"><td class="mdescLeft">&#160;</td><td class="mdescRight">cancels previously started timer  <a href="structrotor_1_1actor__base__t.html#ae8acc3e78f40a2aa22f2ffff6c4c1553">More...</a><br /></td></tr>
 <tr class="separator:ae8acc3e78f40a2aa22f2ffff6c4c1553"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7828fdaad5dd2be51a412f02883718e8"><td class="memTemplParams" colspan="2">template&lt;typename Request , typename... Args&gt; </td></tr>
-<tr class="memitem:a7828fdaad5dd2be51a412f02883718e8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structrotor_1_1request__builder__t.html">request_builder_t</a>&lt; typename <a class="el" href="structrotor_1_1request__wrapper__t.html">request_wrapper_t</a>&lt; Request &gt;::request_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a7828fdaad5dd2be51a412f02883718e8">request</a> (const <a class="el" href="namespacerotor.html#a25565725c774761a67bd766d93617326">address_ptr_t</a> &amp;dest_addr, Args &amp;&amp;... args)</td></tr>
-<tr class="memdesc:a7828fdaad5dd2be51a412f02883718e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">makes an reqest to the destination address with the message constructed from <code>args</code>  <a href="structrotor_1_1actor__base__t.html#a7828fdaad5dd2be51a412f02883718e8">More...</a><br /></td></tr>
-<tr class="separator:a7828fdaad5dd2be51a412f02883718e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d214ff6b28a6b0d735ecbcace7fe423"><td class="memTemplParams" colspan="2">template&lt;typename Request , typename... Args&gt; </td></tr>
-<tr class="memitem:a1d214ff6b28a6b0d735ecbcace7fe423"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structrotor_1_1request__builder__t.html">request_builder_t</a>&lt; typename <a class="el" href="structrotor_1_1request__wrapper__t.html">request_wrapper_t</a>&lt; Request &gt;::request_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a1d214ff6b28a6b0d735ecbcace7fe423">request_via</a> (const <a class="el" href="namespacerotor.html#a25565725c774761a67bd766d93617326">address_ptr_t</a> &amp;dest_addr, const <a class="el" href="namespacerotor.html#a25565725c774761a67bd766d93617326">address_ptr_t</a> &amp;reply_addr, Args &amp;&amp;... args)</td></tr>
-<tr class="memdesc:a1d214ff6b28a6b0d735ecbcace7fe423"><td class="mdescLeft">&#160;</td><td class="mdescRight">makes an reqest to the destination address with the message constructed from <code>args</code>  <a href="structrotor_1_1actor__base__t.html#a1d214ff6b28a6b0d735ecbcace7fe423">More...</a><br /></td></tr>
-<tr class="separator:a1d214ff6b28a6b0d735ecbcace7fe423"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc0e45c9d34c6dc014cef9e6ef2ed1e2"><td class="memTemplParams" colspan="2">template&lt;typename Request , typename... Args&gt; </td></tr>
+<tr class="memitem:adc0e45c9d34c6dc014cef9e6ef2ed1e2"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structrotor_1_1request__builder__t.html">request_builder_t</a>&lt; typename <a class="el" href="structrotor_1_1request__wrapper__t.html">request_wrapper_t</a>&lt; Request &gt;::request_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#adc0e45c9d34c6dc014cef9e6ef2ed1e2">request</a> (const <a class="el" href="namespacerotor.html#a25565725c774761a67bd766d93617326">address_ptr_t</a> &amp;dest_addr, Args &amp;&amp;...args)</td></tr>
+<tr class="memdesc:adc0e45c9d34c6dc014cef9e6ef2ed1e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">makes an reqest to the destination address with the message constructed from <code>args</code>  <a href="structrotor_1_1actor__base__t.html#adc0e45c9d34c6dc014cef9e6ef2ed1e2">More...</a><br /></td></tr>
+<tr class="separator:adc0e45c9d34c6dc014cef9e6ef2ed1e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ad9948676b4abb68310044184321c06"><td class="memTemplParams" colspan="2">template&lt;typename Request , typename... Args&gt; </td></tr>
+<tr class="memitem:a4ad9948676b4abb68310044184321c06"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="structrotor_1_1request__builder__t.html">request_builder_t</a>&lt; typename <a class="el" href="structrotor_1_1request__wrapper__t.html">request_wrapper_t</a>&lt; Request &gt;::request_t &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a4ad9948676b4abb68310044184321c06">request_via</a> (const <a class="el" href="namespacerotor.html#a25565725c774761a67bd766d93617326">address_ptr_t</a> &amp;dest_addr, const <a class="el" href="namespacerotor.html#a25565725c774761a67bd766d93617326">address_ptr_t</a> &amp;reply_addr, Args &amp;&amp;...args)</td></tr>
+<tr class="memdesc:a4ad9948676b4abb68310044184321c06"><td class="mdescLeft">&#160;</td><td class="mdescRight">makes an reqest to the destination address with the message constructed from <code>args</code>  <a href="structrotor_1_1actor__base__t.html#a4ad9948676b4abb68310044184321c06">More...</a><br /></td></tr>
+<tr class="separator:a4ad9948676b4abb68310044184321c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
 Protected Types</h2></td></tr>
@@ -423,7 +424,7 @@ template&lt;typename T , typename M &gt; </td></tr>
 <div class="textblock"><p>universal primitive of concurrent computation </p>
 <p>The class is base class for user-defined actors. It is expected that actors will react on incoming messages (e.g. by changing internal /private state) or send (other) messages to other actors, or do some side-effects (I/O, etc.).</p>
 <p>Message passing interface is asynchronous, they are send to <a class="el" href="structrotor_1_1supervisor__t.html">supervisor_t</a>.</p>
-<p>Every actor belong to some <a class="el" href="structrotor_1_1supervisor__t.html">supervisor_t</a>, which "injects" the thread-safe execution context, in a sense, that the actor can call it's own methods as well as supervirors without any need of synchonization.</p>
+<p>Every actor belong to some <a class="el" href="structrotor_1_1supervisor__t.html">supervisor_t</a>, which "injects" the thread-safe execution context, in a sense, that the actor can call it's own methods as well as supervisors without any need of synchonization.</p>
 <p>All actor methods are thread-unsafe, i.e. should not be called with except of it's own supervisor. Communication with actor should be performed via messages.</p>
 <p>Actor is addressed by it's "main" address; however it is possible for an actor to have multiple identities aka "virtual" addresses. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
@@ -661,8 +662,8 @@ template&lt;typename Handler &gt; </div>
 
 </div>
 </div>
-<a id="aecc3c2de855ac214fac493be69ae75ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aecc3c2de855ac214fac493be69ae75ce">&#9670;&nbsp;</a></span>make_response() <span class="overload">[1/2]</span></h2>
+<a id="a7c44e5d2c0d31e132950f15958fc157c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c44e5d2c0d31e132950f15958fc157c">&#9670;&nbsp;</a></span>make_response() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -757,8 +758,8 @@ template&lt;typename Request &gt; </div>
 
 </div>
 </div>
-<a id="adc07a7dfa0583f2125a60048ec2c1598"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc07a7dfa0583f2125a60048ec2c1598">&#9670;&nbsp;</a></span>reply_to()</h2>
+<a id="aec6c48a92d2df207e8c4739d26e3c38b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec6c48a92d2df207e8c4739d26e3c38b">&#9670;&nbsp;</a></span>reply_to()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -790,8 +791,8 @@ template&lt;typename Request , typename... Args&gt; </div>
 
 </div>
 </div>
-<a id="a8b701add3947b09b40d3c5b2c884792a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b701add3947b09b40d3c5b2c884792a">&#9670;&nbsp;</a></span>request() <span class="overload">[1/2]</span></h2>
+<a id="a848e161c7d6fe19ef39a45e0a68bee93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a848e161c7d6fe19ef39a45e0a68bee93">&#9670;&nbsp;</a></span>request() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -824,8 +825,8 @@ template&lt;typename R , typename... Args&gt; </div>
 
 </div>
 </div>
-<a id="a7828fdaad5dd2be51a412f02883718e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7828fdaad5dd2be51a412f02883718e8">&#9670;&nbsp;</a></span>request() <span class="overload">[2/2]</span></h2>
+<a id="adc0e45c9d34c6dc014cef9e6ef2ed1e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc0e45c9d34c6dc014cef9e6ef2ed1e2">&#9670;&nbsp;</a></span>request() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -857,8 +858,8 @@ template&lt;typename Request , typename... Args&gt; </div>
 
 </div>
 </div>
-<a id="ac038eaca193ccdc1df52bae4ac655a34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac038eaca193ccdc1df52bae4ac655a34">&#9670;&nbsp;</a></span>request_via() <span class="overload">[1/2]</span></h2>
+<a id="abdba990be02131c8729e3084c03f3b81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdba990be02131c8729e3084c03f3b81">&#9670;&nbsp;</a></span>request_via() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -898,8 +899,8 @@ template&lt;typename R , typename... Args&gt; </div>
 
 </div>
 </div>
-<a id="a1d214ff6b28a6b0d735ecbcace7fe423"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d214ff6b28a6b0d735ecbcace7fe423">&#9670;&nbsp;</a></span>request_via() <span class="overload">[2/2]</span></h2>
+<a id="a4ad9948676b4abb68310044184321c06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ad9948676b4abb68310044184321c06">&#9670;&nbsp;</a></span>request_via() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -937,8 +938,8 @@ template&lt;typename Request , typename... Args&gt; </div>
 
 </div>
 </div>
-<a id="a6ab9820e36e2f216fef92c2eacb4746b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ab9820e36e2f216fef92c2eacb4746b">&#9670;&nbsp;</a></span>send()</h2>
+<a id="ac0ca5cd93f9b6e755af0dd7f04b5ae9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0ca5cd93f9b6e755af0dd7f04b5ae9c">&#9670;&nbsp;</a></span>send()</h2>
 
 <div class="memitem">
 <div class="memproto">

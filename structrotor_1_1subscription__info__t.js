@@ -7,8 +7,8 @@ var structrotor_1_1subscription__info__t =
     ] ],
     [ "subscription_info_t", "structrotor_1_1subscription__info__t.html#ad0123b6fae193a40f11914fd7b2a9ae9", null ],
     [ "~subscription_info_t", "structrotor_1_1subscription__info__t.html#a2599ed68c7384556455e2e8185ac2d02", null ],
+    [ "access", "structrotor_1_1subscription__info__t.html#a3affad2f524e613a000c6b360ff977c1", null ],
+    [ "access", "structrotor_1_1subscription__info__t.html#a26fd4ed6ea93fda73fb8816c742f0e2c", null ],
     [ "operator==", "structrotor_1_1subscription__info__t.html#a3a721bee1b0b3cfc33a1cbbd349c2fe4", null ],
-    [ "internal_address", "structrotor_1_1subscription__info__t.html#a1a21495901ee2860f0af14b5804e82c9", null ],
-    [ "internal_handler", "structrotor_1_1subscription__info__t.html#a7eaaf9e19e316201737d42af0eddb44a", null ],
-    [ "state", "structrotor_1_1subscription__info__t.html#acd5ebbcdd74be09a09254b18860373fa", null ]
+    [ "tag_io", "structrotor_1_1subscription__info__t.html#a3cf7571c9e82f411e0a9fa7b34ff185f", null ]
 ];
