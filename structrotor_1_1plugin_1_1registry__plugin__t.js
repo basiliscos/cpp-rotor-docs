@@ -1,6 +1,7 @@
 var structrotor_1_1plugin_1_1registry__plugin__t =
 [
     [ "discovery_task_t", "structrotor_1_1plugin_1_1registry__plugin__t_1_1discovery__task__t.html", "structrotor_1_1plugin_1_1registry__plugin__t_1_1discovery__task__t" ],
+    [ "discovery_map_t", "structrotor_1_1plugin_1_1registry__plugin__t.html#a46343fd239f3808b75b9eeb969985cb7", null ],
     [ "phase_t", "structrotor_1_1plugin_1_1registry__plugin__t.html#a3f196bec36e3ca9702004b97d2d31233", [
       [ "discovering", "structrotor_1_1plugin_1_1registry__plugin__t.html#a3f196bec36e3ca9702004b97d2d31233aa82b662bacb9118f0360344a23ab1f4d", null ],
       [ "linking", "structrotor_1_1plugin_1_1registry__plugin__t.html#a3f196bec36e3ca9702004b97d2d31233a906bbf3221dc4485360ecf9cd3f26a42", null ]

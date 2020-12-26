@@ -630,6 +630,21 @@ std::set&lt; const void * &gt;&#160;</td><td class="memItemRight" valign="bottom
 <a class="el" href="structrotor_1_1actor__base__t.html#ae59d9a9b06845e406cb7e4bdb67a7b18">timers_map_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a3690fd9e13468b95c47c71cf452c574c">timers_map</a></td></tr>
 <tr class="memdesc:a3690fd9e13468b95c47c71cf452c574c inherit pro_attribs_structrotor_1_1actor__base__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">timer-id to timer-handler map <br /></td></tr>
 <tr class="separator:a3690fd9e13468b95c47c71cf452c574c inherit pro_attribs_structrotor_1_1actor__base__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a425289568a459918ef3f6ea6e04e0730 inherit pro_attribs_structrotor_1_1actor__base__t"><td class="memItemLeft" align="right" valign="top">std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a425289568a459918ef3f6ea6e04e0730">continuation_mask</a> = 0</td></tr>
+<tr class="memdesc:a425289568a459918ef3f6ea6e04e0730 inherit pro_attribs_structrotor_1_1actor__base__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">set of currently proccessing states, i.e. init or shutdown  <a href="structrotor_1_1actor__base__t.html#a425289568a459918ef3f6ea6e04e0730">More...</a><br /></td></tr>
+<tr class="separator:a425289568a459918ef3f6ea6e04e0730 inherit pro_attribs_structrotor_1_1actor__base__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_attribs_structrotor_1_1actor__base__t"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_structrotor_1_1actor__base__t')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="structrotor_1_1actor__base__t.html">rotor::actor_base_t</a></td></tr>
+<tr class="memitem:a6718008eaa0134549d67547fe7d41344 inherit pub_static_attribs_structrotor_1_1actor__base__t"><td class="memItemLeft" align="right" valign="top"><a id="a6718008eaa0134549d67547fe7d41344"></a>
+static constexpr const std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a6718008eaa0134549d67547fe7d41344">PROGRESS_INIT</a> = 1 &lt;&lt; 0</td></tr>
+<tr class="memdesc:a6718008eaa0134549d67547fe7d41344 inherit pub_static_attribs_structrotor_1_1actor__base__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">flag to mark, that actor is already executing initialization <br /></td></tr>
+<tr class="separator:a6718008eaa0134549d67547fe7d41344 inherit pub_static_attribs_structrotor_1_1actor__base__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a417d4d57f5130beb12b91bcb2bf8ba inherit pub_static_attribs_structrotor_1_1actor__base__t"><td class="memItemLeft" align="right" valign="top"><a id="a2a417d4d57f5130beb12b91bcb2bf8ba"></a>
+static constexpr const std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a2a417d4d57f5130beb12b91bcb2bf8ba">PROGRESS_SHUTDOWN</a> = 1 &lt;&lt; 1</td></tr>
+<tr class="memdesc:a2a417d4d57f5130beb12b91bcb2bf8ba inherit pub_static_attribs_structrotor_1_1actor__base__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">flag to mark, that actor is already executing shutdown <br /></td></tr>
+<tr class="separator:a2a417d4d57f5130beb12b91bcb2bf8ba inherit pub_static_attribs_structrotor_1_1actor__base__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>delivers rotor-messages on top of boost asio event loop using <code>strand</code> for serialization </p>

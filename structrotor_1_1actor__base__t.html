@@ -97,6 +97,7 @@ $(document).ready(function(){initNavTree('structrotor_1_1actor__base__t.html',''
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-types">Protected Types</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
@@ -311,6 +312,17 @@ const <a class="el" href="namespacerotor.html#a25565725c774761a67bd766d93617326"
 <tr class="memdesc:a4ad9948676b4abb68310044184321c06"><td class="mdescLeft">&#160;</td><td class="mdescRight">makes an reqest to the destination address with the message constructed from <code>args</code>  <a href="structrotor_1_1actor__base__t.html#a4ad9948676b4abb68310044184321c06">More...</a><br /></td></tr>
 <tr class="separator:a4ad9948676b4abb68310044184321c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a6718008eaa0134549d67547fe7d41344"><td class="memItemLeft" align="right" valign="top"><a id="a6718008eaa0134549d67547fe7d41344"></a>
+static constexpr const std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a6718008eaa0134549d67547fe7d41344">PROGRESS_INIT</a> = 1 &lt;&lt; 0</td></tr>
+<tr class="memdesc:a6718008eaa0134549d67547fe7d41344"><td class="mdescLeft">&#160;</td><td class="mdescRight">flag to mark, that actor is already executing initialization <br /></td></tr>
+<tr class="separator:a6718008eaa0134549d67547fe7d41344"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a417d4d57f5130beb12b91bcb2bf8ba"><td class="memItemLeft" align="right" valign="top"><a id="a2a417d4d57f5130beb12b91bcb2bf8ba"></a>
+static constexpr const std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a2a417d4d57f5130beb12b91bcb2bf8ba">PROGRESS_SHUTDOWN</a> = 1 &lt;&lt; 1</td></tr>
+<tr class="memdesc:a2a417d4d57f5130beb12b91bcb2bf8ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">flag to mark, that actor is already executing shutdown <br /></td></tr>
+<tr class="separator:a2a417d4d57f5130beb12b91bcb2bf8ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
 Protected Types</h2></td></tr>
 <tr class="memitem:ae59d9a9b06845e406cb7e4bdb67a7b18"><td class="memItemLeft" align="right" valign="top"><a id="ae59d9a9b06845e406cb7e4bdb67a7b18"></a>
@@ -399,6 +411,9 @@ std::set&lt; const void * &gt;&#160;</td><td class="memItemRight" valign="bottom
 <a class="el" href="structrotor_1_1actor__base__t.html#ae59d9a9b06845e406cb7e4bdb67a7b18">timers_map_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a3690fd9e13468b95c47c71cf452c574c">timers_map</a></td></tr>
 <tr class="memdesc:a3690fd9e13468b95c47c71cf452c574c"><td class="mdescLeft">&#160;</td><td class="mdescRight">timer-id to timer-handler map <br /></td></tr>
 <tr class="separator:a3690fd9e13468b95c47c71cf452c574c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a425289568a459918ef3f6ea6e04e0730"><td class="memItemLeft" align="right" valign="top">std::uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a425289568a459918ef3f6ea6e04e0730">continuation_mask</a> = 0</td></tr>
+<tr class="memdesc:a425289568a459918ef3f6ea6e04e0730"><td class="mdescLeft">&#160;</td><td class="mdescRight">set of currently proccessing states, i.e. init or shutdown  <a href="structrotor_1_1actor__base__t.html#a425289568a459918ef3f6ea6e04e0730">More...</a><br /></td></tr>
+<tr class="separator:a425289568a459918ef3f6ea6e04e0730"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -1112,6 +1127,33 @@ template&lt;typename Delegate , typename Method &gt; </div>
 <p>The <code>method</code> parameter should have the following signature:</p>
 <p>void Delegate::on_timer(request_id_t, bool cancelled) noexcept;</p>
 <p><code>start_timer</code> returns timer identity. It will be supplied to the specified callback, or the timer can be cancelled via it. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a425289568a459918ef3f6ea6e04e0730"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a425289568a459918ef3f6ea6e04e0730">&#9670;&nbsp;</a></span>continuation_mask</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uint32_t rotor::actor_base_t::continuation_mask = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>set of currently proccessing states, i.e. init or shutdown </p>
+<p>This is not the same as <code>state_t</code> flag, which just marks the state.</p>
+<p>The <code>continuation_mask</code> is mostly used by plugins to avoid recursion </p>
 
 </div>
 </div>

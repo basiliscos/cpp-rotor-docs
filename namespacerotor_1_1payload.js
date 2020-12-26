@@ -21,8 +21,6 @@ var namespacerotor_1_1payload =
     [ "shutdown_request_t", "structrotor_1_1payload_1_1shutdown__request__t.html", "structrotor_1_1payload_1_1shutdown__request__t" ],
     [ "shutdown_trigger_t", "structrotor_1_1payload_1_1shutdown__trigger__t.html", "structrotor_1_1payload_1_1shutdown__trigger__t" ],
     [ "start_actor_t", "structrotor_1_1payload_1_1start__actor__t.html", null ],
-    [ "state_request_t", "structrotor_1_1payload_1_1state__request__t.html", "structrotor_1_1payload_1_1state__request__t" ],
-    [ "state_response_t", "structrotor_1_1payload_1_1state__response__t.html", "structrotor_1_1payload_1_1state__response__t" ],
     [ "subscription_confirmation_t", "structrotor_1_1payload_1_1subscription__confirmation__t.html", "structrotor_1_1payload_1_1subscription__confirmation__t" ],
     [ "unlink_notify_t", "structrotor_1_1payload_1_1unlink__notify__t.html", "structrotor_1_1payload_1_1unlink__notify__t" ],
     [ "unlink_request_t", "structrotor_1_1payload_1_1unlink__request__t.html", "structrotor_1_1payload_1_1unlink__request__t" ],

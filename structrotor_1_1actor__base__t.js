@@ -58,6 +58,7 @@ var structrotor_1_1actor__base__t =
     [ "activating_plugins", "structrotor_1_1actor__base__t.html#a2f6e7fcd2b107d035423630ee67b4603", null ],
     [ "address", "structrotor_1_1actor__base__t.html#afad3a40184e18b3bb7ea2e9e50115edb", null ],
     [ "address_maker", "structrotor_1_1actor__base__t.html#ac9272df35831b989af53079d93532b73", null ],
+    [ "continuation_mask", "structrotor_1_1actor__base__t.html#a425289568a459918ef3f6ea6e04e0730", null ],
     [ "deactivating_plugins", "structrotor_1_1actor__base__t.html#ac7c90a1a1affc26933bb05d2a082853e", null ],
     [ "init_request", "structrotor_1_1actor__base__t.html#ac86b35dc9ba07753aaf044ebff173e05", null ],
     [ "init_timeout", "structrotor_1_1actor__base__t.html#a4a6bc2b7ee51641e269a077467690385", null ],

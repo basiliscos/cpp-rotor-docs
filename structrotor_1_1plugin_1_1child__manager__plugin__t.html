@@ -154,9 +154,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1plugin_1_1child__manager__plugin__t.html#a806108c2d58d8d4ba98cdaf3c1448b97">on_shutdown_confirm</a> (<a class="el" href="namespacerotor_1_1message.html#a4ad63be5393527d9b30899a55435eca2">message::shutdown_response_t</a> &amp;message) noexcept</td></tr>
 <tr class="memdesc:a806108c2d58d8d4ba98cdaf3c1448b97"><td class="mdescLeft">&#160;</td><td class="mdescRight">reacion on shutdown confirmation (i.e. perform some cleanings) <br /></td></tr>
 <tr class="separator:a806108c2d58d8d4ba98cdaf3c1448b97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3d69cb23e78e5c486679f08b7beedad"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1plugin_1_1child__manager__plugin__t.html#aa3d69cb23e78e5c486679f08b7beedad">on_state_request</a> (<a class="el" href="namespacerotor_1_1message.html#a3ed12c575c4a4343d2faa4285298ab55">message::state_request_t</a> &amp;message) noexcept</td></tr>
-<tr class="memdesc:aa3d69cb23e78e5c486679f08b7beedad"><td class="mdescLeft">&#160;</td><td class="mdescRight">answers about actor's state, identified by it's address  <a href="structrotor_1_1plugin_1_1child__manager__plugin__t.html#aa3d69cb23e78e5c486679f08b7beedad">More...</a><br /></td></tr>
-<tr class="separator:aa3d69cb23e78e5c486679f08b7beedad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2070126dcee40ab94fbb96a5ecfcd424"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1plugin_1_1child__manager__plugin__t.html#a2070126dcee40ab94fbb96a5ecfcd424">handle_init</a> (<a class="el" href="namespacerotor_1_1message.html#ac32e12e668c9d05a6be5ab5e504bb91f">message::init_request_t</a> *) noexcept override</td></tr>
 <tr class="memdesc:a2070126dcee40ab94fbb96a5ecfcd424"><td class="mdescLeft">&#160;</td><td class="mdescRight">polls plugin, whether it is done with initialization  <a href="structrotor_1_1plugin_1_1child__manager__plugin__t.html#a2070126dcee40ab94fbb96a5ecfcd424">More...</a><br /></td></tr>
 <tr class="separator:a2070126dcee40ab94fbb96a5ecfcd424"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -560,36 +557,6 @@ template&lt;typename Handler &gt; </td></tr>
 <li>shutdown self (supervisor) directly, if there is no root supervisor</li>
 <li>shutdown via request for a child </li>
 </ul>
-
-</div>
-</div>
-<a id="aa3d69cb23e78e5c486679f08b7beedad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3d69cb23e78e5c486679f08b7beedad">&#9670;&nbsp;</a></span>on_state_request()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void rotor::plugin::child_manager_plugin_t::on_state_request </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacerotor_1_1message.html#a3ed12c575c4a4343d2faa4285298ab55">message::state_request_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>message</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>answers about actor's state, identified by it's address </p>
-<p>If there is no information about the address (including the case when an actor is not yet created or already destroyed), then it replies with <code>UNKNOWN</code> status.</p>
-<p>It replies to the address specified to the <code>reply_addr</code> specified in the message <a class="el" href="structrotor_1_1payload_1_1state__request__t.html">payload::state_request_t</a>. </p>
 
 </div>
 </div>

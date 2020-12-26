@@ -134,24 +134,27 @@ $(document).ready(function(){initNavTree('link__server_8h_source.html',''); init
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="structrotor_1_1plugin_1_1link__server__plugin__t.html#a700a85c10fb6861e61c79498dea117cc">   50</a></span>&#160;    virtual <span class="keywordtype">bool</span> <a class="code" href="structrotor_1_1plugin_1_1link__server__plugin__t.html#a700a85c10fb6861e61c79498dea117cc">has_clients</a>() noexcept { <span class="keywordflow">return</span> !linked_clients.empty(); }</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="structrotor_1_1plugin_1_1link__server__plugin__t.html#a31c3d100940f773ddde4d9b1563580f5">   53</a></span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">auto</span> &amp;<a class="code" href="structrotor_1_1plugin_1_1link__server__plugin__t.html#a31c3d100940f773ddde4d9b1563580f5">access</a>() noexcept;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="structrotor_1_1plugin_1_1link__server__plugin__t.html#ada46f4a1fe1c41f25c8cc19a2892ca14">   53</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="structrotor_1_1plugin_1_1link__server__plugin__t.html#ada46f4a1fe1c41f25c8cc19a2892ca14">notify_shutdown</a>() noexcept;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  private:</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    enum class link_state_t { PENDING, OPERATIONAL, UNLINKING };</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">using</span> link_request_ptr_t = <a class="code" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t&lt;message::link_request_t&gt;</a>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">using</span> request_option_t = std::optional&lt;request_id_t&gt;;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">struct </span>link_info_t {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        link_info_t(link_state_t state_, link_request_ptr_t request_) noexcept : state{state_}, request{request_} {}</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        link_state_t state;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        link_request_ptr_t request;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        request_option_t unlink_request;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    };</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">using</span> linked_clients_t = std::unordered_map&lt;address_ptr_t, link_info_t&gt;;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    linked_clients_t linked_clients;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="structrotor_1_1plugin_1_1link__server__plugin__t.html#a31c3d100940f773ddde4d9b1563580f5">   56</a></span>&#160;    template &lt;typename T&gt; auto &amp;<a class="code" href="structrotor_1_1plugin_1_1link__server__plugin__t.html#a31c3d100940f773ddde4d9b1563580f5">access</a>() noexcept;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  private:</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    enum class link_state_t { PENDING, OPERATIONAL, UNLINKING };</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">using</span> link_request_ptr_t = <a class="code" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t&lt;message::link_request_t&gt;</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">using</span> request_option_t = std::optional&lt;request_id_t&gt;;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">struct </span>link_info_t {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        link_info_t(link_state_t state_, link_request_ptr_t request_) noexcept : state{state_}, request{request_} {}</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        link_state_t state;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        link_request_ptr_t request;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        request_option_t unlink_request;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordtype">bool</span> shutdown_notified = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    };</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;} <span class="comment">// namespace rotor::plugin</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">using</span> linked_clients_t = std::unordered_map&lt;address_ptr_t, link_info_t&gt;;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    linked_clients_t linked_clients;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;} <span class="comment">// namespace rotor::plugin</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructrotor_1_1plugin_1_1link__server__plugin__t_html_ae565101fa218ef83a80bad1c6221f6e1"><div class="ttname"><a href="structrotor_1_1plugin_1_1link__server__plugin__t.html#ae565101fa218ef83a80bad1c6221f6e1">rotor::plugin::link_server_plugin_t::on_unlink_response</a></div><div class="ttdeci">virtual void on_unlink_response(message::unlink_response_t &amp;message) noexcept</div><div class="ttdoc">reaction upon link unlink response</div></div>
@@ -164,6 +167,7 @@ $(document).ready(function(){initNavTree('link__server_8h_source.html',''); init
 <div class="ttc" id="astructrotor_1_1actor__base__t_html"><div class="ttname"><a href="structrotor_1_1actor__base__t.html">rotor::actor_base_t</a></div><div class="ttdoc">universal primitive of concurrent computation</div><div class="ttdef"><b>Definition:</b> actor_base.h:41</div></div>
 <div class="ttc" id="astructrotor_1_1plugin_1_1link__server__plugin__t_html_a700a85c10fb6861e61c79498dea117cc"><div class="ttname"><a href="structrotor_1_1plugin_1_1link__server__plugin__t.html#a700a85c10fb6861e61c79498dea117cc">rotor::plugin::link_server_plugin_t::has_clients</a></div><div class="ttdeci">virtual bool has_clients() noexcept</div><div class="ttdoc">returns true if there is any connected client</div><div class="ttdef"><b>Definition:</b> link_server.h:50</div></div>
 <div class="ttc" id="astructrotor_1_1plugin_1_1plugin__base__t_html_a4a5bf237da6fac1d6ec575918bba0098"><div class="ttname"><a href="structrotor_1_1plugin_1_1plugin__base__t.html#a4a5bf237da6fac1d6ec575918bba0098">rotor::plugin::plugin_base_t::plugin_base_t</a></div><div class="ttdeci">plugin_base_t()=default</div><div class="ttdoc">default plugin ctor</div></div>
+<div class="ttc" id="astructrotor_1_1plugin_1_1link__server__plugin__t_html_ada46f4a1fe1c41f25c8cc19a2892ca14"><div class="ttname"><a href="structrotor_1_1plugin_1_1link__server__plugin__t.html#ada46f4a1fe1c41f25c8cc19a2892ca14">rotor::plugin::link_server_plugin_t::notify_shutdown</a></div><div class="ttdeci">virtual void notify_shutdown() noexcept</div><div class="ttdoc">let clients know that the actor is going to shut self down</div></div>
 <div class="ttc" id="astructrotor_1_1plugin_1_1link__server__plugin__t_html_a40e9df2a95693afc282603cfa02a4e11"><div class="ttname"><a href="structrotor_1_1plugin_1_1link__server__plugin__t.html#a40e9df2a95693afc282603cfa02a4e11">rotor::plugin::link_server_plugin_t::handle_start</a></div><div class="ttdeci">void handle_start(message::start_trigger_t *message) noexcept override</div><div class="ttdoc">polls plugin, whether it is done with start</div></div>
 <div class="ttc" id="anamespacerotor_html_ae1d5cfad16ceed2d6891721ffb47c7e2"><div class="ttname"><a href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">rotor::intrusive_ptr_t</a></div><div class="ttdeci">boost::intrusive_ptr&lt; T &gt; intrusive_ptr_t</div><div class="ttdoc">alias for intrusive pointer</div><div class="ttdef"><b>Definition:</b> arc.hpp:26</div></div>
 <div class="ttc" id="astructrotor_1_1plugin_1_1link__server__plugin__t_html"><div class="ttname"><a href="structrotor_1_1plugin_1_1link__server__plugin__t.html">rotor::plugin::link_server_plugin_t</a></div><div class="ttdoc">allows actor to have passive (server) role in linking</div><div class="ttdef"><b>Definition:</b> link_server.h:27</div></div>

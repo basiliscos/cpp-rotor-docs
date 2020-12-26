@@ -98,7 +98,17 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp-rotor_d
 <div class="title">Changelog </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>0.12 (08-Dec-2020)</h1>
+<div class="textblock"><h1>0.13 (26-Dec-2020)</h1>
+<ul>
+<li>[improvement] delivery plugin in debug mode dumps discarded messages</li>
+<li>[breaking] <code>state_response_t</code> has been removed</li>
+<li>[bugfix] allow to acquire &amp; release resources in via <code>resources_plugin_t</code>, during other plugin configuration</li>
+<li>[bugfix] foreigners_support_plugin_t did not deactivated self properly, caused assertion fail on supervisor shutdown, when there was foreign subscriptions</li>
+<li>[bugfix] link_client_plugin_t did not notified linked server-actors, if its actor is going to shutdown; now server-actors are requested to unlink</li>
+<li>[bugfix] starter_plugin_t sometimes crashed when subscription confirmation message arrives when actor is in non-initializing phase (i.e. shutting down)</li>
+<li>[bugfix] root supervisor is not shutdown properly when it is linked as "server"</li>
+</ul>
+<h1>0.12 (08-Dec-2020)</h1>
 <ul>
 <li>[improvement] added <code>std::thread</code> backend (supervisor)</li>
 <li>[bugfix] active timers, if any, are cancelled upon actor shutdown finish</li>

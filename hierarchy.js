@@ -154,8 +154,6 @@ var hierarchy =
     [ "rotor::payload::shutdown_trigger_t", "structrotor_1_1payload_1_1shutdown__trigger__t.html", null ],
     [ "rotor::details::size_of_t< Ts >", "structrotor_1_1details_1_1size__of__t.html", null ],
     [ "rotor::payload::start_actor_t", "structrotor_1_1payload_1_1start__actor__t.html", null ],
-    [ "rotor::payload::state_request_t", "structrotor_1_1payload_1_1state__request__t.html", null ],
-    [ "rotor::payload::state_response_t", "structrotor_1_1payload_1_1state__response__t.html", null ],
     [ "rotor::payload::subscription_confirmation_t", "structrotor_1_1payload_1_1subscription__confirmation__t.html", null ],
     [ "rotor::subscription_point_t", "structrotor_1_1subscription__point__t.html", [
       [ "rotor::subscription_info_t", "structrotor_1_1subscription__info__t.html", null ]

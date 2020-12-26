@@ -111,6 +111,17 @@ $(document).ready(function(){initNavTree('structrotor_1_1plugin_1_1registry__plu
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:a436dcd2ca916c8ec4139956820a580c6"><td class="memItemLeft" align="right" valign="top"><a id="a436dcd2ca916c8ec4139956820a580c6"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1plugin_1_1registry__plugin__t_1_1discovery__task__t.html#a436dcd2ca916c8ec4139956820a580c6">state_t</a> { <br />
+&#160;&#160;<b>PASSIVE</b>, 
+<b>DISCOVERING</b>, 
+<b>LINKING</b>, 
+<b>OPERATIONAL</b>, 
+<br />
+&#160;&#160;<b>CANCELLING</b>
+<br />
+ }</td></tr>
+<tr class="memdesc:a436dcd2ca916c8ec4139956820a580c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">stat of the discovery task <br /></td></tr>
+<tr class="separator:a436dcd2ca916c8ec4139956820a580c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a571dd6e91894f3514ebf0426eeb9c764"><td class="memItemLeft" align="right" valign="top"><a id="a571dd6e91894f3514ebf0426eeb9c764"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1plugin_1_1registry__plugin__t_1_1discovery__task__t.html#a571dd6e91894f3514ebf0426eeb9c764">callback_t</a> = std::function&lt; void(<a class="el" href="structrotor_1_1plugin_1_1registry__plugin__t.html#a3f196bec36e3ca9702004b97d2d31233">phase_t</a> phase, const std::error_code &amp;)&gt;</td></tr>
 <tr class="memdesc:a571dd6e91894f3514ebf0426eeb9c764"><td class="mdescLeft">&#160;</td><td class="mdescRight">callback for the discovery progress <br /></td></tr>
@@ -127,6 +138,11 @@ template&lt;typename Callback &gt; </td></tr>
 <tr class="memitem:a2a4442a8c26a598f6e2ed9f7068664a1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1plugin_1_1registry__plugin__t_1_1discovery__task__t.html#a2a4442a8c26a598f6e2ed9f7068664a1">callback</a> (Callback &amp;&amp;cb) noexcept</td></tr>
 <tr class="memdesc:a2a4442a8c26a598f6e2ed9f7068664a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">discovery progress callback setter <br /></td></tr>
 <tr class="separator:a2a4442a8c26a598f6e2ed9f7068664a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf2ddf5bf1562c0e272dfbc09f8f163a"><td class="memTemplParams" colspan="2"><a id="aaf2ddf5bf1562c0e272dfbc09f8f163a"></a>
+template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:aaf2ddf5bf1562c0e272dfbc09f8f163a"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1plugin_1_1registry__plugin__t_1_1discovery__task__t.html#aaf2ddf5bf1562c0e272dfbc09f8f163a">access</a> (Args... args) noexcept</td></tr>
+<tr class="memdesc:aaf2ddf5bf1562c0e272dfbc09f8f163a"><td class="mdescLeft">&#160;</td><td class="mdescRight">generic non-public methods accessor <br /></td></tr>
+<tr class="separator:aaf2ddf5bf1562c0e272dfbc09f8f163a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
