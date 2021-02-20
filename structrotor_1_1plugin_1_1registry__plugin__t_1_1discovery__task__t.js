@@ -1,6 +1,6 @@
 var structrotor_1_1plugin_1_1registry__plugin__t_1_1discovery__task__t =
 [
-    [ "callback_t", "structrotor_1_1plugin_1_1registry__plugin__t_1_1discovery__task__t.html#a571dd6e91894f3514ebf0426eeb9c764", null ],
+    [ "callback_t", "structrotor_1_1plugin_1_1registry__plugin__t_1_1discovery__task__t.html#a8bf2bf2bd0281005a4f6d26089dc2dd6", null ],
     [ "state_t", "structrotor_1_1plugin_1_1registry__plugin__t_1_1discovery__task__t.html#a436dcd2ca916c8ec4139956820a580c6", [
       [ "PASSIVE", "structrotor_1_1plugin_1_1registry__plugin__t_1_1discovery__task__t.html#a436dcd2ca916c8ec4139956820a580c6ade1c70a20d797811b2fd32facf64bbd4", null ],
       [ "DISCOVERING", "structrotor_1_1plugin_1_1registry__plugin__t_1_1discovery__task__t.html#a436dcd2ca916c8ec4139956820a580c6a8745bada98f9a2e4e979eb6c129c00f5", null ],

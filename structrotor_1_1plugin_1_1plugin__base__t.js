@@ -21,6 +21,7 @@ var structrotor_1_1plugin_1_1plugin__base__t =
     [ "handle_subscription", "structrotor_1_1plugin_1_1plugin__base__t.html#ab3e44a1b11972c69aeba1f41fb620e75", null ],
     [ "handle_unsubscription", "structrotor_1_1plugin_1_1plugin__base__t.html#a1551e6566cceedf8865bd06efec1f7e8", null ],
     [ "identity", "structrotor_1_1plugin_1_1plugin__base__t.html#a24454cfe9db5316028f99efa4429c24b", null ],
+    [ "make_error", "structrotor_1_1plugin_1_1plugin__base__t.html#a0298bb66aa8ecf58344f17f1c8df24d3", null ],
     [ "reaction_off", "structrotor_1_1plugin_1_1plugin__base__t.html#aa837fc243691227759e20d81e7edb6d6", null ],
     [ "reaction_on", "structrotor_1_1plugin_1_1plugin__base__t.html#a5a6bd7f1dfaadcfc309c7f582033b11d", null ],
     [ "subscribe", "structrotor_1_1plugin_1_1plugin__base__t.html#ab9552010c99ed3d1e23cbe50d39745ce", null ],

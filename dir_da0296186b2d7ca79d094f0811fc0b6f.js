@@ -13,6 +13,7 @@ var dir_da0296186b2d7ca79d094f0811fc0b6f =
     [ "asio.hpp", "asio_8hpp.html", null ],
     [ "error_code.h", "error__code_8h_source.html", null ],
     [ "ev.hpp", "ev_8hpp_source.html", null ],
+    [ "extended_error.h", "extended__error_8h_source.html", null ],
     [ "forward.hpp", "forward_8hpp_source.html", null ],
     [ "handler.h", "handler_8h_source.html", null ],
     [ "message.h", "message_8h_source.html", null ],

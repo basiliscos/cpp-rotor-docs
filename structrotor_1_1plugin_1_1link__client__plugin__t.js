@@ -1,6 +1,6 @@
 var structrotor_1_1plugin_1_1link__client__plugin__t =
 [
-    [ "link_callback_t", "structrotor_1_1plugin_1_1link__client__plugin__t.html#ab39ff3d6cc4a83f737eebbd9af3766d7", null ],
+    [ "link_callback_t", "structrotor_1_1plugin_1_1link__client__plugin__t.html#ade0216758397da80c6c0aa92e5ada5d3", null ],
     [ "unlink_reaction_t", "structrotor_1_1plugin_1_1link__client__plugin__t.html#ae40815bff3f4b8db43cc043c3447be49", null ],
     [ "activate", "structrotor_1_1plugin_1_1link__client__plugin__t.html#afdea19daa947426086ce946535e8ef31", null ],
     [ "forget_link", "structrotor_1_1plugin_1_1link__client__plugin__t.html#a8af900b3ff3a7fa60e8ad8d3708494f3", null ],
