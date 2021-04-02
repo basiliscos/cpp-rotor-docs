@@ -1,11 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"structrotor_1_1plugin_1_1registry__plugin__t.html":[11,0,0,4,13],
-"structrotor_1_1plugin_1_1registry__plugin__t.html#a3b0f27e9008057857ce94f5a59e7c996":[11,0,0,4,13,4],
-"structrotor_1_1plugin_1_1registry__plugin__t.html#a3f196bec36e3ca9702004b97d2d31233":[11,0,0,4,13,2],
-"structrotor_1_1plugin_1_1registry__plugin__t.html#a3f196bec36e3ca9702004b97d2d31233a906bbf3221dc4485360ecf9cd3f26a42":[11,0,0,4,13,2,1],
-"structrotor_1_1plugin_1_1registry__plugin__t.html#a3f196bec36e3ca9702004b97d2d31233aa82b662bacb9118f0360344a23ab1f4d":[11,0,0,4,13,2,0],
-"structrotor_1_1plugin_1_1registry__plugin__t.html#a46343fd239f3808b75b9eeb969985cb7":[11,0,0,4,13,1],
 "structrotor_1_1plugin_1_1registry__plugin__t.html#a46546c1d8593ba8fec0019456456fd25":[11,0,0,4,13,5],
 "structrotor_1_1plugin_1_1registry__plugin__t.html#a4a5bf237da6fac1d6ec575918bba0098":[11,0,0,4,13,12],
 "structrotor_1_1plugin_1_1registry__plugin__t.html#a4b9d7281a58ca3575e1dfa7b06cd8bf9":[11,0,0,4,13,10],
@@ -249,5 +243,11 @@ var NAVTREEINDEX3 =
 "structrotor_1_1thread_1_1system__context__thread__t.html#ad517085a798fd488a34de1b27351bf3d":[11,0,0,5,1,7],
 "structrotor_1_1thread_1_1system__context__thread__t.html#ae4910df3cf82d3067e14645f1242c333":[11,0,0,5,1,2],
 "structrotor_1_1thread_1_1system__context__thread__t_1_1deadline__info__t.html":[11,0,0,5,1,0],
-"structrotor_1_1thread_1_1system__context__thread__t_1_1deadline__info__t.html#a607492d990517480ff0697d1db733eb7":[11,0,0,5,1,0,1]
+"structrotor_1_1thread_1_1system__context__thread__t_1_1deadline__info__t.html#a607492d990517480ff0697d1db733eb7":[11,0,0,5,1,0,1],
+"structrotor_1_1thread_1_1system__context__thread__t_1_1deadline__info__t.html#ac8773f31515d40ae3fb89be43f9e5816":[11,0,0,5,1,0,0],
+"structrotor_1_1timer__handler__base__t.html":[11,0,0,51],
+"structrotor_1_1timer__handler__base__t.html#a0a830fa014720ed941d98fe846583fc1":[11,0,0,51,1],
+"structrotor_1_1timer__handler__base__t.html#a29556ec4a890e2d8d625bd05bd62734b":[11,0,0,51,3],
+"structrotor_1_1timer__handler__base__t.html#a380de2cea3750c517d99046534ea5c6b":[11,0,0,51,4],
+"structrotor_1_1timer__handler__base__t.html#a795abedbfcf32b242632dc4ca946e5b8":[11,0,0,51,0]
 };

@@ -98,7 +98,12 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp_rotor_d
 <div class="title">Changelog </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>0.14 (20-Feb-2021)</h1>
+<div class="textblock"><h1>0.15 (02-Apr-2021)</h1>
+<ul>
+<li>[bugfix] <code>lifetime_plugin_t</code> do not unsubscribe from foreign to me subscriptions</li>
+<li>[bugfix] <code>foreigners_support_plugin_t</code> more safely deliver a message for a foreign subscriber (actor)</li>
+</ul>
+<h1>0.14 (20-Feb-2021)</h1>
 <ul>
 <li>[improvement] actor identity has been introduced. It can be configured or generated via <code>address_maker</code> plugin</li>
 <li>[improvement] <code>actor::do_shutdown()</code> - optionally takes shutdown reason</li>

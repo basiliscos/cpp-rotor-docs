@@ -1,11 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"structrotor_1_1handler__base__t.html#a2b199ea8c354f69cb18b1315d963a05f":[11,0,0,19,0],
-"structrotor_1_1handler__base__t.html#a30e4d4a8d24bd4f76f1918058c08ecc2":[11,0,0,19,1],
-"structrotor_1_1handler__base__t.html#a382ecf3837c1420f8982a65e016c4d78":[11,0,0,19,11],
-"structrotor_1_1handler__base__t.html#a4374640eac9254877b8f33e3916d4ee5":[11,0,0,19,10],
-"structrotor_1_1handler__base__t.html#a55357e5528b2e779bdafe4b05779207c":[11,0,0,19,3],
-"structrotor_1_1handler__base__t.html#a912089fff00f9a9a16ac42f3c2c751d6":[11,0,0,19,4],
 "structrotor_1_1handler__base__t.html#a98fbce0711aa45d8590af902442a4641":[11,0,0,19,9],
 "structrotor_1_1handler__base__t.html#ad2db4dfad16c33d485f457583760bfc3":[11,0,0,19,8],
 "structrotor_1_1handler__base__t.html#ad7edf5fb09fabed9f071b27c5986050d":[11,0,0,19,2],
@@ -249,5 +243,11 @@ var NAVTREEINDEX2 =
 "structrotor_1_1plugin_1_1plugin__base__t.html#ae08f6ea969a01ae39659bf3eec809b18ac746d4d9ea131732592650bc9898ea33":[11,0,0,4,12,0,2],
 "structrotor_1_1plugin_1_1plugin__base__t.html#ae6b73ab6c8761e94c4b3b48e381c5e53":[11,0,0,4,12,9],
 "structrotor_1_1plugin_1_1plugin__base__t.html#af3dec3d7e6f4af97ceef5d2ac576470b":[11,0,0,4,12,7],
-"structrotor_1_1plugin_1_1plugin__base__t.html#af53ccd0d62ad3fb262357096eeb043c6":[11,0,0,4,12,2]
+"structrotor_1_1plugin_1_1plugin__base__t.html#af53ccd0d62ad3fb262357096eeb043c6":[11,0,0,4,12,2],
+"structrotor_1_1plugin_1_1registry__plugin__t.html":[11,0,0,4,13],
+"structrotor_1_1plugin_1_1registry__plugin__t.html#a3b0f27e9008057857ce94f5a59e7c996":[11,0,0,4,13,4],
+"structrotor_1_1plugin_1_1registry__plugin__t.html#a3f196bec36e3ca9702004b97d2d31233":[11,0,0,4,13,2],
+"structrotor_1_1plugin_1_1registry__plugin__t.html#a3f196bec36e3ca9702004b97d2d31233a906bbf3221dc4485360ecf9cd3f26a42":[11,0,0,4,13,2,1],
+"structrotor_1_1plugin_1_1registry__plugin__t.html#a3f196bec36e3ca9702004b97d2d31233aa82b662bacb9118f0360344a23ab1f4d":[11,0,0,4,13,2,0],
+"structrotor_1_1plugin_1_1registry__plugin__t.html#a46343fd239f3808b75b9eeb969985cb7":[11,0,0,4,13,1]
 };
