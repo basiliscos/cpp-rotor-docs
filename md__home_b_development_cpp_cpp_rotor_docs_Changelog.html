@@ -98,7 +98,16 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp_rotor_d
 <div class="title">Changelog </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>0.15 (02-Apr-2021)</h1>
+<div class="textblock"><h1>0.16 (22-Aug-2021)</h1>
+<ul>
+<li>[improvement] significant message throughtput increase for <code>std::thread</code>, <code>boost-asio</code> and <code>ev</code> backends (upto 5x times)</li>
+<li>[improvement] <code>extended_error</code> can now access to root reason</li>
+<li>[improvement] delivery plugin in debug mode dumps discovery requests and responses</li>
+<li>[improvement/breaking] more details on fatal error (<code>system_context</code>)</li>
+<li>[example] <code>examples/thread/ping-pong-thread.cpp</code> (new)</li>
+<li>[example] <code>examples/ev/ping-pong-ev-2-threads</code> (new)</li>
+</ul>
+<h1>0.15 (02-Apr-2021)</h1>
 <ul>
 <li>[bugfix] <code>lifetime_plugin_t</code> do not unsubscribe from foreign to me subscriptions</li>
 <li>[bugfix] <code>foreigners_support_plugin_t</code> more safely deliver a message for a foreign subscriber (actor)</li>
@@ -109,7 +118,7 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp_rotor_d
 <li>[improvement] <code>actor::do_shutdown()</code> - optionally takes shutdown reason</li>
 <li>[improvement/breaking] instead of using <code>std::error_code</code> the <code>extended_error</code> class is used. It wraps <code>std::error_code</code>, provides string context and pointer to the next <code>extended_error</code> cause. This greatly simplfies error tracking of errors. Every response now contains <code>ee</code> field instead of <code>ec</code>.</li>
 <li>[improvement] <code>actor</code> has shutdown reason (in form of <code>extended_error</code> pointer)</li>
-<li>[improvement] delivery plugin in debug mode it dumps shutdown reason in shutdown trigger messages</li>
+<li>[improvement] delivery plugin in debug mode dumps shutdown reason in shutdown trigger messages</li>
 <li>[improvement] actor identity has <code>on_unlink</code> method to get it know, when it has been unlinked from server actor</li>
 <li>[improvement] add <code>resources</code> plugin for supervisor</li>
 <li>[breaking] all responses now have <code>extended_error</code> pointer instread of <code>std::error_code</code></li>

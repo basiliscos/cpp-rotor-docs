@@ -7,6 +7,6 @@ var structrotor_1_1system__context__t =
     [ "create_supervisor", "structrotor_1_1system__context__t.html#a4cbee07c2fce07e9138643cd8ec8222a", null ],
     [ "get_supervisor", "structrotor_1_1system__context__t.html#ad4450478ac157abf0a249911b17b3b36", null ],
     [ "identity", "structrotor_1_1system__context__t.html#a3093d1f26bdc7ba1af44652f78cf75ac", null ],
-    [ "on_error", "structrotor_1_1system__context__t.html#a0e9d60524531e9994b726b1d8b418f50", null ],
+    [ "on_error", "structrotor_1_1system__context__t.html#a1bcc9d467cd2b277cdcafeb17b23023a", null ],
     [ "supervisor_t", "structrotor_1_1system__context__t.html#a8422647915ad4f7e555cbda95131fcc8", null ]
 ];

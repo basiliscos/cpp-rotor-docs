@@ -20,10 +20,8 @@ var structrotor_1_1ev_1_1supervisor__ev__t =
     [ "start", "structrotor_1_1ev_1_1supervisor__ev__t.html#a68205020bfc896da54028b40abac942d", null ],
     [ "supervisor_ev_shutdown_t", "structrotor_1_1ev_1_1supervisor__ev__t.html#ade54128aac5870e277809a73ffdd5087", null ],
     [ "async_watcher", "structrotor_1_1ev_1_1supervisor__ev__t.html#ac300c49066ad597cf8a1dbdfacf6c679", null ],
-    [ "inbound", "structrotor_1_1ev_1_1supervisor__ev__t.html#a0554f6b3bd728655463556e19de5091e", null ],
-    [ "inbound_mutex", "structrotor_1_1ev_1_1supervisor__ev__t.html#a52b34144d0ad68c7f166174b9db207ed", null ],
     [ "loop", "structrotor_1_1ev_1_1supervisor__ev__t.html#a5eba48be5ed088b78d64352d03c0cb49", null ],
     [ "loop_ownership", "structrotor_1_1ev_1_1supervisor__ev__t.html#acd7e6f802d2a87852888d344137537ec", null ],
-    [ "pending", "structrotor_1_1ev_1_1supervisor__ev__t.html#a4cd2d6dfae7f5fda992411abac02025c", null ],
+    [ "poll_duration", "structrotor_1_1ev_1_1supervisor__ev__t.html#a50da96f196b4a74561e6f1ebe324d5ff", null ],
     [ "timers_map", "structrotor_1_1ev_1_1supervisor__ev__t.html#a73af0606470715c6ed930aee45ee650d", null ]
 ];

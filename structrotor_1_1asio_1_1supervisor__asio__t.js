@@ -11,6 +11,7 @@ var structrotor_1_1asio_1_1supervisor__asio__t =
     [ "create_forwarder", "structrotor_1_1asio_1_1supervisor__asio__t.html#afa1781d659721196c2339fdb26eeb6f1", null ],
     [ "create_forwarder", "structrotor_1_1asio_1_1supervisor__asio__t.html#add70d2d408496225650fcd9418f93c62", null ],
     [ "do_cancel_timer", "structrotor_1_1asio_1_1supervisor__asio__t.html#a3c8e5a3322c97a7982fccc16717a318f", null ],
+    [ "do_process", "structrotor_1_1asio_1_1supervisor__asio__t.html#ae2e278799ba2d32553066edbbcdb55cf", null ],
     [ "do_start_timer", "structrotor_1_1asio_1_1supervisor__asio__t.html#a7b71181d44628f31e5fafbf2516f8be2", null ],
     [ "enqueue", "structrotor_1_1asio_1_1supervisor__asio__t.html#a0ce7fa81f4d6dc519ff9c62b1d5123c9", null ],
     [ "get_strand", "structrotor_1_1asio_1_1supervisor__asio__t.html#aeff9ef17aad7da635ee8f304dbc568af", null ],

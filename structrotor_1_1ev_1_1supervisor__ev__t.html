@@ -158,6 +158,10 @@ template&lt;typename Supervisor &gt; </td></tr>
 <tr class="memitem:a22dacbd9dc3c5369c2c858928d062a7b inherit pub_types_structrotor_1_1supervisor__t"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__t.html#a22dacbd9dc3c5369c2c858928d062a7b">config_builder_t</a> = <a class="el" href="structrotor_1_1supervisor__config__builder__t.html">supervisor_config_builder_t</a>&lt; Supervisor &gt;</td></tr>
 <tr class="memdesc:a22dacbd9dc3c5369c2c858928d062a7b inherit pub_types_structrotor_1_1supervisor__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">injects templated <a class="el" href="structrotor_1_1supervisor__config__builder__t.html" title="CRTP supervisor config builder.">supervisor_config_builder_t</a> <br /></td></tr>
 <tr class="separator:a22dacbd9dc3c5369c2c858928d062a7b inherit pub_types_structrotor_1_1supervisor__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a907d7021a4bd7fa99e4d81b27a4de135 inherit pub_types_structrotor_1_1supervisor__t"><td class="memItemLeft" align="right" valign="top"><a id="a907d7021a4bd7fa99e4d81b27a4de135"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__t.html#a907d7021a4bd7fa99e4d81b27a4de135">inbound_queue_t</a> = boost::lockfree::queue&lt; <a class="el" href="structrotor_1_1message__base__t.html">message_base_t</a> * &gt;</td></tr>
+<tr class="memdesc:a907d7021a4bd7fa99e4d81b27a4de135 inherit pub_types_structrotor_1_1supervisor__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">lock-free queue for inbound messages <br /></td></tr>
+<tr class="separator:a907d7021a4bd7fa99e4d81b27a4de135 inherit pub_types_structrotor_1_1supervisor__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_structrotor_1_1actor__base__t"><td colspan="2" onclick="javascript:toggleInherit('pub_types_structrotor_1_1actor__base__t')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="structrotor_1_1actor__base__t.html">rotor::actor_base_t</a></td></tr>
 <tr class="memitem:a4f54e845ae06b57d5ee17aef81fe776a inherit pub_types_structrotor_1_1actor__base__t"><td class="memItemLeft" align="right" valign="top"><a id="a4f54e845ae06b57d5ee17aef81fe776a"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#a4f54e845ae06b57d5ee17aef81fe776a">config_t</a> = <a class="el" href="structrotor_1_1actor__config__t.html">actor_config_t</a></td></tr>
@@ -546,17 +550,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 ev_async&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1ev_1_1supervisor__ev__t.html#ac300c49066ad597cf8a1dbdfacf6c679">async_watcher</a></td></tr>
 <tr class="memdesc:ac300c49066ad597cf8a1dbdfacf6c679"><td class="mdescLeft">&#160;</td><td class="mdescRight">ev-loop specific thread-safe wake-up notifier for external messages delivery <br /></td></tr>
 <tr class="separator:ac300c49066ad597cf8a1dbdfacf6c679"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52b34144d0ad68c7f166174b9db207ed"><td class="memItemLeft" align="right" valign="top"><a id="a52b34144d0ad68c7f166174b9db207ed"></a>
-std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1ev_1_1supervisor__ev__t.html#a52b34144d0ad68c7f166174b9db207ed">inbound_mutex</a></td></tr>
-<tr class="memdesc:a52b34144d0ad68c7f166174b9db207ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">mutex for protecting inbound queue and pending flag <br /></td></tr>
-<tr class="separator:a52b34144d0ad68c7f166174b9db207ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cd2d6dfae7f5fda992411abac02025c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1ev_1_1supervisor__ev__t.html#a4cd2d6dfae7f5fda992411abac02025c">pending</a></td></tr>
-<tr class="memdesc:a4cd2d6dfae7f5fda992411abac02025c"><td class="mdescLeft">&#160;</td><td class="mdescRight">whether refcounter should be decreased  <a href="structrotor_1_1ev_1_1supervisor__ev__t.html#a4cd2d6dfae7f5fda992411abac02025c">More...</a><br /></td></tr>
-<tr class="separator:a4cd2d6dfae7f5fda992411abac02025c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0554f6b3bd728655463556e19de5091e"><td class="memItemLeft" align="right" valign="top"><a id="a0554f6b3bd728655463556e19de5091e"></a>
-<a class="el" href="namespacerotor.html#a707cd5a5ef983697a9434dc56a569c7f">messages_queue_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1ev_1_1supervisor__ev__t.html#a0554f6b3bd728655463556e19de5091e">inbound</a></td></tr>
-<tr class="memdesc:a0554f6b3bd728655463556e19de5091e"><td class="mdescLeft">&#160;</td><td class="mdescRight">inbound messages queue, i.e.the structure to hold messages received from other supervisors / threads <br /></td></tr>
-<tr class="separator:a0554f6b3bd728655463556e19de5091e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50da96f196b4a74561e6f1ebe324d5ff"><td class="memItemLeft" align="right" valign="top"><a id="a50da96f196b4a74561e6f1ebe324d5ff"></a>
+ev_tstamp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1ev_1_1supervisor__ev__t.html#a50da96f196b4a74561e6f1ebe324d5ff">poll_duration</a></td></tr>
+<tr class="memdesc:a50da96f196b4a74561e6f1ebe324d5ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">how much time spend in active inbound queue polling <br /></td></tr>
+<tr class="separator:a50da96f196b4a74561e6f1ebe324d5ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73af0606470715c6ed930aee45ee650d"><td class="memItemLeft" align="right" valign="top"><a id="a73af0606470715c6ed930aee45ee650d"></a>
 <a class="el" href="structrotor_1_1actor__base__t.html#ae59d9a9b06845e406cb7e4bdb67a7b18">timers_map_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1ev_1_1supervisor__ev__t.html#a73af0606470715c6ed930aee45ee650d">timers_map</a></td></tr>
 <tr class="memdesc:a73af0606470715c6ed930aee45ee650d"><td class="mdescLeft">&#160;</td><td class="mdescRight">timer_id to timer map <br /></td></tr>
@@ -599,6 +596,18 @@ std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 <a class="el" href="structrotor_1_1supervisor__t.html">supervisor_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__t.html#af11dbbafb9e9e07f84eb09eeb58c8110">locality_leader</a></td></tr>
 <tr class="memdesc:af11dbbafb9e9e07f84eb09eeb58c8110 inherit pro_attribs_structrotor_1_1supervisor__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">root supervisor for the locality <br /></td></tr>
 <tr class="separator:af11dbbafb9e9e07f84eb09eeb58c8110 inherit pro_attribs_structrotor_1_1supervisor__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a121e3797096a4e52ca12c67b68157a15 inherit pro_attribs_structrotor_1_1supervisor__t"><td class="memItemLeft" align="right" valign="top"><a id="a121e3797096a4e52ca12c67b68157a15"></a>
+<a class="el" href="structrotor_1_1supervisor__t.html#a907d7021a4bd7fa99e4d81b27a4de135">inbound_queue_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__t.html#a121e3797096a4e52ca12c67b68157a15">inbound_queue</a></td></tr>
+<tr class="memdesc:a121e3797096a4e52ca12c67b68157a15 inherit pro_attribs_structrotor_1_1supervisor__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">inbound queue for external messages <br /></td></tr>
+<tr class="separator:a121e3797096a4e52ca12c67b68157a15 inherit pro_attribs_structrotor_1_1supervisor__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6332f16bf2ca06832b3821128ab5369 inherit pro_attribs_structrotor_1_1supervisor__t"><td class="memItemLeft" align="right" valign="top"><a id="ad6332f16bf2ca06832b3821128ab5369"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__t.html#ad6332f16bf2ca06832b3821128ab5369">inbound_queue_size</a></td></tr>
+<tr class="memdesc:ad6332f16bf2ca06832b3821128ab5369 inherit pro_attribs_structrotor_1_1supervisor__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">size of inbound queue <br /></td></tr>
+<tr class="separator:ad6332f16bf2ca06832b3821128ab5369 inherit pro_attribs_structrotor_1_1supervisor__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdeb448a5b06fb684540febc8f60a5a6 inherit pro_attribs_structrotor_1_1supervisor__t"><td class="memItemLeft" align="right" valign="top"><a id="acdeb448a5b06fb684540febc8f60a5a6"></a>
+pt::time_duration&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__t.html#acdeb448a5b06fb684540febc8f60a5a6">poll_duration</a></td></tr>
+<tr class="memdesc:acdeb448a5b06fb684540febc8f60a5a6 inherit pro_attribs_structrotor_1_1supervisor__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">how much time spend in active inbound queue polling <br /></td></tr>
+<tr class="separator:acdeb448a5b06fb684540febc8f60a5a6 inherit pro_attribs_structrotor_1_1supervisor__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_structrotor_1_1actor__base__t"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_structrotor_1_1actor__base__t')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="structrotor_1_1actor__base__t.html">rotor::actor_base_t</a></td></tr>
 <tr class="memitem:ac86b35dc9ba07753aaf044ebff173e05 inherit pro_attribs_structrotor_1_1actor__base__t"><td class="memItemLeft" align="right" valign="top"><a id="ac86b35dc9ba07753aaf044ebff173e05"></a>
 <a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a>&lt; <a class="el" href="namespacerotor_1_1message.html#ac32e12e668c9d05a6be5ab5e504bb91f">message::init_request_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#ac86b35dc9ba07753aaf044ebff173e05">init_request</a></td></tr>
@@ -849,32 +858,6 @@ static constexpr const std::uint32_t&#160;</td><td class="memItemRight" valign="
 <p>Starts supervisor to processing messages queue in safe thread/loop context. Once it becomes empty, the method returns </p>
 
 <p>Implements <a class="el" href="structrotor_1_1supervisor__t.html#a4b1efcbe5839461a00457448c33bc6a9">rotor::supervisor_t</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a4cd2d6dfae7f5fda992411abac02025c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4cd2d6dfae7f5fda992411abac02025c">&#9670;&nbsp;</a></span>pending</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool rotor::ev::supervisor_ev_t::pending</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>whether refcounter should be decreased </p>
-<p>Async events are "compressed" by EV, i.e. a few async sygnals can be delivere as one. As we do inc/dec for atomic counter, this might be a problem. So by the flag we are sure, that inc/dec will happen only once. </p>
 
 </div>
 </div>
