@@ -25,15 +25,15 @@
 var NAVTREE =
 [
   [ "rotor", "index.html", [
-    [ "Introduction", "md__home_b_development_cpp_cpp_rotor_docs_Introduction.html", null ],
-    [ "Rationale", "md__home_b_development_cpp_cpp_rotor_docs_Rationale.html", null ],
+    [ "Changelog", "md__home_b_development_cpp_cpp_rotor_docs_Changelog.html", null ],
     [ "Compiling & building", "md__home_b_development_cpp_cpp_rotor_docs_Compilation.html", null ],
     [ "Design & Notions", "md__home_b_development_cpp_cpp_rotor_docs_Design.html", null ],
     [ "Advanced examples", "md__home_b_development_cpp_cpp_rotor_docs_Examples.html", null ],
+    [ "Introduction", "md__home_b_development_cpp_cpp_rotor_docs_Introduction.html", null ],
+    [ "License", "md__home_b_development_cpp_cpp_rotor_docs_License.html", null ],
     [ "Event loops & platforms", "md__home_b_development_cpp_cpp_rotor_docs_Loops.html", null ],
     [ "Patterns", "md__home_b_development_cpp_cpp_rotor_docs_Patterns.html", null ],
-    [ "License", "md__home_b_development_cpp_cpp_rotor_docs_License.html", null ],
-    [ "Changelog", "md__home_b_development_cpp_cpp_rotor_docs_Changelog.html", null ],
+    [ "Rationale", "md__home_b_development_cpp_cpp_rotor_docs_Rationale.html", null ],
     [ "References", "md__home_b_development_cpp_cpp_rotor_docs_References.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
@@ -65,10 +65,13 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "actor__base_8h_source.html",
-"structrotor_1_1actor__base__t.html#a2f6e7fcd2b107d035423630ee67b4603",
-"structrotor_1_1handler__base__t.html#a98fbce0711aa45d8590af902442a4641",
-"structrotor_1_1plugin_1_1registry__plugin__t.html#a46546c1d8593ba8fec0019456456fd25",
-"structrotor_1_1thread_1_1system__context__thread__t.html#ae4910df3cf82d3067e14645f1242c333"
+"structrotor_1_1actor__base__t.html#a209689884b0bfe95d396fdc37f72bf59",
+"structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01details_1_1count_1_1__0_00_01void_01_4.html#a4fde9f831831c70479d76f88b0d4ae24",
+"structrotor_1_1handler__t_3_01Handler_00_01std_1_1enable__if__t_3_01details_1_1is__actor__handler__v_3_01Handler_01_4_01_4_01_4.html",
+"structrotor_1_1plugin_1_1delivery__plugin__base__t.html#a22eb030b870a83c9df7d34abb0fdcc24",
+"structrotor_1_1plugin_1_1registry__plugin__t_1_1discovery__task__t.html#a436dcd2ca916c8ec4139956820a580c6a54df1aeeb2d6ecc5e7cda11ba34b6ca6",
+"structrotor_1_1subscription__t_1_1joint__handlers__t.html#a5c4d4f6d8d3734219953c8142df18316",
+"structrotor_1_1wrapped__response__t.html#a512775afd7b8651c7c57b52c2e907246"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

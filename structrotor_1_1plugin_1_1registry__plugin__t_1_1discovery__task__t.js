@@ -10,6 +10,5 @@ var structrotor_1_1plugin_1_1registry__plugin__t_1_1discovery__task__t =
     ] ],
     [ "access", "structrotor_1_1plugin_1_1registry__plugin__t_1_1discovery__task__t.html#aaf2ddf5bf1562c0e272dfbc09f8f163a", null ],
     [ "callback", "structrotor_1_1plugin_1_1registry__plugin__t_1_1discovery__task__t.html#a2a4442a8c26a598f6e2ed9f7068664a1", null ],
-    [ "link", "structrotor_1_1plugin_1_1registry__plugin__t_1_1discovery__task__t.html#aa8d30cfcf871b458401444b1421abb2d", null ],
-    [ "registry_plugin_t", "structrotor_1_1plugin_1_1registry__plugin__t_1_1discovery__task__t.html#a197729327ae5ba46664eaa882c349045", null ]
+    [ "link", "structrotor_1_1plugin_1_1registry__plugin__t_1_1discovery__task__t.html#a45ff41ec9660d13ea7f0dc152a8ccbaf", null ]
 ];

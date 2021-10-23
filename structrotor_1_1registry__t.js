@@ -5,7 +5,7 @@ var structrotor_1_1registry__t =
     [ "registered_map_t", "structrotor_1_1registry__t.html#a44c623ed19eef915baefb76c75c36111", null ],
     [ "registered_names_t", "structrotor_1_1registry__t.html#a83a3bbb85b64bdd704819645304782f6", null ],
     [ "revese_map_t", "structrotor_1_1registry__t.html#aa68d0279048c7bfb4d1d7a2b60d18ce4", null ],
-    [ "access", "structrotor_1_1registry__t.html#a0556026b612136613326eb8b4b6458ad", null ],
+    [ "access", "structrotor_1_1registry__t.html#aadce11e0ee623c575cda57e9aea169d5", null ],
     [ "actor_base_t", "structrotor_1_1registry__t.html#aa07be01bedb60e529da93ee446cd8f2c", null ],
     [ "configure", "structrotor_1_1registry__t.html#a76ee0b966a7d09aa4dbce2279ef51c0d", null ],
     [ "on_cancel", "structrotor_1_1registry__t.html#a49f3746711010ae2bf3d5babc80a095c", null ],

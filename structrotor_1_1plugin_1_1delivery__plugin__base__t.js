@@ -1,6 +1,5 @@
 var structrotor_1_1plugin_1_1delivery__plugin__base__t =
 [
-    [ "~delivery_plugin_base_t", "structrotor_1_1plugin_1_1delivery__plugin__base__t.html#abc362fc1c91b62ea6c4c3280a7aab128", null ],
     [ "activate", "structrotor_1_1plugin_1_1delivery__plugin__base__t.html#a2ace0846771d66f719e027bbba570ab6", null ],
     [ "plugin_base_t", "structrotor_1_1plugin_1_1delivery__plugin__base__t.html#a4a5bf237da6fac1d6ec575918bba0098", null ],
     [ "plugin_base_t", "structrotor_1_1plugin_1_1delivery__plugin__base__t.html#af53ccd0d62ad3fb262357096eeb043c6", null ],

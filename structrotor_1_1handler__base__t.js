@@ -1,7 +1,6 @@
 var structrotor_1_1handler__base__t =
 [
     [ "handler_base_t", "structrotor_1_1handler__base__t.html#a2b199ea8c354f69cb18b1315d963a05f", null ],
-    [ "~handler_base_t", "structrotor_1_1handler__base__t.html#a30e4d4a8d24bd4f76f1918058c08ecc2", null ],
     [ "call", "structrotor_1_1handler__base__t.html#ad7edf5fb09fabed9f071b27c5986050d", null ],
     [ "call_no_check", "structrotor_1_1handler__base__t.html#a55357e5528b2e779bdafe4b05779207c", null ],
     [ "operator==", "structrotor_1_1handler__base__t.html#a912089fff00f9a9a16ac42f3c2c751d6", null ],

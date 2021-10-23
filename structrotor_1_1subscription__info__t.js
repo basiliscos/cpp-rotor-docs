@@ -6,8 +6,7 @@ var structrotor_1_1subscription__info__t =
       [ "UNSUBSCRIBING", "structrotor_1_1subscription__info__t.html#a99b9a20a919024f63979a43c7ba92c5da48e806423a038475a84fe1e610addb46", null ]
     ] ],
     [ "subscription_info_t", "structrotor_1_1subscription__info__t.html#ad0123b6fae193a40f11914fd7b2a9ae9", null ],
-    [ "~subscription_info_t", "structrotor_1_1subscription__info__t.html#a2599ed68c7384556455e2e8185ac2d02", null ],
-    [ "access", "structrotor_1_1subscription__info__t.html#a3affad2f524e613a000c6b360ff977c1", null ],
+    [ "access", "structrotor_1_1subscription__info__t.html#aaf27fe3edc3a6b117a85ab71c45aa99a", null ],
     [ "access", "structrotor_1_1subscription__info__t.html#a26fd4ed6ea93fda73fb8816c742f0e2c", null ],
     [ "operator==", "structrotor_1_1subscription__info__t.html#a3a721bee1b0b3cfc33a1cbbd349c2fe4", null ],
     [ "tag_io", "structrotor_1_1subscription__info__t.html#a3cf7571c9e82f411e0a9fa7b34ff185f", null ]

@@ -1,11 +1,11 @@
 var structrotor_1_1plugin_1_1lifetime__plugin__t =
 [
-    [ "access", "structrotor_1_1plugin_1_1lifetime__plugin__t.html#a81010f47ab54912c02c37125e3ebd59b", null ],
+    [ "access", "structrotor_1_1plugin_1_1lifetime__plugin__t.html#ad509fe92cd36e8f1f6a0dcd110243a30", null ],
     [ "activate", "structrotor_1_1plugin_1_1lifetime__plugin__t.html#ad0cb81b1ec87aca16bcdff570398ca96", null ],
     [ "deactivate", "structrotor_1_1plugin_1_1lifetime__plugin__t.html#aab5c8ffb3eef2171b4d98a6d8a24f882", null ],
     [ "handle_shutdown", "structrotor_1_1plugin_1_1lifetime__plugin__t.html#abb4eae89c711c69baea657b86620b6c2", null ],
     [ "handle_unsubscription", "structrotor_1_1plugin_1_1lifetime__plugin__t.html#a2103609c5f511c6c1e557cc1bd345545", null ],
-    [ "identity", "structrotor_1_1plugin_1_1lifetime__plugin__t.html#afe1a40ca5bd2c5583030ca1546ac665d", null ],
+    [ "identity", "structrotor_1_1plugin_1_1lifetime__plugin__t.html#afdfeb57f27e6620718c477580790bbf3", null ],
     [ "initate_subscription", "structrotor_1_1plugin_1_1lifetime__plugin__t.html#a992598b5e1cf03bd625ef37d8a03317f", null ],
     [ "on_subscription", "structrotor_1_1plugin_1_1lifetime__plugin__t.html#a83772c6b35e0c354232a42eb4ff00b1d", null ],
     [ "on_unsubscription", "structrotor_1_1plugin_1_1lifetime__plugin__t.html#ab27b7979e5f307b2c1568d0a92c25433", null ],

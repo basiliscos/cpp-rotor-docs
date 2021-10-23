@@ -1,6 +1,6 @@
 var structrotor_1_1plugin_1_1child__manager__plugin__t =
 [
-    [ "access", "structrotor_1_1plugin_1_1child__manager__plugin__t.html#aec89957a8d339ffafdcb4b0296884dfc", null ],
+    [ "access", "structrotor_1_1plugin_1_1child__manager__plugin__t.html#a18c2a2fabd7a982abb42c4f3ef29e2c0", null ],
     [ "activate", "structrotor_1_1plugin_1_1child__manager__plugin__t.html#a4fc8a8dffd586242e8bca7f8f4ccc11e", null ],
     [ "create_child", "structrotor_1_1plugin_1_1child__manager__plugin__t.html#a1518034a20357df24e355ed1c71bbf1a", null ],
     [ "deactivate", "structrotor_1_1plugin_1_1child__manager__plugin__t.html#a7011dc680d92ea3f39c92d1e7162210b", null ],
@@ -8,7 +8,7 @@ var structrotor_1_1plugin_1_1child__manager__plugin__t =
     [ "handle_shutdown", "structrotor_1_1plugin_1_1child__manager__plugin__t.html#a4bfcd7ffa7ad215272f64d95fdc98bc1", null ],
     [ "handle_start", "structrotor_1_1plugin_1_1child__manager__plugin__t.html#a8ed72bde637772cbbdd6ccdd92578bf0", null ],
     [ "handle_unsubscription", "structrotor_1_1plugin_1_1child__manager__plugin__t.html#a1a180e74f6e4ab20230db71d131b2c7a", null ],
-    [ "identity", "structrotor_1_1plugin_1_1child__manager__plugin__t.html#a1c46c64dc1664b10e59195469993a1eb", null ],
+    [ "identity", "structrotor_1_1plugin_1_1child__manager__plugin__t.html#a15eb37c8037f428a32d89fedb3df71ef", null ],
     [ "on_create", "structrotor_1_1plugin_1_1child__manager__plugin__t.html#a8b10b6d4364ca16a6566218ba60e8a74", null ],
     [ "on_init", "structrotor_1_1plugin_1_1child__manager__plugin__t.html#af01d22fa244ab768a9c15036b60e07f0", null ],
     [ "on_shutdown_confirm", "structrotor_1_1plugin_1_1child__manager__plugin__t.html#a806108c2d58d8d4ba98cdaf3c1448b97", null ],

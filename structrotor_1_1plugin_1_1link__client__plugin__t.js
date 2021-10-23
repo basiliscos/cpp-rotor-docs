@@ -6,7 +6,7 @@ var structrotor_1_1plugin_1_1link__client__plugin__t =
     [ "forget_link", "structrotor_1_1plugin_1_1link__client__plugin__t.html#a8af900b3ff3a7fa60e8ad8d3708494f3", null ],
     [ "handle_init", "structrotor_1_1plugin_1_1link__client__plugin__t.html#a27fbab1f46f1ec216253f6ab6e14ba82", null ],
     [ "handle_shutdown", "structrotor_1_1plugin_1_1link__client__plugin__t.html#ab12f359a5386a48065df7e1039315caa", null ],
-    [ "identity", "structrotor_1_1plugin_1_1link__client__plugin__t.html#a15e2509a98bbfee0d4dca63f3b30e1e8", null ],
+    [ "identity", "structrotor_1_1plugin_1_1link__client__plugin__t.html#a933e07fa42d541747aa0e572abdc6bcf", null ],
     [ "link", "structrotor_1_1plugin_1_1link__client__plugin__t.html#ac82b8080a682f50706d496461af2ebd5", null ],
     [ "on_link_response", "structrotor_1_1plugin_1_1link__client__plugin__t.html#a1801d9f642f91b4560c220c5e388602e", null ],
     [ "on_unlink", "structrotor_1_1plugin_1_1link__client__plugin__t.html#aabbe80a807e8b81d4e7bffb245e26358", null ],

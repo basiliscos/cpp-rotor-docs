@@ -9,10 +9,9 @@ var structrotor_1_1wx_1_1supervisor__wx__t =
     [ "do_cancel_timer", "structrotor_1_1wx_1_1supervisor__wx__t.html#af2908a29e7854991288ec7c2cc1b9fca", null ],
     [ "do_start_timer", "structrotor_1_1wx_1_1supervisor__wx__t.html#a7b1c0351197115afa036e03381d8a30d", null ],
     [ "enqueue", "structrotor_1_1wx_1_1supervisor__wx__t.html#af4874ba9f1654776685e27bc24cb43e7", null ],
-    [ "get_context", "structrotor_1_1wx_1_1supervisor__wx__t.html#a38bcc736ac361ab9c1bae3fb621d8d25", null ],
+    [ "get_context", "structrotor_1_1wx_1_1supervisor__wx__t.html#a3056de3dd2bfcbed6498360dc992723c", null ],
     [ "shutdown", "structrotor_1_1wx_1_1supervisor__wx__t.html#a0bab7e2159eb2dd161348a791304322d", null ],
     [ "start", "structrotor_1_1wx_1_1supervisor__wx__t.html#a41e1d0768cd53faf24a3e673dbf3d8e6", null ],
-    [ "timer_t", "structrotor_1_1wx_1_1supervisor__wx__t.html#a234586207fe16c85d164ff87f6fa336e", null ],
     [ "handler", "structrotor_1_1wx_1_1supervisor__wx__t.html#a1fd06f0d9b11e83709e01d9ac5a95f3a", null ],
     [ "timers_map", "structrotor_1_1wx_1_1supervisor__wx__t.html#a2a1d1a45f870210e2dd5a6756d7694a7", null ]
 ];
