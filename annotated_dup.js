@@ -110,6 +110,7 @@ var annotated_dup =
       [ "handler_traits", "structrotor_1_1handler__traits.html", null ],
       [ "handler_traits< lambda_holder_t< M, H > >", "structrotor_1_1handler__traits_3_01lambda__holder__t_3_01M_00_01H_01_4_01_4.html", null ],
       [ "handler_traits< void(A::*)(M &) noexcept >", "structrotor_1_1handler__traits_3_01void_07A_1_1_5_08_07M_01_6_08_01noexcept_01_4.html", "structrotor_1_1handler__traits_3_01void_07A_1_1_5_08_07M_01_6_08_01noexcept_01_4" ],
+      [ "handler_traits< void(A::*)(M &)>", "structrotor_1_1handler__traits_3_01void_07A_1_1_5_08_07M_01_6_08_4.html", null ],
       [ "lambda_holder_t", "structrotor_1_1lambda__holder__t.html", "structrotor_1_1lambda__holder__t" ],
       [ "message_base_t", "structrotor_1_1message__base__t.html", "structrotor_1_1message__base__t" ],
       [ "message_t", "structrotor_1_1message__t.html", "structrotor_1_1message__t" ],
@@ -145,5 +146,6 @@ var annotated_dup =
       [ "hash< rotor::handler_ptr_t >", "structstd_1_1hash_3_01rotor_1_1handler__ptr__t_01_4.html", "structstd_1_1hash_3_01rotor_1_1handler__ptr__t_01_4" ],
       [ "is_error_code_enum< rotor::error_code_t >", "structstd_1_1is__error__code__enum_3_01rotor_1_1error__code__t_01_4.html", null ],
       [ "is_error_code_enum< rotor::shutdown_code_t >", "structstd_1_1is__error__code__enum_3_01rotor_1_1shutdown__code__t_01_4.html", null ]
-    ] ]
+    ] ],
+    [ "handler_traits< void(A::*)(M &) >", "structhandler__traits_3_01void_07A_1_1_5_08_07M_01_6_08_01_4.html", null ]
 ];
