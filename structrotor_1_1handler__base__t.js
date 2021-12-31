@@ -6,9 +6,8 @@ var structrotor_1_1handler__base__t =
     [ "operator==", "structrotor_1_1handler__base__t.html#a912089fff00f9a9a16ac42f3c2c751d6", null ],
     [ "select", "structrotor_1_1handler__base__t.html#af5796439567d4c6bbc26ef3842c904ad", null ],
     [ "upgrade", "structrotor_1_1handler__base__t.html#a138dd31fc0552c314eae4ce305785b1c", null ],
-    [ "actor_ptr", "structrotor_1_1handler__base__t.html#a0a026b4411c3c51a1ca826a8fc9ef118", null ],
+    [ "actor_ptr", "structrotor_1_1handler__base__t.html#ac5fd268bd60f1dfbefb995d856633e4e", null ],
     [ "handler_type", "structrotor_1_1handler__base__t.html#ad2db4dfad16c33d485f457583760bfc3", null ],
     [ "message_type", "structrotor_1_1handler__base__t.html#a98fbce0711aa45d8590af902442a4641", null ],
-    [ "precalc_hash", "structrotor_1_1handler__base__t.html#a4374640eac9254877b8f33e3916d4ee5", null ],
-    [ "raw_actor_ptr", "structrotor_1_1handler__base__t.html#a8aae0fbf7c0718eb35d111142a03a3bb", null ]
+    [ "precalc_hash", "structrotor_1_1handler__base__t.html#a4374640eac9254877b8f33e3916d4ee5", null ]
 ];
