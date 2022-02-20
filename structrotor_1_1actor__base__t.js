@@ -44,6 +44,7 @@ var structrotor_1_1actor__base__t =
     [ "request_via", "structrotor_1_1actor__base__t.html#ab65fcd9da230b08057968a55fc6509d7", null ],
     [ "request_via", "structrotor_1_1actor__base__t.html#a22994458d3b388b4959069fba5474189", null ],
     [ "send", "structrotor_1_1actor__base__t.html#ac0ca5cd93f9b6e755af0dd7f04b5ae9c", null ],
+    [ "should_restart", "structrotor_1_1actor__base__t.html#a94cf36fdc194de9024dc25237fb4e350", null ],
     [ "shutdown_continue", "structrotor_1_1actor__base__t.html#a209689884b0bfe95d396fdc37f72bf59", null ],
     [ "shutdown_finish", "structrotor_1_1actor__base__t.html#a44ad771e6bf22f6b3f9505078d179d85", null ],
     [ "shutdown_start", "structrotor_1_1actor__base__t.html#af559ff2601f0b0d4ed2f678c9cf701d1", null ],
@@ -70,6 +71,7 @@ var structrotor_1_1actor__base__t =
     [ "shutdown_reason", "structrotor_1_1actor__base__t.html#acccd4623895cfff2ed4eb10e7fa8e22d", null ],
     [ "shutdown_request", "structrotor_1_1actor__base__t.html#aedc66b94ab49d489c3ae9b96727ec8be", null ],
     [ "shutdown_timeout", "structrotor_1_1actor__base__t.html#a5813b68e846debc3c014119dc84e14b3", null ],
+    [ "spawner_address", "structrotor_1_1actor__base__t.html#ab488b5044df20f404912034ce3558920", null ],
     [ "state", "structrotor_1_1actor__base__t.html#ace7dad5e2a06711664bb7d0c70d1f1c7", null ],
     [ "supervisor", "structrotor_1_1actor__base__t.html#acf410c3039306d3cdf2f2707a92876f8", null ],
     [ "timers_map", "structrotor_1_1actor__base__t.html#a3690fd9e13468b95c47c71cf452c574c", null ]

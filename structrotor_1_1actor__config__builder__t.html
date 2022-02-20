@@ -149,6 +149,15 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="structrotor_1_1actor__config__builder__t.html#ab30d1e48683556e42a3bde56aed52d85">builder_t</a> &amp;&amp;&#160;</td><td class="memItemRight" valign="bottom"><b>shutdown_timeout</b> (const pt::time_duration &amp;<a class="el" href="structrotor_1_1actor__config__builder__t.html#a917dd03badcd02fbd4e893c722e8d104">timeout</a>) &amp;&amp;noexcept</td></tr>
 <tr class="memdesc:a6ff838dbb3ece8200d6bd36959a9d0b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">setter for shutdown timeout <br /></td></tr>
 <tr class="separator:a6ff838dbb3ece8200d6bd36959a9d0b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d7ffbd3a4ab5ff3dfa81d2db34cfb71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structrotor_1_1actor__config__builder__t.html#ab30d1e48683556e42a3bde56aed52d85">builder_t</a> &amp;&amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__config__builder__t.html#a6d7ffbd3a4ab5ff3dfa81d2db34cfb71">spawner_address</a> (const <a class="el" href="namespacerotor.html#a25565725c774761a67bd766d93617326">address_ptr_t</a> &amp;value) &amp;&amp;noexcept</td></tr>
+<tr class="memdesc:a6d7ffbd3a4ab5ff3dfa81d2db34cfb71"><td class="mdescLeft">&#160;</td><td class="mdescRight">spawner address  <a href="structrotor_1_1actor__config__builder__t.html#a6d7ffbd3a4ab5ff3dfa81d2db34cfb71">More...</a><br /></td></tr>
+<tr class="separator:a6d7ffbd3a4ab5ff3dfa81d2db34cfb71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34788a7a0afcc0ba07924277e5c385e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structrotor_1_1actor__config__builder__t.html#ab30d1e48683556e42a3bde56aed52d85">builder_t</a> &amp;&amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__config__builder__t.html#a34788a7a0afcc0ba07924277e5c385e7">escalate_failure</a> (bool value=true) &amp;&amp;noexcept</td></tr>
+<tr class="memdesc:a34788a7a0afcc0ba07924277e5c385e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">shutdown supervisor upon actor failure  <a href="structrotor_1_1actor__config__builder__t.html#a34788a7a0afcc0ba07924277e5c385e7">More...</a><br /></td></tr>
+<tr class="separator:a34788a7a0afcc0ba07924277e5c385e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12a1dc351c9ac0ef2b938d32dbc3aa8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structrotor_1_1actor__config__builder__t.html#ab30d1e48683556e42a3bde56aed52d85">builder_t</a> &amp;&amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__config__builder__t.html#a12a1dc351c9ac0ef2b938d32dbc3aa8e">autoshutdown_supervisor</a> (bool value=true) &amp;&amp;noexcept</td></tr>
+<tr class="memdesc:a12a1dc351c9ac0ef2b938d32dbc3aa8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">shutdown supervisor when an actor is down  <a href="structrotor_1_1actor__config__builder__t.html#a12a1dc351c9ac0ef2b938d32dbc3aa8e">More...</a><br /></td></tr>
+<tr class="separator:a12a1dc351c9ac0ef2b938d32dbc3aa8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c792babcacdefb75254e1f744972668"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__config__builder__t.html#a5c792babcacdefb75254e1f744972668">validate</a> () noexcept</td></tr>
 <tr class="memdesc:a5c792babcacdefb75254e1f744972668"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks whether config is valid, i.e. all necessary fields are set  <a href="structrotor_1_1actor__config__builder__t.html#a5c792babcacdefb75254e1f744972668">More...</a><br /></td></tr>
 <tr class="separator:a5c792babcacdefb75254e1f744972668"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,6 +228,100 @@ template&lt;typename Actor &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a12a1dc351c9ac0ef2b938d32dbc3aa8e" name="a12a1dc351c9ac0ef2b938d32dbc3aa8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12a1dc351c9ac0ef2b938d32dbc3aa8e">&#9670;&nbsp;</a></span>autoshutdown_supervisor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Actor &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structrotor_1_1actor__config__builder__t.html#ab30d1e48683556e42a3bde56aed52d85">builder_t</a> &amp;&amp; <a class="el" href="structrotor_1_1actor__config__builder__t.html">rotor::actor_config_builder_t</a>&lt; Actor &gt;::autoshutdown_supervisor </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em> = <code>true</code></td><td>)</td>
+          <td> &amp;&amp;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>shutdown supervisor when an actor is down </p>
+<p >This policy is ignored when actor is spawned. </p>
+
+</div>
+</div>
+<a id="a34788a7a0afcc0ba07924277e5c385e7" name="a34788a7a0afcc0ba07924277e5c385e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34788a7a0afcc0ba07924277e5c385e7">&#9670;&nbsp;</a></span>escalate_failure()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Actor &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structrotor_1_1actor__config__builder__t.html#ab30d1e48683556e42a3bde56aed52d85">builder_t</a> &amp;&amp; <a class="el" href="structrotor_1_1actor__config__builder__t.html">rotor::actor_config_builder_t</a>&lt; Actor &gt;::escalate_failure </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em> = <code>true</code></td><td>)</td>
+          <td> &amp;&amp;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>shutdown supervisor upon actor failure </p>
+<p >When actor is shut down due to failure, trigger it's supervisor to shutdown.</p>
+<p >This policy is ignored when actor is spawned. </p>
+
+</div>
+</div>
+<a id="a6d7ffbd3a4ab5ff3dfa81d2db34cfb71" name="a6d7ffbd3a4ab5ff3dfa81d2db34cfb71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d7ffbd3a4ab5ff3dfa81d2db34cfb71">&#9670;&nbsp;</a></span>spawner_address()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Actor &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structrotor_1_1actor__config__builder__t.html#ab30d1e48683556e42a3bde56aed52d85">builder_t</a> &amp;&amp; <a class="el" href="structrotor_1_1actor__config__builder__t.html">rotor::actor_config_builder_t</a>&lt; Actor &gt;::spawner_address </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacerotor.html#a25565725c774761a67bd766d93617326">address_ptr_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td> &amp;&amp;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>spawner address </p>
+<p >This value must be set, when actor is create via spawner (i.e. in <code>factory_t</code>) </p>
+
+</div>
+</div>
 <a id="a5c792babcacdefb75254e1f744972668" name="a5c792babcacdefb75254e1f744972668"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5c792babcacdefb75254e1f744972668">&#9670;&nbsp;</a></span>validate()</h2>
 

@@ -1,6 +1,14 @@
 var namespacerotor =
 [
     [ "asio", "namespacerotor_1_1asio.html", "namespacerotor_1_1asio" ],
+    [ "detail", null, [
+      [ "demand", null, [
+        [ "escalate_failure", "structrotor_1_1detail_1_1demand_1_1escalate__failure.html", null ],
+        [ "no", "structrotor_1_1detail_1_1demand_1_1no.html", null ],
+        [ "now", "structrotor_1_1detail_1_1demand_1_1now.html", null ]
+      ] ],
+      [ "child_info_t", "structrotor_1_1detail_1_1child__info__t.html", "structrotor_1_1detail_1_1child__info__t" ]
+    ] ],
     [ "details", null, [
       [ "error_code_category", "classrotor_1_1details_1_1error__code__category.html", "classrotor_1_1details_1_1error__code__category" ],
       [ "is_braces_constructible", "structrotor_1_1details_1_1is__braces__constructible.html", null ],
@@ -36,6 +44,7 @@ var namespacerotor =
       [ "shutdown_request_t", "namespacerotor_1_1message.html#a8cb5193be950e60306025bf592c7c4a5", null ],
       [ "shutdown_response_t", "namespacerotor_1_1message.html#a4ad63be5393527d9b30899a55435eca2", null ],
       [ "shutdown_trigger_t", "namespacerotor_1_1message.html#afd41aa2b617f2971ffdee5f00ac987d9", null ],
+      [ "spawn_actor_t", "namespacerotor_1_1message.html#af23d77f5894e1b99deefc606a9b45620", null ],
       [ "start_trigger_t", "namespacerotor_1_1message.html#a105202ed6e86e496156c987b9a3eaa63", null ],
       [ "subscription_t", "namespacerotor_1_1message.html#a384ba8e44bed73656ff1829a1998dea5", null ],
       [ "unlink_notify_t", "namespacerotor_1_1message.html#aee87e17432fb7d24ad0733ba27edfbd4", null ],
@@ -82,7 +91,7 @@ var namespacerotor =
     [ "handler_traits", "structrotor_1_1handler__traits.html", null ],
     [ "handler_traits< lambda_holder_t< M, H > >", "structrotor_1_1handler__traits_3_01lambda__holder__t_3_01M_00_01H_01_4_01_4.html", null ],
     [ "handler_traits< void(A::*)(M &) noexcept >", "structrotor_1_1handler__traits_3_01void_07A_1_1_5_08_07M_01_6_08_01noexcept_01_4.html", "structrotor_1_1handler__traits_3_01void_07A_1_1_5_08_07M_01_6_08_01noexcept_01_4" ],
-    [ "handler_traits< void(A::*)(M &)>", "structrotor_1_1handler__traits_3_01void_07A_1_1_5_08_07M_01_6_08_4.html", null ],
+    [ "handler_traits< void(A::*)(M &)>", "structrotor_1_1handler__traits_3_01void_07A_1_1_5_08_07M_01_6_08_4.html", "structrotor_1_1handler__traits_3_01void_07A_1_1_5_08_07M_01_6_08_4" ],
     [ "lambda_holder_t", "structrotor_1_1lambda__holder__t.html", "structrotor_1_1lambda__holder__t" ],
     [ "message_base_t", "structrotor_1_1message__base__t.html", "structrotor_1_1message__base__t" ],
     [ "message_t", "structrotor_1_1message__t.html", "structrotor_1_1message__t" ],
@@ -99,6 +108,7 @@ var namespacerotor =
     [ "request_wrapper_t< T, std::enable_if_t< std::is_base_of_v< arc_base_t< T >, T > > >", "structrotor_1_1request__wrapper__t_3_01T_00_01std_1_1enable__if__t_3_01std_1_1is__base__of__v_3_e87ff55122062e5a77521960ca0ac849.html", "structrotor_1_1request__wrapper__t_3_01T_00_01std_1_1enable__if__t_3_01std_1_1is__base__of__v_3_e87ff55122062e5a77521960ca0ac849" ],
     [ "response_helper_t", "structrotor_1_1response__helper__t.html", "structrotor_1_1response__helper__t" ],
     [ "response_helper_t< intrusive_ptr_t< Responce > >", "structrotor_1_1response__helper__t_3_01intrusive__ptr__t_3_01Responce_01_4_01_4.html", "structrotor_1_1response__helper__t_3_01intrusive__ptr__t_3_01Responce_01_4_01_4" ],
+    [ "spawner_t", "structrotor_1_1spawner__t.html", "structrotor_1_1spawner__t" ],
     [ "subscription_container_t", "structrotor_1_1subscription__container__t.html", "structrotor_1_1subscription__container__t" ],
     [ "subscription_info_t", "structrotor_1_1subscription__info__t.html", "structrotor_1_1subscription__info__t" ],
     [ "subscription_point_t", "structrotor_1_1subscription__point__t.html", "structrotor_1_1subscription__point__t" ],
@@ -118,6 +128,7 @@ var namespacerotor =
     [ "counter_policy_t", "namespacerotor.html#a5a672cade01e139fddd135e4ab84cfe4", null ],
     [ "error_producer_t", "namespacerotor.html#a04509f254619824808aaf6b72edfacd8", null ],
     [ "extended_error_ptr_t", "namespacerotor.html#a3e69eb003219ace1a9962825e0188d53", null ],
+    [ "factory_t", "namespacerotor.html#afb03484e6d00762fddb5c5a79ac1f1cd", null ],
     [ "handler_ptr_t", "namespacerotor.html#aa6f317d95700079f90a76aa56294f92f", null ],
     [ "intrusive_ptr_t", "namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2", null ],
     [ "message_ptr_t", "namespacerotor.html#a0196761fe474bd8dc17ac4ff9f0e2f95", null ],
@@ -148,6 +159,13 @@ var namespacerotor =
       [ "PLUGIN", "namespacerotor.html#a3467749432c11e43f09b06257b5a3385afd87a731781e74f4c784fa78bd4835b3", null ],
       [ "SUPERVISOR", "namespacerotor.html#a3467749432c11e43f09b06257b5a3385a1448b550c6497ee28e8ef90fd1600cd8", null ],
       [ "FOREIGN", "namespacerotor.html#a3467749432c11e43f09b06257b5a3385a4bef11ced0256f83b8f8e20dce2ffb33", null ]
+    ] ],
+    [ "restart_policy_t", "namespacerotor.html#a56d787cb31d38e79c8a3844614bf17f3", [
+      [ "always", "namespacerotor.html#a56d787cb31d38e79c8a3844614bf17f3af9f90eeaf400d228facde6bc48da5cfb", null ],
+      [ "never", "namespacerotor.html#a56d787cb31d38e79c8a3844614bf17f3ac7561db7a418dd39b2201dfe110ab4a4", null ],
+      [ "ask_actor", "namespacerotor.html#a56d787cb31d38e79c8a3844614bf17f3ae0a922b345ec28d1d10ba9b750f93a70", null ],
+      [ "normal_only", "namespacerotor.html#a56d787cb31d38e79c8a3844614bf17f3a264c9a6fb6028de4bf66fa22809c3289", null ],
+      [ "fail_only", "namespacerotor.html#a56d787cb31d38e79c8a3844614bf17f3a25a34e801b7aa6628982b99f39f5c0e4", null ]
     ] ],
     [ "shutdown_code_t", "namespacerotor.html#a1bdd1bb05a9f3b94c06d60634cee138f", [
       [ "normal", "namespacerotor.html#a1bdd1bb05a9f3b94c06d60634cee138fafea087517c26fadd409bd4b9dc642555", null ],

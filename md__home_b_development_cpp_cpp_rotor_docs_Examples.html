@@ -170,7 +170,7 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp_rotor_d
 <div class="line">        do_shutdown();</div>
 <div class="line">    }</div>
 <div class="line">}</div>
-<div class="ttc" id="anamespacerotor_html_aa709f45800c1bc7ea4d7bb2163328b4c"><div class="ttname"><a href="namespacerotor.html#aa709f45800c1bc7ea4d7bb2163328b4c">rotor::request_id_t</a></div><div class="ttdeci">std::size_t request_id_t</div><div class="ttdoc">timer identifier type in the scope of the actor</div><div class="ttdef"><b>Definition:</b> forward.hpp:33</div></div>
+<div class="ttc" id="anamespacerotor_html_aa709f45800c1bc7ea4d7bb2163328b4c"><div class="ttname"><a href="namespacerotor.html#aa709f45800c1bc7ea4d7bb2163328b4c">rotor::request_id_t</a></div><div class="ttdeci">std::size_t request_id_t</div><div class="ttdoc">timer identifier type in the scope of the actor</div><div class="ttdef"><b>Definition:</b> forward.hpp:34</div></div>
 <div class="ttc" id="astructrotor_1_1actor__base__t_html_abd09068676677472caabe32ed7ef7aaf"><div class="ttname"><a href="structrotor_1_1actor__base__t.html#abd09068676677472caabe32ed7ef7aaf">rotor::actor_base_t::on_start</a></div><div class="ttdeci">virtual void on_start() noexcept</div><div class="ttdoc">actor is fully initialized and it's supervisor has sent signal to start</div></div>
 </div><!-- fragment --><p >The <code>on_start</code> method is rather trivial, except the two nuances. First, it must record the <code>timer_id</code>, which may be necessary for the timer cancellation on shutdown initiation. Second, it acquires the timer <em>resource</em>, whose entire purpose is to delay shutdown (and, in general, the initialization) phase. Without the resource acquisition, the timer might trigger <em>after</em> actor shutdown, which usually is bad idea. In the timer handler (<code>on_custom_timeout</code>) it performs the reverse actions: the timer <em>resource</em> is released (and, hence, shutdown will be continued if it was started), and <code>timer_id</code> is reset to prevent cancellation in shutdown (will be shown soon). There is a guarantee, that timer handler will be invoked once anyway, whether it was cancelled or triggered. However, in accordance with our rules if it triggers, the <code>pinger</code> actor should shut self down (i.e. <code>do_shutdown()</code> method is invoked).</p>
 <p >Let's demonstrate the <code>pinger</code> shutdown procedure:</p>
@@ -357,7 +357,60 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp_rotor_d
 <div class="line">pinger_t, (0x55d5d95d98a0) pong failed (7)</div>
 <div class="line">pinger_t, (0x55d5d95d98a0) finished attempts done 7</div>
 <div class="line">ponger_t, shutdown_finish</div>
-</div><!-- fragment --><p >The full source code can be seen at <a href="https://github.com/basiliscos/cpp-rotor/blob/master/examples/boost-asio/ping-pong-timer.cpp">examples/boost-asio/ping-pong-timer.cpp</a>. There is a more advanced <a href="https://github.com/basiliscos/cpp-rotor/blob/master/examples/boost-asio/beast-scrapper.cpp">examples/boost-asio/beast-scrapper.cpp</a> example too, however without detailed explanations. </p>
+</div><!-- fragment --><p >The full source code can be seen at <a href="https://github.com/basiliscos/cpp-rotor/blob/master/examples/boost-asio/ping-pong-timer.cpp">examples/boost-asio/ping-pong-timer.cpp</a>. There is a more advanced <a href="https://github.com/basiliscos/cpp-rotor/blob/master/examples/boost-asio/beast-scrapper.cpp">examples/boost-asio/beast-scrapper.cpp</a> example too, however without detailed explanations.</p>
+<h1>Supervising and spawning actors</h1>
+<p ><em>Supervising</em> actors is simply define some reaction upon managed child actor termination. Some of reactions are already build in <a href="https://github.com/basiliscos/cpp-rotor">rotor</a>: the default <code>supervisor_policy_t::shutdown_self</code> policy of a supervisor, will shut down the supervisor if (a) it is in <code>initializing</code> state, and (b) one of its child actors shuts self down. This is a simple form of <em>failure escalation</em>: failure to initialize actor causes failure to initialize its supervisor.</p>
+<p >However, if a supervisor has started, failure in child actor will cause no effect. To change that the special method <code>escalate_failure(true)</code> should be called in actor builder. Another possibility is to invoke <code>autoshutdown_supervisor(true)</code>, the difference is the following: <code>autoshutdown_supervisor</code> <b>unconditionally</b> shuts supervisor down, when a child is down, while <code>escalate_failure</code> analyzes shutdown reason code: if the code is normal (i.e. no error or failure caused an actor shutdown, but it shut self down because it successfully accomplished its job), then there is nothing to escalate.</p>
+<p >The common reaction to actor shutdown is to give an actor another chance, i.e. restart it (spawn a new instance instead of the terminated one). Here an <code>spawner</code> comes into play with its various policies applied: restart only on failure, restart only on successful termination, always restart, never restart, maximum number of restart attempts, whether the spawn failure should be escalated etc. To prevent the underlying system from chocking up, caused by frequently actor restarts, the restart frequency (i.e. minimum amount of time have to be passed before the next actor restart attempt) is introduced.</p>
+<p >Here is an example, which demonstrates the features, described above. Let's introduce the rules for a ping-pong: pong might reply with failure on ping request; we'd like to shutdown pinger then and spawn a new instance upto 15 times. If there is no luck even after 15 attempts, the supervisor should fail and exit. Here is the relevant code:</p>
+<div class="fragment"><div class="line"><span class="keyword">auto</span> sup = ctx.create_supervisor&lt;rth::supervisor_thread_t&gt;()</div>
+<div class="line">    .timeout(timeout)</div>
+<div class="line">    .create_registry()</div>
+<div class="line">    .finish();</div>
+<div class="line">sup-&gt;create_actor&lt;ponger_t&gt;().timeout(timeout).finish();</div>
+<div class="line"><span class="keyword">auto</span> pinger_factory = [&amp;](r::supervisor_t &amp;sup, <span class="keyword">const</span> r::address_ptr_t &amp;spawner) -&gt; r::actor_ptr_t {</div>
+<div class="line">    <span class="keywordflow">return</span> sup.create_actor&lt;pinger_t&gt;()</div>
+<div class="line">     .timeout(timeout)</div>
+<div class="line">     .spawner_address(spawner)</div>
+<div class="line">     .finish();</div>
+<div class="line">};</div>
+<div class="line">sup-&gt;spawn(pinger_factory)</div>
+<div class="line">    .max_attempts(15)                               <span class="comment">/* don&#39;t do that endlessly */</span></div>
+<div class="line">    .restart_period(timeout)</div>
+<div class="line">    .restart_policy(r::restart_policy_t::fail_only) <span class="comment">/* case: respawn on single ping fail */</span></div>
+<div class="line">    .escalate_failure()                             <span class="comment">/* case: when all pings fail */</span></div>
+<div class="line">    .spawn();</div>
+</div><!-- fragment --><p >The successful branch in <code>pinger</code> can be like that:</p>
+<div class="fragment"><div class="line"><span class="keyword">struct </span>pinger_t : <span class="keyword">public</span> <a class="code hl_struct" href="structrotor_1_1actor__base__t.html">rotor::actor_base_t</a> {</div>
+<div class="line">    ...</div>
+<div class="line">    <span class="keywordtype">void</span> on_pong(message::pong_t &amp;reply) <span class="keyword">noexcept</span> {</div>
+<div class="line">        <span class="keyword">auto</span> &amp;ee = reply.payload.ee;</div>
+<div class="line">        <span class="comment">// fail branch, handled by spawner</span></div>
+<div class="line">        <span class="keywordflow">if</span> (ee) {</div>
+<div class="line">            std::cout &lt;&lt; <span class="stringliteral">&quot;err: &quot;</span> &lt;&lt; ee-&gt;message() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line">            <span class="keywordflow">return</span> <a class="code hl_function" href="structrotor_1_1actor__base__t.html#a67322e4c89d4312ebb762d451b424d79">do_shutdown</a>(ee);</div>
+<div class="line">        }</div>
+<div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;pong received\n&quot;</span>;</div>
+<div class="line">        <span class="comment">// succesfull branch: manually shutdown supervisor</span></div>
+<div class="line">        supervisor-&gt;do_shutdown();</div>
+<div class="line">    }</div>
+<div class="line">};</div>
+<div class="ttc" id="astructrotor_1_1actor__base__t_html_a67322e4c89d4312ebb762d451b424d79"><div class="ttname"><a href="structrotor_1_1actor__base__t.html#a67322e4c89d4312ebb762d451b424d79">rotor::actor_base_t::do_shutdown</a></div><div class="ttdeci">virtual void do_shutdown(const extended_error_ptr_t &amp;reason={}) noexcept</div><div class="ttdoc">convenient method to send actor's supervisor shutdown trigger message</div></div>
+</div><!-- fragment --><p >The sample output (succesfully terminated, eventually):</p>
+<div class="fragment"><div class="line">ping (pinger #1 0x55d3b09ab130)</div>
+<div class="line">pong, dice = 0.000809254, passes threshold : no</div>
+<div class="line">err: ponger 0x55d3b09abe80 request timeout</div>
+<div class="line">ping (pinger #2 0x55d3b09af090)</div>
+<div class="line">pong, dice = 0.446941, passes threshold : no</div>
+<div class="line">err: ponger 0x55d3b09abe80 request timeout</div>
+<div class="line">ping (pinger #3 0x55d3b09ae670)</div>
+<div class="line">pong, dice = 0.809191, passes threshold : no</div>
+<div class="line">err: ponger 0x55d3b09abe80 request timeout</div>
+<div class="line">ping (pinger #4 0x55d3b09adfd0)</div>
+<div class="line">pong, dice = 0.955792, passes threshold : yes</div>
+<div class="line">pong received</div>
+<div class="line">shutdown reason: supervisor 0x55d3b09a4350 normal shutdown</div>
+</div><!-- fragment --><p >The whole code is available at <a href="https://github.com/basiliscos/cpp-rotor/blob/master/examples/thread/ping-pong-spawner.cpp">examples/thread/ping-pong-spawner.cpp</a>. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['unlink_5fnotify_5ft_0',['unlink_notify_t',['../structrotor_1_1payload_1_1unlink__notify__t.html',1,'rotor::payload']]],
-  ['unlink_5frequest_5ft_1',['unlink_request_t',['../structrotor_1_1payload_1_1unlink__request__t.html',1,'rotor::payload']]],
-  ['unsubscription_5fconfirmation_5ft_2',['unsubscription_confirmation_t',['../structrotor_1_1payload_1_1unsubscription__confirmation__t.html',1,'rotor::payload']]]
+  ['timer_5fhandler_5fbase_5ft_0',['timer_handler_base_t',['../structrotor_1_1timer__handler__base__t.html',1,'rotor']]],
+  ['timer_5fhandler_5ft_1',['timer_handler_t',['../structrotor_1_1timer__handler__t.html',1,'rotor']]],
+  ['timer_5ft_2',['timer_t',['../structrotor_1_1asio_1_1supervisor__asio__t_1_1timer__t.html',1,'rotor::asio::supervisor_asio_t::timer_t'],['../structrotor_1_1ev_1_1supervisor__ev__t_1_1timer__t.html',1,'rotor::ev::supervisor_ev_t::timer_t'],['../structrotor_1_1wx_1_1supervisor__wx__t_1_1timer__t.html',1,'rotor::wx::supervisor_wx_t::timer_t']]]
 ];

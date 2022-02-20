@@ -160,7 +160,7 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp_rotor_d
 <div class="line">        });</div>
 <div class="line">    }</div>
 <div class="line">};</div>
-<div class="ttc" id="anamespacerotor_html_a9ebe7c23e46e63f18335110b2a76548c"><div class="ttname"><a href="namespacerotor.html#a9ebe7c23e46e63f18335110b2a76548c">rotor::actor_ptr_t</a></div><div class="ttdeci">intrusive_ptr_t&lt; actor_base_t &gt; actor_ptr_t</div><div class="ttdoc">intrusive pointer for actor</div><div class="ttdef"><b>Definition:</b> forward.hpp:22</div></div>
+<div class="ttc" id="anamespacerotor_html_a9ebe7c23e46e63f18335110b2a76548c"><div class="ttname"><a href="namespacerotor.html#a9ebe7c23e46e63f18335110b2a76548c">rotor::actor_ptr_t</a></div><div class="ttdeci">intrusive_ptr_t&lt; actor_base_t &gt; actor_ptr_t</div><div class="ttdoc">intrusive pointer for actor</div><div class="ttdef"><b>Definition:</b> forward.hpp:23</div></div>
 </div><!-- fragment --><h1>Adding loop support guide</h1>
 <p >Adding new event loop to <code>rotor</code> is rather simple: the new <code>supervisor</code> class should be derived from <code>supervisor_t</code>, and the following methods should be implemented:</p>
 <div class="fragment"><div class="line"><span class="keywordtype">void</span> do_start_timer(<span class="keyword">const</span> pt::time_duration &amp;interval, timer_handler_base_t &amp;handler) <span class="keyword">noexcept</span> <span class="keyword">override</span>;</div>

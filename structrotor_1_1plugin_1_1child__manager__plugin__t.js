@@ -14,7 +14,9 @@ var structrotor_1_1plugin_1_1child__manager__plugin__t =
     [ "on_shutdown_confirm", "structrotor_1_1plugin_1_1child__manager__plugin__t.html#a806108c2d58d8d4ba98cdaf3c1448b97", null ],
     [ "on_shutdown_fail", "structrotor_1_1plugin_1_1child__manager__plugin__t.html#a680bbac6db7722361b1ced227f8a1c81", null ],
     [ "on_shutdown_trigger", "structrotor_1_1plugin_1_1child__manager__plugin__t.html#ad7f7d24ec2651c40b5758be7e3b34dbc", null ],
+    [ "on_spawn", "structrotor_1_1plugin_1_1child__manager__plugin__t.html#afa095721135ef449e717a02e5b9c82e6", null ],
     [ "plugin_base_t", "structrotor_1_1plugin_1_1child__manager__plugin__t.html#a4a5bf237da6fac1d6ec575918bba0098", null ],
     [ "plugin_base_t", "structrotor_1_1plugin_1_1child__manager__plugin__t.html#af53ccd0d62ad3fb262357096eeb043c6", null ],
-    [ "remove_child", "structrotor_1_1plugin_1_1child__manager__plugin__t.html#aa61b1c9809ffccca5c40906c80e705a7", null ]
+    [ "remove_child", "structrotor_1_1plugin_1_1child__manager__plugin__t.html#aa61b1c9809ffccca5c40906c80e705a7", null ],
+    [ "spawn", "structrotor_1_1plugin_1_1child__manager__plugin__t.html#ac684b2b9928de3b104a8074b1b58cd7e", null ]
 ];

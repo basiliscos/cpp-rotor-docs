@@ -97,7 +97,20 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp_rotor_d
   <div class="headertitle"><div class="title">Changelog </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>0.19 (31-Dec-2021)</h1>
+<div class="textblock"><h1>0.20 (20-Feb-2022)</h1>
+<ul>
+<li>[improvement] superviser can create <code>spawner</code>, which has a policy to auto-spawns new actor instance if previous instance has been shutdown. This is similar to escalate_failure <a href="https://www.erlang.org/doc/design_principles/sup_princ.html">supervising in erlang</a></li>
+<li>[improvement] actor can now <code>autoshutdown_supervisor()</code>, when it shutdown</li>
+<li>[improvement] actor can now <code>escalate_failure()</code>, i.e. trigger shutdown own supervisor when it finished with failure</li>
+<li>[improvement] messages delivery order is preseverd per-locality (see issue #41)</li>
+<li>[example] <code>examples/thread/ping-pong-spawner</code> (new)</li>
+<li>[example] <code>examples/autoshutdown</code> (new)</li>
+<li>[example] <code>examples/escalate-failure</code> (new)</li>
+<li>[documentation] updated <code>Design principes</code></li>
+<li>[documentation] updated <code>Examples</code></li>
+<li>[documentation] updated <code>Introduction</code></li>
+</ul>
+<h1>0.19 (31-Dec-2021)</h1>
 <ul>
 <li>[improvement] performance improvement in inter-thread (+20%) and cross-thread messaging</li>
 <li>[bugfix] supervisor does not shut self down in rare conditions, when it fails to initialize self</li>

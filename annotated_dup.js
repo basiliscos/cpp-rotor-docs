@@ -20,6 +20,14 @@ var annotated_dup =
         [ "supervisor_config_asio_t", "structrotor_1_1asio_1_1supervisor__config__asio__t.html", "structrotor_1_1asio_1_1supervisor__config__asio__t" ],
         [ "system_context_asio_t", "structrotor_1_1asio_1_1system__context__asio__t.html", "structrotor_1_1asio_1_1system__context__asio__t" ]
       ] ],
+      [ "detail", null, [
+        [ "demand", null, [
+          [ "escalate_failure", "structrotor_1_1detail_1_1demand_1_1escalate__failure.html", null ],
+          [ "no", "structrotor_1_1detail_1_1demand_1_1no.html", null ],
+          [ "now", "structrotor_1_1detail_1_1demand_1_1now.html", null ]
+        ] ],
+        [ "child_info_t", "structrotor_1_1detail_1_1child__info__t.html", "structrotor_1_1detail_1_1child__info__t" ]
+      ] ],
       [ "details", null, [
         [ "error_code_category", "classrotor_1_1details_1_1error__code__category.html", "classrotor_1_1details_1_1error__code__category" ],
         [ "is_braces_constructible", "structrotor_1_1details_1_1is__braces__constructible.html", null ],
@@ -59,6 +67,7 @@ var annotated_dup =
         [ "shutdown_confirmation_t", "structrotor_1_1payload_1_1shutdown__confirmation__t.html", null ],
         [ "shutdown_request_t", "structrotor_1_1payload_1_1shutdown__request__t.html", "structrotor_1_1payload_1_1shutdown__request__t" ],
         [ "shutdown_trigger_t", "structrotor_1_1payload_1_1shutdown__trigger__t.html", "structrotor_1_1payload_1_1shutdown__trigger__t" ],
+        [ "spawn_actor_t", "structrotor_1_1payload_1_1spawn__actor__t.html", "structrotor_1_1payload_1_1spawn__actor__t" ],
         [ "start_actor_t", "structrotor_1_1payload_1_1start__actor__t.html", null ],
         [ "subscription_confirmation_t", "structrotor_1_1payload_1_1subscription__confirmation__t.html", "structrotor_1_1payload_1_1subscription__confirmation__t" ],
         [ "unlink_notify_t", "structrotor_1_1payload_1_1unlink__notify__t.html", "structrotor_1_1payload_1_1unlink__notify__t" ],
@@ -110,7 +119,7 @@ var annotated_dup =
       [ "handler_traits", "structrotor_1_1handler__traits.html", null ],
       [ "handler_traits< lambda_holder_t< M, H > >", "structrotor_1_1handler__traits_3_01lambda__holder__t_3_01M_00_01H_01_4_01_4.html", null ],
       [ "handler_traits< void(A::*)(M &) noexcept >", "structrotor_1_1handler__traits_3_01void_07A_1_1_5_08_07M_01_6_08_01noexcept_01_4.html", "structrotor_1_1handler__traits_3_01void_07A_1_1_5_08_07M_01_6_08_01noexcept_01_4" ],
-      [ "handler_traits< void(A::*)(M &)>", "structrotor_1_1handler__traits_3_01void_07A_1_1_5_08_07M_01_6_08_4.html", null ],
+      [ "handler_traits< void(A::*)(M &)>", "structrotor_1_1handler__traits_3_01void_07A_1_1_5_08_07M_01_6_08_4.html", "structrotor_1_1handler__traits_3_01void_07A_1_1_5_08_07M_01_6_08_4" ],
       [ "lambda_holder_t", "structrotor_1_1lambda__holder__t.html", "structrotor_1_1lambda__holder__t" ],
       [ "message_base_t", "structrotor_1_1message__base__t.html", "structrotor_1_1message__base__t" ],
       [ "message_t", "structrotor_1_1message__t.html", "structrotor_1_1message__t" ],
@@ -127,6 +136,7 @@ var annotated_dup =
       [ "request_wrapper_t< T, std::enable_if_t< std::is_base_of_v< arc_base_t< T >, T > > >", "structrotor_1_1request__wrapper__t_3_01T_00_01std_1_1enable__if__t_3_01std_1_1is__base__of__v_3_e87ff55122062e5a77521960ca0ac849.html", "structrotor_1_1request__wrapper__t_3_01T_00_01std_1_1enable__if__t_3_01std_1_1is__base__of__v_3_e87ff55122062e5a77521960ca0ac849" ],
       [ "response_helper_t", "structrotor_1_1response__helper__t.html", "structrotor_1_1response__helper__t" ],
       [ "response_helper_t< intrusive_ptr_t< Responce > >", "structrotor_1_1response__helper__t_3_01intrusive__ptr__t_3_01Responce_01_4_01_4.html", "structrotor_1_1response__helper__t_3_01intrusive__ptr__t_3_01Responce_01_4_01_4" ],
+      [ "spawner_t", "structrotor_1_1spawner__t.html", "structrotor_1_1spawner__t" ],
       [ "subscription_container_t", "structrotor_1_1subscription__container__t.html", "structrotor_1_1subscription__container__t" ],
       [ "subscription_info_t", "structrotor_1_1subscription__info__t.html", "structrotor_1_1subscription__info__t" ],
       [ "subscription_point_t", "structrotor_1_1subscription__point__t.html", "structrotor_1_1subscription__point__t" ],

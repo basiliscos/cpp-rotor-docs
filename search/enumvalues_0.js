@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['shutdown_5ffailed_0',['shutdown_failed',['../namespacerotor.html#affb671357df7b4bed56139bff68610a0a4bba544bf219d0a11e4c9f8a2c148351',1,'rotor']]],
-  ['shutdown_5fself_1',['shutdown_self',['../namespacerotor.html#affb671357df7b4bed56139bff68610a0a62626c29d3f3a4b98c429532390d37c6',1,'rotor']]]
+  ['always_0',['always',['../namespacerotor.html#a56d787cb31d38e79c8a3844614bf17f3af9f90eeaf400d228facde6bc48da5cfb',1,'rotor']]],
+  ['ask_5factor_1',['ask_actor',['../namespacerotor.html#a56d787cb31d38e79c8a3844614bf17f3ae0a922b345ec28d1d10ba9b750f93a70',1,'rotor']]]
 ];

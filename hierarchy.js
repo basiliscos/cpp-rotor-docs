@@ -71,6 +71,7 @@ var hierarchy =
       [ "rotor::details::error_code_category", "classrotor_1_1details_1_1error__code__category.html", null ],
       [ "rotor::details::shutdown_code_category", "classrotor_1_1details_1_1shutdown__code__category.html", null ]
     ] ],
+    [ "rotor::detail::demand::escalate_failure", "structrotor_1_1detail_1_1demand_1_1escalate__failure.html", null ],
     [ "ev_timer", null, [
       [ "rotor::ev::supervisor_ev_t::timer_t", "structrotor_1_1ev_1_1supervisor__ev__t_1_1timer__t.html", null ]
     ] ],
@@ -97,6 +98,9 @@ var hierarchy =
     [ "rotor::payload::initialize_actor_t", "structrotor_1_1payload_1_1initialize__actor__t.html", null ],
     [ "rotor::payload::initialize_confirmation_t", "structrotor_1_1payload_1_1initialize__confirmation__t.html", null ],
     [ "rotor::plugin::inspected_local_delivery_t", "structrotor_1_1plugin_1_1inspected__local__delivery__t.html", null ],
+    [ "boost::intrusive_ref_counter", null, [
+      [ "rotor::detail::child_info_t", "structrotor_1_1detail_1_1child__info__t.html", null ]
+    ] ],
     [ "rotor::details::is_constructible< T, E, Args >", "structrotor_1_1details_1_1is__constructible.html", null ],
     [ "std::is_constructible", null, [
       [ "rotor::details::size_of_t< T, Ts... >", "structrotor_1_1details_1_1size__of__t_3_01T_00_01Ts_8_8_8_01_4.html", null ]
@@ -117,6 +121,8 @@ var hierarchy =
       [ "rotor::subscription_container_t", "structrotor_1_1subscription__container__t.html", null ]
     ] ],
     [ "rotor::plugin::local_delivery_t", "structrotor_1_1plugin_1_1local__delivery__t.html", null ],
+    [ "rotor::detail::demand::no", "structrotor_1_1detail_1_1demand_1_1no.html", null ],
+    [ "rotor::detail::demand::now", "structrotor_1_1detail_1_1demand_1_1now.html", null ],
     [ "rotor::plugin::plugin_base_t", "structrotor_1_1plugin_1_1plugin__base__t.html", [
       [ "rotor::plugin::address_maker_plugin_t", "structrotor_1_1plugin_1_1address__maker__plugin__t.html", null ],
       [ "rotor::plugin::child_manager_plugin_t", "structrotor_1_1plugin_1_1child__manager__plugin__t.html", null ],
@@ -157,6 +163,8 @@ var hierarchy =
     [ "rotor::payload::shutdown_request_t", "structrotor_1_1payload_1_1shutdown__request__t.html", null ],
     [ "rotor::payload::shutdown_trigger_t", "structrotor_1_1payload_1_1shutdown__trigger__t.html", null ],
     [ "rotor::details::size_of_t< Ts >", "structrotor_1_1details_1_1size__of__t.html", null ],
+    [ "rotor::payload::spawn_actor_t", "structrotor_1_1payload_1_1spawn__actor__t.html", null ],
+    [ "rotor::spawner_t", "structrotor_1_1spawner__t.html", null ],
     [ "rotor::payload::start_actor_t", "structrotor_1_1payload_1_1start__actor__t.html", null ],
     [ "rotor::payload::subscription_confirmation_t", "structrotor_1_1payload_1_1subscription__confirmation__t.html", null ],
     [ "rotor::subscription_point_t", "structrotor_1_1subscription__point__t.html", [

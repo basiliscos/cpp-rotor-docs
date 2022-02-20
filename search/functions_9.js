@@ -7,7 +7,8 @@ var searchData=
   ['make_5fmessage_4',['make_message',['../namespacerotor.html#ad9795b95b6ad346b67ae5c1eb6c48adc',1,'rotor']]],
   ['make_5fresponse_5',['make_response',['../structrotor_1_1actor__base__t.html#a8e90774a3a1a69283e5fe81824926df0',1,'rotor::actor_base_t::make_response(Request &amp;message, const extended_error_ptr_t &amp;ec)'],['../structrotor_1_1actor__base__t.html#a7c44e5d2c0d31e132950f15958fc157c',1,'rotor::actor_base_t::make_response(Request &amp;message, Args &amp;&amp;...args)']]],
   ['materialize_6',['materialize',['../structrotor_1_1subscription__t.html#aa143617216dcdf521141c5f6aa40c468',1,'rotor::subscription_t']]],
-  ['message_7',['message',['../classrotor_1_1details_1_1shutdown__code__category.html#aecf877953bc641c2e503b511902195c4',1,'rotor::details::shutdown_code_category::message()'],['../structrotor_1_1extended__error__t.html#a7197ae5dec0a46b866828608bf87b01f',1,'rotor::extended_error_t::message()'],['../classrotor_1_1details_1_1error__code__category.html#adf81a60aba9b79e2f6aff66d10549ad8',1,'rotor::details::error_code_category::message()']]],
-  ['message_5fbase_5ft_8',['message_base_t',['../structrotor_1_1message__base__t.html#a6be6d6a87442c3948f055168a5566103',1,'rotor::message_base_t']]],
-  ['message_5ft_9',['message_t',['../structrotor_1_1message__t.html#a9afa7c609ccf8bb6f720df5d2c702f76',1,'rotor::message_t']]]
+  ['max_5fattempts_7',['max_attempts',['../structrotor_1_1spawner__t.html#a6717141f186b4ce76647bcf01120c40d',1,'rotor::spawner_t']]],
+  ['message_8',['message',['../classrotor_1_1details_1_1error__code__category.html#adf81a60aba9b79e2f6aff66d10549ad8',1,'rotor::details::error_code_category::message()'],['../classrotor_1_1details_1_1shutdown__code__category.html#aecf877953bc641c2e503b511902195c4',1,'rotor::details::shutdown_code_category::message()'],['../structrotor_1_1extended__error__t.html#a7197ae5dec0a46b866828608bf87b01f',1,'rotor::extended_error_t::message()']]],
+  ['message_5fbase_5ft_9',['message_base_t',['../structrotor_1_1message__base__t.html#a6be6d6a87442c3948f055168a5566103',1,'rotor::message_base_t']]],
+  ['message_5ft_10',['message_t',['../structrotor_1_1message__t.html#a9afa7c609ccf8bb6f720df5d2c702f76',1,'rotor::message_t']]]
 ];

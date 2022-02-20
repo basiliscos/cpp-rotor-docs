@@ -230,6 +230,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1response__helper__t_3_01intrusive__ptr__t_3_01Responce_01_4_01_4.html">response_helper_t&lt; intrusive_ptr_t&lt; Responce &gt; &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">specific helper, which helps to construct intrusive pointer to user-defined response payload  <a href="structrotor_1_1response__helper__t_3_01intrusive__ptr__t_3_01Responce_01_4_01_4.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1spawner__t.html">spawner_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">allows automatically restart actors  <a href="structrotor_1_1spawner__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1subscription__container__t.html">subscription_container_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">list of <a class="el" href="namespacerotor.html#ab4c9c7c54f8b127ba311e5f32fbb30b0">subscription_info_ptr_t</a> with possibility to find via <a class="el" href="structrotor_1_1subscription__point__t.html">subscription_point_t</a>  <a href="structrotor_1_1subscription__container__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -246,7 +249,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">CRTP supervisor config builder.  <a href="structrotor_1_1supervisor__config__builder__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__config__t.html">supervisor_config_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">base supervisor config, which holds shutdowm timeout value  <a href="structrotor_1_1supervisor__config__t.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">base supervisor config, which holds shutdown timeout value  <a href="structrotor_1_1supervisor__config__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1supervisor__t.html">supervisor_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">supervisor is responsible for managing actors (workers) lifetime  <a href="structrotor_1_1supervisor__t.html#details">More...</a><br /></td></tr>
@@ -317,6 +320,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>supervisor_ptr_t</b>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>request_id_t</b> = std::size_t</td></tr>
 <tr class="memdesc:aa709f45800c1bc7ea4d7bb2163328b4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">timer identifier type in the scope of the actor <br /></td></tr>
 <tr class="separator:aa709f45800c1bc7ea4d7bb2163328b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb03484e6d00762fddb5c5a79ac1f1cd"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerotor.html#afb03484e6d00762fddb5c5a79ac1f1cd">factory_t</a> = std::function&lt; <a class="el" href="namespacerotor.html#a9ebe7c23e46e63f18335110b2a76548c">actor_ptr_t</a>(<a class="el" href="structrotor_1_1supervisor__t.html">supervisor_t</a> &amp;, const <a class="el" href="namespacerotor.html#a25565725c774761a67bd766d93617326">address_ptr_t</a> &amp;)&gt;</td></tr>
+<tr class="memdesc:afb03484e6d00762fddb5c5a79ac1f1cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">factory which allows to create actors lazily or on demand  <a href="namespacerotor.html#afb03484e6d00762fddb5c5a79ac1f1cd">More...</a><br /></td></tr>
+<tr class="separator:afb03484e6d00762fddb5c5a79ac1f1cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0196761fe474bd8dc17ac4ff9f0e2f95"><td class="memItemLeft" align="right" valign="top"><a id="a0196761fe474bd8dc17ac4ff9f0e2f95" name="a0196761fe474bd8dc17ac4ff9f0e2f95"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>message_ptr_t</b> = <a class="el" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t</a>&lt; <a class="el" href="structrotor_1_1message__base__t.html">message_base_t</a> &gt;</td></tr>
 <tr class="memdesc:a0196761fe474bd8dc17ac4ff9f0e2f95"><td class="mdescLeft">&#160;</td><td class="mdescRight">intrusive pointer for message <br /></td></tr>
@@ -380,6 +386,17 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:affb671357df7b4bed56139bff68610a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">how to behave on child actor initialization failures  <a href="namespacerotor.html#affb671357df7b4bed56139bff68610a0">More...</a><br /></td></tr>
 <tr class="separator:affb671357df7b4bed56139bff68610a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56d787cb31d38e79c8a3844614bf17f3"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerotor.html#a56d787cb31d38e79c8a3844614bf17f3">restart_policy_t</a> { <br />
+&#160;&#160;<a class="el" href="namespacerotor.html#a56d787cb31d38e79c8a3844614bf17f3af9f90eeaf400d228facde6bc48da5cfb">always</a>
+, <a class="el" href="namespacerotor.html#a56d787cb31d38e79c8a3844614bf17f3ac7561db7a418dd39b2201dfe110ab4a4">never</a>
+, <a class="el" href="namespacerotor.html#a56d787cb31d38e79c8a3844614bf17f3ae0a922b345ec28d1d10ba9b750f93a70">ask_actor</a>
+, <a class="el" href="namespacerotor.html#a56d787cb31d38e79c8a3844614bf17f3a264c9a6fb6028de4bf66fa22809c3289">normal_only</a>
+, <br />
+&#160;&#160;<a class="el" href="namespacerotor.html#a56d787cb31d38e79c8a3844614bf17f3a25a34e801b7aa6628982b99f39f5c0e4">fail_only</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a56d787cb31d38e79c8a3844614bf17f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">spawner's actor restart policy  <a href="namespacerotor.html#a56d787cb31d38e79c8a3844614bf17f3">More...</a><br /></td></tr>
+<tr class="separator:a56d787cb31d38e79c8a3844614bf17f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6efbb2b594154ba938cf57113e1431a3"><td class="memItemLeft" align="right" valign="top"><a id="a6efbb2b594154ba938cf57113e1431a3" name="a6efbb2b594154ba938cf57113e1431a3"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerotor.html#a6efbb2b594154ba938cf57113e1431a3">state_t</a> { <br />
 &#160;&#160;<b>UNKNOWN</b>
 , <b>NEW</b>
@@ -451,7 +468,26 @@ template&lt;typename Handler &gt; </td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Basic namespace for all rotor functionalities. </p>
-</div><h2 class="groupheader">Enumeration Type Documentation</h2>
+</div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="afb03484e6d00762fddb5c5a79ac1f1cd" name="afb03484e6d00762fddb5c5a79ac1f1cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb03484e6d00762fddb5c5a79ac1f1cd">&#9670;&nbsp;</a></span>factory_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespacerotor.html#afb03484e6d00762fddb5c5a79ac1f1cd">rotor::factory_t</a> = typedef std::function&lt;<a class="el" href="namespacerotor.html#a9ebe7c23e46e63f18335110b2a76548c">actor_ptr_t</a>(<a class="el" href="structrotor_1_1supervisor__t.html">supervisor_t</a> &amp;, const <a class="el" href="namespacerotor.html#a25565725c774761a67bd766d93617326">address_ptr_t</a> &amp;)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>factory which allows to create actors lazily or on demand </p>
+<p >The spawner address MUST be set to the newly created actor to allow further spawning.</p>
+<p >This function might throw an exception, which is hovewer ignored, but spawner migth attempt to create new actor instance. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="a3467749432c11e43f09b06257b5a3385" name="a3467749432c11e43f09b06257b5a3385"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3467749432c11e43f09b06257b5a3385">&#9670;&nbsp;</a></span>owner_tag_t</h2>
 
@@ -479,6 +515,42 @@ template&lt;typename Handler &gt; </td></tr>
 <li>foreign (when it is subscribed for foreign address)</li>
 <li>anonymous (subscription point was created from actor) </li>
 </ul>
+
+</div>
+</div>
+<a id="a56d787cb31d38e79c8a3844614bf17f3" name="a56d787cb31d38e79c8a3844614bf17f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56d787cb31d38e79c8a3844614bf17f3">&#9670;&nbsp;</a></span>restart_policy_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="namespacerotor.html#a56d787cb31d38e79c8a3844614bf17f3">rotor::restart_policy_t</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>spawner's actor restart policy </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a56d787cb31d38e79c8a3844614bf17f3af9f90eeaf400d228facde6bc48da5cfb" name="a56d787cb31d38e79c8a3844614bf17f3af9f90eeaf400d228facde6bc48da5cfb"></a>always&#160;</td><td class="fielddoc"><p >always restart actor </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a56d787cb31d38e79c8a3844614bf17f3ac7561db7a418dd39b2201dfe110ab4a4" name="a56d787cb31d38e79c8a3844614bf17f3ac7561db7a418dd39b2201dfe110ab4a4"></a>never&#160;</td><td class="fielddoc"><p >never restart actor </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a56d787cb31d38e79c8a3844614bf17f3ae0a922b345ec28d1d10ba9b750f93a70" name="a56d787cb31d38e79c8a3844614bf17f3ae0a922b345ec28d1d10ba9b750f93a70"></a>ask_actor&#160;</td><td class="fielddoc"><p >ask terminated actor whether a new instance should be spawned <code>should_restart()</code> method is used </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a56d787cb31d38e79c8a3844614bf17f3a264c9a6fb6028de4bf66fa22809c3289" name="a56d787cb31d38e79c8a3844614bf17f3a264c9a6fb6028de4bf66fa22809c3289"></a>normal_only&#160;</td><td class="fielddoc"><p >restart actor only when it terminated normally (without error) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a56d787cb31d38e79c8a3844614bf17f3a25a34e801b7aa6628982b99f39f5c0e4" name="a56d787cb31d38e79c8a3844614bf17f3a25a34e801b7aa6628982b99f39f5c0e4"></a>fail_only&#160;</td><td class="fielddoc"><p >restart actor only when it tarminated abmormally (with error) </p>
+</td></tr>
+</table>
 
 </div>
 </div>

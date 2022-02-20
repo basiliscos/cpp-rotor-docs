@@ -132,12 +132,10 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp_rotor_d
 <div class="ttc" id="astructrotor_1_1actor__base__t_html_aa07be01bedb60e529da93ee446cd8f2c"><div class="ttname"><a href="structrotor_1_1actor__base__t.html#aa07be01bedb60e529da93ee446cd8f2c">rotor::actor_base_t::actor_base_t</a></div><div class="ttdeci">actor_base_t(config_t &amp;cfg)</div><div class="ttdoc">constructs actor and links it's supervisor</div></div>
 <div class="ttc" id="astructrotor_1_1actor__base__t_html_abd09068676677472caabe32ed7ef7aaf"><div class="ttname"><a href="structrotor_1_1actor__base__t.html#abd09068676677472caabe32ed7ef7aaf">rotor::actor_base_t::on_start</a></div><div class="ttdeci">virtual void on_start() noexcept</div><div class="ttdoc">actor is fully initialized and it's supervisor has sent signal to start</div></div>
 <div class="ttc" id="astructrotor_1_1system__context__t_html"><div class="ttname"><a href="structrotor_1_1system__context__t.html">rotor::system_context_t</a></div><div class="ttdoc">The system context holds root supervisor_t (intrusive pointer) and may be loop-related details in der...</div><div class="ttdef"><b>Definition:</b> system_context.h:25</div></div>
-<div class="ttc" id="astructrotor_1_1system__context__t_html_a4cbee07c2fce07e9138643cd8ec8222a"><div class="ttname"><a href="structrotor_1_1system__context__t.html#a4cbee07c2fce07e9138643cd8ec8222a">rotor::system_context_t::create_supervisor</a></div><div class="ttdeci">auto create_supervisor()</div><div class="ttdoc">returns builder for root supervisor</div><div class="ttdef"><b>Definition:</b> supervisor.h:325</div></div>
+<div class="ttc" id="astructrotor_1_1system__context__t_html_a4cbee07c2fce07e9138643cd8ec8222a"><div class="ttname"><a href="structrotor_1_1system__context__t.html#a4cbee07c2fce07e9138643cd8ec8222a">rotor::system_context_t::create_supervisor</a></div><div class="ttdeci">auto create_supervisor()</div><div class="ttdoc">returns builder for root supervisor</div><div class="ttdef"><b>Definition:</b> supervisor.h:334</div></div>
 </div><!-- fragment --><p >It prints "hello world" and exits. The example uses <code>dummy_supervisor_t</code> (sources ommited), which does almost nothing, but gives you idea what supervisor should do. The code with "real" supervisor is shown below, however for pure messaging the kind of supervisor does not matter.</p>
 <h1>Hello World (boost::asio loop)</h1>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="asio_8hpp.html">rotor/asio.hpp</a>&quot;</span></div>
-<div class="line"> </div>
-<div class="line"><span class="keyword">namespace </span>asio = boost::asio;</div>
+<div class="fragment"><div class="line"><span class="keyword">namespace </span>asio = boost::asio;</div>
 <div class="line"><span class="keyword">namespace </span>pt = boost::posix_time;</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">struct </span>server_actor : <span class="keyword">public</span> <a class="code hl_struct" href="structrotor_1_1actor__base__t.html">rotor::actor_base_t</a> {</div>
@@ -145,7 +143,7 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp_rotor_d
 <div class="line">    <span class="keywordtype">void</span> <a class="code hl_function" href="structrotor_1_1actor__base__t.html#abd09068676677472caabe32ed7ef7aaf">on_start</a>() noexcept<span class="keyword"> override </span>{</div>
 <div class="line">        <a class="code hl_function" href="structrotor_1_1actor__base__t.html#abd09068676677472caabe32ed7ef7aaf">rotor::actor_base_t::on_start</a>();</div>
 <div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;hello world\n&quot;</span>;</div>
-<div class="line">        supervisor-&gt;shutdown();</div>
+<div class="line">        <a class="code hl_function" href="structrotor_1_1actor__base__t.html#a67322e4c89d4312ebb762d451b424d79">do_shutdown</a>();</div>
 <div class="line">    }</div>
 <div class="line">};</div>
 <div class="line"> </div>
@@ -155,30 +153,31 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp_rotor_d
 <div class="line">    <span class="keyword">auto</span> strand = std::make_shared&lt;asio::io_context::strand&gt;(io_context);</div>
 <div class="line">    <span class="keyword">auto</span> timeout = boost::posix_time::milliseconds{500};</div>
 <div class="line">    <span class="keyword">auto</span> sup = system_context-&gt;create_supervisor&lt;<a class="code hl_struct" href="structrotor_1_1asio_1_1supervisor__asio__t.html">rotor::asio::supervisor_asio_t</a>&gt;()</div>
-<div class="line">               .strand(strand).timeout(timeout).finish();</div>
+<div class="line">        .strand(strand)</div>
+<div class="line">        .timeout(timeout)</div>
+<div class="line">        .finish();</div>
 <div class="line"> </div>
-<div class="line">    sup-&gt;<a class="code hl_function" href="structrotor_1_1supervisor__t.html#a9d4f8b1c6d2abdfd402e3715002c6343">create_actor</a>&lt;server_actor&gt;().timeout(timeout).finish();</div>
+<div class="line">    sup-&gt;<a class="code hl_function" href="structrotor_1_1supervisor__t.html#a9d4f8b1c6d2abdfd402e3715002c6343">create_actor</a>&lt;server_actor&gt;()</div>
+<div class="line">        .timeout(timeout)</div>
+<div class="line">        .autoshutdown_supervisor()</div>
+<div class="line">        .finish();</div>
 <div class="line"> </div>
 <div class="line">    sup-&gt;start();</div>
 <div class="line">    io_context.run();</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-<div class="ttc" id="aasio_8hpp_html"><div class="ttname"><a href="asio_8hpp.html">asio.hpp</a></div></div>
+<div class="ttc" id="astructrotor_1_1actor__base__t_html_a67322e4c89d4312ebb762d451b424d79"><div class="ttname"><a href="structrotor_1_1actor__base__t.html#a67322e4c89d4312ebb762d451b424d79">rotor::actor_base_t::do_shutdown</a></div><div class="ttdeci">virtual void do_shutdown(const extended_error_ptr_t &amp;reason={}) noexcept</div><div class="ttdoc">convenient method to send actor's supervisor shutdown trigger message</div></div>
 <div class="ttc" id="astructrotor_1_1asio_1_1supervisor__asio__t_html"><div class="ttname"><a href="structrotor_1_1asio_1_1supervisor__asio__t.html">rotor::asio::supervisor_asio_t</a></div><div class="ttdoc">delivers rotor-messages on top of boost asio event loop using strand for serialization</div><div class="ttdef"><b>Definition:</b> supervisor_asio.h:50</div></div>
 <div class="ttc" id="astructrotor_1_1asio_1_1system__context__asio__t_html"><div class="ttname"><a href="structrotor_1_1asio_1_1system__context__asio__t.html">rotor::asio::system_context_asio_t</a></div><div class="ttdoc">The boost::asio system context, which holds a reference to boost::asio::io_context and root superviso...</div><div class="ttdef"><b>Definition:</b> system_context_asio.h:27</div></div>
 <div class="ttc" id="astructrotor_1_1asio_1_1system__context__asio__t_html_afeafb09bee3302d4f691bab45a4499cb"><div class="ttname"><a href="structrotor_1_1asio_1_1system__context__asio__t.html#afeafb09bee3302d4f691bab45a4499cb">rotor::asio::system_context_asio_t::ptr_t</a></div><div class="ttdeci">rotor::intrusive_ptr_t&lt; system_context_asio_t &gt; ptr_t</div><div class="ttdoc">intrusive pointer type for boost::asio system context</div><div class="ttdef"><b>Definition:</b> system_context_asio.h:29</div></div>
-<div class="ttc" id="astructrotor_1_1supervisor__t_html_a9d4f8b1c6d2abdfd402e3715002c6343"><div class="ttname"><a href="structrotor_1_1supervisor__t.html#a9d4f8b1c6d2abdfd402e3715002c6343">rotor::supervisor_t::create_actor</a></div><div class="ttdeci">auto create_actor()</div><div class="ttdoc">creates child-actor builder</div><div class="ttdef"><b>Definition:</b> supervisor.h:187</div></div>
-</div><!-- fragment --><p >It is obvious that the actor code is the same in both cases, however the system environment and supervisors are different. In the last example the important property of <a href="https://github.com/basiliscos/cpp-rotor">rotor</a> is shown : it is <b>not intrusive</b> to event loops, i.e. an event loop runs on by itself, not introducing additional environment/thread; as the consequence, rotor actor can be seamlessly integrated with loops.</p>
-<p >The <code>supervisor.do_shutdown()</code> just sends message to supervisor to perform shutdown procedure. Then, in the code <code>io_context.run()</code> loop terminates, as long as <em>there are no any pending event</em>. <a href="https://github.com/basiliscos/cpp-rotor">rotor</a> does not make loop run endlessly.</p>
+<div class="ttc" id="astructrotor_1_1supervisor__t_html_a9d4f8b1c6d2abdfd402e3715002c6343"><div class="ttname"><a href="structrotor_1_1supervisor__t.html#a9d4f8b1c6d2abdfd402e3715002c6343">rotor::supervisor_t::create_actor</a></div><div class="ttdeci">auto create_actor()</div><div class="ttdoc">creates child-actor builder</div><div class="ttdef"><b>Definition:</b> supervisor.h:188</div></div>
+</div><!-- fragment --><p >It is obvious that the actor code is the almost the same in both cases, however the system environment and supervisors are different. In the last example the important property of <a href="https://github.com/basiliscos/cpp-rotor">rotor</a> is shown : it is <b>not intrusive</b> to event loops, i.e. an event loop runs on by itself, not introducing additional environment/thread; as the consequence, rotor actor can be seamlessly integrated with loops.</p>
+<p >The <code>supervisor.do_shutdown()</code> from previous example just sends message to supervisor to perform shutdown procedure. However, it might be better to have <code>.autoshutdown_supervisor()</code> during actor setup, as it will shutdown supervisor in any case (i.e. not only from <code>on_start()</code>). Then, in the code <code>io_context.run()</code> loop terminates, as long as <em>there are no any pending event</em>. <a href="https://github.com/basiliscos/cpp-rotor">rotor</a> does not make loop run endlessly.</p>
 <p >The <code>timeout</code> variable is used to spawn timers for actor initialization and shutdown requests. As the actor does not do any I/O the operations will be executed immediately, and timeout values do not matter.</p>
 <h1>Ping-pong example</h1>
 <p >The following example demonstrates how to send messages between actors.</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;<a class="code" href="rotor_8hpp.html">rotor.hpp</a>&quot;</span></div>
-<div class="line"><span class="preprocessor">#include &quot;dummy_supervisor.h&quot;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"> </div>
-<div class="line"><span class="keyword">struct </span>ping_t {};</div>
+<div class="fragment"><div class="line"><span class="keyword">struct </span>ping_t {};</div>
 <div class="line"><span class="keyword">struct </span>pong_t {};</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">struct </span>pinger_t : <span class="keyword">public</span> <a class="code hl_struct" href="structrotor_1_1actor__base__t.html">rotor::actor_base_t</a> {</div>
@@ -198,7 +197,7 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp_rotor_d
 <div class="line"> </div>
 <div class="line">    <span class="keywordtype">void</span> on_pong(<a class="code hl_struct" href="structrotor_1_1message__t.html">rotor::message_t&lt;pong_t&gt;</a> &amp;) <span class="keyword">noexcept</span> {</div>
 <div class="line">        std::cout &lt;&lt; <span class="stringliteral">&quot;pong\n&quot;</span>;</div>
-<div class="line">        supervisor-&gt;do_shutdown(); <span class="comment">// optional</span></div>
+<div class="line">        <a class="code hl_function" href="structrotor_1_1actor__base__t.html#a67322e4c89d4312ebb762d451b424d79">do_shutdown</a>();</div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <a class="code hl_typedef" href="namespacerotor.html#a25565725c774761a67bd766d93617326">rotor::address_ptr_t</a> ponger_addr;</div>
@@ -227,8 +226,14 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp_rotor_d
 <div class="line">    <span class="keyword">auto</span> timeout = boost::posix_time::milliseconds{500}; <span class="comment">/* does not matter */</span></div>
 <div class="line">    <span class="keyword">auto</span> sup = ctx.<a class="code hl_function" href="structrotor_1_1system__context__t.html#a4cbee07c2fce07e9138643cd8ec8222a">create_supervisor</a>&lt;dummy_supervisor_t&gt;().timeout(timeout).finish();</div>
 <div class="line"> </div>
-<div class="line">    <span class="keyword">auto</span> pinger = sup-&gt;create_actor&lt;pinger_t&gt;().init_timeout(timeout).shutdown_timeout(timeout).finish();</div>
-<div class="line">    <span class="keyword">auto</span> ponger = sup-&gt;create_actor&lt;ponger_t&gt;().timeout(timeout).finish(); <span class="comment">// shortcut for init/shutdown</span></div>
+<div class="line">    <span class="keyword">auto</span> pinger = sup-&gt;create_actor&lt;pinger_t&gt;()</div>
+<div class="line">                      .init_timeout(timeout)</div>
+<div class="line">                      .shutdown_timeout(timeout)</div>
+<div class="line">                      .autoshutdown_supervisor()</div>
+<div class="line">                      .finish();</div>
+<div class="line">    <span class="keyword">auto</span> ponger = sup-&gt;create_actor&lt;ponger_t&gt;()</div>
+<div class="line">                      .timeout(timeout) <span class="comment">// shortcut for init/shutdown</span></div>
+<div class="line">                      .finish();</div>
 <div class="line">    pinger-&gt;set_ponger_addr(ponger-&gt;get_address());</div>
 <div class="line">    ponger-&gt;set_pinger_addr(pinger-&gt;get_address());</div>
 <div class="line"> </div>
@@ -354,7 +359,7 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp_rotor_d
 <div class="line">        } <span class="keywordflow">else</span> {</div>
 <div class="line">            <span class="comment">// IRL, it should be your custom error codes</span></div>
 <div class="line">            <span class="keyword">auto</span> ec = std::make_error_code(std::errc::invalid_argument);</div>
-<div class="line">            <a class="code hl_function" href="structrotor_1_1actor__base__t.html#acba9a9c233048b4772763a30d30c8453">reply_with_error</a>(req, ec);</div>
+<div class="line">            <a class="code hl_function" href="structrotor_1_1actor__base__t.html#acba9a9c233048b4772763a30d30c8453">reply_with_error</a>(req, <a class="code hl_function" href="structrotor_1_1actor__base__t.html#acfca9ad68e25017920b42593efdd16ce">make_error</a>(ec));</div>
 <div class="line">        }</div>
 <div class="line">    }</div>
 <div class="line">};</div>
@@ -373,12 +378,12 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp_rotor_d
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordtype">void</span> on_response(message::response_t &amp;res) <span class="keyword">noexcept</span> {</div>
-<div class="line">        <span class="keywordflow">if</span> (!res.payload.ec) { <span class="comment">// check for possible error</span></div>
+<div class="line">        <span class="keywordflow">if</span> (!res.payload.ee) { <span class="comment">// check for possible error</span></div>
 <div class="line">            <span class="keyword">auto</span> &amp;in = res.payload.req-&gt;payload.request_payload.value;</div>
 <div class="line">            <span class="keyword">auto</span> &amp;out = res.payload.res.value;</div>
 <div class="line">            std::cout &lt;&lt; <span class="stringliteral">&quot; in = &quot;</span> &lt;&lt; in &lt;&lt; <span class="stringliteral">&quot;, out = &quot;</span> &lt;&lt; out &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line">        }</div>
-<div class="line">        supervisor-&gt;do_shutdown(); <span class="comment">// optional;</span></div>
+<div class="line">        <a class="code hl_function" href="structrotor_1_1actor__base__t.html#a67322e4c89d4312ebb762d451b424d79">do_shutdown</a>();</div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordtype">void</span> <a class="code hl_function" href="structrotor_1_1actor__base__t.html#abd09068676677472caabe32ed7ef7aaf">on_start</a>() noexcept<span class="keyword"> override </span>{</div>
@@ -396,13 +401,15 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp_rotor_d
 <div class="line">    <span class="keyword">auto</span> sup =</div>
 <div class="line">        system_context-&gt;create_supervisor&lt;<a class="code hl_struct" href="structrotor_1_1asio_1_1supervisor__asio__t.html">rotor::asio::supervisor_asio_t</a>&gt;().strand(strand).timeout(timeout).finish();</div>
 <div class="line">    <span class="keyword">auto</span> server = sup-&gt;<a class="code hl_function" href="structrotor_1_1supervisor__t.html#a9d4f8b1c6d2abdfd402e3715002c6343">create_actor</a>&lt;server_actor&gt;().timeout(timeout).finish();</div>
-<div class="line">    <span class="keyword">auto</span> client = sup-&gt;create_actor&lt;client_actor&gt;().timeout(timeout).finish();</div>
+<div class="line">    <span class="keyword">auto</span> client = sup-&gt;create_actor&lt;client_actor&gt;().timeout(timeout).autoshutdown_supervisor().finish();</div>
 <div class="line">    client-&gt;set_server(server-&gt;get_address());</div>
 <div class="line">    sup-&gt;do_process();</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-<div class="ttc" id="astructrotor_1_1actor__base__t_html_acba9a9c233048b4772763a30d30c8453"><div class="ttname"><a href="structrotor_1_1actor__base__t.html#acba9a9c233048b4772763a30d30c8453">rotor::actor_base_t::reply_with_error</a></div><div class="ttdeci">void reply_with_error(Request &amp;message, const extended_error_ptr_t &amp;ec)</div><div class="ttdoc">convenient method for constructing and sending error response to a request</div><div class="ttdef"><b>Definition:</b> supervisor.h:568</div></div>
-<div class="ttc" id="astructrotor_1_1actor__base__t_html_aec6c48a92d2df207e8c4739d26e3c38b"><div class="ttname"><a href="structrotor_1_1actor__base__t.html#aec6c48a92d2df207e8c4739d26e3c38b">rotor::actor_base_t::reply_to</a></div><div class="ttdeci">void reply_to(Request &amp;message, Args &amp;&amp;...args)</div><div class="ttdoc">convenient method for constructing and sending response to a request</div><div class="ttdef"><b>Definition:</b> supervisor.h:564</div></div>
+<div class="ttc" id="aasio_8hpp_html"><div class="ttname"><a href="asio_8hpp.html">asio.hpp</a></div></div>
+<div class="ttc" id="astructrotor_1_1actor__base__t_html_acba9a9c233048b4772763a30d30c8453"><div class="ttname"><a href="structrotor_1_1actor__base__t.html#acba9a9c233048b4772763a30d30c8453">rotor::actor_base_t::reply_with_error</a></div><div class="ttdeci">void reply_with_error(Request &amp;message, const extended_error_ptr_t &amp;ec)</div><div class="ttdoc">convenient method for constructing and sending error response to a request</div><div class="ttdef"><b>Definition:</b> supervisor.h:567</div></div>
+<div class="ttc" id="astructrotor_1_1actor__base__t_html_acfca9ad68e25017920b42593efdd16ce"><div class="ttname"><a href="structrotor_1_1actor__base__t.html#acfca9ad68e25017920b42593efdd16ce">rotor::actor_base_t::make_error</a></div><div class="ttdeci">extended_error_ptr_t make_error(const std::error_code &amp;ec, const extended_error_ptr_t &amp;next={}) noexcept</div><div class="ttdoc">makes extended error within the context of the actor</div></div>
+<div class="ttc" id="astructrotor_1_1actor__base__t_html_aec6c48a92d2df207e8c4739d26e3c38b"><div class="ttname"><a href="structrotor_1_1actor__base__t.html#aec6c48a92d2df207e8c4739d26e3c38b">rotor::actor_base_t::reply_to</a></div><div class="ttdeci">void reply_to(Request &amp;message, Args &amp;&amp;...args)</div><div class="ttdoc">convenient method for constructing and sending response to a request</div><div class="ttdef"><b>Definition:</b> supervisor.h:563</div></div>
 </div><!-- fragment --><p >Output sample: </p><div class="fragment"><div class="line">in = 25, out = 5</div>
 </div><!-- fragment --><h1>registry example (boost::asio)</h1>
 <p >There is a minor drawback in the last example: the binding of client and server actors is performed manually, the server address is injected directly into client actor and there is no any guarantees that server actor will "outlive" client actor.</p>
@@ -412,6 +419,7 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp_rotor_d
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;cmath&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;system_error&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;random&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">namespace </span>asio = boost::asio;</div>
 <div class="line"><span class="keyword">namespace </span>pt = boost::posix_time;</div>
@@ -450,7 +458,7 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp_rotor_d
 <div class="line">        } <span class="keywordflow">else</span> {</div>
 <div class="line">            <span class="comment">// IRL, it should be your custom error codes</span></div>
 <div class="line">            <span class="keyword">auto</span> ec = std::make_error_code(std::errc::invalid_argument);</div>
-<div class="line">            <a class="code hl_function" href="structrotor_1_1actor__base__t.html#acba9a9c233048b4772763a30d30c8453">reply_with_error</a>(req, ec);</div>
+<div class="line">            <a class="code hl_function" href="structrotor_1_1actor__base__t.html#acba9a9c233048b4772763a30d30c8453">reply_with_error</a>(req, <a class="code hl_function" href="structrotor_1_1actor__base__t.html#acfca9ad68e25017920b42593efdd16ce">make_error</a>(ec));</div>
 <div class="line">        }</div>
 <div class="line">    }</div>
 <div class="line">};</div>
@@ -471,12 +479,12 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp_rotor_d
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordtype">void</span> on_response(message::response_t &amp;res) <span class="keyword">noexcept</span> {</div>
-<div class="line">        <span class="keywordflow">if</span> (!res.payload.ec) { <span class="comment">// check for possible error</span></div>
+<div class="line">        <span class="keywordflow">if</span> (!res.payload.ee) { <span class="comment">// check for possible error</span></div>
 <div class="line">            <span class="keyword">auto</span> &amp;in = res.payload.req-&gt;payload.request_payload.value;</div>
 <div class="line">            <span class="keyword">auto</span> &amp;out = res.payload.res.value;</div>
 <div class="line">            std::cout &lt;&lt; <span class="stringliteral">&quot; in = &quot;</span> &lt;&lt; in &lt;&lt; <span class="stringliteral">&quot;, out = &quot;</span> &lt;&lt; out &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line">        }</div>
-<div class="line">        supervisor-&gt;do_shutdown(); <span class="comment">// optional;</span></div>
+<div class="line">        <a class="code hl_function" href="structrotor_1_1actor__base__t.html#a67322e4c89d4312ebb762d451b424d79">do_shutdown</a>(); <span class="comment">// optional;</span></div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordtype">void</span> <a class="code hl_function" href="structrotor_1_1actor__base__t.html#abd09068676677472caabe32ed7ef7aaf">on_start</a>() noexcept<span class="keyword"> override </span>{</div>
@@ -497,7 +505,7 @@ $(document).ready(function(){initNavTree('md__home_b_development_cpp_cpp_rotor_d
 <div class="line">                   .timeout(timeout)</div>
 <div class="line">                   .finish();</div>
 <div class="line">    <span class="keyword">auto</span> server = sup-&gt;<a class="code hl_function" href="structrotor_1_1supervisor__t.html#a9d4f8b1c6d2abdfd402e3715002c6343">create_actor</a>&lt;server_actor&gt;().timeout(timeout).finish();</div>
-<div class="line">    <span class="keyword">auto</span> client = sup-&gt;create_actor&lt;client_actor&gt;().timeout(timeout).finish();</div>
+<div class="line">    <span class="keyword">auto</span> client = sup-&gt;create_actor&lt;client_actor&gt;().timeout(timeout).autoshutdown_supervisor().finish();</div>
 <div class="line">    sup-&gt;do_process();</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>

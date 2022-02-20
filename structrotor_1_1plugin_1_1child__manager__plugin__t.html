@@ -95,7 +95,6 @@ $(document).ready(function(){initNavTree('structrotor_1_1plugin_1_1child__manage
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="structrotor_1_1plugin_1_1child__manager__plugin__t-members.html">List of all members</a>  </div>
@@ -132,6 +131,10 @@ Public Member Functions</h2></td></tr>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>create_child</b> (const <a class="el" href="namespacerotor.html#a9ebe7c23e46e63f18335110b2a76548c">actor_ptr_t</a> &amp;<a class="el" href="structrotor_1_1plugin_1_1plugin__base__t.html#a7281821c2d38b6a4f1828884a3883b6c">actor</a>) noexcept</td></tr>
 <tr class="memdesc:a1518034a20357df24e355ed1c71bbf1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">pre-initializes child and sends create_child message to the supervisor <br /></td></tr>
 <tr class="separator:a1518034a20357df24e355ed1c71bbf1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac684b2b9928de3b104a8074b1b58cd7e"><td class="memItemLeft" align="right" valign="top"><a id="ac684b2b9928de3b104a8074b1b58cd7e" name="ac684b2b9928de3b104a8074b1b58cd7e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>spawn</b> (<a class="el" href="namespacerotor.html#afb03484e6d00762fddb5c5a79ac1f1cd">factory_t</a> factory, const pt::time_duration &amp;period, <a class="el" href="namespacerotor.html#a56d787cb31d38e79c8a3844614bf17f3">restart_policy_t</a> policy, size_t max_attempts, bool escalate) noexcept</td></tr>
+<tr class="memdesc:ac684b2b9928de3b104a8074b1b58cd7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">records spawner (via generating a new address) and sends spawn_actor_t message to the supersior <br /></td></tr>
+<tr class="separator:ac684b2b9928de3b104a8074b1b58cd7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa61b1c9809ffccca5c40906c80e705a7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1plugin_1_1child__manager__plugin__t.html#aa61b1c9809ffccca5c40906c80e705a7">remove_child</a> (const <a class="el" href="structrotor_1_1actor__base__t.html">actor_base_t</a> &amp;<a class="el" href="structrotor_1_1plugin_1_1plugin__base__t.html#a7281821c2d38b6a4f1828884a3883b6c">actor</a>) noexcept</td></tr>
 <tr class="memdesc:aa61b1c9809ffccca5c40906c80e705a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">removes the child from the supervisor  <a href="structrotor_1_1plugin_1_1child__manager__plugin__t.html#aa61b1c9809ffccca5c40906c80e705a7">More...</a><br /></td></tr>
 <tr class="separator:aa61b1c9809ffccca5c40906c80e705a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,8 +153,12 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>on_create</b>
 <tr class="separator:ad7f7d24ec2651c40b5758be7e3b34dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a806108c2d58d8d4ba98cdaf3c1448b97"><td class="memItemLeft" align="right" valign="top"><a id="a806108c2d58d8d4ba98cdaf3c1448b97" name="a806108c2d58d8d4ba98cdaf3c1448b97"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>on_shutdown_confirm</b> (<a class="el" href="namespacerotor_1_1message.html#a4ad63be5393527d9b30899a55435eca2">message::shutdown_response_t</a> &amp;message) noexcept</td></tr>
-<tr class="memdesc:a806108c2d58d8d4ba98cdaf3c1448b97"><td class="mdescLeft">&#160;</td><td class="mdescRight">reacion on shutdown confirmation (i.e. perform some cleanings) <br /></td></tr>
+<tr class="memdesc:a806108c2d58d8d4ba98cdaf3c1448b97"><td class="mdescLeft">&#160;</td><td class="mdescRight">reaction on shutdown confirmation (i.e. perform some cleanings) <br /></td></tr>
 <tr class="separator:a806108c2d58d8d4ba98cdaf3c1448b97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa095721135ef449e717a02e5b9c82e6"><td class="memItemLeft" align="right" valign="top"><a id="afa095721135ef449e717a02e5b9c82e6" name="afa095721135ef449e717a02e5b9c82e6"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>on_spawn</b> (<a class="el" href="namespacerotor_1_1message.html#af23d77f5894e1b99deefc606a9b45620">message::spawn_actor_t</a> &amp;message) noexcept</td></tr>
+<tr class="memdesc:afa095721135ef449e717a02e5b9c82e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">actually attempts to spawn a new actor via spawner <br /></td></tr>
+<tr class="separator:afa095721135ef449e717a02e5b9c82e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2070126dcee40ab94fbb96a5ecfcd424"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1plugin_1_1child__manager__plugin__t.html#a2070126dcee40ab94fbb96a5ecfcd424">handle_init</a> (<a class="el" href="namespacerotor_1_1message.html#ac32e12e668c9d05a6be5ab5e504bb91f">message::init_request_t</a> *) noexcept override</td></tr>
 <tr class="memdesc:a2070126dcee40ab94fbb96a5ecfcd424"><td class="mdescLeft">&#160;</td><td class="mdescRight">polls plugin, whether it is done with initialization  <a href="structrotor_1_1plugin_1_1child__manager__plugin__t.html#a2070126dcee40ab94fbb96a5ecfcd424">More...</a><br /></td></tr>
 <tr class="separator:a2070126dcee40ab94fbb96a5ecfcd424"><td class="memSeparator" colspan="2">&#160;</td></tr>

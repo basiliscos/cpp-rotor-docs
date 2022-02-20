@@ -27,6 +27,7 @@ var structrotor_1_1supervisor__t =
     [ "put", "structrotor_1_1supervisor__t.html#ad38ca674a38fbcff9a762fb3c3b4771e", null ],
     [ "shutdown", "structrotor_1_1supervisor__t.html#a7d7e4dceb429d6c56761cb68b9c51eec", null ],
     [ "shutdown_finish", "structrotor_1_1supervisor__t.html#a52475ee3357b1f11cc7f3f358ca767c5", null ],
+    [ "spawn", "structrotor_1_1supervisor__t.html#ad91a83827c154f7c5a078f99ef7f48d2", null ],
     [ "start", "structrotor_1_1supervisor__t.html#a4b1efcbe5839461a00457448c33bc6a9", null ],
     [ "subscribe", "structrotor_1_1supervisor__t.html#a5113a89e6f1299824dbb36a0b9b633d9", null ],
     [ "subscribe", "structrotor_1_1supervisor__t.html#ac55acec2a56f0f74282e5d910efacd99", null ],

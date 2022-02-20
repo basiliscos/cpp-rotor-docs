@@ -1,6 +1,7 @@
 var dir_da0296186b2d7ca79d094f0811fc0b6f =
 [
     [ "asio", "dir_7d64e3a11d37a6c86d3f9f1c9a8782c3.html", "dir_7d64e3a11d37a6c86d3f9f1c9a8782c3" ],
+    [ "detail", "dir_9246cfb537e1fa73a99affd1d285dcb5.html", "dir_9246cfb537e1fa73a99affd1d285dcb5" ],
     [ "ev", "dir_cd0622ec14337140759f673986147af3.html", "dir_cd0622ec14337140759f673986147af3" ],
     [ "plugin", "dir_bdfd59d0644f3df5a3bf652a42125817.html", "dir_bdfd59d0644f3df5a3bf652a42125817" ],
     [ "thread", "dir_bcba4846703f87b115c48a27cffd0fd3.html", "dir_bcba4846703f87b115c48a27cffd0fd3" ],
@@ -22,6 +23,7 @@ var dir_da0296186b2d7ca79d094f0811fc0b6f =
     [ "policy.h", "policy_8h_source.html", null ],
     [ "registry.h", "registry_8h_source.html", null ],
     [ "request.hpp", "request_8hpp_source.html", null ],
+    [ "spawner.h", "spawner_8h_source.html", null ],
     [ "state.h", "state_8h_source.html", null ],
     [ "subscription.h", "subscription_8h_source.html", null ],
     [ "subscription_point.h", "subscription__point_8h_source.html", null ],

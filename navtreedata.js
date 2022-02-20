@@ -25,15 +25,15 @@
 var NAVTREE =
 [
   [ "rotor", "index.html", [
-    [ "Changelog", "md__home_b_development_cpp_cpp_rotor_docs_Changelog.html", null ],
+    [ "Introduction", "md__home_b_development_cpp_cpp_rotor_docs_Introduction.html", null ],
+    [ "Rationale", "md__home_b_development_cpp_cpp_rotor_docs_Rationale.html", null ],
     [ "Compiling & building", "md__home_b_development_cpp_cpp_rotor_docs_Compilation.html", null ],
     [ "Design & Notions", "md__home_b_development_cpp_cpp_rotor_docs_Design.html", null ],
     [ "Advanced examples", "md__home_b_development_cpp_cpp_rotor_docs_Examples.html", null ],
-    [ "Introduction", "md__home_b_development_cpp_cpp_rotor_docs_Introduction.html", null ],
-    [ "License", "md__home_b_development_cpp_cpp_rotor_docs_License.html", null ],
     [ "Event loops & platforms", "md__home_b_development_cpp_cpp_rotor_docs_Loops.html", null ],
     [ "Patterns", "md__home_b_development_cpp_cpp_rotor_docs_Patterns.html", null ],
-    [ "Rationale", "md__home_b_development_cpp_cpp_rotor_docs_Rationale.html", null ],
+    [ "License", "md__home_b_development_cpp_cpp_rotor_docs_License.html", null ],
+    [ "Changelog", "md__home_b_development_cpp_cpp_rotor_docs_Changelog.html", null ],
     [ "References", "md__home_b_development_cpp_cpp_rotor_docs_References.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
@@ -51,7 +51,7 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
-        [ "Variables", "functions_vars.html", null ],
+        [ "Variables", "functions_vars.html", "functions_vars" ],
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ]
       ] ]
@@ -65,13 +65,13 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "actor__base_8h_source.html",
-"structrotor_1_1actor__base__t.html#a209689884b0bfe95d396fdc37f72bf59",
-"structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01details_1_1count_1_1__0_00_01void_01_4.html#a4fde9f831831c70479d76f88b0d4ae24",
-"structrotor_1_1handler__t_3_01Handler_00_01std_1_1enable__if__t_3_01details_1_1is__actor__handler__v_3_01Handler_01_4_01_4_01_4.html#a39d77ded20cd5dbf11a070fb7bbeec78",
-"structrotor_1_1plugin_1_1delivery__plugin__base__t.html#a22eb030b870a83c9df7d34abb0fdcc24",
-"structrotor_1_1plugin_1_1registry__plugin__t_1_1discovery__task__t.html#a436dcd2ca916c8ec4139956820a580c6a54df1aeeb2d6ecc5e7cda11ba34b6ca6",
-"structrotor_1_1subscription__t_1_1joint__handlers__t.html#a5c4d4f6d8d3734219953c8142df18316",
-"structrotor_1_1wrapped__response__t.html#a4a8faca5a9cfaecfc7b3d95a71a70f3d"
+"registry_8h_source.html",
+"structrotor_1_1asio_1_1details_1_1callback__traits_3_01void_07Class_1_1_5_08_07M_01_6_08_01noexcept_01_4.html#a30ff740e1343b01e297510530a1c21a0",
+"structrotor_1_1ev_1_1supervisor__ev__t.html#a50da96f196b4a74561e6f1ebe324d5ff",
+"structrotor_1_1payload_1_1shutdown__request__t.html",
+"structrotor_1_1plugin_1_1locality__plugin__t.html#a4a5bf237da6fac1d6ec575918bba0098",
+"structrotor_1_1request__traits__t_1_1request.html#ac13878e7c29130686122245f66896c0e",
+"structrotor_1_1system__context__t.html#a3093d1f26bdc7ba1af44652f78cf75ac"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

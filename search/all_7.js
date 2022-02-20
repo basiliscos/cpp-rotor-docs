@@ -25,8 +25,9 @@ var searchData=
   ['has_22',['has',['../structrotor_1_1plugin_1_1resources__plugin__t.html#ac7d1267c1b488e8da35a8a003709c03b',1,'rotor::plugin::resources_plugin_t']]],
   ['has_5fany_23',['has_any',['../structrotor_1_1plugin_1_1resources__plugin__t.html#a9b62af2a8c097a10c23fbb99d6f8a70e',1,'rotor::plugin::resources_plugin_t']]],
   ['has_5fclients_24',['has_clients',['../structrotor_1_1plugin_1_1link__server__plugin__t.html#a700a85c10fb6861e61c79498dea117cc',1,'rotor::plugin::link_server_plugin_t']]],
-  ['has_5fsubscriptions_25',['has_subscriptions',['../structrotor_1_1address__mapping__t.html#a0039eb4add3dbf7bf68f210638056265',1,'rotor::address_mapping_t']]],
-  ['has_5fvalid_5fmessage_26',['has_valid_message',['../structrotor_1_1handler__traits_3_01void_07A_1_1_5_08_07M_01_6_08_01noexcept_01_4.html#aebe4fe404c3cb2be70141435e23e5cca',1,'rotor::handler_traits&lt; void(A::*)(M &amp;) noexcept &gt;::has_valid_message()'],['../structrotor_1_1handler__traits_3_01lambda__holder__t_3_01M_00_01H_01_4_01_4.html#aba22edd2206ecc8d367152187ad10abf',1,'rotor::handler_traits&lt; lambda_holder_t&lt; M, H &gt; &gt;::has_valid_message()']]],
-  ['hash_3c_20rotor_3a_3aaddress_5fptr_5ft_20_3e_27',['hash&lt; rotor::address_ptr_t &gt;',['../structstd_1_1hash_3_01rotor_1_1address__ptr__t_01_4.html',1,'std']]],
-  ['hash_3c_20rotor_3a_3ahandler_5fptr_5ft_20_3e_28',['hash&lt; rotor::handler_ptr_t &gt;',['../structstd_1_1hash_3_01rotor_1_1handler__ptr__t_01_4.html',1,'std']]]
+  ['has_5fnoexcept_25',['has_noexcept',['../structrotor_1_1handler__traits_3_01void_07A_1_1_5_08_07M_01_6_08_4.html#a2e1e2cd6f54bfae83601aa802a806687',1,'rotor::handler_traits&lt; void(A::*)(M &amp;)&gt;']]],
+  ['has_5fsubscriptions_26',['has_subscriptions',['../structrotor_1_1address__mapping__t.html#a0039eb4add3dbf7bf68f210638056265',1,'rotor::address_mapping_t']]],
+  ['has_5fvalid_5fmessage_27',['has_valid_message',['../structrotor_1_1handler__traits_3_01void_07A_1_1_5_08_07M_01_6_08_01noexcept_01_4.html#aebe4fe404c3cb2be70141435e23e5cca',1,'rotor::handler_traits&lt; void(A::*)(M &amp;) noexcept &gt;::has_valid_message()'],['../structrotor_1_1handler__traits_3_01lambda__holder__t_3_01M_00_01H_01_4_01_4.html#aba22edd2206ecc8d367152187ad10abf',1,'rotor::handler_traits&lt; lambda_holder_t&lt; M, H &gt; &gt;::has_valid_message()']]],
+  ['hash_3c_20rotor_3a_3aaddress_5fptr_5ft_20_3e_28',['hash&lt; rotor::address_ptr_t &gt;',['../structstd_1_1hash_3_01rotor_1_1address__ptr__t_01_4.html',1,'std']]],
+  ['hash_3c_20rotor_3a_3ahandler_5fptr_5ft_20_3e_29',['hash&lt; rotor::handler_ptr_t &gt;',['../structstd_1_1hash_3_01rotor_1_1handler__ptr__t_01_4.html',1,'std']]]
 ];

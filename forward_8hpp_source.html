@@ -99,46 +99,51 @@ $(document).ready(function(){initNavTree('forward_8hpp_source.html',''); initRes
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">//</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Copyright (c) 2019-2020 Ivan Baidakou (basiliscos) (the dot dmol at gmail dot com)</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Copyright (c) 2019-2022 Ivan Baidakou (basiliscos) (the dot dmol at gmail dot com)</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">//</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">// Distributed under the MIT Software License</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">//</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;arc.hpp&quot;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;boost/date_time/posix_time/posix_time.hpp&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacerotor.html">rotor</a> {</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">struct </span>address_t;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">struct </span>actor_base_t;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">struct </span>handler_base_t;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">struct </span>supervisor_t;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">struct </span>system_context_t;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">using</span> <a class="code hl_typedef" href="namespacerotor.html#a25565725c774761a67bd766d93617326">address_ptr_t</a> = intrusive_ptr_t&lt;address_t&gt;;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="namespacerotor.html#a9ebe7c23e46e63f18335110b2a76548c">   22</a></span><span class="keyword">using</span> <a class="code hl_typedef" href="namespacerotor.html#a9ebe7c23e46e63f18335110b2a76548c">actor_ptr_t</a> = <a class="code hl_typedef" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t&lt;actor_base_t&gt;</a>;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="namespacerotor.html#aa6f317d95700079f90a76aa56294f92f">   25</a></span><span class="keyword">using</span> <a class="code hl_typedef" href="namespacerotor.html#aa6f317d95700079f90a76aa56294f92f">handler_ptr_t</a> = <a class="code hl_typedef" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t&lt;handler_base_t&gt;</a>;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="namespacerotor.html#a1e8ea0c395f375b56297a53b0a7aed94">   28</a></span><span class="keyword">using</span> <a class="code hl_typedef" href="namespacerotor.html#a1e8ea0c395f375b56297a53b0a7aed94">supervisor_ptr_t</a> = <a class="code hl_typedef" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t&lt;supervisor_t&gt;</a>;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">namespace </span>pt = boost::posix_time;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="namespacerotor.html#aa709f45800c1bc7ea4d7bb2163328b4c">   33</a></span><span class="keyword">using</span> <a class="code hl_typedef" href="namespacerotor.html#aa709f45800c1bc7ea4d7bb2163328b4c">request_id_t</a> = std::size_t;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>} <span class="comment">// namespace rotor</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">namespace </span>rotor::plugin {</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">struct </span>plugin_base_t;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;functional&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;arc.hpp&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;boost/date_time/posix_time/posix_time.hpp&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacerotor.html">rotor</a> {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">struct </span>address_t;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">struct </span>actor_base_t;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">struct </span>handler_base_t;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">struct </span>supervisor_t;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">struct </span>system_context_t;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">using</span> <a class="code hl_typedef" href="namespacerotor.html#a25565725c774761a67bd766d93617326">address_ptr_t</a> = intrusive_ptr_t&lt;address_t&gt;;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="namespacerotor.html#a9ebe7c23e46e63f18335110b2a76548c">   23</a></span><span class="keyword">using</span> <a class="code hl_typedef" href="namespacerotor.html#a9ebe7c23e46e63f18335110b2a76548c">actor_ptr_t</a> = <a class="code hl_typedef" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t&lt;actor_base_t&gt;</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="namespacerotor.html#aa6f317d95700079f90a76aa56294f92f">   26</a></span><span class="keyword">using</span> <a class="code hl_typedef" href="namespacerotor.html#aa6f317d95700079f90a76aa56294f92f">handler_ptr_t</a> = <a class="code hl_typedef" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t&lt;handler_base_t&gt;</a>;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="namespacerotor.html#a1e8ea0c395f375b56297a53b0a7aed94">   29</a></span><span class="keyword">using</span> <a class="code hl_typedef" href="namespacerotor.html#a1e8ea0c395f375b56297a53b0a7aed94">supervisor_ptr_t</a> = <a class="code hl_typedef" href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">intrusive_ptr_t&lt;supervisor_t&gt;</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">namespace </span>pt = boost::posix_time;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="namespacerotor.html#aa709f45800c1bc7ea4d7bb2163328b4c">   34</a></span><span class="keyword">using</span> <a class="code hl_typedef" href="namespacerotor.html#aa709f45800c1bc7ea4d7bb2163328b4c">request_id_t</a> = std::size_t;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="namespacerotor.html#afb03484e6d00762fddb5c5a79ac1f1cd">   45</a></span><span class="keyword">using</span> <a class="code hl_typedef" href="namespacerotor.html#afb03484e6d00762fddb5c5a79ac1f1cd">factory_t</a> = std::function&lt;<a class="code hl_typedef" href="namespacerotor.html#a9ebe7c23e46e63f18335110b2a76548c">actor_ptr_t</a>(<a class="code hl_struct" href="structrotor_1_1supervisor__t.html">supervisor_t</a> &amp;, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacerotor.html#a25565725c774761a67bd766d93617326">address_ptr_t</a> &amp;)&gt;;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>} <span class="comment">// namespace rotor</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword">namespace </span>rotor::plugin {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">struct </span>plugin_base_t;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
 <div class="ttc" id="anamespacerotor_html"><div class="ttname"><a href="namespacerotor.html">rotor</a></div><div class="ttdoc">Basic namespace for all rotor functionalities.</div><div class="ttdef"><b>Definition:</b> rotor.hpp:21</div></div>
-<div class="ttc" id="anamespacerotor_html_a1e8ea0c395f375b56297a53b0a7aed94"><div class="ttname"><a href="namespacerotor.html#a1e8ea0c395f375b56297a53b0a7aed94">rotor::supervisor_ptr_t</a></div><div class="ttdeci">intrusive_ptr_t&lt; supervisor_t &gt; supervisor_ptr_t</div><div class="ttdoc">intrusive pointer for supervisor</div><div class="ttdef"><b>Definition:</b> forward.hpp:28</div></div>
+<div class="ttc" id="anamespacerotor_html_a1e8ea0c395f375b56297a53b0a7aed94"><div class="ttname"><a href="namespacerotor.html#a1e8ea0c395f375b56297a53b0a7aed94">rotor::supervisor_ptr_t</a></div><div class="ttdeci">intrusive_ptr_t&lt; supervisor_t &gt; supervisor_ptr_t</div><div class="ttdoc">intrusive pointer for supervisor</div><div class="ttdef"><b>Definition:</b> forward.hpp:29</div></div>
 <div class="ttc" id="anamespacerotor_html_a25565725c774761a67bd766d93617326"><div class="ttname"><a href="namespacerotor.html#a25565725c774761a67bd766d93617326">rotor::address_ptr_t</a></div><div class="ttdeci">intrusive_ptr_t&lt; address_t &gt; address_ptr_t</div><div class="ttdoc">intrusive pointer for address</div><div class="ttdef"><b>Definition:</b> address.hpp:59</div></div>
-<div class="ttc" id="anamespacerotor_html_a9ebe7c23e46e63f18335110b2a76548c"><div class="ttname"><a href="namespacerotor.html#a9ebe7c23e46e63f18335110b2a76548c">rotor::actor_ptr_t</a></div><div class="ttdeci">intrusive_ptr_t&lt; actor_base_t &gt; actor_ptr_t</div><div class="ttdoc">intrusive pointer for actor</div><div class="ttdef"><b>Definition:</b> forward.hpp:22</div></div>
-<div class="ttc" id="anamespacerotor_html_aa6f317d95700079f90a76aa56294f92f"><div class="ttname"><a href="namespacerotor.html#aa6f317d95700079f90a76aa56294f92f">rotor::handler_ptr_t</a></div><div class="ttdeci">intrusive_ptr_t&lt; handler_base_t &gt; handler_ptr_t</div><div class="ttdoc">intrusive pointer for handler</div><div class="ttdef"><b>Definition:</b> forward.hpp:25</div></div>
-<div class="ttc" id="anamespacerotor_html_aa709f45800c1bc7ea4d7bb2163328b4c"><div class="ttname"><a href="namespacerotor.html#aa709f45800c1bc7ea4d7bb2163328b4c">rotor::request_id_t</a></div><div class="ttdeci">std::size_t request_id_t</div><div class="ttdoc">timer identifier type in the scope of the actor</div><div class="ttdef"><b>Definition:</b> forward.hpp:33</div></div>
+<div class="ttc" id="anamespacerotor_html_a9ebe7c23e46e63f18335110b2a76548c"><div class="ttname"><a href="namespacerotor.html#a9ebe7c23e46e63f18335110b2a76548c">rotor::actor_ptr_t</a></div><div class="ttdeci">intrusive_ptr_t&lt; actor_base_t &gt; actor_ptr_t</div><div class="ttdoc">intrusive pointer for actor</div><div class="ttdef"><b>Definition:</b> forward.hpp:23</div></div>
+<div class="ttc" id="anamespacerotor_html_aa6f317d95700079f90a76aa56294f92f"><div class="ttname"><a href="namespacerotor.html#aa6f317d95700079f90a76aa56294f92f">rotor::handler_ptr_t</a></div><div class="ttdeci">intrusive_ptr_t&lt; handler_base_t &gt; handler_ptr_t</div><div class="ttdoc">intrusive pointer for handler</div><div class="ttdef"><b>Definition:</b> forward.hpp:26</div></div>
+<div class="ttc" id="anamespacerotor_html_aa709f45800c1bc7ea4d7bb2163328b4c"><div class="ttname"><a href="namespacerotor.html#aa709f45800c1bc7ea4d7bb2163328b4c">rotor::request_id_t</a></div><div class="ttdeci">std::size_t request_id_t</div><div class="ttdoc">timer identifier type in the scope of the actor</div><div class="ttdef"><b>Definition:</b> forward.hpp:34</div></div>
 <div class="ttc" id="anamespacerotor_html_ae1d5cfad16ceed2d6891721ffb47c7e2"><div class="ttname"><a href="namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2">rotor::intrusive_ptr_t</a></div><div class="ttdeci">boost::intrusive_ptr&lt; T &gt; intrusive_ptr_t</div><div class="ttdoc">alias for intrusive pointer</div><div class="ttdef"><b>Definition:</b> arc.hpp:26</div></div>
+<div class="ttc" id="anamespacerotor_html_afb03484e6d00762fddb5c5a79ac1f1cd"><div class="ttname"><a href="namespacerotor.html#afb03484e6d00762fddb5c5a79ac1f1cd">rotor::factory_t</a></div><div class="ttdeci">std::function&lt; actor_ptr_t(supervisor_t &amp;, const address_ptr_t &amp;)&gt; factory_t</div><div class="ttdoc">factory which allows to create actors lazily or on demand</div><div class="ttdef"><b>Definition:</b> forward.hpp:45</div></div>
+<div class="ttc" id="astructrotor_1_1supervisor__t_html"><div class="ttname"><a href="structrotor_1_1supervisor__t.html">rotor::supervisor_t</a></div><div class="ttdoc">supervisor is responsible for managing actors (workers) lifetime</div><div class="ttdef"><b>Definition:</b> supervisor.h:65</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
