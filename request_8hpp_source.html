@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('request_8hpp_source.html',''); initRes
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// Copyright (c) 2019-2021 Ivan Baidakou (basiliscos) (the dot dmol at gmail dot com)</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// Copyright (c) 2019-2022 Ivan Baidakou (basiliscos) (the dot dmol at gmail dot com)</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">// Distributed under the MIT Software License</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">//</span></div>
@@ -340,7 +340,7 @@ $(document).ready(function(){initNavTree('request_8hpp_source.html',''); initRes
 <div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>    <a class="code hl_struct" href="structrotor_1_1request__builder__t.html">request_builder_t</a>(<a class="code hl_struct" href="structrotor_1_1supervisor__t.html">supervisor_t</a> &amp;sup_, <a class="code hl_struct" href="structrotor_1_1actor__base__t.html">actor_base_t</a> &amp;actor_, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacerotor.html#a25565725c774761a67bd766d93617326">address_ptr_t</a> &amp;destination_,</div>
 <div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>                      <span class="keyword">const</span> <a class="code hl_typedef" href="namespacerotor.html#a25565725c774761a67bd766d93617326">address_ptr_t</a> &amp;reply_to_, Args &amp;&amp;...args);</div>
 <div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span> </div>
-<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>    <a class="code hl_typedef" href="namespacerotor.html#aa709f45800c1bc7ea4d7bb2163328b4c">request_id_t</a> send(pt::time_duration send) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>    <a class="code hl_typedef" href="namespacerotor.html#aa709f45800c1bc7ea4d7bb2163328b4c">request_id_t</a> send(<span class="keyword">const</span> pt::time_duration &amp;send) <span class="keyword">noexcept</span>;</div>
 <div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span> </div>
 <div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span>  <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span>    <span class="keyword">using</span> <a class="code hl_struct" href="structrotor_1_1request__traits__t.html">traits_t</a> = <a class="code hl_struct" href="structrotor_1_1request__traits__t.html">request_traits_t&lt;T&gt;</a>;</div>

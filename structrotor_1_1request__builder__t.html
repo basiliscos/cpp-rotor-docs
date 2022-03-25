@@ -113,16 +113,16 @@ template&lt;typename... Args&gt; </td></tr>
 <tr class="memitem:a38112dbc9141b671694b6bcf8b626044"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>request_builder_t</b> (<a class="el" href="structrotor_1_1supervisor__t.html">supervisor_t</a> &amp;sup_, <a class="el" href="structrotor_1_1actor__base__t.html">actor_base_t</a> &amp;actor_, const <a class="el" href="namespacerotor.html#a25565725c774761a67bd766d93617326">address_ptr_t</a> &amp;destination_, const <a class="el" href="namespacerotor.html#a25565725c774761a67bd766d93617326">address_ptr_t</a> &amp;reply_to_, Args &amp;&amp;...args)</td></tr>
 <tr class="memdesc:a38112dbc9141b671694b6bcf8b626044"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructs request message but still does not dispath it <br /></td></tr>
 <tr class="separator:a38112dbc9141b671694b6bcf8b626044"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a114080b7903faaf85743e5a770b55400"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacerotor.html#aa709f45800c1bc7ea4d7bb2163328b4c">request_id_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1request__builder__t.html#a114080b7903faaf85743e5a770b55400">send</a> (pt::time_duration send) noexcept</td></tr>
-<tr class="memdesc:a114080b7903faaf85743e5a770b55400"><td class="mdescLeft">&#160;</td><td class="mdescRight">actually dispatches requests and spawns timeout timer  <a href="structrotor_1_1request__builder__t.html#a114080b7903faaf85743e5a770b55400">More...</a><br /></td></tr>
-<tr class="separator:a114080b7903faaf85743e5a770b55400"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54f0d2abb0c6b6fcf63c1a504bcf3623"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacerotor.html#aa709f45800c1bc7ea4d7bb2163328b4c">request_id_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1request__builder__t.html#a54f0d2abb0c6b6fcf63c1a504bcf3623">send</a> (const pt::time_duration &amp;send) noexcept</td></tr>
+<tr class="memdesc:a54f0d2abb0c6b6fcf63c1a504bcf3623"><td class="mdescLeft">&#160;</td><td class="mdescRight">actually dispatches requests and spawns timeout timer  <a href="structrotor_1_1request__builder__t.html#a54f0d2abb0c6b6fcf63c1a504bcf3623">More...</a><br /></td></tr>
+<tr class="separator:a54f0d2abb0c6b6fcf63c1a504bcf3623"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
 struct rotor::request_builder_t&lt; T &gt;</div><p >builder pattern implentation for the original request </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a114080b7903faaf85743e5a770b55400" name="a114080b7903faaf85743e5a770b55400"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a114080b7903faaf85743e5a770b55400">&#9670;&nbsp;</a></span>send()</h2>
+<a id="a54f0d2abb0c6b6fcf63c1a504bcf3623" name="a54f0d2abb0c6b6fcf63c1a504bcf3623"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54f0d2abb0c6b6fcf63c1a504bcf3623">&#9670;&nbsp;</a></span>send()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -135,7 +135,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="namespacerotor.html#aa709f45800c1bc7ea4d7bb2163328b4c">request_id_t</a> <a class="el" href="structrotor_1_1request__builder__t.html">rotor::request_builder_t</a>&lt; T &gt;::send </td>
           <td>(</td>
-          <td class="paramtype">pt::time_duration&#160;</td>
+          <td class="paramtype">const pt::time_duration &amp;&#160;</td>
           <td class="paramname"><em>send</em></td><td>)</td>
           <td></td>
         </tr>
