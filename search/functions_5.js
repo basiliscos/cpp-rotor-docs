@@ -7,7 +7,7 @@ var searchData=
   ['get_5fidentity_4',['get_identity',['../structrotor_1_1actor__base__t.html#aa5c59e4820b639737157a72e3fc0d406',1,'rotor::actor_base_t']]],
   ['get_5fio_5fcontext_5',['get_io_context',['../structrotor_1_1asio_1_1system__context__asio__t.html#a96a1f724cb738d84f633470374226ed3',1,'rotor::asio::system_context_asio_t']]],
   ['get_5floop_6',['get_loop',['../structrotor_1_1ev_1_1supervisor__ev__t.html#a56424134eca14e9844d05f737f5e42cd',1,'rotor::ev::supervisor_ev_t']]],
-  ['get_5fmapped_5faddress_7',['get_mapped_address',['../structrotor_1_1address__mapping__t.html#acd2f9e258f63f44e76438f67cde817c9',1,'rotor::address_mapping_t']]],
+  ['get_5fmapped_5faddress_7',['get_mapped_address',['../structrotor_1_1address__mapping__t.html#a15ddaa2a5e5f667d2929546cf2be145d',1,'rotor::address_mapping_t']]],
   ['get_5fplugin_8',['get_plugin',['../structrotor_1_1actor__base__t.html#a02560c438ab779594b0da344811a1f89',1,'rotor::actor_base_t']]],
   ['get_5fplugins_9',['get_plugins',['../structrotor_1_1plugin__storage__base__t.html#a642e35b1fd9977ff69c20f98dc78148e',1,'rotor::plugin_storage_base_t::get_plugins()'],['../structrotor_1_1plugin__storage__t.html#ac9817459cb644d347e46ec13ed4067cb',1,'rotor::plugin_storage_t::get_plugins()']]],
   ['get_5freaction_10',['get_reaction',['../structrotor_1_1plugin_1_1plugin__base__t.html#ae6b73ab6c8761e94c4b3b48e381c5e53',1,'rotor::plugin::plugin_base_t']]],

@@ -24,6 +24,7 @@ var structrotor_1_1supervisor__t =
     [ "on_child_init", "structrotor_1_1supervisor__t.html#aaf9913b916d8806f167272275f7761ea", null ],
     [ "on_child_shutdown", "structrotor_1_1supervisor__t.html#adbd7f667ff51068ed100615cc0b34e4d", null ],
     [ "on_request_trigger", "structrotor_1_1supervisor__t.html#a52d5f8e1f39d09a6886510189a20e48d", null ],
+    [ "on_start", "structrotor_1_1supervisor__t.html#aeb60f97bd2f2e8151d45db754b6763d8", null ],
     [ "put", "structrotor_1_1supervisor__t.html#ad38ca674a38fbcff9a762fb3c3b4771e", null ],
     [ "shutdown", "structrotor_1_1supervisor__t.html#a7d7e4dceb429d6c56761cb68b9c51eec", null ],
     [ "shutdown_finish", "structrotor_1_1supervisor__t.html#a52475ee3357b1f11cc7f3f358ca767c5", null ],
@@ -45,5 +46,7 @@ var structrotor_1_1supervisor__t =
     [ "poll_duration", "structrotor_1_1supervisor__t.html#acdeb448a5b06fb684540febc8f60a5a6", null ],
     [ "queue", "structrotor_1_1supervisor__t.html#af92073c4cfa98e6e66d6dd80008e7ef9", null ],
     [ "request_map", "structrotor_1_1supervisor__t.html#adfb66ca5b2a1c32e39d392ba51d7fbdd", null ],
+    [ "shutdown_flag", "structrotor_1_1supervisor__t.html#a171b55a217ee690873b7198ba14c698e", null ],
+    [ "shutdown_poll_frequency", "structrotor_1_1supervisor__t.html#a3604bf745d175fea7c1a42ae63e16945", null ],
     [ "subscription_map", "structrotor_1_1supervisor__t.html#a208d64b27972593f7e04ce635980c302", null ]
 ];

@@ -189,13 +189,13 @@ var namespacerotor =
       [ "shutdown_failed", "namespacerotor.html#affb671357df7b4bed56139bff68610a0a4bba544bf219d0a11e4c9f8a2c148351", null ]
     ] ],
     [ "actor_base_t::access< asio::to::supervisor >", "namespacerotor.html#aee540292978b8f893e6850b2bd84bb1a", null ],
-    [ "error_code_category", "namespacerotor.html#abb5ffddf27aea70559ebc11b33b0e511", null ],
+    [ "error_code_category", "namespacerotor.html#a714891b3c733830b5ce160cdd18259da", null ],
     [ "lambda", "namespacerotor.html#a9041fc7100e15a7bcccdd18f00c129e5", null ],
-    [ "make_error", "namespacerotor.html#a9499225038ae87ce7e11389ce4eef1e0", null ],
-    [ "make_error_code", "namespacerotor.html#ab12cf5f8f45edd3b1cacce3a2b6acffc", null ],
-    [ "make_error_code", "namespacerotor.html#a84c4fa24ef072247f0e74d0203706af3", null ],
+    [ "make_error", "namespacerotor.html#afff8ca6ba3cb2e1043f4bd5fa482a747", null ],
+    [ "make_error_code", "namespacerotor.html#a1ea17aae3706fe4a637dcf33cce3de19", null ],
+    [ "make_error_code", "namespacerotor.html#af440ee7d894af26e120e9a259bc960d0", null ],
     [ "make_message", "namespacerotor.html#ad9795b95b6ad346b67ae5c1eb6c48adc", null ],
     [ "plugin::plugin_base_t::access< details::to::actor >", "namespacerotor.html#a740b04085e04c8d45943c9d01a47b6b8", null ],
-    [ "shutdown_code_category", "namespacerotor.html#a20e95c1c68e271227cb4df56248d0f20", null ],
+    [ "shutdown_code_category", "namespacerotor.html#a934c9c7ae80a61e47360078904ceea4f", null ],
     [ "wrap_handler", "namespacerotor.html#aa57a3a769319496293197235aa9f652f", null ]
 ];
