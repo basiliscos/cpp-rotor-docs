@@ -34,6 +34,6 @@ var searchData=
   ['async_5fcb_31',['async_cb',['../structrotor_1_1ev_1_1supervisor__ev__t.html#a32b84d8b7b0e729ba92e45e95416ad52',1,'rotor::ev::supervisor_ev_t']]],
   ['async_5fwatcher_32',['async_watcher',['../structrotor_1_1ev_1_1supervisor__ev__t.html#ac300c49066ad597cf8a1dbdfacf6c679',1,'rotor::ev::supervisor_ev_t']]],
   ['attempts_33',['attempts',['../structrotor_1_1detail_1_1child__info__t.html#a436fb459a5784528c754d5e6d6500b0e',1,'rotor::detail::child_info_t']]],
-  ['autoshutdown_5fsupervisor_34',['AUTOSHUTDOWN_SUPERVISOR',['../structrotor_1_1actor__base__t.html#a5f7c211b19a06e295590e35878a7ef74',1,'rotor::actor_base_t']]],
-  ['autoshutdown_5fsupervisor_35',['autoshutdown_supervisor',['../structrotor_1_1actor__config__builder__t.html#a12a1dc351c9ac0ef2b938d32dbc3aa8e',1,'rotor::actor_config_builder_t::autoshutdown_supervisor()'],['../structrotor_1_1actor__config__t.html#afa68a76451538b21249edd56e08df67a',1,'rotor::actor_config_t::autoshutdown_supervisor()']]]
+  ['autoshutdown_5fsupervisor_34',['autoshutdown_supervisor',['../structrotor_1_1actor__config__builder__t.html#a12a1dc351c9ac0ef2b938d32dbc3aa8e',1,'rotor::actor_config_builder_t::autoshutdown_supervisor()'],['../structrotor_1_1actor__config__t.html#afa68a76451538b21249edd56e08df67a',1,'rotor::actor_config_t::autoshutdown_supervisor()']]],
+  ['autoshutdown_5fsupervisor_35',['AUTOSHUTDOWN_SUPERVISOR',['../structrotor_1_1actor__base__t.html#a5f7c211b19a06e295590e35878a7ef74',1,'rotor::actor_base_t']]]
 ];

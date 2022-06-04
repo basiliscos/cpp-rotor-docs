@@ -11,6 +11,6 @@ var searchData=
   ['app_8',['app',['../structrotor_1_1wx_1_1system__context__wx__t.html#a4a4c66d8008206770bcb761299d91afd',1,'rotor::wx::system_context_wx_t']]],
   ['async_5fwatcher_9',['async_watcher',['../structrotor_1_1ev_1_1supervisor__ev__t.html#ac300c49066ad597cf8a1dbdfacf6c679',1,'rotor::ev::supervisor_ev_t']]],
   ['attempts_10',['attempts',['../structrotor_1_1detail_1_1child__info__t.html#a436fb459a5784528c754d5e6d6500b0e',1,'rotor::detail::child_info_t']]],
-  ['autoshutdown_5fsupervisor_11',['autoshutdown_supervisor',['../structrotor_1_1actor__config__t.html#afa68a76451538b21249edd56e08df67a',1,'rotor::actor_config_t']]],
-  ['autoshutdown_5fsupervisor_12',['AUTOSHUTDOWN_SUPERVISOR',['../structrotor_1_1actor__base__t.html#a5f7c211b19a06e295590e35878a7ef74',1,'rotor::actor_base_t']]]
+  ['autoshutdown_5fsupervisor_11',['AUTOSHUTDOWN_SUPERVISOR',['../structrotor_1_1actor__base__t.html#a5f7c211b19a06e295590e35878a7ef74',1,'rotor::actor_base_t']]],
+  ['autoshutdown_5fsupervisor_12',['autoshutdown_supervisor',['../structrotor_1_1actor__config__t.html#afa68a76451538b21249edd56e08df67a',1,'rotor::actor_config_t']]]
 ];

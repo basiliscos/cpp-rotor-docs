@@ -1,11 +1,5 @@
 var namespacerotor_1_1asio =
 [
-    [ "details", null, [
-      [ "callback_traits", "structrotor_1_1asio_1_1details_1_1callback__traits.html", null ],
-      [ "callback_traits< void(Class::*)() noexcept >", "structrotor_1_1asio_1_1details_1_1callback__traits_3_01void_07Class_1_1_5_08_07_08_01noexcept_01_4.html", "structrotor_1_1asio_1_1details_1_1callback__traits_3_01void_07Class_1_1_5_08_07_08_01noexcept_01_4" ],
-      [ "callback_traits< void(Class::*)(M &) noexcept >", "structrotor_1_1asio_1_1details_1_1callback__traits_3_01void_07Class_1_1_5_08_07M_01_6_08_01noexcept_01_4.html", "structrotor_1_1asio_1_1details_1_1callback__traits_3_01void_07Class_1_1_5_08_07M_01_6_08_01noexcept_01_4" ],
-      [ "callback_traits< void(Class::*)(M) noexcept >", "structrotor_1_1asio_1_1details_1_1callback__traits_3_01void_07Class_1_1_5_08_07M_08_01noexcept_01_4.html", "structrotor_1_1asio_1_1details_1_1callback__traits_3_01void_07Class_1_1_5_08_07M_08_01noexcept_01_4" ]
-    ] ],
     [ "forwarder_base_t", "structrotor_1_1asio_1_1forwarder__base__t.html", "structrotor_1_1asio_1_1forwarder__base__t" ],
     [ "forwarder_base_t< Actor, Handler, void >", "structrotor_1_1asio_1_1forwarder__base__t_3_01Actor_00_01Handler_00_01void_01_4.html", "structrotor_1_1asio_1_1forwarder__base__t_3_01Actor_00_01Handler_00_01void_01_4" ],
     [ "forwarder_t", "structrotor_1_1asio_1_1forwarder__t.html", null ],

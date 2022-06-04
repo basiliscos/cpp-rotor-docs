@@ -1,27 +1,6 @@
 var namespacerotor =
 [
     [ "asio", "namespacerotor_1_1asio.html", "namespacerotor_1_1asio" ],
-    [ "detail", null, [
-      [ "demand", null, [
-        [ "escalate_failure", "structrotor_1_1detail_1_1demand_1_1escalate__failure.html", null ],
-        [ "no", "structrotor_1_1detail_1_1demand_1_1no.html", null ],
-        [ "now", "structrotor_1_1detail_1_1demand_1_1now.html", null ]
-      ] ],
-      [ "child_info_t", "structrotor_1_1detail_1_1child__info__t.html", "structrotor_1_1detail_1_1child__info__t" ]
-    ] ],
-    [ "details", null, [
-      [ "error_code_category", "classrotor_1_1details_1_1error__code__category.html", "classrotor_1_1details_1_1error__code__category" ],
-      [ "is_braces_constructible", "structrotor_1_1details_1_1is__braces__constructible.html", null ],
-      [ "is_constructible", "structrotor_1_1details_1_1is__constructible.html", null ],
-      [ "is_constructible< T, Arg >", "structrotor_1_1details_1_1is__constructible_3_01T_00_01Arg_01_4.html", null ],
-      [ "is_constructible< T, void >", "structrotor_1_1details_1_1is__constructible_3_01T_00_01void_01_4.html", null ],
-      [ "is_constructible< T, void, Arg >", "structrotor_1_1details_1_1is__constructible_3_01T_00_01void_00_01Arg_01_4.html", null ],
-      [ "is_constructible< T, void, Args... >", "structrotor_1_1details_1_1is__constructible_3_01T_00_01void_00_01Args_8_8_8_01_4.html", null ],
-      [ "shutdown_code_category", "classrotor_1_1details_1_1shutdown__code__category.html", "classrotor_1_1details_1_1shutdown__code__category" ],
-      [ "size_of_t", "structrotor_1_1details_1_1size__of__t.html", null ],
-      [ "size_of_t< T >", "structrotor_1_1details_1_1size__of__t_3_01T_01_4.html", null ],
-      [ "size_of_t< T, Ts... >", "structrotor_1_1details_1_1size__of__t_3_01T_00_01Ts_8_8_8_01_4.html", null ]
-    ] ],
     [ "ev", "namespacerotor_1_1ev.html", "namespacerotor_1_1ev" ],
     [ "message", "namespacerotor_1_1message.html", [
       [ "commit_unsubscription_t", "namespacerotor_1_1message.html#aeddd5eeaace3e6eb5eab8b2a7bb8b6f3", null ],
@@ -54,24 +33,6 @@ var namespacerotor =
       [ "unsubscription_t", "namespacerotor_1_1message.html#a82e7d63bb01f241c17bc5658be0eb6d6", null ]
     ] ],
     [ "payload", "namespacerotor_1_1payload.html", "namespacerotor_1_1payload" ],
-    [ "plugin", null, [
-      [ "address_maker_plugin_t", "structrotor_1_1plugin_1_1address__maker__plugin__t.html", "structrotor_1_1plugin_1_1address__maker__plugin__t" ],
-      [ "child_manager_plugin_t", "structrotor_1_1plugin_1_1child__manager__plugin__t.html", "structrotor_1_1plugin_1_1child__manager__plugin__t" ],
-      [ "delivery_plugin_base_t", "structrotor_1_1plugin_1_1delivery__plugin__base__t.html", "structrotor_1_1plugin_1_1delivery__plugin__base__t" ],
-      [ "delivery_plugin_t", "structrotor_1_1plugin_1_1delivery__plugin__t.html", "structrotor_1_1plugin_1_1delivery__plugin__t" ],
-      [ "foreigners_support_plugin_t", "structrotor_1_1plugin_1_1foreigners__support__plugin__t.html", "structrotor_1_1plugin_1_1foreigners__support__plugin__t" ],
-      [ "init_shutdown_plugin_t", "structrotor_1_1plugin_1_1init__shutdown__plugin__t.html", "structrotor_1_1plugin_1_1init__shutdown__plugin__t" ],
-      [ "inspected_local_delivery_t", "structrotor_1_1plugin_1_1inspected__local__delivery__t.html", null ],
-      [ "lifetime_plugin_t", "structrotor_1_1plugin_1_1lifetime__plugin__t.html", "structrotor_1_1plugin_1_1lifetime__plugin__t" ],
-      [ "link_client_plugin_t", "structrotor_1_1plugin_1_1link__client__plugin__t.html", "structrotor_1_1plugin_1_1link__client__plugin__t" ],
-      [ "link_server_plugin_t", "structrotor_1_1plugin_1_1link__server__plugin__t.html", "structrotor_1_1plugin_1_1link__server__plugin__t" ],
-      [ "local_delivery_t", "structrotor_1_1plugin_1_1local__delivery__t.html", null ],
-      [ "locality_plugin_t", "structrotor_1_1plugin_1_1locality__plugin__t.html", "structrotor_1_1plugin_1_1locality__plugin__t" ],
-      [ "plugin_base_t", "structrotor_1_1plugin_1_1plugin__base__t.html", "structrotor_1_1plugin_1_1plugin__base__t" ],
-      [ "registry_plugin_t", "structrotor_1_1plugin_1_1registry__plugin__t.html", "structrotor_1_1plugin_1_1registry__plugin__t" ],
-      [ "resources_plugin_t", "structrotor_1_1plugin_1_1resources__plugin__t.html", "structrotor_1_1plugin_1_1resources__plugin__t" ],
-      [ "starter_plugin_t", "structrotor_1_1plugin_1_1starter__plugin__t.html", "structrotor_1_1plugin_1_1starter__plugin__t" ]
-    ] ],
     [ "thread", "namespacerotor_1_1thread.html", "namespacerotor_1_1thread" ],
     [ "wx", "namespacerotor_1_1wx.html", "namespacerotor_1_1wx" ],
     [ "actor_base_t", "structrotor_1_1actor__base__t.html", "structrotor_1_1actor__base__t" ],
