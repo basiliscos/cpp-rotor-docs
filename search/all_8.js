@@ -26,7 +26,7 @@ var searchData=
   ['intercept_23',['intercept',['../structrotor_1_1thread_1_1supervisor__thread__t.html#aee69aa2b73de7e4c33c8a278ff833e08',1,'rotor::thread::supervisor_thread_t::intercept()'],['../structrotor_1_1supervisor__t.html#ac1ec0601c06be8b6aa953ccacdc86c20',1,'rotor::supervisor_t::intercept()']]],
   ['intercepting_24',['intercepting',['../structrotor_1_1thread_1_1system__context__thread__t.html#a0e69440e0c5b39d0a7ba2eaf507db7fb',1,'rotor::thread::system_context_thread_t']]],
   ['internal_25',['internal',['../structrotor_1_1subscription__t_1_1joint__handlers__t.html#a5c4d4f6d8d3734219953c8142df18316',1,'rotor::subscription_t::joint_handlers_t']]],
-  ['introduction_26',['Introduction',['../md__home_b_development_cpp_cpp_rotor_docs_Introduction.html',1,'']]],
+  ['introduction_26',['Introduction',['../md__home_b_development_tmp_personal_cpp_rotor_docs_Introduction.html',1,'']]],
   ['intrusive_5fptr_5ft_27',['intrusive_ptr_t',['../namespacerotor.html#ae1d5cfad16ceed2d6891721ffb47c7e2',1,'rotor']]],
   ['io_5fcontext_28',['io_context',['../structrotor_1_1asio_1_1system__context__asio__t.html#a7a1d2e7b37a3242defcb732f6431ffc9',1,'rotor::asio::system_context_asio_t']]],
   ['is_5factor_29',['is_actor',['../structrotor_1_1handler__traits_3_01void_07A_1_1_5_08_07M_01_6_08_01noexcept_01_4.html#a4d894a767c0fa8555f1920f1d48b9c2a',1,'rotor::handler_traits&lt; void(A::*)(M &amp;) noexcept &gt;::is_actor()'],['../structrotor_1_1handler__traits_3_01lambda__holder__t_3_01M_00_01H_01_4_01_4.html#a5e2c241db03f89d76e8db114d3c055fc',1,'rotor::handler_traits&lt; lambda_holder_t&lt; M, H &gt; &gt;::is_actor()']]],

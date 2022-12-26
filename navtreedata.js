@@ -25,16 +25,16 @@
 var NAVTREE =
 [
   [ "rotor", "index.html", [
-    [ "Introduction", "md__home_b_development_cpp_cpp_rotor_docs_Introduction.html", null ],
-    [ "Rationale", "md__home_b_development_cpp_cpp_rotor_docs_Rationale.html", null ],
-    [ "Compiling & building", "md__home_b_development_cpp_cpp_rotor_docs_Compilation.html", null ],
-    [ "Design & Notions", "md__home_b_development_cpp_cpp_rotor_docs_Design.html", null ],
-    [ "Advanced examples", "md__home_b_development_cpp_cpp_rotor_docs_Examples.html", null ],
-    [ "Event loops & platforms", "md__home_b_development_cpp_cpp_rotor_docs_Loops.html", null ],
-    [ "Patterns", "md__home_b_development_cpp_cpp_rotor_docs_Patterns.html", null ],
-    [ "License", "md__home_b_development_cpp_cpp_rotor_docs_License.html", null ],
-    [ "Changelog", "md__home_b_development_cpp_cpp_rotor_docs_Changelog.html", null ],
-    [ "References", "md__home_b_development_cpp_cpp_rotor_docs_References.html", null ],
+    [ "Introduction", "md__home_b_development_tmp_personal_cpp_rotor_docs_Introduction.html", null ],
+    [ "Rationale", "md__home_b_development_tmp_personal_cpp_rotor_docs_Rationale.html", null ],
+    [ "Compiling & building", "md__home_b_development_tmp_personal_cpp_rotor_docs_Compilation.html", null ],
+    [ "Design & Notions", "md__home_b_development_tmp_personal_cpp_rotor_docs_Design.html", null ],
+    [ "Advanced examples", "md__home_b_development_tmp_personal_cpp_rotor_docs_Examples.html", null ],
+    [ "Event loops & platforms", "md__home_b_development_tmp_personal_cpp_rotor_docs_Loops.html", null ],
+    [ "Patterns", "md__home_b_development_tmp_personal_cpp_rotor_docs_Patterns.html", null ],
+    [ "License", "md__home_b_development_tmp_personal_cpp_rotor_docs_License.html", null ],
+    [ "Changelog", "md__home_b_development_tmp_personal_cpp_rotor_docs_Changelog.html", null ],
+    [ "References", "md__home_b_development_tmp_personal_cpp_rotor_docs_References.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -65,14 +65,13 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "actor__base_8h_source.html",
-"registry_8h_source.html",
-"structrotor_1_1asio_1_1details_1_1callback__traits.html",
-"structrotor_1_1ev_1_1supervisor__ev__t.html#a3d83f8ff59c3099ba8ccd9e8122d5be2",
-"structrotor_1_1payload_1_1registration__request__t.html",
-"structrotor_1_1plugin_1_1link__server__plugin__t.html#ada46f4a1fe1c41f25c8cc19a2892ca14",
-"structrotor_1_1request__traits__t_1_1cancel.html",
-"structrotor_1_1supervisor__t.html#adbdc3a7be74c1152a648217967b409bd",
-""
+"starter_8h_source.html",
+"structrotor_1_1asio_1_1details_1_1callback__traits_3_01void_07Class_1_1_5_08_07_08_01noexcept_01_4.html",
+"structrotor_1_1extended__error__t.html",
+"structrotor_1_1payload_1_1unlink__request__t.html#a2857bb0e954bcbedd200c04a0330b753",
+"structrotor_1_1request__builder__t.html#a38112dbc9141b671694b6bcf8b626044",
+"structrotor_1_1supervisor__t.html#aaf99e587b441bb5e68b0c500ffedf14f",
+"supervisor__config__wx_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
