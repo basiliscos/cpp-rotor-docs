@@ -119,6 +119,12 @@ var hierarchy =
       [ "rotor::subscription_container_t", "structrotor_1_1subscription__container__t.html", null ]
     ] ],
     [ "rotor::plugin::local_delivery_t", "structrotor_1_1plugin_1_1local__delivery__t.html", null ],
+    [ "rotor::message_stringifier_t", "structrotor_1_1message__stringifier__t.html", [
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ]
+    ] ],
+    [ "rotor::message_visitor_t", "structrotor_1_1message__visitor__t.html", [
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ]
+    ] ],
     [ "rotor::detail::demand::no", "structrotor_1_1detail_1_1demand_1_1no.html", null ],
     [ "rotor::detail::demand::now", "structrotor_1_1detail_1_1demand_1_1now.html", null ],
     [ "rotor::plugin::plugin_base_t", "structrotor_1_1plugin_1_1plugin__base__t.html", [
@@ -179,6 +185,36 @@ var hierarchy =
     [ "rotor::payload::unlink_notify_t", "structrotor_1_1payload_1_1unlink__notify__t.html", null ],
     [ "rotor::payload::unlink_request_t", "structrotor_1_1payload_1_1unlink__request__t.html", null ],
     [ "rotor::payload::unsubscription_confirmation_t", "structrotor_1_1payload_1_1unsubscription__confirmation__t.html", null ],
+    [ "rotor::message_t< T >::visitor_t", "structrotor_1_1message__t_1_1visitor__t.html", [
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ]
+    ] ],
     [ "rotor::wrapped_response_t< Request >", "structrotor_1_1wrapped__response__t.html", null ],
     [ "wxTimer", null, [
       [ "rotor::wx::supervisor_wx_t::timer_t", "structrotor_1_1wx_1_1supervisor__wx__t_1_1timer__t.html", null ]

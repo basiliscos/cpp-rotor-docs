@@ -119,13 +119,13 @@ Inheritance diagram for rotor::extended_error_t:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7e2f5207660b0fb5a158cb8213a353d3" id="r_a7e2f5207660b0fb5a158cb8213a353d3"><td class="memItemLeft" align="right" valign="top"><a id="a7e2f5207660b0fb5a158cb8213a353d3" name="a7e2f5207660b0fb5a158cb8213a353d3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>extended_error_t</b> (const std::string &amp;context_, const std::error_code &amp;ec_, const <a class="el" href="namespacerotor.html#a3e69eb003219ace1a9962825e0188d53">extended_error_ptr_t</a> &amp;next_={}) noexcept</td></tr>
-<tr class="memdesc:a7e2f5207660b0fb5a158cb8213a353d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">extened error constructor <br /></td></tr>
-<tr class="separator:a7e2f5207660b0fb5a158cb8213a353d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7197ae5dec0a46b866828608bf87b01f" id="r_a7197ae5dec0a46b866828608bf87b01f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1extended__error__t.html#a7197ae5dec0a46b866828608bf87b01f">message</a> () const noexcept</td></tr>
-<tr class="memdesc:a7197ae5dec0a46b866828608bf87b01f"><td class="mdescLeft">&#160;</td><td class="mdescRight">human-readable detailed description of the error  <br /></td></tr>
-<tr class="separator:a7197ae5dec0a46b866828608bf87b01f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a221dd95a5e526a01a35f80cc1f816a85" id="r_a221dd95a5e526a01a35f80cc1f816a85"><td class="memItemLeft" align="right" valign="top"><a id="a221dd95a5e526a01a35f80cc1f816a85" name="a221dd95a5e526a01a35f80cc1f816a85"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>extended_error_t</b> (const std::string &amp;context_, const std::error_code &amp;ec_, const <a class="el" href="namespacerotor.html#a3e69eb003219ace1a9962825e0188d53">extended_error_ptr_t</a> &amp;next_={}, const <a class="el" href="namespacerotor.html#a0196761fe474bd8dc17ac4ff9f0e2f95">message_ptr_t</a> &amp;request_={}) noexcept</td></tr>
+<tr class="memdesc:a221dd95a5e526a01a35f80cc1f816a85"><td class="mdescLeft">&#160;</td><td class="mdescRight">extened error constructor <br /></td></tr>
+<tr class="separator:a221dd95a5e526a01a35f80cc1f816a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a852daca4989dd3aaf0d6e3ab662e557f" id="r_a852daca4989dd3aaf0d6e3ab662e557f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1extended__error__t.html#a852daca4989dd3aaf0d6e3ab662e557f">message</a> (const <a class="el" href="structrotor_1_1message__stringifier__t.html">message_stringifier_t</a> *stringifier=nullptr) const noexcept</td></tr>
+<tr class="memdesc:a852daca4989dd3aaf0d6e3ab662e557f"><td class="mdescLeft">&#160;</td><td class="mdescRight">human-readable detailed description of the error  <br /></td></tr>
+<tr class="separator:a852daca4989dd3aaf0d6e3ab662e557f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1a9d1909baee25a41fab61c6ab582ea" id="r_aa1a9d1909baee25a41fab61c6ab582ea"><td class="memItemLeft" align="right" valign="top"><a id="aa1a9d1909baee25a41fab61c6ab582ea" name="aa1a9d1909baee25a41fab61c6ab582ea"></a>
 <a class="el" href="namespacerotor.html#a3e69eb003219ace1a9962825e0188d53">extended_error_ptr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>root</b> () const noexcept</td></tr>
 <tr class="memdesc:aa1a9d1909baee25a41fab61c6ab582ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns root (inner-most) extended error <br /></td></tr>
@@ -143,15 +143,19 @@ std::error_code&#160;</td><td class="memItemRight" valign="bottom"><b>ec</b></td
 <tr class="separator:ae0bdd0faad635d64ed8b7f93c694c7b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7ae124a8f099e396337ffb4141c5151" id="r_aa7ae124a8f099e396337ffb4141c5151"><td class="memItemLeft" align="right" valign="top"><a id="aa7ae124a8f099e396337ffb4141c5151" name="aa7ae124a8f099e396337ffb4141c5151"></a>
 <a class="el" href="namespacerotor.html#a3e69eb003219ace1a9962825e0188d53">extended_error_ptr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>next</b></td></tr>
-<tr class="memdesc:aa7ae124a8f099e396337ffb4141c5151"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointer to the root error <br /></td></tr>
+<tr class="memdesc:aa7ae124a8f099e396337ffb4141c5151"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointer to the parent error <br /></td></tr>
 <tr class="separator:aa7ae124a8f099e396337ffb4141c5151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a414b8699d289e98a17c9f494694d4c7b" id="r_a414b8699d289e98a17c9f494694d4c7b"><td class="memItemLeft" align="right" valign="top"><a id="a414b8699d289e98a17c9f494694d4c7b" name="a414b8699d289e98a17c9f494694d4c7b"></a>
+<a class="el" href="namespacerotor.html#a0196761fe474bd8dc17ac4ff9f0e2f95">message_ptr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>request</b></td></tr>
+<tr class="memdesc:a414b8699d289e98a17c9f494694d4c7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointer request caused error <br /></td></tr>
+<tr class="separator:a414b8699d289e98a17c9f494694d4c7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Holds string context, error_code and the pointer to the following error. </p>
 <p>This is extension over std::error_code, to make it possible to identify the context of the error (usually it is actor identity), and make it possible to construct the chain of failures, that's why there is a smart pointer to the next error. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7197ae5dec0a46b866828608bf87b01f" name="a7197ae5dec0a46b866828608bf87b01f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7197ae5dec0a46b866828608bf87b01f">&#9670;&#160;</a></span>message()</h2>
+<a id="a852daca4989dd3aaf0d6e3ab662e557f" name="a852daca4989dd3aaf0d6e3ab662e557f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a852daca4989dd3aaf0d6e3ab662e557f">&#9670;&#160;</a></span>message()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -162,7 +166,8 @@ std::error_code&#160;</td><td class="memItemRight" valign="bottom"><b>ec</b></td
         <tr>
           <td class="memname">std::string rotor::extended_error_t::message </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="structrotor_1_1message__stringifier__t.html">message_stringifier_t</a> *&#160;</td>
+          <td class="paramname"><em>stringifier</em> = <code>nullptr</code></td><td>)</td>
           <td> const</td>
         </tr>
       </table>

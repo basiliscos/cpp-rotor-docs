@@ -112,18 +112,14 @@ $(document).ready(function(){initNavTree('structrotor_1_1plugin_1_1inspected__lo
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ae3bc96aaa3b4f86d2fce7c19a3179dbd" id="r_ae3bc96aaa3b4f86d2fce7c19a3179dbd"><td class="memItemLeft" align="right" valign="top"><a id="ae3bc96aaa3b4f86d2fce7c19a3179dbd" name="ae3bc96aaa3b4f86d2fce7c19a3179dbd"></a>
-static std::string&#160;</td><td class="memItemRight" valign="bottom"><b>identify</b> (const <a class="el" href="structrotor_1_1message__base__t.html">message_base_t</a> *message, int32_t threshold) noexcept</td></tr>
-<tr class="memdesc:ae3bc96aaa3b4f86d2fce7c19a3179dbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">stringifies the message into human-readable debug form <br /></td></tr>
-<tr class="separator:ae3bc96aaa3b4f86d2fce7c19a3179dbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3f6b65a5badeb343f663ec199482b4f" id="r_af3f6b65a5badeb343f663ec199482b4f"><td class="memItemLeft" align="right" valign="top"><a id="af3f6b65a5badeb343f663ec199482b4f" name="af3f6b65a5badeb343f663ec199482b4f"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>delivery</b> (<a class="el" href="namespacerotor.html#a0196761fe474bd8dc17ac4ff9f0e2f95">message_ptr_t</a> &amp;message, const <a class="el" href="structrotor_1_1subscription__t_1_1joint__handlers__t.html">subscription_t::joint_handlers_t</a> &amp;local_recipients) noexcept</td></tr>
-<tr class="memdesc:af3f6b65a5badeb343f663ec199482b4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">delivers the message to the recipients, possibly dumping it to console <br /></td></tr>
-<tr class="separator:af3f6b65a5badeb343f663ec199482b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a947f35ea0e7fec55d2228b5880453b1c" id="r_a947f35ea0e7fec55d2228b5880453b1c"><td class="memItemLeft" align="right" valign="top"><a id="a947f35ea0e7fec55d2228b5880453b1c" name="a947f35ea0e7fec55d2228b5880453b1c"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>discard</b> (<a class="el" href="namespacerotor.html#a0196761fe474bd8dc17ac4ff9f0e2f95">message_ptr_t</a> &amp;message) noexcept</td></tr>
-<tr class="memdesc:a947f35ea0e7fec55d2228b5880453b1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">dumps discarded message <br /></td></tr>
-<tr class="separator:a947f35ea0e7fec55d2228b5880453b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad0b2793bce97ccd98bddc8badc6c212" id="r_aad0b2793bce97ccd98bddc8badc6c212"><td class="memItemLeft" align="right" valign="top"><a id="aad0b2793bce97ccd98bddc8badc6c212" name="aad0b2793bce97ccd98bddc8badc6c212"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>delivery</b> (<a class="el" href="namespacerotor.html#a0196761fe474bd8dc17ac4ff9f0e2f95">message_ptr_t</a> &amp;message, const <a class="el" href="structrotor_1_1subscription__t_1_1joint__handlers__t.html">subscription_t::joint_handlers_t</a> &amp;local_recipients, const <a class="el" href="structrotor_1_1message__stringifier__t.html">message_stringifier_t</a> *stringifier) noexcept</td></tr>
+<tr class="memdesc:aad0b2793bce97ccd98bddc8badc6c212"><td class="mdescLeft">&#160;</td><td class="mdescRight">delivers the message to the recipients, possibly dumping it to console <br /></td></tr>
+<tr class="separator:aad0b2793bce97ccd98bddc8badc6c212"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a981fa17188d6f4191086788d69470836" id="r_a981fa17188d6f4191086788d69470836"><td class="memItemLeft" align="right" valign="top"><a id="a981fa17188d6f4191086788d69470836" name="a981fa17188d6f4191086788d69470836"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>discard</b> (<a class="el" href="namespacerotor.html#a0196761fe474bd8dc17ac4ff9f0e2f95">message_ptr_t</a> &amp;message, const <a class="el" href="structrotor_1_1message__stringifier__t.html">message_stringifier_t</a> *stringifier) noexcept</td></tr>
+<tr class="memdesc:a981fa17188d6f4191086788d69470836"><td class="mdescLeft">&#160;</td><td class="mdescRight">dumps discarded message <br /></td></tr>
+<tr class="separator:a981fa17188d6f4191086788d69470836"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>debugging local message delivery implementation with dumping details to stdout. </p>

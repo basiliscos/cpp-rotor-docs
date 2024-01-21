@@ -101,6 +101,7 @@ $(document).ready(function(){initNavTree('structrotor_1_1plugin_1_1plugin__base_
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="structrotor_1_1plugin_1_1plugin__base__t-members.html">List of all members</a>  </div>
@@ -135,13 +136,17 @@ Inheritance diagram for rotor::plugin::plugin_base_t:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a0076b1c56cbec47830de124d41dc2aea" id="r_a0076b1c56cbec47830de124d41dc2aea"><td class="memItemLeft" align="right" valign="top"><a id="a0076b1c56cbec47830de124d41dc2aea" name="a0076b1c56cbec47830de124d41dc2aea"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1plugin_1_1plugin__base__t.html#a0076b1c56cbec47830de124d41dc2aea">reaction_t</a> : std::uint32_t { <b>INIT</b> = 1 &lt;&lt; 0
-, <b>SHUTDOWN</b> = 1 &lt;&lt; 1
-, <b>SUBSCRIPTION</b> = 1 &lt;&lt; 2
-, <b>START</b> = 1 &lt;&lt; 3
+<tr class="memitem:a1da062d3ad2a92e007c9d45bc37977fd" id="r_a1da062d3ad2a92e007c9d45bc37977fd"><td class="memItemLeft" align="right" valign="top"><a id="a1da062d3ad2a92e007c9d45bc37977fd" name="a1da062d3ad2a92e007c9d45bc37977fd"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1plugin_1_1plugin__base__t.html#a1da062d3ad2a92e007c9d45bc37977fd">reaction_t</a> : unsigned { <b>INIT</b> = 0b00000001
+, <b>SHUTDOWN</b> = 0b00000010
+, <b>SUBSCRIPTION</b> = 0b00000100
+, <b>START</b> = 0b00001000
  }</td></tr>
-<tr class="memdesc:a0076b1c56cbec47830de124d41dc2aea"><td class="mdescLeft">&#160;</td><td class="mdescRight">possible plugin's reactions on actor lifetime events <br /></td></tr>
-<tr class="separator:a0076b1c56cbec47830de124d41dc2aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a1da062d3ad2a92e007c9d45bc37977fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">possible plugin's reactions on actor lifetime events <br /></td></tr>
+<tr class="separator:a1da062d3ad2a92e007c9d45bc37977fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a123679eac444fd150be8e2ad8db4ec31" id="r_a123679eac444fd150be8e2ad8db4ec31"><td class="memItemLeft" align="right" valign="top"><a id="a123679eac444fd150be8e2ad8db4ec31" name="a123679eac444fd150be8e2ad8db4ec31"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>reaction_underlying_t</b> = std::underlying_type_t&lt; <a class="el" href="structrotor_1_1plugin_1_1plugin__base__t.html#a1da062d3ad2a92e007c9d45bc37977fd">reaction_t</a> &gt;</td></tr>
+<tr class="memdesc:a123679eac444fd150be8e2ad8db4ec31"><td class="mdescLeft">&#160;</td><td class="mdescRight">the underlying type of <code>reaction_t</code> <br /></td></tr>
+<tr class="separator:a123679eac444fd150be8e2ad8db4ec31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -187,16 +192,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acf872f647caddf6a865e22f629964532"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structrotor_1_1plugin_1_1plugin__base__t.html#acf872f647caddf6a865e22f629964532">with_casted</a> (Fn &amp;&amp;fn, config_phase_t desired_phase=config_phase_t::INITIALIZING) noexcept</td></tr>
 <tr class="memdesc:acf872f647caddf6a865e22f629964532"><td class="mdescLeft">&#160;</td><td class="mdescRight">invokes the callback if plugin type and phase mach  <br /></td></tr>
 <tr class="separator:acf872f647caddf6a865e22f629964532"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6b73ab6c8761e94c4b3b48e381c5e53" id="r_ae6b73ab6c8761e94c4b3b48e381c5e53"><td class="memItemLeft" align="right" valign="top"><a id="ae6b73ab6c8761e94c4b3b48e381c5e53" name="ae6b73ab6c8761e94c4b3b48e381c5e53"></a>
-std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>get_reaction</b> () const noexcept</td></tr>
-<tr class="memdesc:ae6b73ab6c8761e94c4b3b48e381c5e53"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the current set of plugin reactions <br /></td></tr>
-<tr class="separator:ae6b73ab6c8761e94c4b3b48e381c5e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29485fab1643bb9733c9858f5dc1e6cc" id="r_a29485fab1643bb9733c9858f5dc1e6cc"><td class="memItemLeft" align="right" valign="top"><a id="a29485fab1643bb9733c9858f5dc1e6cc" name="a29485fab1643bb9733c9858f5dc1e6cc"></a>
+<a class="el" href="structrotor_1_1plugin_1_1plugin__base__t.html#a123679eac444fd150be8e2ad8db4ec31">reaction_underlying_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>get_reaction</b> () const noexcept</td></tr>
+<tr class="memdesc:a29485fab1643bb9733c9858f5dc1e6cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the current set of plugin reactions <br /></td></tr>
+<tr class="separator:a29485fab1643bb9733c9858f5dc1e6cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a6bd7f1dfaadcfc309c7f582033b11d" id="r_a5a6bd7f1dfaadcfc309c7f582033b11d"><td class="memItemLeft" align="right" valign="top"><a id="a5a6bd7f1dfaadcfc309c7f582033b11d" name="a5a6bd7f1dfaadcfc309c7f582033b11d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>reaction_on</b> (<a class="el" href="structrotor_1_1plugin_1_1plugin__base__t.html#a0076b1c56cbec47830de124d41dc2aea">reaction_t</a> value) noexcept</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>reaction_on</b> (<a class="el" href="structrotor_1_1plugin_1_1plugin__base__t.html#a1da062d3ad2a92e007c9d45bc37977fd">reaction_t</a> value) noexcept</td></tr>
 <tr class="memdesc:a5a6bd7f1dfaadcfc309c7f582033b11d"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns on the specified reaction of the plugin <br /></td></tr>
 <tr class="separator:a5a6bd7f1dfaadcfc309c7f582033b11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa837fc243691227759e20d81e7edb6d6" id="r_aa837fc243691227759e20d81e7edb6d6"><td class="memItemLeft" align="right" valign="top"><a id="aa837fc243691227759e20d81e7edb6d6" name="aa837fc243691227759e20d81e7edb6d6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>reaction_off</b> (<a class="el" href="structrotor_1_1plugin_1_1plugin__base__t.html#a0076b1c56cbec47830de124d41dc2aea">reaction_t</a> value) noexcept</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>reaction_off</b> (<a class="el" href="structrotor_1_1plugin_1_1plugin__base__t.html#a1da062d3ad2a92e007c9d45bc37977fd">reaction_t</a> value) noexcept</td></tr>
 <tr class="memdesc:aa837fc243691227759e20d81e7edb6d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">turns off the specified reaction of the plugin <br /></td></tr>
 <tr class="separator:aa837fc243691227759e20d81e7edb6d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49e577d962310b8abd3b0e11767db2c3" id="r_a49e577d962310b8abd3b0e11767db2c3"><td class="memTemplParams" colspan="2"><a id="a49e577d962310b8abd3b0e11767db2c3" name="a49e577d962310b8abd3b0e11767db2c3"></a>
@@ -204,6 +209,13 @@ template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a49e577d962310b8abd3b0e11767db2c3"><td class="memTemplItemLeft" align="right" valign="top">auto &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>access</b> () noexcept</td></tr>
 <tr class="memdesc:a49e577d962310b8abd3b0e11767db2c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">generic non-public fields accessor <br /></td></tr>
 <tr class="separator:a49e577d962310b8abd3b0e11767db2c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:ac45fe1113f7083a632c72aea90b12570" id="r_ac45fe1113f7083a632c72aea90b12570"><td class="memItemLeft" align="right" valign="top"><a id="ac45fe1113f7083a632c72aea90b12570" name="ac45fe1113f7083a632c72aea90b12570"></a>
+static constexpr <a class="el" href="structrotor_1_1plugin_1_1plugin__base__t.html#a123679eac444fd150be8e2ad8db4ec31">reaction_underlying_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>REACTION_MASK</b> = 0b00001111</td></tr>
+<tr class="memdesc:ac45fe1113f7083a632c72aea90b12570"><td class="mdescLeft">&#160;</td><td class="mdescRight">the bit mask for all reactions enabled <br /></td></tr>
+<tr class="separator:ac45fe1113f7083a632c72aea90b12570"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -217,10 +229,10 @@ template&lt;typename Handler &gt; </td></tr>
 <tr class="memitem:ab9552010c99ed3d1e23cbe50d39745ce"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacerotor.html#ab4c9c7c54f8b127ba311e5f32fbb30b0">subscription_info_ptr_t</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>subscribe</b> (Handler &amp;&amp;handler) noexcept</td></tr>
 <tr class="memdesc:ab9552010c99ed3d1e23cbe50d39745ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">subscribes plugin to the custom <em>plugin</em> handler on the main actor address <br /></td></tr>
 <tr class="separator:ab9552010c99ed3d1e23cbe50d39745ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0298bb66aa8ecf58344f17f1c8df24d3" id="r_a0298bb66aa8ecf58344f17f1c8df24d3"><td class="memItemLeft" align="right" valign="top"><a id="a0298bb66aa8ecf58344f17f1c8df24d3" name="a0298bb66aa8ecf58344f17f1c8df24d3"></a>
-<a class="el" href="namespacerotor.html#a3e69eb003219ace1a9962825e0188d53">extended_error_ptr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>make_error</b> (const std::error_code &amp;ec, const <a class="el" href="namespacerotor.html#a3e69eb003219ace1a9962825e0188d53">extended_error_ptr_t</a> &amp;next={}) noexcept</td></tr>
-<tr class="memdesc:a0298bb66aa8ecf58344f17f1c8df24d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">makes an error within the context of actor <br /></td></tr>
-<tr class="separator:a0298bb66aa8ecf58344f17f1c8df24d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a528d5868f78c3a0f0802cd06cfcf1838" id="r_a528d5868f78c3a0f0802cd06cfcf1838"><td class="memItemLeft" align="right" valign="top"><a id="a528d5868f78c3a0f0802cd06cfcf1838" name="a528d5868f78c3a0f0802cd06cfcf1838"></a>
+<a class="el" href="namespacerotor.html#a3e69eb003219ace1a9962825e0188d53">extended_error_ptr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>make_error</b> (const std::error_code &amp;ec, const <a class="el" href="namespacerotor.html#a3e69eb003219ace1a9962825e0188d53">extended_error_ptr_t</a> &amp;next={}, const <a class="el" href="namespacerotor.html#a0196761fe474bd8dc17ac4ff9f0e2f95">message_ptr_t</a> &amp;request={}) noexcept</td></tr>
+<tr class="memdesc:a528d5868f78c3a0f0802cd06cfcf1838"><td class="mdescLeft">&#160;</td><td class="mdescRight">makes an error within the context of actor <br /></td></tr>
+<tr class="separator:a528d5868f78c3a0f0802cd06cfcf1838"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>

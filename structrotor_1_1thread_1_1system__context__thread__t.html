@@ -132,8 +132,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a19deadee06931c730423d362f5007ca0" id="r_a19deadee06931c730423d362f5007ca0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1thread_1_1system__context__thread__t.html#a19deadee06931c730423d362f5007ca0">system_context_thread_t</a> () noexcept</td></tr>
-<tr class="memdesc:a19deadee06931c730423d362f5007ca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructs thread system context  <br /></td></tr>
+<tr class="memitem:a19deadee06931c730423d362f5007ca0" id="r_a19deadee06931c730423d362f5007ca0"><td class="memItemLeft" align="right" valign="top"><a id="a19deadee06931c730423d362f5007ca0" name="a19deadee06931c730423d362f5007ca0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>system_context_thread_t</b> () noexcept</td></tr>
+<tr class="memdesc:a19deadee06931c730423d362f5007ca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructs thread system context <br /></td></tr>
 <tr class="separator:a19deadee06931c730423d362f5007ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac99de0a8c2421933114f2cdfe923575e" id="r_ac99de0a8c2421933114f2cdfe923575e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1thread_1_1system__context__thread__t.html#ac99de0a8c2421933114f2cdfe923575e">run</a> () noexcept</td></tr>
 <tr class="memdesc:ac99de0a8c2421933114f2cdfe923575e"><td class="mdescLeft">&#160;</td><td class="mdescRight">invokes blocking execution of the supervisor  <br /></td></tr>
@@ -169,6 +170,9 @@ template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a3194550467d61b086434a7b2c2bab2f2 inherit pub_methods_structrotor_1_1system__context__t"><td class="memTemplItemLeft" align="right" valign="top">auto &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>access</b> () noexcept</td></tr>
 <tr class="memdesc:a3194550467d61b086434a7b2c2bab2f2 inherit pub_methods_structrotor_1_1system__context__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">generic non-public fields accessor <br /></td></tr>
 <tr class="separator:a3194550467d61b086434a7b2c2bab2f2 inherit pub_methods_structrotor_1_1system__context__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dd89dd69838a28863cd50939066f7dd inherit pub_methods_structrotor_1_1system__context__t" id="r_a3dd89dd69838a28863cd50939066f7dd"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structrotor_1_1message__stringifier__t.html">message_stringifier_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1system__context__t.html#a3dd89dd69838a28863cd50939066f7dd">get_stringifier</a> ()</td></tr>
+<tr class="memdesc:a3dd89dd69838a28863cd50939066f7dd inherit pub_methods_structrotor_1_1system__context__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the default stringifier  <br /></td></tr>
+<tr class="separator:a3dd89dd69838a28863cd50939066f7dd inherit pub_methods_structrotor_1_1system__context__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-types" name="pro-types"></a>
 Protected Types</h2></td></tr>
@@ -195,6 +199,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>start_timer</b> (cons
 void&#160;</td><td class="memItemRight" valign="bottom"><b>cancel_timer</b> (<a class="el" href="namespacerotor.html#aa709f45800c1bc7ea4d7bb2163328b4c">request_id_t</a> timer_id) noexcept</td></tr>
 <tr class="memdesc:ab3f8df3954fc62942c74af4c5b63424c"><td class="mdescLeft">&#160;</td><td class="mdescRight">cancel timer implementation <br /></td></tr>
 <tr class="separator:ab3f8df3954fc62942c74af4c5b63424c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_structrotor_1_1system__context__t"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_structrotor_1_1system__context__t')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="structrotor_1_1system__context__t.html">rotor::system_context_t</a></td></tr>
+<tr class="memitem:af1c813a60b02e61c045f25214c2f7efc inherit pro_methods_structrotor_1_1system__context__t" id="r_af1c813a60b02e61c045f25214c2f7efc"><td class="memItemLeft" align="right" valign="top">
+virtual <a class="el" href="namespacerotor.html#ad89ad6996d59fce7a364c62ccce32fb7">message_stringifier_ptr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>make_stringifier</b> () const noexcept</td></tr>
+<tr class="memdesc:af1c813a60b02e61c045f25214c2f7efc inherit pro_methods_structrotor_1_1system__context__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructs message stringifier <br /></td></tr>
+<tr class="separator:af1c813a60b02e61c045f25214c2f7efc inherit pro_methods_structrotor_1_1system__context__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -227,42 +236,7 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>supervisor_thread_t
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The thread system context, for blocking operations. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a19deadee06931c730423d362f5007ca0" name="a19deadee06931c730423d362f5007ca0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19deadee06931c730423d362f5007ca0">&#9670;&#160;</a></span>system_context_thread_t()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">rotor::thread::system_context_thread_t::system_context_thread_t </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>constructs thread system context </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">queue_size</td><td>defines pre-allocated inbound queue size for messages from other threads</td></tr>
-    <tr><td class="paramname">poll_time</td><td>how much time it will spend in polling inbound queue before switching into notification mode (i.e. cv + mutex) </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac99de0a8c2421933114f2cdfe923575e" name="ac99de0a8c2421933114f2cdfe923575e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac99de0a8c2421933114f2cdfe923575e">&#9670;&#160;</a></span>run()</h2>
 

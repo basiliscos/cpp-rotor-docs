@@ -15,7 +15,7 @@ var searchData=
   ['evt_5floop_12',['EVT_LOOP',['../structrotor_1_1wx_1_1supervisor__config__wx__builder__t.html#ac080ee0dcf89b3180008a86795f98c28',1,'rotor::wx::supervisor_config_wx_builder_t']]],
   ['examples_13',['Advanced examples',['../md__2home_2b_2development_2cpp_2cpp-rotor_2docs_2Examples.html',1,'']]],
   ['extended_5ferror_5fptr_5ft_14',['extended_error_ptr_t',['../namespacerotor.html#a3e69eb003219ace1a9962825e0188d53',1,'rotor']]],
-  ['extended_5ferror_5ft_15',['extended_error_t',['../structrotor_1_1extended__error__t.html#a7e2f5207660b0fb5a158cb8213a353d3',1,'rotor::extended_error_t::extended_error_t()'],['../structrotor_1_1extended__error__t.html',1,'rotor::extended_error_t']]],
+  ['extended_5ferror_5ft_15',['extended_error_t',['../structrotor_1_1extended__error__t.html#a221dd95a5e526a01a35f80cc1f816a85',1,'rotor::extended_error_t::extended_error_t()'],['../structrotor_1_1extended__error__t.html',1,'rotor::extended_error_t']]],
   ['external_16',['external',['../structrotor_1_1subscription__t_1_1joint__handlers__t.html#ad900c95309276b9dd269536a24031092',1,'rotor::subscription_t::joint_handlers_t']]],
   ['external_5fsubscription_5ft_17',['external_subscription_t',['../structrotor_1_1payload_1_1external__subscription__t.html',1,'rotor::payload::external_subscription_t'],['../namespacerotor_1_1message.html#a15fd76831a3fb668e93a12afc3b8f423',1,'rotor::message::external_subscription_t']]],
   ['external_5funsubscription_5ft_18',['external_unsubscription_t',['../structrotor_1_1payload_1_1external__unsubscription__t.html',1,'rotor::payload']]]

@@ -29,7 +29,7 @@ var structrotor_1_1actor__base__t =
     [ "init_continue", "structrotor_1_1actor__base__t.html#a367454ed5e6f65d67cd440818bfbd017", null ],
     [ "init_finish", "structrotor_1_1actor__base__t.html#adbc2dbbe7a61929ef66ea4a2753e8823", null ],
     [ "init_start", "structrotor_1_1actor__base__t.html#a383be3775cfa14f690e03e866c75b03e", null ],
-    [ "make_error", "structrotor_1_1actor__base__t.html#acfca9ad68e25017920b42593efdd16ce", null ],
+    [ "make_error", "structrotor_1_1actor__base__t.html#a741257a32c58047bac7cb41e395e45a6", null ],
     [ "make_response", "structrotor_1_1actor__base__t.html#a7c44e5d2c0d31e132950f15958fc157c", null ],
     [ "make_response", "structrotor_1_1actor__base__t.html#a8e90774a3a1a69283e5fe81824926df0", null ],
     [ "on_start", "structrotor_1_1actor__base__t.html#abd09068676677472caabe32ed7ef7aaf", null ],

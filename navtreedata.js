@@ -65,13 +65,13 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "actor__base_8h_source.html",
-"starter_8h_source.html",
-"structrotor_1_1asio_1_1details_1_1callback__traits_3_01void_07Class_1_1_5_08_07_08_01noexcept_01_4.html",
-"structrotor_1_1extended__error__t.html",
-"structrotor_1_1payload_1_1unlink__request__t.html#a2857bb0e954bcbedd200c04a0330b753",
-"structrotor_1_1request__builder__t.html#a38112dbc9141b671694b6bcf8b626044",
-"structrotor_1_1supervisor__t.html#aaf99e587b441bb5e68b0c500ffedf14f",
-"system__context_8h_source.html"
+"resources_8h_source.html",
+"structrotor_1_1asio_1_1details_1_1callback__traits_3_01void_07Class_1_1_5_08_07M_01_6_08_01noexcept_01_4.html#a671cbb7159e658dc90ffde3c34cdf49b",
+"structrotor_1_1ev_1_1supervisor__ev__t_1_1timer__t.html#a707abd9e412119b5a74efa4ecc6893e4",
+"structrotor_1_1payload_1_1shutdown__trigger__t.html#a2e1249916607e3758d2597cfe98e7726",
+"structrotor_1_1registry__t.html#aadce11e0ee623c575cda57e9aea169d5",
+"structrotor_1_1supervisor__t.html#a532deec3fff7fe62abbf5638e651f34d",
+"structrotor_1_1wx_1_1supervisor__wx__t_1_1timer__t.html#a2f1590a36c8a7802ef8e33b0b1750dd2"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

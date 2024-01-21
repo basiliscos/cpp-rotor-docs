@@ -192,8 +192,14 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1message__base__t.html">message_base_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for <code>rotor</code> message.  <a href="structrotor_1_1message__base__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1message__stringifier__t.html">message_stringifier_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract interface for making textual/string representation of a message.  <a href="structrotor_1_1message__stringifier__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1message__t.html">message_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">the generic message meant to hold user-specific payload  <a href="structrotor_1_1message__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1message__visitor__t.html">message_visitor_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract message visitor interface.  <a href="structrotor_1_1message__visitor__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1plugin__storage__base__t.html">plugin_storage_base_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">abstract item to store plugins inside actor  <a href="structrotor_1_1plugin__storage__base__t.html#details">More...</a><br /></td></tr>
@@ -336,6 +342,10 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>message_ptr_t</b> = 
 using&#160;</td><td class="memItemRight" valign="bottom"><b>messages_queue_t</b> = std::deque&lt; <a class="el" href="namespacerotor.html#a0196761fe474bd8dc17ac4ff9f0e2f95">message_ptr_t</a> &gt;</td></tr>
 <tr class="memdesc:a707cd5a5ef983697a9434dc56a569c7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">structure to hold messages (intrusive pointers) <br /></td></tr>
 <tr class="separator:a707cd5a5ef983697a9434dc56a569c7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad89ad6996d59fce7a364c62ccce32fb7" id="r_ad89ad6996d59fce7a364c62ccce32fb7"><td class="memItemLeft" align="right" valign="top"><a id="ad89ad6996d59fce7a364c62ccce32fb7" name="ad89ad6996d59fce7a364c62ccce32fb7"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>message_stringifier_ptr_t</b> = std::unique_ptr&lt; <a class="el" href="structrotor_1_1message__stringifier__t.html">message_stringifier_t</a> &gt;</td></tr>
+<tr class="memdesc:ad89ad6996d59fce7a364c62ccce32fb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">smart pointer for message stringifier <br /></td></tr>
+<tr class="separator:ad89ad6996d59fce7a364c62ccce32fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04509f254619824808aaf6b72edfacd8" id="r_a04509f254619824808aaf6b72edfacd8"><td class="memItemLeft" align="right" valign="top"><a id="a04509f254619824808aaf6b72edfacd8" name="a04509f254619824808aaf6b72edfacd8"></a>
 typedef <a class="el" href="namespacerotor.html#a0196761fe474bd8dc17ac4ff9f0e2f95">message_ptr_t</a>()&#160;</td><td class="memItemRight" valign="bottom"><b>error_producer_t</b>(const <a class="el" href="namespacerotor.html#a25565725c774761a67bd766d93617326">address_ptr_t</a> &amp;reply_to, <a class="el" href="structrotor_1_1message__base__t.html">message_base_t</a> &amp;msg, const <a class="el" href="namespacerotor.html#a3e69eb003219ace1a9962825e0188d53">extended_error_ptr_t</a> &amp;ec) noexcept</td></tr>
 <tr class="memdesc:a04509f254619824808aaf6b72edfacd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">free function type, which produces error response to the original request <br /></td></tr>
@@ -446,10 +456,10 @@ ROTOR_API std::error_code&#160;</td><td class="memItemRight" valign="bottom"><b>
 ROTOR_API std::error_code&#160;</td><td class="memItemRight" valign="bottom"><b>make_error_code</b> (const <a class="el" href="namespacerotor.html#a1bdd1bb05a9f3b94c06d60634cee138f">shutdown_code_t</a> e)</td></tr>
 <tr class="memdesc:af440ee7d894af26e120e9a259bc960d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">makes <code>std::error_code</code> from rotor shutdown code enumerations <br /></td></tr>
 <tr class="separator:af440ee7d894af26e120e9a259bc960d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afff8ca6ba3cb2e1043f4bd5fa482a747" id="r_afff8ca6ba3cb2e1043f4bd5fa482a747"><td class="memItemLeft" align="right" valign="top"><a id="afff8ca6ba3cb2e1043f4bd5fa482a747" name="afff8ca6ba3cb2e1043f4bd5fa482a747"></a>
-ROTOR_API <a class="el" href="namespacerotor.html#a3e69eb003219ace1a9962825e0188d53">extended_error_ptr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>make_error</b> (const std::string &amp;context_, const std::error_code &amp;ec_, const <a class="el" href="namespacerotor.html#a3e69eb003219ace1a9962825e0188d53">extended_error_ptr_t</a> &amp;next_={}) noexcept</td></tr>
-<tr class="memdesc:afff8ca6ba3cb2e1043f4bd5fa482a747"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructs smart pointer to the extened error <br /></td></tr>
-<tr class="separator:afff8ca6ba3cb2e1043f4bd5fa482a747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabba9355a51645426d433d170e3c1805" id="r_aabba9355a51645426d433d170e3c1805"><td class="memItemLeft" align="right" valign="top"><a id="aabba9355a51645426d433d170e3c1805" name="aabba9355a51645426d433d170e3c1805"></a>
+ROTOR_API <a class="el" href="namespacerotor.html#a3e69eb003219ace1a9962825e0188d53">extended_error_ptr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>make_error</b> (const std::string &amp;context_, const std::error_code &amp;ec_, const <a class="el" href="namespacerotor.html#a3e69eb003219ace1a9962825e0188d53">extended_error_ptr_t</a> &amp;next_={}, const <a class="el" href="namespacerotor.html#a0196761fe474bd8dc17ac4ff9f0e2f95">message_ptr_t</a> &amp;request_={}) noexcept</td></tr>
+<tr class="memdesc:aabba9355a51645426d433d170e3c1805"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructs smart pointer to the extened error <br /></td></tr>
+<tr class="separator:aabba9355a51645426d433d170e3c1805"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9041fc7100e15a7bcccdd18f00c129e5" id="r_a9041fc7100e15a7bcccdd18f00c129e5"><td class="memTemplParams" colspan="2"><a id="a9041fc7100e15a7bcccdd18f00c129e5" name="a9041fc7100e15a7bcccdd18f00c129e5"></a>
 template&lt;typename M , typename F &gt; </td></tr>
 <tr class="memitem:a9041fc7100e15a7bcccdd18f00c129e5"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="structrotor_1_1lambda__holder__t.html">lambda_holder_t</a>&lt; M, F &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>lambda</b> (F &amp;&amp;fn)</td></tr>

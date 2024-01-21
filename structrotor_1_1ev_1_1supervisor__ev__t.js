@@ -11,7 +11,6 @@ var structrotor_1_1ev_1_1supervisor__ev__t =
     [ "do_initialize", "structrotor_1_1ev_1_1supervisor__ev__t.html#ab334b7fa3ddbe137ec3182ff112571b0", null ],
     [ "do_start_timer", "structrotor_1_1ev_1_1supervisor__ev__t.html#abb6e6e97a502bc303589311bc5bdf1bc", null ],
     [ "enqueue", "structrotor_1_1ev_1_1supervisor__ev__t.html#ad6ba531802a3450bd6ba8413ec0549cd", null ],
-    [ "get_context", "structrotor_1_1ev_1_1supervisor__ev__t.html#a3d83f8ff59c3099ba8ccd9e8122d5be2", null ],
     [ "get_loop", "structrotor_1_1ev_1_1supervisor__ev__t.html#a56424134eca14e9844d05f737f5e42cd", null ],
     [ "on_async", "structrotor_1_1ev_1_1supervisor__ev__t.html#a7db345bced6e0114d3c1f782f4aac5da", null ],
     [ "shutdown", "structrotor_1_1ev_1_1supervisor__ev__t.html#a5a83c7927398b1efaa8ed05e3fc6709e", null ],

@@ -101,7 +101,18 @@ $(document).ready(function(){initNavTree('md__2home_2b_2development_2cpp_2cpp-ro
   <div class="headertitle"><div class="title">Changelog</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2>0.26 (08-Jan-2024)</h2>
+<div class="textblock"><h2>0.27 (21-Jan-2024)</h2>
+<ul>
+<li>[feature] new interface <code>message_visitor_t</code></li>
+<li>[feature] new interface <code>message_stringifier_t</code> and the default implementation <code>default_stringifier_t</code> which allows to dump messages. It is not a production but a diagnostic/debug tool, due to performance restrictions.</li>
+<li>[feature] <code>system_context_t</code> provides a reference to default <code>message_stringifier_t</code>; it is possible to have a custom one</li>
+<li>[feature, breaking] <code>extended_error_t</code> holds a reference to a request message, which caused an error</li>
+<li>[examples, tests, win32] fix <code>ev</code> examples and tests</li>
+<li>[example] modernize <code>examples/thread/sha512.cpp</code> to use recent <code>openssl</code> version</li>
+<li>[breaking] cmake requirements are lowered to <code>3.15</code></li>
+<li>[breaking] fix minor compilation warnings</li>
+</ul>
+<h2>0.26 (08-Jan-2024)</h2>
 <ul>
 <li>[feature] <code>start_timer</code> callback not only method, but any invocable</li>
 <li>[feature, conan] <code>enable_ev</code> option which add <code>libev</code></li>

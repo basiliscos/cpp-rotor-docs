@@ -46,6 +46,9 @@ var annotated_dup =
         [ "supervisor_config_ev_t", "structrotor_1_1ev_1_1supervisor__config__ev__t.html", "structrotor_1_1ev_1_1supervisor__config__ev__t" ],
         [ "supervisor_ev_t", "structrotor_1_1ev_1_1supervisor__ev__t.html", "structrotor_1_1ev_1_1supervisor__ev__t" ]
       ] ],
+      [ "misc", null, [
+        [ "default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", "structrotor_1_1misc_1_1default__stringifier__t" ]
+      ] ],
       [ "payload", "namespacerotor_1_1payload.html", [
         [ "commit_unsubscription_t", "structrotor_1_1payload_1_1commit__unsubscription__t.html", "structrotor_1_1payload_1_1commit__unsubscription__t" ],
         [ "create_actor_t", "structrotor_1_1payload_1_1create__actor__t.html", "structrotor_1_1payload_1_1create__actor__t" ],
@@ -122,7 +125,9 @@ var annotated_dup =
       [ "handler_traits< void(A::*)(M &)>", "structrotor_1_1handler__traits_3_01void_07A_1_1_5_08_07M_01_6_08_4.html", "structrotor_1_1handler__traits_3_01void_07A_1_1_5_08_07M_01_6_08_4" ],
       [ "lambda_holder_t", "structrotor_1_1lambda__holder__t.html", "structrotor_1_1lambda__holder__t" ],
       [ "message_base_t", "structrotor_1_1message__base__t.html", "structrotor_1_1message__base__t" ],
+      [ "message_stringifier_t", "structrotor_1_1message__stringifier__t.html", "structrotor_1_1message__stringifier__t" ],
       [ "message_t", "structrotor_1_1message__t.html", "structrotor_1_1message__t" ],
+      [ "message_visitor_t", "structrotor_1_1message__visitor__t.html", "structrotor_1_1message__visitor__t" ],
       [ "plugin_storage_base_t", "structrotor_1_1plugin__storage__base__t.html", "structrotor_1_1plugin__storage__base__t" ],
       [ "plugin_storage_t", "structrotor_1_1plugin__storage__t.html", "structrotor_1_1plugin__storage__t" ],
       [ "registry_t", "structrotor_1_1registry__t.html", "structrotor_1_1registry__t" ],

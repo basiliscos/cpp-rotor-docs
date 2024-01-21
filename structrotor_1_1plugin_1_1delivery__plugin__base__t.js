@@ -6,5 +6,6 @@ var structrotor_1_1plugin_1_1delivery__plugin__base__t =
     [ "process", "structrotor_1_1plugin_1_1delivery__plugin__base__t.html#ac187fcdc12df506ef169ae1789ef92f8", null ],
     [ "address", "structrotor_1_1plugin_1_1delivery__plugin__base__t.html#a5f7a46ae4b2493f9b41e9df62dc98f20", null ],
     [ "queue", "structrotor_1_1plugin_1_1delivery__plugin__base__t.html#a1ebc8cf9cca7c98449a1a97fad39fb03", null ],
+    [ "stringifier", "structrotor_1_1plugin_1_1delivery__plugin__base__t.html#a10f339bedf4887086ddc86dfe3f2dafd", null ],
     [ "subscription_map", "structrotor_1_1plugin_1_1delivery__plugin__base__t.html#a22eb030b870a83c9df7d34abb0fdcc24", null ]
 ];

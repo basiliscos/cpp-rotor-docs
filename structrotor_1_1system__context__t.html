@@ -100,6 +100,7 @@ $(document).ready(function(){initNavTree('structrotor_1_1system__context__t.html
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="structrotor_1_1system__context__t-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">rotor::system_context_t Struct Reference</div></div>
@@ -150,6 +151,16 @@ template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a3194550467d61b086434a7b2c2bab2f2"><td class="memTemplItemLeft" align="right" valign="top">auto &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>access</b> () noexcept</td></tr>
 <tr class="memdesc:a3194550467d61b086434a7b2c2bab2f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">generic non-public fields accessor <br /></td></tr>
 <tr class="separator:a3194550467d61b086434a7b2c2bab2f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dd89dd69838a28863cd50939066f7dd" id="r_a3dd89dd69838a28863cd50939066f7dd"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structrotor_1_1message__stringifier__t.html">message_stringifier_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1system__context__t.html#a3dd89dd69838a28863cd50939066f7dd">get_stringifier</a> ()</td></tr>
+<tr class="memdesc:a3dd89dd69838a28863cd50939066f7dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the default stringifier  <br /></td></tr>
+<tr class="separator:a3dd89dd69838a28863cd50939066f7dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:af1c813a60b02e61c045f25214c2f7efc" id="r_af1c813a60b02e61c045f25214c2f7efc"><td class="memItemLeft" align="right" valign="top"><a id="af1c813a60b02e61c045f25214c2f7efc" name="af1c813a60b02e61c045f25214c2f7efc"></a>
+virtual <a class="el" href="namespacerotor.html#ad89ad6996d59fce7a364c62ccce32fb7">message_stringifier_ptr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>make_stringifier</b> () const noexcept</td></tr>
+<tr class="memdesc:af1c813a60b02e61c045f25214c2f7efc"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructs message stringifier <br /></td></tr>
+<tr class="separator:af1c813a60b02e61c045f25214c2f7efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -160,6 +171,26 @@ struct&#160;</td><td class="memItemRight" valign="bottom"><b>supervisor_t</b></t
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The system context holds root <code><a class="el" href="structrotor_1_1supervisor__t.html">supervisor_t</a></code> (intrusive pointer) and may be loop-related details in derived classes. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3dd89dd69838a28863cd50939066f7dd" name="a3dd89dd69838a28863cd50939066f7dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dd89dd69838a28863cd50939066f7dd">&#9670;&#160;</a></span>get_stringifier()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="structrotor_1_1message__stringifier__t.html">message_stringifier_t</a> &amp; rotor::system_context_t::get_stringifier </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>returns the default stringifier </p>
+<p>The stringifier is lazily constructed on demand via <code>make_stringifier</code> method. </p>
+
+</div>
+</div>
 <a id="a3093d1f26bdc7ba1af44652f78cf75ac" name="a3093d1f26bdc7ba1af44652f78cf75ac"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3093d1f26bdc7ba1af44652f78cf75ac">&#9670;&#160;</a></span>identity()</h2>
 

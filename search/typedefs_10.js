@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wrapped_5ft_0',['wrapped_t',['../structrotor_1_1request__traits__t_1_1request.html#ac13878e7c29130686122245f66896c0e',1,'rotor::request_traits_t::request::wrapped_t'],['../structrotor_1_1request__traits__t_1_1response.html#aa1b6ed6a489e33cd55c586b183887a62',1,'rotor::request_traits_t::response::wrapped_t']]]
+  ['visitor_5ft_0',['visitor_t',['../structrotor_1_1request__traits__t_1_1request.html#a5dd38f16515615b7eb15b5b0c8d688a2',1,'rotor::request_traits_t::request::visitor_t'],['../structrotor_1_1request__traits__t_1_1response.html#aa715d787def6caa75bbb0a3a4d90aa81',1,'rotor::request_traits_t::response::visitor_t'],['../structrotor_1_1request__traits__t_1_1cancel.html#aa5f08002fcae53d3c3a719af97bf1c53',1,'rotor::request_traits_t::cancel::visitor_t']]]
 ];
