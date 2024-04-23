@@ -363,7 +363,7 @@ $(document).ready(function(){initNavTree('md__2home_2b_2development_2cpp_2cpp-ro
 <div class="line">        } <span class="keywordflow">else</span> {</div>
 <div class="line">            <span class="comment">// IRL, it should be your custom error codes</span></div>
 <div class="line">            <span class="keyword">auto</span> ec = std::make_error_code(std::errc::invalid_argument);</div>
-<div class="line">            <a class="code hl_function" href="structrotor_1_1actor__base__t.html#acba9a9c233048b4772763a30d30c8453">reply_with_error</a>(req, <a class="code hl_function" href="structrotor_1_1actor__base__t.html#a741257a32c58047bac7cb41e395e45a6">make_error</a>(ec));</div>
+<div class="line">            <a class="code hl_function" href="structrotor_1_1actor__base__t.html#acba9a9c233048b4772763a30d30c8453">reply_with_error</a>(req, <a class="code hl_function" href="structrotor_1_1actor__base__t.html#a25c7a3491a50ea11b6d4064cee849828">make_error</a>(ec));</div>
 <div class="line">        }</div>
 <div class="line">    }</div>
 <div class="line">};</div>
@@ -411,7 +411,7 @@ $(document).ready(function(){initNavTree('md__2home_2b_2development_2cpp_2cpp-ro
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="ttc" id="aasio_8hpp_html"><div class="ttname"><a href="asio_8hpp.html">asio.hpp</a></div></div>
-<div class="ttc" id="astructrotor_1_1actor__base__t_html_a741257a32c58047bac7cb41e395e45a6"><div class="ttname"><a href="structrotor_1_1actor__base__t.html#a741257a32c58047bac7cb41e395e45a6">rotor::actor_base_t::make_error</a></div><div class="ttdeci">extended_error_ptr_t make_error(const std::error_code &amp;ec, const extended_error_ptr_t &amp;next={}, const message_ptr_t &amp;request={}) noexcept</div><div class="ttdoc">makes extended error within the context of the actor</div></div>
+<div class="ttc" id="astructrotor_1_1actor__base__t_html_a25c7a3491a50ea11b6d4064cee849828"><div class="ttname"><a href="structrotor_1_1actor__base__t.html#a25c7a3491a50ea11b6d4064cee849828">rotor::actor_base_t::make_error</a></div><div class="ttdeci">extended_error_ptr_t make_error(const std::error_code &amp;ec, const extended_error_ptr_t &amp;next={}, const message_ptr_t &amp;request={}) const noexcept</div><div class="ttdoc">makes extended error within the context of the actor</div></div>
 <div class="ttc" id="astructrotor_1_1actor__base__t_html_acba9a9c233048b4772763a30d30c8453"><div class="ttname"><a href="structrotor_1_1actor__base__t.html#acba9a9c233048b4772763a30d30c8453">rotor::actor_base_t::reply_with_error</a></div><div class="ttdeci">void reply_with_error(Request &amp;message, const extended_error_ptr_t &amp;ec)</div><div class="ttdoc">convenient method for constructing and sending error response to a request</div><div class="ttdef"><b>Definition</b> supervisor.h:596</div></div>
 <div class="ttc" id="astructrotor_1_1actor__base__t_html_aec6c48a92d2df207e8c4739d26e3c38b"><div class="ttname"><a href="structrotor_1_1actor__base__t.html#aec6c48a92d2df207e8c4739d26e3c38b">rotor::actor_base_t::reply_to</a></div><div class="ttdeci">void reply_to(Request &amp;message, Args &amp;&amp;...args)</div><div class="ttdoc">convenient method for constructing and sending response to a request</div><div class="ttdef"><b>Definition</b> supervisor.h:592</div></div>
 </div><!-- fragment --><p>Output sample: </p><div class="fragment"><div class="line">in = 25, out = 5</div>
@@ -462,7 +462,7 @@ $(document).ready(function(){initNavTree('md__2home_2b_2development_2cpp_2cpp-ro
 <div class="line">        } <span class="keywordflow">else</span> {</div>
 <div class="line">            <span class="comment">// IRL, it should be your custom error codes</span></div>
 <div class="line">            <span class="keyword">auto</span> ec = std::make_error_code(std::errc::invalid_argument);</div>
-<div class="line">            <a class="code hl_function" href="structrotor_1_1actor__base__t.html#acba9a9c233048b4772763a30d30c8453">reply_with_error</a>(req, <a class="code hl_function" href="structrotor_1_1actor__base__t.html#a741257a32c58047bac7cb41e395e45a6">make_error</a>(ec));</div>
+<div class="line">            <a class="code hl_function" href="structrotor_1_1actor__base__t.html#acba9a9c233048b4772763a30d30c8453">reply_with_error</a>(req, <a class="code hl_function" href="structrotor_1_1actor__base__t.html#a25c7a3491a50ea11b6d4064cee849828">make_error</a>(ec));</div>
 <div class="line">        }</div>
 <div class="line">    }</div>
 <div class="line">};</div>

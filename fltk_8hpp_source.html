@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>rotor: rotor::message_visitior_t Struct Reference</title>
+<title>rotor: /home/b/development/cpp/cpp-rotor/include/rotor/fltk.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search/",'.html');
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('structrotor_1_1message__visitior__t.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('fltk_8hpp_source.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -98,77 +98,33 @@ $(document).ready(function(){initNavTree('structrotor_1_1message__visitior__t.ht
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="structrotor_1_1message__visitior__t-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">rotor::message_visitior_t Struct Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+  <div class="headertitle"><div class="title">fltk.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Abstract message visitor interface.  
- <a href="structrotor_1_1message__visitior__t.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="message_8h_source.html">message.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for rotor::message_visitior_t:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="structrotor_1_1message__visitior__t.png" usemap="#rotor::message_5Fvisitior_5Ft_map" alt=""/>
-  <map id="rotor::message_5Fvisitior_5Ft_map" name="rotor::message_5Fvisitior_5Ft_map">
-<area href="structrotor_1_1misc_1_1default__stringifier__t.html" title="Default stringifier of rotor messages." alt="rotor::misc::default_stringifier_t" shape="rect" coords="0,56,184,80"/>
-  </map>
-</div></div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a0a3108332e773e1db6937a456b6cefba" id="r_a0a3108332e773e1db6937a456b6cefba"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1message__visitior__t.html#a0a3108332e773e1db6937a456b6cefba">try_visit</a> (const <a class="el" href="structrotor_1_1message__base__t.html">message_base_t</a> &amp;message) const =0</td></tr>
-<tr class="memdesc:a0a3108332e773e1db6937a456b6cefba"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns <code>true</code> if a message has been successfully processed  <br /></td></tr>
-<tr class="separator:a0a3108332e773e1db6937a456b6cefba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Abstract message visitor interface. </p>
-<p>As the message type is dynamic and might not be known at compile type, the <code>try_visit</code> method returns <code>true</code> or <code>false</code> to indicate whether a message has been succesfully processed. If it returns <code>false</code>, that might indicate, that some other message visitor should try a luck.</p>
-<p>It should be noted, that it is potentially slow (not very performat) as it invoves multiple visitors and multiple message try attemps (the doulbe dispatch visitor pattern is not available). </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0a3108332e773e1db6937a456b6cefba" name="a0a3108332e773e1db6937a456b6cefba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a3108332e773e1db6937a456b6cefba">&#9670;&#160;</a></span>try_visit()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool rotor::message_visitior_t::try_visit </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structrotor_1_1message__base__t.html">message_base_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>message</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>returns <code>true</code> if a message has been successfully processed </p>
-
-<p>Implemented in <a class="el" href="structrotor_1_1misc_1_1default__stringifier__t.html#afcaf213c98e5a46e9b9396c58ff93dba">rotor::misc::default_stringifier_t</a>.</p>
-
-</div>
-</div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li>/home/b/development/cpp/cpp-rotor/include/rotor/<a class="el" href="message_8h_source.html">message.h</a></li>
-</ul>
-</div><!-- contents -->
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// Copyright (c) 2019-2024 Ivan Baidakou (basiliscos) (the dot dmol at gmail dot com)</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">//</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">// Distributed under the MIT Software License</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">//</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;rotor/fltk/supervisor_config_fltk.h&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;rotor/fltk/supervisor_fltk.h&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;rotor/fltk/system_context_fltk.h&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacerotor.html">rotor</a> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="namespacerotor_1_1fltk.html">   20</a></span><span class="keyword">namespace </span>fltk {}</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>} <span class="comment">// namespace rotor</span></div>
+<div class="ttc" id="anamespacerotor_html"><div class="ttname"><a href="namespacerotor.html">rotor</a></div><div class="ttdoc">Basic namespace for all rotor functionalities.</div><div class="ttdef"><b>Definition</b> rotor.hpp:21</div></div>
+</div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespacerotor.html">rotor</a></li><li class="navelem"><a class="el" href="structrotor_1_1message__visitior__t.html">message_visitior_t</a></li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_da0296186b2d7ca79d094f0811fc0b6f.html">rotor</a></li><li class="navelem"><b>fltk.hpp</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>

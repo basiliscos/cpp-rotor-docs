@@ -2,6 +2,7 @@ var namespacerotor =
 [
     [ "asio", "namespacerotor_1_1asio.html", "namespacerotor_1_1asio" ],
     [ "ev", "namespacerotor_1_1ev.html", "namespacerotor_1_1ev" ],
+    [ "fltk", "namespacerotor_1_1fltk.html", "namespacerotor_1_1fltk" ],
     [ "message", "namespacerotor_1_1message.html", [
       [ "commit_unsubscription_t", "namespacerotor_1_1message.html#aeddd5eeaace3e6eb5eab8b2a7bb8b6f3", null ],
       [ "create_actor_t", "namespacerotor_1_1message.html#a3188357479e723c5d650203351b35186", null ],

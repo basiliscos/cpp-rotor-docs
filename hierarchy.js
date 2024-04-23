@@ -22,6 +22,7 @@ var hierarchy =
         [ "rotor::supervisor_t", "structrotor_1_1supervisor__t.html", [
           [ "rotor::asio::supervisor_asio_t", "structrotor_1_1asio_1_1supervisor__asio__t.html", null ],
           [ "rotor::ev::supervisor_ev_t", "structrotor_1_1ev_1_1supervisor__ev__t.html", null ],
+          [ "rotor::fltk::supervisor_fltk_t", "structrotor_1_1fltk_1_1supervisor__fltk__t.html", null ],
           [ "rotor::thread::supervisor_thread_t", "structrotor_1_1thread_1_1supervisor__thread__t.html", null ],
           [ "rotor::wx::supervisor_wx_t", "structrotor_1_1wx_1_1supervisor__wx__t.html", null ]
         ] ]
@@ -178,6 +179,7 @@ var hierarchy =
     [ "rotor::timer_handler_base_t", "structrotor_1_1timer__handler__base__t.html", [
       [ "rotor::timer_handler_t< Object, Method >", "structrotor_1_1timer__handler__t.html", null ]
     ] ],
+    [ "rotor::fltk::supervisor_fltk_t::timer_t", "structrotor_1_1fltk_1_1supervisor__fltk__t_1_1timer__t.html", null ],
     [ "std::true_type", null, [
       [ "std::is_error_code_enum< rotor::error_code_t >", "structstd_1_1is__error__code__enum_3_01rotor_1_1error__code__t_01_4.html", null ],
       [ "std::is_error_code_enum< rotor::shutdown_code_t >", "structstd_1_1is__error__code__enum_3_01rotor_1_1shutdown__code__t_01_4.html", null ]

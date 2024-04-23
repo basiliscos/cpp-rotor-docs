@@ -594,8 +594,8 @@ $(document).ready(function(){initNavTree('supervisor_8h_source.html',''); initRe
 <div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Actor&gt;</div>
 <div class="foldopen" id="foldopen00601" data-start="{" data-end="}">
 <div class="line"><a id="l00601" name="l00601"></a><span class="lineno"><a class="line" href="structrotor_1_1actor__config__builder__t.html#a7858790e4edf85a9bc2bb38cbc606e38">  601</a></span><a class="code hl_function" href="structrotor_1_1actor__config__builder__t.html#a7858790e4edf85a9bc2bb38cbc606e38">actor_config_builder_t&lt;Actor&gt;::actor_config_builder_t</a>(<a class="code hl_typedef" href="structrotor_1_1actor__config__builder__t.html#adfe05739eb845e9da27d67d1ce9453f7">install_action_t</a> &amp;&amp;action_, <a class="code hl_struct" href="structrotor_1_1supervisor__t.html">supervisor_t</a> *supervisor_)</div>
-<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>    : install_action{std::move(action_)}, supervisor{supervisor_},</div>
-<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>      system_context{*supervisor_-&gt;context}, config{supervisor_} {</div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span>    : install_action{std::move(action_)}, supervisor{supervisor_}, system_context{*supervisor_-&gt;context},</div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>      config{supervisor_} {</div>
 <div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>    init_ctor();</div>
 <div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>}</div>
 </div>

@@ -46,6 +46,9 @@ var annotated_dup =
         [ "supervisor_config_ev_t", "structrotor_1_1ev_1_1supervisor__config__ev__t.html", "structrotor_1_1ev_1_1supervisor__config__ev__t" ],
         [ "supervisor_ev_t", "structrotor_1_1ev_1_1supervisor__ev__t.html", "structrotor_1_1ev_1_1supervisor__ev__t" ]
       ] ],
+      [ "fltk", "namespacerotor_1_1fltk.html", [
+        [ "supervisor_fltk_t", "structrotor_1_1fltk_1_1supervisor__fltk__t.html", "structrotor_1_1fltk_1_1supervisor__fltk__t" ]
+      ] ],
       [ "misc", null, [
         [ "default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", "structrotor_1_1misc_1_1default__stringifier__t" ]
       ] ],

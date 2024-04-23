@@ -120,11 +120,12 @@ Inheritance diagram for rotor::supervisor_t:</div>
  <div class="center">
   <img src="structrotor_1_1supervisor__t.png" usemap="#rotor::supervisor_5Ft_map" alt=""/>
   <map id="rotor::supervisor_5Ft_map" name="rotor::supervisor_5Ft_map">
-<area href="structrotor_1_1actor__base__t.html" title="universal primitive of concurrent computation" alt="rotor::actor_base_t" shape="rect" coords="315,56,515,80"/>
+<area href="structrotor_1_1actor__base__t.html" title="universal primitive of concurrent computation" alt="rotor::actor_base_t" shape="rect" coords="420,56,620,80"/>
 <area href="structrotor_1_1asio_1_1supervisor__asio__t.html" title="delivers rotor-messages on top of boost asio event loop using strand for serialization" alt="rotor::asio::supervisor_asio_t" shape="rect" coords="0,168,200,192"/>
 <area href="structrotor_1_1ev_1_1supervisor__ev__t.html" title="delivers rotor-messages on top of libev event loop" alt="rotor::ev::supervisor_ev_t" shape="rect" coords="210,168,410,192"/>
-<area href="structrotor_1_1thread_1_1supervisor__thread__t.html" title="pure thread supervisor dedicated for blocking I/O or computing operations" alt="rotor::thread::supervisor_thread_t" shape="rect" coords="420,168,620,192"/>
-<area href="structrotor_1_1wx_1_1supervisor__wx__t.html" title="delivers rotor-messages on top of wx event" alt="rotor::wx::supervisor_wx_t" shape="rect" coords="630,168,830,192"/>
+<area href="structrotor_1_1fltk_1_1supervisor__fltk__t.html" title="delivers rotor-messages on top of fltk async callback" alt="rotor::fltk::supervisor_fltk_t" shape="rect" coords="420,168,620,192"/>
+<area href="structrotor_1_1thread_1_1supervisor__thread__t.html" title="pure thread supervisor dedicated for blocking I/O or computing operations" alt="rotor::thread::supervisor_thread_t" shape="rect" coords="630,168,830,192"/>
+<area href="structrotor_1_1wx_1_1supervisor__wx__t.html" title="delivers rotor-messages on top of wx event" alt="rotor::wx::supervisor_wx_t" shape="rect" coords="840,168,1040,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -476,10 +477,10 @@ template&lt;typename Delegate , typename Method &gt; </td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>assign_shutdown_reason</b> (<a class="el" href="namespacerotor.html#a3e69eb003219ace1a9962825e0188d53">extended_error_ptr_t</a> reason) noexcept</td></tr>
 <tr class="memdesc:afb6cfd278a0be8cc18e6e5b953d971f8 inherit pro_methods_structrotor_1_1actor__base__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper-method, which assigns shutdown reason if it isn't set <br /></td></tr>
 <tr class="separator:afb6cfd278a0be8cc18e6e5b953d971f8 inherit pro_methods_structrotor_1_1actor__base__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a741257a32c58047bac7cb41e395e45a6 inherit pro_methods_structrotor_1_1actor__base__t" id="r_a741257a32c58047bac7cb41e395e45a6"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="namespacerotor.html#a3e69eb003219ace1a9962825e0188d53">extended_error_ptr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>make_error</b> (const std::error_code &amp;ec, const <a class="el" href="namespacerotor.html#a3e69eb003219ace1a9962825e0188d53">extended_error_ptr_t</a> &amp;next={}, const <a class="el" href="namespacerotor.html#a0196761fe474bd8dc17ac4ff9f0e2f95">message_ptr_t</a> &amp;<a class="el" href="structrotor_1_1actor__base__t.html#ac303ebfe765b9dfb9db27935eb0ec2fa">request</a>={}) noexcept</td></tr>
-<tr class="memdesc:a741257a32c58047bac7cb41e395e45a6 inherit pro_methods_structrotor_1_1actor__base__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">makes extended error within the context of the actor <br /></td></tr>
-<tr class="separator:a741257a32c58047bac7cb41e395e45a6 inherit pro_methods_structrotor_1_1actor__base__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25c7a3491a50ea11b6d4064cee849828 inherit pro_methods_structrotor_1_1actor__base__t" id="r_a25c7a3491a50ea11b6d4064cee849828"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="namespacerotor.html#a3e69eb003219ace1a9962825e0188d53">extended_error_ptr_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>make_error</b> (const std::error_code &amp;ec, const <a class="el" href="namespacerotor.html#a3e69eb003219ace1a9962825e0188d53">extended_error_ptr_t</a> &amp;next={}, const <a class="el" href="namespacerotor.html#a0196761fe474bd8dc17ac4ff9f0e2f95">message_ptr_t</a> &amp;<a class="el" href="structrotor_1_1actor__base__t.html#ac303ebfe765b9dfb9db27935eb0ec2fa">request</a>={}) const noexcept</td></tr>
+<tr class="memdesc:a25c7a3491a50ea11b6d4064cee849828 inherit pro_methods_structrotor_1_1actor__base__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">makes extended error within the context of the actor <br /></td></tr>
+<tr class="separator:a25c7a3491a50ea11b6d4064cee849828 inherit pro_methods_structrotor_1_1actor__base__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef01ab0d16fb9dc34e9827a62536ed5b inherit pro_methods_structrotor_1_1actor__base__t" id="r_aef01ab0d16fb9dc34e9827a62536ed5b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1actor__base__t.html#aef01ab0d16fb9dc34e9827a62536ed5b">on_unlink</a> (const <a class="el" href="namespacerotor.html#a25565725c774761a67bd766d93617326">address_ptr_t</a> &amp;server_addr) noexcept</td></tr>
 <tr class="memdesc:aef01ab0d16fb9dc34e9827a62536ed5b inherit pro_methods_structrotor_1_1actor__base__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">notification, when actor has been unlinked from server actor  <br /></td></tr>
 <tr class="separator:aef01ab0d16fb9dc34e9827a62536ed5b inherit pro_methods_structrotor_1_1actor__base__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -724,7 +725,7 @@ static const constexpr std::uint32_t&#160;</td><td class="memItemRight" valign="
 
 <p>cancels timer (to be implemented in descendants) </p>
 
-<p>Implemented in <a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html#a3c8e5a3322c97a7982fccc16717a318f">rotor::asio::supervisor_asio_t</a>, <a class="el" href="structrotor_1_1ev_1_1supervisor__ev__t.html#a0d7c870d5632fd755352c8b38342c772">rotor::ev::supervisor_ev_t</a>, <a class="el" href="structrotor_1_1thread_1_1supervisor__thread__t.html#a6af3c6e123bbce7d665452888d7b3f5b">rotor::thread::supervisor_thread_t</a>, and <a class="el" href="structrotor_1_1wx_1_1supervisor__wx__t.html#af2908a29e7854991288ec7c2cc1b9fca">rotor::wx::supervisor_wx_t</a>.</p>
+<p>Implemented in <a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html#a3c8e5a3322c97a7982fccc16717a318f">rotor::asio::supervisor_asio_t</a>, <a class="el" href="structrotor_1_1ev_1_1supervisor__ev__t.html#a0d7c870d5632fd755352c8b38342c772">rotor::ev::supervisor_ev_t</a>, <a class="el" href="structrotor_1_1fltk_1_1supervisor__fltk__t.html#a3bbca1941fb4f358761701386ee7b7d0">rotor::fltk::supervisor_fltk_t</a>, <a class="el" href="structrotor_1_1thread_1_1supervisor__thread__t.html#a6af3c6e123bbce7d665452888d7b3f5b">rotor::thread::supervisor_thread_t</a>, and <a class="el" href="structrotor_1_1wx_1_1supervisor__wx__t.html#af2908a29e7854991288ec7c2cc1b9fca">rotor::wx::supervisor_wx_t</a>.</p>
 
 </div>
 </div>
@@ -919,7 +920,7 @@ template&lt;typename T , typename... Args&gt; </div>
 
 <p>starts non-recurring timer (to be implemented in descendants) </p>
 
-<p>Implemented in <a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html#a7b71181d44628f31e5fafbf2516f8be2">rotor::asio::supervisor_asio_t</a>, <a class="el" href="structrotor_1_1ev_1_1supervisor__ev__t.html#abb6e6e97a502bc303589311bc5bdf1bc">rotor::ev::supervisor_ev_t</a>, <a class="el" href="structrotor_1_1thread_1_1supervisor__thread__t.html#a6d19d342ccc2157ce357fd679b9a1c47">rotor::thread::supervisor_thread_t</a>, and <a class="el" href="structrotor_1_1wx_1_1supervisor__wx__t.html#a7b1c0351197115afa036e03381d8a30d">rotor::wx::supervisor_wx_t</a>.</p>
+<p>Implemented in <a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html#a7b71181d44628f31e5fafbf2516f8be2">rotor::asio::supervisor_asio_t</a>, <a class="el" href="structrotor_1_1ev_1_1supervisor__ev__t.html#abb6e6e97a502bc303589311bc5bdf1bc">rotor::ev::supervisor_ev_t</a>, <a class="el" href="structrotor_1_1fltk_1_1supervisor__fltk__t.html#af3038816cc949a4da0cbd9f4cc6e4446">rotor::fltk::supervisor_fltk_t</a>, <a class="el" href="structrotor_1_1thread_1_1supervisor__thread__t.html#a6d19d342ccc2157ce357fd679b9a1c47">rotor::thread::supervisor_thread_t</a>, and <a class="el" href="structrotor_1_1wx_1_1supervisor__wx__t.html#a7b1c0351197115afa036e03381d8a30d">rotor::wx::supervisor_wx_t</a>.</p>
 
 </div>
 </div>
@@ -952,7 +953,7 @@ template&lt;typename T , typename... Args&gt; </div>
 <p>The thread-safety should be guaranteed by derived class and/or used event-loop.</p>
 <p>This method is used for messaging between supervisors with different localities, event loops or threads. </p>
 
-<p>Implemented in <a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html#a0ce7fa81f4d6dc519ff9c62b1d5123c9">rotor::asio::supervisor_asio_t</a>, <a class="el" href="structrotor_1_1ev_1_1supervisor__ev__t.html#ad6ba531802a3450bd6ba8413ec0549cd">rotor::ev::supervisor_ev_t</a>, <a class="el" href="structrotor_1_1thread_1_1supervisor__thread__t.html#a7c133690654d46384dd8f052c36417b6">rotor::thread::supervisor_thread_t</a>, and <a class="el" href="structrotor_1_1wx_1_1supervisor__wx__t.html#af4874ba9f1654776685e27bc24cb43e7">rotor::wx::supervisor_wx_t</a>.</p>
+<p>Implemented in <a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html#a0ce7fa81f4d6dc519ff9c62b1d5123c9">rotor::asio::supervisor_asio_t</a>, <a class="el" href="structrotor_1_1ev_1_1supervisor__ev__t.html#ad6ba531802a3450bd6ba8413ec0549cd">rotor::ev::supervisor_ev_t</a>, <a class="el" href="structrotor_1_1fltk_1_1supervisor__fltk__t.html#a3cffd2374d1f8a74adcdef9089402dff">rotor::fltk::supervisor_fltk_t</a>, <a class="el" href="structrotor_1_1thread_1_1supervisor__thread__t.html#a7c133690654d46384dd8f052c36417b6">rotor::thread::supervisor_thread_t</a>, and <a class="el" href="structrotor_1_1wx_1_1supervisor__wx__t.html#af4874ba9f1654776685e27bc24cb43e7">rotor::wx::supervisor_wx_t</a>.</p>
 
 </div>
 </div>
@@ -1115,7 +1116,7 @@ template&lt;typename T , typename... Args&gt; </div>
 
 <p>thread-safe version of <code>do_shutdown</code>, i.e. send shutdown request let it be processed by the supervisor </p>
 
-<p>Implemented in <a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html#aca8105b601bd027f4e50b352a3848522">rotor::asio::supervisor_asio_t</a>, <a class="el" href="structrotor_1_1ev_1_1supervisor__ev__t.html#a5a83c7927398b1efaa8ed05e3fc6709e">rotor::ev::supervisor_ev_t</a>, <a class="el" href="structrotor_1_1thread_1_1supervisor__thread__t.html#a3ff8fa372e3479ac0035010363ac9ab5">rotor::thread::supervisor_thread_t</a>, and <a class="el" href="structrotor_1_1wx_1_1supervisor__wx__t.html#a0bab7e2159eb2dd161348a791304322d">rotor::wx::supervisor_wx_t</a>.</p>
+<p>Implemented in <a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html#aca8105b601bd027f4e50b352a3848522">rotor::asio::supervisor_asio_t</a>, <a class="el" href="structrotor_1_1ev_1_1supervisor__ev__t.html#a5a83c7927398b1efaa8ed05e3fc6709e">rotor::ev::supervisor_ev_t</a>, <a class="el" href="structrotor_1_1fltk_1_1supervisor__fltk__t.html#aa563463caf5ed335973ed14c2928d7cc">rotor::fltk::supervisor_fltk_t</a>, <a class="el" href="structrotor_1_1thread_1_1supervisor__thread__t.html#a3ff8fa372e3479ac0035010363ac9ab5">rotor::thread::supervisor_thread_t</a>, and <a class="el" href="structrotor_1_1wx_1_1supervisor__wx__t.html#a0bab7e2159eb2dd161348a791304322d">rotor::wx::supervisor_wx_t</a>.</p>
 
 </div>
 </div>
@@ -1206,7 +1207,7 @@ template&lt;typename T , typename... Args&gt; </div>
 <p>thread-safe version of <code>do_process</code> </p>
 <p>Starts supervisor to processing messages queue in safe thread/loop context. Once it becomes empty, the method returns </p>
 
-<p>Implemented in <a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html#abf7b41d9222da529dcf4bb62ef0a28d3">rotor::asio::supervisor_asio_t</a>, <a class="el" href="structrotor_1_1ev_1_1supervisor__ev__t.html#a68205020bfc896da54028b40abac942d">rotor::ev::supervisor_ev_t</a>, <a class="el" href="structrotor_1_1thread_1_1supervisor__thread__t.html#a5e6cda689b2a123ae86bc2b7ac0039f0">rotor::thread::supervisor_thread_t</a>, and <a class="el" href="structrotor_1_1wx_1_1supervisor__wx__t.html#a41e1d0768cd53faf24a3e673dbf3d8e6">rotor::wx::supervisor_wx_t</a>.</p>
+<p>Implemented in <a class="el" href="structrotor_1_1asio_1_1supervisor__asio__t.html#abf7b41d9222da529dcf4bb62ef0a28d3">rotor::asio::supervisor_asio_t</a>, <a class="el" href="structrotor_1_1ev_1_1supervisor__ev__t.html#a68205020bfc896da54028b40abac942d">rotor::ev::supervisor_ev_t</a>, <a class="el" href="structrotor_1_1fltk_1_1supervisor__fltk__t.html#a5abd0f1b6e5865fd96c4e48a841b5b22">rotor::fltk::supervisor_fltk_t</a>, <a class="el" href="structrotor_1_1thread_1_1supervisor__thread__t.html#a5e6cda689b2a123ae86bc2b7ac0039f0">rotor::thread::supervisor_thread_t</a>, and <a class="el" href="structrotor_1_1wx_1_1supervisor__wx__t.html#a41e1d0768cd53faf24a3e673dbf3d8e6">rotor::wx::supervisor_wx_t</a>.</p>
 
 </div>
 </div>

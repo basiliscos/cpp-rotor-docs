@@ -101,7 +101,16 @@ $(document).ready(function(){initNavTree('md__2home_2b_2development_2cpp_2cpp-ro
   <div class="headertitle"><div class="title">Changelog</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2>0.29 (24-Feb-2024)</h2>
+<div class="textblock"><h2>0.30 (23-Apr-2024)</h2>
+<ul>
+<li>[feature] added <a href="https://www.fltk.org/">fltk</a>-backend</li>
+<li>[feature, conan] <code>enable_fltk</code> option which add fltk-support</li>
+<li>[example] added <code>/examples/ping-pong-fltk.cpp</code> and <code>examples/ping-pong-fltk_and_thread.cpp</code></li>
+<li>[bugfix] <a href="https://wxwidgets.org/">wx-backend</a> building and testing</li>
+<li>[improvement, breaking] output directories are set to <code>bin</code> for cmake</li>
+<li>[improvement, breaking] <code>actor_base_t::make_error()</code> is marked as const</li>
+</ul>
+<h2>0.29 (24-Feb-2024)</h2>
 <ul>
 <li>[bugfix] fix segfault in delivery plugin in debugging mode (try to set env <code>ROTOR_INSPECT_DELIVERY=99</code> to see)</li>
 </ul>
