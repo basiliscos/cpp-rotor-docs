@@ -1,5 +1,8 @@
 var NAVTREEINDEX7 =
 {
+"structrotor_1_1wrapped__response__t.html#af847fdf3862b10dcf253cc8b21987011":[11,0,0,59,9],
+"structrotor_1_1wrapped__response__t.html#af847fdf3862b10dcf253cc8b21987011":[10,0,0,56,9],
+"structrotor_1_1wx_1_1supervisor__config__wx__builder__t.html":[10,0,0,6,0],
 "structrotor_1_1wx_1_1supervisor__config__wx__builder__t.html":[11,0,0,9,0],
 "structrotor_1_1wx_1_1supervisor__config__wx__builder__t.html#a7fea334cba0060a4d8659548e72daebf":[10,0,0,6,0,2],
 "structrotor_1_1wx_1_1supervisor__config__wx__builder__t.html#a7fea334cba0060a4d8659548e72daebf":[11,0,0,9,0,2],

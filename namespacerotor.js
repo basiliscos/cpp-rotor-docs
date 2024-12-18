@@ -160,6 +160,7 @@ var namespacerotor =
     [ "make_error_code", "namespacerotor.html#a1ea17aae3706fe4a637dcf33cce3de19", null ],
     [ "make_error_code", "namespacerotor.html#af440ee7d894af26e120e9a259bc960d0", null ],
     [ "make_message", "namespacerotor.html#ad9795b95b6ad346b67ae5c1eb6c48adc", null ],
+    [ "make_routed_message", "namespacerotor.html#ac57df5f83ce423d022d487e06399666a", null ],
     [ "plugin::plugin_base_t::access< details::to::actor >", "namespacerotor.html#a740b04085e04c8d45943c9d01a47b6b8", null ],
     [ "shutdown_code_category", "namespacerotor.html#a934c9c7ae80a61e47360078904ceea4f", null ],
     [ "wrap_handler", "namespacerotor.html#aa57a3a769319496293197235aa9f652f", null ]

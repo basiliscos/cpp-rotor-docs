@@ -478,6 +478,10 @@ template&lt;typename M , typename... Args&gt; </td></tr>
 <tr class="memitem:ad9795b95b6ad346b67ae5c1eb6c48adc"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_message</b> (const <a class="el" href="namespacerotor.html#a25565725c774761a67bd766d93617326">address_ptr_t</a> &amp;addr, Args &amp;&amp;...args) -&gt; <a class="el" href="namespacerotor.html#a0196761fe474bd8dc17ac4ff9f0e2f95">message_ptr_t</a></td></tr>
 <tr class="memdesc:ad9795b95b6ad346b67ae5c1eb6c48adc"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructs message by constructing it's payload; intrusive pointer for the message is returned <br /></td></tr>
 <tr class="separator:ad9795b95b6ad346b67ae5c1eb6c48adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac57df5f83ce423d022d487e06399666a" id="r_ac57df5f83ce423d022d487e06399666a"><td class="memTemplParams" colspan="2">template&lt;typename M , typename... Args&gt; </td></tr>
+<tr class="memitem:ac57df5f83ce423d022d487e06399666a"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacerotor.html#ac57df5f83ce423d022d487e06399666a">make_routed_message</a> (const <a class="el" href="namespacerotor.html#a25565725c774761a67bd766d93617326">address_ptr_t</a> &amp;addr, const <a class="el" href="namespacerotor.html#a25565725c774761a67bd766d93617326">address_ptr_t</a> &amp;route_addr, Args &amp;&amp;...args) -&gt; <a class="el" href="namespacerotor.html#a0196761fe474bd8dc17ac4ff9f0e2f95">message_ptr_t</a></td></tr>
+<tr class="memdesc:ac57df5f83ce423d022d487e06399666a"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructs message by constructing it's payload; after delivery to destination address (to all subscribers), the message is routed the specified route_addr; intrusive pointer for the message is returned  <br /></td></tr>
+<tr class="separator:ac57df5f83ce423d022d487e06399666a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa57a3a769319496293197235aa9f652f" id="r_aa57a3a769319496293197235aa9f652f"><td class="memTemplParams" colspan="2"><a id="aa57a3a769319496293197235aa9f652f" name="aa57a3a769319496293197235aa9f652f"></a>
 template&lt;typename Handler &gt; </td></tr>
 <tr class="memitem:aa57a3a769319496293197235aa9f652f"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="namespacerotor.html#aa6f317d95700079f90a76aa56294f92f">handler_ptr_t</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>wrap_handler</b> (<a class="el" href="structrotor_1_1actor__base__t.html">actor_base_t</a> &amp;actor, Handler &amp;&amp;handler)</td></tr>
@@ -599,6 +603,53 @@ template&lt;typename Handler &gt; </td></tr>
 <tr><td class="fieldname"><a id="affb671357df7b4bed56139bff68610a0a4bba544bf219d0a11e4c9f8a2c148351" name="affb671357df7b4bed56139bff68610a0a4bba544bf219d0a11e4c9f8a2c148351"></a>shutdown_failed&#160;</td><td class="fielddoc"><p>shutdown a failed child and continue initialization </p>
 </td></tr>
 </table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ac57df5f83ce423d022d487e06399666a" name="ac57df5f83ce423d022d487e06399666a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac57df5f83ce423d022d487e06399666a">&#9670;&#160;</a></span>make_routed_message()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename M , typename... Args&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">auto rotor::make_routed_message </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespacerotor.html#a25565725c774761a67bd766d93617326">address_ptr_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="namespacerotor.html#a25565725c774761a67bd766d93617326">address_ptr_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>route_addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; <a class="el" href="namespacerotor.html#a0196761fe474bd8dc17ac4ff9f0e2f95">message_ptr_t</a> </td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>constructs message by constructing it's payload; after delivery to destination address (to all subscribers), the message is routed the specified route_addr; intrusive pointer for the message is returned </p>
+<p>The function is used for "synchronized" message post-processing, i.e. once a message has been delivered and processed by all recipients (can be zero), then it is routed to the specifed address to do cleanup.</p>
+<p>Example:</p><ol type="1">
+<li>an db-actor and opens transaction and reads data (i.e. as <code>std::string_view</code>s, owned by db)</li>
+<li>actors sends broadcast message to all interesting parties to deserialized data</li>
+<li><b>after</b> the step 2 is finished the db-actor closes transaction and releases acquired resources.</li>
+</ol>
+<p>The <code>make_routed_message</code> is needed to perform recipient-agnostic 3rd step.</p>
+<p>The alternative is to create a copy (snapshot) of data (i.e. <code>std::string</code> instead of <code>std::string_view</code>), but that seems redundant. </p>
 
 </div>
 </div>

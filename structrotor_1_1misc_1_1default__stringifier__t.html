@@ -153,9 +153,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0692a9ef4c32aabee77ed7ba53a6cfd0" id="r_a0692a9ef4c32aabee77ed7ba53a6cfd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1misc_1_1default__stringifier__t.html#a0692a9ef4c32aabee77ed7ba53a6cfd0">stringify_to</a> (std::ostream &amp;, const <a class="el" href="structrotor_1_1message__base__t.html">message_base_t</a> &amp;) const override</td></tr>
 <tr class="memdesc:a0692a9ef4c32aabee77ed7ba53a6cfd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">dumps string representation of a message to output stream  <br /></td></tr>
 <tr class="separator:a0692a9ef4c32aabee77ed7ba53a6cfd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcaf213c98e5a46e9b9396c58ff93dba" id="r_afcaf213c98e5a46e9b9396c58ff93dba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1misc_1_1default__stringifier__t.html#afcaf213c98e5a46e9b9396c58ff93dba">try_visit</a> (const <a class="el" href="structrotor_1_1message__base__t.html">message_base_t</a> &amp;message) const override</td></tr>
-<tr class="memdesc:afcaf213c98e5a46e9b9396c58ff93dba"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns <code>true</code> if a message has been successfully processed  <br /></td></tr>
-<tr class="separator:afcaf213c98e5a46e9b9396c58ff93dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83b724e6c6c36074b16ac3f340191388" id="r_a83b724e6c6c36074b16ac3f340191388"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1misc_1_1default__stringifier__t.html#a83b724e6c6c36074b16ac3f340191388">try_visit</a> (const <a class="el" href="structrotor_1_1message__base__t.html">message_base_t</a> &amp;message, void *context) const override</td></tr>
+<tr class="memdesc:a83b724e6c6c36074b16ac3f340191388"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns <code>true</code> if a message has been successfully processed  <br /></td></tr>
+<tr class="separator:a83b724e6c6c36074b16ac3f340191388"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structrotor_1_1message__stringifier__t"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structrotor_1_1message__stringifier__t')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structrotor_1_1message__stringifier__t.html">rotor::message_stringifier_t</a></td></tr>
 <tr class="memitem:a2453ae0c7ae21d4a7e956a3b54410871 inherit pub_methods_structrotor_1_1message__stringifier__t" id="r_a2453ae0c7ae21d4a7e956a3b54410871"><td class="memItemLeft" align="right" valign="top">
 virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>stringify</b> (const <a class="el" href="structrotor_1_1message__base__t.html">message_base_t</a> &amp;) const</td></tr>
@@ -165,10 +165,10 @@ virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><b>string
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_structrotor_1_1message__t_1_1visitor__t"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_structrotor_1_1message__t_1_1visitor__t')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="structrotor_1_1message__t_1_1visitor__t.html">rotor::message_t&lt; T &gt;::visitor_t</a></td></tr>
-<tr class="memitem:a1461761bfe4511fe72c18e07b1675219 inherit pro_methods_structrotor_1_1message__t_1_1visitor__t" id="r_a1461761bfe4511fe72c18e07b1675219"><td class="memItemLeft" align="right" valign="top">
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>on</b> (const <a class="el" href="structrotor_1_1message__t.html">message_t</a> &amp;)</td></tr>
-<tr class="memdesc:a1461761bfe4511fe72c18e07b1675219 inherit pro_methods_structrotor_1_1message__t_1_1visitor__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">visit concrete message <br /></td></tr>
-<tr class="separator:a1461761bfe4511fe72c18e07b1675219 inherit pro_methods_structrotor_1_1message__t_1_1visitor__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f2cf5b17937169923f778966061f4c7 inherit pro_methods_structrotor_1_1message__t_1_1visitor__t" id="r_a1f2cf5b17937169923f778966061f4c7"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>on</b> (const <a class="el" href="structrotor_1_1message__t.html">message_t</a> &amp;, void *)</td></tr>
+<tr class="memdesc:a1f2cf5b17937169923f778966061f4c7 inherit pro_methods_structrotor_1_1message__t_1_1visitor__t"><td class="mdescLeft">&#160;</td><td class="mdescRight">visit concrete message <br /></td></tr>
+<tr class="separator:a1f2cf5b17937169923f778966061f4c7 inherit pro_methods_structrotor_1_1message__t_1_1visitor__t"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Default stringifier of rotor messages. </p>
@@ -215,8 +215,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>on</b> (const
 
 </div>
 </div>
-<a id="afcaf213c98e5a46e9b9396c58ff93dba" name="afcaf213c98e5a46e9b9396c58ff93dba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afcaf213c98e5a46e9b9396c58ff93dba">&#9670;&#160;</a></span>try_visit()</h2>
+<a id="a83b724e6c6c36074b16ac3f340191388" name="a83b724e6c6c36074b16ac3f340191388"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83b724e6c6c36074b16ac3f340191388">&#9670;&#160;</a></span>try_visit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -228,8 +228,18 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>on</b> (const
           <td class="memname">bool rotor::misc::default_stringifier_t::try_visit </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structrotor_1_1message__base__t.html">message_base_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>message</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -241,7 +251,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>on</b> (const
 
 <p>returns <code>true</code> if a message has been successfully processed </p>
 
-<p>Implements <a class="el" href="structrotor_1_1message__visitor__t.html#a6ce75a969edfde3247160fa7247a9b64">rotor::message_visitor_t</a>.</p>
+<p>Implements <a class="el" href="structrotor_1_1message__visitor__t.html#a676b0dfa06302dc9305785fdfe1e21c5">rotor::message_visitor_t</a>.</p>
 
 </div>
 </div>

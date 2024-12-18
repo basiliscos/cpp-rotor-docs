@@ -121,17 +121,17 @@ Inheritance diagram for rotor::message_visitor_t:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6ce75a969edfde3247160fa7247a9b64" id="r_a6ce75a969edfde3247160fa7247a9b64"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1message__visitor__t.html#a6ce75a969edfde3247160fa7247a9b64">try_visit</a> (const <a class="el" href="structrotor_1_1message__base__t.html">message_base_t</a> &amp;message) const =0</td></tr>
-<tr class="memdesc:a6ce75a969edfde3247160fa7247a9b64"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns <code>true</code> if a message has been successfully processed  <br /></td></tr>
-<tr class="separator:a6ce75a969edfde3247160fa7247a9b64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a676b0dfa06302dc9305785fdfe1e21c5" id="r_a676b0dfa06302dc9305785fdfe1e21c5"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrotor_1_1message__visitor__t.html#a676b0dfa06302dc9305785fdfe1e21c5">try_visit</a> (const <a class="el" href="structrotor_1_1message__base__t.html">message_base_t</a> &amp;message, void *context) const =0</td></tr>
+<tr class="memdesc:a676b0dfa06302dc9305785fdfe1e21c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns <code>true</code> if a message has been successfully processed  <br /></td></tr>
+<tr class="separator:a676b0dfa06302dc9305785fdfe1e21c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Abstract message visitor interface. </p>
 <p>As the message type is dynamic and might not be known at compile type, the <code>try_visit</code> method returns <code>true</code> or <code>false</code> to indicate whether a message has been successfully processed. If it returns <code>false</code>, that might indicate, that some other message visitor should try a luck.</p>
 <p>It should be noted, that it is potentially slow (not very performant) as it involves multiple visitors and multiple message try attemps (the double dispatch visitor pattern is not available). </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6ce75a969edfde3247160fa7247a9b64" name="a6ce75a969edfde3247160fa7247a9b64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ce75a969edfde3247160fa7247a9b64">&#9670;&#160;</a></span>try_visit()</h2>
+<a id="a676b0dfa06302dc9305785fdfe1e21c5" name="a676b0dfa06302dc9305785fdfe1e21c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a676b0dfa06302dc9305785fdfe1e21c5">&#9670;&#160;</a></span>try_visit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -143,8 +143,18 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual bool rotor::message_visitor_t::try_visit </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structrotor_1_1message__base__t.html">message_base_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>message</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -156,7 +166,7 @@ Public Member Functions</h2></td></tr>
 
 <p>returns <code>true</code> if a message has been successfully processed </p>
 
-<p>Implemented in <a class="el" href="structrotor_1_1misc_1_1default__stringifier__t.html#afcaf213c98e5a46e9b9396c58ff93dba">rotor::misc::default_stringifier_t</a>.</p>
+<p>Implemented in <a class="el" href="structrotor_1_1misc_1_1default__stringifier__t.html#a83b724e6c6c36074b16ac3f340191388">rotor::misc::default_stringifier_t</a>.</p>
 
 </div>
 </div>
