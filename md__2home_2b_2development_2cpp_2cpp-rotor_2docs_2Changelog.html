@@ -101,9 +101,23 @@ $(document).ready(function(){initNavTree('md__2home_2b_2development_2cpp_2cpp-ro
   <div class="headertitle"><div class="title">Changelog</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2>0.33 (26-Jan-2025)</h2>
+<div class="textblock"><h2>0.34 (25-Mar-2025)</h2>
 <ul>
-<li>[cmake, bugfix, win32] add <code>ws2_32</code> lib for rotor_asion win32 build</li>
+<li>[feature] improve c++20 support</li>
+<li>[workaround, fltk] more realiable message delivery for fltk backend. Fltk might "forget" to invoke scheduled <code>awakes</code> after shutdown process, which leads to minor memory leaks</li>
+<li>[cmake, breaking] use <code>CMAKE_CURRENT_SOURCE_DIR</code> instead of <code>CMAKE_SOURCE_DIR</code></li>
+<li>[cmake, breaking] configure option renamed <code>BUILD_BOOST_ASIO</code> =&gt; <code>ROTOR_BUILD_ASIO</code></li>
+<li>[cmake, breaking] configure option renamed <code>BUILD_WX</code> =&gt; <code>ROTOR_BUILD_WX</code></li>
+<li>[cmake, breaking] configure option renamed <code>BUILD_EV</code> =&gt; <code>ROTOR_BUILD_EV</code></li>
+<li>[cmake, breaking] configure option renamed <code>BUILD_FLTK</code> =&gt; <code>ROTOR_BUILD_FLTK</code></li>
+<li>[cmake, breaking] configure option renamed <code>BUILD_THREAD</code> =&gt; <code>ROTOR_BUILD_THREAD</code></li>
+<li>[cmake, breaking] configure option renamed <code>BUILD_DOC</code> =&gt; <code>ROTOR_BUILD_DOC</code></li>
+<li>[cmake, breaking] configure option renamed <code>BUILD_THREAD_UNSAFE</code> =&gt; <code>ROTOR_BUILD_THREAD_UNSAFE</code></li>
+<li>[cmake, new] configure option added <code>ROTOR_BUILD_TESTS</code> (instead of <code>ENABLE_TESTING</code>)</li>
+</ul>
+<h2>0.33 (26-Jan-2025)</h2>
+<ul>
+<li>[cmake, bugfix, win32] add <code>ws2_32</code> lib for <code>rotor_asio</code> win32 build</li>
 </ul>
 <h2>0.32 (18-Dec-2024)</h2>
 <ul>
