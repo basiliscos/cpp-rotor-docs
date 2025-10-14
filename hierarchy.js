@@ -36,6 +36,22 @@ var hierarchy =
         [ "rotor::handler_t< lambda_holder_t< Handler, M >, std::enable_if_t< details::is_lambda_handler_v< lambda_holder_t< Handler, M > > > >", "structrotor_1_1handler__t_3_01lambda__holder__t_3_01Handler_00_01M_01_4_00_01std_1_1enable__if__9f0d4eb8f11444e50079417975696fb3.html", null ]
       ] ],
       [ "rotor::message_base_t", "structrotor_1_1message__base__t.html", [
+        [ "rotor::message_t< payload::unsubscription_confirmation_t >", "structrotor_1_1message__t.html", null ],
+        [ "rotor::message_t< payload::external_unsubscription_t >", "structrotor_1_1message__t.html", null ],
+        [ "rotor::message_t< payload::subscription_confirmation_t >", "structrotor_1_1message__t.html", null ],
+        [ "rotor::message_t< payload::external_subscription_t >", "structrotor_1_1message__t.html", null ],
+        [ "rotor::message_t< payload::commit_unsubscription_t >", "structrotor_1_1message__t.html", null ],
+        [ "rotor::message_t< payload::handler_call_t >", "structrotor_1_1message__t.html", null ],
+        [ "rotor::message_t< payload::start_actor_t >", "structrotor_1_1message__t.html", null ],
+        [ "rotor::message_t< payload::shutdown_trigger_t >", "structrotor_1_1message__t.html", null ],
+        [ "rotor::message_t< payload::create_actor_t >", "structrotor_1_1message__t.html", null ],
+        [ "rotor::message_t< payload::spawn_actor_t >", "structrotor_1_1message__t.html", null ],
+        [ "rotor::message_t< payload::deregistration_notify_t >", "structrotor_1_1message__t.html", null ],
+        [ "rotor::message_t< payload::deregistration_service_t >", "structrotor_1_1message__t.html", null ],
+        [ "rotor::message_t< payload::unlink_notify_t >", "structrotor_1_1message__t.html", null ],
+        [ "rotor::message_t< wrapped_request_t< request_t > >", "structrotor_1_1message__t.html", null ],
+        [ "rotor::message_t< wrapped_t >", "structrotor_1_1message__t.html", null ],
+        [ "rotor::message_t< cancel_payload_t >", "structrotor_1_1message__t.html", null ],
         [ "rotor::message_t< T >", "structrotor_1_1message__t.html", null ]
       ] ],
       [ "rotor::subscription_info_t", "structrotor_1_1subscription__info__t.html", null ],
@@ -56,12 +72,6 @@ var hierarchy =
     [ "rotor::continuation_t", "structrotor_1_1continuation__t.html", null ],
     [ "rotor::payload::create_actor_t", "structrotor_1_1payload_1_1create__actor__t.html", null ],
     [ "rotor::thread::system_context_thread_t::deadline_info_t", "structrotor_1_1thread_1_1system__context__thread__t_1_1deadline__info__t.html", null ],
-    [ "boost::asio::deadline_timer", null, [
-      [ "rotor::asio::supervisor_asio_t::timer_t", "structrotor_1_1asio_1_1supervisor__asio__t_1_1timer__t.html", null ]
-    ] ],
-    [ "decltypetest", null, [
-      [ "rotor::details::is_braces_constructible< T, Args >", "structrotor_1_1details_1_1is__braces__constructible.html", null ]
-    ] ],
     [ "rotor::payload::deregistration_notify_t", "structrotor_1_1payload_1_1deregistration__notify__t.html", null ],
     [ "rotor::payload::deregistration_service_t", "structrotor_1_1payload_1_1deregistration__service__t.html", null ],
     [ "rotor::payload::discovery_future_t", "structrotor_1_1payload_1_1discovery__future__t.html", null ],
@@ -81,10 +91,8 @@ var hierarchy =
     [ "rotor::payload::external_unsubscription_t", "structrotor_1_1payload_1_1external__unsubscription__t.html", null ],
     [ "rotor::asio::forwarder_base_t< Actor, Handler, ErrHandler >", "structrotor_1_1asio_1_1forwarder__base__t.html", [
       [ "rotor::asio::forwarder_t< Actor, Handler, details::count::_0, ErrHandler >", "structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01details_1_1count_1_1__0_00_01ErrHandler_01_4.html", null ],
-      [ "rotor::asio::forwarder_t< Actor, Handler, details::count::_1, ErrHandler >", "structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01details_1_1count_1_1__1_00_01ErrHandler_01_4.html", null ]
-    ] ],
-    [ "rotor::asio::forwarder_base_t< Actor, Handler, void >", "structrotor_1_1asio_1_1forwarder__base__t_3_01Actor_00_01Handler_00_01void_01_4.html", [
       [ "rotor::asio::forwarder_t< Actor, Handler, details::count::_0, void >", "structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01details_1_1count_1_1__0_00_01void_01_4.html", null ],
+      [ "rotor::asio::forwarder_t< Actor, Handler, details::count::_1, ErrHandler >", "structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01details_1_1count_1_1__1_00_01ErrHandler_01_4.html", null ],
       [ "rotor::asio::forwarder_t< Actor, Handler, details::count::_1, void >", "structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01details_1_1count_1_1__1_00_01void_01_4.html", null ]
     ] ],
     [ "rotor::asio::forwarder_t< Actor, Handler, ArgsCount, ErrHandler >", "structrotor_1_1asio_1_1forwarder__t.html", null ],
@@ -95,12 +103,15 @@ var hierarchy =
     [ "handler_traits< void(A::*)(M &) >", "structhandler__traits_3_01void_07A_1_1_5_08_07M_01_6_08_01_4.html", null ],
     [ "rotor::handler_traits< void(A::*)(M &) noexcept >", "structrotor_1_1handler__traits_3_01void_07A_1_1_5_08_07M_01_6_08_01noexcept_01_4.html", null ],
     [ "rotor::handler_traits< void(A::*)(M &)>", "structrotor_1_1handler__traits_3_01void_07A_1_1_5_08_07M_01_6_08_4.html", null ],
+    [ "std::hash< rotor::address_ptr_t >", "structstd_1_1hash_3_01rotor_1_1address__ptr__t_01_4.html", null ],
+    [ "std::hash< rotor::handler_ptr_t >", "structstd_1_1hash_3_01rotor_1_1handler__ptr__t_01_4.html", null ],
     [ "rotor::payload::initialize_actor_t", "structrotor_1_1payload_1_1initialize__actor__t.html", null ],
     [ "rotor::payload::initialize_confirmation_t", "structrotor_1_1payload_1_1initialize__confirmation__t.html", null ],
     [ "rotor::plugin::inspected_local_delivery_t", "structrotor_1_1plugin_1_1inspected__local__delivery__t.html", null ],
     [ "boost::intrusive_ref_counter", null, [
       [ "rotor::detail::child_info_t", "structrotor_1_1detail_1_1child__info__t.html", null ]
     ] ],
+    [ "rotor::details::is_braces_constructible< T, Args >", "structrotor_1_1details_1_1is__braces__constructible.html", null ],
     [ "rotor::details::is_constructible< T, E, Args >", "structrotor_1_1details_1_1is__constructible.html", null ],
     [ "std::is_constructible", null, [
       [ "rotor::details::size_of_t< T, Ts... >", "structrotor_1_1details_1_1size__of__t_3_01T_00_01Ts_8_8_8_01_4.html", null ]
@@ -114,7 +125,6 @@ var hierarchy =
     ] ],
     [ "rotor::subscription_t::joint_handlers_t", "structrotor_1_1subscription__t_1_1joint__handlers__t.html", null ],
     [ "rotor::lambda_holder_t< M, F >", "structrotor_1_1lambda__holder__t.html", null ],
-    [ "rotor::lambda_holder_t< Handler, M >", "structrotor_1_1lambda__holder__t.html", null ],
     [ "rotor::payload::link_request_t", "structrotor_1_1payload_1_1link__request__t.html", null ],
     [ "rotor::payload::link_response_t", "structrotor_1_1payload_1_1link__response__t.html", null ],
     [ "std::list", null, [
@@ -152,6 +162,8 @@ var hierarchy =
     [ "rotor::payload::registration_response_t", "structrotor_1_1payload_1_1registration__response__t.html", null ],
     [ "rotor::request_traits_t< R >::request", "structrotor_1_1request__traits__t_1_1request.html", null ],
     [ "rotor::request_base_t", "structrotor_1_1request__base__t.html", [
+      [ "rotor::wrapped_request_t< type >", "structrotor_1_1wrapped__request__t.html", null ],
+      [ "rotor::wrapped_request_t< T, std::enable_if_t< std::is_base_of_v< arc_base_t< T >, T > > >", "structrotor_1_1wrapped__request__t_3_01T_00_01std_1_1enable__if__t_3_01std_1_1is__base__of__v_3_e8c9a041113eceda006cb13907d336c0.html", null ],
       [ "rotor::wrapped_request_t< T, typename >", "structrotor_1_1wrapped__request__t.html", null ],
       [ "rotor::wrapped_request_t< T, std::enable_if_t< std::is_base_of_v< arc_base_t< T >, T > > >", "structrotor_1_1wrapped__request__t_3_01T_00_01std_1_1enable__if__t_3_01std_1_1is__base__of__v_3_e8c9a041113eceda006cb13907d336c0.html", null ]
     ] ],
@@ -172,6 +184,9 @@ var hierarchy =
     [ "rotor::payload::spawn_actor_t", "structrotor_1_1payload_1_1spawn__actor__t.html", null ],
     [ "rotor::spawner_t", "structrotor_1_1spawner__t.html", null ],
     [ "rotor::payload::start_actor_t", "structrotor_1_1payload_1_1start__actor__t.html", null ],
+    [ "asio::steady_timer", null, [
+      [ "rotor::asio::supervisor_asio_t::timer_t", "structrotor_1_1asio_1_1supervisor__asio__t_1_1timer__t.html", null ]
+    ] ],
     [ "rotor::payload::subscription_confirmation_t", "structrotor_1_1payload_1_1subscription__confirmation__t.html", null ],
     [ "rotor::subscription_point_t", "structrotor_1_1subscription__point__t.html", [
       [ "rotor::subscription_info_t", "structrotor_1_1subscription__info__t.html", null ]
@@ -188,21 +203,50 @@ var hierarchy =
     [ "rotor::payload::unlink_notify_t", "structrotor_1_1payload_1_1unlink__notify__t.html", null ],
     [ "rotor::payload::unlink_request_t", "structrotor_1_1payload_1_1unlink__request__t.html", null ],
     [ "rotor::payload::unsubscription_confirmation_t", "structrotor_1_1payload_1_1unsubscription__confirmation__t.html", null ],
-    [ "rotor::message_t< T >::visitor_t", "structrotor_1_1message__t_1_1visitor__t.html", [
-      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
-      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
-      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
-      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
-      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
-      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
-      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
-      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
-      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
-      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
-      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
-      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
-      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
-      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
+    [ "rotor::message_t< T >::visitor_t", "structrotor_1_1message__t_1_1visitor__t.html", null ],
+    [ "rotor::message_t< cancel_payload_t >::visitor_t", null, [
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ]
+    ] ],
+    [ "rotor::message_t< payload::commit_unsubscription_t >::visitor_t", null, [
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ]
+    ] ],
+    [ "rotor::message_t< payload::create_actor_t >::visitor_t", null, [
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ]
+    ] ],
+    [ "rotor::message_t< payload::deregistration_notify_t >::visitor_t", null, [
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ]
+    ] ],
+    [ "rotor::message_t< payload::deregistration_service_t >::visitor_t", null, [
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ]
+    ] ],
+    [ "rotor::message_t< payload::external_subscription_t >::visitor_t", null, [
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ]
+    ] ],
+    [ "rotor::message_t< payload::external_unsubscription_t >::visitor_t", null, [
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ]
+    ] ],
+    [ "rotor::message_t< payload::handler_call_t >::visitor_t", null, [
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ]
+    ] ],
+    [ "rotor::message_t< payload::shutdown_trigger_t >::visitor_t", null, [
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ]
+    ] ],
+    [ "rotor::message_t< payload::spawn_actor_t >::visitor_t", null, [
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ]
+    ] ],
+    [ "rotor::message_t< payload::start_actor_t >::visitor_t", null, [
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ]
+    ] ],
+    [ "rotor::message_t< payload::subscription_confirmation_t >::visitor_t", null, [
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ]
+    ] ],
+    [ "rotor::message_t< payload::unlink_notify_t >::visitor_t", null, [
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ]
+    ] ],
+    [ "rotor::message_t< payload::unsubscription_confirmation_t >::visitor_t", null, [
+      [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ]
+    ] ],
+    [ "rotor::message_t< wrapped_t >::visitor_t", null, [
       [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
       [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],
       [ "rotor::misc::default_stringifier_t", "structrotor_1_1misc_1_1default__stringifier__t.html", null ],

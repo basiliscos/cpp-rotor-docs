@@ -1,7 +1,7 @@
 var structrotor_1_1wrapped__response__t =
 [
     [ "req_message_ptr_t", "structrotor_1_1wrapped__response__t.html#a445980d820f30b5bc56e09a7dfe9e0d8", null ],
-    [ "req_message_t", "structrotor_1_1wrapped__response__t.html#a4a8faca5a9cfaecfc7b3d95a71a70f3d", null ],
+    [ "req_message_t", "structrotor_1_1wrapped__response__t.html#aa7623a43dd0b8b4109fe08d0cd336492", null ],
     [ "request_t", "structrotor_1_1wrapped__response__t.html#a62516a3d6432b07fdc980f2888e65a3e", null ],
     [ "res_helper_t", "structrotor_1_1wrapped__response__t.html#af8362c56b2d297faa0b8fce65ef846b5", null ],
     [ "response_t", "structrotor_1_1wrapped__response__t.html#a278f5466711fe3ab3ed0073787560110", null ],

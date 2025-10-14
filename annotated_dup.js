@@ -9,7 +9,6 @@ var annotated_dup =
           [ "callback_traits< void(Class::*)(M) noexcept >", "structrotor_1_1asio_1_1details_1_1callback__traits_3_01void_07Class_1_1_5_08_07M_08_01noexcept_01_4.html", "structrotor_1_1asio_1_1details_1_1callback__traits_3_01void_07Class_1_1_5_08_07M_08_01noexcept_01_4" ]
         ] ],
         [ "forwarder_base_t", "structrotor_1_1asio_1_1forwarder__base__t.html", "structrotor_1_1asio_1_1forwarder__base__t" ],
-        [ "forwarder_base_t< Actor, Handler, void >", "structrotor_1_1asio_1_1forwarder__base__t_3_01Actor_00_01Handler_00_01void_01_4.html", "structrotor_1_1asio_1_1forwarder__base__t_3_01Actor_00_01Handler_00_01void_01_4" ],
         [ "forwarder_t", "structrotor_1_1asio_1_1forwarder__t.html", null ],
         [ "forwarder_t< Actor, Handler, details::count::_0, ErrHandler >", "structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01details_1_1count_1_1__0_00_01ErrHandler_01_4.html", "structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01details_1_1count_1_1__0_00_01ErrHandler_01_4" ],
         [ "forwarder_t< Actor, Handler, details::count::_0, void >", "structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01details_1_1count_1_1__0_00_01void_01_4.html", "structrotor_1_1asio_1_1forwarder__t_3_01Actor_00_01Handler_00_01details_1_1count_1_1__0_00_01void_01_4" ],
@@ -161,6 +160,8 @@ var annotated_dup =
       [ "wrapped_response_t", "structrotor_1_1wrapped__response__t.html", "structrotor_1_1wrapped__response__t" ]
     ] ],
     [ "std", null, [
+      [ "hash< rotor::address_ptr_t >", "structstd_1_1hash_3_01rotor_1_1address__ptr__t_01_4.html", "structstd_1_1hash_3_01rotor_1_1address__ptr__t_01_4" ],
+      [ "hash< rotor::handler_ptr_t >", "structstd_1_1hash_3_01rotor_1_1handler__ptr__t_01_4.html", "structstd_1_1hash_3_01rotor_1_1handler__ptr__t_01_4" ],
       [ "is_error_code_enum< rotor::error_code_t >", "structstd_1_1is__error__code__enum_3_01rotor_1_1error__code__t_01_4.html", null ],
       [ "is_error_code_enum< rotor::shutdown_code_t >", "structstd_1_1is__error__code__enum_3_01rotor_1_1shutdown__code__t_01_4.html", null ]
     ] ],

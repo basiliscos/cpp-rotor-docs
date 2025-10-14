@@ -27,10 +27,10 @@ var NAVTREE =
   [ "rotor", "index.html", [
     [ "Introduction", "md__2home_2b_2development_2cpp_2cpp-rotor_2docs_2Introduction.html", null ],
     [ "Rationale", "md__2home_2b_2development_2cpp_2cpp-rotor_2docs_2Rationale.html", null ],
-    [ "Compiling & building", "md__2home_2b_2development_2cpp_2cpp-rotor_2docs_2Compilation.html", null ],
-    [ "Design & Notions", "md__2home_2b_2development_2cpp_2cpp-rotor_2docs_2Design.html", null ],
+    [ "Compiling &amp; building", "md__2home_2b_2development_2cpp_2cpp-rotor_2docs_2Compilation.html", null ],
+    [ "Design &amp; Notions", "md__2home_2b_2development_2cpp_2cpp-rotor_2docs_2Design.html", null ],
     [ "Advanced examples", "md__2home_2b_2development_2cpp_2cpp-rotor_2docs_2Examples.html", null ],
-    [ "Event loops & platforms", "md__2home_2b_2development_2cpp_2cpp-rotor_2docs_2Loops.html", null ],
+    [ "Event loops &amp; platforms", "md__2home_2b_2development_2cpp_2cpp-rotor_2docs_2Loops.html", null ],
     [ "Patterns", "md__2home_2b_2development_2cpp_2cpp-rotor_2docs_2Patterns.html", null ],
     [ "License", "md__2home_2b_2development_2cpp_2cpp-rotor_2docs_2License.html", null ],
     [ "Changelog", "md__2home_2b_2development_2cpp_2cpp-rotor_2docs_2Changelog.html", null ],
@@ -66,13 +66,14 @@ var NAVTREEINDEX =
 [
 "actor__base_8h_source.html",
 "pages.html",
-"structrotor_1_1address__t.html#aa4db7b61b61604b62580560dc0269fdb",
-"structrotor_1_1ev_1_1supervisor__ev__t_1_1timer__t.html",
-"structrotor_1_1payload_1_1external__unsubscription__t.html",
-"structrotor_1_1plugin_1_1resources__plugin__t.html#ae883164381736bff8488cfc65e4b3656",
-"structrotor_1_1supervisor__config__t.html#a6b286125fba31febfbc8bbf8ec2a0334",
-"structrotor_1_1wrapped__response__t.html#af847fdf3862b10dcf253cc8b21987011"
+"structrotor_1_1address__t.html#a265be972874655a2034fbaa6bce80b49",
+"structrotor_1_1extended__error__t.html#a852daca4989dd3aaf0d6e3ab662e557f",
+"structrotor_1_1payload_1_1link__request__t.html",
+"structrotor_1_1plugin__storage__base__t.html",
+"structrotor_1_1supervisor__t.html#a0bd40fcd6e432a0d51246de08ac1c526",
+"structrotor_1_1wx_1_1supervisor__wx__t.html#a0bab7e2159eb2dd161348a791304322d"
 ];
 
-var SYNCONMSG = 'click to disable panel synchronisation';
-var SYNCOFFMSG = 'click to enable panel synchronisation';
+var SYNCONMSG = 'click to disable panel synchronization';
+var SYNCOFFMSG = 'click to enable panel synchronization';
+var LISTOFALLMEMBERS = 'List of all members';

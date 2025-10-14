@@ -3,7 +3,7 @@ var structrotor_1_1supervisor__t =
     [ "config_builder_t", "structrotor_1_1supervisor__t.html#a22dacbd9dc3c5369c2c858928d062a7b", null ],
     [ "config_t", "structrotor_1_1supervisor__t.html#a7081ee36cc79a8085c0388fd5c6807c2", null ],
     [ "inbound_queue_t", "structrotor_1_1supervisor__t.html#a907d7021a4bd7fa99e4d81b27a4de135", null ],
-    [ "plugins_list_t", "structrotor_1_1supervisor__t.html#a72ab177d8a33f0179901d0a376db345e", null ],
+    [ "plugins_list_t", "structrotor_1_1supervisor__t.html#ad658b2d5e2882915f2fd3a7039837f10", null ],
     [ "request_map_t", "structrotor_1_1supervisor__t.html#a29acd6c7de7befe5efad827486b4b3f6", null ],
     [ "supervisor_t", "structrotor_1_1supervisor__t.html#ac0946eac31e776b8c6e943270e493611", null ],
     [ "access", "structrotor_1_1supervisor__t.html#a994f91dc02bf57e53d23fabe42d7ee18", null ],
